@@ -61,7 +61,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 - Estrogen은 `PG를 합성하는 효소의 발현`을 촉진시킨다.
 
 ```text
-Estrogen - Estrogen Receptor 
+Estrogen - Estrogen Receptor
 ---> COX-1, COX-2 Transcirptional Activation(전사 활성화)
 COX-1, COX-2 - PG합성 효소
 ```
@@ -73,3 +73,23 @@ COX-1, COX-2 - PG합성 효소
 - 하지만 변비 또는 장내 세균총 문제등으로 인해 배출이 안되면 `장내 혈관을 통해 재흡수` 될 수 있다.
 
 - 따라서 장건강을 유지해서 장배출이 잘 되도록 해야한다.
+
+### 간수치
+
+- `ALT - Alanine Aminotransferase`
+
+- `AST - Aspetate Aminotransferase`
+
+- `GGT - Gamma-glutamyltransferase`
+
+- 피검사를 할 때 세 가지 수치가 높게 나오면 간의 상태가 안좋다고 판단할 수 있다.
+
+- ALT, AST, GGT는 세포가 사용하는 효소인데 간세포에서 주로 사용하기 때문에 `간세포`에 많이 분포한다.
+
+  - `ALT`는 주로 간세포에 분포해서 간이 손상되면 해당 수치가 높게 나온다.
+
+  - `AST`는 간 뿐만이 아닌 다른 기관에도 분포하기 때문에 `간 특이도`가 ALT에 비해 상대적으로 낮다. 그래서 간 수치를 볼 떄 ALT/AST 두 수치를 보고 평가한다.
+
+  - `GGT`는 `Glutathione`과 관련된 대사에 관여하는 효소다. 간에 주로 분포를 하지만 간 손상뿐만이 아닌 산화적 스트레스등 이유로 수치가 높게 나오기도 한다.
+
+- 그래서 간이 손상된 경우 간세포가 파괴 되어 해당 효소가 혈액으로 방출이 되어 이 효소가 피검사에서 검출되는 것이다.
