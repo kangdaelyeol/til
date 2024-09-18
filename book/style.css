@@ -1,0 +1,23 @@
+.interaction {
+	color: rgb(31, 239, 208);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.substance {
+	color: rgb(220, 52, 220);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.disease {
+	color: rgb(255, 91, 91);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.organ {
+	color: rgb(41, 41, 249);
+	font-size: 20px;
+	font-weight: bold;
+}

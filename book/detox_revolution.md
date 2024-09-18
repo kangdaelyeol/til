@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./style.css" />
+
 # 해독 혁명 - Detox Revolution
 
 ### 기능 의학
@@ -131,3 +133,43 @@ COX-1, COX-2 - PG합성 효소
 - 우리가 바쁘거나 스트레스를 받게 되면 prefrontal cortex의 기능이 저하된다. 이는 곧 `본능적 사고`를 이끌고 이는 `도파민을 요구`하게 된다.
 
 - 따라서 `생각이 오염`되지 않도록 마음가짐을 잘해야 한다.
+
+### Urea(요소) - Uric Acid(요산)
+
+1. 단백질의 정상 해독 과정
+
+   - <span class="substance">protein</span> -> <span class="interaction">metabolism</span> -> <span class="substance">ammonia(byproduct)</span> -> <span class="organ">liver</span> -> <span class="interaction">urea cycle</span> -> <span class="substance">urea</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+
+2. 신장 기능 저하로 인한 위험
+
+   - <span class="substance">ammonia</span> -> <span class="interaction">accumulation</span> -> <span class="disease">encephalopathy(간성혼수)</span>
+
+- 단백질은 몸에서 `대사(metabolism)`를 통해 `암모니아(ammonia)`를 `부산물(byproduct)`로써 생성한다.
+
+  - 물질이 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 `대사산물(metabolite)`라고 한다.
+
+  - 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물보단 부산물이 맞다.
+
+- 암모니아는 간에서 `Urea Cycle`을 통해 한 번더 대사되어 `요소(urea)로` 변환된다.
+
+- 변환된 urea는 혈액에 축적되어 `신장(kidney)`을 통해 배출이 된다.
+
+- ammonia가 배출되지 못하고 혈액에 축적되면 `간성혼수(encephalopathy)`가 발병될 확률이 높아진다.
+
+1. 퓨린(purine)의 정상적인 해독 과정
+
+   - <span class="substance">purine</span> -> <span class="organ">liver</span> -> <span class="substance">uric acid</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+
+2. 요산(uric acid) 축적에 따른 위험
+
+   - <span class="substance">uric acid</span> -> <span class="disease">gout(통풍)</span>
+
+- 퓨린을 섭취하면 간에서 대사를 통해 요산(uric acid)을 배출한다.
+
+- 요산은 신장을 통해 소변으로 배출이 되어야 한다. 많이 축적이 되면 `고요산혈증(hyperuricemia)`이라는 상태가 되며 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
+
+  - 따라서 hyperuricemia 상태라고 해서 gout라 판단할 수 없다.
+
+- 만약 요산으로 인한 통풍이 오면, 즉 uric acid가 모여 uric crystal이 신체 관절등 부위에 쌓여 통증을 일으키는 것이 확인 되면 통풍이라 한다. 평생 관리해야 한다.
+
+- uric acid수치는 신장 기능이 저하되거나 단백질, 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아질 수 있으며, 이는 꾸준한 관리가 필요하다.
