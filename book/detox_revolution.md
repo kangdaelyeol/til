@@ -2,7 +2,7 @@
 
 # 해독 혁명 - Detox Revolution
 
-### 기능 의학
+## 기능 의학
 
 - **빈부 격차는 기회를 빼앗지만, 건강 격차는 삶을 빼앗는다.**
 
@@ -36,7 +36,7 @@ _망라하다 - 널리 받아들여 모두 포함하다_
 
 _phytochemical - 모든 식물에 포함된 유기적 물질_
 
-### Propionic Acid(PPA) - 프로피온산
+## Propionic Acid(PPA) - 프로피온산
 
 - **프로피온산(PPA)** 은 일반적으로 식품의 유통기한을 늘리기 위해 `방부제`같은 느낌으로 넣는 `식품첨가제`다.
 
@@ -48,7 +48,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 그래서 `임신중`에 PPA섭취를 많이 하면 태아의 자폐 발생 확률이 높아진다고 한다.
 
-### 호르몬 해독 - Prostaglandin(PG)
+## 호르몬 해독 - Prostaglandin(PG)
 
 - **Prostaglandin(PG)** 은 `염증물질`이다.
 
@@ -76,7 +76,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 따라서 장건강을 유지해서 장배출이 잘 되도록 해야한다.
 
-### 간수치
+## 간수치
 
 - `ALT - Alanine Aminotransferase`
 
@@ -98,7 +98,7 @@ COX-1, COX-2 - PG합성 효소
 
 `노화의 속도를 늦춘다 -> 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리곘다.`
 
-### Dopamine
+## Dopamine
 
 - 도파민은 자극에 대한 `보상을 예측`하는 호르몬이다.
 
@@ -114,7 +114,7 @@ COX-1, COX-2 - PG합성 효소
 
   4. **동기부여** - 예상되는 보상을 기반으로 `동기를 부여`해주고, 목표를 달성하도록 노력을 촉진시킨다.
 
-### Prefrontal Cortex - 전전두엽
+## Prefrontal Cortex - 전전두엽
 
 - 우리의 본능을 따르지 않으려면 prefrontal cortex의 컨트롤이 가장 중요하다.
 
@@ -134,7 +134,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 따라서 `생각이 오염`되지 않도록 마음가짐을 잘해야 한다.
 
-### Urea(요소) - Uric Acid(요산)
+## Urea(요소) - Uric Acid(요산)
 
 1. 단백질의 정상 해독 과정
 
@@ -156,11 +156,11 @@ COX-1, COX-2 - PG합성 효소
 
 - ammonia가 배출되지 못하고 혈액에 축적되면 `간성혼수(encephalopathy)`가 발병될 확률이 높아진다.
 
-1. 퓨린(purine)의 정상적인 해독 과정
+1. <span class="title">퓨린(purine)의 정상적인 해독 과정</span>
 
    - <span class="substance">purine</span> -> <span class="organ">liver</span> -> <span class="substance">uric acid</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
 
-2. 요산(uric acid) 축적에 따른 위험
+2. <span class="title">요산(uric acid) 축적에 따른 위험</span>
 
    - <span class="substance">uric acid</span> -> <span class="disease">gout(통풍)</span>
 
@@ -173,3 +173,63 @@ COX-1, COX-2 - PG합성 효소
 - 만약 요산으로 인한 통풍이 오면, 즉 uric acid가 모여 uric crystal이 신체 관절등 부위에 쌓여 통증을 일으키는 것이 확인 되면 통풍이라 한다. 평생 관리해야 한다.
 
 - uric acid수치는 신장 기능이 저하되거나 단백질, 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아질 수 있으며, 이는 꾸준한 관리가 필요하다.
+
+## Estrogen metabolism
+
+1. <span class="title">estrogen의 정상 해독 과정</span>
+
+   - <span class="substance">estrogen</span> -> <span class="organ">CYP1A1 / CYP1B1</span> -> <span class="interaction">hydroxylation</span> -> <span class="substance">2/4-hydroxyestrogen</span> -> <span class="organ">COMT</span> -> <span class="interaction">methylation</span> -> <span class="substance">2/4-methoxyestrogen</span> -> <span class="interaction">대/소장 배출</span>
+
+   - <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">glutathione</span> -> <span class="interaction">결합</span> -> <span class="interaction">대/소장 배출
+
+2. <span class="title">estrogen의 비정상 해독 과정</span>
+
+   - <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">DNA</span> -> <span class="interaction">결합</span> -> <span class="substance">DNA adduct</span> -> <span class="disease">carginogenecity(발암성)</span>
+
+- 일반적으로 신체에 주로 존재하는 에스트로겐은 세 가지 종류가 있다.
+
+  - `Estrone(E1)` - 폐경기 이후 주로 분비
+
+  - `Estradiol(E2)` - 가임기
+
+  - `Estriol(E3)` - 임신중
+
+- 여기서 에스트리올(E3)은 E1, E2와 달리 다른 대사 과정을 통해 배출된다고 한다.
+
+- 에스트로겐(E1, E2)이 대사를 통해 몸에서 배출이 되기 까지 기본적으로 `수산화(hydroxylation)`, `메틸화(methylation)` 두 과정을 거친다.
+
+- **Hydroxylation**
+
+  - 수산화는 `수산기(hydroxyl radical / OH)`를 붙이는 과정이다.
+
+  - `estrone`, `estradiol`은 `cytochrome P450` 효소군의 `CYP1A1`, `CYP1B1`효소를 통해 수산화를 거친다
+
+    - estrone / estradiol -> CYP1A1(hydroxylation) -> 2-hydroxyestrone / 2-hydroxyestradiol
+
+    - estrone / estradiol -> CYP1B1(hydroxylation) -> 4-hydroxyestrone / 4-hydroxyestradiol
+
+  - 각각 분자 핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.
+
+- **Methylation**
+
+   - 메틸화는 `메틸기(methyl radical / CH3)`를 붙이는 과정이다.
+
+   - 수산화된 hydroxyestrogen은 `COMT(Catechol - O - methyltransferase)` 효소를 통해 methylation과정을 거친다.
+
+    - `COMT는 말그대로 Catechol구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.`
+
+   - 2/4-hydroxyestrogen -> COMT(methylation) -> 2/4-methoxyestrogen
+
+- 메틸화까지 완료된 estrogen은 자연적으로 배출이 된다.
+
+- 문제는 4-hydroxyestrogen의 다른 대사 과정을 통해 발암 위험이 높아진다는 것이다.
+
+  - 4-hydroxyestrogen -> redox reaction -> `estrogen quinone`
+
+- quinone은 반응성이 매우 높아서 DNA와 쉽게 결합한다.
+
+- estrogen quinone과 DNA와 결합해서 `DNA adduct`를 생성하는데 이는 발암물질이다.
+
+- 하지만 우리는 이 과정을 `glutathione`의 도움을 받아 회피 할 수 있다.
+
+- quinone은 또한 glutathione과 결합해 해독 과정을 거친다음 안전하게 배출이 된다.
