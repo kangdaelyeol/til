@@ -136,13 +136,15 @@ COX-1, COX-2 - PG합성 효소
 
 ## Urea(요소) - Uric Acid(요산)
 
-1. 단백질의 정상 해독 과정
+<span class="title">1. 단백질의 정상 해독 과정</span>
 
-   - <span class="substance">protein</span> -> <span class="interaction">metabolism</span> -> <span class="substance">ammonia(byproduct)</span> -> <span class="organ">liver</span> -> <span class="interaction">urea cycle</span> -> <span class="substance">urea</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+- <span class="substance">protein</span> -> <span class="interaction">metabolism</span> -> <span class="substance">ammonia(byproduct)</span> -> <span class="organ">liver</span> -> <span class="interaction">urea cycle</span> -> <span class="substance">urea</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
 
-2. 신장 기능 저하로 인한 위험
+<span class="title">2. 신장 기능 저하로 인한 위험</title>
 
-   - <span class="substance">ammonia</span> -> <span class="interaction">accumulation</span> -> <span class="disease">encephalopathy(간성혼수)</span>
+- <span class="substance">ammonia</span> -> <span class="interaction">accumulation</span> -> <span class="disease">encephalopathy(간성혼수)</span>
+
+<hr />
 
 - 단백질은 몸에서 `대사(metabolism)`를 통해 `암모니아(ammonia)`를 `부산물(byproduct)`로써 생성한다.
 
@@ -156,13 +158,15 @@ COX-1, COX-2 - PG합성 효소
 
 - ammonia가 배출되지 못하고 혈액에 축적되면 `간성혼수(encephalopathy)`가 발병될 확률이 높아진다.
 
-1. <span class="title">퓨린(purine)의 정상적인 해독 과정</span>
+<span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
 
-   - <span class="substance">purine</span> -> <span class="organ">liver</span> -> <span class="substance">uric acid</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+- <span class="substance">purine</span> -> <span class="organ">liver</span> -> <span class="substance">uric acid</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
 
-2. <span class="title">요산(uric acid) 축적에 따른 위험</span>
+<span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
 
-   - <span class="substance">uric acid</span> -> <span class="disease">gout(통풍)</span>
+- <span class="substance">uric acid</span> -> <span class="disease">gout(통풍)</span>
+
+<hr />
 
 - 퓨린을 섭취하면 간에서 대사를 통해 요산(uric acid)을 배출한다.
 
@@ -176,15 +180,17 @@ COX-1, COX-2 - PG합성 효소
 
 ## Estrogen metabolism
 
-1. <span class="title">estrogen의 정상 해독 과정</span>
+<span class="title">1. estrogen의 정상 해독 과정</span>
 
-   - <span class="substance">estrogen</span> -> <span class="organ">CYP1A1 / CYP1B1</span> -> <span class="interaction">hydroxylation</span> -> <span class="substance">2/4-hydroxyestrogen</span> -> <span class="organ">COMT</span> -> <span class="interaction">methylation</span> -> <span class="substance">2/4-methoxyestrogen</span> -> <span class="interaction">대/소장 배출</span>
+- <span class="substance">estrogen</span> -> <span class="organ">CYP1A1 / CYP1B1</span> -> <span class="interaction">hydroxylation</span> -> <span class="substance">2/4-hydroxyestrogen</span> -> <span class="organ">COMT</span> -> <span class="interaction">methylation</span> -> <span class="substance">2/4-methoxyestrogen</span> -> <span class="interaction">대/소장 배출</span>
 
-   - <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">glutathione</span> -> <span class="interaction">결합</span> -> <span class="interaction">대/소장 배출
+- <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">glutathione</span> -> <span class="interaction">결합</span> -> <span class="interaction">대/소장 배출
 
-2. <span class="title">estrogen의 비정상 해독 과정</span>
+<span class="title">2. estrogen의 비정상 해독 과정</span>
 
-   - <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">DNA</span> -> <span class="interaction">결합</span> -> <span class="substance">DNA adduct</span> -> <span class="disease">carginogenecity(발암성)</span>
+- <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">DNA</span> -> <span class="interaction">결합</span> -> <span class="substance">DNA adduct</span> -> <span class="disease">carginogenecity(발암성)</span>
+
+<hr />
 
 - 일반적으로 신체에 주로 존재하는 에스트로겐은 세 가지 종류가 있다.
 
@@ -212,13 +218,13 @@ COX-1, COX-2 - PG합성 효소
 
 - **Methylation**
 
-   - 메틸화는 `메틸기(methyl radical / CH3)`를 붙이는 과정이다.
+  - 메틸화는 `메틸기(methyl radical / CH3)`를 붙이는 과정이다.
 
-   - 수산화된 hydroxyestrogen은 `COMT(Catechol - O - methyltransferase)` 효소를 통해 methylation과정을 거친다.
+  - 수산화된 hydroxyestrogen은 `COMT(Catechol - O - methyltransferase)` 효소를 통해 methylation과정을 거친다.
 
-    - `COMT는 말그대로 Catechol구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.`
+  - `COMT는 말그대로 Catechol구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.`
 
-   - 2/4-hydroxyestrogen -> COMT(methylation) -> 2/4-methoxyestrogen
+  - 2/4-hydroxyestrogen -> COMT(methylation) -> 2/4-methoxyestrogen
 
 - 메틸화까지 완료된 estrogen은 자연적으로 배출이 된다.
 
@@ -233,3 +239,48 @@ COX-1, COX-2 - PG합성 효소
 - 하지만 우리는 이 과정을 `glutathione`의 도움을 받아 회피 할 수 있다.
 
 - quinone은 또한 glutathione과 결합해 해독 과정을 거친다음 안전하게 배출이 된다.
+
+## Mercury Poisoning - 수은 중독
+
+- 몸의 항산화 기능을 위해서 glutathione의 역할이 중요하다.
+
+- `glutathione peroxidase(GPx)` 효소에 존재하는 `Selenocysteine(Sec)`이라는 아미노산에 `셀레늄(Se)`이 있는데, 이 부분이 항산화 기능의 핵심 부분이다.
+
+- `수은은 셀레늄과 결합성이 매우 강하기 때문에` 수은이 체내로 들어오게 되면 셀레늄과 결합하여 항산화 기능이 제대로 발현되지 않는다.
+
+- 수은(Hg)은 자연에서 `무기 수은(Hg`<sup>`2+`</sup>`)` 형태로 존재하는데 `생물 농축(bioaccumulation)`, `생물 증폭(biomagnification)`을 통해 `메틸 수은(CH`<sub>`3`</sub>`Hg`<sup>`+`</sup>`)` 형태로 체내에 들어온다.
+
+<hr />
+
+<span class="title">1. Glutathione의 정상적인 항산화 과정</span>
+
+- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> -> <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-OH)</span>
+
+- <span class="substance">2GSH + <span class="organ">GPx(Sec-OH) -> <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
+
+- <span class="substance">GSSG, NADPH, H<sup>+</sup> + <span class="organ">GSR -> <span class="substance">2GSH + <span class="substance">NADP<sup>+</sup>
+
+<span class="title">2. 수은으로 인한 셀레늄 결핍 과정</span>
+
+- <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> -> <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
+
+- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> -> <span class="substance">HgSe, CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
+
+<hr />
+
+- `GPx - Glutathione Peroxidase`
+
+- `Sec - Selenocysteine`
+
+- `GSH - Reduced Glutathione`
+
+- `GSSG - Oxidized Glutathione(Disulfie)`
+
+- `GSR - Glutathione-disulfide reductase`
+
+- `NADP - Nicotine Adenine Dinucleotide Phosphane H(Reduced)`
+
+- `ROH(알코올) - Alkyl group + OH`
+
+<hr />
+
