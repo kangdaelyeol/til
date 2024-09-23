@@ -285,3 +285,19 @@ COX-1, COX-2 - PG합성 효소
 - `SeOH - Selenenic acid`
 
 <hr />
+
+- 활성산소종(ROS)은 `산화적 스트레스`를 발생시키는데, 이는 몸에 좋지 않다.
+
+- GPx효소는 `Sec(Selenocysteine)`이라는 특이한 `아미노산`을 가지고 있는데, 여기서 셀레늄이 항산화 기능에 중요한 역할을 한다.
+
+  - ROS는 주로 **과산화물(H<sub>2</sub>O<sub>2</sub>)** 또는 **유기 과산화물(ROOH)** 형태로 존재하는데, 이들과 만나 Sec의 셀레늄(Se)이 `SeOH(selenenic acid)`로 `산화` 되면서 과산화물을를 물과 알코올로 `환원`시킨다.
+
+  - SeOH를 가진 GPx의 Sec는 두 개의 `GSH(Reduced Glutathione)`과 반응하여 다시 `환원형(Sec-H)`으로 돌아가는데, 여기서 두 GSH는 GSSG(Oxidized Glutathione)로 산화 된다.
+
+  - 산화된 glutathione(GSSG)은 `GSR(Glutathione-disulfide reductase)`이라는 효소와 환원형인 `NADPH` 조효소와 함께 반응해서 다시 환원형 glutathione(GSH)으로 전환된다. 이렇게 항산화 사이클을 형성한다.
+
+- 수은은 셀레늄과 강한 결합성을 가지고 있기 때문에 체내로 오게 되면 셀레늄과 결합해서 항산화 시스템 균형을 잃게 만든다.
+
+  - 메틸 수은 **(CH<sub>3</sub>Hg<sup>+</sup>)** 은 환원형 Sec와 반응해서 항산화 기능을 상실한 상태인 **GPx(SecHgCH<sub>3</sub>)** 로 전환된다.
+
+  - 기능을 상실한 효소는 GSH와 반응해서 **Hg-Se** 복합체와 **CH<sub>3</sub>SH(methanethiol)** 로 분해되어 배출이 될 수 있다. 이 과정에서 GSH는 GSSG로 산화된다.
