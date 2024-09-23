@@ -254,9 +254,9 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. Glutathione의 정상적인 항산화 과정</span>
 
-- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> -> <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-OH)</span>
+- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> -> <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
 
-- <span class="substance">2GSH + <span class="organ">GPx(Sec-OH) -> <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
+- <span class="substance">2GSH + <span class="organ">GPx(Sec-SeOH) -> <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
 
 - <span class="substance">GSSG, NADPH, H<sup>+</sup> + <span class="organ">GSR -> <span class="substance">2GSH + <span class="substance">NADP<sup>+</sup>
 
@@ -282,5 +282,6 @@ COX-1, COX-2 - PG합성 효소
 
 - `ROH(알코올) - Alkyl group + OH`
 
-<hr />
+- `SeOH - Selenenic acid`
 
+<hr />
