@@ -21,9 +21,29 @@ echo "hoonsletter application service started. PID: $(cat hoonsletter-app.pid)"
 
 ### export
 
-- 환경 변수를 설정한다.
+- 환경 변수를 설정하는데, `자식 프로세스`도 참조할 수 있게 한다.
 
 - `single quote`로 값을 감싸서 값 안에 특수문자를 텍스트로 해석되게 한다.
+
+```sh
+export LOCAL_DB_URL='DB_URL'
+export LOCAL_DB_USERNAME='username'
+export LOCAL_DB_PASSWORD='password'
+
+JAR_PATH='/home/ubuntu/hoonsletter/hoonsletter_back_springboot-0.0.1-SNAPSHOT.jar'
+```
+
+- export를 사용하지 않은 경우 해당 셸에서만 참조 가능한 변수가 된다.
+
+- `자식 프로세스`
+
+  - 현재 셸을 통해 실행된 프로세스는 모두 자식 프로세스가 된다.
+
+  - 하지만 sudo명령어로 생성된 root shell은 자신의 기본 환경변수 정보를 기반으로 `환경변수를 새로 설정`하기 때문에 기존에 공유된 환경변수는 보존될 수 없다고 한다.
+
+  - 그래서 sudo를 통해 root shell을 실행할 때는 `-E` 옵션을 사용해야 환경변수가 보존된다고 한다.
+
+    - `-E`: preserve environment
 
 - 만약 값에 특수 문자, `$`기호를 써서 스크립트 안에 설정해둔 변수에 접근 할 경우 `double quote`를 사용한다.
 
@@ -85,7 +105,7 @@ sudo -E nohup java -jar $JAR_PATH > $LOG_FILE 2>&1 &
 
 - `nohup / &(background run)`
 
-  -  일반적으로 nohup과 &(background run) 명령어를 같이 실행한다.
+  - 일반적으로 nohup과 &(background run) 명령어를 같이 실행한다.
 
   - nohup만 사용하는 경우 터미널 종료와 관계 없이 실행하지만 `terminal session이 차단된다.` 즉 해당 프로세스가 background가 아닌 `foreground에서 실행`되기 때문에 터미널 세션을 반환받지 못한다.
 
