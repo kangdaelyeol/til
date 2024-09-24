@@ -55,24 +55,45 @@ echo "hoonsletter application service started. PID: $(cat hoonsletter-app.pid)"
 
   - 각 sudo명령어는 `순차적으로` 처리된다.
 
-- nohup(no hang up)을 사용한 경우
+<hr />
 
-  - spring 프로젝트를 백그라운드에서 실행하기 위해 nohup 명령어를 사용했다.
+### nohup
 
-  ```sh
-  sudo -E nohup java -jar $JAR_PATH > $LOG_FILE 2>&1 &
-  ```
+- `no hang up`: 터미널 종료와 무관하게 해당 프로세스를 유지
 
-  - 이를 통해 `nohup process`를 실행시키고 여기서 spring 서버를 실행시킨다.
+- spring 프로젝트를 현제 터미널과 무관하고, 백그라운드에서 실행하기 위해 nohup 명령어를 사용했다.
 
-  - 셸 스크립트에서 spring 서버가 실행되는 pid를 저장하도록 했는데 여기서 막히는 부분이 있었다.
+```sh
+sudo -E nohup java -jar $JAR_PATH > $LOG_FILE 2>&1 &
+```
 
-  ```sh
-  echo $! > hoonsletter-app.pid
-  echo "hoonsletter application service started. PID: $(cat hoonsletter-app.pid)"
-  ```
+- `$JAR_PATH > $LOG_FILE`
 
-  - 실제 서버의 pid가 echo될 줄 알았는데, sudo로 실행된 루트 셸의 pid가 저장되어 있었다.
+  - jar을 실행, 즉 springboot app을 실행시키고 해당 app에서 나오는 출력 결과를 log file에 입력한다.
+
+- `2>&1 &`
+
+  - `2` - stderr
+
+  - `&1` - stdout(redirect)
+
+  - 즉 stderr에 대한 정보도 표준 출력(stdout)으로 redirect하겠다는 의미다.
+
+  - 마지막 `&` - background실행
+
+  - `background`에서 명령어를 실행하므로 바로 `terminal session`을 반환 받는다.
+
+- `nohup / &(background run)`
+
+  -  일반적으로 nohup과 &(background run) 명령어를 같이 실행한다.
+
+  - nohup만 사용하는 경우 터미널 종료와 관계 없이 실행하지만 `terminal session이 차단된다.` 즉 해당 프로세스가 background가 아닌 `foreground에서 실행`되기 때문에 터미널 세션을 반환받지 못한다.
+
+  - & 만 사용하는 경우 background에서 프로세스가 실행되어 terminal session을 반환 받지만, 터미널이 종료되면 해당 프로세스도 같이 종료된다.
+
+  - 따라서 같이 실행한다.
+
+- 이를 통해 `nohup process`를 `background`에서 실행시키고 여기서 spring 서버를 실행시킨다.
 
 <hr />
 
@@ -86,7 +107,23 @@ echo "hoonsletter application service started. PID: $(cat hoonsletter-app.pid)"
 
   - -i 옵션을 사용해 포트에 할당된 pid를 확인할 수 있다.
 
-  - 보통 springboot app을 실행시키면 할당되는 8080포트를 확인하면 실제 springboot app의 pid를 확인 할 수 있었다.
+- 셸 스크립트에서 spring 서버가 실행되는 pid를 저장하도록 했는데 여기서 막히는 부분이 있었다.
+
+```sh
+echo $! > hoonsletter-app.pid
+echo "hoonsletter application service started. PID: $(cat hoonsletter-app.pid)"
+```
+
+- 실제 springboot app의 pid가 echo될 줄 알았는데, sudo로 실행된 루트 셸의 pid가 저장되어 있었다.
+
+- 보통 springboot app을 실행시키면 할당되는 8080포트를 확인하면 실제 springboot app의 pid를 확인 할 수 있었다.
+
+```sh
+sudo lsof -i :8080
+
+# 실행결과
+#  - springboot app의 pid
+```
 
 <hr />
 
@@ -106,9 +143,9 @@ echo "hoonsletter application service started. PID: $(cat hoonsletter-app.pid)"
 pgrep -f "java -jar"
 
 # 실행 결과
-20096
-20098
-20099
+20096 # root shall pid
+20098 # nohup process pid
+20099 # springboot app pid
 ```
 
 - 결론적으로 springboot app을 백그라운드에서 실행되기 위해 세 개의 프로세스를 실행했던 것이다
@@ -122,4 +159,3 @@ pgrep -f "java -jar"
 - 스크립트에서 `$!`는 마지막으로 실행된 프로세스의 pid를 의미하는데, 여기서 `$!`는 `root shell의 pid`를 저장하고 있었고, root shell에서 nohup process, 그 안에서 최종적으로 springboot app을 실행한 것.
 
 - kill명령어로 springboot app이 아닌 root shell의 pid를 지정하고 프로세스를 종료해도 세 개의 프로세스가 연쇄적으로 종료되는 것을 확인할 수 있었다.
-
