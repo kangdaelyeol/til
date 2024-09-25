@@ -301,3 +301,49 @@ COX-1, COX-2 - PG합성 효소
   - 메틸 수은 **(CH<sub>3</sub>Hg<sup>+</sup>)** 은 환원형 Sec와 반응해서 항산화 기능을 상실한 상태인 **GPx(SecHgCH<sub>3</sub>)** 로 전환된다.
 
   - 기능을 상실한 효소는 GSH와 반응해서 **Hg-Se** 복합체와 **CH<sub>3</sub>SH(methanethiol)** 로 분해되어 배출이 될 수 있다. 이 과정에서 GSH는 GSSG로 산화된다.
+
+## Thyroid gland - Mercury
+
+- 수은은 갑상선 호르몬 균형을 무너뜨린다.
+
+- 갑상선에서 분비되는 호르몬은 우리 몸의 `항상성(homeostasis)`을 유지 한다.
+
+<hr />
+
+<span class="title">1. HPT axis</span>
+
+- <span class="organ">Hypothalamus</span> -> <span class="substance">TRH</span> -> <span class="organ">Pituitary gland</span> -> <span class="substance">TSH</span> -> <span class="organ">Thyroid gland</span> -> <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
+
+<span class="title">2. 탈아이오딘화 효소와의 상호작용</span>
+
+- <span class="substance">T4</span> -> <span class="organ">D1 / D2</span> -> <span class="substance">T3</span>
+
+- <span class="substance">rT3</span> -> <span class="organ">D1</span> -> <span class="substance">T2</span>
+
+- <span class="substance">T4</span> -> <span class="organ">D3</span> -> <span class="substance">rT3</span>
+
+- <span class="substance">T3</span> -> <span class="organ">D3</span> -> <span class="substance">T2</span>
+
+<hr />
+
+- `TRH - Thyrotropin Releasing Hormone: 갑상선 자극 호르몬 방출 호르몬`
+
+- `TSH - Thyroid Stimulating Hormone: 갑상선 자극 호르몬`
+
+- `D - Deiodinase: 탈아이오딘화 효소`
+
+- `T3 - Triiodothyronine`
+
+- `T4 - Thyroxine`
+
+<hr />
+
+- `T3(Triiodothyrodine)` 호르몬은 우리 몸의 기능을 조절하는데 중요한 역할을 한다.
+
+- `Deiodinase 효소`는 thyroid hormone 활성화의 균형을 맞추는 역할을 하고, 호르몬 분비는 HPT axis에 의해 조절된다.
+
+- `수은(Mercury)`은 갑상선 호르몬 균형을 유지하려는 효소인 `탈아이오딘화 효소(Deiodinase)`의 `selenoprotein`과 결합해 효소 기능을 무력화시켜 호르몬 균형을 무너뜨린다.
+
+- 특히 `D2(Deiodinase Type 2)`는 보통 뇌하수체에 존재하는데, D2기능이 저하되면 T4를 T3로 전환시키는 기능이 저하되어 T3가 결핍이된다. 그래서 뇌하수체는 이를 인지해 TSH를 많이 분비하게 되는데, 이는 갑상선에 무리를 줄 수 있고, 결과적으로 혈중 호르몬 농도를 증가 시킨다. 이러한 경우 `Hyperthyrodism(갑상선 기능 항진증)`으로 이어진다.
+
+- 이러한 호르몬 과다분비는 결과적으로 `Pituitary gland`와 `Thyroid gland`에 무리를 주기 때문에 `TSH`분비, `Thyroid hormone`분비 저하로 이어질 수 있다. 이러한 경우 `Hypothyrodism(갑상선 기능 저하증)`으로 이어진다.
