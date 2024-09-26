@@ -347,3 +347,43 @@ COX-1, COX-2 - PG합성 효소
 - 특히 `D2(Deiodinase Type 2)`는 보통 뇌하수체에 존재하는데, D2기능이 저하되면 T4를 T3로 전환시키는 기능이 저하되어 T3가 결핍이된다. 그래서 뇌하수체는 이를 인지해 TSH를 많이 분비하게 되는데, 이는 갑상선에 무리를 줄 수 있고, 결과적으로 혈중 호르몬 농도를 증가 시킨다. 이러한 경우 `Hyperthyrodism(갑상선 기능 항진증)`으로 이어진다.
 
 - 이러한 호르몬 과다분비는 결과적으로 `Pituitary gland`와 `Thyroid gland`에 무리를 주기 때문에 `TSH`분비, `Thyroid hormone`분비 저하로 이어질 수 있다. 이러한 경우 `Hypothyrodism(갑상선 기능 저하증)`으로 이어진다.
+
+## Inorganic Arsenic (무기 비소)
+
+- 특히 `해조류`에 많이 존재하는 무기 비소는 우리 몸에 좋지 않다.
+
+- `유기 비소`는 수용성이 있어 빠르게 몸에서 배출되어 심각한 독성을 띄지 않는데, 무기 비소는 지용성 독소이기 때문에 몸에서 배출되기 쉽지 않다.
+
+- 무기 비소는 `mitochondion` 기능 장애를 유발한다.
+
+<hr />
+
+<span class="title">무기 비소가 mitochondrion에 미치는 영향
+
+- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="interaction">ETC영향</span> -> <span class="interaction">ATP 생성 감소 / ROS 증가</span> -> <span class="interaction">막 투과성 증가</span> -> <span class="interaction">PTP 개방</span>
+
+- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="disease">mtDNA 직접적인 손상</span> -> <span class="interaction">PTP개방</span>
+
+- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="interaction">세포 내 칼슘 농도 높임</span> -> <span class="disease">막 전위 붕괴</span> -> <span class="interaction">PTP개방</span>
+
+<hr />
+
+ - `PTP - permeability transition pore - (mitochondrion)투과성 전이공`
+
+<hr />
+
+- inorganic arsenic은 mitochondrion의 기능을 저하시킨다.
+
+- mitochondrion의 기능이 저하되면 ATP생성에 지장이 생기며, 이는 곧 에너지 대사에 심각한 영향을 미친다. 여러모로 좋지 않다.
+
+- 또한 여러 루트를 통해 `PTP`를 개방하게 되는데, 이를 통해 `ETC`에서 중요한 역할을 하는 `Cytochrome C`라는 단백질이 세포질로 방출이 된다.
+
+- <span class="interaction">PTP개방</span> -> <span class="interaction">Cytochrome C 세포질 방출</span> -> <span class="interaction">caspase 효소군 활성화</span> -> <span class="disease">apoptosis</span>
+
+- Cytochorome C 는 `Complex3(Coenzyme Q) 복합체`에서 `Complex4 복합체(Cytochrome C oxidase)` 로 전자를 전달하는 역할을 한다.
+
+- 이를 통해서 ATP 합성 과정에 굉장히 중요한 역할을 하는데, `막간(intermembrance)`에서 세포질로 방출이 되면서 ATP 생성 저하가 되는 것.
+
+- 또한 Cytochrome C 단백질은 세포질로 방출이 되면 `caspase 효소군`을 활성화 한다. caspase효소군은 `세포 자살(apoptosis)`에 중요한 역할을한다.
+
+- 즉 mitochondrion 밖에서의 Cytochrome C는 세포의 자살 경로를 활성화한다.
