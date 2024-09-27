@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: url('./images/bg.jpg') center/cover no-repeat;
+	background-attachment: fixed;
+}
+
+.character_box {
+	margin: 50px auto;
+	max-width: 850px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.character {
+	width: 84px;
+	height: 80px;
+	border: 3px solid white;
+	background-color: gray;
+	border-radius: 10px;
+	transform: skewX(-15deg);
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.1s, background-color 0.5s;
+	margin: 5px;
+}
+
+.character:hover {
+	transform: scale(1.15) skewX(-15deg);
+	background-color: bisque;
+}
+
+.character_image {
+	width: 140%;
+	height: 100%;
+	background: url('./images/hero1.png') center/cover no-repeat;
+	background-size: 90px;
+	transform: skewX(15deg) translateX(-16px);
+}
+
+.logo {
+	background: url('./images/logo_overwatch.png') center/contain no-repeat;
+	max-width: 1000px;
+	min-height: 400px;
+	margin: 0 auto;
+}
