@@ -473,3 +473,4 @@ COX-1, COX-2 - PG합성 효소
 - Glyphosate는 식물에서 [aromatic amino acid](https://en.wikipedia.org/wiki/Aromatic_amino_acid) 생성을 위한 7과정의 [shikimate pathway](https://en.wikipedia.org/wiki/Shikimate_pathway)중 [EPSP syntase](https://en.wikipedia.org/wiki/EPSP_synthase)라는 효소의 기능을 저하해 아미노산 합성을 방해해 식물을 죽게 한다.
 
 - 하지만 이는 제초제라 농작물도 죽게 하지만 `GMO` 개발로 `Roundup free` 농작물이 있다.
+
