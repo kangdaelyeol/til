@@ -463,3 +463,13 @@ COX-1, COX-2 - PG합성 효소
     - BPS - sulphonyldiphenol - **sulfony(SO<sub>2</sub>)구조**
 
   - BPF, BPS는 현재 연구상 위험성이 확실하게 밝혀지지는 않았지만, 그렇다고 안전하다고 할 수 없다. 더욱 연구가 필요한 물질이라고 한다.
+
+## 농약 - herbicide
+
+- 보통 미국 같은데에서 옥수수를 재배하기 직전 `Roundup`이라는 제초제를 사용하는데, 좀 많이 사용한다.
+
+- Roundup은 사실 상표, 브랜드 명이다. 이 회사에서는 `Glyphosate-based herbicide`를 제조하는데, 이는 몸에 좋지 않다고 한다.
+
+- Glyphosate는 식물에서 [aromatic amino acid](https://en.wikipedia.org/wiki/Aromatic_amino_acid) 생성을 위한 7과정의 [shikimate pathway](https://en.wikipedia.org/wiki/Shikimate_pathway)중 [EPSP syntase](https://en.wikipedia.org/wiki/EPSP_synthase)라는 효소의 기능을 저하해 아미노산 합성을 방해해 식물을 죽게 한다.
+
+- 하지만 이는 제초제라 농작물도 죽게 하지만 `GMO` 개발로 `Roundup free` 농작물이 있다.
