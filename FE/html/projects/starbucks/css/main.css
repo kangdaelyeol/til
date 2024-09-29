@@ -17,6 +17,7 @@ header {
 	height: 120px;
 	border: 0.3px solid rgba(0, 0, 0, 0.3);
 	min-width: 1000px;
+	z-index: 10;
 }
 
 header .content {
@@ -207,6 +208,8 @@ header .content .logo {
 	right: 12px;
 }
 
+/* Header - badge */
+
 .badge {
 	overflow: hidden;
 	border-radius: 10px;
@@ -215,4 +218,93 @@ header .content .logo {
 
 .badge img {
 	display: block;
+}
+
+/* Visual section */
+
+.visual {
+	position: relative;
+	overflow: hidden;
+	top: 120px;
+	height: 646px;
+	min-width: 1200px;
+}
+
+.visual > * {
+	position: absolute;
+	display: block;
+}
+
+.visual .bg {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.img_set {
+	top: 100px;
+	left: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img_set .text_img {
+	margin-bottom: 15px;
+}
+
+.img_set .btn {
+	box-sizing: border-box;
+	width: 130px;
+	padding: 10px;
+	cursor: pointer;
+	border: 2px solid #592c18;
+	border-radius: 5px;
+	transition: all 0.25s;
+	text-align: center;
+}
+
+.img_set .btn a {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0 auto;
+	text-decoration: none;
+	color: #592c18;
+	transition: inherit;
+}
+
+.img_set .btn:hover {
+	background-color: #592c18;
+}
+
+.img_set .btn:hover a {
+	color: white;
+}
+
+.spoon_img,
+.food_img1,
+.food_img2 {
+	bottom: 0;
+}
+
+.food_img1 {
+	right: 0;
+}
+
+.food_img2 {
+	right: 200px;
+}
+
+.spoon_img {
+	right: 450px;
+}
+
+.text_img1 {
+	top: 35px;
+	right: 220px;
+}
+
+.text_img2 {
+	bottom: 230px;
+	right: 450px;
 }
