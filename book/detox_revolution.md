@@ -474,3 +474,26 @@ COX-1, COX-2 - PG합성 효소
 
 - 하지만 이는 제초제라 농작물도 죽게 하지만 `GMO` 개발로 `Roundup free` 농작물이 있다.
 
+## Advanced Glycation end-product - 최종 당화 산물
+
+- 단백질과 지방이 당(sugar)와 함께 `비효소적 반응(non-enzymatic reaction)`을 거치면 최종 당화산물이 생성이 된다.
+
+  - [마이야르 반응(maillard reaction)](https://testbook.com/chemistry/maillard-reaction)이 대표적인 non-enzymatic reaction중 하나다.
+
+  - [캐러멜화(caramelization reaction)](https://en.wikipedia.org/wiki/Caramelization)도 비효소적 반응인데 당 성분이 오직 열에 의해서 browning되는 [열분해(pyrolysis)](https://en.wikipedia.org/wiki/Pyrolysis) 반응이다. 아미노산이 포함되어 반응하는 마이야르 반응과는 다른 메커니즘이다.
+
+  - 우리 몸에서도 자연스럽게 [당화 반응(Glycation)](https://en.wikipedia.org/wiki/Glycation)이 발생한다. 이는 자연스럽게 발생되며 `노화(aging)`와 연관이 있다.
+
+- AGEs는 `RAGE(Receptor)`와 반응해서 `노화(aging)`, `만성 질환(chronic condition, disease)`, `신경 독성(neurotoxicity)`을 일으키는데, `APOE`유전형에 따라 Alzheimer's disease와 연관성이 있다고 한다.
+
+- **APOE - Apolioprotein E genotype**
+
+  - [APOE](https://en.wikipedia.org/wiki/Apolipoprotein_E) 단백질은 우리 몸에서 `콜레스테롤, 지질(지방) 대사`에 관여한다.
+
+  - APOE를 생성하는 대표적인 세 가지의 대립 형질(allele)이 있는데, `APOE 4` 유전형을 가진 사람이 `AGEs`에 노출되면 `Alzheimer's disease`에 취약하다고 한다.
+
+  - 우리 몸에서 단백질 대사가 발생하면 부산물로 `B-amyloid`가 생긴다.
+
+  - 이렇게 쌓인 B-amyloid는 뇌에서 면역기능을 담당하는 [미세아교세포(microglia)](https://en.wikipedia.org/wiki/Microglia)에 의해 제거되어야 하는데, APOE4단백질은 그 기능을 방해한다.
+
+  - 제거 되지 못한 B-amyloid는 `plaque`형태로 쌓이는데, `염증반응(Inflammatory Response)`을 일으키고, `시냅스(synapse)`의 기능을 저하한다. 이는 결국 alzheimer로 이어진다.
