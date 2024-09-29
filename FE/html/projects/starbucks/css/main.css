@@ -200,3 +200,19 @@ header .content .logo {
 	color: #64a70b;
 	margin: 4px 0 14px;
 }
+
+.badge_box {
+	position: absolute;
+	top: 132px;
+	right: 12px;
+}
+
+.badge {
+	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.badge img {
+	display: block;
+}
