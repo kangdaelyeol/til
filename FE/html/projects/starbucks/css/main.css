@@ -444,3 +444,68 @@ header .content .logo {
 	flex-grow: 1;
 	margin-top: 10px;
 }
+
+/* Youtube Section */
+
+.youtube {
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+}
+
+.youtube > .video {
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.youtube > .video > .inner {
+	min-width: 1920px;
+	height: 1080px;
+}
+
+.youtube > .video > .inner > iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.youtube > .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 700px;
+	background: url('../images/video_cover_pattern.png');
+}
+
+.youtube > img {
+	position: absolute;
+}
+
+.youtube > .img1 {
+	position: absolute;
+	top: 40px;
+	left: 50px;
+	animation: float_img 4s ease-in-out infinite alternate-reverse;
+}
+
+.youtube > .img2 {
+	position: absolute;
+	top: 330px;
+	left: 200px;
+	animation: float_img 3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes float_img {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(30px);
+	}
+}
