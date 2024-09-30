@@ -474,7 +474,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 하지만 이는 제초제라 농작물도 죽게 하지만 `GMO` 개발로 `Roundup free` 농작물이 있다.
 
-## Advanced Glycation end-product - 최종 당화 산물
+## Advanced Glycation end-products - 최종 당화 산물
 
 - 단백질과 지방이 당(sugar)와 함께 `비효소적 반응(non-enzymatic reaction)`을 거치면 최종 당화산물이 생성이 된다.
 
@@ -497,3 +497,69 @@ COX-1, COX-2 - PG합성 효소
   - 이렇게 쌓인 B-amyloid는 뇌에서 면역기능을 담당하는 [미세아교세포(microglia)](https://en.wikipedia.org/wiki/Microglia)에 의해 제거되어야 하는데, APOE4단백질은 그 기능을 방해한다.
 
   - 제거 되지 못한 B-amyloid는 `plaque`형태로 쌓이는데, `염증반응(Inflammatory Response)`을 일으키고, `시냅스(synapse)`의 기능을 저하한다. 이는 결국 alzheimer로 이어진다.
+
+## liver
+
+- 간은 우리 몸의 독소를 해독하는데 매우 중요한 역할을 한다.
+
+- 우리 몸의 피는 무조건 간을 거쳐서 해독된다고 보면 된다.
+
+<hr />
+
+<span class="title">liver blood circulation</span>
+
+- <span class="organ">심장</span> -> <span class="substance">대동맥</span> -> <span class="substance">간동맥</span> -> <span class="organ">간</span> -> <span class="substance">간정맥</span> -> <span class="organ">심장</span>
+
+- <span class="organ">심장</span> -> <span class="substance">대동맥</span> -> <span class="organ">소화기관</span> -> <span class="substance">간문맥</span> -> <span class="organ">간</span> -> <span class="substance">간정맥</span> -> <span class="organ">심장</span>
+
+<span class="title">간이 독소를 해독하는 과정</span>
+
+- <span class="substance">독소</span> -> <span class="interaction">functionalization(phase 1)</span> -> <span class="substance">중간체(reactive metabolites)</span> -> <span class="interaction">Conjugation pathway(phase 2)</span> -> <span class="substance">water-soluble waste</span> -> <span class="interaction">배출 단계(phase 3)</span>
+
+<hr />
+
+- 지용성 독소는 간을 거쳐 최종적으로 몸에서 배출할 수 있는 형태의 수용성(soluble) 독소로 변환이 되어야 하며, 이 과정은 간에서 진행이 된다.
+
+- 지용성 독소는 간에서 총 3가지 단계를 거쳐서 수용성으로 배출이 된다.
+
+- **Phase 1 - functionalization / 변환 단계**
+
+  - 지용성 독소는 간에서 지용성 독소를 `CYP 효소`에 의해 중간체로 변한다.
+
+  - 이 과정에서 `비타민 B군`이 사용된다.
+
+  - 변환된 `중간체(intermediate metabolite)`는 `반응성이 매우 높은` 대사산물(reactive metabolite)로 독성이 강하다. 그래서 이 물질을 빠르게 Phase 2에서 결합을 거처야 한다.
+
+- **Phase 2 - Conjugation / 결합 단계**
+
+  - phase 1을 거쳐 생성된 reactive metabolism에 친수성 물질을 결합하는 과정을 거친다.
+
+  - 독소와 결합할 수 있는 여러가지 방법, 물질이 존재한다. 그래서 결합하는 경로도 여러가지다.
+
+    - **Glutathione Conjugation**: glutathione과 결합
+
+    - **Amino acid Conjugation**: 아미노산과 결합
+
+    - **Glucuronidation**: glucuronic acid(글루크론산)과 결합
+
+    - **surfation(황산화)**: 황산염(sulfate)과 결합
+
+    - **methylation**: 메틸기(Methyl group)와 결합
+
+    - **acetylation**: 아세틸기(Acetyl group)와 결합
+
+- **Phase 3 - 배출 단계**
+
+  - 배출 단계를 Phase 3라 따로 두지 않고, 독립적인 과정으로 설명하거나, 포함하거나, phase2에 포함시키는 설명이 있어 혼동이 왔지만, 나는 phase 3 이라 하겠다.
+
+  - Phase 2를 통해 해독된 독소는 `수용성(water-soluble)`을 가지게 되어 배출될 수 있는 형태가 된다.
+
+  - 독소는 각각 형태에 따라 `담즙(bile)`을 통해 대장으로 배출 되거나, `신장(kidney)`을 통해 소변으로 배출이 된다.
+
+- 우리는 간의 해독 시스템 보존에 신경써야 한다.
+
+- 우리가 먹는 약은 간에 무리를 준다고만 알려져있지만, 간 기능이 정상적이어야 약효를 볼 수 있다.
+
+  - `간에서 해독되어야 활성상태`를 띄어 약효를 볼 수 있는 약도 있다. 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
+
+  - 약을 먹었을 때 간기능이 안좋아서 해독을 재때 못해 약효를 예상보다 많이 받아 부작용을 일으키는 경우도 있다.
