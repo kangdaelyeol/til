@@ -558,3 +558,55 @@ header .content .logo {
 	color: #fff;
 	background-color: #333;
 }
+
+/* Reserve-coffee Section */
+
+.reserve-coffee {
+	background-image: url('../images/reserve_bg.jpg');
+	display: flex;
+	overflow: hidden;
+}
+
+.reserve-coffee > .content {
+	display: flex;
+	align-items: center;
+	min-width: 1100px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.reserve-coffee > .content > .logo {
+	margin-right: 50px;
+}
+
+.reserve-coffee > .content > .description_box {
+	display: flex;
+	flex-direction: column;
+}
+
+.reserve-coffee > .content > .description_box > img {
+	margin-bottom: 10px;
+}
+
+.reserve-coffee > .content > .description_box > button {
+	all: unset;
+	width: 130px;
+	padding: 10px;
+	border: 2px solid #333;
+	border-radius: 4px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	display: block;
+	transition: 0.4s;
+	color: #d9aa8a;
+	border-color: #d9aa8a;
+}
+
+.reserve-coffee > .content > .description_box > button:hover {
+	color: fff;
+	background-color: #d9aa8a;
+}
