@@ -22,6 +22,11 @@ body {
 	transition: 0.4s;
 }
 
+.btn:hover {
+	color: #fff;
+	background-color: #333;
+}
+
 /* Header Section */
 
 header {
@@ -611,4 +616,63 @@ header .content .logo {
 .pick-your-favorite > .content button:hover {
 	background-color: white;
 	color: #333;
+}
+
+/* Reserve Store Section */
+
+.reserve-store {
+	background: url('../images/reserve_store_bg.jpg') center/cover no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	padding: 200px;
+}
+
+.reserve-store > .medal {
+	position: relative;
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	perspective: 400px;
+}
+
+.reserve-store > .medal:hover > div:first-child {
+	transform: rotateY(180deg);
+}
+
+.reserve-store > .medal:hover > div:last-child {
+	transform: rotateY(360deg);
+}
+
+.reserve-store > .medal > div {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: 1s;
+	backface-visibility: hidden;
+}
+
+.reserve-store > .medal > div:first-child {
+	width: 200px;
+	height: 200px;
+	top: 50px;
+	left: 50px;
+}
+
+.reserve-store > .medal > div:last-child {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform: rotateY(180deg);
+}
+
+.reserve-store > .medal > div:last-child > .btn {
+	position: absolute;
+	bottom: 30px;
 }
