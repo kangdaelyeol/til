@@ -676,3 +676,56 @@ header .content .logo {
 	position: absolute;
 	bottom: 30px;
 }
+
+/* Find Store Section */
+.find-store {
+	background: url('../images/find_store_bg.jpg') center/cover no-repeat;
+	display: flex;
+}
+
+.find-store > .content {
+	position: relative;
+	min-width: 1100px;
+	margin: 0 auto;
+	height: 400px;
+}
+
+.find-store > .content > .description_box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 540px;
+	margin-top: 120px;
+}
+
+.find-store > .content > .description_box > img {
+	margin-bottom: 25px;
+}
+
+.find-store > .content > img {
+	position: absolute;
+}
+
+.find-store > .content > .picture1,
+.find-store > .content > .picture2 {
+	border-radius: 50%;
+}
+
+.find-store > .content > .picture1 {
+	top: -50px;
+}
+
+.find-store > .content > .picture2 {
+	top: 150px;
+	left: 250px;
+}
+
+.find-store > .content > .texture1 {
+	top: 0;
+	left: 350px;
+}
+
+.find-store > .content > .texture2 {
+	bottom: 0;
+	right: 20px;
+}
