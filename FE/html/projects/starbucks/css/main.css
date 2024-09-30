@@ -6,6 +6,22 @@ body {
 	color: #333;
 }
 
+.btn {
+	all: unset;
+	width: 130px;
+	padding: 10px;
+	border: 2px solid #333;
+	border-radius: 4px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	display: block;
+	transition: 0.4s;
+}
+
 /* Header Section */
 
 header {
@@ -254,14 +270,8 @@ header .content .logo {
 }
 
 .img_set .btn {
-	box-sizing: border-box;
-	width: 130px;
-	padding: 10px;
-	cursor: pointer;
 	border: 2px solid #592c18;
 	border-radius: 5px;
-	transition: all 0.25s;
-	text-align: center;
 }
 
 .img_set .btn a {
@@ -412,20 +422,6 @@ header .content .logo {
 	flex-wrap: wrap;
 }
 
-.rewards > .button_box .btn {
-	all: unset;
-	box-sizing: border-box;
-	padding: 10px;
-	border: 2px solid #333;
-	border-radius: 4px;
-	color: #333;
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-	cursor: pointer;
-	transition: all 0.25s;
-}
-
 .rewards > .button_box .btn:hover {
 	background-color: #333;
 	color: white;
@@ -510,7 +506,7 @@ header .content .logo {
 	}
 }
 
-/* Season-product Section */
+/* Season Product Section */
 
 .season-product {
 	background-image: url('../images/season_product_bg.jpg');
@@ -538,28 +534,12 @@ header .content .logo {
 	margin-bottom: 20px;
 }
 
-.season-product > .content > .right > button {
-	all: unset;
-	width: 130px;
-	padding: 10px;
-	border: 2px solid #333;
-	border-radius: 4px;
-	color: #333;
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-	cursor: pointer;
-	box-sizing: border-box;
-	display: block;
-	transition: 0.4s;
-}
-
 .season-product > .content > .right > button:hover {
 	color: #fff;
 	background-color: #333;
 }
 
-/* Reserve-coffee Section */
+/* Reserve Coffee Section */
 
 .reserve-coffee {
 	background-image: url('../images/reserve_bg.jpg');
@@ -589,19 +569,6 @@ header .content .logo {
 }
 
 .reserve-coffee > .content > .description_box > button {
-	all: unset;
-	width: 130px;
-	padding: 10px;
-	border: 2px solid #333;
-	border-radius: 4px;
-	color: #333;
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-	cursor: pointer;
-	box-sizing: border-box;
-	display: block;
-	transition: 0.4s;
 	color: #d9aa8a;
 	border-color: #d9aa8a;
 }
@@ -609,4 +576,39 @@ header .content .logo {
 .reserve-coffee > .content > .description_box > button:hover {
 	color: fff;
 	background-color: #d9aa8a;
+}
+
+/* Pick Your favorite Section */
+
+.pick-your-favorite {
+	background: url('../images/favorite_bg.jpg') center/cover no-repeat;
+	background-attachment: fixed;
+	padding: 100px;
+}
+
+.pick-your-favorite > .content {
+	box-sizing: border-box;
+	width: 50%;
+	min-width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 250px;
+	margin-left: 150px;
+}
+
+.pick-your-favorite > .content > img {
+	display: block;
+	margin: 20px 0;
+}
+
+.pick-your-favorite > .content button {
+	margin-top: 20px;
+	color: white;
+	border-color: white;
+}
+
+.pick-your-favorite > .content button:hover {
+	background-color: white;
+	color: #333;
 }
