@@ -1,12 +1,13 @@
+// DOM Element
+const badgeBoxEl = document.querySelector('.badge_box')
+const toTopButtonEl = document.querySelector('.to_top')
+
 // BadgeBox State
 let badgeRequestFrameId = null
 let isBadgeHidden = false
 let badgeOpacity = 1
 const REDUCING_OPACITY_RATIO = 0.85
 const INCREASING_OPACITY_RATIO = 1.15
-
-const badgeBoxEl = document.querySelector('.badge_box')
-const toTopButtonEl = document.querySelector('.to_top')
 
 const hiddenBadge = () => {
     badgeOpacity *= REDUCING_OPACITY_RATIO
@@ -60,6 +61,8 @@ const activeBadgeBox = () => {
     }
 }
 
+// To Top Btn Action
+
 const activeToTopButton = () => {
     if (scrollY > 200) toTopButtonEl.classList.add('active')
     else toTopButtonEl.classList.remove('active')
@@ -71,6 +74,8 @@ const scrollToZero = () => {
         behavior: 'smooth',
     })
 }
+
+// Event Handler
 
 const onWindowScroll = (e) => {
     activeBadgeBox()
