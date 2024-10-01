@@ -960,3 +960,27 @@ footer > .content > .signiture_text {
 	padding: 10px;
 	margin-bottom: 20px;
 }
+
+/* To-top Button */
+
+.to_top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 35px;
+	right: 30px;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	border: 2px solid #fff;
+	color: #fff;
+	background-color: #333333;
+	cursor: pointer;
+	transition: all 0.4s;
+	transform: translateX(100px);
+}
+
+.to_top.active {
+	transform: translateX(0);
+}
