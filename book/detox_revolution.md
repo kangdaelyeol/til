@@ -563,3 +563,69 @@ COX-1, COX-2 - PG합성 효소
   - `간에서 해독되어야 활성상태`를 띄어 약효를 볼 수 있는 약도 있다. 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
 
   - 약을 먹었을 때 간기능이 안좋아서 해독을 재때 못해 약효를 예상보다 많이 받아 부작용을 일으키는 경우도 있다.
+
+## bile - 담즙의 중요성
+
+- 담즙은 우리가 먹은 음식을 소화하는데 매우 중요한 역할을 한다.
+
+- 담즙 제대로 분비가 되지 않으면 우리가 아무리 좋은 음식을 먹어도 의미가 없고, 오히려 흡수가 이루어지지 않아 다른 장내 세균에 의해 분해되어 유독성 물질로 변해 우리 몸에 축적이 될 수 있다.
+
+- 담즙은 `지방을 유화`시키고, `지용성 독소를 배출`하고, `스테로이드 호르몬을 배출`하는데 중요한 역할을 한다.
+
+- 담즙은 `담즙산(bile acid)`를 포함한 여러 물질이 있다. 여기서 소화에 중요한 역할을 하는 것이 bile acid다.
+
+<hr />
+
+<span class="title">담낭(gallbladder)에 쌓이는 담즙</span>
+
+- <span class="substance">cholesterol</span> -> <span class="organ">liver / CYP7A1(8B1)(27A1)</span> -> <span class="substance">bile acid</span> -> <span class="organ">gallbladder</span>
+
+- <span class="substance">cholesterol</span> -> <span class="organ">liver</span> -> <span class="organ">gallbladder</span>
+
+- <span class="substance">RBC</span> -> <span class="organ">liver</span> -> <span class="substance">bilirubin</span> -> <span class="organ">gallbladder</span>
+
+<hr />
+
+- cholesterol은 간에서 CYP효소에 의해 여러 경로를 거쳐 bile acid로 변환되어 담낭에 저장되는데, 과잉이 되면 콜레스테롤 그대로 담낭에 저장이 된다.
+
+  - `담낭에 콜레스테롤이 많고, 적절히 융해 되지 않으면 담석(gallstones)이 생길 수 있다.`
+
+- billirubin은 적혈구가 분해되어 최종적으로 변환된 `혈색소`인데, 이는 담즙에 포함된다. 이 색소 수치가 높으면 황달이라고 한다.
+
+- 이 외에도 `인지질(phospholipids)`등 담즙에 포함된 성분이 너무나도 많다.
+
+<hr />
+
+<span class="title">소장(small intestine)에서 영양분 흡수</span>
+
+`Duodenum(십이지장)에서의 작용`
+
+- <span class="substance">fat</span> -> <span class="substance">bile acid</span> -> <span class="interaction">emulsification</span> -> <span class="interaction">incresed digestive surface area</span> -> <span class="organ">Pancreas</span> -> <span class="substance">lipase</span> -> <span class="interaction">lipid hydrolysis</span> -> <span class="substance">fatty acid + monoglyceride (micelle)</span>
+
+`공장(Jejunum), 회장(Ileum)의 역할`
+
+- <span class="substance">micelle</span> -> <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> -> <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
+
+_Epthelial cells는 모든 부위의 상피세포를 뜻하는 포괄적인 의미_
+
+_Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. 그래서 entrocytes가 더 적절해 보인다._
+
+<hr />
+
+- 지방은 duedenum에서 분비된 bile acid에 의해 `emulsification(유화)`되어 `소화 표면적(digestive surface)`를 증가시킨다.
+
+- 유화된 지방은 췌장(pancreas)에서 분비된 lipase에 의해 `가수분해(hydrolysis)`되어 지방산(fatty acid)와 monoglyceride로 분해된다.
+
+- 분해된 지방산과 모노글리세라이드는 bile acid와 결합해 `micelle`형태로 존재하는데, 이는 Jejunum, Ileum의 `흡수 상피세포(Absorptive enterocyte)`에 가까워지면 담즙산이 `해리(dissocate)`되어 흡수된다.
+
+<hr />
+
+<span class="title">담즙 분비에 도움을 주는 올리브오일</span>
+
+- <span class="substance">olive oil(oleic acid)</span> -> <span class="organ">Duodenum / Jejunum</span> -> <span class="substance">CCK</span> -> <span class="organ">Gallbladder / Pancreas</span> -> <span class="substance">bile / lipase</span> -> <span class="organ">Duodenum</span>
+
+<hr />
+
+- 올리브 오일에 포함된 `oleic acid(올레산)`은 `단일 불포화 지방산(MUFA - Monounsaturated Fatty Acid)`로써 duodenum과 Jejunum을 자극해 상피세포에서 [CCK(cholecystokinin)](https://en.wikipedia.org/wiki/Cholecystokinin)을 분비하게 한다.
+
+- 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase분비를 촉진한다.
