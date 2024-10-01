@@ -729,3 +729,70 @@ header .content .logo {
 	bottom: 0;
 	right: 20px;
 }
+
+/* Awards Section */
+
+.awards {
+	display: flex;
+	justify-content: center;
+	background-color: #272727;
+	overflow: hidden;
+	padding: 30px 0;
+}
+
+.awards > .content {
+	display: flex;
+	align-items: center;
+	min-width: 1300px;
+}
+
+.awards > .content > button {
+	all: unset;
+	width: 42px;
+	margin: 0 auto;
+	height: 42px;
+	border: 2px solid #686868;
+	color: #686868;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+}
+
+.awards > .content > button.left {
+	margin-right: 40px;
+}
+
+.awards > .content > button.right {
+	margin-left: 40px;
+}
+
+.awards > .content > button:hover {
+	background-color: #686868;
+	color: #272727;
+}
+
+.awards > .content > .swiper {
+	width: 1100px;
+	min-width: 1100px;
+	overflow: hidden;
+	display: flex;
+	margin: 0 auto;
+}
+
+.awards > .content > .swiper > .slider {
+	display: flex;
+}
+
+.awards > .content > .swiper > .slider > .item {
+	width: 220px;
+	min-width: 220px;
+	display: flex;
+}
+
+.awards > .content > .swiper > .slider > .item > img {
+	height: 40px;
+	margin: 0 auto;
+}
