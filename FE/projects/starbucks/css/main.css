@@ -224,9 +224,14 @@ header .content .logo {
 }
 
 .badge_box {
-	position: absolute;
+	position: fixed;
 	top: 132px;
 	right: 12px;
+	transition: all 0.4s;
+}
+
+.badge_box.hidden {
+	opacity: 0;
 }
 
 /* Header - badge */
