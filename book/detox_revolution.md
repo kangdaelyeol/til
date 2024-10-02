@@ -629,3 +629,27 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 - 올리브 오일에 포함된 `oleic acid(올레산)`은 `단일 불포화 지방산(MUFA - Monounsaturated Fatty Acid)`로써 duodenum과 Jejunum을 자극해 상피세포에서 [CCK(cholecystokinin)](https://en.wikipedia.org/wiki/Cholecystokinin)을 분비하게 한다.
 
 - 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase분비를 촉진한다.
+
+## Enterohepatic Circulation - 장간 순환
+
+- 우리 몸에 있는 `담즙산(bile acid)`은 `enterohepatic circulation(장간 순환)`를 통해 `재사용` 된다.
+
+<hr />
+
+<span class="title">Entrohepatic circulation pathway</span>
+
+liver -> bile acid(secretion) -> gallbladder -> small intestine -> Ileum -> portal vein -> liver
+
+Ileum -> colon -> portal vein -> liver
+
+<hr />
+
+- 대부분 bile acid는(약 95%) 회장(Ileum)에서 사용되었다 `간문맥(hepatic portal vein)`을 통해 재흡수 된다.
+
+- 일부(5%)의 담즙산은 결장(colon)에서 재흡수 되거나 배출이 된다.
+
+- 결장에 있는 담즙산의 대부분은 `liver detoxification pathway`를 거쳐 해독된 수용성 독소와 결합된 상태로 있는데, 이 독소가 변비등 문제로 인해 다시 재흡수 되는 경우가 있다.
+
+- 또한 대장의 gur microbiota이 생성하는 `B-glucurondinase`라는 효소가 있는데, 이 효소는 해독된 독소의 `글루크론산 결합을 분해(glucuronidation)`해서 다시 재흡수 되는 경우도 있다고 한다.
+
+- 변비는 또한 대장에서 estrogen같은 `해독된 steroid hormone`이 재흡수를 일으켜 `호르몬 불균형(imbalance)`을 일으킬 가능성이 있다.
