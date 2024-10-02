@@ -18,6 +18,10 @@ const reserveCoffeeContentEl = document.querySelector(
     '.reserve-coffee .content'
 )
 
+const pickYourFavoriteContentEl = document.querySelector(
+    '.pick-your-favorite .content'
+)
+
 // BadgeBox State
 let badgeRequestFrameId = null
 let isBadgeHidden = false
@@ -83,7 +87,9 @@ const activeBadgeBox = () => {
 
 /* 
     Intersection Observer
-     - Season Product
+     - Season Product Section
+     - Reserve Coffee Section
+     - Pick Your Favorite Section
 */
 
 const intersectionObserver = new IntersectionObserver(
@@ -99,7 +105,11 @@ const intersectionObserver = new IntersectionObserver(
     }
 )
 
-const elList = [seasonProductContentEl, reserveCoffeeContentEl]
+const elList = [
+    seasonProductContentEl,
+    reserveCoffeeContentEl,
+    pickYourFavoriteContentEl,
+]
 
 elList.forEach((el) => {
     intersectionObserver.observe(el)
