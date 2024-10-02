@@ -24,6 +24,9 @@ const pickYourFavoriteContentEl = document.querySelector(
 
 const findStoreContentEl = document.querySelector('.find-store .content')
 
+const awardSliderEl = document.querySelector('.awards .content .swiper .slider')
+const awardSliderItemElList = awardSliderEl.querySelectorAll('.item')
+
 // BadgeBox State
 let badgeRequestFrameId = null
 let isBadgeHidden = false
@@ -31,7 +34,7 @@ let badgeOpacity = 1
 const REDUCING_OPACITY_RATIO = 0.7
 const INCREASING_OPACITY_RATIO = 1.15
 
-// Promotion Swiper state
+// Promotion Swiper state & action
 const SWIPER_ITEM_INTERVAL = 829
 let promotionSwiperTranslateX = SWIPER_ITEM_INTERVAL / 2
 let currentPromotionSwiperItemFocusIndex = 0
@@ -86,6 +89,21 @@ const activeBadgeBox = () => {
         badgeRequestFrameId = requestAnimationFrame(showBadge)
     }
 }
+
+// Award Swiper state & action
+
+const AWARD_ITEM_WIDTH = 220
+let currentAwardSwiperTranslateX = 0
+
+setInterval(() => {
+    currentAwardSwiperTranslateX += AWARD_ITEM_WIDTH
+    if (
+        currentAwardSwiperTranslateX >
+        (awardSliderItemElList.length - 5) * AWARD_ITEM_WIDTH
+    )
+        currentAwardSwiperTranslateX = 0
+    awardSliderEl.style.transform = `translateX(-${currentAwardSwiperTranslateX}px)`
+}, 2000)
 
 /* 
     Intersection Observer

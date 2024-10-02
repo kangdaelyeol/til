@@ -982,6 +982,7 @@ header .content .logo {
 
 .awards > .content > .swiper > .slider {
   display: flex;
+  transition: 0.5s ease-out;
 }
 
 .awards > .content > .swiper > .slider > .item {
