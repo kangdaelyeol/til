@@ -24,7 +24,9 @@ const pickYourFavoriteContentEl = document.querySelector(
 
 const findStoreContentEl = document.querySelector('.find-store .content')
 
-const awardSliderEl = document.querySelector('.awards .content .swiper .slider')
+const awardSliderEl = document.querySelector(
+    '.awards .content .slider_wrapper .slider'
+)
 const awardSliderItemElList = awardSliderEl.querySelectorAll('.item')
 
 // BadgeBox State
