@@ -849,6 +849,7 @@ header .content .logo {
 }
 
 /* Find Store Section */
+
 .find-store {
   background: url('../images/find_store_bg.jpg') center/cover no-repeat;
   display: flex;
@@ -869,8 +870,22 @@ header .content .logo {
   margin-top: 120px;
 }
 
+.find-store > .content > .description_box > * {
+  opacity: 0;
+  transform: translateX(250px);
+  transition: 1s ease-in-out;
+}
+
 .find-store > .content > .description_box > img {
   margin-bottom: 25px;
+}
+
+.find-store > .content > .description_box > img:nth-of-type(2) {
+  transition-delay: 0.3s;
+}
+
+.find-store > .content > .description_box > .btn {
+  transition-delay: 0.6s;
 }
 
 .find-store > .content > img {
@@ -880,6 +895,9 @@ header .content .logo {
 .find-store > .content > .picture1,
 .find-store > .content > .picture2 {
   border-radius: 50%;
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: 1s ease-in-out;
 }
 
 .find-store > .content > .picture1 {
@@ -889,6 +907,7 @@ header .content .logo {
 .find-store > .content > .picture2 {
   top: 150px;
   left: 250px;
+  transition-delay: 0.3s;
 }
 
 .find-store > .content > .texture1 {
@@ -899,6 +918,14 @@ header .content .logo {
 .find-store > .content > .texture2 {
   bottom: 0;
   right: 20px;
+  transition-delay: 0.3s;
+}
+
+.find-store > .content.active > .picture1,
+.find-store > .content.active > .picture2,
+.find-store > .content.active > .description_box > * {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* Awards Section */

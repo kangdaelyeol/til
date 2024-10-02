@@ -22,6 +22,8 @@ const pickYourFavoriteContentEl = document.querySelector(
     '.pick-your-favorite .content'
 )
 
+const findStoreContentEl = document.querySelector('.find-store .content')
+
 // BadgeBox State
 let badgeRequestFrameId = null
 let isBadgeHidden = false
@@ -90,6 +92,7 @@ const activeBadgeBox = () => {
      - Season Product Section
      - Reserve Coffee Section
      - Pick Your Favorite Section
+     - Find Store Section
 */
 
 const intersectionObserver = new IntersectionObserver(
@@ -109,6 +112,7 @@ const elList = [
     seasonProductContentEl,
     reserveCoffeeContentEl,
     pickYourFavoriteContentEl,
+    findStoreContentEl,
 ]
 
 elList.forEach((el) => {
