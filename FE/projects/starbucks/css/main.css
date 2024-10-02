@@ -616,6 +616,20 @@ header .content .logo {
   height: 100%;
 }
 
+.season-product > .content > .left > img {
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: 1s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.season-product > .content.active > .left > img,
+.season-product > .content.active > .right > img,
+.season-product > .content.active > .right > .btn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .season-product > .content > .right {
   margin-top: 100px;
   margin-left: 30px;
@@ -627,6 +641,24 @@ header .content .logo {
 
 .season-product > .content > .right > img {
   margin-bottom: 20px;
+  opacity: 0;
+  transform: translateX(250px);
+  transition: 1s ease-in-out;
+}
+
+.season-product > .content > .right > img:first-of-type {
+  transition-delay: 0.5s;
+}
+
+.season-product > .content > .right:last-child > img:last-of-type {
+  transition-delay: 0.8s;
+}
+
+.season-product > .content > .right > .btn {
+  opacity: 0;
+  transform: translateX(250px);
+  transition: 1s ease-in-out;
+  transition-delay: 1.1s;
 }
 
 .season-product > .content > .right > button:hover {

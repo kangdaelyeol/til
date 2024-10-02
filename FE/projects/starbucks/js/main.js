@@ -10,6 +10,10 @@ const promotionSwiperItemElList = promotionSwiperEl.querySelectorAll('.item')
 const promotionRadioBoxEl = document.querySelector('.promotion .radio_box')
 const promotionRadioBtnElList = promotionRadioBoxEl.querySelectorAll('.radio')
 
+const seasonProductContentEl = document.querySelector(
+    '.season-product .content'
+)
+
 // BadgeBox State
 let badgeRequestFrameId = null
 let isBadgeHidden = false
@@ -24,7 +28,6 @@ let currentPromotionSwiperItemFocusIndex = 0
 
 const hiddenBadge = () => {
     badgeOpacity *= REDUCING_OPACITY_RATIO
-    console.log(badgeOpacity)
     if (badgeOpacity < 0.0000001) {
         badgeOpacity = 0
         badgeBoxEl.style.opacity = badgeOpacity
@@ -73,6 +76,26 @@ const activeBadgeBox = () => {
         badgeRequestFrameId = requestAnimationFrame(showBadge)
     }
 }
+
+/* 
+    Intersection Observer
+     - Season Product
+*/
+
+const intersectionObserver = new IntersectionObserver(
+    (entries) => {
+        if (entries[0].intersectionRatio >= 0.2) {
+            entries[0].target.classList.add('active')
+        } else {
+            entries[0].target.classList.remove('active')
+        }
+    },
+    {
+        threshold: 0.2,
+    }
+)
+
+intersectionObserver.observe(seasonProductContentEl)
 
 // To Top Btn Action
 
