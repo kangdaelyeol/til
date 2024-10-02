@@ -421,14 +421,12 @@ header .content .logo {
 .promotion > .swiper_wrapper {
   overflow: hidden;
   display: flex;
-  justify-content: center;
   width: 100vw;
 }
 
 .promotion > .swiper_wrapper > .swiper {
   display: flex;
   transition: all 0.2s ease-out;
-  /* transform: translateX(409.5px); */
 }
 
 .promotion > .swiper_wrapper > .swiper > .item {
@@ -438,6 +436,10 @@ header .content .logo {
   padding: 0 5px;
   opacity: 0.5;
   transition: all 0.5s;
+}
+
+.promotion > .swiper_wrapper > .swiper > .item.active {
+  opacity: 1;
 }
 
 .promotion > .swiper_wrapper > .swiper > .item > .btn {
