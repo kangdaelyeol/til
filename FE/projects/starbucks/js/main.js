@@ -14,6 +14,10 @@ const seasonProductContentEl = document.querySelector(
     '.season-product .content'
 )
 
+const reserveCoffeeContentEl = document.querySelector(
+    '.reserve-coffee .content'
+)
+
 // BadgeBox State
 let badgeRequestFrameId = null
 let isBadgeHidden = false
@@ -95,7 +99,11 @@ const intersectionObserver = new IntersectionObserver(
     }
 )
 
-intersectionObserver.observe(seasonProductContentEl)
+const elList = [seasonProductContentEl, reserveCoffeeContentEl]
+
+elList.forEach((el) => {
+    intersectionObserver.observe(el)
+})
 
 // To Top Btn Action
 

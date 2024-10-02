@@ -623,13 +623,6 @@ header .content .logo {
   transition-delay: 0.2s;
 }
 
-.season-product > .content.active > .left > img,
-.season-product > .content.active > .right > img,
-.season-product > .content.active > .right > .btn {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .season-product > .content > .right {
   margin-top: 100px;
   margin-left: 30px;
@@ -666,6 +659,13 @@ header .content .logo {
   background-color: #333;
 }
 
+.season-product > .content.active > .left > img,
+.season-product > .content.active > .right > img,
+.season-product > .content.active > .right > .btn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Reserve Coffee Section */
 
 .reserve-coffee {
@@ -684,6 +684,17 @@ header .content .logo {
 
 .reserve-coffee > .content > .logo {
   margin-right: 50px;
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: 1.1s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.reserve-coffee > .content > .product_img {
+  opacity: 0;
+  transform: translateX(250px);
+  transition: 1.1s ease-in-out;
+  transition-delay: 1.2s;
 }
 
 .reserve-coffee > .content > .description_box {
@@ -693,16 +704,35 @@ header .content .logo {
 
 .reserve-coffee > .content > .description_box > img {
   margin-bottom: 10px;
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: 1.1s ease-in-out;
+}
+
+.reserve-coffee > .content > .description_box > img {
+  transition-delay: 0.6s;
 }
 
 .reserve-coffee > .content > .description_box > button {
   color: #d9aa8a;
   border-color: #d9aa8a;
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: 1.1s ease-in-out;
+  transition-delay: 0.9s;
 }
 
 .reserve-coffee > .content > .description_box > button:hover {
   color: fff;
   background-color: #d9aa8a;
+}
+
+.reserve-coffee > .content.active > .description_box > button,
+.reserve-coffee > .content.active > .description_box > img,
+.reserve-coffee > .content.active > .logo,
+.reserve-coffee > .content.active > .product_img {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* Pick Your favorite Section */
