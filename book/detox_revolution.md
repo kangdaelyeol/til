@@ -659,3 +659,45 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 - 또한 대장의 gut microbiota이 생성하는 `B-glucurondinase`라는 효소가 있는데, 이 효소는 해독된 독소의 `글루크론산 결합을 분해(glucuronidation)`해서 다시 재흡수 되는 경우도 있다고 한다.
 
 - 변비는 또한 대장에서 estrogen같은 `해독된 steroid hormone`이 재흡수를 일으켜 `호르몬 불균형(imbalance)`을 일으킬 가능성이 있다.
+
+## stomach - 위
+
+- 우리 몸에서 음식물을 소화하기 위해서 가장 첫 번째로 `위(stomach)`의 역할이 중요하다.
+
+- 위에서 음식물을 분해하지 못하고 `소장(small intestine)`으로 가면 아무리 좋은 음식을 먹어도 의미 없기 때문이다.
+
+  - 위에서 분해되지 못하고 소장으로 간 음식은 영양소 흡수가 불가능하다.
+
+  - 흡수되지 못한 음식물은 `장내 세균총(gut microbiota)`에 의해 다른 독성 물질로 대사되거나 음식물 자체 여러 요인으로 인해 `염증(Inflammation)`을 유발할 수 있다.
+
+- 음식물을 분해하기 위해 `위산 분비(Gastric Acid)`가 정말 중요하다
+
+- 주로 위에서는 단백질 분해하는데, 단백질을 `펩타이드(peptide)` 형태로 분해시켜 소장에서 `아미노산(amino acid)`으로 흡수할 수 있게 한다.
+
+- 단백질을 분해하기 위해선 pepsin이라는 효소가 필요하다.
+
+<hr />
+
+<span class="title">stomach protein digest pathway</span>
+
+- <span class="organ">stomach-cheif cells</span> -> <span class="substance">pepsinogen</span>
+
+- <span class="organ">stomach-parietal cells</span> -> <span class="substance">gastric acid</span>
+
+- <span class="substance">gastric acid</span> -> <span class="organ">pepsinogen</span> -> <span class="interaction">acivation</span> -> <span class="substance">pepsin</span>
+
+- <span class="substance">protein</span> -> <span class="interaction">pepsin(break down)</span> -> <span class="substance">peptide</span> -> <span class="organ">small instestine</span> -> <span class="substance">amino acid</span>
+
+<hr />
+
+- 위의 장벽에는 `주세포(cheif cell)`와 `벽세포(parietal cells)`가 있다.
+
+- chief cell은 pepsinogen을 분비하고 parietal cell은 gastric acid를 분비(release)한다.
+
+- pepsinogen은 gastric acid에 의한 산성환경에 의해 `활성화 형태`인 pepsin이 된다.
+
+- pepsin은 단백질의 [peptide bond](https://en.wikipedia.org/wiki/Peptide_bond)을 분해해서 펩타이드를 소장으로 보내 흡수 할 수 있게끔 한다.
+
+- pepsin은 중간에서 펩타이드 결합을 끊는 물질이기 때문에 [endopeptidase](https://en.wikipedia.org/wiki/Endopeptidase)의 일종이다.
+
+- 사실상 pepsin과 pepsinogen은 같은 물질인데, [pepsinogen은 활성화되지 않은(inactive)pepsin](https://en.wikipedia.org/wiki/Pepsin#Precursor)이다. 이러한 효소를 [zymogen(proenzyme)](https://en.wikipedia.org/wiki/Zymogen)이라고 한다.
