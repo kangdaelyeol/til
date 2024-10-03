@@ -80,7 +80,7 @@ COX-1, COX-2 - PG합성 효소
 
 - `ALT - Alanine Aminotransferase`
 
-- `AST - Aspetate Aminotransferase`
+- `AST - Aspartate Aminotransferase`
 
 - `GGT - Gamma-glutamyltransferase`
 
@@ -210,9 +210,11 @@ COX-1, COX-2 - PG합성 효소
 
   - `estrone`, `estradiol`은 `cytochrome P450` 효소군의 `CYP1A1`, `CYP1B1`효소를 통해 수산화를 거친다
 
-    - estrone / estradiol -> CYP1A1(hydroxylation) -> 2-hydroxyestrone / 2-hydroxyestradiol
+  - <span class="title">Estrogen metabolism(Hydroxylation) pathway</span>
 
-    - estrone / estradiol -> CYP1B1(hydroxylation) -> 4-hydroxyestrone / 4-hydroxyestradiol
+    - <span class="substance">estrone / estradiol</span> -> <span class="interaction">CYP1A1(hydroxylation)</span> -> <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
+
+    - <span class="substance">estrone / estradiol</span> -> <span class="interaction">CYP1B1(hydroxylation)</span> -> <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
 
   - 각각 분자 핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.
 
@@ -224,13 +226,17 @@ COX-1, COX-2 - PG합성 효소
 
   - `COMT는 말그대로 Catechol구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.`
 
-  - 2/4-hydroxyestrogen -> COMT(methylation) -> 2/4-methoxyestrogen
+  - <span class="title">Estrogen metabolism(methylation) pathway</span>
+
+    - <span class="substance">2/4-hydroxyestrogen</span> -> <span class="interaction">"COMT(methylation)</span> -> <span class="substance">2/4-methoxyestrogen</span>
 
 - 메틸화까지 완료된 estrogen은 자연적으로 배출이 된다.
 
 - 문제는 4-hydroxyestrogen의 다른 대사 과정을 통해 발암 위험이 높아진다는 것이다.
 
-  - 4-hydroxyestrogen -> redox reaction -> `estrogen quinone`
+- - <span class="title">Estrogen redox reaction pathway</span>
+
+  - <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">estrogen quinone</span>
 
 - quinone은 반응성이 매우 높아서 DNA와 쉽게 결합한다.
 
@@ -638,18 +644,18 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">Entrohepatic circulation pathway</span>
 
-liver -> bile acid(secretion) -> gallbladder -> small intestine -> Ileum -> portal vein -> liver
+<span class="organ">liver</span> -> <span class="substance">bile acid(secretion)</span> -> <span class="organ">gallbladder</span> -> <span class="organ">small intestine</span> -> <span class="organ">Ileum</span> -> <span class="organ">portal vein</span> -> <span class="organ">liver</span>
 
-Ileum -> colon -> portal vein -> liver
+<span class="substance">bile acid</span> -> <span class="organ">Ileum</span> -> <span class="organ">colon</span> -> <span class="organ">portal vein</span> -> <span class="organ">liver</span>
 
 <hr />
 
-- 대부분 bile acid는(약 95%) 회장(Ileum)에서 사용되었다 `간문맥(hepatic portal vein)`을 통해 재흡수 된다.
+- 대부분 bile acid는(약 95%) `회장(Ileum)`에서 사용되며 `간문맥(hepatic portal vein)`을 통해 재흡수 된다.
 
-- 일부(5%)의 담즙산은 결장(colon)에서 재흡수 되거나 배출이 된다.
+- 일부(5%)의 담즙산은 `결장(colon)`에서 재흡수 되거나 배출이 된다.
 
 - 결장에 있는 담즙산의 대부분은 `liver detoxification pathway`를 거쳐 해독된 수용성 독소와 결합된 상태로 있는데, 이 독소가 변비등 문제로 인해 다시 재흡수 되는 경우가 있다.
 
-- 또한 대장의 gur microbiota이 생성하는 `B-glucurondinase`라는 효소가 있는데, 이 효소는 해독된 독소의 `글루크론산 결합을 분해(glucuronidation)`해서 다시 재흡수 되는 경우도 있다고 한다.
+- 또한 대장의 gut microbiota이 생성하는 `B-glucurondinase`라는 효소가 있는데, 이 효소는 해독된 독소의 `글루크론산 결합을 분해(glucuronidation)`해서 다시 재흡수 되는 경우도 있다고 한다.
 
 - 변비는 또한 대장에서 estrogen같은 `해독된 steroid hormone`이 재흡수를 일으켜 `호르몬 불균형(imbalance)`을 일으킬 가능성이 있다.
