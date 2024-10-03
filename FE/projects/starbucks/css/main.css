@@ -106,8 +106,10 @@ header .content .logo {
 
 .bar_top .search_box .icon {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 0px;
+  right: 0px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,6 +384,7 @@ header .content .logo {
   font-weight: bolder;
   background-color: #fff;
   color: #333;
+  cursor: pointer;
 }
 
 .notice_line > .right {
@@ -405,10 +408,15 @@ header .content .logo {
   height: 24px;
   margin-right: 20px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bolder;
-  background-color: #333;
-  color: #fff;
+}
+
+.notice_line > .right > .icon > span {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #333333;
+  cursor: pointer;
 }
 
 /* Promotion Section */
@@ -1094,6 +1102,10 @@ footer > .content > .signiture_text {
   cursor: pointer;
   transition: all 0.4s;
   transform: translateX(100px);
+}
+
+.to_top > span {
+  transform: scaleX(0.9);
 }
 
 .to_top.active {
