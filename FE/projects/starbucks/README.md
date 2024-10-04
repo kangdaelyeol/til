@@ -151,7 +151,7 @@
 
       1. 이미지의 사이즈가 정확하게 230px이 아니기 때문에 소수점 크기 계산의 한계. 개발자 도구로 크기를 측정했을 때 정수 값을 보여주고, 소수점이면 소수라고 보여지기 때문에 해당 가능성은 매우 작다.
 
-      1.  line-height값이 소수점이기 때문에 높이 연산의 한계 - 이 부분은 img 대신 기본 span으로 실험했을 때 정확히 box의 높이가 230px이 나와서 아닌것으로 판단.
+      1. line-height값이 소수점이기 때문에 높이 연산의 한계 - 이 부분은 img 대신 기본 span으로 실험했을 때 정확히 box의 높이가 230px이 나와서 아닌것으로 판단.
 
     - 결과적으로 img가 replaced element라서 의도한 값이 나오지 않는다고 판단.
 
@@ -174,3 +174,92 @@
 - 그리고 수직 정렬 라인을 정하는 vertical-align에 영향을 받는다.
 
 - `확실하게 하려면 img를 flex box로 감싸거나 display: block으로 지정해줌으로써 문제를 해결할 수 있다.`
+
+### position: absolute - center align
+
+- 요소를 중앙 정렬 하기 위해서 flex container만 사용해왔다.
+
+- flex box를 사용해서 정렬을 하는 경우 전체 레이아웃 구조를 고려해야 하기 때문 wrapper요소를 그만큼 많이 사용하게 된다.
+
+- position: absolute를 적절히 사용해서 정렬을 하면서 html / css코드가 간결해지는 효과를 볼 수 있었다.
+
+- `position: absolute - positioning`
+
+  - [position 속성이 absolute, fixed인 경우 해당 요소는 normal document flow에서 제외되고, 해당 요소를 위한 어떠한 크기도 주어지지 않는다고 한다.](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute)
+
+  - 즉 width, height 값을 속성을 통해 직접 지정해주어야 한다.
+
+  - 여러 실험을 통해 [normal document flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)`에 영향을 받지 않는 요소(absolute, fixed element)`를 배치하기 위한 두 가지 경우의 수에 대해서 중앙으로 정렬하는 방법을 도출해볼 수 있었다.
+
+  1. ### **`크기(width or height)를 지정하지 않은 경우`**
+
+  - top, bottom같은 속성은 positioning type에 따라 동작하는 방식이 다른데, [absolutely positioned element](https://developer.mozilla.org/en-US/docs/Web/CSS/position#types_of_positioning)는 [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)의 edge에서 떨어져 있는 거리를 나타낸다.
+
+  - 요소의 크기를 지정하지 않은 경우, 요소는 크기에 대한 제한(constraint)이 없는 상태이다.
+
+  - 이 경우 top - bottom / left - right 반대의 개념을 가진 속성을 모두 지정하면 지정한 거리만큼 떨어지려 하기 때문에, absolutely positioned element의 크기가 자동으로 조절된다.
+
+  ```css
+  .box {
+    position: relative;
+    background-color: #41b6a8;
+    height: 200px;
+    margin-top: 200px;
+    overflow: scroll;
+  }
+
+  .child {
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    bottom: 50px;
+    left: 300px;
+    right: 300px;
+    min-width: 100px;
+    background-color: pink;
+  }
+  ```
+
+  **result**
+
+  ![alt text](./images/absolute1.png)
+
+  - 중앙 정렬이 잘 되는 것을 확인할 수 있다.
+
+  - 하지만 min-width가 없는 경우, viewport가 작아지면 요소 자체가 사라지게 된다.
+
+  - 또한 min-width 이하로 요소가 작아지는 경우 중앙 정렬이 되지 않는 것을 확인 할 수 있었다
+
+  - 그래서 이 방법은 실용성이 없어 보였다.
+
+  2. ### **`크기(width / height)가 있는 경우`**
+
+  - 요소의 크기가 있는 경우 `margin`을 활용해서 중앙 정렬을 할 수 있다.
+
+  - 요소 크기에 제한이 있는 경우 top, bottom이 있을 때, `top`이 우선으로 적용되고, left / right또한 `left`가 우선으로 적용이 된다.
+
+  - 하지만 상반된 두 속성이 지정된 경우, 지정된 크기만큼 edge에서 떨어져 있어야 한다는 본질은 사라지지 않는다. 이 특징을 `margin`으로 커버할 수 있다.
+
+  - 즉 크기를 제외한 나머지 여백은 normal document flow와 유사하게 사용될 수 있게 된다.
+
+  ```css
+  .child {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    border-radius: 50%;
+    background-color: pink;
+  }
+  ```
+
+  **result**
+
+  ![result img](./images/absolute2.png)
+
+  - 현재 top, bottom, left, right 모두 0으로해서 margin이 균일한 크기로 적용이 되었지만, 상황에 따라 위치 값을 바꿔서 정렬 위치를 바꿀 수 있다.
