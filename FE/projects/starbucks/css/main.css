@@ -1105,14 +1105,9 @@ footer > .content > .signiture_text {
   color: #fff;
   background-color: #333333;
   cursor: pointer;
-  transition: all 0.4s;
-  transform: translateX(100px);
+  transform: translate(100px);
 }
 
 .to_top > span {
   transform: scaleX(0.9);
-}
-
-.to_top.active {
-  transform: translateX(0);
 }

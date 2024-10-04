@@ -33,22 +33,6 @@ const SWIPER_ITEM_INTERVAL = 829
 let promotionSwiperTranslateX = SWIPER_ITEM_INTERVAL / 2
 let currentPromotionSwiperItemFocusIndex = 0
 
-
-const activeBadgeBox = () => {
-
-    if (scrollY > 200) {
-        gsap.to(badgeBoxEl, .6, {
-            opacity: 0,
-            display: 'none',
-        })
-    } else {
-        gsap.to(badgeBoxEl, .6, {
-            opacity: 1,
-            display: 'block',
-        })
-    }
-}
-
 // Award Swiper state & action
 
 const AWARD_ITEM_WIDTH = 220
@@ -98,15 +82,9 @@ elList.forEach((el) => {
 
 // To Top Btn Action
 
-const activeToTopButton = () => {
-    if (scrollY > 200) toTopButtonEl.classList.add('active')
-    else toTopButtonEl.classList.remove('active')
-}
-
 const scrollToZero = () => {
-    scrollTo({
-        top: 0,
-        behavior: 'smooth',
+    gsap.to(window, 0.5, {
+        scrollTo: 0,
     })
 }
 
@@ -163,8 +141,23 @@ const movePromotionSwiperToPrev = () => {
 // Event Handler
 
 const onWindowScroll = () => {
-    activeBadgeBox()
-    activeToTopButton()
+    if (scrollY > 200) {
+        gsap.to(badgeBoxEl, 0.6, {
+            opacity: 0,
+            display: 'none',
+        })
+        gsap.to(toTopButtonEl, 0.4, {
+            x: 0,
+        })
+    } else {
+        gsap.to(badgeBoxEl, 0.6, {
+            opacity: 1,
+            display: 'block',
+        })
+        gsap.to(toTopButtonEl, 0.4, {
+            x: 100,
+        })
+    }
 }
 
 const resizingElements = () => {
