@@ -263,3 +263,33 @@
   ![result img](./images/absolute2.png)
 
   - 현재 top, bottom, left, right 모두 0으로해서 margin이 균일한 크기로 적용이 되었지만, 상황에 따라 위치 값을 바꿔서 정렬 위치를 바꿀 수 있다.
+
+### inner container
+
+- html layout을 디자인 할 때 viewport의 가로 너비에 따른 요소 배치를 하는 방법에 대해 여러 방법을 사용해왔다.
+
+- 가로 너비가 너무 넓으면 요소들이 너무 퍼지기 때문에 background를 위한 공간과, element들을 적절하게 중앙으로 정렬하기 위한 공간이 필요했다.
+
+- 여러 방법을 비교해보았는데, inner container와 block요소의 margin특성을 이용해 flex container없이 간단히 할 수 있었다.
+
+- 모든 요소를 감싸는 wrapper container 없이, layout의 각 section마다 요소들이 배치되야 하는 width크기가 다르므로, 각 section마다 inner container를 두어 요구사항에 맞게 viewport 여백을 두는 것이 가장 효율적이었다.
+
+```css
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+```
+
+- 이런 방식으로 공통적으로 사용할 수 있는 class selector를 두어 사용하면 매우 간편하다.
+
+- width: 1100px으로 지정했지만, 필요에 따라 스타일을 override해서 사용하면 된다.
+
+- 가장 좋은 장점은, flex container를 사용하지 않기 때문에 size를 보장받을 수 있다.
+
+- flex container를 사용하게 되면, flex container안에 있는 flex item들의 길이 합이 container의 길이를 초과하면, `flex-wrap: nowrap`특성상 flex item들의 길이가 줄어든다.
+
+- 이러한 특성은 html 레이아웃 구조가 복잡해지는 경우, 그 레이아웃에 flex box가 포함되어 있을 때, flex의 특성을 고려해 설계하지 않은 layout인 경우, 예상치 못한 배치가 나와버릴 수 있기 때문에 굉장히 조심해야 한다.
+
+  - 이 또한 min / max-width같은 특성으로 해결할 수 있지만, 코드가 길어지고 min / max의 특성을 남용하는 느낌이 있어보인다.
