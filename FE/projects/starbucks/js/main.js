@@ -1,5 +1,5 @@
 // DOM Element
-const badgeBoxEl = document.querySelector('.badge_box')
+const badgeBoxEl = document.querySelector('.badge')
 const toTopButtonEl = document.querySelector('.to_top')
 const promotionLeftBtnEl = document.querySelector('.promotion .btn_box .left')
 const promotionRightBtnEl = document.querySelector('.promotion .btn_box .right')
@@ -244,7 +244,7 @@ const onRadioBoxClick = (e) => {
 
 const onWindowLoad = () => {
     resizingElements()
-    window.addEventListener('scroll', onWindowScroll)
+    window.addEventListener('scroll', _.throttle(onWindowScroll, 300))
     toTopButtonEl.addEventListener('click', scrollToZero)
     promotionLeftBtnEl.addEventListener('click', movePromotionSwiperToPrev)
     promotionRightBtnEl.addEventListener('click', movePromotionSwiperToNext)
