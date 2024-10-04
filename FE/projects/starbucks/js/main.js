@@ -28,67 +28,24 @@ const awardSliderEl = document.querySelector(
     '.awards .content .slider_wrapper .slider'
 )
 const awardSliderItemElList = awardSliderEl.querySelectorAll('.item')
-
-// BadgeBox State
-let badgeRequestFrameId = null
-let isBadgeHidden = false
-let badgeOpacity = 1
-const REDUCING_OPACITY_RATIO = 0.7
-const INCREASING_OPACITY_RATIO = 1.15
-
 // Promotion Swiper state & action
 const SWIPER_ITEM_INTERVAL = 829
 let promotionSwiperTranslateX = SWIPER_ITEM_INTERVAL / 2
 let currentPromotionSwiperItemFocusIndex = 0
 
-const hiddenBadge = () => {
-    badgeOpacity *= REDUCING_OPACITY_RATIO
-    if (badgeOpacity < 0.0000001) {
-        badgeOpacity = 0
-        badgeBoxEl.style.opacity = badgeOpacity
-        badgeBoxEl.style.display = 'none'
-        cancelAnimationFrame(badgeRequestFrameId)
-        badgeRequestFrameId = null
-        return
-    }
-    badgeBoxEl.style.opacity = badgeOpacity
-    badgeRequestFrameId = requestAnimationFrame(hiddenBadge)
-    return
-}
-
-const showBadge = () => {
-    badgeBoxEl.style.display = 'block'
-    if (badgeOpacity < 0.05) badgeOpacity = 0.05
-    badgeOpacity *= INCREASING_OPACITY_RATIO
-    if (badgeOpacity > 1) {
-        badgeOpacity = 1
-        badgeBoxEl.style.opacity = badgeOpacity
-        cancelAnimationFrame(badgeRequestFrameId)
-        badgeRequestFrameId = null
-        return
-    }
-    badgeBoxEl.style.opacity = badgeOpacity
-
-    badgeRequestFrameId = requestAnimationFrame(showBadge)
-
-    return
-}
 
 const activeBadgeBox = () => {
-    if (scrollY > 200 && isBadgeHidden === false) {
-        isBadgeHidden = true
-        if (badgeRequestFrameId !== null) {
-            cancelAnimationFrame(badgeRequestFrameId)
-            badgeRequestFrameId = null
-        }
-        badgeRequestFrameId = requestAnimationFrame(hiddenBadge)
-    } else if (scrollY < 200 && isBadgeHidden === true) {
-        isBadgeHidden = false
-        if (badgeRequestFrameId !== null) {
-            cancelAnimationFrame(badgeRequestFrameId)
-            badgeRequestFrameId = null
-        }
-        badgeRequestFrameId = requestAnimationFrame(showBadge)
+
+    if (scrollY > 200) {
+        gsap.to(badgeBoxEl, .6, {
+            opacity: 0,
+            display: 'none',
+        })
+    } else {
+        gsap.to(badgeBoxEl, .6, {
+            opacity: 1,
+            display: 'block',
+        })
     }
 }
 

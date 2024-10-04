@@ -239,20 +239,16 @@ header > .badge {
   position: fixed;
   top: 132px;
   right: 12px;
-  transition: all 0.4s;
-}
-
-header > .badge.hidden {
-  opacity: 0;
 }
 
 header > .badge > .item {
-  overflow: hidden;
-  border-radius: 10px;
+  cursor: pointer;
   margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-header > .badge > .item img {
+header > .badge > .item > img {
   display: block;
 }
 
