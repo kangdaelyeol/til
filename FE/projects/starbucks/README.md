@@ -1,10 +1,12 @@
 # Fastcampus - Starbucks clone Project
 
-## Overview
+### Overview
 
 - fastcampus 강의에서 진행하는 스타벅스 웹 사이트 클론코딩 프로젝트를 수행했다.
 
 - 먼저 만들어보고 강의에서 제시하는 구현 방법과 나의 구현 방법을 비교하고, 새로 배우고 개선한 점을 기록한다.
+
+### table of contents
 
 ### head - meta tag
 
@@ -191,7 +193,7 @@
 
   - 여러 실험을 통해 [normal document flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)`에 영향을 받지 않는 요소(absolute, fixed element)`를 배치하기 위한 두 가지 경우의 수에 대해서 중앙으로 정렬하는 방법을 도출해볼 수 있었다.
 
-  1. ### **`크기(width or height)를 지정하지 않은 경우`**
+  1. #### **`크기(width or height)를 지정하지 않은 경우`**
 
   - top, bottom같은 속성은 positioning type에 따라 동작하는 방식이 다른데, [absolutely positioned element](https://developer.mozilla.org/en-US/docs/Web/CSS/position#types_of_positioning)는 [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)의 edge에서 떨어져 있는 거리를 나타낸다.
 
@@ -232,7 +234,7 @@
 
   - 그래서 이 방법은 실용성이 없어 보였다.
 
-  2. ### **`크기(width / height)가 있는 경우`**
+  2. #### **`크기(width / height)가 있는 경우`**
 
   - 요소의 크기가 있는 경우 `margin`을 활용해서 중앙 정렬을 할 수 있다.
 
@@ -293,3 +295,27 @@
 - 이러한 특성은 html 레이아웃 구조가 복잡해지는 경우, 그 레이아웃에 flex box가 포함되어 있을 때, flex의 특성을 고려해 설계하지 않은 layout인 경우, 예상치 못한 배치가 나와버릴 수 있기 때문에 굉장히 조심해야 한다.
 
   - 이 또한 min / max-width같은 특성으로 해결할 수 있지만, 코드가 길어지고 min / max의 특성을 남용하는 느낌이 있어보인다.
+
+### a - temp href
+
+- a tag에 href속성을 임시로 설정할 때 `#`을 사용할 때가 있다.
+
+- `#`의 목적은 특정 요소로 이동하려는 목적이 있는데, `#`자체만 사용하면 페이지의 맨 위로 스크롤 하게 된다.
+
+- 아무런 동작을 하지 않거나 임시적인 값을 넣기 위해 #을 남용하는 느낌이 들기 때문에, 이를 확실히 할 필요가 있다.
+
+- 가장 좋은 방법은 `javasctipt:void(0)`문장을 사용하는 것이다.
+
+```html
+<a href="javascript:void(0)">anchor</a>
+```
+
+- 이렇게 하면 평가 결과가 undefined가 되어 아무런 일도 일어나지 않는다.
+
+- 만약 `#`을 사용하는 경우 기본동작을 취소하는 처리도 필요하다
+
+```html
+<a href="#" onclick="event.preventDefault()">anchor</a>
+```
+
+- 이벤트의 기본동작을 취소하는 이유와 목적은 타당성이 있어 보이지만, 그렇다고 `#`을 추가한 목적이 명확하지 않기 때문에 이 방법은 좋아보이지 않는다.
