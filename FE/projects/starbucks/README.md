@@ -319,3 +319,65 @@
 ```
 
 - 이벤트의 기본동작을 취소하는 이유와 목적은 타당성이 있어 보이지만, 그렇다고 `#`을 추가한 목적이 명확하지 않기 때문에 이 방법은 좋아보이지 않는다.
+
+## BEM - block element modifier
+
+- css 스타일링 구조를 정의하는 방법론이다.
+
+- 이 방법을 사용하면 골칫거리중 하나인 변수, 클래스의 이름 짓기 문제를 해결할 수 있지만, 하위 요소가 많아질 수록 이름이 매우 길어지고, 코드가 더러워지는 현상을 겪을 수 있었다
+
+- 그래서 상황에 따라 적절히 사용하는 것이 옳다는 생각을 하게 되었다.
+
+```html
+<li class="table__texture">
+  <ul class="inner">
+    <li class="table__description">
+      <div class="table__desciription__title">나와 어울리는 커피 찾기</div>
+      <div class="table_description__content">
+        스타벅스가 바로 그냥 ㅎㄹㅅ딲 찾아드립니다.
+      </div>
+    </li>
+    <li class="table__description">
+      <div class="table__description__title">최상의 ㅎㄹㅅ 즐기는 법</div>
+      <div class="table__description__content">
+        여러가지 방법을 통해 다양한 풍미의 ㅎㄹㅅ을 즐겨봐요!
+      </div>
+    </li>
+  </ul>
+</li>
+```
+
+- 이 경우 문제는 없어 보이지만 html 클래스의 이름이 어느정도 길어서 가독성 측면에 오히려 문제가 있을 수 있다는 생각이 들었다.
+
+```html
+<li class="table__texture">
+  <ul class="inner">
+    <li class="description">
+      <div class="title">나와 어울리는 커피 찾기</div>
+      <div class="content">스타벅스가 바로 그냥 ㅎㄹㅅ딲 찾아드립니다.</div>
+    </li>
+    <li class="description">
+      <div class="title">최상의 ㅎㄹㅅ 즐기는 법</div>
+      <div class="content">
+        여러가지 방법을 통해 다양한 풍미의 ㅎㄹㅅ을 즐겨봐요!
+      </div>
+    </li>
+  </ul>
+</li>
+```
+
+- 이 경우 html 자체는 짧아지고 가독성 측면에서도 좋아보이지만 css selector에서 직접 하위요소로 지정해야 다른 section에서의 title, content를 지정하는 것을 방지할 수 있다.
+
+- 하지만 그렇다 해도 BEM을 사용하면서 클래스 이름 자체가 길기 때문에 css에서 하위요소를 지정함으로써 선택자가 길어지는 현상이랑 비슷해 보인다.
+
+```css
+.table__description__title {
+  /*  */
+}
+
+.table > .description > .title {
+  /*  */
+}
+```
+
+- 결과적으로 특정한 경우에는 BEM을 사용하는 것이 좋을 수 있고, 아닐 수 있다는 것을 느끼게 됨.
