@@ -6,6 +6,9 @@ const promotionRightBtnEl = document.querySelector('.promotion .btn_box .right')
 const promotionSwiperEl = document.querySelector(
     '.promotion .swiper_wrapper .swiper'
 )
+
+const visualFadeInImgList = document.querySelectorAll('.visual .fade-in')
+
 const promotionSwiperItemElList = promotionSwiperEl.querySelectorAll('.item')
 const promotionRadioBoxEl = document.querySelector('.promotion .radio_box')
 const promotionRadioBtnElList = promotionRadioBoxEl.querySelectorAll('.radio')
@@ -199,6 +202,13 @@ const onWindowLoad = () => {
     promotionLeftBtnEl.addEventListener('click', movePromotionSwiperToPrev)
     promotionRightBtnEl.addEventListener('click', movePromotionSwiperToNext)
     promotionRadioBoxEl.addEventListener('click', onRadioBoxClick)
+
+    visualFadeInImgList.forEach((el, ind) => {
+        gsap.to(el, 1, {
+            opacity: 1,
+            delay: ind * 0.6,
+        })
+    })
 }
 
 window.addEventListener('load', onWindowLoad)
