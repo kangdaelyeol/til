@@ -224,7 +224,7 @@
 
   **result**
 
-  ![alt text](./images/absolute1.png)
+  ![result image](./readme_img/absolute1.png)
 
   - 중앙 정렬이 잘 되는 것을 확인할 수 있다.
 
@@ -262,7 +262,7 @@
 
   **result**
 
-  ![result img](./images/absolute2.png)
+  ![result img](./readme_img/absolute2.png)
 
   - 현재 top, bottom, left, right 모두 0으로해서 margin이 균일한 크기로 적용이 되었지만, 상황에 따라 위치 값을 바꿔서 정렬 위치를 바꿀 수 있다.
 
