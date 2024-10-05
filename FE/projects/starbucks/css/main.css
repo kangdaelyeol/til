@@ -335,46 +335,66 @@ header > .badge > .item > img {
 
 /* Notice Section */
 
-.notice_line {
+.notice {
+  position: relative;
+}
+
+.notice .bg__left {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: #333333;
+}
+
+.notice .bg__right {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: #f6f5ef;
+}
+
+.notice .inner {
   display: flex;
-  min-width: 1100px;
   height: 62px;
 }
 
-.notice_line > .left {
+.notice .inner > .left {
   display: flex;
   width: 60%;
-  justify-content: flex-end;
   align-items: center;
   background-color: #333333;
-  color: white;
+  color: #f6f5ef;
 }
 
-.notice_line .left > .title {
+.notice .inner > .left > .title {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
   margin-right: 20px;
 }
 
-.notice_line > .left > .slide_bar {
+.notice .inner > .left > .swiper {
   height: 100%;
   position: relative;
   margin-right: 30px;
 }
 
-.notice_line > .left > .slide_bar > ul {
+.notice .inner > .left > .swiper > ul {
   height: 100%;
   overflow: hidden;
 }
 
-.notice_line > .left > .slide_bar > ul > li {
+.notice .inner > .left > .swiper > ul > li {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.notice_line > .left > .icon {
+.notice .inner > .left > .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,20 +409,20 @@ header > .badge > .item > img {
   cursor: pointer;
 }
 
-.notice_line > .right {
+.notice .inner > .right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 40%;
 }
 
-.notice_line > .right > .title {
+.notice .inner > .right > .title {
   font-size: 17px;
   font-weight: 700;
   margin-right: 20px;
 }
 
-.notice_line > .right > .icon {
+.notice .inner > .right > .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,7 +434,7 @@ header > .badge > .item > img {
   font-weight: bolder;
 }
 
-.notice_line > .right > .icon > span {
+.notice .inner > .right > .icon > span {
   font-size: 30px;
   font-weight: bolder;
   color: #333333;
