@@ -8,7 +8,7 @@
 
 ### table of contents
 
-### head - meta tag
+## head - meta tag
 
 - social media에서 정보를 공유할 때 간략한 정보를 미리 보여주기 위해 meta태그를 배치한다.
 
@@ -48,7 +48,7 @@
 
 - 각 Protocol은 항상 카카오톡, 트위터에서만 사용되는 것 뿐만이 아닌, 다양한 소셜미디어에서 공통적으로 사용된다고 한다.
 
-### CSS - nth-of-child / nth-of-type
+## CSS - nth-of-child / nth-of-type
 
 - CSS에서 n번째 자식 요소를 선택하기 위해 :nth-of-child, :last-child 같은 `child selector`를 사용했는데 적용되지 않은 상황을 겪었다.
 
@@ -75,7 +75,7 @@
 
 - 자식 요소가 여러 유형의 태그로 섞여있을 때 지정된 유형의 요소들 중 순서를 기준으로 스타일을 지정할 수 있다.
 
-### img sizing
+## img sizing
 
 - 이미지를 적절히 배치하는 과정에서 배치가 예상대로 안되었던 상황을 겪었다.
 
@@ -177,7 +177,7 @@
 
 - `확실하게 하려면 img를 flex box로 감싸거나 display: block으로 지정해줌으로써 문제를 해결할 수 있다.`
 
-### position: absolute - center align
+## position: absolute - center align
 
 - 요소를 중앙 정렬 하기 위해서 flex container만 사용해왔다.
 
@@ -193,7 +193,7 @@
 
   - 여러 실험을 통해 [normal document flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)`에 영향을 받지 않는 요소(absolute, fixed element)`를 배치하기 위한 두 가지 경우의 수에 대해서 중앙으로 정렬하는 방법을 도출해볼 수 있었다.
 
-  1. #### **`크기(width or height)를 지정하지 않은 경우`**
+  1. ### **`크기(width or height)를 지정하지 않은 경우`**
 
   - top, bottom같은 속성은 positioning type에 따라 동작하는 방식이 다른데, [absolutely positioned element](https://developer.mozilla.org/en-US/docs/Web/CSS/position#types_of_positioning)는 [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)의 edge에서 떨어져 있는 거리를 나타낸다.
 
@@ -234,7 +234,7 @@
 
   - 그래서 이 방법은 실용성이 없어 보였다.
 
-  2. #### **`크기(width / height)가 있는 경우`**
+  2. ### **`크기(width / height)가 있는 경우`**
 
   - 요소의 크기가 있는 경우 `margin`을 활용해서 중앙 정렬을 할 수 있다.
 
@@ -266,7 +266,7 @@
 
   - 현재 top, bottom, left, right 모두 0으로해서 margin이 균일한 크기로 적용이 되었지만, 상황에 따라 위치 값을 바꿔서 정렬 위치를 바꿀 수 있다.
 
-### inner container
+## inner container
 
 - html layout을 디자인 할 때 viewport의 가로 너비에 따른 요소 배치를 하는 방법에 대해 여러 방법을 사용해왔다.
 
@@ -296,7 +296,7 @@
 
   - 이 또한 min / max-width같은 특성으로 해결할 수 있지만, 코드가 길어지고 min / max의 특성을 남용하는 느낌이 있어보인다.
 
-### a - temp href
+## a - temp href
 
 - a tag에 href속성을 임시로 설정할 때 `#`을 사용할 때가 있다.
 

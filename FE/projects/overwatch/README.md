@@ -1,10 +1,10 @@
 # Fastcampus_overwatch Project
 
-## Overview
+### Overview
 
 - Fastcampus 강의에서 Overwatch 페이지 예제를 연습해보고 강사의 구현 방식과 비교해서 배운점을 간단히 정리
 
-## Table Of Contents
+### Table Of Contents
 
 1. [body -> background](#body---background)
 
@@ -14,7 +14,7 @@
 
 <hr />
 
-### body -> background
+## body -> background
 
 - block element는 특성상 width은 늘어나려고 하고, height은 줄어들려고 한다.
 
@@ -32,9 +32,7 @@ body {
 }
 ```
 
-<hr />
-
-### margin: auto
+## margin: auto
 
 - block element는 특성상 width은 늘어나려고 하고, height은 줄어들려고 한다.
 
@@ -56,9 +54,7 @@ body {
 
 - 또한 block element의 특성을 알게 되어서 `max/min-width/height`에 대한 감각도 어느 정도 얻은 것 같다.
 
-<hr />
-
-### transform
+## transform
 
 - transform으로 해당 요소의 각각 속성마다 transition duration 다르게 지정하는 효과를 줄 수 있다는 것을 알게 되었다. 이는 내가 디자인 감각에 매우 둔감하다는 것을 내포하고 있다.
 
