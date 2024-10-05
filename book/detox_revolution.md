@@ -743,3 +743,69 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 - 하지만 평소에 식이섬유 섭취를 자주 하지 않은 사람이 갑자기 야채를 많이 섭취하면 좋지 않을 수 있다. 장내 유익균의 비율이 비교적 적기 때문이다.
 
 - 천천히 야채를 섭취해, 그 양을 늘려가는 방식으로 식습관을 형성해야 한다. 그렇지 않으면 야채의 좋은 성분들 조차 일부 유해균(gram-negative bacteria)에 의해 부산물이나 독성물질로 대사될 수 있기 떄문이다.
+
+## Stomach - Gastric Ulcer, GERD
+
+- 우리 몸의 위 관리는 매우 중요하다
+
+- 우리 몸의 `식도(Esophagus)`의 `하부 식도 괄약근(LES - Lower Esophageal Spincter)`은 섭취한 음식이 위에서 역류하지 않도록 조절하는 역할을 하는데 비만, 과식을 하는 사람들을 LES의 기능이 저하될 가능성이 있다.
+
+- [lower esophageal sphincter](https://en.wikipedia.org/wiki/Esophagus#Structure)의 기능이 떨어져 섭취한 음식물이 식도로 역류해 염증을 일으키는 증상을 [역류성 식도염(Gastroesophageal Reflux Diesase)](https://en.wikipedia.org/wiki/Gastroesophageal_reflux_disease)이라고 한다.
+
+**stomach structure**
+
+- 위는 크게 4가지 층으로 나눌 수 있다
+
+  - `mucosa - 점막층`
+
+  - submucosa - 점막하층
+
+  - muscularis propria - 근육층
+
+  - serosa - 장막층
+
+- 여가서 [점막층(mucosa)](https://en.wikipedia.org/wiki/Gastric_mucosa)도 3가지 층으로 나눌 수 있다
+
+  - epithelium - 상피층
+
+  - lamina propria - 고유판
+
+  - muscularis mucosae - 점막근층
+
+- epithelium은 [위소와(gastric pits)](https://en.wikipedia.org/wiki/Gastric_pits)가 있는 층이다. 이는 lamina propria에 있는 위선(gastric gland)으로 들어가는 입구다.
+
+- [gastric gland](https://en.wikipedia.org/wiki/Gastric_glands)에는 크게 다섯 가지 세포가 있다.
+
+  - chief cell - pepsigogen 분비
+
+  - parietal cell - HCI 분비
+
+  - mucous neck cell(점액 경부 세포) - mucus 분비
+
+  - [surface mucous cell(표면 점액 세포)](https://en.wikipedia.org/wiki/Foveolar_cell) - mucus, 중탄산염(bicarbonate) 분비
+
+  - [gastric enteroendocrine cell](https://en.wikipedia.org/wiki/Enteroendocrine_cell#Gastric_enteroendocrine_cells) - gastrin분비
+
+- 네 종류의 세포가 분비하는 pepsinogen, HCI, mucus를 통틀어 gastric juice라고 한다.
+
+- enteroendocrine cell은 여러 종류가 있는데, 여기서 분비되는 gastrin이라는 호르몬은 위액 분비를 촉진한다. 그래서 gastric juice에는 포함되지 않는다.
+
+- mucus는 parietal cell에서 분비하는 HCI를 방어하는 역할을 한다.
+
+- bicarbonate는 HCI를 중화하는 역할을 한다.
+
+- 위산 분비과다 또는, mucus, bicarbonate의 분비의 균형이 무너지면 위는 손상된다.
+
+- 위의 벽층이 손상되어 mucosa(점막층)의 epithelium(상피층)이 손상이 되는 병적 상태를 [위미란(Gastric Erosion)](https://en.wikipedia.org/wiki/Gastric_erosion)이라고 한다.
+
+- mucosa의 epithelium -> lamina propria -> muscularis mucosae 손상을 넘어 submucosa의 손상이 시작된 상태를 [위궤양(gastric ulcer)](https://en.wikipedia.org/wiki/Peptic_ulcer_disease)라고 한다.
+
+- 보통 궤양이 발생하는 이유는 [진통소염제(NSAID)](https://en.wikipedia.org/wiki/Non-steroidal_anti-inflammatory_drug), 또는 [helicobacter-pylori](https://en.wikipedia.org/wiki/Helicobacter_pylori) 감염때문이라 한다.
+
+**olive oil**
+
+- 올리브 오일을 섭취하면 위질환을 예방에 도움을 줄 수 있다.
+
+- 올리브오일에 포함된 polyphenol성분 중에 `hydrothyrosol`이랑 oleocanthal은 항산화(antioxidant), 항염증(anti-inflammatory)기능을 가진다.
+
+- [oleocanthal](https://en.wikipedia.org/wiki/Oleocanthal)은 고급의 올리브오일에 포함된 성분인데, 천연 페놀물질로 인해 섭취시 목에서 작열감을 줄 수 있다. 그래서 올리브 오일을 섭취했을 때 목이 타는 느낌을 받는다면 그 오일은 좋은 오일이라 할 수 있다.
