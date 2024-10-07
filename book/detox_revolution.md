@@ -809,3 +809,27 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 - 올리브오일에 포함된 polyphenol성분 중에 `hydrothyrosol`이랑 oleocanthal은 항산화(antioxidant), 항염증(anti-inflammatory)기능을 가진다.
 
 - [oleocanthal](https://en.wikipedia.org/wiki/Oleocanthal)은 고급의 올리브오일에 포함된 성분인데, 천연 페놀물질로 인해 섭취시 목에서 작열감을 줄 수 있다. 그래서 올리브 오일을 섭취했을 때 목이 타는 느낌을 받는다면 그 오일은 좋은 오일이라 할 수 있다.
+
+## Gluten
+
+- 우리가 즐겨먹는 밀가루에는 gluten이 많이 있다.
+
+- Gluten은 크게 [gliadin](https://en.wikipedia.org/wiki/Gliadin), [glutenin](https://en.wikipedia.org/wiki/Glutenin)이라는 단백질의 결합으로 이루어져 있는데, 여기서 gliadin은 장누수(leaky gut)를 일으킬 수 있는 위험이 있다.
+
+<hr />
+
+<span class="title">gliadin이 장누수를 일으키는 과정</span>
+
+- <span class="substance">gliadin</span> -> <span class="organ">jejunum(epithelium cell)-CXCR3</span> -> <span class="interaction">combination</span> -> <span class="substance">zonulin</span> -> <span class="interaction">tight junction</span> -> <span class="disease">leaky gut</span>
+
+**CXCR3 - CXC [Chemokine](https://en.wikipedia.org/wiki/Chemokine#CXC_chemokines) Receptor - 3**
+
+<hr />
+
+- gliadin은 소화 효소에 부분적으로 저항성이 있다.
+
+- gliadin의 일부는 분해되지 않고 공장(jejumun) 상피세포(epithelium)에 있는 CXCR3 수용체와 결합해 zonulin이라는 단백질을 분비하도록 촉진한다.
+
+- zolulin은 세포의 [밀착연접(tight junction)](https://en.wikipedia.org/wiki/Tight_junction)을 느슨하게 만들어 장 투과성을 증가시킨다.
+
+- 이를 통해 분해되지 않은 큰 분자 물질이 혈액으로 들어갈 가능성이 있으며 이는 면역 반응, 감염등을 일으킬 수 있다.

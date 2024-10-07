@@ -378,12 +378,15 @@ header > .badge > .item > img {
 }
 
 .notice .inner > .left > .swiper {
-  height: 100%;
   position: relative;
-  margin-right: 30px;
+  height: 100%;
+  flex-grow: 1;
 }
 
 .notice .inner > .left > .swiper > ul {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   overflow: hidden;
 }
