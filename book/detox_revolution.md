@@ -833,3 +833,23 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 - zolulin은 세포의 [밀착연접(tight junction)](https://en.wikipedia.org/wiki/Tight_junction)을 느슨하게 만들어 장 투과성을 증가시킨다.
 
 - 이를 통해 분해되지 않은 큰 분자 물질이 혈액으로 들어갈 가능성이 있으며 이는 면역 반응, 감염등을 일으킬 수 있다.
+
+## casein protein
+
+- 우유의 하얀색을 띠게 하는 [casein protein](https://en.wikipedia.org/wiki/Casein)은 우리 몸에 안좋은 영향을 미칠 가능성이 있다.
+
+- casein은 장내 산성 환경에 의해 겔화(gelation)되어 매우 천천히 분해된다. 그래서 자기 전에 섭취를 하게 되면 그 동안 장이 쉬지 못해 좋지 않다.
+
+  - 또한 우유의 casein은 이질적인 물질이라 우리 몸에 흡수 되었을 때 어떠한 면역 반응을 일으킬지 모른다.
+
+  - casein이 장내에서 분해된 peptide는 장 누수 증후군이 있을 때 혈류로 들어와 면역 반응을 일으킬 수 있다.
+
+  - 하지만 아미노산을 지속적으로, 천천히 흡수할 수 있기 때문에 우유가 잘 맞는 사람에게는 아미노산 공급원이 될 수 있다.
+
+- casein도 a, b, k-casein 세 종류가 있다.
+
+- b-casein도 A1, [A2 b-casein](https://en.wikipedia.org/wiki/A2_milk) 두 변이형이 있다.
+
+  - 여기서 A1 b-casein이 소화되면서 나오는 [BCM-7(b-casomorphin)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9094626/)이라는 peptide 성분은 opioid작용이 있어 opioid receptor과 결합시 [morphine](https://en.wikipedia.org/wiki/Morphine)효과를 줄 수 있다.
+
+  - 그래서 A1 b-casein은 morphine효과를 줌으로 써 중추 신경계(Central Nervous System)에 영향을 준다. 이는 신경계 질환(neurological disorder)으로 이어질 수 있다.
