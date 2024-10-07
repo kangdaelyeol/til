@@ -337,6 +337,7 @@ header > .badge > .item > img {
 
 .notice {
   position: relative;
+  overflow: hidden;
 }
 
 .notice .bg__left {
@@ -375,6 +376,7 @@ header > .badge > .item > img {
   font-size: 17px;
   font-weight: 700;
   margin-right: 20px;
+  text-wrap: nowrap;
 }
 
 .notice .inner > .left > .swiper {
@@ -388,6 +390,7 @@ header > .badge > .item > img {
 }
 .notice .inner > .left > .swiper > .swiper-wrapper a {
   color: #fff;
+  font-size: 15px;
 }
 
 .notice .inner > .left > a {
@@ -436,70 +439,56 @@ header > .badge > .item > img {
 
 .promotion {
   position: relative;
-  padding: 30px 0;
-}
-
-.promotion > .swiper_wrapper {
   overflow: hidden;
-  display: flex;
-  width: 100vw;
+  box-sizing: border-box;
+  height: 693px;
+  background-color: #f6f5ef;
+  transition: height 0.5s;
 }
 
-.promotion > .swiper_wrapper > .swiper {
-  display: flex;
-  transition: all 0.2s ease-out;
+.promotion.hide {
+  height: 0;
 }
 
-.promotion > .swiper_wrapper > .swiper > .item {
+.promotion > .swiper {
+  position: absolute;
+  width: calc(819px * 3 + 20px);
+  left: 50%;
+  top: 40px;
+  margin-left: calc((-819px * 3 + 20px) / 2);
+}
+
+.promotion > .swiper > .swiper-wrapper > .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 5px;
   opacity: 0.5;
   transition: all 0.5s;
+  transition-delay: 0.15s;
 }
 
-.promotion > .swiper_wrapper > .swiper > .item.active {
+.promotion > .swiper > .swiper-wrapper > .swiper-slide.swiper-slide-active {
   opacity: 1;
 }
 
-.promotion > .swiper_wrapper > .swiper > .item > .btn {
+.promotion > .swiper > .swiper-wrapper > .swiper-slide > .btn {
   transform: translateY(-55px);
 }
 
-.promotion > .radio_box {
-  display: flex;
-  min-width: 100px;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.promotion > .radio_box > .radio {
-  width: 13px;
-  height: 12px;
-  border-radius: 50%;
-  margin: 0 3px;
-  background-color: #e8e7e1;
-  cursor: pointer;
-}
-
-.promotion > .radio_box > .radio.active {
-  background: url('../images/promotion_slide_pager_on.png') center/cover
-    no-repeat;
-}
-
-.promotion > .btn_box {
+.promotion > .btn__box {
   box-sizing: border-box;
   position: absolute;
-  top: 45%;
-  width: 100%;
+  top: 300px;
+  width: 1100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  min-width: 1100px;
   padding: 0 70px;
 }
 
-.promotion > .btn_box button {
+.promotion > .btn__box div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -513,9 +502,28 @@ header > .badge > .item > img {
   background-color: transparent;
 }
 
-.promotion > .btn_box > button:hover {
+.promotion > .btn__box > div:hover {
   color: white;
   background-color: #333;
+}
+
+.promotion .swiper-pagination {
+  margin-bottom: 20px;
+}
+
+.promotion .swiper-pagination-bullet {
+  background: url('../images/promotion_slide_pager.png') center/cover no-repeat;
+  width: 14px;
+  height: 14px;
+}
+.promotion .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: url('../images/promotion_slide_pager_on.png') center/cover
+    no-repeat;
+}
+
+.promotion .btn__box > .swiper-button-prev::after,
+.promotion .btn__box > .swiper-button-next::after {
+  all: unset;
 }
 
 /* Reward Section */

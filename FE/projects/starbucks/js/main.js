@@ -1,17 +1,10 @@
 // DOM Element
 const badgeBoxEl = document.querySelector('.badge')
 const toTopButtonEl = document.querySelector('.to_top')
-const promotionLeftBtnEl = document.querySelector('.promotion .btn_box .left')
-const promotionRightBtnEl = document.querySelector('.promotion .btn_box .right')
-const promotionSwiperEl = document.querySelector(
-    '.promotion .swiper_wrapper .swiper'
-)
+const promotionContainerEl = document.querySelector('.notice .promotion')
+const promotionShowBtnEl = document.querySelector('.notice .right .icon')
 
 const visualFadeInImgList = document.querySelectorAll('.visual .fade-in')
-
-const promotionSwiperItemElList = promotionSwiperEl.querySelectorAll('.item')
-const promotionRadioBoxEl = document.querySelector('.promotion .radio_box')
-const promotionRadioBtnElList = promotionRadioBoxEl.querySelectorAll('.radio')
 
 const seasonProductContentEl = document.querySelector(
     '.season-product .content'
@@ -90,57 +83,6 @@ const scrollToZero = () => {
         scrollTo: 0,
     })
 }
-
-// Promotion Swiper Action
-
-const movePromotionSwiperToNext = () => {
-    console.log(promotionRadioBtnElList.length)
-    if (
-        currentPromotionSwiperItemFocusIndex >=
-        promotionRadioBtnElList.length - 1
-    )
-        return
-
-    promotionSwiperItemElList[
-        currentPromotionSwiperItemFocusIndex
-    ].classList.remove('active')
-    promotionRadioBtnElList[
-        currentPromotionSwiperItemFocusIndex++
-    ].classList.remove('active')
-
-    promotionSwiperItemElList[
-        currentPromotionSwiperItemFocusIndex
-    ].classList.add('active')
-    promotionRadioBtnElList[currentPromotionSwiperItemFocusIndex].classList.add(
-        'active'
-    )
-
-    promotionSwiperTranslateX -= SWIPER_ITEM_INTERVAL
-
-    promotionSwiperEl.style.transform = `translateX(${promotionSwiperTranslateX}px)`
-}
-
-const movePromotionSwiperToPrev = () => {
-    if (currentPromotionSwiperItemFocusIndex <= 0) return
-    promotionRadioBtnElList[
-        currentPromotionSwiperItemFocusIndex
-    ].classList.remove('active')
-    promotionSwiperItemElList[
-        currentPromotionSwiperItemFocusIndex--
-    ].classList.remove('active')
-
-    promotionRadioBtnElList[currentPromotionSwiperItemFocusIndex].classList.add(
-        'active'
-    )
-    promotionSwiperItemElList[
-        currentPromotionSwiperItemFocusIndex
-    ].classList.add('active')
-
-    promotionSwiperTranslateX += SWIPER_ITEM_INTERVAL
-
-    promotionSwiperEl.style.transform = `translateX(${promotionSwiperTranslateX}px)`
-}
-
 // Event Handler
 
 const onWindowScroll = () => {
@@ -163,45 +105,12 @@ const onWindowScroll = () => {
     }
 }
 
-const resizingElements = () => {
-    promotionSwiperTranslateX =
-        -currentPromotionSwiperItemFocusIndex * SWIPER_ITEM_INTERVAL +
-        (innerWidth - SWIPER_ITEM_INTERVAL) / 2
-    promotionSwiperEl.style.transform = `translateX(${promotionSwiperTranslateX}px)`
-}
-
-const onRadioBoxClick = (e) => {
-    if (!e.target.dataset.itemIndex) return
-    const nextIndex = Number(e.target.dataset.itemIndex)
-
-    if (currentPromotionSwiperItemFocusIndex === nextIndex) return
-
-    const indexDiff = nextIndex - currentPromotionSwiperItemFocusIndex
-
-    promotionSwiperItemElList[
-        currentPromotionSwiperItemFocusIndex
-    ].classList.remove('active')
-    promotionRadioBtnElList[
-        currentPromotionSwiperItemFocusIndex
-    ].classList.remove('active')
-
-    promotionSwiperItemElList[nextIndex].classList.add('active')
-    promotionRadioBtnElList[nextIndex].classList.add('active')
-
-    currentPromotionSwiperItemFocusIndex = nextIndex
-
-    promotionSwiperTranslateX -= SWIPER_ITEM_INTERVAL * indexDiff
-
-    promotionSwiperEl.style.transform = `translateX(${promotionSwiperTranslateX}px)`
-}
-
 const onWindowLoad = () => {
-    resizingElements()
     window.addEventListener('scroll', _.throttle(onWindowScroll, 300))
     toTopButtonEl.addEventListener('click', scrollToZero)
-    promotionLeftBtnEl.addEventListener('click', movePromotionSwiperToPrev)
-    promotionRightBtnEl.addEventListener('click', movePromotionSwiperToNext)
-    promotionRadioBoxEl.addEventListener('click', onRadioBoxClick)
+    promotionShowBtnEl.addEventListener('click', () => {
+        promotionContainerEl.classList.toggle('hide')
+    })
 
     visualFadeInImgList.forEach((el, ind) => {
         gsap.to(el, 1, {
@@ -209,13 +118,28 @@ const onWindowLoad = () => {
             delay: ind * 0.6,
         })
     })
-    new Swiper('.swiper', {
+    new Swiper('.notice .left .swiper', {
         direction: 'vertical',
         loop: true,
+    })
+
+    new Swiper('.promotion .swiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 3,
+        pagination: {
+            el: '.promotion .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            prevEl: '.promotion .swiper-button-prev',
+            nextEl: '.promotion .swiper-button-next',
+        },
     })
 }
 
 window.addEventListener('load', onWindowLoad)
-window.addEventListener('resize', () => {
-    resizingElements()
-})
