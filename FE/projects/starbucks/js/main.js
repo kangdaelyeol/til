@@ -209,6 +209,10 @@ const onWindowLoad = () => {
             delay: ind * 0.6,
         })
     })
+    new Swiper('.swiper', {
+        direction: 'vertical',
+        loop: true,
+    })
 }
 
 window.addEventListener('load', onWindowLoad)

@@ -365,12 +365,12 @@ header > .badge > .item > img {
 .notice .inner > .left {
   display: flex;
   width: 60%;
+  height: 100%;
   align-items: center;
   background-color: #333333;
-  color: #f6f5ef;
 }
 
-.notice .inner > .left > .title {
+.notice .inner > .left > h2 {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
@@ -378,37 +378,25 @@ header > .badge > .item > img {
 }
 
 .notice .inner > .left > .swiper {
-  position: relative;
   height: 100%;
-  flex-grow: 1;
+  margin: auto;
 }
 
-.notice .inner > .left > .swiper > ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-.notice .inner > .left > .swiper > ul > li {
-  height: 100%;
+.notice .inner > .left > .swiper > .swiper-wrapper > .swiper-slide {
   display: flex;
   align-items: center;
 }
+.notice .inner > .left > .swiper > .swiper-wrapper a {
+  color: #fff;
+}
 
-.notice .inner > .left > .icon {
+.notice .inner > .left > a {
   display: flex;
+  width: 62px;
+  height: 62px;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
-  margin-right: 20px;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: bolder;
-  background-color: #fff;
-  color: #333;
+  color: #fff;
   cursor: pointer;
 }
 
