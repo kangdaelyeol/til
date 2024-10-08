@@ -23,62 +23,6 @@ const pickYourFavoriteContentEl = document.querySelector(
 
 const findStoreContentEl = document.querySelector('.find-store .content')
 
-const awardSliderEl = document.querySelector(
-    '.awards .content .slider_wrapper .slider'
-)
-const awardSliderItemElList = awardSliderEl.querySelectorAll('.item')
-// Promotion Swiper state & action
-const SWIPER_ITEM_INTERVAL = 829
-let promotionSwiperTranslateX = SWIPER_ITEM_INTERVAL / 2
-let currentPromotionSwiperItemFocusIndex = 0
-
-// Award Swiper state & action
-
-const AWARD_ITEM_WIDTH = 220
-let currentAwardSwiperTranslateX = 0
-
-setInterval(() => {
-    currentAwardSwiperTranslateX += AWARD_ITEM_WIDTH
-    if (
-        currentAwardSwiperTranslateX >
-        (awardSliderItemElList.length - 5) * AWARD_ITEM_WIDTH
-    )
-        currentAwardSwiperTranslateX = 0
-    awardSliderEl.style.transform = `translateX(-${currentAwardSwiperTranslateX}px)`
-}, 2000)
-
-/* 
-    Intersection Observer
-     - Season Product Section
-     - Reserve Coffee Section
-     - Pick Your Favorite Section
-     - Find Store Section
-*/
-
-const intersectionObserver = new IntersectionObserver(
-    (entries) => {
-        if (entries[0].intersectionRatio >= 0.2) {
-            entries[0].target.classList.add('active')
-        } else {
-            entries[0].target.classList.remove('active')
-        }
-    },
-    {
-        threshold: 0.2,
-    }
-)
-
-const elList = [
-    seasonProductContentEl,
-    reserveCoffeeContentEl,
-    pickYourFavoriteContentEl,
-    findStoreContentEl,
-]
-
-elList.forEach((el) => {
-    intersectionObserver.observe(el)
-})
-
 // To Top Btn Action
 
 const scrollToZero = () => {
@@ -141,6 +85,19 @@ const onWindowLoad = () => {
         navigation: {
             prevEl: '.promotion .swiper-button-prev',
             nextEl: '.promotion .swiper-button-next',
+        },
+    })
+
+    new Swiper('.awards .swiper', {
+        autoplay: {
+            delay: 3000,
+        },
+        slidesPerView: 5,
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            prevEl: '.awards .swiper-button-prev',
+            nextEl: '.awards .swiper-button-next',
         },
     })
 

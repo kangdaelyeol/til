@@ -862,69 +862,44 @@ header > .badge > .item > img {
 /* Awards Section */
 
 .awards {
-  display: flex;
-  justify-content: center;
   background-color: #272727;
-  overflow: hidden;
-  padding: 30px 0;
 }
 
-.awards > .content {
+.awards > .inner {
   display: flex;
-  align-items: center;
-  min-width: 1300px;
+  padding: 40px 0;
 }
 
-.awards > .content > button {
-  all: unset;
-  width: 42px;
-  margin: 0 auto;
-  height: 42px;
-  border: 2px solid #686868;
-  color: #686868;
-  border-radius: 50%;
-  cursor: pointer;
+.awards .swiper-button-prev,
+.awards .swiper-button-next {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  color: #444;
+  border: 2px solid #444;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
 }
 
-.awards > .content > button.left {
-  margin-right: 40px;
-}
-
-.awards > .content > button.right {
-  margin-left: 40px;
-}
-
-.awards > .content > button:hover {
-  background-color: #686868;
+.awards .swiper-button-prev:hover,
+.awards .swiper-button-next:hover {
+  background-color: #444;
   color: #272727;
 }
 
-.awards > .content > .slider_wrapper {
-  width: 1100px;
-  min-width: 1100px;
-  overflow: hidden;
-  display: flex;
-  margin: 0 auto;
+.awards .swiper-button-prev {
+  left: -80px;
 }
 
-.awards > .content > .slider_wrapper > .slider {
-  display: flex;
-  transition: 0.5s ease-out;
+.awards .swiper-button-next {
+  right: -80px;
 }
 
-.awards > .content > .slider_wrapper > .slider > .item {
-  width: 220px;
-  min-width: 220px;
-  display: flex;
-}
-
-.awards > .content > .slider_wrapper > .slider > .item > img {
-  height: 40px;
-  margin: 0 auto;
+.awards .swiper-button-prev::after,
+.awards .swiper-button-next::after {
+  display: none;
 }
 
 /* Footer Section */
