@@ -11,20 +11,6 @@ const youtubeFloatingImgList = document.querySelectorAll(
     '.youtube .inner .floating'
 )
 
-const seasonProductContentEl = document.querySelector(
-    '.season-product .content'
-)
-
-const reserveCoffeeContentEl = document.querySelector(
-    '.reserve-coffee .content'
-)
-
-const pickYourFavoriteContentEl = document.querySelector(
-    '.pick-your-favorite .content'
-)
-
-const findStoreContentEl = document.querySelector('.find-store .content')
-
 // To Top Btn Action
 
 const scrollToZero = () => {
