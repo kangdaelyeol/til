@@ -58,6 +58,16 @@ a {
   background-color: #d9aa8a;
 }
 
+.btn.btn--white {
+  color: white;
+  border-color: white;
+}
+
+.btn.btn--white:hover {
+  background-color: white;
+  color: #333;
+}
+
 .btn.btn--reverse {
   color: #fff;
   background-color: #333;
@@ -728,53 +738,23 @@ header > .badge > .item > img {
 .pick-your-favorite {
   background: url('../images/favorite_bg.jpg') center/cover no-repeat;
   background-attachment: fixed;
-  padding: 100px;
+  padding: 100px 0;
 }
 
-.pick-your-favorite > .content {
-  box-sizing: border-box;
-  width: 50%;
-  min-width: 500px;
+.pick-your-favorite .text-group {
+  width: 362px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-right: 250px;
-  margin-left: 150px;
 }
 
-.pick-your-favorite > .content > img {
-  display: block;
-  margin: 20px 0;
-  opacity: 0;
-  transform: translateX(-250px);
-  transition: 1s ease-in-out;
+.pick-your-favorite .text-group > .text1 {
+  margin-bottom: 30px;
 }
 
-.pick-your-favorite > .content > img:first-of-type {
-  transition-delay: 0.3s;
-}
-.pick-your-favorite > .content > img:nth-of-type(2) {
-  transition-delay: 0.6s;
-}
-
-.pick-your-favorite > .content button {
-  margin-top: 20px;
-  color: white;
-  border-color: white;
-  opacity: 0;
-  transform: translateX(-250px);
-  transition: 1s ease-in-out;
-  transition-delay: 0.9s;
-}
-
-.pick-your-favorite > .content.active button:hover {
-  background-color: white;
-  color: #333;
-}
-
-.pick-your-favorite > .content.active > * {
-  opacity: 1;
-  transform: translateX(0);
+.pick-your-favorite .text-group > .text2 {
+  margin-bottom: 30px;
 }
 
 /* Reserve Store Section */
