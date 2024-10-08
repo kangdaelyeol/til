@@ -1,8 +1,10 @@
 // DOM Element
 const badgeBoxEl = document.querySelector('.badge')
-const toTopButtonEl = document.querySelector('.to_top')
+const toTopButtonEl = document.querySelector('.to-top')
 const promotionContainerEl = document.querySelector('.notice .promotion')
 const promotionShowBtnEl = document.querySelector('.notice .right .icon')
+
+const copyrightThisYearEl = document.querySelector('.copyright .this-year')
 
 const visualFadeInImgList = document.querySelectorAll('.visual .fade-in')
 const youtubeFloatingImgList = document.querySelectorAll(
@@ -110,6 +112,8 @@ const onWindowLoad = () => {
             ease: 'bounce.inOut',
         })
     })
+
+    copyrightThisYearEl.textContent = new Date().getFullYear()
 }
 
 window.addEventListener('load', onWindowLoad)

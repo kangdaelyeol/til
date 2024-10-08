@@ -906,76 +906,75 @@ header > .badge > .item > img {
 
 footer {
   border-top: 1px solid #333333;
-  display: flex;
   background-color: #272727;
   padding: 50px 0;
 }
 
-footer > .content {
-  min-width: 1100px;
+footer > .inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
-footer > .content > .rule_list {
+footer .rule-group {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
-footer > .content > .rule_list > .item {
-  display: flex;
-  justify-content: space-between;
+footer .rule-group > .item {
+  position: relative;
   color: #ccc;
   font-size: 12px;
   font-weight: 700;
-  padding: 10px;
+  padding: 20px;
 }
 
-footer > .content > .rule_list > .item:first-child {
+footer .rule-group > .item:first-child {
   color: #669900;
 }
 
-footer > .content > .rule_list > .item:nth-child(n + 2)::before {
+footer .rule-group > .item::after {
   content: '';
-  display: block;
+  position: absolute;
+  top: 0;
+  right: -1.5px;
+  bottom: 0;
   width: 3px;
   height: 3px;
   background-color: #555555;
   margin: auto 0;
-  margin-right: 20px;
 }
 
-footer > .content > .btn_box {
+footer .rule-group > .item:last-child::after {
+  display: none;
+}
+
+footer .btn-group {
   display: flex;
   margin-bottom: 30px;
 }
 
-footer > .content > .btn_box > .btn {
+footer .btn-group > .btn {
   font-size: 12px;
   margin: 0 7px;
   color: #fff;
   border-color: #fff;
 }
 
-footer > .content > .btn_box > .btn:hover {
+footer .btn-group > .btn:hover {
   color: #333333;
   background-color: #fff;
 }
 
-footer > .content > .business_info {
-  display: flex;
-}
-
-footer > .content > .business_info > .item {
+footer .info > span {
   color: #999999;
   font-size: 12px;
-  padding: 10px;
+  margin-right: 20px;
 }
 
-footer > .content > .signiture_text {
+footer .copyright {
   color: #999999;
   font-size: 12px;
   padding: 10px;
@@ -984,7 +983,7 @@ footer > .content > .signiture_text {
 
 /* To-top Button */
 
-.to_top {
+.to-top {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1001,6 +1000,6 @@ footer > .content > .signiture_text {
   transform: translate(100px);
 }
 
-.to_top > span {
+.to-top > span {
   transform: scaleX(0.9);
 }
