@@ -816,14 +816,11 @@ header > .badge > .item > img {
   display: flex;
 }
 
-.find-store > .content {
-  position: relative;
-  min-width: 1100px;
-  margin: 0 auto;
+.find-store .inner {
   height: 400px;
 }
 
-.find-store > .content > .description_box {
+.find-store .text-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -831,62 +828,35 @@ header > .badge > .item > img {
   margin-top: 120px;
 }
 
-.find-store > .content > .description_box > * {
-  opacity: 0;
-  transform: translateX(250px);
-  transition: 1s ease-in-out;
-}
-
-.find-store > .content > .description_box > img {
+.find-store .text-group > img {
   margin-bottom: 25px;
 }
 
-.find-store > .content > .description_box > img:nth-of-type(2) {
-  transition-delay: 0.3s;
-}
-
-.find-store > .content > .description_box > .btn {
-  transition-delay: 0.6s;
-}
-
-.find-store > .content > img {
+.find-store .picture1,
+.find-store .picture2 {
   position: absolute;
-}
-
-.find-store > .content > .picture1,
-.find-store > .content > .picture2 {
   border-radius: 50%;
-  opacity: 0;
-  transform: translateX(-250px);
-  transition: 1s ease-in-out;
 }
 
-.find-store > .content > .picture1 {
+.find-store .picture1 {
   top: -50px;
 }
 
-.find-store > .content > .picture2 {
+.find-store .picture2 {
   top: 150px;
   left: 250px;
-  transition-delay: 0.3s;
 }
 
-.find-store > .content > .texture1 {
+.find-store .texture1 {
+  position: absolute;
   top: 0;
   left: 350px;
 }
 
-.find-store > .content > .texture2 {
+.find-store .texture2 {
+  position: absolute;
   bottom: 0;
   right: 20px;
-  transition-delay: 0.3s;
-}
-
-.find-store > .content.active > .picture1,
-.find-store > .content.active > .picture2,
-.find-store > .content.active > .description_box > * {
-  transform: translateX(0);
-  opacity: 1;
 }
 
 /* Awards Section */
