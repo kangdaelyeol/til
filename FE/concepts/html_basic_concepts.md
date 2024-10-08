@@ -1,8 +1,14 @@
 ### DTD - Document Type Definition
 
-  - html 첫 번째에 항상 있던 `!DOCTYPE html`은 HTML의 `버전 5`를 명시한다는 의미라고 한다.
+- html 첫 번째에 항상 있던 `!DOCTYPE html`은 HTML의 `버전 5`를 기준으로 작성된 문서라는 의미다.
 
-  - html 1 ~ 4 까지는 html문서 안에 어떤 명시를 하지 않고, 4와 5 사이에 나온 `XHTML`은 명시 방법이 따로 있다고 한다.
+- 따라서 브라우저는 해당 문서를 HTML5에 맞게 해석해야 한다.
+
+- 우리가 알 수 있는 주요 특징은 semantic tag와 empty tag의 자유로운 문법이다.
+
+  - XHTML에서는 `img`와 같은 empty tag에 대해서는 반드시 닫는 기호를 사용해야 했는데, HTML5에서는 필수가 아니라고 한다.
+
+- html 1 ~ 4 까지는 html문서 안에 어떤 명시를 하지 않고, 4와 5 사이에 나온 `XHTML`은 명시 방법이 따로 있다고 한다.
 
 <hr />
 
@@ -45,4 +51,3 @@
 - `img--alt - alternate`
 
 - `self-closing tag / empty element -> <input />`
-
