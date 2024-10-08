@@ -5,6 +5,9 @@ const promotionContainerEl = document.querySelector('.notice .promotion')
 const promotionShowBtnEl = document.querySelector('.notice .right .icon')
 
 const visualFadeInImgList = document.querySelectorAll('.visual .fade-in')
+const youtubeFloatingImgList = document.querySelectorAll(
+    '.youtube .inner .floating'
+)
 
 const seasonProductContentEl = document.querySelector(
     '.season-product .content'
@@ -139,6 +142,16 @@ const onWindowLoad = () => {
             prevEl: '.promotion .swiper-button-prev',
             nextEl: '.promotion .swiper-button-next',
         },
+    })
+
+    youtubeFloatingImgList.forEach((el, index) => {
+        gsap.to(el, {
+            y: 30 + index * 10,
+            duration: 1.5 + index * 1,
+            repeat: -1,
+            yoyo: true,
+            ease: 'bounce.inOut',
+        })
     })
 }
 

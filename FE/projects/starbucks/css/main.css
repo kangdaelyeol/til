@@ -44,6 +44,16 @@ a {
   color: white;
 }
 
+.btn.btn--reverse {
+  color: #fff;
+  background-color: #333;
+}
+
+.btn.btn--reverse:hover {
+  color: #333;
+  background-color: inherit;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -61,7 +71,7 @@ header {
   height: 120px;
   border-bottom: 1px solid #c8c8c8;
   min-width: 1000px;
-  z-index: 10;
+  z-index: 11;
 }
 
 header .inner {
@@ -530,15 +540,34 @@ header > .badge > .item > img {
 
 .rewards {
   position: relative;
-  min-width: 1100px;
+  height: 241px;
 }
 
-.rewards > .bg > img {
-  display: block;
-  width: 100%;
+.rewards > .inner {
+  position: relative;
+  height: 100%;
+  background: url('../images/rewards.jpg');
 }
 
-.rewards > .button_box {
+.rewards > .bg__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+}
+
+.rewards > .bg__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #d5c898;
+}
+
+.rewards .button__box {
   position: absolute;
   right: 20px;
   bottom: 30px;
@@ -547,21 +576,16 @@ header > .badge > .item > img {
   flex-wrap: wrap;
 }
 
-.rewards > .button_box .btn:hover {
-  background-color: #333;
-  color: white;
-}
-
-.rewards > .button_box > .sign-in {
+.rewards .button__box > .sign-in {
   width: 130px;
   margin-right: 10px;
 }
 
-.rewards > .button_box > .login {
+.rewards .button__box > .login {
   width: 110px;
 }
 
-.rewards > .button_box > .gift {
+.rewards .button__box > .gift {
   flex-grow: 1;
   margin-top: 10px;
 }
@@ -575,60 +599,59 @@ header > .badge > .item > img {
 }
 
 .youtube > .video {
+  width: 1920px;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  margin-top: calc((1920px * 56.25) / -200);
+}
+
+.youtube > .video::before {
+  display: block;
+  content: '';
   width: 100%;
-  height: 700px;
+  padding-top: 56.25%;
+}
+
+.youtube > .video__cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url('../images/video_cover_pattern.png');
 }
 
-.youtube > .video > .inner {
-  min-width: 1920px;
-  height: 1080px;
-}
-
-.youtube > .video > .inner > iframe {
+.youtube #player {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
-.youtube > .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 700px;
-  background: url('../images/video_cover_pattern.png');
+.youtube > .inner {
+  height: 100%;
 }
 
-.youtube > img {
+.youtube > .inner > .floating {
   position: absolute;
 }
 
-.youtube > .img1 {
-  position: absolute;
+.youtube .floating1 {
   top: 40px;
   left: 50px;
-  animation: float_img 4s ease-in-out infinite alternate-reverse;
 }
 
-.youtube > .img2 {
-  position: absolute;
+.youtube .floating2 {
   top: 330px;
   left: 200px;
-  animation: float_img 3s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes float_img {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(30px);
-  }
+.youtube .floating3 {
+  right: 0;
+  bottom: -150px;
 }
 
 /* Season Product Section */

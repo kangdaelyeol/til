@@ -44,12 +44,27 @@
 
     <link rel="icon" href="./favicon.png" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"
+      defer
+    ></script>
+    <script src="./js/youtube.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -530,40 +545,40 @@
 
     <!-- Rewards Section-->
     <section class="rewards">
-      <div class="bg">
-        <img
-          src="./images/rewards.jpg"
-          alt="background_image"
-          class="background"
-        />
-      </div>
-      <div class="button_box">
-        <button class="btn sign-in">회원가입</button>
-        <button class="btn login">로그인</button>
-        <button class="btn gift">e-Gift ㅎㄹㅅ하기</button>
+      <div class="bg__left"></div>
+      <div class="bg__right"></div>
+      <div class="inner">
+        <div class="button__box">
+          <button class="btn btn--reverse sign-in">회원가입</button>
+          <button class="btn login">로그인</button>
+          <button class="btn gift">e-Gift ㅎㄹㅅ하기</button>
+        </div>
       </div>
     </section>
 
     <!-- Youtube Section -->
     <section class="youtube">
       <div class="video">
-        <div class="inner">
-          <iframe
-            id="player"
-            frameborder="0"
-            allowfullscreen=""
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="How to: Three Ways to Cold Brew Coffee"
-            width="640"
-            height="360"
-            src="https://www.youtube.com/embed/An6LvWQuj_8?autoplay=false&amp;loop=true&amp;playlist=An6LvWQuj_8&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fflamboyant-lumiere-482a1e.netlify.app&amp;widgetid=1"
-          ></iframe>
-        </div>
+        <div id="player"></div>
       </div>
-      <div class="bg"></div>
-      <img src="./images/floating1.png" alt="float_icon" class="img1" />
-      <img src="./images/floating2.png" alt="float_icon" class="img2" />
+      <div class="video__cover"></div>
+      <div class="inner">
+        <img
+          src="./images/floating1.png"
+          alt="float__icon1"
+          class="floating floating1"
+        />
+        <img
+          src="./images/floating2.png"
+          alt="float__icon2"
+          class="floating floating2"
+        />
+        <img
+          src="./images/floating3.png"
+          alt="float__icon3"
+          class="floating floating3"
+        />
+      </div>
     </section>
 
     <!-- Season Product Section -->
