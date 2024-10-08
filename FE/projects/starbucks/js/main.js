@@ -7,9 +7,9 @@ const promotionShowBtnEl = document.querySelector('.notice .right .icon')
 const copyrightThisYearEl = document.querySelector('.copyright .this-year')
 
 const visualFadeInImgList = document.querySelectorAll('.visual .fade-in')
-const youtubeFloatingImgList = document.querySelectorAll(
-    '.youtube .inner .floating'
-)
+const youtubeFloatingImgList = document.querySelectorAll('.floating')
+
+const scrollSpyElList = document.querySelectorAll('.scroll-spy')
 
 // To Top Btn Action
 
@@ -18,6 +18,7 @@ const scrollToZero = () => {
         scrollTo: 0,
     })
 }
+
 // Event Handler
 
 const onWindowScroll = () => {
@@ -97,6 +98,16 @@ const onWindowLoad = () => {
             yoyo: true,
             ease: 'bounce.inOut',
         })
+    })
+
+    // scroll magic
+    scrollSpyElList.forEach((el) => {
+        new ScrollMagic.Scene({
+            triggerElement: el,
+            triggerHook: 0.8,
+        })
+            .setClassToggle(el, 'show')
+            .addTo(new ScrollMagic.Controller())
     })
 
     copyrightThisYearEl.textContent = new Date().getFullYear()

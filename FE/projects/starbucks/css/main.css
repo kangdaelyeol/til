@@ -673,11 +673,6 @@ header > .badge > .item > img {
   left: 200px;
 }
 
-.youtube .floating3 {
-  right: 0;
-  bottom: -150px;
-}
-
 /* Season Product Section */
 
 .season-product {
@@ -685,6 +680,12 @@ header > .badge > .item > img {
   min-width: 1100px;
   height: 400px;
   display: flex;
+}
+
+.season-product .floating3 {
+  position: absolute;
+  right: 0;
+  top: -200px;
 }
 
 .season-product .product {
@@ -1002,4 +1003,37 @@ footer .copyright {
 
 .to-top > span {
   transform: scaleX(0.9);
+}
+
+/* scroll-spy */
+
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+
+.back-to-position.to-left {
+  transform: translateX(100px);
+}
+
+.back-to-position.to-right {
+  transform: translateX(-100px);
+}
+
+.scroll-spy.show .back-to-position.to-left,
+.scroll-spy.show .back-to-position.to-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-6 {
+  transition-delay: 0.6s;
+}
+
+.delay-9 {
+  transition-delay: 0.9s;
 }
