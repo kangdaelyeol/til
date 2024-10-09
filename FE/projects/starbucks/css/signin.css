@@ -1,0 +1,91 @@
+section.sign-in {
+  margin-top: 120px;
+  padding: 120px 0;
+  background: url('../images/signin_bg.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.sign-in > .inner {
+  width: 500px;
+}
+.sign-in > .inner > .title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.sign-in .card {
+  background-color: #f6f5f1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.sign-in .card > .title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sign-in .card .title > .welcome {
+  color: #016733;
+}
+
+.sign-in .card__form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in .card__form input {
+  all: unset;
+  margin: 8px 30px;
+  height: 30px;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.sign-in .card__form input::placeholder {
+  font-size: 12px;
+}
+
+.sign-in .card__form .submit-btn {
+  cursor: pointer;
+  background-color: #016733;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.sign-in .description {
+  text-align: center;
+  color: #016733;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.sign-in .btn-group {
+  display: flex;
+}
+
+.sign-in .btn-group > a {
+  flex: 1 1 0;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 0;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.sign-in .btn-group > a:last-child {
+  border-right: none;
+}
+
+.sign-in .btn-group > a:hover {
+  text-decoration: underline;
+}
