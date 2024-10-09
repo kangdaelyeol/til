@@ -428,3 +428,64 @@
   height: 100%;
 }
 ```
+
+## word separator
+
+- 각각 단어 사이마다 들어갈 구분자(separator)를 간단히 생성하기 위해 가상 요소(pseudo elements - ::before)를 활용했다.
+
+- 가상 요소를 각 단어마다 생성하는데, 하나의 단어를 기준으로 생성된 구분자를 두 단어 사이에 넣기 위해선 pseudo element에 대한 이해가 필요했다.
+
+- pseudo element는 해당 요소의 자식요소로써 생성된다.
+
+  - 즉 요소의 `content`영역에 생성되기 때문에 content로 봐야 한다.
+
+  - 하나의 부모를 두어, 그 contents 영역 안에서 positioning을 하기 때문에 다른 부모의 기준에 맞출 수 없다.
+
+  - 즉 separator는 absolutely positioned element로써 배치 되어야 한다.
+
+1. pseudo element를 separator로 디자인하기
+
+```css
+.word {
+  position: relative;
+}
+
+.word::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #333333;
+  position: absolute;
+}
+```
+
+2. separator element align
+
+- 생성한 element를 배치한다.
+
+- 단어의 오른쪽에 배치한다 가정할 때, right속성은 요소의 width의 절반만큼 더 이동한다.
+
+- absolute position을 가지게 되는 경우 `부모 요소의 padding영역까지` 자유롭게 이동할 수 있으므로, 단어 사이 간격은 padding으로 결정한다.
+
+```css
+.word {
+  position: relative;
+  padding: 20px;
+}
+
+.word::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #333333;
+  position: absolute;
+
+  /* 세로축 정렬 */
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+
+  /* 자신의 width의 절반 */
+  right: -2.5px;
+}
+```
