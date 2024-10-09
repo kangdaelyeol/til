@@ -381,3 +381,50 @@
 ```
 
 - 결과적으로 특정한 경우에는 BEM을 사용하는 것이 좋을 수 있고, 아닐 수 있다는 것을 느끼게 됨.
+
+## width - padding / margin
+
+- 요소의 padding, margin값이 %인 경우, `부모의 width`값을 기준으로 한다.
+
+- 만약 자식 요소가 absolutely positioned element이면서 부모 요소가 그 기준을 잡아주지 못한다면, width의 기준은 body의 width를 기준으로 한다.
+
+- 이런 특징을 활용해서 부모 요소 크기를 자식 요소의 기준으로 결정할 수 있다.
+
+```css
+.parent {
+  width: 1920px;
+}
+
+.parent::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+```
+
+- 이렇게 되면 ::before content에 의해 parent의 height가 1920px에 대한 16:9비율이 완성된다.
+
+- 물론 `calc`를 활용해서 parent에 그냥 height를 계산해서 줄 수 있지만, 다른 방식으로 height를 고정하려는 시도를 해봄.
+
+- 이런 방식으로 parent의 크기를 고정시켜 디자인 할 수 있다.
+
+- parent생성 -> ::before요소를 통한 사이즈 조정 -> video element 삽입
+
+```css
+.parent {
+  width: 1920px;
+  position: relative;
+}
+
+.parent::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+.parent > .video-player {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+```
