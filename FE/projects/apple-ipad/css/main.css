@@ -1,0 +1,47 @@
+/* Common */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 1.4;
+  color: #333;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.inner {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+
+header {
+  background-color: #3a3a3a;
+}
+
+header > .inner {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  font-size: 11px;
+  color: #f5f5f5;
+  opacity: 0.8;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+header a:hover {
+  opacity: 1;
+}
