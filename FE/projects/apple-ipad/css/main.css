@@ -1,6 +1,6 @@
 /* Common */
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', 'Nanum Gothic', sans-serif;
   font-size: 16px;
   /* font-weight: 400; */
   line-height: 1.4;
@@ -13,6 +13,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
   display: block;
 }
 
@@ -20,6 +21,20 @@ a {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 4px 0;
+  border-radius: 100px;
+  width: 60px;
+  text-align: center;
+  background-color: #0171e4;
+  color: white;
+  font-size: 10px;
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
 
 /* Header Section */
@@ -44,4 +59,51 @@ header a {
 
 header a:hover {
   opacity: 1;
+}
+
+/* Nav Section */
+
+nav {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid gray;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+}
+
+nav > .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+nav .title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav .nav-group {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-group > span {
+  user-select: none;
+  font-size: 10px;
+  color: gray;
+  margin-right: 20px;
+}
+
+nav .nav-group > .description {
+  margin-right: 20px;
+  font-size: 11px;
+}
+
+nav .nav-group > .description:hover {
+  opacity: 0.7;
+}
+
+.testbg {
+  height: 1000px;
+  background-color: #3a3a3a;
 }
