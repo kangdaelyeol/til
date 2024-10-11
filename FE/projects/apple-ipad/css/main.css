@@ -1,9 +1,8 @@
 /* Common */
 body {
-  font-family: 'Roboto', 'Noto Sans KR', 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  /* font-weight: 400; */
-  line-height: 1.4;
+  line-height: 1;
   color: #333;
 }
 
@@ -78,8 +77,8 @@ nav > .inner {
   align-items: center;
 }
 nav .title {
+  font-weight: 500;
   font-size: 22px;
-  font-weight: bold;
 }
 
 nav .nav-group {
