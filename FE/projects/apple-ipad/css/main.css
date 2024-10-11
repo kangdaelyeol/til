@@ -43,21 +43,52 @@ header {
 }
 
 header > .inner {
-  padding: 12px 0;
+  max-width: 1020px;
+}
+
+header .menu {
   display: flex;
+  height: 44px;
   justify-content: space-between;
 }
 
-header a {
+header .menu > li {
+  display: flex;
+}
+
+header .menu > li > a {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
   font-size: 11px;
   color: #f5f5f5;
   opacity: 0.8;
-  text-align: center;
-  text-wrap: nowrap;
 }
 
-header a:hover {
+header .menu > li > a:hover {
   opacity: 1;
+}
+
+header .menu > li.apple-logo,
+header .menu > li.search,
+header .menu > li.basket {
+  text-indent: -9999px;
+  background-position: 0 13px;
+}
+
+header .menu > li.apple-logo {
+  background-image: url('../images/header_apple.svg');
+  background-repeat: no-repeat;
+}
+
+header .menu > li.search {
+  background-image: url('../images/header_search.svg');
+  background-repeat: no-repeat;
+}
+
+header .menu > li.basket {
+  background-image: url('../images/header_bag.svg');
+  background-repeat: no-repeat;
 }
 
 /* Nav Section */
