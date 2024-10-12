@@ -98,7 +98,7 @@ header ul.menu > li.basket-starter {
 /* Header section - basket dropdown */
 
 header .basket {
-  display: none;
+  visibility: hidden;
   position: absolute;
   box-sizing: border-box;
   top: calc(100% + 4px);
@@ -108,10 +108,13 @@ header .basket {
   background-color: #fff;
   border: 1px solid #d2d2d2;
   border-radius: 10px;
+  transition: all 0.4s;
+  opacity: 0;
 }
 
 header .basket.show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 header .basket > .arrow {
@@ -121,7 +124,6 @@ header .basket > .arrow {
   top: -20px;
   right: 0;
   overflow: hidden;
-  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
