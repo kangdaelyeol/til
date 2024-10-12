@@ -918,11 +918,11 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="substance">Sulforaphane</span> -> <span class="substance">KEAP1</span> -> <span class="interaction">inactive</span> -> <span class="substance">NRF2</span> -> <span class="organ">ARE</span> -> <span class="interaction">composition</span> -> <span class="interaction">transcription</span> -> <span class="substance">mRNA</span> -> <span class="organ">Ribosome</span> -> <span class="substance">GCLC/GCLM</span>
 
-- `NRF2-KEAP1 pathway`
+- ### NRF2-KEAP1 pathway
 
   - [세포질(Cytoplasm)](https://en.wikipedia.org/wiki/Cytoplasm)에는 KEAP1 단백질과 NRF2 전사인자가 있는데, 평소에는 KEAP1단백질이 NRF2에게 ubiquitination 작용을 해서 [ubiquitin 단백질](https://en.wikipedia.org/wiki/Ubiquitin)을 결합한 결과 NRF2효소의 [proteasome](https://en.wikipedia.org/wiki/Proteasome)분해를 촉진시킨다.
 
-- `NRF2-ARE pathway`
+- ### NRF2-ARE pathway
 
   - 하지만 산화 스트레스(Oxidative stress)또는 Sulforaphane물질등 외부 요인으로 인해 NRF2를 분해하던 KEAP1이 변형되어 활동이 억제된다.
 
@@ -933,3 +933,21 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
   - 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)**를 촉진한다.
 
   - 결과적으로 해당 단백질 발현과 관련된 mRNA이 생성되고, Ribosome에 전달되고, 번역(translation)을 통해 GCLC, GCLM이 합성된다.
+
+## liposomal glutathione
+
+- 우리 몸에 항산화 작용을 촉진하기 위해 Glutathione자체를 구입해서 먹는 경우가 있다. 하지만 이는 효과가 거의 없을 것이다.
+
+- Glutathione은 glutamic acid, cysteine, glycine 세 아미노산의 결합체인 tripeptide인데, 이를 섭취하면 glutathione은 보통 위에서 분해되어 세 아미노산을 섭취하는 것과 동일 하게 된다.
+
+- 몸에서 Glutathione합성을 촉진하기 위해 [NRF2-ARE pathway](#nrf2-are-pathway)를 유도해야 하는데, 여기서 합성에 필요한 cysteine은 체내에서 합성되기도 하지만, 필요에 따라 이보다 섭취량이 더욱 권장되는 아미노산이기 때문에 이를 따로 섭취해주는 경우가 있다. 이 경우 glutathione을 섭취하는 것 보단 합리적이다. 하지만 진정한 본질인 `NRF2-ARE pathway`를 활성화 하기엔 부족하다.
+
+- 그래서 glutathione을 그대로 보존하면서 전달해야 하는데, 이 때 liposomal glutathione을 섭취하는 것은 그나마 도움이 될 수 있다고 한다. 즉 glutathione을 [liposome](https://en.wikipedia.org/wiki/Liposome)에 감싼 형태를 섭취하는 것이다.
+
+- liposome은 최소 하나의 [lipid bilayer](https://en.wikipedia.org/wiki/Lipid_bilayer)를 포함하는 작은 인공적인 [vesicle](<https://en.wikipedia.org/wiki/Vesicle_(biology_and_chemistry)>)이다.
+
+- liposome은 위의 소화효소에 저항성을 가진다. 그래서 glutathione을 liposome으로 감싸면 안전하게 소장까지 운반할 수 있다.
+
+- 이렇게 운반된 liposomal glutathione은 소장의 **epithelial cell**에 의해 흡수되는데, 일반적으로 endocytosis를 통해 흡수된다.
+
+  - **endocytosis(세포 내 이입)**: liposomal glutathione이 세포 내로 그대로 들어와 흡수된다.
