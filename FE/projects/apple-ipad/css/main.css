@@ -30,17 +30,25 @@ a {
 }
 
 .btn {
-  padding: 4px 0;
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  height: 24px;
+  padding: 0 10px;
   border-radius: 100px;
-  width: 60px;
-  text-align: center;
-  background-color: #0171e4;
+  background-color: #0171e3;
   color: white;
-  font-size: 10px;
+  cursor: pointer;
 }
 
 .btn:hover {
   opacity: 0.7;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 2px #81b9f1;
 }
 
 /* Header Section */
@@ -320,37 +328,33 @@ nav {
 
 nav > .inner {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
+  height: 52px;
   align-items: center;
 }
-nav .title {
-  font-weight: 500;
+nav h1 {
   font-size: 22px;
+  font-weight: 500;
+  flex-grow: 1;
 }
 
-nav .nav-group {
+nav ul.menu {
   display: flex;
+  gap: 12px;
+  margin-right: 18px;
   align-items: center;
 }
 
-nav .nav-group > span {
+nav ul.menu li:first-of-type {
   user-select: none;
-  font-size: 10px;
-  color: gray;
-  margin-right: 20px;
+  font-size: 11px;
+  opacity: 0.5;
 }
 
-nav .nav-group > .description {
-  margin-right: 20px;
+nav ul.menu li .description {
+  padding: 6px;
   font-size: 11px;
 }
 
-nav .nav-group > .description:hover {
-  opacity: 0.7;
-}
-
-.testbg {
-  height: 1000px;
-  background-color: #3a3a3a;
+nav ul.menu li .description:hover {
+  color: #0071e3;
 }
