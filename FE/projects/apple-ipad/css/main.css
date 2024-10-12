@@ -1,9 +1,16 @@
 /* Common */
+html.fixed {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
 body {
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #1d1d1d;
+  height: 10000px;
 }
 
 img {
@@ -173,6 +180,7 @@ header .search-wrap {
   left: 0;
   width: 100%;
   z-index: 5;
+  display: none;
 }
 
 header .search {
@@ -218,7 +226,7 @@ header .search .textfield .search-icon {
   opacity: 0.4;
 }
 
-header .search .textfield .close-icon {
+header .search .textfield .search-closer {
   position: absolute;
   width: 40px;
   height: 44px;
@@ -246,6 +254,7 @@ header .search .autocompletes > h3 {
   font-size: 12px;
   color: #6e6e6e;
   margin-top: 12px;
+  margin-bottom: 8px;
 }
 
 header .search .autocompletes > ul > li > a {
@@ -260,14 +269,18 @@ header .search .autocompletes > ul > li:hover > a {
   color: #0071e3;
 }
 
-header .search .textfield .close-icon:hover {
+header .search .textfield .search-closer:hover {
   opacity: 1;
 }
 
 /* Header Section - Search Bar(Active)  */
 
-header.searching ul.menu > li {
+header.searching ul.menu li {
   opacity: 0;
+}
+
+header.searching .search-wrap {
+  display: block;
 }
 
 /* Nav Section */
