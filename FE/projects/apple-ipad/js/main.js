@@ -61,6 +61,10 @@ const showSearch = (e) => {
         el.style.transitionDelay = (0.4 * index) / searchItemList.length + 's'
     })
 
+    setTimeout(() => {
+        searchInputEl.focus()
+    }, 200)
+
     searchItemList.reverse()
     e.stopPropagation()
 }
@@ -77,6 +81,9 @@ const hideSearch = () => {
     })
 
     searchItemList.reverse()
+    setTimeout(() => {
+        searchInputEl.value = ''
+    }, 400)
 }
 
 searchStarterEl.addEventListener('click', showSearch)
@@ -85,3 +92,7 @@ searchWrapEl.addEventListener('click', (e) => {
     e.stopPropagation()
 })
 window.addEventListener('click', hideSearch)
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') hideSearch()
+})
