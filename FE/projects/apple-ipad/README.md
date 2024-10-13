@@ -99,3 +99,61 @@ header ul.menu > li.search-starter {
 - 이 경우도 shorthand property에 의해 border-color 속성이 **override**되어 default값인 `black`으로 설정된다.
 
 - 결론적으로 shorthand property를 사용할 때 신중해야 한다.
+
+## dropdown menu - arrow
+
+- dropdown menu에 arrow 모양을 추가하기 위해 [pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)의 ::before을 사용한다.
+
+- dropdown menu의 content와 별개로 arrow를 위한 box를 생성한다.
+
+```html
+<div class="basket">
+  <div class="arrow"></div>
+  <div class="message">장바구니가 비어 있습니다.</div>
+  <ul>
+    <li><a href="javascript:void(0)">장바구니</a></li>
+    <li><a href="javascript:void(0)">저장된 항목</a></li>
+    <li><a href="javascript:void(0)">주문</a></li>
+    <li><a href="javascript:void(0)">계정</a></li>
+    <li><a href="javascript:void(0)">로그인</a></li>
+  </ul>
+</div>
+```
+
+```css
+header .basket > .arrow::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: rotateZ(45deg);
+  transform-origin: 0 0;
+  background-color: #fff;
+  border: 1px solid #d2d2d2;
+}
+```
+
+- arrow의 ::before element를 rotate로 회전시킨 후 위치 조정을 한다.
+
+- arrow의 가장자리 길이를 정확하게 계산하기 위해서 `box-sizing: border-box`값을 설정했다.
+
+- `transform-origin: 0 0`으로 하고 **top, left**속성으로 정확한 위치를 조정한다. 그렇지 않으면 회전한 사각형을 정확한 위치에 배치하기 위해선 `sqrt` 기능이 필요하게 되며 수학적으로 계산이 필요하기 때문에 복잡하다.
+
+![arrow example1](./readme_img/image.png)
+
+- 빨간 사각형 변의 길이를 a라고 하면 transform-origin값은 `a/2 a/2`다.
+
+- 여기서 `transform-origin: 0 0`처럼 이동을 하려면 sqrt를 사용한 결과의 값이 필요하다.
+
+  - 검은 사각형 변으로부터 빨간 사각형 꼭지점 까지의 거리 **sqrt(a<sup>2</sup>/2) - (a/2)**
+
+- 결과적으로 두 경우의 수는 같은 결과를 보여준다
+
+  - transform-origin: 0 0
+
+  - top: sqrt(a<sup>2</sup>/2) - (a/2); left: -(a/2); `a = 빨간 사각형의 width라 가정`
+
+- 이는 매우 비효율적이기 때문에 `transform-origin: 0 0`을 사용하는 것이 맞다.
+
