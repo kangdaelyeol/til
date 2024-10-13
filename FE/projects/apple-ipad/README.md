@@ -65,3 +65,37 @@ header ul.menu > li.basket-starter {
 - `white-space: nowrap`으로 줄바꿈을 방지하고 container의 width 크기만큼 text를 밀어내고 숨기는 기법이다.
 
 - 이것 말고 여러 방법이 있기 떄문에 -9999px을 사용하는 방법이 정답은 아닌 것 같다.
+
+## shorthand property - override
+
+- [shorthand property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)를 사용하는 경우 해당 속성이 override되는 것을 잘 봐야 한다.
+
+- shorthand property에서 설정해주지 않은 값들은 지정하지 않는 것이 아니라 해당 shorthand property에서 default 값으로 자동 설정해주기 때문이다.
+
+```css
+header ul.menu > li.search-starter {
+  background-image: url('../images/header_search.svg');
+  background: 0 13px no-repeat;
+}
+```
+
+- 이 경우 background shorthand property의 background-image의 default값은 `none`이기 때문에 이미지가 보이지 않게 된다.
+
+```css
+header ul.menu > li.search-starter {
+  background: url('../images/header_search.svg') 0 13px no-repeat;
+}
+```
+
+- 따라서 이런 방식으로 한 번에 묶어 주던가 `shorthand property를 가장 상위에 두어야 한다`.
+
+```css
+.box {
+  border-color: red;
+  border: 10px solid;
+}
+```
+
+- 이 경우도 shorthand property에 의해 border-color 속성이 **override**되어 default값인 `black`으로 설정된다.
+
+- 결론적으로 shorthand property를 사용할 때 신중해야 한다.
