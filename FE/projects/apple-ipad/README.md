@@ -443,3 +443,35 @@ img {
 - **user-drag** 속성은 현재 Chrome browser에서 기능 개발이 완료되지 않은 속성(partial support)이기 때문에 `-webkit-` 이라는 vender prefix를 붙힌 속성을 사용할 수 있다.
 
 - 브라우저 지원 현황은 [caniuse 웹 사이트](https://caniuse.com/?search=user-drag)에서 확인 할 수 있다.
+
+## Declaring global CSS variables
+
+- 2개의 dash(--)를 사용해서 CSS안에 [custom property](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)를 선언할 수 있다.
+
+- 보통 **최상위 element** 에 global variables로써 선언하는데, html에 선언 하는 것 보다 `:root` 가상 클래스 안에 선언 한다.
+
+```css
+:root {
+  /* declaring in :root instead of html */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-font: #1d1d1d;
+  --color-font-darkgray: #6e6e6e;
+  --color-font-middlegray: #b7b7b7;
+  --color-font-lightgray: #f5f5f5;
+  --color-link: #0071e3;
+  --color-link-focus: #81b9f1;
+  --color-border: #d2d2d2;
+  --color-header: #3a3a3a;
+  --color-section: #f5f5f5;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+```
+
+- [:root pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)는 html을 선택하는 것과 같다.
+
+- 차이점은 브라우저가 CSS 스타일을 결정할 때 가장 관련있는 스타일 선택의 우선순위, 즉 [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)가 다르다.
+
+- 가장 연관있는 CSS 스타일을 선택하는 알고리즘인 **spicificity** 에 의해 `html보다 :root pseudo-class의 스타일이 우선 적용 된다.`
+
+- [selector weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_weight_categories)에 의해 html은 type column에 해당하므로 0-0-1의 **무게 값(weight value)** 을 가지고, :root는 가상 클래스이기 때문에 class column에 해당한다. 따라서 :root는 0-1-0의 weight value를 가진다.
