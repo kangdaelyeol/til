@@ -64,6 +64,8 @@ header ul.menu > li.basket-starter {
 
 - `white-space: nowrap`으로 줄바꿈을 방지하고 container의 width 크기만큼 text를 밀어내고 숨기는 기법이다.
 
+  - **white-space** 속성 외에 `text-wrap: nowrap` 설정으로 같은 결과를 볼 수 있는데, [mdn문서](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)를 보면 white-space로 white-space-collapse, text-wrap 두 속성을 shorthand property로써 한 번에 설정 할 수 있다고 한다. **nowrap** 에 대해선 같은 기능을 수행하는 것 같다.
+
 - 이것 말고 여러 방법이 있기 떄문에 -9999px을 사용하는 방법이 정답은 아닌 것 같다.
 
 ## shorthand property - override
