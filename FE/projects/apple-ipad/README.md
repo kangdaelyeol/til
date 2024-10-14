@@ -368,6 +368,8 @@ document.body.addEventListener(
 )
 ```
 
-- 이 경우 body에 대한 wheel에 대해선 scroll이 되지 않지만 하위 element에 대해 wheel을 하게 되면 스크롤이 동작하게 된다. (`window`, `document.body`에 대해선 preventDefault를 적용시키기 위해 `passive` 옵션이 필요하다)
+**(`window`, `document.body`에 대해선 preventDefault를 적용시키기 위해 `passive` 옵션이 필요하다)**
+
+- 이 경우 **event bubbling** 에 의해 **wheel event** 가 최상위 element인 body / window까지 전파시킬 수 있으므로, 전파된 event에 대한 기본 동작을 취소시켜 scroll이 되지 않게 할 수 있다. 중요한 점은 하위 element에 대해 **stopPropagation으로 bubbling을 막은경우** wheel을 하게 되면 스크롤이 동작하게 된다.
 
 - 따라서 wheel 이벤트를 제어함으로써 스크롤을 방지하려면 많은 요소에 대해 `preventDefault()`를 설정 해주어야 한다. 이는 매우 복잡하므로 `position: fixed`를 html에 직접 스타일링 해주는 것이 효율적이다.
