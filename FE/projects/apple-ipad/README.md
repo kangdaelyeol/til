@@ -425,3 +425,21 @@ document.body.addEventListener(
 - 최상위 element(figure)에 class를 걸어두어도 하위 요소에 모두 들여쓰기가 적용되어 코드가 간결해지는 결과를 볼 수 있지만, render과정에서 자원소모가 비교적 크다 하고 **(간단히 측정해 봤는데 거의 차이가 없다고 봐도 될 정도)** `-9999px`이라는 표현 자체가 관습적이라고는 하지만 논리적인 측면에서 부적절한 면이 있다고 생각이든다.
 
 - 따라서 `text-indent를 100%`와 `overflow:hidden`을 적용하는 방식으로 대체 택스트를 구현.
+
+## vender prefix - 공급업체 접두사
+
+- css 속성에서 아직 모든 브라우저에서 지원하지 않고 개발중인 속성이 있다.
+
+- 이러한 속성은 부분적으로 기능을 제공하는데, `vender prefix`를 붙힘으로써 속성을 사용할 수 있다.
+
+```css
+img {
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+```
+
+- **user-drag** 속성은 현재 Chrome browser에서 기능 개발이 완료되지 않은 속성(partial support)이기 때문에 `-webkit-` 이라는 vender prefix를 붙힌 속성을 사용할 수 있다.
+
+- 브라우저 지원 현황은 [caniuse 웹 사이트](https://caniuse.com/?search=user-drag)에서 확인 할 수 있다.
