@@ -339,3 +339,35 @@ header.searching .search-wrap {
 - 즉 show와 hide를 모두 구현한 후 이 둘을 toggle하는 방식으로 DOM을 조작하면 구현할 수 있다.
 
 - 하지만 이 방식은 매우 비효율적이기 때문에 `visibility`를 사용한다.
+
+## html - fixed
+
+- 특정 section이 활성화 될 때 전체 document 페이지가 고정되어야 할 필요가 있다.
+
+- html 자체에 `position: fixed`값을 설정해 page를 고정시키고 `overflow-y: scroll`설정으로 스크롤바가 표시 되도록 한다.
+
+```css
+html.fixed {
+  position: fixed;
+  wtdth: 100%;
+  overflow-y: scroll;
+}
+```
+
+### 'wheel' event
+
+- 다른 방법으로는 `wheel` event를 제어하는 것이다.
+
+```javascript
+document.body.addEventListener(
+  'wheel',
+  (e) => {
+    e.preventDefault()
+  },
+  { passive: false }
+)
+```
+
+- 이 경우 body에 대한 wheel에 대해선 scroll이 되지 않지만 하위 element에 대해 wheel을 하게 되면 스크롤이 동작하게 된다. (`window`, `document.body`에 대해선 preventDefault를 적용시키기 위해 `passive` 옵션이 필요하다)
+
+- 따라서 wheel 이벤트를 제어함으로써 스크롤을 방지하려면 많은 요소에 대해 `preventDefault()`를 설정 해주어야 한다. 이는 매우 복잡하므로 `position: fixed`를 html에 직접 스타일링 해주는 것이 효율적이다.
