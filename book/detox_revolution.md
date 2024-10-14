@@ -950,7 +950,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 이렇게 운반된 liposomal glutathione은 소장의 **epithelial cell**에 의해 흡수되는데, 일반적으로 endocytosis를 통해 흡수된다.
 
-  - **endocytosis(세포 내 이입)**: liposomal glutathione이 세포 내로 그대로 들어와 흡수된다.
+  - **endocytosis(세포 내 이입)** : liposomal glutathione이 세포 내로 그대로 들어와 흡수된다.
 
 ## Secretin
 
@@ -964,4 +964,30 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 분비된 secretin은 **pancrea**에서 **pancreatic juice(췌장액)** 분비를 촉진하고, pancreatic juice에 포함된 biocabonate(중탄산염)는 duodenum의 산성환경을 중화시켜준다.
 
-- 또한 secretin은 간에서 bile생성을 촉진해 **gallbladder(담낭)**로 축적한다. 이후 [Cholecystokinin(CCK)](https://en.wikipedia.org/wiki/Cholecystokinin)에 의해 담낭이 수축되어 담즙이 분비된다.
+- 또한 secretin은 간에서 bile생성을 촉진해 **gallbladder(담낭)** 으로 축적한다. 이후 [Cholecystokinin(CCK)](https://en.wikipedia.org/wiki/Cholecystokinin)에 의해 담낭이 수축되어 담즙이 분비된다.
+
+## Urine output
+
+- 우리 혈액에 쌓인 노폐물은 간을 거쳐 신장에 도달해 여과과정을 거치고, 소변을 통해 배출이 된다.
+
+- 혈액에 쌓인 노폐물중에 해독된 독소, 즉 몸에서 배출될 수 있는 형태인 **친수성(Hydrophilic)** 독소 형태로 존재하는데, 신장에서 여과되는 혈액의 `pH농도`가 강산성 또는 알칼리성을 띠는 경우 **비이온화 상태**가 되어 **친유성(lipophilic)** 상태가 되고 `재흡수(reabsorption)`될 가능성이 있다.
+
+<span class="title">혈액이 여과되는 과정</span>
+
+<span class="substance">Blood with waste</span> - <span class="organ">(kidney) - nephron - glomerulus<span class="interaction">(filteration)</span> </span> -> <span class ="organ">(renal tubule) - proximal convoluted tubule<span class="interaction">(filteration)</span> - loop of henl<span class="interaction">(filteration)</span> - distal convoluted tubule<span class="interaction">(filteration)</span> </span> -> <span class="organ">collecting duct</span> -> <span class="organ">renal pelvis</span> -> <span class="organ">ureter</span> -> <span class="organ">bladder</span> -> <span class="substance">urine output</span>
+
+- 신장(kidney)에는 약 100만개의 **nephron** 이 있고, 각각의 nephron에는 혈액을 여과하는 **사구체(glomerulus)** 와 혈액을 운반하는 **신세뇨관(renal tubule)** 이 있다.
+
+- glomerulus에서 혈액의 1차 여과가 발생하고 나머지 혈액은 renal tubule에서 여과가 이루어진다.
+
+- renal tubule는 **원위 세뇨세관(PCT: Proximal Convoluted Tubule)**
+
+- **Henel 고리(Loop of Henel)** - **근위 세뇨세관(DCT: Distal Convoluted Tubule)** - **집합관(Collecting duct)** 네 부분으로 이루어져 있는데, PCT - Loop of Henel - DCT를 거치는동안 여과가 발생한다. 여기서 여과를 거친 혈액은 `신장 모세혈관(peritubular capillary)`를 거쳐 흡수된다. 집합관에서는 여과가 발생하지 않는다.
+
+- 과정을 모두 마친 잔여물은 **집합관(Collecting duct)** 에서 **신우(renal pelvis)** 로 이동하고 신장을 빠져나와 **요관(Ureter)** 을 거쳐 **방광(bladder)** 으로 축적되어 소변으로 배출된다.
+
+- 여기서 여과되는 혈액이 **강산성**을 띄는 경우 친수성(hydrophilic)의 산성 독소가 **H<sup>+</sup>** 을 얻어 **친유성(lipophilic)** 을 띄어 세포막으로 쉽게 들어갈 수 있는 구조가 되어 **peritubular capillary** 를 통한 **재흡수** 가 발생할 수 있다.
+
+- 알칼리성 독소도 마찬가지인데, 우리 현대의 식습관은 혈액을 산성으로 만들기에 최적화 되어 있다. **동물성 단백질, 과다한 염분 섭취** 가 대표적이다.
+
+- 결과적으로 알칼리성 식품도 균형 있게 섭취함으로써 신장 혈액의 pH 농도를 적절히 유지하고, 독소 재흡수를 방지할 수 있다.
