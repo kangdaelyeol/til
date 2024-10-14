@@ -141,6 +141,8 @@ header .basket > .arrow::before {
 
 - `transform-origin: 0 0`으로 하고 **top, left**속성으로 정확한 위치를 조정한다. 그렇지 않으면 회전한 사각형을 정확한 위치에 배치하기 위해선 `sqrt` 기능이 필요하게 되며 수학적으로 계산이 필요하기 때문에 복잡하다.
 
+### Example
+
 ![arrow example1](./readme_img/image.png)
 
 - 빨간 사각형 변의 길이를 a라고 하면 transform-origin값은 `a/2 a/2`다.
@@ -151,9 +153,93 @@ header .basket > .arrow::before {
 
 - 결과적으로 두 경우의 수는 같은 결과를 보여준다
 
-  - transform-origin: 0 0
+  - transform-origin: 0 0;
 
-  - top: sqrt(a<sup>2</sup>/2) - (a/2); left: -(a/2); `a = 빨간 사각형의 width라 가정`
+  - top: **sqrt**(a<sup>2</sup>/2) - (a/2); left: -(a/2); `a = 빨간 사각형의 width라 가정`
 
 - 이는 매우 비효율적이기 때문에 `transform-origin: 0 0`을 사용하는 것이 맞다.
 
+## event.stopPropagation()
+
+- dropdown menu의 특정 아이콘 매뉴가 활성화 될 경우, 이를 비활성화 하기 위해 아무 곳이나 클릭 할 수 있는 기능을 추가 하려면 [event bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Event_bubbling)을 막아야 한다.
+
+```javascript
+searchStarterEl.addEventListener('click', showSearch)
+searchCloserEl.addEventListener('click', hideSearch)
+window.addEventListener('click', hideSearch)
+```
+
+- bubbling으로 인해 어떠한 하위 요소를 클릭하더라도 반드시 이 메서드가 실행된다.
+
+- 즉 활성화된 dropdown container를 클릭하더라도 **event bubbling** 에 의해 event가 하위요소로부터 최상위(window)까지 전파되어 window에 대한 Listener가 실행된다.
+
+- 즉 구조상 showSearch가 실행되면 hideSearch는 실행되지 않아야 하므로 showSearch에서 Event전파를 막아주는 `stopPropagation`이 필요하다.
+
+```javascript
+const showSearch = (e) => {
+  headerEl.classList.add('searching')
+  // ... 기능 구현부
+  e.stopPropagation()
+}
+```
+
+- 이러한 방식으로 Event bubbling을 방지하기 위해선 하나의 기능을 목적으로 묶인 모든 box에 대해 bubbling을 방지해 주어야 한다.
+
+```html
+<div class="search-wrap">
+  <div class="search">
+    <div class="shadow"></div>
+    <div class="textfield">
+      <div class="search-icon"></div>
+      <input type="text" placeholder="apple.com 검색" />
+      <div class="search-closer"></div>
+    </div>
+    <div class="autocompletes">
+      <h3>빠른 링크</h3>
+      <ul>
+        <li>
+          <a href="javascript:void(0)"
+            >Apple Store 임시 휴무 관련 자주하는 질문</a
+          >
+        </li>
+        <li>
+          <a href="javascript:void(0)">Apple Store Online에서 쇼핑하기</a>
+        </li>
+        <li><a href="javascript:void(0)">액세서리</a></li>
+        <li><a href="javascript:void(0)">AirPods</a></li>
+        <li><a href="javascript:void(0)">AirTag</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+
+- search와 관련된 기능은 해당 기능의 최상위 container인 .search-wrap container에 모두 포함되어 있으므로 .search-wrap을 벗어나지 않은 클릭에 대해서는 bubbling이 발생해서는 안된다.
+
+- 따라서 해당 container에 대한 bubbling도 막아준다.
+
+```javascript
+searchWrapEl.addEventListener('click', (e) => {
+  e.stopPropagation()
+})
+```
+
+- 하지만 이러한 방식은 코드의 유연성을 떨어뜨리는 단점이 있다.
+
+- 이 경우 search-wrap - window 사이에 다른 section이 끼어 있거나 같은 event action에 대한 window만의 고유 event handling이 필요한 경우 이 방법은 옳지 않다.
+
+- 이를 고안한 다른 방법은 `e.target`에서 특정 element를 구분하는 것이다.
+
+- `e.target.classList.contains()`, `e.target.nodeName`등을 활용한 구별 방법도 있지만 이는 코드가 길어지거나 예외 상황이 많았다.
+
+- 여기서 가장 효율적인 [Element.closest()](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest) 메서드를 사용하는 방법을 알 수 있었다.
+
+```javascript
+window.addEventListener((e) => {
+  if (!e.target.closest('.search-wrap')) {
+    hideSearch()
+  }
+})
+```
+
+- `element.closest(Selector)` 메서드는 Selector와 일치하는 가장 가까운 조상 element를 찾는데(자신포함) 여기서 만약 window를 클릭한다면 결과 값은 null이 나오기 때문에 숨기는 기능을 실행할 수 있고, window로 전파된 이벤트를 이어서 handling할 수 있다.

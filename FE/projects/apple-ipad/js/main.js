@@ -90,7 +90,7 @@ searchStarterEl.addEventListener('click', showSearch)
 searchCloserEl.addEventListener('click', hideSearch)
 searchWrapEl.addEventListener('click', (e) => {
     e.stopPropagation()
-})
+}) 
 window.addEventListener('click', hideSearch)
 
 window.addEventListener('keydown', (e) => {
