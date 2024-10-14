@@ -375,3 +375,53 @@ document.body.addEventListener(
 - 이 경우 **event bubbling** 에 의해 **wheel event** 가 최상위 element인 body / window까지 전파시킬 수 있으므로, 전파된 event에 대한 기본 동작을 취소시켜 scroll이 되지 않게 할 수 있다. 중요한 점은 하위 element에 대해 **stopPropagation으로 bubbling을 막은경우** wheel을 하게 되면 스크롤이 동작하게 된다.
 
 - 따라서 wheel 이벤트를 제어함으로써 스크롤을 방지하려면 많은 요소에 대해 `preventDefault()`를 설정 해주어야 한다. 이는 매우 복잡하므로 `position: fixed`를 html에 직접 스타일링 해주는 것이 효율적이다.
+
+## figure - figcaption alt
+
+- figure에 포함된 이미지를 설명하는 figcaption이 image로 디자인된 text인 경우 background-url로 이미지 텍스트를 삽입하고, text는 숨긴다.
+
+```html
+<figure>
+  <img src="./images/hero_ipad.jpg" alt="hero_ipad_image" />
+  <figcaption>
+    <div class="bgtext caption-camera">
+      센터 스테이지 기술이 적용된 새로운 울트라 와이드 전면 카메라
+    </div>
+    <div class="bgtext caption-chip">A13 BIONIC 칩 전격 탑재</div>
+    <div class="bgtext caption-storage">저장 용량은 64GB부터</div>
+  </figcaption>
+</figure>
+```
+
+```css
+.bgtext {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+```
+
+- [text-indent: 9999px를 사용하게 되는 경우](#background-image---alternate-text)
+
+```html
+<figure class="bgtext">
+  <img src="./images/hero_ipad.jpg" alt="hero_ipad_image" />
+  <figcaption>
+    <div class="caption-camera">
+      센터 스테이지 기술이 적용된 새로운 울트라 와이드 전면 카메라
+    </div>
+    <div class="caption-chip">A13 BIONIC 칩 전격 탑재</div>
+    <div class="caption-storage">저장 용량은 64GB부터</div>
+  </figcaption>
+</figure>
+```
+
+```css
+.bgtext {
+  text-indent: -9999px;
+}
+```
+
+- 최상위 element(figure)에 class를 걸어두어도 하위 요소에 모두 들여쓰기가 적용되어 코드가 간결해지는 결과를 볼 수 있지만, render과정에서 자원소모가 비교적 크다 하고 **(간단히 측정해 봤는데 거의 차이가 없다고 봐도 될 정도)** `-9999px`이라는 표현 자체가 관습적이라고는 하지만 논리적인 측면에서 부적절한 면이 있다고 생각이든다.
+
+- 따라서 `text-indent를 100%`와 `overflow:hidden`을 적용하는 방식으로 대체 택스트를 구현.
