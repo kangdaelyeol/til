@@ -243,3 +243,99 @@ window.addEventListener((e) => {
 ```
 
 - `element.closest(Selector)` 메서드는 Selector와 일치하는 가장 가까운 조상 element를 찾는데(자신포함) 여기서 만약 window를 클릭한다면 결과 값은 null이 나오기 때문에 숨기는 기능을 실행할 수 있고, window로 전파된 이벤트를 이어서 handling할 수 있다.
+
+## visibility - interpolation
+
+- 특정 조건에 따라 DOM element가 화면에 표시되어야 하는 경우, 화면에 표시되지 않을 때 browser에 접근성을 보장해주어야 한다.
+
+- 만약 opacity만 변화를 주어 element를 보이지 않게 할 경우 보여지지 않을 뿐 해당 element의 모든 속성은 유지되어 클릭을 할 때 방해를 줄 수 있다.
+
+- 따라서 element가 화면에 표시되지 않을 때 [accessibility tree](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility#accessibility_apis)에서 제거해야 한다.
+
+- `transition`을 활용해서 특정 element의 opacity를 자연스럽게 변환시키는 동시에 `accessibility tree`에서 제거하기 위해 `visibility` 속성을 사용한다.
+
+```css
+header .search-wrap {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+  /* ... */
+}
+
+header.searching .search-wrap {
+  opacity: 1;
+  visibility: visible;
+}
+```
+
+- 이렇게 되면 visibility 의 [interpolation](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#interpolation) 특성에 의해 animation이 있다면, 모두 처리된 후 visible / not-visible 처리가 된다.
+
+### display - block / none animating display
+
+- 이 경우 opacity의 변환의 의도한 대로 보여지지 않는다.
+
+```css
+header .search-wrap {
+  opacity: 0;
+  display: none;
+  transition: 0.6s;
+  /* ... */
+}
+
+header.searching .search-wrap {
+  opacity: 1;
+  display: block;
+}
+```
+
+- display속성으로 transition의 특성을 이끌어낼 수 없지만 `animation`으로 일부 효과는 이끌어낼 수 있다.
+
+```css
+.box {
+  display: none;
+  /* ... */
+}
+
+.box.show {
+  display: block;
+  animation: showBox 1s;
+}
+
+@keyframes showBox {
+  0%: {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+```
+
+- display속성의 [animating display](https://developer.mozilla.org/en-US/docs/Web/CSS/display#animating_display) 특성상 block -> none으로 변환 할 때 `animation duration`의 초기값은 100%값로 갖는다.
+
+- 반대로 none -> block으로 변환하는 경우 `animation duration`은 0%를 초기값으로 가짐으로, fade-in효과는 구현할 수 있다.
+
+- 하지만 여기서 animation 진행 자체에 display를 설정함으로 써 원하는 fade-out 모션도 구현할 수 있었다.
+
+```css
+.hide {
+  animation: hideBox 1s;
+  display: none;
+}
+
+@keyframes hideBox {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+```
+
+- hideBox animation 부분의 0%에 display:block으로 설정하면 .hide의 display: none과 관계 없이 animation이 진행되는 것을 볼 수 있엇다.
+
+- 즉 show와 hide를 모두 구현한 후 이 둘을 toggle하는 방식으로 DOM을 조작하면 구현할 수 있다.
+
+- 하지만 이 방식은 매우 비효율적이기 때문에 `visibility`를 사용한다.
