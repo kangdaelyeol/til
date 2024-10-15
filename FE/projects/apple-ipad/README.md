@@ -560,3 +560,57 @@ img {
 - **box1** 의 크기는 padding에 의해 width, height크기가 각각 100px씩 증가될 것이다.
 
 - **box2** 는 크기가 커지지 않는다. padding이 가로 세로로 100px씩 box의 크기만큼 딱 차지 되었기 때문이다.
+
+## animation-fill-mode
+
+- [animation-fill-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode) 속성을 활용해서 animation 실행 전후 스타일을 제어할수 있다.
+
+- 보통 이 속성은 animation-delay와 함께 상호작용을 할 수 있고, 또한 animation 완료 이후 상태를 유지할 수 있게 해준다는 점이 매력적인 것 같다.
+
+- animation-fill-mode 속성을 통해 fade-in, fade-out을 더욱 간략히 구현 할 수 있었다.
+
+```css
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: show 1s both;
+}
+
+.hide {
+  animation: hide 1s both;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+```
+
+- `animation-fill-mode: both`를 적용해서 시작 전, 후를 항상 animation에 의존한 스타일로 설정했다. **(사실상 animation-delay 속성이 없기 때문에 forwards옵션을 적용해도 결과는 같다.)**
+
+- box에 show animation을 default로 두어 hide적용시 override될 수 있도록 한다.
+
+```javascript
+btnEl.addEventListener('click', () => {
+  boxEl.classList.toggle('hide')
+})
+```
+
+- toggle을 사용함으로써 간단히 override를 적용시킬 수 있었고, if-else문을 사용하지 않아 코드가 간결해졌다.
+
+- 하지만 이 또한 처음 페이지 랜더링 완료시 show 애니매이션이 실행되어 브라우저상 표현이 어색해 비효율적이다.
