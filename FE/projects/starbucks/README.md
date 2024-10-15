@@ -8,6 +8,24 @@
 
 ### table of contents
 
+- [head - meta tag](#head---meta-tag)
+
+- [CSS - nth-of-child / nth-of-type](#css---nth-of-child--nth-of-type)
+
+- [img - inline element sizing](#img---inline-element-sizing)
+
+- [absolutely positioned box - center align](#absolutely-positioned-box---center-align)
+
+- [inner container](#inner-container)
+
+- [a tag - temp href](#a-tag---temp-href)
+
+- [BEM - block element modifier](#bem---block-element-modifier)
+
+- [width - padding / margin relationship](#width---padding--margin-relationship)
+
+- [word seperator](#word-separator)
+
 ## head - meta tag
 
 - social media에서 정보를 공유할 때 간략한 정보를 미리 보여주기 위해 meta태그를 배치한다.
@@ -75,7 +93,7 @@
 
 - 자식 요소가 여러 유형의 태그로 섞여있을 때 지정된 유형의 요소들 중 순서를 기준으로 스타일을 지정할 수 있다.
 
-## img sizing
+## img - inline element sizing
 
 - 이미지를 적절히 배치하는 과정에서 배치가 예상대로 안되었던 상황을 겪었다.
 
@@ -177,19 +195,19 @@
 
 - `확실하게 하려면 img를 flex box로 감싸거나 display: block으로 지정해줌으로써 문제를 해결할 수 있다.`
 
-## position: absolute - center align
+## absolutely positioned box - center align
 
 - 요소를 중앙 정렬 하기 위해서 flex container만 사용해왔다.
 
-- flex box를 사용해서 정렬을 하는 경우 전체 레이아웃 구조를 고려해야 하기 때문 wrapper요소를 그만큼 많이 사용하게 된다.
+- flex box를 사용해서 정렬을 하는 경우 전체 레이아웃 구조를 고려해야 하기 때문에 위치 조정을 위한 wrapper요소를 그만큼 많이 사용하게 된다.
 
-- position: absolute를 적절히 사용해서 정렬을 하면서 html / css코드가 간결해지는 효과를 볼 수 있었다.
+- position: absolute 옵션을 사용해서 정렬을 함으로써 html / css코드가 간결해지는 효과를 볼 수 있었다.
 
 - `position: absolute - positioning`
 
   - [position 속성이 absolute, fixed인 경우 해당 요소는 normal document flow에서 제외되고, 해당 요소를 위한 어떠한 크기도 주어지지 않는다고 한다.](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute)
 
-  - 즉 width, height 값을 속성을 통해 직접 지정해주어야 한다.
+  - 즉 width, height 크기값을 직접 지정해주어야 한다.
 
   - 여러 실험을 통해 [normal document flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)`에 영향을 받지 않는 요소(absolute, fixed element)`를 배치하기 위한 두 가지 경우의 수에 대해서 중앙으로 정렬하는 방법을 도출해볼 수 있었다.
 
@@ -199,7 +217,7 @@
 
   - 요소의 크기를 지정하지 않은 경우, 요소는 크기에 대한 제한(constraint)이 없는 상태이다.
 
-  - 이 경우 top - bottom / left - right 반대의 개념을 가진 속성을 모두 지정하면 지정한 거리만큼 떨어지려 하기 때문에, absolutely positioned element의 크기가 자동으로 조절된다.
+  - 이 경우 top - bottom / left - right 각각 반대 위치 개념을 가진 속성을 모두 지정하면 지정한 거리만큼 떨어지려 하기 때문에, absolutely positioned element의 크기가 자동으로 조절된다.
 
   ```css
   .box {
@@ -228,7 +246,7 @@
 
   - 중앙 정렬이 잘 되는 것을 확인할 수 있다.
 
-  - 하지만 min-width가 없는 경우, viewport가 작아지면 요소 자체가 사라지게 된다.
+  - 하지만 **min-width** 크기가 없는 경우, viewport가 작아지면 요소 자체가 사라지게 된다.
 
   - 또한 min-width 이하로 요소가 작아지는 경우 중앙 정렬이 되지 않는 것을 확인 할 수 있었다
 
@@ -236,11 +254,11 @@
 
   2. ### **`크기(width / height)가 있는 경우`**
 
-  - 요소의 크기가 있는 경우 `margin`을 활용해서 중앙 정렬을 할 수 있다.
+  - 요소의 크기가 있는 경우 `margin` 속성을 활용해서 중앙 정렬을 할 수 있다.
 
-  - 요소 크기에 제한이 있는 경우 top, bottom이 있을 때, `top`이 우선으로 적용되고, left / right또한 `left`가 우선으로 적용이 된다.
+  - 요소 크기에 제한이 있는 경우 top, bottom이 있을 때, `top` 속성이 우선으로 적용되고, left / right또한 `left` 속성이 우선으로 적용이 된다.
 
-  - 하지만 상반된 두 속성이 지정된 경우, 지정된 크기만큼 edge에서 떨어져 있어야 한다는 본질은 사라지지 않는다. 이 특징을 `margin`으로 커버할 수 있다.
+  - 하지만 상반된 두 속성이 지정된 경우, 지정된 크기만큼 edge에서 떨어져 있어야 한다는 본질은 사라지지 않는다. 이 특징을 `margin` 속성으로 커버할 수 있다.
 
   - 즉 크기를 제외한 나머지 여백은 normal document flow와 유사하게 사용될 수 있게 된다.
 
@@ -264,7 +282,7 @@
 
   ![result img](./readme_img/absolute2.png)
 
-  - 현재 top, bottom, left, right 모두 0으로해서 margin이 균일한 크기로 적용이 되었지만, 상황에 따라 위치 값을 바꿔서 정렬 위치를 바꿀 수 있다.
+  - 현재 top, bottom, left, right 모두 0값을 가짐으로써 margin값이 균일한 크기로 적용이 되었지만, 상황에 따라 위치 값을 바꿔서 정렬 위치를 바꿀 수 있다.
 
 ## inner container
 
@@ -272,7 +290,7 @@
 
 - 가로 너비가 너무 넓으면 요소들이 너무 퍼지기 때문에 background를 위한 공간과, element들을 적절하게 중앙으로 정렬하기 위한 공간이 필요했다.
 
-- 여러 방법을 비교해보았는데, inner container와 block요소의 margin특성을 이용해 flex container없이 간단히 할 수 있었다.
+- 여러 방법을 비교해보았는데, inner container 개념과 block요소의 margin특성을 활용해 flex container없이 간단히 요소를 배치할 수 있었다.
 
 - 모든 요소를 감싸는 wrapper container 없이, layout의 각 section마다 요소들이 배치되야 하는 width크기가 다르므로, 각 section마다 inner container를 두어 요구사항에 맞게 viewport 여백을 두는 것이 가장 효율적이었다.
 
@@ -286,21 +304,21 @@
 
 - 이런 방식으로 공통적으로 사용할 수 있는 class selector를 두어 사용하면 매우 간편하다.
 
-- width: 1100px으로 지정했지만, 필요에 따라 스타일을 override해서 사용하면 된다.
+- width: 1100px 값으로 지정했지만, 필요에 따라 스타일을 override해서 사용하면 된다.
 
-- 가장 좋은 장점은, flex container를 사용하지 않기 때문에 size를 보장받을 수 있다.
+- 가장 좋은 장점은, flex container를 사용하지 않기 때문에 box의 size를 보장받을 수 있다.
 
-- flex container를 사용하게 되면, flex container안에 있는 flex item들의 길이 합이 container의 길이를 초과하면, `flex-wrap: nowrap`특성상 flex item들의 길이가 줄어든다.
+- flex container를 사용하게 되면, flex container안에 있는 flex item들의 길이 합이 container의 길이를 초과하면, `flex-wrap: nowrap`특성상 flex item들의 width / height 크기가 줄어든다.
 
-- 이러한 특성은 html 레이아웃 구조가 복잡해지는 경우, 그 레이아웃에 flex box가 포함되어 있을 때, flex의 특성을 고려해 설계하지 않은 layout인 경우, 예상치 못한 배치가 나와버릴 수 있기 때문에 굉장히 조심해야 한다.
+- 이러한 특성은 html 레이아웃 구조가 복잡해지는 경우, 그 레이아웃에 flex box가 포함되어 있을 때, flex의 특성을 고려해 설계하지 않은 layout인 경우, 예상치 못한 layout이 나올수 있기 때문에 굉장히 조심해야 한다.
 
-  - 이 또한 min / max-width같은 특성으로 해결할 수 있지만, 코드가 길어지고 min / max의 특성을 남용하는 느낌이 있어보인다.
+  - 이 또한 min / max-width 특성으로 해결할 수 있지만, 코드가 길어지고 min / max의 특성을 남용하는 느낌이 있어보인다.
 
-## a - temp href
+## a tag - temp href
 
-- a tag에 href속성을 임시로 설정할 때 `#`을 사용할 때가 있다.
+- a tag에 href속성을 임시로 설정할 때 `#`값을 사용할 때가 있다.
 
-- `#`의 목적은 특정 요소로 이동하려는 목적이 있는데, `#`자체만 사용하면 페이지의 맨 위로 스크롤 하게 된다.
+- `#`의 목적은 특정 요소를 찾아 viewport를 이동하려는 목적이 있는데, `#`자체만 사용하면 페이지의 맨 위로 스크롤 하게 된다.
 
 - 아무런 동작을 하지 않거나 임시적인 값을 넣기 위해 #을 남용하는 느낌이 들기 때문에, 이를 확실히 할 필요가 있다.
 
@@ -310,7 +328,7 @@
 <a href="javascript:void(0)">anchor</a>
 ```
 
-- 이렇게 하면 평가 결과가 undefined가 되어 아무런 일도 일어나지 않는다.
+- 이렇게 하면 해당 스크립트의 평가 결과는 undefined가 되어 아무런 일도 일어나지 않는다.
 
 - 만약 `#`을 사용하는 경우 기본동작을 취소하는 처리도 필요하다
 
@@ -334,39 +352,39 @@
     <li class="table__description">
       <div class="table__desciription__title">나와 어울리는 커피 찾기</div>
       <div class="table_description__content">
-        스타벅스가 바로 그냥 ㅎㄹㅅ딲 찾아드립니다.
+        스타벅스가 바로 찾아드립니다.
       </div>
     </li>
     <li class="table__description">
       <div class="table__description__title">최상의 ㅎㄹㅅ 즐기는 법</div>
       <div class="table__description__content">
-        여러가지 방법을 통해 다양한 풍미의 ㅎㄹㅅ을 즐겨봐요!
+        여러가지 방법을 통해 다양한 풍미를 즐겨봐요!
       </div>
     </li>
   </ul>
 </li>
 ```
 
-- 이 경우 문제는 없어 보이지만 html 클래스의 이름이 어느정도 길어서 가독성 측면에 오히려 문제가 있을 수 있다는 생각이 들었다.
+- 이 경우 문제는 없어 보이지만 html 클래스의 이름이 어느정도 길어서 가독성 측면에서 비효울적이라는 생각이 들었다.
 
 ```html
 <li class="table__texture">
   <ul class="inner">
     <li class="description">
       <div class="title">나와 어울리는 커피 찾기</div>
-      <div class="content">스타벅스가 바로 그냥 ㅎㄹㅅ딲 찾아드립니다.</div>
+      <div class="content">스타벅스가 바로 찾아드립니다.</div>
     </li>
     <li class="description">
       <div class="title">최상의 ㅎㄹㅅ 즐기는 법</div>
       <div class="content">
-        여러가지 방법을 통해 다양한 풍미의 ㅎㄹㅅ을 즐겨봐요!
+        여러가지 방법을 통해 다양한 풍미의를 즐겨봐요!
       </div>
     </li>
   </ul>
 </li>
 ```
 
-- 이 경우 html 자체는 짧아지고 가독성 측면에서도 좋아보이지만 css selector에서 직접 하위요소로 지정해야 다른 section에서의 title, content를 지정하는 것을 방지할 수 있다.
+- 이 경우 html 코드 자체는 짧아지고 가독성 측면에서도 좋아보이지만 css selector에서 직계자식 요소를 지정하는 [child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)를 사용해야 다른 section에서의 title, content를 지정하는 것을 방지할 수 있다.
 
 - 하지만 그렇다 해도 BEM을 사용하면서 클래스 이름 자체가 길기 때문에 css에서 하위요소를 지정함으로써 선택자가 길어지는 현상이랑 비슷해 보인다.
 
@@ -382,13 +400,13 @@
 
 - 결과적으로 특정한 경우에는 BEM을 사용하는 것이 좋을 수 있고, 아닐 수 있다는 것을 느끼게 됨.
 
-## width - padding / margin
+## width - padding / margin relationship
 
-- 요소의 padding, margin값이 %인 경우, `부모의 width`값을 기준으로 한다.
+- 요소의 padding, margin값이 %인 경우, `부모 요소의 width`값을 기준으로 한다.
 
-- 만약 자식 요소가 absolutely positioned element이면서 부모 요소가 그 기준을 잡아주지 못한다면, width의 기준은 body의 width를 기준으로 한다.
+- 만약 자식 요소가 **absolutely positioned element** 이면서 부모 요소가 그 기준을 잡아주지 못해 최상위 요소를 기준으로 잡는다면, width의 기준은 body의 width를 기준으로 한다.
 
-- 이런 특징을 활용해서 부모 요소 크기를 자식 요소의 기준으로 결정할 수 있다.
+- 이런 특징을 활용해서 자식 요소의 크기를 부모 요소의 width크기를 기준으로 결정할 수 있다.
 
 ```css
 .parent {
@@ -402,11 +420,11 @@
 }
 ```
 
-- 이렇게 되면 ::before content에 의해 parent의 height가 1920px에 대한 16:9비율이 완성된다.
+- 이렇게 되면 ::before element에 의해 parent의 height 크기가 1920px에 대한 16:9비율이 완성된다.
 
-- 물론 `calc`를 활용해서 parent에 그냥 height를 계산해서 줄 수 있지만, 다른 방식으로 height를 고정하려는 시도를 해봄.
+- 물론 `calc`를 활용해서 parent에 height 크기를 계산해서 적용할 수 있지만, 다른 방식으로 height 크기를 고정하려는 시도를 해보았다.
 
-- 이런 방식으로 parent의 크기를 고정시켜 디자인 할 수 있다.
+- 이런 방식으로 parent element의 크기를 고정시켜 디자인 할 수 있다.
 
 - parent생성 -> ::before요소를 통한 사이즈 조정 -> video element 삽입
 
@@ -437,11 +455,11 @@
 
 - pseudo element는 해당 요소의 자식요소로써 생성된다.
 
-  - 즉 요소의 `content`영역에 생성되기 때문에 content로 봐야 한다.
+  - 즉 요소의 `content`영역에 생성되기 때문에 content로 취급 해야 한다.
 
-  - 하나의 부모를 두어, 그 contents 영역 안에서 positioning을 하기 때문에 다른 부모의 기준에 맞출 수 없다.
+  - 하나의 부모를 두어, 그 content 영역 안에서 positioning을 하기 때문에 다른 부모요소 위치를 기준에 맞출 수 없다.
 
-  - 즉 separator는 absolutely positioned element로써 배치 되어야 한다.
+  - 즉 separator는 **absolutely positioned element** 로써 배치 되어야 한다.
 
 1. pseudo element를 separator로 디자인하기
 
@@ -465,7 +483,7 @@
 
 - 단어의 오른쪽에 배치한다 가정할 때, right속성은 요소의 width의 절반만큼 더 이동한다.
 
-- absolute position을 가지게 되는 경우 `부모 요소의 padding영역까지` 자유롭게 이동할 수 있으므로, 단어 사이 간격은 padding으로 결정한다.
+- absolute position을 가지게 되는 경우 `부모 요소의 padding영역까지` 자유롭게 이동할 수 있으므로, 단어 사이 간격은 padding 크기로 결정한다.
 
 ```css
 .word {
