@@ -250,11 +250,17 @@ window.addEventListener((e) => {
 
 - 특정 조건에 따라 DOM element가 화면에 표시되어야 하는 경우, 화면에 표시되지 않을 때 browser에 접근성을 보장해주어야 한다.
 
-- 만약 opacity만 변화를 주어 element를 보이지 않게 할 경우 보여지지 않을 뿐 해당 element의 모든 속성은 유지되어 클릭을 할 때 방해를 줄 수 있다.
+- 만약 opacity만 변화를 주어 element를 보이지 않게 할 경우 보여지지 않을 뿐 해당 element의 모든 속성은 유지되어 클릭 등 `focus` 접근을 할 때 방해를 줄 수 있다.
 
-- 따라서 element가 화면에 표시되지 않을 때 [accessibility tree](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility#accessibility_apis)에서 제거해야 한다.
+- [visibility hidden 특성](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#hidden)상 **hidden** 값을 가지게 되면 `focus`를 받을 수 없는 상태가 되므로 사용자와 상호작용 할 수 없는 상태가 된다.
 
-- `transition`을 활용해서 특정 element의 opacity를 자연스럽게 변환시키는 동시에 `accessibility tree`에서 제거하기 위해 `visibility` 속성을 사용한다.
+- 또한 hidden 옵션은 [accessibility tree](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility#accessibility_apis)로부터 제거된다.
+
+  - 접근성 트리에서 제거되면 접근성 측면에 관한 요소 접근이 불가능해진다 **(e.g., 스크린 리더 접근)**
+
+  - `accessbility tree에서 요소가 제거 되었다 해서 focus를 받을 수 없는 상태가 되는 것은 아니다`: DOM tree(render tree)에는 남아있어 해당 요소의 크기만큼 layout이 유지된다.
+
+- `transition`을 활용해서 특정 element의 opacity를 자연스럽게 변환시키는 동시에 focus를 받을 수 없는 상태로 만들기 위해 `visibility` 속성을 사용한다.
 
 ```css
 header .search-wrap {
@@ -290,7 +296,7 @@ header.searching .search-wrap {
 }
 ```
 
-- display속성으로 transition의 특성을 이끌어낼 수 없지만 `animation`으로 일부 효과는 이끌어낼 수 있다.
+- transition을 활용해 display속성의 연속적인 전환을 이끌어낼 수 없지만 `animation`으로 일부 효과는 이끌어낼 수 있다.
 
 ```css
 .box {
@@ -313,9 +319,15 @@ header.searching .search-wrap {
 }
 ```
 
-- display속성의 [animating display](https://developer.mozilla.org/en-US/docs/Web/CSS/display#animating_display) 특성상 block -> none으로 변환 할 때 `animation duration`의 초기값은 100%값로 갖는다.
+### difference between display:none
 
-- 반대로 none -> block으로 변환하는 경우 `animation duration`은 0%를 초기값으로 가짐으로, fade-in효과는 구현할 수 있다.
+- [visibility: hidden](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#hidden)은 `display:none`과 달리 `layout`에는 자신의 크기만큼 영향을 미친다.
+
+- selector에 그대로 적용하는 경우 display가 우선적으로 적용되기 때문에 fade-out은 이끌어 낼 수 없다.
+
+- display속성의 [animating display](https://developer.mozilla.org/en-US/docs/Web/CSS/display#animating_display) 특성상 block -> none으로 변환 할 때 none은 `animation duration`이 100% 진행도가 되었을때 변한다.
+
+- 반대로 none -> block으로 변환하는 경우 `display: block`스타일이 `animation duration`진행도가 0%부터 적용되기 때문에 fade-in효과를 구현할 수 있다.
 
 - 하지만 여기서 animation 진행 자체에 display를 설정함으로 써 원하는 fade-out 모션도 구현할 수 있었다.
 
@@ -338,7 +350,7 @@ header.searching .search-wrap {
 
 - hideBox animation 부분의 0%에 display:block으로 설정하면 .hide의 display: none과 관계 없이 animation이 진행되는 것을 볼 수 있엇다.
 
-- 즉 show와 hide를 모두 구현한 후 이 둘을 toggle하는 방식으로 DOM을 조작하면 구현할 수 있다.
+- 즉 show와 hide를 모두 구현한 후 이 둘을 js로 toggle하는 방식으로 DOM을 조작하면 구현할 수 있다.
 
 - 하지만 이 방식은 매우 비효율적이기 때문에 `visibility`를 사용한다.
 
