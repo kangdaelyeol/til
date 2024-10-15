@@ -991,3 +991,71 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 - 알칼리성 독소도 마찬가지인데, 우리 현대의 식습관은 혈액을 산성으로 만들기에 최적화 되어 있다. **동물성 단백질, 과다한 염분 섭취** 가 대표적이다.
 
 - 결과적으로 알칼리성 식품도 균형 있게 섭취함으로써 신장 혈액의 pH 농도를 적절히 유지하고, 독소 재흡수를 방지할 수 있다.
+
+## Mitochondrion
+
+- Mitochondrion은 ATP합성에 핵심적인 역할을 하는 **세포 소기관** 이다.
+
+- Mitochondrion의 내막(inner membrane)에 존재하는 [ETC(Electron Transport Chain)](https://en.wikipedia.org/wiki/Electron_transport_chain)라는 **단백질 복합체** 가 있다.
+
+- 이들은 ATP합성을 위해 전자를 전달하는데, 복합체들이 전자를 전달하는 과정에서 발생하는 전자 누수로 인해 `ROS(Reactive Oxygen Species)`가 생성될 수 있다.
+
+<span class="title">ETC내 전자를 전달하는 과정</span>
+
+![Etc process in mitochondrion image](./images/detox_etc.png)
+
+---
+
+<span class="organ">Complex I</span> / <span class="substance">NADH</span> -> <span class="organ">ubiquinone(CoQ)</span> -> <span class="organ">Complex III</span> + <span class="substance">NAD<sup>+</sup></span> / <span class="substance">H<sup>+<sup></span>
+
+<span class="organ">Complex II</span> / <span class="substance">succinate(succinic acid)</span> -> <span class="organ">ubuquinone(Q)</span> -> <span class="organ">Complex III</span>
+
+- Complex I이 NADH에 있는 전자를 [ubuquinone(CoQ)](https://en.wikipedia.org/wiki/Coenzyme_Q10)을 통해 Complex III 로 전달하거나, Complex II가 **succinate(석신산)** 을 통해 전자를 Complex III로 전달한다.
+
+- 내막에 존재하는 Complex I 은 Complex I -> Complex III 과정에서 Complex I 은 기질(matrix)에서 막간(intermembrane)으로 양성자(proton)을 이동(pump) 시킨다.
+
+  - `proton을 intermembrane으로 pump함으로써 proton gradient(프로톤 기울기)를 형성한다. 이는 Chemiosmotic phosphorylation(화학삼투적 인산화)를 통해 ATP를 생성하는데 필요하다.`
+
+- Complex I -> Complex III 전달 과정중에 **전자누수(electron leak)** 가 발생할 가능성이 있다.
+
+---
+
+<span class="organ">Complex III</span> -> <span class="organ">Cyt C</span> -> <span class="organ">Complex IV</span>
+
+- Complex III는 전자를 [Cyt c(Cytochrome C)](https://en.wikipedia.org/wiki/Cytochrome_c)를 통해 Complex IV로 전달한다.
+
+- 이 과정중에도 Complex I -> Complex III 전자 전달 과정처럼 **전자누수** 가 발생할 가능성이 있다.
+
+- 또한 **기질(matrix)** 에서 **막간(intermembrane)** 으로 양성자(proton)을 이동(pump) 시킨다.
+
+---
+
+<span class="substance">O<sub>2</sub></span> -> <span class="organ">Complex IV</span> -> <span class="substance">H<sub>2</sub>O</span>
+
+- Complex IV는 산소를 받아 물(H<sub>2</sub>O)을 생성한다.
+
+- 이 과정중에도 **전자누수** 가 발생할 가능성이 있다.
+
+- 또한 **기질(matrix)** 에서 **막간(intermembrane)** 으로 **양성자(proton)** 을 이동(pump) 시킨다.
+
+---
+
+<span class="substance">ADP / P<sub>i</sub></span> -> <span class="organ">ATP synthase(Complex V)</span> -> <span class="substance">H<sup>+</sup>(proton)</span> -> <span class="interaction">chemiosmotic phosphorylation</span> -> <span class="substance">ATP</span>
+
+- ATP synthase(Complex V)는 Complex I, III, IV가 전자를 전달하면서 막간으로 이동시킨 proton을 [chemiosmotic phosphorylation(화학 삼투적 인산화)](https://en.wikipedia.org/wiki/Chemiosmosis)작용을 통해 다시 maxrix(기질)로 이동시키며 ATP를 합성한다.
+
+---
+
+<span class="title">ETC 전자 누수로 인한 ROS 생성 과정</span>
+
+<span class="substance">O<sub>2</sub></span> + <span class="substance">e<sup>-</sup></span> -> <span class="substance">O<sub>2</sub><sup>-</sup>(superoxide)</span> -> <span class="organ">SOD</span> -> <span class="substance">H<sup>2</sup>O<sup>2</sup>(hydrogen peroxide)</span> -> <span class="substance">Fe<sup>2+</sup></span> -> <span class="interaction">Fenton Reaction</span> -> <span class="substance">OH(Hydroxyl Radical)</span> + <span class="substance">Fe<sup>3+</sup></span>
+
+- 산소는 누수된 전자와 결합하여 [superoxide(초과산화물 / O<sub>2</sub><sup>-</sup>)](https://en.wikipedia.org/wiki/Superoxide)이 된다
+
+- superoxide는 [SOD(superoxide dismutase)](https://en.wikipedia.org/wiki/Superoxide_dismutase) 에 의해 proton과 결합되어 **hydrogen peroxide(과산화수소 / H<sup>2</sup>O<sup>2</sup>)** 를 생성한다.
+
+- hydrogen peroxide는 2가 철(Fe<sup>2+</sup>)을 촉매로써 [fenton reaction(fenton's reagent)](https://en.wikipedia.org/wiki/Fenton%27s_reagent)작용에 의해 분해 되고 결과적으로 OH(hydroxyl radical)이 생성된다.
+
+- superoxide(O<sub>2</sub><sup>-</sup>), hydrogen peroxide(H<sup>2</sup>O<sup>2</sup>), hydroxyl radical(OH)는 모두 ROS이며 우리 몸에 산화적 스트레스(oxidative stress)를 준다.
+
+- 특히 `hydroxyl radical(OH)`는 반응성이 매우 높아 짧은 순간에 DNA, 단백질 지질등과 결합해 **세포 손상**을 일으킬 수 있다.
