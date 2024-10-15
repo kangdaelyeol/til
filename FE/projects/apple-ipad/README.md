@@ -475,3 +475,76 @@ img {
 - 가장 연관있는 CSS 스타일을 선택하는 알고리즘인 **spicificity** 에 의해 `html보다 :root pseudo-class의 스타일이 우선 적용 된다.`
 
 - spicificity algorithm에서 사용되는 [selector weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_weight_categories)규칙에 의해 html은 type column에 해당하므로 0-0-1의 **무게 값(weight value)** 을 가지고, :root는 가상 클래스이기 때문에 class column에 해당한다. 따라서 :root는 0-1-0의 weight value를 가진다.
+
+## margin positioning - absolutely positioned box
+
+- [absolutely positioned box](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute) 특성상 margin은 서로 겹치지 않는다.
+
+- absolute를 사용해 **이미지 요소** 를 배치할 때 이미지 요소 주변 약간의 공백(white space) 또는 여백(margin)이 있어 positioning에 약간의 오차가 발생할 수 있다.
+
+- 이 때 top, left등의 속성으로 미세한 조정을 할 수 있지만, margin을 사용해 2차적으로 세부 위치 조정을 할 수 있다.
+
+```css
+.box {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+```
+
+- 이 경우 `top:0; left: 0;`과 같은 결과가 보여진다.
+
+- margin을 음수, 양수값을 자유롭게 사용하며 positioning이 가능하다.
+
+### lab: padding을 이용하는 것은 어떨까
+
+- 결론적으로 padding을 활용한 positioning은 불가능하다.
+
+- `box-sizing: content-box(default)`인 경우 요소의 크기가 늘어나며, top, left같은 기준 위치를 벗어나지 않는다.
+
+- [css padding syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax)상으로도 padding에 negative value는 입력할 수 없다.
+
+```css
+.box1 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  padding-top: 100px;
+}
+
+.box2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  padding-bottom: 100px;
+}
+```
+
+- 이 경우 각 box안에 content가 없다면 같은 결과를 볼 수 있다.
+
+- padding-top이라 해서 box가 위쪽으로 100px이 늘어나는 것이 아닌 `top: 100px`위치 밑에서 부터 padding이 생겨나 결과적으로 height가 밑으로 커지는 효과를 볼 수 있다.
+
+- `box-sizing: border;` 인 경우, 지정된 width, height를 초과한 padding에 대해서만 box의 크기가 커진다.
+
+```css
+.box1 {
+  position: absolute;
+  width: 100px;
+  height: 100px
+  padding: 50px;
+}
+
+.box2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+}
+```
+
+- **box1** 의 크기는 padding에 의해 width, height크기가 각각 100px씩 증가될 것이다.
+
+- **box2** 는 크기가 커지지 않는다. padding이 가로 세로로 100px씩 box의 크기만큼 딱 차지 되었기 때문이다.
