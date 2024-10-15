@@ -16,6 +16,7 @@
 }
 
 /* Common */
+
 html.fixed {
   position: fixed;
   overflow-y: scroll;
@@ -74,6 +75,8 @@ p {
   margin: 0 auto;
 }
 
+/* Common - btn */
+
 .btn {
   all: unset;
   display: flex;
@@ -102,23 +105,68 @@ p {
   overflow: hidden;
 }
 
-.figures {
-  position: relative;
+/* Common - Feature */
+
+.feature {
+  display: flex;
 }
 
-.figures figure,
-.figures figcaption,
-.figures figcaption * {
+/* Common - figure-group */
+
+.figure-group {
+  position: relative;
+  flex-grow: 1;
+}
+
+.figure-group figure,
+.figure-group figcaption,
+.figure-group figcaption * {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.figures figcaption * {
+.figure-group figcaption * {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* Common - info-group */
+
+.info-group {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-group.info-group--center {
+  justify-content: center;
+}
+
+.info-group.info-group--end {
+  justify-content: flex-end;
+}
+
+.info {
+  max-width: 330px;
+  margin-bottom: 24px;
+}
+
+.info .icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 -15px -30px;
+  background-image: url('../images/sprite_apps.png');
+}
+
+.info p {
+  font-size: 21.5px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 /* Header Section */
 
 header {
@@ -450,7 +498,7 @@ nav ul.menu li .description:hover {
 .hero figure {
   transform: translate(74px, -64px);
 }
-.hero .figures {
+.hero .figure-group {
   height: 808px;
 }
 
@@ -504,4 +552,72 @@ nav ul.menu li .description:hover {
 
 .hero .links {
   margin-top: 30px;
+}
+
+/* Power Section */
+
+.power {
+  margin-top: 110px;
+}
+
+/* Power Section - mulitple apps */
+
+.power .multiple-apps h1 {
+  width: 500px;
+  height: 280px;
+  background-image: url('../images/power_headline.png');
+  transform: translate(104px, 0);
+}
+
+.power .multiple-apps .figure-group {
+  height: 773px;
+}
+
+.power .multiple-apps figcaption {
+  width: 138px;
+  height: 46px;
+  background-image: url('../images/power_multiple_apps_caption.png');
+  transform: translate(703px, -47px);
+}
+
+/* Power Section - Arcade */
+
+.power .arcade {
+  margin-top: 55px;
+}
+
+.power .arcade .figure-group {
+  height: 600px;
+}
+
+.power .arcade figure {
+  transform: translate(-347px, -90px);
+}
+
+.power .arcade figcaption {
+  width: 150px;
+  height: 77px;
+  background-image: url('../images/power_arcade_caption.png');
+  transform: translate(483px, 653px);
+}
+
+/* Power Section - Create */
+
+.power .create {
+  margin-top: 55px;
+}
+
+.power .create .figures {
+  height: 772px;
+}
+
+.power .create figure {
+  transform: translate(-25px, 50px);
+}
+
+.power .create figcaption {
+  width: 142px;
+  height: 46px;
+  background-image: url('../images/power_create_caption.png');
+  transform: translate(543px, 908px);
 }
