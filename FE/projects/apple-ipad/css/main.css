@@ -152,6 +152,14 @@ p {
 .info {
   max-width: 330px;
   margin-bottom: 24px;
+  transform: translate(-5px, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.info.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .info .icon {
@@ -495,7 +503,7 @@ nav {
   border-bottom: 1px solid var(--color-border);
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
-  z-index: 1;
+  z-index: 2;
 }
 
 nav > .inner {

@@ -90,9 +90,27 @@ searchStarterEl.addEventListener('click', showSearch)
 searchCloserEl.addEventListener('click', hideSearch)
 searchWrapEl.addEventListener('click', (e) => {
     e.stopPropagation()
-}) 
+})
 window.addEventListener('click', hideSearch)
 
 window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') hideSearch()
+})
+
+// InterSectionObserver
+
+const ioCallBack = (entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+
+        entry.target.classList.add('show')
+    })
+}
+
+const io = new IntersectionObserver(ioCallBack, {
+    threshold: 0.6,
+})
+
+document.querySelectorAll('.info').forEach((el) => {
+    io.observe(el)
 })
