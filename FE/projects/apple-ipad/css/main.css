@@ -230,6 +230,11 @@ p {
   line-height: 1.5;
 }
 
+.info a.link {
+  margin-top: 44px;
+  font-size: 19.5px;
+}
+
 /* Header Section */
 
 header {
@@ -813,6 +818,45 @@ nav ul.menu li .description:hover {
 .camera .stage .controller--play img,
 .camera .stage .controller--pause img {
   width: 20px;
+}
+
+/* Wireless Section */
+
+.wireless {
+  margin-top: 202px;
+}
+
+.wireless .facetime h2 {
+  width: 730px;
+  height: 330px;
+  background-image: url('../images/wireless_headline.png');
+  transform: translate(104px, 0);
+}
+
+.wireless .facetime .figure-group {
+  height: 773px;
+}
+
+.wireless .facetime figure {
+  transform: translate(-68px, 0);
+}
+
+.wireless .facetime figcaption {
+  width: 139px;
+  height: 46px;
+  background-image: url('../images/wireless_facetime_caption.png');
+  transform: translate(843px, -49px);
+}
+
+.wireless .files figure {
+  transform: translate(34px, -34px);
+}
+
+.wireless .files figcaption {
+  width: 127px;
+  height: 46px;
+  background-image: url('../images/wireless_files_caption.png');
+  transform: translate(96px, 639px);
 }
 
 @keyframes sprite-icon {
