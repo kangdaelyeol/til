@@ -876,7 +876,7 @@ nav ul.menu li .description:hover {
   margin: 0 auto;
 }
 
-.accessories .figures {
+.accessories .figure-group {
   height: 1021px;
   margin-top: 34px;
 }
@@ -903,6 +903,67 @@ nav ul.menu li .description:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+/* IPadOS Section */
+
+.ipados {
+  margin-top: 212px;
+}
+
+.ipados h2 {
+  width: 530px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: url('../images/ipados_headline.png');
+}
+
+.ipados .info-group {
+  margin-top: 44px;
+  align-items: flex-end;
+}
+
+.ipados .figure-group {
+  height: 782px;
+  display: flex;
+}
+
+.ipados .figure-group > div {
+  flex-grow: 1;
+  position: relative;
+}
+
+.ipados .figure-split figure {
+  transform: translate(-205px, -312px);
+}
+
+.ipados .figure-split figcaption {
+  width: 163px;
+  height: 53px;
+  background-image: url('../images/ipados_split_view_caption.png');
+  transform: translate(200px, -38px);
+}
+
+.ipados .figure-widgets figure {
+  transform: translate(237px, 43px);
+}
+
+.ipados .figure-widgets figcaption {
+  width: 161px;
+  height: 46px;
+  background-image: url('../images/ipados_widgets_caption.png');
+  transform: translate(257px, 497px);
+}
+
+.ipados .figure-quick figure {
+  transform: translate(-625px, 232px);
+}
+
+.ipados .figure-quick figcaption {
+  width: 82px;
+  height: 97px;
+  background-image: url('../images/ipados_quick_note_caption.png');
+  transform: translate(511px, 470px);
 }
 
 @keyframes sprite-icon {
