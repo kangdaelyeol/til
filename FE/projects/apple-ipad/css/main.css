@@ -783,6 +783,38 @@ nav ul.menu li .description:hover {
   transform: translate(27px, 905px);
 }
 
+.camera .stage video {
+  position: absolute;
+  top: 36px;
+  left: 76px;
+  mask-image: url('../images/camera_video_mask.png');
+}
+
+.camera .stage .controller--play,
+.camera .stage .controller--pause {
+  color: var(--color-link);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translate(428px, -134px) rotate(-3deg);
+}
+
+.camera .stage .controller--play:hover,
+.camera .stage .controller--pause:hover {
+  text-decoration: underline;
+}
+
+.camera .stage .controller--play.hide,
+.camera .stage .controller--pause.hide {
+  display: none;
+}
+
+.camera .stage .controller--play img,
+.camera .stage .controller--pause img {
+  width: 20px;
+}
+
 @keyframes sprite-icon {
   /* 1~10 */
   0.00% {

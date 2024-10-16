@@ -21,6 +21,10 @@ const searchItemList = [
     ...searchAutocompletesItemElList,
 ]
 
+const cameraVideoEl = document.querySelector('.camera video')
+const cameraVideoPauseBtnEl = document.querySelector('.controller--pause')
+const cameraVideoPlayBtnEl = document.querySelector('.controller--play')
+
 // Header - basket action
 
 const showBasket = () => {
@@ -86,11 +90,28 @@ const hideSearch = () => {
     }, 400)
 }
 
+// Search Section Event Listener
+
 searchStarterEl.addEventListener('click', showSearch)
 searchCloserEl.addEventListener('click', hideSearch)
 searchWrapEl.addEventListener('click', (e) => {
     e.stopPropagation()
 })
+
+// Camera Section Event Listener
+
+cameraVideoPauseBtnEl.addEventListener('click', () => {
+    cameraVideoEl.pause()
+    cameraVideoPauseBtnEl.classList.add('hide')
+    cameraVideoPlayBtnEl.classList.remove('hide')
+})
+
+cameraVideoPlayBtnEl.addEventListener('click', () => {
+    cameraVideoEl.play()
+    cameraVideoPlayBtnEl.classList.add('hide')
+    cameraVideoPauseBtnEl.classList.remove('hide')
+})
+
 window.addEventListener('click', hideSearch)
 
 window.addEventListener('keydown', (e) => {
