@@ -157,6 +157,10 @@ p {
   transition: 0.5s;
 }
 
+.info-group.info-group--large .info {
+  max-width: 410px;
+}
+
 .info.show {
   opacity: 1;
   transform: translate(0, 0);
@@ -857,6 +861,48 @@ nav ul.menu li .description:hover {
   height: 46px;
   background-image: url('../images/wireless_files_caption.png');
   transform: translate(96px, 639px);
+}
+
+/* Accessories Section */
+
+.accessories {
+  margin-top: 195px;
+}
+
+.accessories h2 {
+  width: 550px;
+  height: 343px;
+  background-image: url('../images/accessories_headline.png');
+  margin: 0 auto;
+}
+
+.accessories .figures {
+  height: 1021px;
+  margin-top: 34px;
+}
+
+.accessories figure {
+  transform: translate(-24px, 0);
+}
+
+.accessories figcaption .caption-memo {
+  width: 169px;
+  height: 41px;
+  background-image: url('../images/accessories_caption_memo.png');
+  transform: translate(790px, -52px);
+}
+
+.accessories figcaption .caption-supports {
+  width: 200px;
+  height: 70px;
+  background-image: url('../images/accessories_caption_supports.png');
+  transform: translate(163px, 821px);
+}
+
+.accessories .info-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @keyframes sprite-icon {
