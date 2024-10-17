@@ -241,7 +241,6 @@ p {
 
 /* Common - Whitebox */
 
-/* WhiteBox */
 .whitebox {
   max-width: 1386px;
   margin: 0 auto;
@@ -266,7 +265,6 @@ p {
   font-size: 19px;
 }
 .whitebox a.link {
-  display: block;
   margin-top: 26px;
 }
 
@@ -1033,7 +1031,7 @@ nav ul.menu li .description:hover {
   transform: translate(533px, 485px);
 }
 
-/* Accessibility */
+/* Accessibility Section */
 .accessibility {
   margin-top: 266px;
   margin-bottom: 170px;
@@ -1048,6 +1046,26 @@ nav ul.menu li .description:hover {
 }
 .accessibility figure {
   transform: translate(470px, -620px);
+}
+
+/* AR Section */
+.ar {
+  background-color: var(--color-section);
+  padding: 20px 20px 0;
+}
+
+.ar .whitebox {
+  padding-bottom: 0;
+}
+
+.ar .inner {
+  display: flex;
+}
+
+.ar .inner > div {
+  max-width: 410px;
+  margin-top: 60px;
+  margin-right: 90px;
 }
 
 @keyframes sprite-icon {
