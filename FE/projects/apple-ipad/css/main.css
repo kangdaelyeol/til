@@ -1105,6 +1105,13 @@ nav ul.menu li .description:hover {
   margin-top: 50px;
 }
 
+/* Trade Section */
+
+.trade {
+  padding: 20px 20px 0;
+  text-align: center;
+}
+
 @keyframes sprite-icon {
   /* 1~10 */
   0.00% {
