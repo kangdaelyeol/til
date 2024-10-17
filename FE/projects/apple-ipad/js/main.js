@@ -1,3 +1,5 @@
+import ipadDataList from '../data/ipads.js'
+
 const headerEl = document.querySelector('header')
 
 const headerMenuIconElList = [...headerEl.querySelectorAll('.menu li')]
@@ -24,6 +26,8 @@ const searchItemList = [
 const cameraVideoEl = document.querySelector('.camera video')
 const cameraVideoPauseBtnEl = document.querySelector('.controller--pause')
 const cameraVideoPlayBtnEl = document.querySelector('.controller--play')
+
+const compareItemGroupEl = document.querySelector('.compare .item-group')
 
 // Header - basket action
 
@@ -134,4 +138,34 @@ const io = new IntersectionObserver(ioCallBack, {
 
 document.querySelectorAll('.info').forEach((el) => {
     io.observe(el)
+})
+
+// Compare Item Group - ipad item rendering
+
+ipadDataList.forEach((data) => {
+    const compareIpadItemEl = document.createElement('div')
+    compareIpadItemEl.classList.add('item')
+    let compareColorElHTML = ''
+
+    data.colors.forEach((color) => {
+        compareColorElHTML += /* html */ `
+            <li style="background-color: ${color}"></li>
+        `
+    })
+
+    compareIpadItemEl.innerHTML = /* html */ `
+            <div class="thumbnail">
+                <img src="${data.thumbnail}" alt="${data.name}" />
+            </div>
+            <ul class="color-group">
+                ${compareColorElHTML}
+            </ul>
+            <h3 class="name">${data.name}</h3>
+            <p class="tagline">${data.tagline}</p>
+            <p class="price">₩${data.price.toLocaleString('en-US')}부터</p>
+            <button class="btn">구입하기</button>
+            <a href="${data.url}" class="link">더 알아보기</a>
+    `
+
+    compareItemGroupEl.append(compareIpadItemEl)
 })

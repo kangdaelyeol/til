@@ -61,7 +61,7 @@ p {
   line-height: 1.6;
 }
 
-.links {
+.link-group {
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -650,7 +650,7 @@ nav ul.menu li .description:hover {
   text-align: center;
 }
 
-.hero .links {
+.hero .link-group {
   margin-top: 30px;
 }
 
@@ -1110,6 +1110,71 @@ nav ul.menu li .description:hover {
 .trade {
   padding: 20px 20px 0;
   text-align: center;
+}
+
+/* Compare Section */
+.compare {
+  padding: 20px 20px 0;
+  text-align: center;
+  background-color: var(--color-section);
+}
+
+.compare .item-group {
+  display: flex;
+  justify-content: space-around;
+  max-width: 940px;
+  margin: 68px auto 74px;
+}
+
+.compare .item {
+  width: 190px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.compare .item .thumbnail {
+  height: 214px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.compare .item ul.color-group {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.compare .item h3.name {
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+
+.compare .item .tagline {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.compare .item .price {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.compare .item .btn {
+  margin: 0 auto 14px;
+}
+
+.compare .item a.link {
+  font-size: 14px;
+}
+.compare .item ul.color-group li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: lightgray;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes sprite-icon {
