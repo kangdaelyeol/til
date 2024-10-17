@@ -267,6 +267,18 @@ p {
   margin-top: 26px;
 }
 
+/* Footnote */
+
+sup {
+  margin-right: 6px;
+  font-size: 0.7em;
+  vertical-align: top;
+}
+
+sup a {
+  display: inline;
+}
+
 /* Header Section */
 
 header {
@@ -999,6 +1011,7 @@ nav ul.menu li .description:hover {
 .privacy {
   margin-top: 238px;
 }
+
 .privacy h2 {
   width: 482px;
   height: 237px;
@@ -1008,6 +1021,7 @@ nav ul.menu li .description:hover {
   position: relative;
   z-index: 1;
 }
+
 .privacy .info-group {
   margin-top: 38px;
   align-items: flex-end;
@@ -1017,12 +1031,14 @@ nav ul.menu li .description:hover {
 .privacy figure {
   transform: translate(-215px, -500px);
 }
+
 .privacy figcaption .caption-apple-id {
   width: 170px;
   height: 26px;
   background-image: url('../images/privacy_caption_apple_id.png');
   transform: translate(195px, -13px);
 }
+
 .privacy figcaption .caption-touch-id {
   width: 150px;
   height: 31px;
@@ -1031,23 +1047,28 @@ nav ul.menu li .description:hover {
 }
 
 /* Accessibility Section */
+
 .accessibility {
   margin-top: 266px;
   margin-bottom: 170px;
 }
+
 .accessibility h2 {
   width: 384px;
   height: 270px;
   background-image: url('../images/accessibility_headline.png');
 }
+
 .accessibility .info-group {
   margin-top: 20px;
 }
+
 .accessibility figure {
   transform: translate(470px, -620px);
 }
 
 /* AR Section */
+
 .ar {
   background-color: var(--color-section);
   padding: 20px 20px 0;
@@ -1108,11 +1129,13 @@ nav ul.menu li .description:hover {
 /* Trade Section */
 
 .trade {
+  background-color: var(--color-section);
   padding: 20px 20px 0;
   text-align: center;
 }
 
 /* Compare Section */
+
 .compare {
   padding: 20px 20px 0;
   text-align: center;
@@ -1213,6 +1236,24 @@ footer .buy-info p {
 
 footer .buy-info a.link {
   font-size: 14px;
+}
+
+/* Footer - Warning */
+
+footer .warning {
+  padding: 18px 0 10px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+footer .warning ol {
+  list-style: decimal;
+  padding-left: 16px;
+}
+footer .warning li {
+  margin-bottom: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-font-darkgray);
 }
 
 @keyframes sprite-icon {
