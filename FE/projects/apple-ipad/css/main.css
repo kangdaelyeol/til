@@ -28,7 +28,6 @@ body {
   font-size: 16px;
   line-height: 1;
   color: var(--color-font);
-  height: 10000px;
   word-break: keep-all;
 }
 
@@ -1083,6 +1082,27 @@ nav ul.menu li .description:hover {
 
 .environment h1 {
   color: #03a10e;
+}
+
+/* Accessory Shop Section */
+
+.accessory-shop {
+  background-color: var(--color-section);
+  text-align: center;
+}
+
+.accessory-shop .whitebox {
+  padding-bottom: 0;
+}
+
+.accessory-shop .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accessory-shop img {
+  margin-top: 50px;
 }
 
 @keyframes sprite-icon {
