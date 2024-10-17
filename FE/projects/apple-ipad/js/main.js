@@ -1,4 +1,5 @@
 import ipadDataList from '../data/ipads.js'
+import footerNavDataList from '../data/navigations.js'
 
 const headerEl = document.querySelector('header')
 
@@ -28,6 +29,8 @@ const cameraVideoPauseBtnEl = document.querySelector('.controller--pause')
 const cameraVideoPlayBtnEl = document.querySelector('.controller--play')
 
 const compareItemGroupEl = document.querySelector('.compare .item-group')
+
+const footerNavEl = document.querySelector('footer .navigations')
 
 // Header - basket action
 
@@ -140,7 +143,7 @@ document.querySelectorAll('.info').forEach((el) => {
     io.observe(el)
 })
 
-// Compare Item Group - ipad item rendering
+// Compare Item Group - ipad item render
 
 ipadDataList.forEach((data) => {
     const compareIpadItemEl = document.createElement('div')
@@ -168,4 +171,27 @@ ipadDataList.forEach((data) => {
     `
 
     compareItemGroupEl.append(compareIpadItemEl)
+})
+
+// footer navigation render
+
+footerNavDataList.forEach((data) => {
+    const footerNavMapEl = document.createElement('div')
+    footerNavMapEl.classList.add('map')
+
+    let navItemList = ''
+
+    data.maps.forEach((item) => {
+        navItemList += /* html */ `
+            <li><a href="${item.url}">${item.name}</a></li>
+        `
+    })
+
+    footerNavMapEl.innerHTML = /* html */ `
+        <h3>${data.title}</h3>
+        <ul>
+            ${navItemList}
+        </ul>
+    `
+    footerNavEl.append(footerNavMapEl)
 })
