@@ -1002,6 +1002,23 @@ nav ul.menu li .description:hover {
   transform: translate(533px, 485px);
 }
 
+/* Accessibility */
+.accessibility {
+  margin-top: 266px;
+  margin-bottom: 170px;
+}
+.accessibility h2 {
+  width: 384px;
+  height: 270px;
+  background-image: url('../images/accessibility_headline.png');
+}
+.accessibility .info-group {
+  margin-top: 20px;
+}
+.accessibility figure {
+  transform: translate(470px, -620px);
+}
+
 @keyframes sprite-icon {
   /* 1~10 */
   0.00% {
