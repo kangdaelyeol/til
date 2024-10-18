@@ -31,7 +31,7 @@ const cameraVideoPlayBtnEl = document.querySelector('.controller--play')
 const compareItemGroupEl = document.querySelector('.compare .item-group')
 
 const footerNavEl = document.querySelector('footer .navigations')
-
+const footerThisYearEl = document.querySelector('footer .this-year')
 // Header - basket action
 
 const showBasket = () => {
@@ -195,3 +195,5 @@ footerNavDataList.forEach((data) => {
     `
     footerNavEl.append(footerNavMapEl)
 })
+
+footerThisYearEl.innerHTML = new Date().getFullYear()
