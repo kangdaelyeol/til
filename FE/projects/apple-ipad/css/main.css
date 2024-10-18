@@ -1305,7 +1305,7 @@ footer .navigations {
   flex-direction: column;
   height: 344px;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: space-between;
 }
 
 footer .navigations .map {
@@ -1331,6 +1331,65 @@ footer .navigations .map li a {
 }
 
 footer .navigations .map li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer - How-to-shop */
+
+footer .how-to-shop {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-font-darkgray);
+}
+
+footer .how-to-shop a {
+  display: inline;
+  color: var(--color-link);
+}
+
+footer .how-to-shop a:hover {
+  text-decoration: underline;
+}
+
+/* Footer - Legal */
+
+footer .legal {
+  display: flex;
+  gap: 50px;
+  margin-top: 10px;
+  border-top: 1px solid var(--color-border);
+  padding: 10px 0 40px;
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+}
+
+footer .legal ul {
+  display: flex;
+  gap: 21px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+footer .legal ul li {
+  position: relative;
+}
+
+footer .legal ul li a {
+  display: inline;
+}
+
+footer .legal ul li::after {
+  content: '|';
+  position: absolute;
+  right: -11px;
+  color: var(--color-border);
+}
+
+footer .legal ul li:last-of-type::after {
+  display: none;
+}
+
+footer .legal ul li:hover a {
   text-decoration: underline;
 }
 
