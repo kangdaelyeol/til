@@ -44,7 +44,6 @@ img {
 a {
   text-decoration: none;
   color: var(--color-font);
-  display: block;
 }
 
 a.link {
@@ -277,10 +276,6 @@ sup {
   margin-right: 6px;
   font-size: 0.7em;
   vertical-align: top;
-}
-
-sup a {
-  display: inline;
 }
 
 /* Header Section */
@@ -587,6 +582,7 @@ nav ul.menu li:first-of-type {
 nav ul.menu li .description {
   padding: 6px;
   font-size: 11px;
+  display: block;
 }
 
 nav ul.menu li .description:hover {
@@ -949,6 +945,10 @@ nav ul.menu li .description:hover {
   justify-content: space-around;
 }
 
+.accessories .info-group a {
+  display: block;
+}
+
 /* IPadOS Section */
 
 .ipados {
@@ -965,6 +965,10 @@ nav ul.menu li .description:hover {
 .ipados .info-group {
   margin-top: 44px;
   align-items: flex-end;
+}
+
+.ipados .info-group a {
+  display: block;
 }
 
 .ipados .figure-group {
@@ -1067,6 +1071,10 @@ nav ul.menu li .description:hover {
   margin-top: 20px;
 }
 
+.accessibility .info-group a {
+  display: block;
+}
+
 .accessibility figure {
   transform: translate(470px, -620px);
 }
@@ -1098,6 +1106,10 @@ nav ul.menu li .description:hover {
   padding: 20px 20px 0;
   background-color: var(--color-section);
   text-align: center;
+}
+
+.environment a {
+  display: block;
 }
 
 .environment .icon {
@@ -1136,6 +1148,10 @@ nav ul.menu li .description:hover {
   background-color: var(--color-section);
   padding: 20px 20px 0;
   text-align: center;
+}
+
+.trade a.link {
+  display: block;
 }
 
 /* Compare Section */
@@ -1194,6 +1210,7 @@ nav ul.menu li .description:hover {
 }
 
 .compare .item a.link {
+  display: block;
   font-size: 14px;
 }
 
@@ -1347,7 +1364,6 @@ footer .how-to-shop {
 }
 
 footer .how-to-shop a {
-  display: inline;
   color: var(--color-link);
 }
 
@@ -1376,10 +1392,6 @@ footer .legal ul {
 
 footer .legal ul li {
   position: relative;
-}
-
-footer .legal ul li a {
-  display: inline;
 }
 
 footer .legal ul li::after {
