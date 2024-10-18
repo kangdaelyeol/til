@@ -23,6 +23,10 @@ html.fixed {
   width: 100%;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   font-size: 16px;
