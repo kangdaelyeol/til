@@ -642,6 +642,8 @@ nav ul.menu li .description:hover {
 
 /* Header - Media queries */
 
+/* Header - mobile mode */
+
 @media (max-width: 740px) {
   header .inner {
     padding: 0 5px;
@@ -759,11 +761,6 @@ nav ul.menu li .description:hover {
 
   header.menuing.searching--mobile {
     transform: translate(0, -30px);
-  }
-
-  header.menuing.searching--mobile .menu {
-    /* height: 0px; */
-    /* overflow: hidden; */
   }
 
   header.menuing .search .autocompletes ul li,

@@ -62,10 +62,6 @@ basketEl.addEventListener('click', (e) => {
     e.stopPropagation()
 })
 
-window.addEventListener('click', () => {
-    hideBasket()
-})
-
 // Header - search bar action
 
 const showSearch = (e) => {
@@ -107,7 +103,10 @@ const hideSearch = () => {
 // Header - Search Section Event Listener
 
 searchStarterEl.addEventListener('click', showSearch)
-searchCloserEl.addEventListener('click', hideSearch)
+searchCloserEl.addEventListener('click', (e) => {
+    hideSearch()
+    e.stopPropagation()
+})
 searchWrapEl.addEventListener('click', (e) => {
     e.stopPropagation()
 })
@@ -118,9 +117,13 @@ headerMenuStarterEl.addEventListener('click', (e) => {
     if (!headerEl.classList.contains('menuing')) {
         headerEl.classList.add('menuing')
         document.documentElement.classList.add('fixed')
+        setTimeout(() => {
+            searchInputEl.focus()
+        }, 200)
     } else {
         headerEl.classList.remove('menuing')
         document.documentElement.classList.remove('fixed')
+        searchInputEl.value = ''
     }
     e.stopPropagation()
 })
@@ -147,10 +150,15 @@ cameraVideoPlayBtnEl.addEventListener('click', () => {
     cameraVideoPauseBtnEl.classList.remove('hide')
 })
 
-window.addEventListener('click', hideSearch)
+// Window Event Listener
 
-window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') hideSearch()
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 740) {
+        headerEl.classList.remove('searching--mobile')
+        searchInputEl.value = ''
+    } else {
+        headerEl.classList.remove('searching')
+    }
 })
 
 // InterSectionObserver
