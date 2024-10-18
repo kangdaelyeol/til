@@ -1157,3 +1157,29 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 - 산화된 vitamin C(dyhydroascorbic acid)는 GSH와 반응해 다시 환원된다.
 
 - 이러한 사이클을 통해 항산화 시스템이 형성되므로 vitamin C 뿐만 아닌 vitamin E의 섭취도 중요하다.
+
+## ROS - mitochondrion
+
+- [mitochondrion](#mitochondrion)의 ETC과정에서 전자 누수로 인해 ROS 생성에 관여를 할 수 있다.
+
+- 운동을 할 경우에도 ETC를 통해 ROS가 생성되는데, 운동을 하면서 생기는 ROS는 오히려 **mitochondrion 생합성**과 **산화적 스트레스에 대한 면역력** 에 도움을 줄 수 있다.
+
+<span class="title">운동이 mitochondrion에 영향을 주는 과정</span>
+
+<span class="interaciton">workout</span> -> <span class="substance">ROS</span> -> <span class="interaciton">activation</span> -> <span class="substance">PGC-l⍺</span> -> <span class="interaciton">combination</span> -> <span class="substance">NRF-1</span> -> <span class="interaciton">gene expression regulation</span> -> <span class="organ">mitochondrion</span> -> <span class="interaciton">endurance capacity</span>
+
+- `PGC-1⍺ - peroxisome proliferator activated receptor 𝛄 coactivator-1⍺, 전사활성 보조인자`
+
+- `NRF-1 - nuclear respiratory factor-1`
+
+---
+
+- 운동을 하면 mitochondrion에 의해 ROS가 생성이 되는데, 운동으로 인한 `적당한 산화적 스트레스` 는 [산화적 스트레스에 대한 면역 향상에 도움을 주고(hormesis)](https://en.wikipedia.org/wiki/Hormesis), 근육 세포에 있는 [전사활성 보조인자(PGC-1⍺)](https://en.wikipedia.org/wiki/Pparg_coactivator_1_alpha)라는 단백질을 활성화 시킨다.
+
+- 활성화된 PGC-1⍺는 [NRF-1](https://en.wikipedia.org/wiki/NRF1) 과 결합을 하고 mitochondrion의 합성과 관련된 유전자 발현을 촉진한다.
+
+- 결과적으로 세포 내 mitochondiron 개체 수가 증가해 **지구력(endurance capacity)** 이 좋아진다.
+
+- 그렇기 때문에 운동 후 **ascorbic acid** 를 고용량으로 섭취하는 것은 면역력 향상에 대해 효율적이지 않은 방법일 수 있다. **(일반적인 식이를 통한 적절한 섭취는 괜찮다.)**
+
+- 운동으로 인해 발생한 ROS가 PGC-1⍺를 활성화 하기 전에 항산화 작용으로 인해 환원이 되어 버리면 mitochondrion 합성에 도움을 줄 수 없기 때문이다.
