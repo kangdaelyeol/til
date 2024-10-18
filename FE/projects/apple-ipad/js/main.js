@@ -39,6 +39,9 @@ const compareItemGroupEl = document.querySelector('.compare .item-group')
 const footerNavEl = document.querySelector('footer .navigations')
 const footerThisYearEl = document.querySelector('footer .this-year')
 
+const navEl = document.querySelector('nav')
+const navMenuTogglerEl = navEl.querySelector('.menu-toggler')
+
 // Header - basket action
 
 const showBasket = () => {
@@ -134,6 +137,16 @@ headerMenuTextfieldCancelerBtnEl.addEventListener('click', () => {
 
 searchInputEl.addEventListener('click', () => {
     headerEl.classList.add('searching--mobile')
+})
+
+// Nav - mobile action
+
+navMenuTogglerEl.addEventListener('click', () => {
+    if (navEl.classList.contains('menuing')) {
+        navEl.classList.remove('menuing')
+    } else {
+        navEl.classList.add('menuing')
+    }
 })
 
 // Camera Section Event Listener
