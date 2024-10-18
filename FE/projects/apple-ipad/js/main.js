@@ -5,6 +5,12 @@ const headerEl = document.querySelector('header')
 
 const headerMenuIconElList = [...headerEl.querySelectorAll('.menu li')]
 
+const headerMenuStarterEl = document.querySelector('header .menu-starter')
+
+const headerMenuTextfieldCancelerBtnEl = document.querySelector(
+    'header .search-canceler'
+)
+
 const basketStarterEl = headerEl.querySelector('.basket-starter')
 const basketEl = headerEl.querySelector('.basket')
 
@@ -32,6 +38,7 @@ const compareItemGroupEl = document.querySelector('.compare .item-group')
 
 const footerNavEl = document.querySelector('footer .navigations')
 const footerThisYearEl = document.querySelector('footer .this-year')
+
 // Header - basket action
 
 const showBasket = () => {
@@ -97,12 +104,33 @@ const hideSearch = () => {
     }, 400)
 }
 
-// Search Section Event Listener
+// Header - Search Section Event Listener
 
 searchStarterEl.addEventListener('click', showSearch)
 searchCloserEl.addEventListener('click', hideSearch)
 searchWrapEl.addEventListener('click', (e) => {
     e.stopPropagation()
+})
+
+// Header - Memu action
+
+headerMenuStarterEl.addEventListener('click', (e) => {
+    if (!headerEl.classList.contains('menuing')) {
+        headerEl.classList.add('menuing')
+        document.documentElement.classList.add('fixed')
+    } else {
+        headerEl.classList.remove('menuing')
+        document.documentElement.classList.remove('fixed')
+    }
+    e.stopPropagation()
+})
+
+headerMenuTextfieldCancelerBtnEl.addEventListener('click', () => {
+    headerEl.classList.remove('searching--mobile')
+})
+
+searchInputEl.addEventListener('click', () => {
+    headerEl.classList.add('searching--mobile')
 })
 
 // Camera Section Event Listener
