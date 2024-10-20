@@ -1753,6 +1753,8 @@ nav ul.menu li .description:hover {
 
 /* Wireless - media queries */
 
+/* Wireless - tabler mode */
+
 @media (max-width: 1000px) {
   .wireless {
     margin-top: 140px;
@@ -1876,8 +1878,72 @@ nav ul.menu li .description:hover {
   justify-content: space-around;
 }
 
-.accessories .info-group a {
-  display: block;
+/* Accessories - media queries */
+
+/* Accessories - tablet mode */
+
+@media (max-width: 1000px) {
+  .accessories {
+    margin-top: 120px;
+  }
+
+  .accessories h2 {
+    width: 384px;
+    height: 243px;
+  }
+
+  .accessories .figure-group {
+    height: 700px;
+  }
+
+  .accessories figure {
+    transform: translate(12px, 0);
+  }
+
+  .accessories figure img {
+    width: 712px;
+  }
+
+  .accessories figcaption .caption-memo {
+    transform: scale(0.8) translate(677px, -60px);
+  }
+
+  .accessories figcaption .caption-supports {
+    transform: scale(0.8) translate(101px, 650px);
+  }
+}
+
+/* Accessories - mobile mode */
+
+@media (max-width: 740px) {
+  .accessories h2 {
+    width: 300px;
+    height: 190px;
+  }
+
+  .accessories .figure-group {
+    height: auto;
+    margin-top: 64px;
+  }
+
+  .accessories figure img {
+    width: 380px;
+  }
+
+  .accessories figcaption .caption-memo {
+    transform: scale(0.8) translate(186px, -58px);
+  }
+
+  .accessories figcaption .caption-supports {
+    width: 160px;
+    height: 44px;
+    background-image: url('../images/accessories_caption_supports_mobile.png');
+    transform: scale(1) translate(31px, 335px);
+  }
+
+  .accessories .info-group {
+    margin-top: 100px;
+  }
 }
 
 /* IPadOS Section */
