@@ -1589,6 +1589,118 @@ nav ul.menu li .description:hover {
   width: 20px;
 }
 
+/* Camera - media queries */
+
+/* Camera - tablet mode */
+
+@media (max-width: 1000px) {
+  .camera {
+    margin-top: 165px;
+  }
+
+  .camera .stage h2 {
+    width: 405px;
+    height: 270px;
+    transform: translate(0, 0);
+  }
+
+  .camera .stage .info {
+    top: 0;
+  }
+
+  .camera .stage .figure-group {
+    height: 500px;
+  }
+
+  .camera .stage figure img {
+    width: 678px;
+  }
+
+  .camera .stage video {
+    top: 23px;
+    left: 50px;
+    transform: scale(0.65);
+    transform-origin: 0 0;
+  }
+
+  .camera .stage .controller--play,
+  .camera .stage .controller--pause {
+    transform: translate(276px, -88px) rotate(-3deg);
+  }
+
+  .camera .stage figcaption {
+    transform: scale(0.8) translate(-136px, 306px);
+  }
+
+  .camera .edit .figure-group {
+    height: auto;
+  }
+
+  .camera .edit figure {
+    transform: translate(40px, 0);
+  }
+
+  .camera .edit figure img {
+    width: 509px;
+  }
+
+  .camera .edit figcaption {
+    transform: scale(0.8) translate(27px, 742px);
+  }
+}
+
+/* Camera - mobile mode */
+
+@media (max-width: 740px) {
+  .camera {
+    margin-top: 120px;
+  }
+  .camera .stage h2 {
+    width: 304px;
+    height: 350px;
+    background-image: url('../images/camera_headline_mobile.png');
+    margin: 0 auto;
+  }
+  .camera .stage .info {
+    position: static;
+    margin-top: 30px;
+  }
+  .camera .stage .figure-group {
+    height: auto;
+    margin-top: 64px;
+  }
+  .camera .stage figure {
+    transform: translate(20px, 0);
+  }
+  .camera .stage figure img {
+    width: 450px;
+  }
+  .camera .stage video {
+    top: 15px;
+    left: 33px;
+    transform: scale(0.43);
+  }
+  .camera .stage .controller--play,
+  .camera .stage .controller--pause {
+    transform: translate(169px, -51px) rotate(-3deg);
+  }
+  .camera .stage figcaption {
+    width: 175px;
+    height: 43px;
+    background-image: url('../images/camera_hardware_caption_mobile.png');
+    transform: scale(1) translate(110px, -40px);
+  }
+  .camera .edit .figure-group {
+    margin-top: 30px;
+  }
+  .camera .edit figure img {
+    width: 343px;
+  }
+  .camera .edit figcaption {
+    transform: scale(0.8) translate(27px, 502px);
+  }
+}
+
 /* Wireless Section */
 
 .wireless {
