@@ -1370,7 +1370,7 @@ nav ul.menu li .description:hover {
   .power .arcade figcaption {
     transform: scale(0.8) translate(316px, 368px);
   }
-  .power .create .figures {
+  .power .create .figure-group {
     height: auto;
     margin-top: 20px;
   }
@@ -1655,47 +1655,58 @@ nav ul.menu li .description:hover {
   .camera {
     margin-top: 120px;
   }
+
   .camera .stage h2 {
     width: 304px;
     height: 350px;
     background-image: url('../images/camera_headline_mobile.png');
     margin: 0 auto;
   }
+
   .camera .stage .info {
     position: static;
     margin-top: 30px;
   }
+
   .camera .stage .figure-group {
     height: auto;
     margin-top: 64px;
   }
+
   .camera .stage figure {
     transform: translate(20px, 0);
   }
+
   .camera .stage figure img {
     width: 450px;
   }
+
   .camera .stage video {
     top: 15px;
     left: 33px;
     transform: scale(0.43);
   }
+
   .camera .stage .controller--play,
   .camera .stage .controller--pause {
     transform: translate(169px, -51px) rotate(-3deg);
   }
+
   .camera .stage figcaption {
     width: 175px;
     height: 43px;
     background-image: url('../images/camera_hardware_caption_mobile.png');
     transform: scale(1) translate(110px, -40px);
   }
+
   .camera .edit .figure-group {
     margin-top: 30px;
   }
+
   .camera .edit figure img {
     width: 343px;
   }
+
   .camera .edit figcaption {
     transform: scale(0.8) translate(27px, 502px);
   }
@@ -1738,6 +1749,89 @@ nav ul.menu li .description:hover {
   height: 46px;
   background-image: url('../images/wireless_files_caption.png');
   transform: translate(96px, 639px);
+}
+
+/* Wireless - media queries */
+
+@media (max-width: 1000px) {
+  .wireless {
+    margin-top: 140px;
+  }
+
+  .wireless .facetime h2 {
+    width: 450px;
+    height: 200px;
+    transform: translate(70px, 0);
+  }
+
+  .wireless .facetime .figure-group {
+    height: 530px;
+  }
+
+  .wireless .facetime figure {
+    transform: translate(0, 0);
+  }
+
+  .wireless .facetime figure img {
+    width: 769px;
+  }
+
+  .wireless .facetime figcaption {
+    transform: scale(0.8) translate(670px, -60px);
+  }
+
+  .wireless .files figure img {
+    width: 676px;
+  }
+
+  .wireless .files figcaption {
+    transform: scale(0.8) translate(43px, 520px);
+  }
+}
+
+/* Wireless - mobile mode */
+
+@media (max-width: 740px) {
+  .wireless {
+    margin-top: 120px;
+  }
+
+  .wireless .facetime h2 {
+    width: 312px;
+    height: 223px;
+    background-image: url('../images/wireless_headline_mobile.png');
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .wireless .facetime .figure-group {
+    height: auto;
+    margin-top: 64px;
+  }
+
+  .wireless .facetime figure img {
+    width: 490px;
+  }
+
+  .wireless .facetime figcaption {
+    transform: scale(0.8) translate(120px, -45px);
+  }
+
+  .wireless .files .figure-group {
+    margin-top: 30px;
+  }
+
+  .wireless .files figure {
+    transform: translate(20px, 0);
+  }
+
+  .wireless .files figure img {
+    width: 450px;
+  }
+
+  .wireless .files figcaption {
+    transform: scale(0.8) translate(73px, 355px);
+  }
 }
 
 /* Accessories Section */
