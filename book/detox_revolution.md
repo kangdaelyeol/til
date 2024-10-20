@@ -1223,3 +1223,27 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
   - [ketoacidosis](https://en.wikipedia.org/wiki/Ketoacidosis)는 몸에 산성 물질인 ketone bodies의 농도가 높은 상태를 말한다.
 
   - 일반적인 식이, 운동 요법으로 **ketoacidosis** 에 걸릴 확률은 매우 희박하고, 보통 인슐린 결핍과 같은 **type 1 diabete(제 1형 당뇨)** 를 가질 경우 ketoacidosis에 취약하다.
+
+## Beteine
+
+- `비트(beet)` 에 포함된 [Betaine(trimethyglycine)](https://en.wikipedia.org/wiki/Betaine)은 유전자 발현 조절에 효과가 있다.
+
+  - 비트(beet)는 서양에서 **사탕무(sugar beet)** 랑 같은 종이지만, 두 채소는 성분이 다르므로 혼동해서는 안된다.
+
+  - 물론 sugar beet에도 betaine이 포함되어 있다. 하지만 sucrose의 비율이 높으므로 주의해야 한다. `(betaine이란 이름은 sugar beet에서 발견되어 독립되어 지어졌고, 이후 성분 분석에 의해 trimethylglycine으로 명명되었다.)`
+
+<span class="title">beteine이 주는 이로움</span>
+
+<span class="substance">betaine</span> - <span class="interaction">methyl donor</span> -> <span class="organ">DNA</span> -> <span class="interaction">Regulation of gene expression</span>
+
+<span class="substance">beteine</span> - <span class="interaction">methyl donor</span> -> <span class="organ">BHMT</span> -> <span class="substance">homocysteine</span> -> <span class="substance">methionine</span>
+
+- `BHMT - Beteine-homocysteine methyltransfrerase`
+
+---
+
+- [betaine](https://en.wikipedia.org/wiki/Betaine)은 **DNA** 에 methyl을 제공해서 유전자 발현을 조절한다. 따라서 필요한 형태, 양의 단백질이 올바르게 합성되어 세포 기능, 대사 조절이 원활하게 이루어진다.
+
+- betaine은 [BHMT](https://en.wikipedia.org/wiki/Betaine%E2%80%94homocysteine_S-methyltransferase)를 통해 [homocysteine](https://en.wikipedia.org/wiki/Homocysteine)에 methyl을 제공함으로써 [methionine](https://en.wikipedia.org/wiki/Methionine)을 생성한다.
+
+  - **homocysteine** 은 **essential amino acid** 인 methionine의 대사산물로 자연스럽게 생성되어 축적되지만, 과다축적이 되면 [hyperhomocysteinemia](https://en.wikipedia.org/wiki/Hyperhomocysteinemia)상태가 되며 **심혈관 질환(cardiovascular disease)** 위험이 높아진다.
