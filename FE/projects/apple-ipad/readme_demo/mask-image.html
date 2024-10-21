@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 300vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .bg {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        background: url('./sample.png') center/cover no-repeat;
+        mask-image: linear-gradient(black, black);
+        mask-size: 100% 100%;
+        mask-position: -100vw 0;
+        mask-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <script>
+      const bgEl = document.querySelector('.bg')
+      window.onload = () => {
+        window.addEventListener('scroll', () => {
+          const scrollRatio = 3 * (scrollY / document.body.offsetHeight)
+          bgEl.style.maskPosition = `${(scrollRatio - 1) * 100}vw`
+        })
+      }
+    </script>
+  </body>
+</html>

@@ -659,3 +659,70 @@ btnEl.addEventListener('click', () => {
 - 결국 2개의 steps을 가진 애니매이션에 steps(1)값을 설정할 경우, 이는 step-end와 같은 효과를 내므로 from의 스타일만 지속적으로 보여주게 될 것이다.
 
 - 결론적으로 step-easing-function을 사용할 경우, **처음 step(from)** 의 스타일과 **마지막 step(to)** 의 스타일이 일치하지 않다면, `두 스타일 중 하나는 포기해야 한다.`
+
+## mask image
+
+- css의 [mask-image](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image) 속성으로 `mask layer` 에 사용될 이미지를 설정함으로써 요소의 표현 범위를 설정할 수 있다.
+
+- video의 기울기 표현을 디자인 하기 위해 미리 기울어진 video source와, 기울 어진 video를 표현할 범위의 mask image가 필요하다.
+
+---
+
+<img src="./readme_img/mask-default-picture.png" width="250"/> <img src="./readme_img/mask-image.png" width="250"/> <img src="./readme_img/mask-video.png" width="250"/>
+
+- 기본 이미지로 아이패드의 모서리를 표현하고, 마스크 이미지, 동영상 세 자원을 겹쳐 아이패드의 기울어진 각도에 자연스럽게 맞추어 배치할 수 있다.
+
+- css의 **transform** 속성으로 기울기를 조절한 것이 아닌, 이미지 자체가 기본적으로 기울어져 디자인 되어 있다.
+
+- 또한 해상도가 같은 크기로 되어 있기 때문에 이미지를 겹쳐 표현하기도 매우 수월했다.
+
+---
+
+### Lab - mask-image속성을 js를 통해 조작함으로써 스크롤에 따른 인터렉티브한 이미지 표현도 구현해볼 수 있었다.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 300vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .bg {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        background: url('./sample.png') center/cover no-repeat;
+        mask-image: linear-gradient(black, black);
+        mask-size: 100% 100%;
+        mask-position: -100vw 0;
+        mask-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <script>
+      const bgEl = document.querySelector('.bg')
+      window.onload = () => {
+        window.addEventListener('scroll', () => {
+          const scrollRatio = 3 * (scrollY / document.body.offsetHeight)
+          bgEl.style.maskPosition = `${(scrollRatio - 1) * 100}vw`
+        })
+      }
+    </script>
+  </body>
+</html>
+```
+
+- `position: sticky` 옵션과 scroll 비율에 따른 `mask-position` 이동으로 이미지를 원하는 부분만큼 표현할 수 있다.
+
+- transform-origin처럼 [mask-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin) 위치를 임의로 설정하고, mask-size 크기를 줄이는 방법을 사용할 수 없기 때문에, position을 사용하지 않으면 box의 왼쪽 위 모서리의 mask-image 시작점이 고정되어버린다.
+
+- `따라서 이런 기법은 background-attachment: fixed 옵션을 사용하는 것이 더욱 수월해 보인다.`
