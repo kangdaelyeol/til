@@ -237,11 +237,17 @@ footerNavDataList.forEach((data) => {
     })
 
     footerNavMapEl.innerHTML = /* html */ `
-        <h3>${data.title}</h3>
+        <h3><span class="text">${data.title}</span>
+        <span class="icon">+<span></h3>
         <ul>
             ${navItemList}
         </ul>
     `
+
+    footerNavMapEl.querySelector('h3').addEventListener('click', () => {
+        footerNavMapEl.classList.toggle('active')
+    })
+
     footerNavEl.append(footerNavMapEl)
 })
 
