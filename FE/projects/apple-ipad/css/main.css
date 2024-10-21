@@ -274,6 +274,7 @@ p {
 }
 
 .info a.link {
+  display: block;
   margin-top: 44px;
   font-size: 19.5px;
 }
@@ -2139,6 +2140,89 @@ nav ul.menu li .description:hover {
     background-image: url('../images/ipados_quick_note_caption_mobile.png');
     transform: scale(1) translate(-65px, 250px);
   }
+}
+
+/* Apps Section */
+
+.apps {
+  margin-top: 368px;
+}
+
+.apps h1 {
+  background-image: url('../images/apps_headline.png');
+  width: 500px;
+  height: 264px;
+  transform: translate(17px, 0);
+}
+
+.apps .info-group {
+  margin-top: 36px;
+  margin-left: 82px;
+}
+
+.apps .figure-group {
+  display: flex;
+  height: 788px;
+}
+
+.apps .figure-group > div {
+  flex-grow: 1;
+  position: relative;
+}
+
+.apps .figure-masterclass figure {
+  transform: translate(578px, -431px);
+}
+
+.apps .figure-masterclass figcaption {
+  width: 100px;
+  height: 25px;
+  background-image: url(../images/apps_masterclass_caption.png);
+  transform: translate(26px, 690px);
+}
+
+.apps .figure-adobe figure {
+  transform: translate(-515px, 85px);
+}
+
+.apps .figure-adobe figcaption {
+  width: 105px;
+  height: 24px;
+  background-image: url(../images/apps_adobe_caption.png);
+  transform: translate(544px, 514px);
+}
+
+.apps .figure-fantasian figure {
+  transform: translate(-103px, 318px);
+}
+
+.apps .figure-fantasian figcaption {
+  width: 74px;
+  height: 22px;
+  background-image: url(../images/apps_fantasian_caption.png);
+  transform: translate(24px, 483px);
+}
+
+.apps .figure-books figure {
+  transform: translate(-133px, -150px);
+}
+
+.apps .figure-books figcaption {
+  width: 50px;
+  height: 27px;
+  background-image: url(../images/apps_books_caption.png);
+  transform: translate(397px, 707px);
+}
+
+.apps .figure-goodnotes figure {
+  transform: translate(-93px, 68px);
+}
+
+.apps .figure-goodnotes figcaption {
+  width: 99px;
+  height: 26px;
+  background-image: url(../images/apps_goodnotes_caption.png);
+  transform: translate(24px, 690px);
 }
 
 /* Privacy Section */
