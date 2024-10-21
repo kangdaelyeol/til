@@ -2438,6 +2438,63 @@ nav ul.menu li .description:hover {
   transform: translate(533px, 485px);
 }
 
+/* Privacy - media queries */
+
+/* Privacy - tablet mode  */
+
+@media (max-width: 1000px) {
+  .privacy {
+    margin-top: 120px;
+  }
+
+  .privacy h2 {
+    width: 368px;
+    height: 182px;
+    transform: translate(70px, 0);
+  }
+
+  .privacy .info-group {
+    margin-top: 24px;
+  }
+
+  .privacy figure {
+    transform: translate(-18px, -440px);
+  }
+
+  .privacy figure img {
+    width: 441px;
+  }
+
+  .privacy figcaption .caption-apple-id {
+    transform: scale(0.8) translate(-22px, -18px);
+  }
+
+  .privacy figcaption .caption-touch-id {
+    transform: scale(0.8) translate(293px, 339px);
+  }
+}
+
+/* Privacy - mobile mode */
+
+@media (max-width: 1000px) {
+  .privacy h2 {
+    width: 277px;
+    height: 136px;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .privacy .figure-group {
+    margin-top: 30px;
+  }
+
+  .privacy figure {
+    transform: translate(20px, 0);
+  }
+
+  
+}
+
 /* Accessibility Section */
 
 .accessibility {
