@@ -726,3 +726,47 @@ btnEl.addEventListener('click', () => {
 - transform-origin처럼 [mask-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin) 위치를 임의로 설정하고, mask-size 크기를 줄이는 방법을 사용할 수 없기 때문에, position을 사용하지 않으면 box의 왼쪽 위 모서리의 mask-image 시작점이 고정되어버린다.
 
 - `따라서 이런 기법은 background-attachment: fixed 옵션을 사용하는 것이 더욱 수월해 보인다.`
+
+## textContent - innerHTML / innerText
+
+- 요소의 text 부분을 수정할 때 `textContent` 를 사용하는 것이 효율적이다.
+
+### Node.textContent
+
+- Node interface의 속성으로, 요소의 text를 그대로 설정한다.
+
+- setter로 사용할 때 HTML문법에 맞추어 설정해도 브라우저에는 text로써 표현이 된다. 따라서 `XSS` 공격에 안전하다.
+
+### innerHTML
+
+- innerHTML속성은 `HTMLElement` interface의 속성으로, 요소의 HTML부분까지 모두 포함한다.
+
+- setter로 사용할 때 브라우저는 HTML 문법에 따라 parsing 과정을 거치며, CSS, JS가 포함될시, 기능을 모두 수행할 수 있다. 따라서 `XSS` 공격에 취약하다.
+
+```javascript
+const divEl = document.createElement('div')
+
+divEl.innerHTML = '<img src="xxxx" onerror="XSS" />'
+```
+
+- 이 경우 divEl 요소가 브라우저에 삽입이 될 경우 img 요소가 parsing되어 onerror부분이 실행된다.
+
+#### textContent vs innerHTML
+
+- textContent 속성값은 브라우저에서 [HTML parsing등 어떠한 해석 과정도 거치지 않고 표현하기 때문에](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#differences_from_innerhtml) innerHTML과 비교해서 매우 효율적이다.
+
+- innerHTML은 요소의 text부분을 설정하는 것이 아닌, JS에서 동적으로 HTML요소를 삽입할 때 사용하는 것이 목적에 맞다.
+
+### innerText
+
+- HTMLElement interface의 속성인 innerText는 `브라우저 상에 표현된, 즉 브라우저상에서 표현된(rendered) 텍스트 값만을 포함한다.`
+
+- 또한 innerText는 `style` 에 영향을 받는다. 요소의 스타일이 `display: none, visibility: hidden처럼 브라우저에서 보이지 않게하는 스타일`을 적용받는 요소의 텍스트 값은 포함하지 않는다. `(opacity: 0 스타일은 innerText에 포함된다)`
+
+  - [요소 자체가 render되지 않은 경우는 textContent와 같은 값을 포함하고 있다.](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText#value)
+
+- [또한 요소안에 style이 포함된 경우 이를 parsing하며 text에 적용시켜 포함한다.](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText#html)
+
+#### textContent vs innerText
+
+- innerText는 style을 parsing 과정을 거치므로, layout 해석과정에서 textContent와 비교했을 때 성능적인 차이가 있기 때문에 이를 고려해야 한다. `(물론 요소 안에 style을 삽입하는 경우는 없을 것이다.)`
