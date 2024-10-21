@@ -2476,7 +2476,7 @@ nav ul.menu li .description:hover {
 
 /* Privacy - mobile mode */
 
-@media (max-width: 1000px) {
+@media (max-width: 740px) {
   .privacy h2 {
     width: 277px;
     height: 136px;
@@ -2491,8 +2491,6 @@ nav ul.menu li .description:hover {
   .privacy figure {
     transform: translate(20px, 0);
   }
-
-  
 }
 
 /* Accessibility Section */
@@ -2518,6 +2516,59 @@ nav ul.menu li .description:hover {
 
 .accessibility figure {
   transform: translate(470px, -620px);
+}
+
+/* Accessibility - media queries */
+
+/* Accessibility - tablet mode */
+
+@media (max-width: 1000px) {
+  .accessibility {
+    margin-top: 86px;
+    margin-bottom: 120px;
+  }
+
+  .accessibility h2 {
+    width: 287px;
+    height: 205px;
+  }
+
+  .accessibility .info {
+    max-width: 346px;
+  }
+
+  .accessibility figure {
+    transform: translate(401px, -504px);
+  }
+
+  .accessibility figure img {
+    width: 329px;
+  }
+}
+
+/* Accessibility - mobile mode */
+
+@media (max-width: 740px) {
+  .accessibility {
+    margin-bottom: 50px;
+  }
+
+  .accessibility h2 {
+    height: 165px;
+    margin: 0 auto;
+  }
+
+  .accessibility .info {
+    max-width: none;
+  }
+
+  .accessibility .figure-group {
+    margin-top: 30px;
+  }
+
+  .accessibility figure {
+    transform: translate(20px, 0);
+  }
 }
 
 /* AR Section */
