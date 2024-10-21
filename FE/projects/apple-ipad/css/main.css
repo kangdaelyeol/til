@@ -351,6 +351,30 @@ p {
   margin-top: 26px;
 }
 
+/* white box - tablet mode */
+
+@media (max-width: 1000px) {
+  .whitebox {
+    padding: 60px 30px;
+  }
+
+  .whitebox .icon {
+    width: 44px;
+  }
+
+  .whitebox h1 {
+    font-size: 36px;
+  }
+}
+
+/* white box - mobile mode */
+
+@media (max-width: 740px) {
+  .whitebox p {
+    font-size: 17px;
+  }
+}
+
 /* Footnote */
 
 sup {
@@ -2590,6 +2614,35 @@ nav ul.menu li .description:hover {
   max-width: 410px;
   margin-top: 60px;
   margin-right: 90px;
+}
+
+/* AR - media queries */
+
+/* AR - tablet mode */
+
+@media (max-width: 1000px) {
+  .ar .image {
+    width: 258px;
+  }
+}
+
+/* AR - mobile mode */
+
+@media (max-width: 740px) {
+  .ar .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ar .inner > div {
+    text-align: center;
+    max-width: none;
+    margin: 0 0 30px;
+  }
+
+  .ar .icon {
+    margin: 0 auto 20px;
+  }
 }
 
 /* Environment Section */
