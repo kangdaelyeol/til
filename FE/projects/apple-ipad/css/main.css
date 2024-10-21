@@ -332,21 +332,26 @@ p {
   box-sizing: border-box;
   background-color: var(--color-white);
 }
+
 .whitebox.whitebox--transparent {
   background-color: transparent;
 }
+
 .whitebox .icon {
   margin-bottom: 20px;
 }
+
 .whitebox h1 {
   font-size: 50px;
   font-weight: 600;
   line-height: 1.3;
 }
+
 .whitebox p {
   margin-top: 20px;
   font-size: 19px;
 }
+
 .whitebox a.link {
   margin-top: 26px;
 }
@@ -893,6 +898,7 @@ header ul.menu li.menu-starter {
   header.menuing ul.menu li.menu-starter div:first-of-type {
     transform: translateY(3.5px) rotate(45deg);
   }
+
   header.menuing ul.menu li.menu-starter div:last-of-type {
     transform: translateY(-3.5px) rotate(-45deg);
   }
@@ -1166,15 +1172,19 @@ nav ul.menu li .description:hover {
   .hero figure {
     transform: translate(70px, -24px);
   }
+
   .hero figure img {
     width: 540px;
   }
+
   .hero figcaption .caption-camera {
     transform: scale(0.8) translate(-9px, 524px);
   }
+
   .hero figcaption .caption-chip {
     transform: scale(0.8) translate(510px, 422px);
   }
+
   .hero figcaption .caption-storage {
     transform: scale(0.8) translate(556px, 556px);
   }
@@ -1186,41 +1196,51 @@ nav ul.menu li .description:hover {
   .hero .inner {
     padding-top: 40px;
   }
+
   .hero h1 {
     margin: 0 auto 40px;
     position: static;
     transform: none;
   }
+
   .hero .figure-group {
     height: auto;
     margin-bottom: 100px;
   }
+
   .hero figure {
     transform: none;
   }
+
   .hero figure img {
     width: 337px;
   }
+
   .hero figcaption .caption-camera {
     width: 180px;
     height: 37px;
     background-image: url('../images/hero_ipad_caption_camera_mobile.png');
     transform: scale(1) translate(21px, 368px);
   }
+
   .hero figcaption .caption-chip {
     transform: scale(0.8) translate(248px, 42px);
   }
+
   .hero figcaption .caption-storage {
     transform: scale(0.8) translate(288px, 168px);
   }
+
   .hero h2 {
     width: 295px;
     height: 185px;
     background-image: url('../images/hero_headline_mobile.png');
   }
+
   .hero p.pricing {
     font-size: 20px;
   }
+
   .hero p.description {
     width: auto;
     font-size: 17px;
@@ -1295,9 +1315,9 @@ nav ul.menu li .description:hover {
   transform: translate(543px, 908px);
 }
 
-/* power - media queries */
+/* Power - media queries */
 
-/* power - tablet mode */
+/* Power - tablet mode */
 
 @media (max-width: 1000px) {
   .power {
@@ -1307,6 +1327,10 @@ nav ul.menu li .description:hover {
   .power .multiple-apps h1 {
     width: 310px;
     height: 180px;
+  }
+
+  .power .multiple-apps .figure-group {
+    height: 503px;
   }
 
   .power .multiple-apps figure {
@@ -1358,7 +1382,7 @@ nav ul.menu li .description:hover {
   }
 }
 
-/* power - mobile mode */
+/* Power - mobile mode */
 
 @media (max-width: 740px) {
   .power .multiple-apps h1 {
@@ -1463,32 +1487,41 @@ nav ul.menu li .description:hover {
   .display {
     margin-top: 180px;
   }
+
   .display .notes h2 {
     width: 400px;
     height: 240px;
     transform: translate(120px, 0);
   }
+
   .display .notes .figure-group {
     height: 530px;
   }
+
   .display .notes figure {
     transform: translate(80px, -10px);
   }
+
   .display .notes figure img {
     width: 676px;
   }
+
   .display .notes figcaption {
     transform: scale(0.8) translate(540px, -34px);
   }
+
   .display .shareplay .figure-group {
     height: 330px;
   }
+
   .display .shareplay figure {
     transform: translate(-178px, 0);
   }
+
   .display .shareplay figure img {
     width: 682px;
   }
+
   .display .shareplay figcaption {
     transform: scale(0.8) translate(261px, 540px);
   }
@@ -1502,32 +1535,41 @@ nav ul.menu li .description:hover {
     margin: 0 auto;
     transform: none;
   }
+
   .display .notes .figure-group {
     height: auto;
     margin-top: 60px;
   }
+
   .display .notes figure {
     transform: translate(20px, 0);
   }
+
   .display .notes figure img {
     width: 458px;
   }
+
   .display .notes figcaption {
     transform: scale(0.8) translate(220px, -45px);
   }
+
   .display .shareplay {
     margin-top: 30px;
   }
+
   .display .shareplay .figure-group {
     height: auto;
     order: 1;
   }
+
   .display .shareplay figure {
     transform: translate(20px, 0);
   }
+
   .display .shareplay figure img {
     width: 460px;
   }
+
   .display .shareplay figcaption {
     transform: scale(0.8) translate(261px, 358px);
   }
@@ -2869,10 +2911,12 @@ footer .warning {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
+
 footer .warning ol {
   list-style: decimal;
   padding-left: 16px;
 }
+
 footer .warning li {
   margin-bottom: 10px;
   font-size: 11px;
