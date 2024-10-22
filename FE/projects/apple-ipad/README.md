@@ -1022,3 +1022,183 @@ ol li::marker {
   - 첫 번째 cross-axis line의 box는 아무런 content도 없으므로 box 자체 크기를 가지지 않아 보이지 않지만, remaining space 분배에 의한 cross-axis크기는 유지가 되는 것을 확인 할 수 있다.
 
 - `align-contents` 속성은 각 cross-axis line들을 배치하는 방법을 결정한다. 즉 `flex-wrap: wrap`스타일이 적용되어 wrap이 발생해 cross axis가 여러개의 line으로 나누어 졌을 때 유효한 속성이다.
+
+## appendChild - append
+
+### appendChild
+
+- [Node interface의 appendChild 메서드](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)는 요소의 맨 마지막 자식 요소로써 `Node` 를 추가한다.
+
+- **appendChild(aChild)**
+
+  - [aChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild#achild) parameter를 받아 자식 요소로써 추가한다.
+
+  - argument는 `Node interface`를 상속받는 DocumentFragment, Element, CharacterData, DocumentType 을 상속하는 타입의 값이어야 한다. - `즉 일반적인 String, Number 같은 데이터는 text node로 써 입력할 수 없다.`
+
+- appendChild는 삽입된 자신의 Node를 반환하므로 method chaining 기법을 통해 반복 호출함으로써 [nested DOM structure](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild#creating_a_nested_dom_structure)를 생성할 수 있다.
+
+```javascript
+// main.js - Compare Item Group - ipad item render
+
+ipadDataList.forEach((data) => {
+  const compareIpadItemEl = document.createElement('div')
+  compareIpadItemEl.classList.add('item')
+  let compareColorElHTML = ''
+
+  data.colors.forEach((color) => {
+    compareColorElHTML += /* html */ `
+            <li style="background-color: ${color}"></li>
+        `
+  })
+
+  compareIpadItemEl.innerHTML = /* html */ `
+            <div class="thumbnail">
+                <img src="${data.thumbnail}" alt="${data.name}" />
+            </div>
+            <ul class="color-group">
+                ${compareColorElHTML}
+            </ul>
+            <h3 class="name">${data.name}</h3>
+            <p class="tagline">${data.tagline}</p>
+            <p class="price">₩${data.price.toLocaleString('en-US')}부터</p>
+            <button class="btn">구입하기</button>
+            <a href="${data.url}" class="link">더 알아보기</a>
+    `
+
+  compareItemGroupEl.append(compareIpadItemEl)
+})
+```
+
+- 기존의 `comment tagged templates` 로 작성된 HTML 구조를 innerHTML 속성에 getter로 주입해 동적으로 요소를 생성한 코드를 appendChild를 활용한 코드로 리팩토링 해보았다.
+
+```javascript
+// main.js - Compare Item Group - ipad item render
+
+ipadDataList.forEach((data) => {
+  const compareIpadItemEl = document.createElement('div')
+  compareIpadItemEl.classList.add('item')
+  const compareColorElHTML = document.createDocumentFragment()
+
+  data.colors.forEach((color) => {
+    const liEl = document.createElement('li')
+    liEl.style.backgroundColor = color
+    compareColorElHTML.appendChild(liEl)
+  })
+
+  const thumbnailEl = document.createElement('div')
+  thumbnailEl.classList.add('thumbnail')
+
+  const imgEl = new Image()
+  imgEl.src = data.thumbnail
+  thumbnailEl.appendChild(imgEl)
+
+  const ulEl = document.createElement('ul')
+  ulEl.classList.add('color-group')
+  ulEl.appendChild(compareColorElHTML)
+
+  const h3El = document.createElement('h3')
+  h3El.classList.add('name')
+  h3El.textContent = data.name
+
+  const tagLineEl = document.createElement('p')
+  tagLineEl.classList.add('tagline')
+  tagLineEl.textContent = data.tagline
+
+  const priceEl = document.createElement('p')
+  priceEl.textContent = `₩${data.price.toLocaleString('en-US')}부터`
+
+  const buttonEl = document.createElement('button')
+  buttonEl.classList.add('btn')
+  buttonEl.textContent = '구입하기'
+
+  const anchorEl = document.createElement('a')
+  anchorEl.href = data.url
+  anchorEl.classList.add('link')
+  anchorEl.textContent = '더 알아보기'
+
+  compareIpadItemEl.appendchild(thumbnailEl)
+  compareIpadItemEl.appendchild(ulEl)
+  compareIpadItemEl.appendchild(h3El)
+  compareIpadItemEl.appendchild(tagLineEl)
+  compareIpadItemEl.appendchild(priceEl)
+  compareIpadItemEl.appendchild(buttonEl)
+  compareIpadItemEl.appendchild(anchorEl)
+
+  compareItemGroupEl.appendChild(compareIpadItemEl)
+})
+```
+
+- comment tagged template로 작성된 HTML구조를 appendChild를 사용한 형식으로 변경해보았다.
+
+- 코드가 길어지고, 가독성 측면에서 React문법과 유사한 comment tagged template와 비교해서 비효율적이다.
+
+- 해당 HTML 구조 생성은 nested DOM structure 생성에 유리한 appendChild의 장점을 살리지 못한것 같아 아쉽다.
+
+### append
+
+- Element interface의 메서드인 append는 appendChild 메서드보다 이후에 표준화된 메서드다.
+
+- appendChild와 달리 `여러개의 arguments`를 입력할 수 있고, `String type value` 또한 입력할 수 있다. 이는 내부적으로 textNode로 변경되어 삽입된다고 한다. 대신 반환값은 없다.
+
+- 위에 appendChild 메서드를 사용한 HTML구조를 append 메서드를 사용한 구조로 변경해보았다.
+
+```javascript
+ipadDataList.forEach((data) => {
+  const compareIpadItemEl = document.createElement('div')
+  compareIpadItemEl.classList.add('item')
+  const compareColorElHTML = document.createDocumentFragment()
+
+  data.colors.forEach((color) => {
+    const liEl = document.createElement('li')
+    liEl.style.backgroundColor = color
+    compareColorElHTML.append(liEl)
+  })
+
+  const thumbnailEl = document.createElement('div')
+  thumbnailEl.classList.add('thumbnail')
+
+  const imgEl = new Image()
+  imgEl.src = data.thumbnail
+  thumbnailEl.append(imgEl)
+
+  const ulEl = document.createElement('ul')
+  ulEl.classList.add('color-group')
+  ulEl.append(compareColorElHTML)
+
+  const h3El = document.createElement('h3')
+  h3El.classList.add('name')
+  h3El.textContent = data.name
+
+  const tagLineEl = document.createElement('p')
+  tagLineEl.classList.add('tagline')
+  tagLineEl.textContent = data.tagline
+
+  const priceEl = document.createElement('p')
+  priceEl.textContent = `₩${data.price.toLocaleString('en-US')}부터`
+
+  const buttonEl = document.createElement('button')
+  buttonEl.classList.add('btn')
+  buttonEl.textContent = '구입하기'
+
+  const anchorEl = document.createElement('a')
+  anchorEl.href = data.url
+  anchorEl.classList.add('link')
+  anchorEl.textContent = '더 알아보기'
+
+  compareIpadItemEl.append(
+    thumbnailEl,
+    ulEl,
+    h3El,
+    tagLineEl,
+    priceEl,
+    buttonEl,
+    anchorEl
+  )
+
+  compareItemGroupEl.append(compareIpadItemEl)
+})
+```
+
+- 여러개의 arguments를 입력할 수 있는 장점 외엔 별 차이가 없어보인다. 이 마저도 가독성 측면에서 보면 장점이라고 보여지지 않는다.
+
+- `결론적으로 복잡한 HTML구조를 javascript상에서 동적으로 생성할 때 comment tagged template를 사용하는 것이 가장 효율적이라 판단.`

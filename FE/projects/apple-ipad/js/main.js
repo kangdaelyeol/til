@@ -201,23 +201,23 @@ ipadDataList.forEach((data) => {
 
     data.colors.forEach((color) => {
         compareColorElHTML += /* html */ `
-            <li style="background-color: ${color}"></li>
-        `
+              <li style="background-color: ${color}"></li>
+          `
     })
 
     compareIpadItemEl.innerHTML = /* html */ `
-            <div class="thumbnail">
-                <img src="${data.thumbnail}" alt="${data.name}" />
-            </div>
-            <ul class="color-group">
-                ${compareColorElHTML}
-            </ul>
-            <h3 class="name">${data.name}</h3>
-            <p class="tagline">${data.tagline}</p>
-            <p class="price">₩${data.price.toLocaleString('en-US')}부터</p>
-            <button class="btn">구입하기</button>
-            <a href="${data.url}" class="link">더 알아보기</a>
-    `
+              <div class="thumbnail">
+                  <img src="${data.thumbnail}" alt="${data.name}" />
+              </div>
+              <ul class="color-group">
+                  ${compareColorElHTML}
+              </ul>
+              <h3 class="name">${data.name}</h3>
+              <p class="tagline">${data.tagline}</p>
+              <p class="price">₩${data.price.toLocaleString('en-US')}부터</p>
+              <button class="btn">구입하기</button>
+              <a href="${data.url}" class="link">더 알아보기</a>
+      `
 
     compareItemGroupEl.append(compareIpadItemEl)
 })
