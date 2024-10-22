@@ -770,3 +770,42 @@ divEl.innerHTML = '<img src="xxxx" onerror="XSS" />'
 #### textContent vs innerText
 
 - innerText는 style을 parsing 과정을 거치므로, layout 해석과정에서 textContent와 비교했을 때 성능적인 차이가 있기 때문에 이를 고려해야 한다. `(물론 요소 안에 style을 삽입하는 경우는 없을 것이다.)`
+
+## toLocaleString
+
+- 숫자 데이터를 가격 표시를 위한 형태로 변경하기 위해 [Number.prototype.toLocaleString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString) 메서드를 사용한다.
+
+  - 각 나라마다 숫자 데이터의 자릿수 구분, 표현 방식이 다르기 때문에 이를 국제화(internationalization)해줄 필요가 있다.
+
+- argument로 주어지는 값은 [IETF BCP 47 language tag](https://en.wikipedia.org/wiki/IETF_language_tag) 표준을 따른다.
+
+- Number.prototype.toLocaleString은 [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) 객체의 구현여부에 따라 기능을 의존한다.
+
+  - Intl.NumberFormat API가 구현되어 있다면, toLocaleString 메서드의 argument값인 **BCP 47 language tag** 는 유효한 값으로 사용되며, `결과적으로 Intl.NumberFormat의 기능을 사용하게 된다.`
+
+  - 만약 Intl.NumberFormat API가 구현되어 있지 않으면 `시스템 내부 설정 값`에 의존한 지역에 맞추어 설정된 형태의 값을 반환한다.
+
+### Date.prototype.toLocaleString
+
+- Number.prototype.toLocaleString외에 **Date** 타입을 위한 toLocaleString 메서드도 존재한다.
+
+- **Date.prototype.toLocaleString** 메서드는 [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) 객체 구현에 의존하여 **Number.prototype.toLocaleString** 과 같은 메커니즘으로 동작한다.
+
+### 성능 최적화
+
+```text/plain
+
+Every time toLocaleString is called, it has to perform a search in a big database of localization strings, which is potentially inefficient. When the method is called many times with the same arguments, it is better to create a Intl.NumberFormat object and use its format() method, because a NumberFormat object remembers the arguments passed to it and may decide to cache a slice of the database, so future format calls can search for localization strings within a more constrained context.
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
+```
+
+- 문서에 따르면 Number.prototype.toLocaleString 기준으로 보았을 때, toLocaleString과 Intl.NumberFormat().format()은 같은 값을 반환하더라도, 성능적면에서 차이가 발생한다고 한다.
+
+- toLocaleString 호출 마다 브라우저 Js엔진 내에 구현되어 있는 `big database of localization strings`, 즉 CLDR(Common Locale Data Repository) 데이터베이스에 접근하고, 탐색하여 formatting 기능을 수행한다. 따라서 반복 호출시 성능 저하가 발생할 수 있다.
+
+- 하지만 Intl.NumberFormat 객체를 통한 formatting은 객체가 `arguments값을 내부적으로 cache하기 때문에`, 최적화된 기능을 제공한다.
+
+- 따라서 Intl.NumberFormat등 Intl관련된 객체를 생성해서 API를 반복호출 하는 것이 좋다.
+
+`이 외에도 Intl.ListFormat / DurationFormat등 다양한 표준화를 위한 format들이 존재한다.`
