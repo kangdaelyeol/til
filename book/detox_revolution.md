@@ -358,7 +358,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 특히 `해조류`에 많이 존재하는 무기 비소는 우리 몸에 좋지 않다.
 
-- `유기 비소`는 수용성이 있어 빠르게 몸에서 배출되어 심각한 독성을 띄지 않는데, 무기 비소는 지용성 독소이기 때문에 몸에서 배출되기 쉽지 않다.
+- `유기 비소`는 수용성이 있어 빠르게 몸에서 배출되어 심각한 독성을 유발하지 않는데, 무기 비소는 지용성 독소이기 때문에 몸에서 배출되기 쉽지 않다.
 
 - 무기 비소는 `mitochondion` 기능 장애를 유발한다.
 
@@ -566,7 +566,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 우리가 먹는 약은 간에 무리를 준다고만 알려져있지만, 간 기능이 정상적이어야 약효를 볼 수 있다.
 
-  - `간에서 해독되어야 활성상태`를 띄어 약효를 볼 수 있는 약도 있다. 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
+  - `간에서 해독되어야 활성상태`를 띠어 약효를 볼 수 있는 약도 있다. 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
 
   - 약을 먹었을 때 간기능이 안좋아서 해독을 재때 못해 약효를 예상보다 많이 받아 부작용을 일으키는 경우도 있다.
 
@@ -596,7 +596,7 @@ COX-1, COX-2 - PG합성 효소
 
   - `담낭에 콜레스테롤이 많고, 적절히 융해 되지 않으면 담석(gallstones)이 생길 수 있다.`
 
-- billirubin은 적혈구가 분해되어 최종적으로 변환된 `혈색소`인데, 이는 담즙에 포함된다. 이 색소 수치가 높으면 황달이라고 한다.
+- bilirubin은 적혈구가 분해되어 최종적으로 변환된 `혈색소`인데, 이는 담즙에 포함된다. 이 색소 수치가 높으면 황달이라고 한다.
 
 - 이 외에도 `인지질(phospholipids)`등 담즙에 포함된 성분이 너무나도 많다.
 
@@ -618,7 +618,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <hr />
 
-- 지방은 duedenum에서 분비된 bile acid에 의해 `emulsification(유화)`되어 `소화 표면적(digestive surface)`를 증가시킨다.
+- 지방은 duodenum에서 분비된 bile acid에 의해 `emulsification(유화)`되어 `소화 표면적(digestive surface)`를 증가시킨다.
 
 - 유화된 지방은 췌장(pancreas)에서 분비된 lipase에 의해 `가수분해(hydrolysis)`되어 지방산(fatty acid)와 monoglyceride로 분해된다.
 
@@ -634,15 +634,15 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 올리브 오일에 포함된 `oleic acid(올레산)`은 `단일 불포화 지방산(MUFA - Monounsaturated Fatty Acid)`로써 duodenum과 Jejunum을 자극해 상피세포에서 [CCK(cholecystokinin)](https://en.wikipedia.org/wiki/Cholecystokinin)을 분비하게 한다.
 
-- 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase분비를 촉진한다.
+- 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase분비를 촉진한다[
 
-## Enterohepatic Circulation - 장간 순환
+## Enterohepatic Circulation - ](#enterohepatic-circulation---장간)장간
 
 - 우리 몸에 있는 `담즙산(bile acid)`은 `enterohepatic circulation(장간 순환)`를 통해 `재사용` 된다.
 
 <hr />
 
-<span class="title">Entrohepatic circulation pathway</span>
+<span class="title">Enterohepatic circulation pathway</span>
 
 <span class="organ">liver</span> -> <span class="substance">bile acid(secretion)</span> -> <span class="organ">gallbladder</span> -> <span class="organ">small intestine</span> -> <span class="organ">Ileum</span> -> <span class="organ">portal vein</span> -> <span class="organ">liver</span>
 
@@ -986,7 +986,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 과정을 모두 마친 잔여물은 **집합관(Collecting duct)** 에서 **신우(renal pelvis)** 로 이동하고 신장을 빠져나와 **요관(Ureter)** 을 거쳐 **방광(bladder)** 으로 축적되어 소변으로 배출된다.
 
-- 여기서 여과되는 혈액이 **강산성**을 띄는 경우 친수성(hydrophilic)의 산성 독소가 **H<sup>+</sup>** 을 얻어 **친유성(lipophilic)** 을 띄어 세포막으로 쉽게 들어갈 수 있는 구조가 되어 **peritubular capillary** 를 통한 **재흡수** 가 발생할 수 있다.
+- 여기서 여과되는 혈액이 **강산성**을 띠는 경우 친수성(hydrophilic)의 산성 독소가 **H<sup>+</sup>** 을 얻어 **친유성(lipophilic)** 을 띠어 세포막으로 쉽게 들어갈 수 있는 구조가 되어 **peritubular capillary** 를 통한 **재흡수** 가 발생할 수 있다.
 
 - 알칼리성 독소도 마찬가지인데, 우리 현대의 식습관은 혈액을 산성으로 만들기에 최적화 되어 있다. **동물성 단백질, 과다한 염분 섭취** 가 대표적이다.
 
@@ -1274,10 +1274,58 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 - 음식을 섭취하면 gustatory cell에서 화학반응이 일어나 세포가 활성화되어 신경 신호를 생성한다.
 
-- 생성된 신호는 **cranial nerve(대뇌 신경)** 을 통해 `taste center(미각 중추)` 로 전달되고, **대뇌 피질(celebral cortex)** 의 [insula cortex](https://en.wikipedia.org/wiki/Insular_cortex) 부분의 위치한 **gustatory cortax(미각 피질)**로 전달되어 우리가 맛을 인지하게 된다.
+- 생성된 신호는 **cranial nerve(대뇌 신경)** 을 통해 `taste center(미각 중추)` 로 전달되고, **대뇌 피질(celebral cortex)** 의 [insula cortex](https://en.wikipedia.org/wiki/Insular_cortex) 부분의 위치한 **gustatory cortax(미각 피질)** 로 전달되어 우리가 맛을 인지하게 된다.
 
 `미각 신경(taste center)은 사실상 비공식 용어인데, 정확히 미각을 담당하는 중추인 연수(medulla oblongata) -> 시상(thalamus)의 내복측핵(VPM - Ventral posteromedial nucleus) 를 통해 신호가 전달 된다.`
 
 `대뇌 신경에서 안면(facial) 신경, 설인(grossopharyngeal) 신경, 미주(vague) 신경(7, 9 ,10번 대뇌신경)을 통해 미각 신호가 전달된다.`
 
 `gustatory nerve -> taste center -> gustatory cortex의 neural signal전달의 과정은 neurotransmission 과정의 개념이다.`
+
+## RBC - bilirubin
+
+- 담즙의 구성요소인 bilirubin은 적혈구가 파괴되어 생성되는 최종 대사산물이다.
+
+- bilirubin은 우리 몸의 대변(feces)색, 담즙(bile)에 갈색을 띠게 하는 주요 물질이다.
+
+- 혈액(blood stream)에 bilirubin 수치가 높으면 jaundice(황달) 증세가 나타날 수 있다.
+
+![heme metabolism](./images/heme_metabolism.png)
+
+<span class="title">빌리루빈 생성 과정</span>
+
+RBC -> liver / spleen -> decomposition -> heme / globin
+
+globin -> protease -> hydrolysis -> amino acid
+
+heme -> heme oxygenase -> biliverdin -> biliverdin reductase -> unconjugated bilirubin -> albumin -> combination -> liver -> UGT1A1 + glucuronic acid -> bilirubin(conjugated)
+
+bilirubin -> bile canaliculi -> bile duct -> gallbladder -> duodenum -> gutmicrobiota -> metabolism -> urobilinogen -> stercobilinogen -> stercobilin -> feces
+
+`UGT1A1 - UDP(uridine diphosphate)-glucuronosyltrasferase`
+
+---
+
+- 수명이 다한 적혈구는 liver과 **spleen(비장)** 에서 [heme](https://en.wikipedia.org/wiki/Heme)와 [globin](https://en.wikipedia.org/wiki/Globin)으로 분해된다. 이 과정은 대부분 liver보다 **spleen** 에서 진행된다.
+
+- 여기서 globin은 protease 효소에 의해 amino acid로 가수분해(hydrolysis)되어 재사용 될 수 있게 한다.
+
+- heme는 **heme oxygenase** 효소에 의해 산소(O<sub>2</sub>)를 얻어 [biliverdin](https://en.wikipedia.org/wiki/Biliverdin)이 된다.
+
+  - 이 과정에서 철(Fe<sup>2+</sup>)과 일산화탄소(CO)가 방출된다.
+
+- biliverdin은 **biliverdin reductase** 효소에 의해 환원되어 불용성(insoluble)을 띤 `unconjugated bilirubin` 이 된다.
+
+- unconjugated bilirubin은 간으로 이동하기 위해 혈액의 albumin과 합성된다.
+
+- 간으로 이동한 unconjugated bilirubin은 **UGT1A1 효소** 에 의해 **glucuronic acid** 와 결합하여 수용성(soluble)을 띤 **(conjugated)bilirubin** 이 된다.
+
+- [bilirubin](https://en.wikipedia.org/wiki/Bilirubin) 은 즉시 **duodenum** 으로 이동하거나 bile canaliculi(담즙 모세관)과 bile duct(담관)을 거쳐 gallbladder(담낭)으로 bile(담즙)에 축적되었다 duodenum으로 분비된다.
+
+  - 담낭에 축적된 bilirubin으로 인해 담즙이 황록색을 띤다.
+
+- large intestine(colon)으로 이동한 bilirubin은 [gut microbiota](#gut-microbiota---장내-세균총)에 의해 환원되어 **urobilinogen** 이 된다.
+
+- [urobilinogen](https://en.wikipedia.org/wiki/Urobilinogen)은 바로 **stercobilin** 으로 환원되거나 [stercobilinogen](https://en.wikipedia.org/wiki/Stercobilinogen)으로 환원되었다 **stercobilin** 으로 산화된다, heme 분해 최종산물인 [stercobilin](https://en.wikipedia.org/wiki/Stercobilin)은 **feces(대변)** 이 갈색을 띠게 한다.
+
+- 또한 [enterohepatic circulation(장간 순환)](#enterohepatic-circulation---장간) 에 의해 다시 간으로 흡수되어 처리되고, 소변에 **urobilin** 형태로 배출되어 황색을 띠게 한다.
