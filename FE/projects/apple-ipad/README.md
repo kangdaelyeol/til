@@ -892,3 +892,133 @@ ol li::marker {
   - **separator의 left / right 각 여백 = gap(30px) - width(8px) / 2 = 11px**
 
   - 즉 right값을 separator의 width크기값(8px)를 포함해 총 -19px만큼 이동시키면 separator를 중앙에 배치할 수 있다.
+
+## flex-box - remaining space(positive free space)
+
+- flex container의 height 크기가 고정되어 있고, `flex-wrap: wrap` 스타일을 가지고 있는 경우, cross-axis line이 나누어진다.
+
+- 나누어진 각 cross-axis의 크기는 유효한 content크기를 제외한 positive free space 크기를 분배하여 결정 된다.
+
+  - cross-axis line 크기 = (remaining space 크기 / cross-axis line 총 개수) + 자신의 content 크기
+
+  - content에 포함되는 속성 - width / height(cross-axis 방향에 따라 다름), padding, height, text등 size값을 가지는 모든 요소
+
+```css
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 1000px;
+}
+
+.box {
+  width: 400px;
+}
+
+.b1 {
+  background-color: #222222;
+}
+
+.b2 {
+  background-color: #444444;
+}
+
+.b3 {
+  background-color: #666666;
+}
+
+.b4 {
+  background-color: #888888;
+}
+
+.b5 {
+  background-color: #aaaaaa;
+}
+```
+
+`flex-box 요소 안에 b1부터 b5까지 스타일이 각각 적용된 box요소가 5개 포함되어 있다 가정`
+
+### content영역이 없는 box가 포함된 경우
+
+![flex example](./readme_img/flexbox__no-content-box5.png)
+
+- 여기서 box요소가 5개 있다면, cross-axis는 3개의 line으로 나누어지고, 각 box에는 content가 없으므로 각 cross-axis line은 200px 영역만큼 가지게 된다.
+
+### box에 margin, padding 영역이 있다면
+
+![flex example](./readme_img/flexbox__with-margin-padding.png)
+
+```css
+.b1 {
+  background-color: #222222;
+  margin-top: 20px;
+}
+
+.b3 {
+  background-color: #666666;
+  padding-top: 40px;
+}
+```
+
+- 첫 번째 cross-axis line 영역에 포함된 b1의 margin 20px 크기와, 두 번째 cross-axis line 영역에 포함된 b3의 padding 40px 크기는 content영역이 된다.
+
+  - remaining space = 600px - (20px(margin) + 40px(padding)) = 540px
+
+- remaining space 540px 크기는 각 cross-axis가 정확히 나누어 가지게 된다.
+
+  - 첫 번쨰 cross-axis line 크기 = 20px(margin) + 540/3px(remaining space) = 200px
+
+  - 두 번쨰 cross-axis line 크기 = 40px(padding) + 540/3px(remaining space) = 220px
+
+  - 세 번쨰 cross-axis line 크기 = 540/3px(remaining space) = 180px
+
+### box요소 자체가 크기를 가지는 경우
+
+![flex example](./readme_img/flexbox__with-dimension.png)
+
+```css
+.b3 {
+  background-color: #666666;
+  height: 200px;
+}
+
+.b5 {
+  background-color: #aaaaaa;
+  height: 300px;
+}
+```
+
+- cross-axis 방향으로 요소 자체가 크기를 가지는 경우, content크기에 포함되어 remaining space 크기가 줄어든다.
+
+  - remaining space = 600px - (200px(b2-height) + 300px(b5-height)) = 100px
+
+- remaining space 100px 크기는 각 cross-axis line이 정확히 나누어 가지게 된다.
+
+  - 첫 번쨰 cross-axis line 크기 = 100/3px(remaining space) = 33.33px
+
+  - 두 번쨰 cross-axis line 크기 = 200px(b2-height) + 100/3px(remaining space) = 233.33px
+
+  - 세 번쨰 cross-axis line 크기 = 300px(b5-height) + 100/3px(remaining space) = 333.33px
+
+### align-items - align-contents
+
+- `align-items` 속성은 각각의 cross-axis line상에서 배치된 요소의 정렬 방식을 결정하므로, 결과적으로 `cross-axis자체의 크기, 레이아웃`은 유지된다.
+
+  ```css
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 1000px;
+    border: 1px solid;
+    align-items: flex-start;
+  }
+  ```
+
+  - [위 예제](#box요소-자체가-크기를-가지는-경우)에서 추가적으로 .flex-box 요소 스타일의 `align-items: flex-start` 스타일을 추가해준다.
+
+  ![flex example](./readme_img/flexbox__with-align-items.png)
+
+  - 첫 번째 cross-axis line의 box는 아무런 content도 없으므로 box 자체 크기를 가지지 않아 보이지 않지만, remaining space 분배에 의한 cross-axis크기는 유지가 되는 것을 확인 할 수 있다.
+
+- `align-contents` 속성은 각 cross-axis line들을 배치하는 방법을 결정한다. 즉 `flex-wrap: wrap`스타일이 적용되어 wrap이 발생해 cross axis가 여러개의 line으로 나누어 졌을 때 유효한 속성이다.
