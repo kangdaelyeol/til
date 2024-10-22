@@ -823,14 +823,13 @@ Every time toLocaleString is called, it has to perform a search in a big databas
 ```css
 sup {
   vertical-align: super;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 ```
 
 - font-size 크기도 조절해 footnote를 구현한다.
 
 - pixel 값보단 em등 상대단위를 사용하는 것이 반응형 디자인에 더욱 유리하다.
-
 
 ### ol tag로 순서 정렬
 
@@ -855,3 +854,41 @@ ol li::marker {
 - marker는 각 li안에 자식요소로 써 생성 되기 때문에 ol또는 li의 font 관련 스타일 변경시 marker에도 같이 적용 되지만, marker에 대해 따로 적용하고 싶을 땐, li::marker 가상 요소를 선택하여 따로 스타일을 변경할 수 있다.
 
 - ::marker는 가상요소이지만, ::after, ::before과 다르게 스타일을 적용시킬 수 있는 범위가 한정되어있다. 즉 `::marker` 가상요소는 스타일 적용 범위가 제한적이다.
+
+## breadcrumb
+
+![bread crumb example](./readme_img/breadcrumb.png)
+
+- breadcrumb은 웹 서비스 내에서 자신이 현재 어느 페이지 경로에 있는지 알려주는 역할을 한다.
+
+- 또한 검색 엔진에도 노출될 수 있기 때문에 `SEO(Search Enging Optimization)` 관점에서도 중요하게 작용한다.
+
+- breadcrumb은 웹 페이지상 자신의 경로를 알려주기 때문에 사용자 관점에서 페이지를 바로 나가지 않고 뒤로가기를 유도해 [이탈율(bounce rate)](https://en.wikipedia.org/wiki/Bounce_rate)을 줄일 수 있다.
+
+- breadcrumb item 사이에 간격을 두고 separator를 삽입하는데, flex 속성과 gap 속상을 활용할 수 있다.
+
+```css
+.footer .breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.breadcrumbs::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 18px;
+  top: 0;
+  bottom: 0;
+  right: -19px;
+  margin: auto;
+  background-image: url('../images/path_div.svg');
+}
+```
+
+- separator를 이미지로써 사용하는 경우 이미지의 width크기와 breadcrumb items 사이 gap 크기를 계산해 중앙에 배치하도록 한다.
+
+  - **separator의 left / right 각 여백 = gap(30px) - width(8px) / 2 = 11px**
+
+  - 즉 right값을 separator의 width크기값(8px)를 포함해 총 -19px만큼 이동시키면 separator를 중앙에 배치할 수 있다.
