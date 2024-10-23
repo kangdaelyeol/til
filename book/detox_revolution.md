@@ -1294,13 +1294,13 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">빌리루빈 생성 과정</span>
 
-RBC -> liver / spleen -> decomposition -> heme / globin
+<span class="substance">RBC</span> -> <span class="organ">liver / spleen</span> -> <span class="interaction">decomposition</span> -> <span class="substance">heme / globin</span>
 
-globin -> protease -> hydrolysis -> amino acid
+<span class="substance">globin</span> -> <span class="organ">protease</span> -> <span class="interaction">hydrolysis</span> -> <span class="substance">amino acid</span>
 
-heme -> heme oxygenase -> biliverdin -> biliverdin reductase -> unconjugated bilirubin -> albumin -> combination -> liver -> UGT1A1 + glucuronic acid -> bilirubin(conjugated)
+<span class="substance">heme</span> -> <span class="organ">heme oxygenase</span> -> <span class="substance">biliverdin</span> -> <span class="organ">biliverdin reductase</span> -> <span class="substance">unconjugated bilirubin</span> -> <span class="substance">albumin</span> -> <span class="interaction">combination</span> -> <span class="organ">liver</span> -> <span class="organ">UGT1A1</span> + <span class="substance">glucuronic acid</span> -> <span class="substance">bilirubin(conjugated)</span>
 
-bilirubin -> bile canaliculi -> bile duct -> gallbladder -> duodenum -> gutmicrobiota -> metabolism -> urobilinogen -> stercobilinogen -> stercobilin -> feces
+<span class="substance">bilirubin</span> -> <span class="organ">bile canaliculi</span> -> <span class="organ">bile duct</span> -> <span class="organ">gallbladder</span> -> <span class="organ">duodenum</span> -> <span class="organ">gutmicrobiota</span> -> <span class="interaction">metabolism</span> -> <span class="substance">urobilinogen</span> -> <span class="substance">stercobilinogen</span> -> <span class="substance">stercobilin</span> -> <span class="substance">feces</span>
 
 `UGT1A1 - UDP(uridine diphosphate)-glucuronosyltrasferase`
 
@@ -1342,12 +1342,12 @@ bilirubin -> bile canaliculi -> bile duct -> gallbladder -> duodenum -> gutmicro
 
 - 채소의 항산화 물질 생성은 채소 세포에 있는 [myrosinase](https://en.wikipedia.org/wiki/Myrosinase) 효소가 [glucosinolates](https://en.wikipedia.org/wiki/Glucosinolate) 화합물을 `가수분해(hydrolysis)` 하는 작용에서 부터 시작된다.
 
-- 하지만 myrosinase 효소와 glucosinolates 물질은 채소 내에 따로 분리`(각각 다른 세포에 존재)` 되어 있기 때문에 이 분리된 간격을 **물리적으로 파괴** 해서 myrosinase가 glucosinolates에 접촉할 수 있게 도와줄 필요가 있다.
+- 하지만 myrosinase 효소와 glucosinolates 물질은 채소 내에 따로 분리`(각각 다른 세포에 존재)` 되어 있기 때문에 이 분리된 간격을 **물리적으로 파괴** 해서 myrosinase가 glucosinolates와 접촉할 수 있게 도와줄 필요가 있다.
 
-- 이러한 작용은 외부로부터 채소 자신을 보호하기 위한 **방어 기전** 으로 작용한다. 채소가 외부로부터 손상되면 myrosinase 효소가 glucosinolates에 접촉하여 대사 산물로 독성 물질을 생성하게 되는 것이다.
+- 이러한 작용은 외부로부터 채소 자신을 보호하기 위한 **방어 기전** 으로 작용한다. 채소가 외부로부터 손상되면 myrosinase 효소가 glucosinolates와 접촉하여 대사 산물로 독성 물질을 생성하게 되는 것이다.
 
-- 결과적으로 독성물질이 생성 되는데, 인체에 `적절한 섭취시 항산화 효과등 유익한 효과를 준다고 한다.`
+- 결과적으로 독성물질이 생성 되는데, `적절한 섭취시 항산화 효과등 유익한 효과를 준다고 한다.`
 
-- [sulforaphane](https://en.wikipedia.org/wiki/Sulforaphane)은 glucosinolates 종류인 [glucoraphanin](https://en.wikipedia.org/wiki/Glucoraphanin) 의 분해로 생성된 물질이다. 즉 항산화 물질인 sulforaphane의 효과를 얻기 위해서 myrosinase가 glucosinolates를 대사 할 수 있게끔 충분히 씹어서 섭취를 해주어야 한다.
+- [sulforaphane](https://en.wikipedia.org/wiki/Sulforaphane)은 glucosinolate 종류인 [glucoraphanin](https://en.wikipedia.org/wiki/Glucoraphanin) 의 분해로 생성된 물질이다. 즉 항산화 물질인 sulforaphane의 효과를 얻기 위해서 myrosinase 효소가 glucosinolates와 접촉해 대사를 할 수 있게 충분히 씹어서 섭취를 해주어야 한다.
 
 - myrosinase 효소는 높은 온도에서 활성이 줄어들기 때문에`(보통 70도가 넘어가면 다 죽는다고 한다.)` **5분 이내** 로 쪄서 먹는 것이 제일 좋다!
