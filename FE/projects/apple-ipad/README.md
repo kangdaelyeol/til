@@ -1202,3 +1202,148 @@ ipadDataList.forEach((data) => {
 - 여러개의 arguments를 입력할 수 있는 장점 외엔 별 차이가 없어보인다. 이 마저도 가독성 측면에서 보면 장점이라고 보여지지 않는다.
 
 - `결론적으로 복잡한 HTML구조를 javascript상에서 동적으로 생성할 때 comment tagged template를 사용하는 것이 가장 효율적이라 판단.`
+
+## image positioning - figure
+
+- 이미지를 배치하기 위해 figcaption 태그와 함께 [figure tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) 안에 배치한다.
+
+![img positioning sample](./readme_img/img-positioning.png)
+
+- 이미지를 자유롭게 배치하는데, 웹 페이지의 [normal flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)를 고려하여 적절히 배치해야 한다
+
+```html
+<div class="inner">
+  <div class="info-box">
+    <div class="info">
+      <div class="info__icon">ICON</div>
+      <div class="info__text">info description</div>
+    </div>
+    <div class="info">
+      <div class="info__icon">ICON</div>
+      <div class="info__text">info description</div>
+    </div>
+  </div>
+  <div class="figure-box">
+    <div class="figure-1">
+      <figure>
+        <img src="./image/pic1.png" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </div>
+    <div class="figure-2">
+      <figure>
+        <img src="./image/pic2.png" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </div>
+    <div class="figure-3">
+      <figure>
+        <img src="./image/pic3.png" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+```
+
+- 각 info-box와 figure-box는 normal flow에 영향을 주는, 공간을 가지는 element로 배치한다.
+
+### info-box
+
+![info box image](./readme_img/info-box.png)
+
+```css
+/* CSS - info-box */
+
+.info-box {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgba(241, 101, 124, 0.2);
+  border: 5px solid rgb(241, 101, 124);
+}
+
+.info-box .info__text {
+  font-size: 30px;
+  line-height: 1.4;
+}
+```
+
+- info-box 요소 안에 있는 info 정보들은 세로 축으로 공간을 차지하며 flex를 통해 오른쪽으로 밀어냄으로 써 배치될 수 있다.
+
+- flex를 배치를 통해 왼쪽에 remaining space 공간을 두어 viewport 크기가 줄어들었을 때 유연하게 브라우저 상에 요소가 표현될 수 있게 한다.
+
+### figure-box
+
+![figure box img](./readme_img/figure-box.png)
+
+```css
+/* CSS - figure-box */
+
+.figure-box {
+  display: flex;
+  height: 800px;
+  box-sizing: border-box;
+  border: 5px solid rgb(141, 141, 255);
+  background-color: rgba(141, 141, 255, 0.2);
+}
+
+.figure-box > div {
+  flex-grow: 1;
+  position: relative;
+  border: 2px solid black;
+}
+
+.figure-box figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.figure-box figure img {
+  width: 400px;
+}
+```
+
+- 이미지 요소들은 absolutely positioned element로써 위치를 변경하고 자유로운 위치에 배치되어야 하므로, 이미지 요소의 크기가 최상위 요소인 figure-box의 크기에 영향을 미치게 되면 레이아웃 계산이 힘들어진다.
+
+- 따라서 이미지 요소 배치를 위한 최상위 요소는 css 스타일상 height 크기를 임의로 주어서 normal flow에 영향을 주어야 한다.
+
+- figure 요소를 wrapper요소(figure-1, figure-2, figure-3)를 정의하여 한 번 더 감싸줌으로써 대략적인 배치를 먼저 해준다.
+
+  - 대략적으로 설정된 초기 위치를 기준으로, 하위 요소인 figure 요소의 위치를 더욱 간편하게 설정할 수 있다.
+
+  - figure wrapper 요소는 상위 요소인 figure-box의 flex 속성 영향을 받아 cross-axis 방향 공간을 모두 차지하는 것을 볼 수 있다. 큰 의미는 없다.
+
+  - 각각 wrapper 요소의 class이름을 다르게 주어 구분할 수 있게 한다. CSS selector에서 각각의 wrapper 요소의 클래스를 선택하고, 하위 요소로 figure 요소를 선택하고, 위치를 변경할 수 있다.
+
+```css
+.figure-1 figure {
+  transform: translate(40px, -160px);
+}
+
+.figure-2 figure {
+  transform: translate(-239px, 138px);
+}
+
+.figure-3 figure {
+  transform: translate(-50px, 0);
+}
+```
+
+---
+
+**Result**
+
+![positioning result](./readme_img/img-positioning-result.png)
+
+---
+
+- `figure` 요소는 img 요소와 figcaption 요소를 포함하고, 해당 요소들을 함께 움직여야 하기 때문에 absolute position 속성을 가진다.
+
+- `figcaption` 요소는 `img` 요소 주변에 적절히 배치 되어야 하므로 absolute position 속성을 가지고, img 요소는 부모 요소인 figure 요소가 위치를 이동함으로 써 자연스럽게 배치될 것이기 때문에 absolute position 속성을 가지지 않아도 무관하다.
+
+- 만약 figcaption 요소와 img 요소 모두 absolute position 속성을 가지게 되면 부모 요소인 figure 요소의 height값이 0px 크기를 가지게 되지만, 최상위 요소인 **figure-box의 height 크기가 정해져있기 때문에** layout 배치에 영향을 주진 않는다.
+
+- 현재 디자인에서 figure-box는 normal flow에 영향을 주는 크기를 가지지만, 상황에 따라 height를 직접 지정하지 않고, normal flow에 영향을 주지 않아도 된다. 최상위 요소의 height 크기가 변해도 이미지의 위치는 변하지 않는다.
