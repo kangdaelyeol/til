@@ -1329,3 +1329,25 @@ bilirubin -> bile canaliculi -> bile duct -> gallbladder -> duodenum -> gutmicro
 - [urobilinogen](https://en.wikipedia.org/wiki/Urobilinogen)은 바로 **stercobilin** 으로 환원되거나 [stercobilinogen](https://en.wikipedia.org/wiki/Stercobilinogen)으로 환원되었다 **stercobilin** 으로 산화된다, heme 분해 최종산물인 [stercobilin](https://en.wikipedia.org/wiki/Stercobilin)은 **feces(대변)** 이 갈색을 띠게 한다.
 
 - 또한 [enterohepatic circulation(장간 순환)](#enterohepatic-circulation---장간) 에 의해 다시 간으로 흡수되어 처리되고, 소변에 **urobilin** 형태로 배출되어 황색을 띠게 한다.
+
+## Cruciferous Vegetables
+
+- 십자화과 채소는 충분히 입에서 씹은 후 섭취하는 것이 항산화 효과를 최대한 끌어올리는 데 도움을 준다.
+
+<span class="title">양배추를 잘 씹어 먹어야 하는 이유<span>
+
+<span class="substance">cabbage(myrosinase / glucosinolates)</span>- <span class="interaction">physical break down</span> -> <span class="organ">myrosinase</span> -> <span class="substance">glucosinolates</span> - <span class="interaction">hydrolysis</span> -> <span class="substance">aglycone + glucose</span>
+
+<span class="substance">aglycone</span> -> <span class="interaction">external environment(pH, other substances)</span> -> <span class="substance">isothiocyanates(sulforaphane) / nitriles / thiocyanates</span>
+
+- 채소의 항산화 물질 생성은 채소 세포에 있는 [myrosinase](https://en.wikipedia.org/wiki/Myrosinase) 효소가 [glucosinolates](https://en.wikipedia.org/wiki/Glucosinolate) 화합물을 `가수분해(hydrolysis)` 하는 작용에서 부터 시작된다.
+
+- 하지만 myrosinase 효소와 glucosinolates 물질은 채소 내에 따로 분리`(각각 다른 세포에 존재)` 되어 있기 때문에 이 분리된 간격을 **물리적으로 파괴** 해서 myrosinase가 glucosinolates에 접촉할 수 있게 도와줄 필요가 있다.
+
+- 이러한 작용은 외부로부터 채소 자신을 보호하기 위한 **방어 기전** 으로 작용한다. 채소가 외부로부터 손상되면 myrosinase 효소가 glucosinolates에 접촉하여 대사 산물로 독성 물질을 생성하게 되는 것이다.
+
+- 결과적으로 독성물질이 생성 되는데, 인체에 `적절한 섭취시 항산화 효과등 유익한 효과를 준다고 한다.`
+
+- [sulforaphane](https://en.wikipedia.org/wiki/Sulforaphane)은 glucosinolates 종류인 [glucoraphanin](https://en.wikipedia.org/wiki/Glucoraphanin) 의 분해로 생성된 물질이다. 즉 항산화 물질인 sulforaphane의 효과를 얻기 위해서 myrosinase가 glucosinolates를 대사 할 수 있게끔 충분히 씹어서 섭취를 해주어야 한다.
+
+- myrosinase 효소는 높은 온도에서 활성이 줄어들기 때문에`(보통 70도가 넘어가면 다 죽는다고 한다.)` **5분 이내** 로 쪄서 먹는 것이 제일 좋다!
