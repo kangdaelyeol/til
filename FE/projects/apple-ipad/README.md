@@ -1347,3 +1347,82 @@ ipadDataList.forEach((data) => {
 - 만약 figcaption 요소와 img 요소 모두 absolute position 속성을 가지게 되면 부모 요소인 figure 요소의 height값이 0px 크기를 가지게 되지만, 최상위 요소인 **figure-box의 height 크기가 정해져있기 때문에** layout 배치에 영향을 주진 않는다.
 
 - 현재 디자인에서 figure-box는 normal flow에 영향을 주는 크기를 가지지만, 상황에 따라 height를 직접 지정하지 않고, normal flow에 영향을 주지 않아도 된다. 최상위 요소의 height 크기가 변해도 이미지의 위치는 변하지 않는다.
+
+## flex - negative margin
+
+- flex container안에서 flex item의 negative margin 크기에 의해 flex container의 크기가 0 이하로 내려갔을 때 작용하는 positioning에 대해 알아보았다.
+
+- 결과적으로 negative margin값으로 인해 flex container의 크기가 0 미만을 가지게 되면 flex item의 positioning 규칙과 style상 위치 값에 의해 요소의 위치가 결정된다.
+
+### justify-content: space-between
+
+```css
+/* Flex contatiner styles */
+
+.p {
+  width: 50px;
+  height: 50px;
+  background-color: #8022ad;
+  height: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+```
+
+![nagative__justify-space-between1](nagative__justify-space-between1.png)
+
+- flex contatiner(p)는 space-between 분배 스타일을 가지고 있어 첫 요소와 마지막 요소는 각각 flex container의 각 끝 모서리에 위치한다.
+
+#### top 요소의 margin-top을 줄였을 때
+
+<img src="./readme_img/nagative__justify-space-between2.png" /> <img src="./readme_img/nagative__justify-space-between3.png" />
+
+- margin-top 속성은 요소 자신의 위치까지 이동시키므로 flex container 공간을 overflow하게 된다.
+
+- flex container의 크기가 완전히 줄어들기 전까지는 negative margin 여백에 의해 flex container의 크기 감소로 인한 요소들의 `상대적인 이동` 이 발생하고 그 이후 flex 정렬 방식에 의한 특성, 요소들의 style상 위치값 계산에 의한 레이아웃이 결정된다.
+
+- top 요소는 margin-top 크기를 줄이고, `justify-content: space-between` 특성상 첫 가장자리에 위치하려 하기 때문에 계속해서 위로 이동 할 수 있다.
+
+- middle 요소는 top 요소의 위치값에 따라 bottom요소 사이에 위치하려 하므로 이동이 가능하다.
+
+- bottom 요소는 맨 끝 가장자리에 위치하려 하기 때문에 flex container의 크기가 모두 즐어든 후 이동하지 않는다.
+
+#### top 요소의 margin-bottom을 줄였을 때
+
+<img src="./readme_img/nagative__justify-space-between4.png" /> <img src="./readme_img/nagative__justify-space-between5.png" />
+
+- margin-bottom 속성은 일반적으로 자신보다 밑에 쌓인 요소의 위치를 변경한다.
+
+- negative margin 크기를 두어 flex container의 크기를 최대한 줄인 경우 예상한 대로 overflow가 발생한다.
+
+- flex container의 크기를 없앤 후 margin-bottom 크기를 계속해서 줄여 나가면 middle 요소의 위치만 위로 가게 된다.
+
+- `justify-content: space-between` 스타일 특성상 top요소는 첫 가장자리에 위치하려하고, bottom요소는 끝 가장자리에 위치하려 한다.
+
+- bottom, middle요소가 top요소보다 위로 가게 된 것은 negative margin으로 flex container의 크기 감소로 인한 요소들의 `상대적인 이동`이며, container가 완전히 사라진 후 다른 메커니즘으로 계산이 되어 middle 요소만 위로 이동하게 된다.
+
+- `상대적인 요소의 이동` 이 끝난후 브라우저는 요소의 style상 크기, positioning(flex positioning) 조건을 따져 요소를 배치하게 된다.
+
+- top 요소의 음수값의 margin-bottom 으로 인해 layout상 top의 가장자리는 top요소보다 위쪽에 위치하게 된다.
+
+- margin-bottom 값을 감소시키면 레이아웃상 top - middle - bottom요소 사이 공간이 넓어져야 한다. (space-between 특성상)
+
+- top 요소는 margin-bottom으로 인해 자신이 이동하지 않으므로 자신의 위치를 그대로 지킨다.
+
+- bottom 요소는 가상의 top 위치 값이 위로 이동했지만 space-between 스타일 특성상 밑 가장자리에 위치하려 하므로 더이상 이동하지 않는다.
+
+- middle 요소는 가상의 top 위치 값이 위로 이동했으므로 이에 맞추어 위로 이동하게 된다.
+
+#### 중간 결과
+
+- flex contatiner의 크기가 모두 없는 경우 negative margin 값에 의해서
+
+  - flex 정렬 특성상 **각각 맨 끝 가장자리에 위치할 요소** 는 특성에 따라 위, 또는 밑 방향으로 더이상 이동하지 않는다.
+
+  - 맨 끝 가장자리에 위치하는 특성이 없는, 중간 위치에 있는 요소들은 이동한다.
+
+- 그렇다면 모든 요소의 위치가 어정쩡한, 중간에 위치하는 `justify-content: space around` 스타일이 적용되면 어떨까?
