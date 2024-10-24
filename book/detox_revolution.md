@@ -1351,3 +1351,59 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 - [sulforaphane](https://en.wikipedia.org/wiki/Sulforaphane)은 glucosinolate 종류인 [glucoraphanin](https://en.wikipedia.org/wiki/Glucoraphanin) 의 분해로 생성된 물질이다. 즉 항산화 물질인 sulforaphane의 효과를 얻기 위해서 myrosinase 효소가 glucosinolates와 접촉해 대사를 할 수 있게 충분히 씹어서 섭취를 해주어야 한다.
 
 - myrosinase 효소는 높은 온도에서 활성이 줄어들기 때문에`(보통 70도가 넘어가면 다 죽는다고 한다.)` **5분 이내** 로 쪄서 먹는 것이 제일 좋다!
+
+## food additive - sugar substitute
+
+- [설탕(sucrose)](https://en.wikipedia.org/wiki/Sucrose)은 [이당류(disaccharide)](https://en.wikipedia.org/wiki/Disaccharide)의 한 종류로, [단당류의(monosaccharide)](https://en.wikipedia.org/wiki/Monosaccharide)의 종류인 [포도당(glucose)](https://en.wikipedia.org/wiki/Glucose)와 [과당(fructose)](https://en.wikipedia.org/wiki/Fructose)의 결합체다.
+
+- sucrose는 빠르게 monosaccharide로 분해되고 흡수되어 혈당을 빨리 올리고, sucrose에 포함된 fructose의 일부는 에너지로 사용될 수 있지만, `대부분 간에서만 대사 되는 당` 이기 때문에 간에 좋지 않다.
+
+- 이러한 건강 문제를 해결하기 위한 설탕 대체제(sugar substitute)가 있다.
+
+### Erythritol
+
+- [에리스리톨(Erythritol)](https://en.wikipedia.org/wiki/Erythritol)은 보통 옥수수에서 **glucose** 를 추출해 **효소(enzyme)** 를 첨가하고, **발효(fermentation)** 과정을 거쳐 최종적으로 합성한 `당 알코올(sugar alcohol)` 이다.
+
+- 약 설탕의 60 - 70%의 단맛을 제공하지만, 칼로리는 거의 없다
+
+- [최근 리포트(2024)](https://en.wikipedia.org/wiki/Erythritol#Safety)에 따르면 erithritol은 **blood clots(혈전증)** 유발과 관련이 있고, **heart disease(심장질환)** 의 위험을 증가시킨다고 한다.
+
+### Xylitol
+
+- [자일리톨(Xylitol)](https://en.wikipedia.org/wiki/Xylitol)은 `birch(자작나무)` 에서 추출한 `sugar alcohol` 이다.
+
+- birch에서 추출되었다고 해서 **birch sugar** 라고도 부른다.
+
+- 약 7정도의 GI수치를 가지고 있다고 하며, [sterptococcus mutans(충치 균)](https://en.wikipedia.org/wiki/Streptococcus_mutans) 의 성장을 억제한다고 한다.
+
+`sugar alcohol 종류는 많이 섭취하게 되면 부작용으로 삼투성 설사(osmotic diarrhea)를 일으킬 수 있으니 조심해야 한다.`
+
+### stevia(steviol glycoside)
+
+- [스테비아(steviol glycoside)](https://en.wikipedia.org/wiki/Steviol_glycoside) 는 **국화과(asteraceae)** 인 **stevia rebaudiana** 라는 식물의 잎에서 추출한 물질이다.
+
+- 설탕보다 30 - 320배의 단맛을 가지고 있다 하는데, 기술 문헌에서는 이를 인정하는 입장은 아니라고 한다. 왜냐하면 이러한 수치는 발효되지 않았고, 안정적 온도, 안정적 pH 환경에서 steviol glycoside에 대한 실험 결과이기 때문이다.
+
+- 인간에게는 steviol glycoside를 대사할 수 있는 효소가 없기 때문에 [혈당 반응(glycemic response)](https://en.wikipedia.org/wiki/Blood_sugar_level)을 일으키기 않는다.
+
+### Allulose
+
+- [알룰로스(Allulose)](https://en.wikipedia.org/wiki/Psicose)는 옥수수(corn), 사탕수수(sugar cane)에서 **fructose** 를 추출해 효소와 함께 **발효(fermentation)** 과정을 거쳐 추출한 D-psicose라는 **단당류(monosaccharide)** 물질이다.
+
+  - D-psicose에서 **D** 는 라틴어로 `Dexter(오른쪽)` 의 의미로, **입체 화학(stereochemistry)** 에서 [chirality(카이랄성)](https://en.wikipedia.org/wiki/Chirality) 성질을 가지며, 즉 [enantiomer(거울상 이성질체)](https://en.wikipedia.org/wiki/Enantiomer) 를 의미한다.
+
+  - 반대형은 `L(laevus)` 형이다.
+
+- 추출량이 적고, 자연적으로 존재하는 양이 드물어 **rare sugar** 라고도 불린다.
+
+- D-psicose는 sucrose와 달리 몸에 거의 흡수되지 않고 대부분 **kidney** 또는 **colon** 을 통해 배출(대부분 신장을 통해) 되어 혈당을 올리지 않고 인슐린 분비도 거의 되지 않는다.
+
+- FDA에서는 **nutrition and supplement facts** 라벨에 D-psicose 당 성분을 `총 당류 성분(total sugars)`에 포함시키지 않아도 된다고 허가 했지만, `총 탄수화물량`에는 1g 당 0.4 kcal로 표기하는 것을 요구한다고 한다.
+
+### luo han guo(mogroside)
+
+- [나한과(luo han guo)](https://en.wikipedia.org/wiki/Siraitia_grosvenorii)는 중국의 나한과(luo han guo - monkfruit)라는 식물이며 여기서 추출한 **sugar substitute** 의 정식 명칭은 [mogroside](https://en.wikipedia.org/wiki/Mogroside)라고 한다,
+
+- mogroside의 종류인 mogroside V는 설탕의 약 100 - 250배정도 단맛을 난다고 하며 우리가 주로 소비하는 '나한과'라고 하는 **sweetener** 는 mogroside 계열중 mogroside V라고 한다.
+
+- 또한 mogroside는 중국에서 치료 목적으로도 사용되는 물질이며 항염증, 항산화 효과가 있다고 한다.
