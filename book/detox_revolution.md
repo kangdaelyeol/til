@@ -1407,3 +1407,19 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 - mogroside의 종류인 mogroside V는 설탕의 약 100 - 250배정도 단맛을 난다고 하며 우리가 주로 소비하는 '나한과'라고 하는 **sweetener** 는 mogroside 계열중 mogroside V라고 한다.
 
 - 또한 mogroside는 중국에서 치료 목적으로도 사용되는 물질이며 항염증, 항산화 효과가 있다고 한다.
+
+## 애호박 - pectin
+
+- [애호박(Korean zucchini)](https://en.wikipedia.org/wiki/Pectin)은 pectin이라는 성분이 많아 몸에 좋다고 한다.
+
+  - `물론 pectin은 애호박 뿐만이 아닌 식물의 세포 벽에 존재하는 다당류(polysaccharide)라고 한다. - 정확히는 heteropolysaccharide`
+
+- [pectin](https://en.wikipedia.org/wiki/Pectin)은 `수용성 식이섬유(soluble dietary fiber)` 로써, **친수성(hydrophilc)** 을 띤다.
+
+- 따라서 pectin은 장 내에 **물(H<sub>2</sub>O)** 분자와 수소 결합을 통해 수분을 끌어들이며 **팽창** 하여 `gel(겔)` 을 형성한다.
+
+- 형성된 겔은 천천히 흡수되며, 흡수된 수분으로 인해 변의 부피가 증가하고, 부드러운 변을 생성하는데 기여한다.
+
+- gel은 소장의 담즙산(bile acid)와 결합해 채외로 배출하며, 이를 통해 `장간 순환(enterohepatic circulation)` 으로 인한 재흡수가 되지 않는다.
+
+- 부족해진 bile acid를 합성하기 위해선 **콜레스테롤(cholesterol)** 이 필요한데, bile acid가 부족해지면, 간에서는 [LDL(Low-density lipoprotein)](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 을 더욱 끌어다 사용해 `Blood LDL concentration` 이 낮아진다.
