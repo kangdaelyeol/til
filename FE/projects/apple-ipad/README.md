@@ -1417,7 +1417,7 @@ ipadDataList.forEach((data) => {
 
 - middle 요소는 가상의 top 위치 값이 위로 이동했으므로 이에 맞추어 위로 이동하게 된다.
 
-#### 중간 결과
+### 중간 결과
 
 - flex contatiner의 크기가 모두 없는 경우 negative margin 값에 의해서
 
@@ -1426,3 +1426,11 @@ ipadDataList.forEach((data) => {
   - 맨 끝 가장자리에 위치하는 특성이 없는, 중간 위치에 있는 요소들은 이동한다.
 
 - 그렇다면 모든 요소의 위치가 어정쩡한, 중간에 위치하는 `justify-content: space around` 스타일이 적용되면 어떨까?
+
+### justify-content: space-around
+
+- `justify-content: space-around` 스타일 특성상 모든 요소는 고정된 위치를 가지지 않고, remaining space를 일정한 크기만큼 분배해 배치한다.
+
+
+#### top 요소의 margin-top을 줄였을 때
+
