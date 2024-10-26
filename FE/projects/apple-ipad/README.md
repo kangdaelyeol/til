@@ -1350,9 +1350,9 @@ ipadDataList.forEach((data) => {
 
 ## flex - negative margin
 
-- flex container안에서 flex item의 negative margin 크기에 의해 flex container의 크기가 0 이하로 내려갔을 때 작용하는 positioning에 대해 알아보았다.
+- flex container안에서 flex item의 negative margin 크기에 의해 flex container의 크기가 0이 된 이후 작용하는 positioning에 대해 알아보았다.
 
-- 결과적으로 negative margin값으로 인해 flex container의 크기가 0 미만을 가지게 되면 flex item의 positioning 규칙과 style상 위치 값에 의해 요소의 위치가 결정된다.
+- 결과적으로 negative margin값으로 인해 flex container의 크기가 0이 된 이후 flex item의 positioning 규칙과 style상 위치 값에 의해 요소의 위치가 결정된다.
 
 ### justify-content: space-between
 
@@ -1373,7 +1373,7 @@ ipadDataList.forEach((data) => {
 }
 ```
 
-![nagative__justify-space-between1](nagative__justify-space-between1.png)
+![nagative__justify-space-between1](./readme_img/nagative__justify-space-between1.png)
 
 - flex contatiner(p)는 space-between 분배 스타일을 가지고 있어 첫 요소와 마지막 요소는 각각 flex container의 각 끝 모서리에 위치한다.
 
@@ -1431,6 +1431,36 @@ ipadDataList.forEach((data) => {
 
 - `justify-content: space-around` 스타일 특성상 모든 요소는 고정된 위치를 가지지 않고, remaining space를 일정한 크기만큼 분배해 배치한다.
 
-
 #### top 요소의 margin-top을 줄였을 때
 
+<img src="./readme_img/negative__justify-space-around1.png" /> <img src="./readme_img/negative__justify-space-around2.png" />
+
+- margin-top 속성은 해당 속성을 가지는 요소의 위치까지 변경시키기 때문에 flex container의 크기가 0이 된 후 **space-around** 스타일에 따라 요소들 사이의 간격이 예상대로 잘 멀어진다.
+
+- **space-around** 특성상 양 끝에 remaining space 공간이 있으므로, bottom 요소도 천천히 위로 이동하는 것을 볼 수 있다.
+
+#### top 요소의 margin-bottom을 줄였을 때
+
+<img src="./readme_img/negative__justify-space-around3.png" /> <img src="./readme_img/negative__justify-space-around4.png" />
+
+- margin-bottom 속성은 요소의 위치를 변경시키지 않고, normal flow상 밑에 위치하는 요소의 위치를 변경시킨다.
+
+- flex container 요소의 크기가 0이 된 후 하위 요소들은 top의 margin-bottom 값의 관점으로 top 요소가 윗방향에 위치하고 위쪽으로 이동하기 때문에 이에 맞추어 middle 요소와 bottom요소는 이동하게 된다.
+
+- top 요소는 margin-bottom 속성으로 자신이 이동할 수 없지만, flex container 크기가 0이 된 후 `줄어들 크기가 없어 결국 자신이 이동하게 된다`.
+
+- space around 특성상 모든 요소가 이동 가능하고, 위치에 따라 이동 비율이 다르기 떄문에 가장자리에 존재하는 top요소는 비교척 천천히 이동한다.
+
+### 최종 결과
+
+- negative margin으로 인한 flex container의 layout 방식과 관련된 문서를 찾을 수 없어 각종 경우의 수를 두고 실험을 해서 margin과 layout의 관계에 대해 깊게 생각해 볼 수 있었다.
+
+- 이는 flex container의 목적에 맞는 사용방법이 아니기 때문에, 이와 관련된 명확히 정의된 사용 방법이 존재하지 않았고, 목적에 어긋난 방법으로 flex를 사용한 결과로써 `undefined behavior` 와 같은 개념이라 판단, 즉 브라우저마다 작동 방식이 다를 수 있고, 크로스 브라우징, 동등성 측면에서 매우 비효율적인 접근, 활용 방식이라고 생각한다.
+
+- 그래도 결과를 내보자면
+
+  1. flex 정렬방식(justify-content)에 의도된 메커니즘으로 요소들이 이동하려고 한다.
+
+  1. margin에 의해 이동하는 요소들은 margin크기 변경에 일치된 방향으로 이동한다.
+
+  1. margin에 의해 이동하지 않는 요소들(normal flow / layout상 상위 / 이전 위치에 있는 요소들)은 margin으로 인해 축소되는 방향과 반대로 이동한다.
