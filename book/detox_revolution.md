@@ -1423,3 +1423,57 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 - gel은 소장의 담즙산(bile acid)와 결합해 채외로 배출하며, 이를 통해 `장간 순환(enterohepatic circulation)` 으로 인한 재흡수가 되지 않는다.
 
 - 부족해진 bile acid를 합성하기 위해선 **콜레스테롤(cholesterol)** 이 필요한데, bile acid가 부족해지면, 간에서는 [LDL(Low-density lipoprotein)](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 을 더욱 끌어다 사용해 `Blood LDL concentration` 이 낮아진다.
+
+## cholesterol
+
+- cholesterol은 sterol의 종류이며 **유기 화합물(organic compound)** 이다 .
+
+- cholesterol은 세포막 유동 안정성, 신경 전달, 담즙산 및 콜레스테롤 생성 등 생명 유지를 위해 필수적인 물질이다.
+
+- 현대 식습관은 영양 과잉으로 콜레스테롤이 몸에 과하게 쌓이는 경우가 많다.
+
+<span class="title">콜레스테롤이 사용되는 과정</span>
+
+<span class="organ">liver</span> -> <span class="substance">VLDL</span> -> <span class="organ">blood</span> -> <span class="organ">lipoprotein lipase</span> -> <span class="interaction">distribution of triglyceride</span> -> <span class="substance">LDL - apolipoprotein</span> -> <span class="interaction">receptor-mediated endocytosis</span> -> <span class="organ">lysosome / endosome</span> -> <span class="interaction">hydrolysis</span>
+
+---
+
+### LDL(low density lipoprotein)
+
+- 콜레스테롤은 간에서 생성된 VLDL에 포함되어 있다.
+
+- [VLDL(Very low density lipoprotein)](https://en.wikipedia.org/wiki/Very_low-density_lipoprotein)은 크게 4가지 물질로 구성되어있다.
+
+  - **phospholipid(인지질)** - VLDL의 수용성 성질을 유지함
+
+  - **triglyceride(중성지방)** - 혈액을 통해 중성지방을 지방, 근육 세포로 분배함.
+
+  - **apolipoprotein** - 주로 **apolipoprotein B-100** 이 존재하며, LDL이 조직세포의 [수용체에 내포(섭취)(receptor-mediated endocytosis)](https://en.wikipedia.org/wiki/Receptor-mediated_endocytosis) 될 때 사용
+
+  - **cholesterol** - 세포내 유동 안정성, 신경전달등 여러 기능을 위한 물질.
+
+- VLDL은 혈액을 순환하며 [lipoprotein lipase](https://en.wikipedia.org/wiki/Lipoprotein_lipase) 효소에 의해 중성지방이 분해되어 몸의 세포조직이 사용될 수 있게 한다.
+
+- 중성지방을 분배하는 과정에서 VLDL의 중성지방 밀도가 줄어들면서 cholesterol의 비율이 상대적으로 높게되어 LDL 형태가 된다.
+
+- [LDL](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 상태가 되면 LDL의 apolipoprotein B-100 단백질이 조직세포의 LDL 수용체에 내포(receptor-mediated endocytosis)되며, [lysosome](https://en.wikipedia.org/wiki/Lysosome) 을 거쳐 [endosome](https://en.wikipedia.org/wiki/Endosome) 으로 운반되어 가수분해된다.
+
+- 이러한 메커니즘으로 조직세포는 LDL Receptor 발현을 조절해 `필요한 만큼` 끌어다 사용하는데, 이러한 LDL이 과다 축적되면 좋지 않다.
+
+---
+
+<span class="title">콜레스테롤로 인해 죽상동맥경화증(atherosclerosis)에 걸리는 과정</span>
+
+<span class="substance">LDL</span> -> <span class="substance">ROS</span> -> <span class="interaction">oxidation</span> -> <span class="substance">LDL(oxidized)</span> -> <span class="organ">artery endothelial cell(vascular)</span> -> <span class="disease">inflammation</span> -> <span class="organ">macrophage</span> -> <span class="interaction">phagocytosis</span> -> <span class="substance">atherosclerotic plaque</span> -> <span class="interaction">accumulation</span> -> <span class="disease">fibrosis</span> -> <span class="disease">atherosclerosis</span>
+
+- 축적되어 사용되지 못한 LDL은 `ROS`에 의해 산화될 수 있다.
+
+- 산화된 LDL은 `동맥 내피 세포(artery endothelial cell)` 같은 `혈관(vascular)` 에 붙어 **염증(inflammation)** 을 유발한다.
+
+- 이 과정에서 [대식세포(macrophagy)](https://en.wikipedia.org/wiki/Macrophage) 가 산화된 LDL을 **대식(phagocytosis)** 하며 [거품세포(foam cell / lipid-laden macrophagy)](https://en.wikipedia.org/wiki/Foam_cell)을 형성한다.
+
+- 형성된 foam cell은 쉽게 사라지지 않으며 혈관에 축적되어 **atherosclerotic plaque(죽상 플라크)** 를 형성한다.
+
+- 형성된 plaque는 지속적으로 축적될시 혈관을 막게 되고, 혈관의 탄력성을 잃게 만들어 [섬유화(fibrosis)]() 를 진행시킨다.
+
+- 결과적으로 이러한 병적 상태를 [죽상동맥경화증(atherosclerosis)](https://en.wikipedia.org/wiki/Atherosclerosis) 이라고 한다. `('죽상'은 foam cell이 죽처럼 걸쭉하게 혈관에 붙어 있어 붙은 명칭이라고 함)`
