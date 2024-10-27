@@ -1452,7 +1452,9 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
   - **cholesterol** - 세포내 유동 안정성, 신경전달등 여러 기능을 위한 물질.
 
-- VLDL은 혈액을 순환하며 [lipoprotein lipase](https://en.wikipedia.org/wiki/Lipoprotein_lipase) 효소에 의해 중성지방이 분해되어 몸의 세포조직이 사용될 수 있게 한다.
+- VLDL은 혈액을 순환하며 [lipoprotein lipase](https://en.wikipedia.org/wiki/Lipoprotein_lipase) 효소에 의해 중성지방이 lipoprotein에서 가수분해되어 몸의 세포조직이 사용될 수 있게 한다.
+
+  - `lipase - 지질 가수분해 효소`
 
 - 중성지방을 분배하는 과정에서 VLDL의 중성지방 밀도가 줄어들면서 cholesterol의 비율이 상대적으로 높게되어 LDL 형태가 된다.
 
@@ -1474,6 +1476,32 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 - 형성된 foam cell은 쉽게 사라지지 않으며 혈관에 축적되어 **atherosclerotic plaque(죽상 플라크)** 를 형성한다.
 
-- 형성된 plaque는 지속적으로 축적될시 혈관을 막게 되고, 혈관의 탄력성을 잃게 만들어 [섬유화(fibrosis)]() 를 진행시킨다.
+- 형성된 plaque는 지속적으로 축적될시 혈관을 막게 되고, 혈관의 탄력성을 잃게 만들어 [섬유화(fibrosis)](https://en.wikipedia.org/wiki/Fibrosis) 를 진행시킨다.
 
 - 결과적으로 이러한 병적 상태를 [죽상동맥경화증(atherosclerosis)](https://en.wikipedia.org/wiki/Atherosclerosis) 이라고 한다. `('죽상'은 foam cell이 죽처럼 걸쭉하게 혈관에 붙어 있어 붙은 명칭이라고 함)`
+
+## Tomato - lycopene
+
+- 토마토에 포함된 lycopene은 항산화 효과가 뛰어나다
+
+- [lycopene](https://en.wikipedia.org/wiki/Lycopene)은 토마토 농부의 이름에 기인 했으며, 토마토에서 발견되는 carotene 유기 화합물이다.
+
+- [carotene](https://en.wikipedia.org/wiki/Carotene) 은 [carotenoid](https://en.wikipedia.org/wiki/Carotenoid)의 한 분류이며, 붉은색을 띠는 특징을 가지는 carotenoid 화합물에서 산소 분자가 포함되지 않은 탄화수소 형태의 carotenoid 물질을 carotene 이라고 한다.
+
+  - `산소 분자를 포함한 carotenoid 물질을 xanthophyl 이라고 한다.`
+
+- lycopene은 [vitamin E(tocopherol)](#vitamin-e) 와 같은 `지용성 항산화물질` 이며, 지질층에서 tocopherol과 같이 항산화 작용을 한다.
+
+  - lycopene은 주로 [singlet oxygen](https://en.wikipedia.org/wiki/Singlet_oxygen)과 같은 고반응성 활성산소종과 반응해 중화 하는 역할을 한다.
+
+- lycopene의 생채 이용률(bioavailable)을 더욱 높히기 위해 **열을 가하는 방법(heating)** 이 있다.
+
+  - lycopene은 자연에서 안정적인 구조인 all-trans 형으로 존재하는데, 열에 안정적이기 때문에 에너지 작용을 받아 **이성질화(isomerization)** 되어 이중 결합 구조가 달라져 **cis-isomer(cis-이성질체)** 형태가 될 수 있다.
+
+  - 또한 lycopene은 **지용성 물질** 이기 때문에 기름과 함께 조리하면 흡수율이 더욱 향상된다.
+
+  - 이중 결합 구조가 달라진 형태에 따라 5-cis, 11-cis등 다양한 형태가 존재한다.
+
+  - 일부 연구에서는 all-trans lycopene보다 cis-lycopene 형태일 때 흡수가 더 잘되어 혈중 lycopene농도가 상대적으로 높아 항산화 효과가 뛰어날 수 있다고 한다.
+
+- 하지만 열을 가하면 토마토에 있는 비타민 성분들이 비활성화 되어 비타민 효과를 거의 볼 수 없다고 한다.
