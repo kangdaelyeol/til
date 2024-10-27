@@ -863,7 +863,7 @@ ol li::marker {
 
 - 또한 검색 엔진에도 노출될 수 있기 때문에 `SEO(Search Enging Optimization)` 관점에서도 중요하게 작용한다.
 
-- breadcrumb은 웹 페이지상 자신의 경로를 알려주기 때문에 사용자 관점에서 페이지를 바로 나가지 않고 뒤로가기를 유도해 [이탈율(bounce rate)](https://en.wikipedia.org/wiki/Bounce_rate)을 줄일 수 있다.
+- breadcrumb은 웹 페이지상 자신의 경로를 알려주기 때문에 사용자 관점에서 페이지를 바로 나가지 않고 뒤로가기를 유도해 [이탈률(bounce rate)](https://en.wikipedia.org/wiki/Bounce_rate)을 줄일 수 있다.
 
 - breadcrumb item 사이에 간격을 두고 separator를 삽입하는데, flex 속성과 gap 속상을 활용할 수 있다.
 
