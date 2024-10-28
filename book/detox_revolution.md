@@ -1505,3 +1505,29 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
   - 일부 연구에서는 all-trans lycopene보다 cis-lycopene 형태일 때 흡수가 더 잘되어 혈중 lycopene농도가 상대적으로 높아 항산화 효과가 뛰어날 수 있다고 한다.
 
 - 하지만 열을 가하면 토마토에 있는 비타민 성분들이 비활성화 되어 비타민 효과를 거의 볼 수 없다고 한다.
+
+## Oxalate
+
+- 요로결석을 예방하기 위해 옥살산과 칼슘을 적절히 섭취해야 한다.
+
+- [옥살산(oxalic acid)](https://en.wikipedia.org/wiki/Oxalic_acid)은 **유기산(organic acid)** 의 한 종류이며, 체내에서 산화 반응 등에 의해 **양성자(proton)** 를 잃게되 음이온을 띠는 oxalate 형태로 체내에 존재한다.
+
+- 옥살산은 특히 시금치, 비트에 많이 포함되어 있으며, 체내에서 **ascorbic acid** 최종 대사 산물로써 생성되거나 **특정 아미노산(glycine, serine)** , 또는 [glycolate(glycolic acid)](https://en.wikipedia.org/wiki/Glycolic_acid) 물질들이 대사되어 체내에 자연스럽게 생성되는 물질이다.
+
+- 체내에 존재하는 oxalate는 **calcium** 과 결합해 [calcium oxalate](https://en.wikipedia.org/wiki/Calcium_oxalate)결정을 형성하는데, 이는 [신장 결석(renal stone)](https://en.wikipedia.org/wiki/Kidney_stone_disease)의 주요 원인이 된다.
+
+<span class="title">신장 결석이 생기는 과정</span>
+
+<span class="substance">oxalate</span> -> <span class="organ">small intestine</span> -> <span class="interaction">passive diffusion</span> -> <span class="organ">blood vessel</span> -> <span class="substance">calcium</span> -> <span class="interaction">combination</span> -> <span class="substance">calcium oxalate</span> -> <span class="organ">urinary organs</span> -> <span class="interaction">accumulation</span> -> <span class="substance">calcium oxalate stone</span> -> <span class="disease">renal stone</span>
+
+- oxalate는 보통 small intestine에서 calcium과 결합해 calcium oxalate를 형성하는데, small intestine에서 형성된 불용성의 calcium oxalate는 더 이상 흡수되지 않아 일반적으로 문제 없이 대장(colon)을 통해 배출된다.
+
+- 하지만 calcium결핍 등 여러 이유로 oxalate는 calcium과 결합하지 않고, small intestine과 혈류의 oxalate 농도 차이가 발생하며 자연스럽게 [수동적 확산(passive diffusion)](https://en.wikipedia.org/wiki/Passive_transport)되어 혈관으로 이동할 수 있다.
+
+- 혈액에서 형성된 **calcium oxalate** 는 일반적으로 **kidney** 에서 축적된다.
+
+- calcium oxalate는 결정 형태를 띠고 있으며 축적될 시 calcium oxalate stone 형태가 되고 이는 renal stone이라고 불리는 병적 상태의 요인이 된다.
+
+- renal stone의 원인은 다양하지만 그 중 대부분은 oxalate 물질이 calcium과 결합하고 신장에서 축적되어 형성되는 경우라고 한다.
+
+- 결론적으로 renal stone 현상을 예방하기 위해 자신의 신체 환경, 요인에 따라 oxalate 물질이 포함된 음식을 적절히 섭취하는 것이 좋고, 칼슘 섭취도 적절히 하는 것이 중요하다.
