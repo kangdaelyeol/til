@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "parcel": "^2.12.0"
   }
 }
