@@ -1531,3 +1531,26 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 - renal stone의 원인은 다양하지만 그 중 대부분은 oxalate 물질이 calcium과 결합하고 신장에서 축적되어 형성되는 경우라고 한다.
 
 - 결론적으로 renal stone 현상을 예방하기 위해 자신의 신체 환경, 요인에 따라 oxalate 물질이 포함된 음식을 적절히 섭취하는 것이 좋고, 칼슘 섭취도 적절히 하는 것이 중요하다.
+
+## HbA1c
+
+<span class="title">헤모글로빈이 당화되는 과정</span>
+
+<span class="substance">HbA0</span> -> <span class="organ">blood stream</span> -> <span class="substance">glucose</span> -> <span class="interaction">non-enzymatic reaction</span> -> <span class="substance">HbA1c(glycated)</span>
+
+- 피검사 수치중 HbA1c 수치는 지난 약 3개월간의 혈당 수치를 예측할 수 있는 **임상지표** 로써 사용된다.
+
+- HbA1c는 헤모글로빈 중에 대부분(약 97%)을 차지하는 A0 아형(subtype)에 포도당(glucose)와 비효소적 결합(non-enzymatic reaction) 되어 당화된 헤모글로빈이다.
+
+  - galactose, fructose 보다 주로 **glucose** 에 의한 당화 반응이 일어난다 한다. 혈중 농도도 glucose가 월등히 높기 때문에 일반적으로 **glucose** 에 의해 당화된 헤모글로빈 임상수치로써 HbA1c를 사용한다.
+
+  - galactose(galactosylated), fructose(fructosylated)와 결합된 헤모글로빈은 따로 명칭이 없다고 한다.
+
+
+- 즉 HbA1c는 [당화된 헤모글로빈(glycated hemoglobin)](https://en.wikipedia.org/wiki/Glycated_hemoglobin)이라 할 수 있다.
+
+- 한 번 당화된 헤모글로빈은 적혈구가 수명을 다 할때까지 혈류를 맴돌게 된다. 하지만 
+
+- 헤모글로빈이 포함돤 적혈구는 약 4개월 정도의 수명을 가지고 있지만 여러 조건을 고려해 HbA1c 지난 2~3개월간의 혈당 수치를 반영한다.
+
+- HbA1c 수치는 전체 적혈구안에서 비율을 측정하는 것이기 때문에 적혈구 수명, 생성과 관련된 질환이 있으면 측정 값이 다를 수 있다.
