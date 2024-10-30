@@ -67,10 +67,10 @@ export function createRouter(routes) {
     }
 }
 
-// Store class 상태 저장 기능 구현부
+// Store class 상태 저장 클래스
 export class Store {
+    // 초기 상태 값을 저장하는 state, 상태값 변경을 관찰하는 observer로 데이터 관리를 위한 클래스로써 정의 -> modularization
     constructor(state) {
-        // 상태 값을 저장하는 state, 상태값 변경을 관찰하는 observer로 데이터 관리 역할의 논리적 추상화
         this.state = {}
         this.observers = {}
         for (const key in state) {
