@@ -1546,11 +1546,32 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
   - galactose(galactosylated), fructose(fructosylated)와 결합된 헤모글로빈은 따로 명칭이 없다고 한다.
 
-
 - 즉 HbA1c는 [당화된 헤모글로빈(glycated hemoglobin)](https://en.wikipedia.org/wiki/Glycated_hemoglobin)이라 할 수 있다.
 
-- 한 번 당화된 헤모글로빈은 적혈구가 수명을 다 할때까지 혈류를 맴돌게 된다. 하지만 
+- 한 번 당화된 헤모글로빈은 적혈구가 수명을 다 할때까지 혈류를 맴돌게 된다. 하지만
 
 - 헤모글로빈이 포함돤 적혈구는 약 4개월 정도의 수명을 가지고 있지만 여러 조건을 고려해 HbA1c 지난 2~3개월간의 혈당 수치를 반영한다.
 
 - HbA1c 수치는 전체 적혈구안에서 비율을 측정하는 것이기 때문에 적혈구 수명, 생성과 관련된 질환이 있으면 측정 값이 다를 수 있다.
+
+## Alkaloid
+
+- 알칼로이드는 자연적으로 발생하는 유기 화합물 인데 **nitrogen(질소)** 원자를 포함하는 유기 화합물이다.
+
+- **cocaine, morphine** 물질도 알칼로이드에 포함된다.
+
+- 일부 알칼로이드는 **hepatotoxicity(간독성)** 이 있어 식물을 섭취할 때 주의가 필요하다.
+
+- [pyrrolizidine alkaloid](https://en.wikipedia.org/wiki/Pyrrolizidine_alkaloid)는 **pyrrolizidine** 구조를 기본으로 가지는 알칼로이드 물질인데, 이는 cocaine, morphine과 같이 **간독성** 을 띤다.
+
+  - **물론 cocaine, morphine은 간독성보단 중독성(addictive), 의존성(dependency)에 대한 문제가 크다**
+
+- pyrrolizidine alkaloid(PAs)는 보통 특정 식물에 존재한다
+
+  - [asteraceae(국화과)](https://en.wikipedia.org/wiki/Asteraceae)
+
+  - [Fabaceae(콩과)](https://en.wikipedia.org/wiki/Fabaceae)
+
+  - [Boraginaceae(지치과)](https://en.wikipedia.org/wiki/Boraginaceae)
+
+- 또한 꿀, 허브차등에 자연적으로 포함되며 다양한 pyrrolizidine alkaloid 물질이 있다고 한다.
