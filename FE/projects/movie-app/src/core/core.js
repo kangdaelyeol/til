@@ -1,8 +1,8 @@
 export class Component {
-    constructor(payload) {
+    constructor(payload = {}) {
         const { tagName = 'div' } = payload
         this.el = document.createElement(tagName)
-        render()
+        this.render()
     }
 
     render() {}
