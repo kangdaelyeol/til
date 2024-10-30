@@ -16,7 +16,7 @@ export default class Search extends Component {
             movieStore.state.searchText = inputEl.value
         })
 
-        inputEl.addEventListener('keyDown', (e) => {
+        inputEl.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' && movieStore.state.searchText.trim()) {
                 searchMovies(1)
             }
