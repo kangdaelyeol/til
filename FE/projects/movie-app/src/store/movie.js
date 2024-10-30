@@ -9,10 +9,16 @@ const store = new Store({
 export default store
 
 export const searchMovies = async (page) => {
-    const res = await fetch(
-        `https://omdbapi.com?apikey=7035c60c&s=${store.state.searchText}&page=${page}`,
-    )
-    const json = await res.json()
+    if (page === 1) {
+        store.state.page = 1
+        store.state.movies = []
+    }
 
-    console.log(json)
+    const { Search } = await (
+        await fetch(
+            `https://omdbapi.com?apikey=7035c60c&s=${store.state.searchText}&page=${page}`,
+        )
+    ).json()
+
+    store.state.movies = [...store.state.movies, ...Search]
 }
