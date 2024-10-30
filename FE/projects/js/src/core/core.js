@@ -67,13 +67,18 @@ export function createRouter(routes) {
     }
 }
 
+// Store class 상태 저장 기능 구현부
 export class Store {
     constructor(state) {
+        // 상태 값을 저장하는 state, 상태값 변경을 관찰하는 observer로 데이터 관리 역할의 논리적 추상화
         this.state = {}
         this.observers = {}
         for (const key in state) {
             Object.defineProperty(this.state, key, {
+                // 각 state의 프로퍼티인 getter, setter 설정
+                // getter에 접근(state value)시 해당 key(property)의 값 반환
                 get: () => state[key],
+                // setter 접근시 프로퍼티 값을 새로 설정하면서, 해당 key값에 저장된 observer 콜백에 새로 할당된 값을 argument로 넘김.
                 set: (val) => {
                     state[key] = val
                     this.observers[key].forEach((observer) => observer(val))
@@ -82,6 +87,8 @@ export class Store {
         }
     }
 
+    // store class method로써 subscribe 정의
+    // key값과, cb 메서드를 넘김으로써 cb 메서드를 해당 state key값에 대한 observers객체에 넘기고, key값에 대한 state 값이 바뀔 때 (setter 접근시) setter 부분에서 등록된 cb가 호출될 수 있게 함.
     subscribe(key, cb) {
         Array.isArray(this.observers[key])
             ? this.observers[key].push(cb)
