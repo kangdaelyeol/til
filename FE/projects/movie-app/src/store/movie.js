@@ -8,7 +8,7 @@ const store = new Store({
 
 export default store
 
-export const serachMovies = async (page) => {
+export const searchMovies = async (page) => {
     const res = await fetch(
         `https://omdbapi.com?apikey=7035c60c&s=${store.state.searchText}&page=${page}`,
     )
