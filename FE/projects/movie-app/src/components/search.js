@@ -1,4 +1,4 @@
-import { Component } from '../src/core/core'
+import { Component } from '../core/core'
 
 export default class Search extends Component {
     render() {
