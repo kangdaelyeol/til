@@ -16,11 +16,13 @@
 
 ## background-image - alternate text
 
-- 이미지를 삽입할 때 스크린 리더를 사용하는 경우를 생각해 접근성을 강화하는 `IR(image replacement)`기법을 사용한다.
+- 이미지를 브라우저에 삽입할 때 스크린 리더를 사용하는 경우를 고려해 접근성을 강화하는 `IR(image replacement)`기법을 사용한다.
 
-- 보통 img tag에는 alt속성이 있기 때문에 대체 택스트를 입력함으로써 [accessibility](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#accessibility)를 보장할 수 있다.
+- 보통 img tag에는 alt속성이 있기 때문에 해당 속성에 대체 택스트를 입력함으로써 [접근성(accessibility)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#accessibility) 을 보장할 수 있다.
 
-- 하지만 div같은 태그에 background-image로 이미지를 지정한 경우 **alt**를 배치할 수 없는데, 그 대신 해당 태그 안에 alt를 배치하고 `text-indent`속성을 활용해 숨긴다.
+- 하지만 div같이 img 태그가 아닌 요소에 background-image 스타일로 이미지를 입력한 경우 **alt** 속성 처럼 대체 택스트를 입력할 수 있는 속성이 지원되지 않는다.
+
+- 해당 태그 안에 text를 입력하고 `text-indent` 속성을 활용해 alt 속성값처럼 유사하게 대체 택스트를 구현할 수 있다.
 
 ```css
 header ul.menu > li.apple-logo > a,
@@ -48,11 +50,11 @@ header ul.menu > li.basket-starter {
 }
 ```
 
-- `9999px`은 일종의 관습이라고 한다. 이 방식으로 텍스트를 숨김으로 써 접근성을 강화할 수 있다.
+- `9999px` 값은 일종의 관습(convention)이라고 한다. 이 방식으로 대체 텍스트를 구현하고 숨김으로 써 접근성을 강화할 수 있다.
 
-- 하지만 이 방식은 브라우저의 랜더링 시간을 증가시켜 좋지 않다고 한다.
+- 하지만 이 방식은 브라우저의 랜더링 시간을 증가시켜 효율적이지 않다고 한다.
 
-- `overflow`를 활용해 필요한 만큼만 택스트를 밀어 넣는 방법도 있었다.
+- `overflow`를 활용해 필요한 만큼만 택스트를 밀어서 숨기는 방법도 있었다.
 
 ```css
 .ir-text {
@@ -64,9 +66,11 @@ header ul.menu > li.basket-starter {
 
 - `white-space: nowrap`으로 줄바꿈을 방지하고 container의 width 크기만큼 text를 밀어내고 숨기는 기법이다.
 
-  - **white-space** 속성 외에 `text-wrap: nowrap` 설정으로 같은 결과를 볼 수 있는데, [mdn문서](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)를 보면 white-space로 white-space-collapse, text-wrap 두 속성을 shorthand property로써 한 번에 설정 할 수 있다고 한다. **nowrap** 에 대해선 같은 기능을 수행하는 것 같다.
+  - **white-space** 속성 외에 `text-wrap: nowrap` 설정으로 같은 결과를 볼 수 있다.
 
-- 이것 말고 여러 방법이 있기 떄문에 -9999px을 사용하는 방법이 정답은 아닌 것 같다.
+  - [mdn문서](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)를 보면 white-space 속성에 white-space-collapse, text-wrap 두 속성에 대한 값을 shorthand property로써 한 번에 설정 할 수 있다고 한다. **nowrap** 기능에 대해서 같은 기능을 수행하는 것 같다.
+
+- 여러 방법이 있기 떄문에 -9999px을 사용하는 방법이 정답은 아닌 것 같다.
 
 ## shorthand property - override
 
