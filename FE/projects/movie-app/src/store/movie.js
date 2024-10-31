@@ -4,6 +4,7 @@ const store = new Store({
     searchText: '',
     page: 1,
     movies: [],
+    movieDetail: {},
     pageMax: 1,
     loading: false,
     message: '',
@@ -43,5 +44,14 @@ export const searchMovies = async (page) => {
         console.log(error)
     } finally {
         store.state.loading = false
+    }
+}
+
+export const getMovieDetails = async (id) => {
+    try {
+        const json = await ( await fetch(`https://omdbapi.com?apikey=7035c60c&i=${id}&plot=full`)).json()
+        store.state.movieDetail = json
+    } catch (error) {
+        console.log(error)
     }
 }
