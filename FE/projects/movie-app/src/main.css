@@ -176,3 +176,28 @@ body {
 .view-more.hide {
   display: none;
 }
+
+/* Loading Spinner */
+
+.the-loader {
+  width: 30px;
+  height: 30px;
+  margin: 30px auto;
+  border: 4px solid var(--color-primary);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: loader 1s infinite linear;
+}
+
+.the-loader.hide {
+  display: none;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
