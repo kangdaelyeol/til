@@ -122,6 +122,12 @@ body {
   gap: 20px;
 }
 
+.movie-list .message {
+  color: var(--color-primary);
+  font-size: 20px;
+  text-align: center;
+}
+
 .movies .movie {
   --width: 200px;
   position: relative;
