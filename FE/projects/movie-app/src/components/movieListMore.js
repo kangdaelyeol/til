@@ -10,7 +10,13 @@ export default class MovieListMore extends Component {
 
         movieStore.subscribe('page', () => {
             const { pageMax, page } = movieStore.state
-            console.log(pageMax, page)
+            pageMax <= page
+                ? this.el.classList.add('hide')
+                : this.el.classList.remove('hide')
+        })
+
+        movieStore.subscribe('pageMax', () => {
+            const { pageMax, page } = movieStore.state
             pageMax <= page
                 ? this.el.classList.add('hide')
                 : this.el.classList.remove('hide')
