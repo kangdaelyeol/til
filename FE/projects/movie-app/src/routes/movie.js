@@ -20,7 +20,10 @@ export default class Movie extends Component {
 
         this.el.classList.add('container', 'the-movie')
         this.el.innerHTML = /* html */ `
-        <div style="background-image: url(${Poster})" class="poster"></div>
+        <div style="background-image: url(${Poster.replace(
+            'SX300',
+            'SX700',
+        )})" class="poster"></div>
         <div class="specs">
           <div class="title">
             ${Title}
