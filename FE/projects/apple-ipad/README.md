@@ -6,6 +6,14 @@
 
 - 먼저 만들어보고 강의에서 제시하는 구현 방법과 나의 구현 방법을 비교하고, 새로 배우고 개선한 점을 기록한다.
 
+### Table of contents
+
+- [word-break: keep-all](#word-break-keep-all)
+
+- [background-image - alternate text](#background-image---alternate-text)
+
+- [shorthand property - override](#shorthand-property---override)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -74,9 +82,9 @@ header ul.menu > li.basket-starter {
 
 ## shorthand property - override
 
-- [shorthand property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)를 사용하는 경우 해당 속성이 override되는 것을 잘 봐야 한다.
+- [shorthand property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)를 사용하는 경우 해당 속성이 override되는 것을 잘 검토해야 한다.
 
-- shorthand property에서 설정해주지 않은 값들은 지정하지 않는 것이 아니라 해당 shorthand property에서 default 값으로 자동 설정해주기 때문이다.
+- shorthand property에서 설정해주지 않은 값들은 값을 설정하지 않는 것이 아니라 해당 `shorthand property에서 제공하는 default 값으로 스타일을 자동으로 설정해주기 때문이다.`
 
 ```css
 header ul.menu > li.search-starter {
@@ -85,7 +93,7 @@ header ul.menu > li.search-starter {
 }
 ```
 
-- 이 경우 background shorthand property의 background-image의 default값은 `none`이기 때문에 이미지가 보이지 않게 된다.
+- 이 경우 background 속성에 대한 shorthand property 에서 background-image의 default값은 `none`이기 때문에 background-image 스타일이 override되어 이미지가 보이지 않게 된다.
 
 ```css
 header ul.menu > li.search-starter {
@@ -93,7 +101,7 @@ header ul.menu > li.search-starter {
 }
 ```
 
-- 따라서 이런 방식으로 한 번에 묶어 주던가 `shorthand property를 가장 상위에 두어야 한다`.
+- 따라서 이런 방식으로 값을 최대한 명시해야 하고, 가능한 `shorthand property를 사용하는 속성을 사용할 땐 가장 상위에 두어야 한다`.
 
 ```css
 .box {
@@ -102,9 +110,9 @@ header ul.menu > li.search-starter {
 }
 ```
 
-- 이 경우도 shorthand property에 의해 border-color 속성이 **override**되어 default값인 `black`으로 설정된다.
+- 이 경우도 border 속성의 shorthand property에 의해 border-color 속성이 **override** 되어 default값인 `black`으로 설정된다.
 
-- 결론적으로 shorthand property를 사용할 때 신중해야 한다.
+- 결론적으로 shorthand property를 사용할 때 스타일의 override를 고려해야 한다.
 
 ## dropdown menu - arrow
 
