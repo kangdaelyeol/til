@@ -8,11 +8,11 @@
 
 ## word-break: keep-all
 
-- width 제한이 있는 container에 text를 입력할 때 줄 바꿈이 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all)옵션을 사용한다.
+- width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
 
-- 기본 옵션은 `word-break: normal`인데, 이는 영어 텍스트를 입력할 때 단어를 기준으로, 즉 띄어쓰기 기준으로 줄 바꿈이 잘 발생하지만, 한국어는 단어를 구분하지 못해 띄어쓰기 기준으로 줄 바꿈이 발생하지 않고, 문자마다 줄 바꿈이 발생한다.
+- 기본 옵션은 `word-break: normal` 스타일이다. 이는 영어를 입력할 때 단어를 기준으로, 즉 **띄어쓰기(공백 - whitespace)** 를 기준으로 줄 바꿈이 잘 발생하지만, 한국어는 단어를 구분하지 못해 띄어쓰기 기준으로 줄 바꿈이 발생하지 않고, 문자마다 줄 바꿈이 발생한다.
 
-- keep-all 속성값은 `CJK(Chinese/Japanese/Korean) text`를 위한 속성이라고 한다. 알파벳 순으로 나열해서 우리나라가 마지막에 온 것이라고 하더라 **(중국, 일본이 우월하다는 것이 아님.)**
+- keep-all 속성값은 `CJK(Chinese/Japanese/Korean) text`를 위한 값이라고 한다. 각 나라의 첫 문자를 알파벳 순으로 나열해서 우리나라 이름이 마지막에 쓰인 것이라고 한다. **(중국, 일본이 우리나라보다 우월하다는 의미가 아님.)**
 
 ## background-image - alternate text
 
