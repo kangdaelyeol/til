@@ -1575,3 +1575,24 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
   - [Boraginaceae(지치과)](https://en.wikipedia.org/wiki/Boraginaceae)
 
 - 또한 꿀, 허브차등에 자연적으로 포함되며 다양한 pyrrolizidine alkaloid 물질이 있다고 한다.
+
+## goitrogen
+
+- [goitrogen](https://en.wikipedia.org/wiki/Goitrogen)은 갑상선의 기능을 방해해 갑상선종(goiter)을 유발한다는데에서 이름이 기원했다.
+  자연적으로 존재하는 유기황화합물(organicsulfur compound)이며
+- 십자화과 채소 섭취를 통해 goitrogen의 영향을 받을 수 있다.
+
+<span class="title">goitrogen 생성과 갑상선종<span>
+
+<span class="substance">cruciferous vegitable - progoitrin(glucosinolate)</span> -> <span class="organ">myrosinase</span> -> <span class="interaction">hydrolysis</span> -> <span class="substance">aglycone</span> -> <span class="substance">goitrin(lactone)</span> -> <span class="organ">thyroid gland - NIS</span> -> <span class="interaction">disrupt iodine absorption</span>
+-> <span class="organ">pituitary gland</span> -> <span class="substance">TSH</span> -> <span class="disease">goiter
+
+- progoitrin은 glucosinolate의 일종이다. sulforaphane 생성 과정 처럼 채소 세포가 파괴 될 때 myrosinase 효소와 접촉되어 goitrin 물질이 된다.</span>
+
+- [goitrin](https://en.wikipedia.org/wiki/Goitrin)은 **유기황화합물(organosulfar compound)** 이며 glucosinonate의 최종 대사 물질 형태인 thiocyanate, isothiocyanate, nitrile과 다른 [lactone](https://en.wikipedia.org/wiki/Lactone) 구조를 가지고 있는 물질이라고 한다.
+
+- 활성된 goitrin은 갑상선의 [NIS(sodium-iodine symporter)](https://en.wikipedia.org/wiki/Sodium/iodide_cotransporter) 공동 수용체의 아이오딘 수용 기능을 방해해 갑상선 호르몬 생성(T3, T4)을 방해한다.
+
+  - 이로 인해 [HPT axis](#thyroid-gland---mercury) 균형의 혼란이 생기며, **뇌하수체(pituitary gland)** 는 **TSH(Thyroid-Stimulating hormone)** 호르몬을 갑상선으로 계속 분비를 하게 된다.
+
+  - 하지만 갑상선은, 갑상선 호르몬(T3, T4) 생성을 위한 아이오딘을 수용할 수 없는 상태다. 이러한 상태가 계속되면 갑상선이 비대해져서 결국 [갑상선종(goiter)](https://en.wikipedia.org/wiki/Goitre)이 발생할 수 있다.

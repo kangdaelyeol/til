@@ -1,3 +1,6 @@
 .history
 prac/
-projects
+/FE/*
+/FE/projects/*
+/FE/projects/js*
+/FE/projects/movie-app/*
