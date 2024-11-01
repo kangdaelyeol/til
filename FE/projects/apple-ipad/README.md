@@ -116,7 +116,9 @@ header ul.menu > li.search-starter {
 
 ## dropdown menu - arrow
 
-- dropdown menu에 arrow 모양을 추가하기 위해 [pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)의 ::before을 사용한다.
+<img src="./readme_img/dropdown-arrow-sample.png">
+
+- dropdown menu box 요소에 arrow 모양을 추가하기 위해 [pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)의 ::before 가상 요소 선택자를 사용한다.
 
 - dropdown menu의 content와 별개로 arrow를 위한 box를 생성한다.
 
@@ -149,29 +151,31 @@ header .basket > .arrow::before {
 }
 ```
 
-- arrow의 ::before element를 rotate로 회전시킨 후 위치 조정을 한다.
+- arrow를 위한 ::before 가상 요소를 rotate css 함수로 회전시킨 후 위치 조정을 한다.
 
-- arrow의 가장자리 길이를 정확하게 계산하기 위해서 `box-sizing: border-box`값을 설정했다.
+- arrow의 가장자리 길이를 정확하게 계산하기 위해서 `box-sizing: border-box` 스타일을 적용했다.
 
-- `transform-origin: 0 0`으로 하고 **top, left**속성으로 정확한 위치를 조정한다. 그렇지 않으면 회전한 사각형을 정확한 위치에 배치하기 위해선 `sqrt` 기능이 필요하게 되며 수학적으로 계산이 필요하기 때문에 복잡하다.
+- `transform-origin: 0 0` 스타일로 설정하고 **top, left** 속성을 활용해 정확한 위치를 조정한다. 그렇지 않으면 회전된 사각형을 원하는 위치에 배치하기 위해서 `sqrt(제곱근)` 기능이 필요하게 되며, 이는 수학적인 계산이 필요하기 때문에 계산 과정이 복잡하다.
 
 ### Example
 
-![arrow example1](./readme_img/image.png)
+`빨간 사각형의 transform-origin 속성을 각각 default(Initial value), 0 0 값을 적용시킨 결과`
 
-- 빨간 사각형 변의 길이를 a라고 하면 transform-origin값은 `a/2 a/2`다.
+<img src="./readme_img/transform-origin-1.png" /> <img src="./readme_img/transform-origin-2.png" />
 
-- 여기서 `transform-origin: 0 0`처럼 이동을 하려면 sqrt를 사용한 결과의 값이 필요하다.
+- 빨간 사각형 변의 길이를 `a` 라고 가정하면, transform-origin 스타일의 속성값은 `a/2 a/2(initial value - 50% 50% 0)` 다.
 
-  - 검은 사각형 변으로부터 빨간 사각형 꼭지점 까지의 거리 **sqrt(a<sup>2</sup>/2) - (a/2)**
+- 여기서 `transform-origin: 0 0` 스타일을 적용한 것 처럼 사각형을 이동시키려면 sqrt를 사용한 결과의 값이 필요하다.
+
+  - 검은 사각형의 윗변으로부터 빨간 사각형의 윗꼭짓점(vertex)사이 최단 거리 **sqrt(2a<sup>2</sup>)/2 - (a/2)**
 
 - 결과적으로 두 경우의 수는 같은 결과를 보여준다
 
-  - transform-origin: 0 0;
+  1. transform-origin: 0 0;
 
-  - top: **sqrt**(a<sup>2</sup>/2) - (a/2); left: -(a/2); `a = 빨간 사각형의 width라 가정`
+  1. top: **sqrt**(2a<sup>2</sup>)/2 - (a/2); left: -(a/2); `a = 빨간 사각형의 width라 가정`
 
-- 이는 매우 비효율적이기 때문에 `transform-origin: 0 0`을 사용하는 것이 맞다.
+- 이는 매우 비효율적인 방법이기 때문에 `transform-origin: 0 0`을 사용하는 것이 적절하다.
 
 ## event.stopPropagation()
 
