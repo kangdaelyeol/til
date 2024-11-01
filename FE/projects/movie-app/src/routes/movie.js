@@ -3,6 +3,17 @@ import movieStore, { getMovieDetails } from '../store/movie'
 
 export default class Movie extends Component {
     async render() {
+        this.el.classList.add('container', 'the-movie')
+
+        this.el.innerHTML = /* html */ `
+        <div class="poster skeleton"></div>
+        <div class="specs">
+          <div class="title skeleton"></div>
+          <div class="lables skeleton"></div>
+          <div class="plot skeleton"></div>
+        </div>
+        
+      `
         await getMovieDetails(history.state.id)
         const {
             Poster,
@@ -18,7 +29,6 @@ export default class Movie extends Component {
             Genre,
         } = movieStore.state.movieDetail
 
-        this.el.classList.add('container', 'the-movie')
         this.el.innerHTML = /* html */ `
         <div style="background-image: url(${Poster.replace(
             'SX300',
