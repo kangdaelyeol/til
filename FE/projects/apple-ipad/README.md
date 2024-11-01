@@ -14,6 +14,8 @@
 
 - [shorthand property - override](#shorthand-property---override)
 
+- [dropdown menu - arrow](#dropdown-menu---arrow)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
