@@ -1596,3 +1596,39 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
   - 이로 인해 [HPT axis](#thyroid-gland---mercury) 균형의 혼란이 생기며, **뇌하수체(pituitary gland)** 는 **TSH(Thyroid-Stimulating hormone)** 호르몬을 갑상선으로 계속 분비를 하게 된다.
 
   - 하지만 갑상선은, 갑상선 호르몬(T3, T4) 생성을 위한 아이오딘을 수용할 수 없는 상태다. 이러한 상태가 계속되면 갑상선이 비대해져서 결국 [갑상선종(goiter)](https://en.wikipedia.org/wiki/Goitre)이 발생할 수 있다.
+
+## Potassuim
+
+- 칼륨(K) 이라 불리는 Potassium의 섭취는 중요하다
+
+- 칼륨은 체내 나트륨과 상호작용하며 나트륨 관리에 필수적이다.
+
+- 나트륨도 우리 몸에 반드시 필요한 요소지만, 현대 식문화 관점에서 나트륨을 과다 섭취하므로 칼륨 섭취에 대한 중요성을 알아야 한다.
+
+<span class="title">칼륨(potassium)과 나트륨(sodium)펌프 상호작용</span>
+
+<span class="substance">ATP + 2K<sup>+</sup></span> -> <span class="organ">membrane - sodium-potassium ATPase(Na<sup>+</sup> / K<sup>+</sup> pump)</span> -> <span class="substance">ADP + P<sub>i</sub> + 3Na<sup>+</sup></span>
+
+- 체내로 들어온 칼륨 이온은 세포에 있는 [sodium-potassium ATPase](https://en.wikipedia.org/wiki/Sodium%E2%80%93potassium_pump) 라는 효소에 의해 세포 내부의 칼륨, 나트륨 농도가 조절된다.
+
+- 칼륨이 세포 내로 유입되고, 나트륨이 세포 외로 빠져 나갈 때 ATP에 있는 하나의 인산 분자가 무기 인산으로 분해되는데, 이로 인해 세포막에 **전위차** 가 생기며, 이는 신경 자극 및 전기적 신호 생성에 기여한다.
+
+- 세포내에서 혈액으로 방출된 나트륨은 신장을 통해 배출될 수 있으므로, 이러한 작용을 통해 나트륨 배출을 유도함으로써 체내 나트륨 농도를 조절할 수 있다.
+
+- 하지만 신장의 기능이 좋지 않다면, 칼륨 및 나트륨 배출에 문제가 생기므로 이 또한 고려해야 한다.
+
+---
+
+<span class="title">고칼륨혈증 - hyperkalemia</span>
+
+<span class="organ">kidney - eGFR &lt; 45</span> -> <span class="disease">hyperkalemia</span> -> <span class="organ">adrenal cortex</span> -> <span class="substance">aldosterone</span> -> <span class="organ">nephron - distal convoluted tubule</span> -> <span class="organ">collecting duct</span> -> <span class="interaction">excretion potassium + reabsorption sodium</span> -> <span class="disease">electrolyte imbalance</span>
+
+- 칼륨은 신장을 통해 배출되어야 하는데, **사구체 여과율(eGFR - glomerulus filteration rate)** 이 낮으면 칼륨이 배출 되지 않게되어 [고칼륨혈증(hyperkalemia)](https://en.wikipedia.org/wiki/Hyperkalemia) 상태가 될 수 있다.
+
+- 체내 칼륨농도가 높아지면 일반적으로 **부신 피질(adrenal cortex)** 에서 **aldosterone** 이라는 호르몬을 분비한다.
+
+- [aldosterone](https://en.wikipedia.org/wiki/Aldosterone) 호르몬은 주로 nephron의 **원위 세뇨관(distal convoluted tubule)와 집합관(collecting duct)** 에서 **체내 칼륨을 분비** 하도록 유도하여 칼륨 농도를 조절하는 동시에 **나트륨을 재흡수** 하도록 유도한다.
+
+  - `proximal / distal convoluted tubule, loop of henle은 각각의 nephron마다 있지만 collecting duct는 각 nephrone의 여과 결과물을 모아 연결하므로 상대적으로 수가 적다.`
+
+- 하지만 체내 칼륨 농도가 과도하게 높아 **hyperkalemia** 상태가 되면 aldosterone의 작용을 과도하게 받게 된다. 이로 인해 [전해질 불균형(electrolyte imbalance)](https://en.wikipedia.org/wiki/Electrolyte_imbalance) 상태가 될 수 있어 주의가 필요하다.
