@@ -360,6 +360,36 @@ header .user img {
   height: 400px;
 }
 
+/* About */
+
+.about .photo {
+  width: 230px;
+  height: 230px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.about .name {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+.about p {
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.about a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
 /* The Footer */
 
 footer {
