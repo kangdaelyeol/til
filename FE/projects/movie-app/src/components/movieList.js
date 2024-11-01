@@ -21,7 +21,6 @@ export default class MovieList extends Component {
 
     render() {
         this.el.classList.add('movie-list')
-        console.log(movieStore.state.message)
         this.el.innerHTML = /* html */ `
         ${
             movieStore.state.message
