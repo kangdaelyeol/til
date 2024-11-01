@@ -64,7 +64,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ```text
 Estrogen - Estrogen Receptor
----> COX-1, COX-2 Transcirptional Activation(전사 활성화)
+--&rarr; COX-1, COX-2 Transcirptional Activation(전사 활성화)
 COX-1, COX-2 - PG합성 효소
 ```
 
@@ -96,7 +96,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 그래서 간이 손상된 경우 간세포가 파괴 되어 해당 효소가 혈액으로 방출이 되어 이 효소가 피검사에서 검출되는 것이다.
 
-`노화의 속도를 늦춘다 -> 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리곘다.`
+`노화의 속도를 늦춘다 &rarr; 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리곘다.`
 
 ## Dopamine
 
@@ -138,11 +138,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. 단백질의 정상 해독 과정</span>
 
-- <span class="substance">protein</span> -> <span class="interaction">metabolism</span> -> <span class="substance">ammonia(byproduct)</span> -> <span class="organ">liver</span> -> <span class="interaction">urea cycle</span> -> <span class="substance">urea</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+- <span class="substance">protein</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">ammonia(byproduct)</span> &rarr; <span class="organ">liver</span> &rarr; <span class="interaction">urea cycle</span> &rarr; <span class="substance">urea</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
 <span class="title">2. 신장 기능 저하로 인한 위험</title>
 
-- <span class="substance">ammonia</span> -> <span class="interaction">accumulation</span> -> <span class="disease">encephalopathy(간성혼수)</span>
+- <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease">encephalopathy(간성혼수)</span>
 
 <hr />
 
@@ -160,11 +160,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
 
-- <span class="substance">purine</span> -> <span class="organ">liver</span> -> <span class="substance">uric acid</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+- <span class="substance">purine</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">uric acid</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
 <span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
 
-- <span class="substance">uric acid</span> -> <span class="disease">gout(통풍)</span>
+- <span class="substance">uric acid</span> &rarr; <span class="disease">gout(통풍)</span>
 
 <hr />
 
@@ -182,13 +182,13 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. estrogen의 정상 해독 과정</span>
 
-- <span class="substance">estrogen</span> -> <span class="organ">CYP1A1 / CYP1B1</span> -> <span class="interaction">hydroxylation</span> -> <span class="substance">2/4-hydroxyestrogen</span> -> <span class="organ">COMT</span> -> <span class="interaction">methylation</span> -> <span class="substance">2/4-methoxyestrogen</span> -> <span class="interaction">대/소장 배출</span>
+- <span class="substance">estrogen</span> &rarr; <span class="organ">CYP1A1 / CYP1B1</span> &rarr; <span class="interaction">hydroxylation</span> &rarr; <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="organ">COMT</span> &rarr; <span class="interaction">methylation</span> &rarr; <span class="substance">2/4-methoxyestrogen</span> &rarr; <span class="interaction">대/소장 배출</span>
 
-- <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">glutathione</span> -> <span class="interaction">결합</span> -> <span class="interaction">대/소장 배출
+- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">glutathione</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="interaction">대/소장 배출
 
 <span class="title">2. estrogen의 비정상 해독 과정</span>
 
-- <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">DNA</span> -> <span class="interaction">결합</span> -> <span class="substance">DNA adduct</span> -> <span class="disease">carginogenecity(발암성)</span>
+- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">DNA</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="substance">DNA adduct</span> &rarr; <span class="disease">carginogenecity(발암성)</span>
 
 <hr />
 
@@ -212,9 +212,9 @@ COX-1, COX-2 - PG합성 효소
 
   - <span class="title">Estrogen metabolism(Hydroxylation) pathway</span>
 
-    - <span class="substance">estrone / estradiol</span> -> <span class="interaction">CYP1A1(hydroxylation)</span> -> <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
+    - <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1A1(hydroxylation)</span> &rarr; <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
 
-    - <span class="substance">estrone / estradiol</span> -> <span class="interaction">CYP1B1(hydroxylation)</span> -> <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
+    - <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1B1(hydroxylation)</span> &rarr; <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
 
   - 각각 분자 핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.
 
@@ -228,7 +228,7 @@ COX-1, COX-2 - PG합성 효소
 
   - <span class="title">Estrogen metabolism(methylation) pathway</span>
 
-    - <span class="substance">2/4-hydroxyestrogen</span> -> <span class="interaction">"COMT(methylation)</span> -> <span class="substance">2/4-methoxyestrogen</span>
+    - <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="interaction">"COMT(methylation)</span> &rarr; <span class="substance">2/4-methoxyestrogen</span>
 
 - 메틸화까지 완료된 estrogen은 자연적으로 배출이 된다.
 
@@ -236,7 +236,7 @@ COX-1, COX-2 - PG합성 효소
 
 - - <span class="title">Estrogen redox reaction pathway</span>
 
-  - <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">estrogen quinone</span>
+  - <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">estrogen quinone</span>
 
 - quinone은 반응성이 매우 높아서 DNA와 쉽게 결합한다.
 
@@ -260,17 +260,17 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. Glutathione의 정상적인 항산화 과정</span>
 
-- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> -> <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
+- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> &rarr; <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
 
-- <span class="substance">2GSH + <span class="organ">GPx(Sec-SeOH) -> <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
+- <span class="substance">2GSH + <span class="organ">GPx(Sec-SeOH) &rarr; <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
 
-- <span class="substance">GSSG, NADPH, H<sup>+</sup> + <span class="organ">GSR -> <span class="substance">2GSH + <span class="substance">NADP<sup>+</sup>
+- <span class="substance">GSSG, NADPH, H<sup>+</sup> + <span class="organ">GSR &rarr; <span class="substance">2GSH + <span class="substance">NADP<sup>+</sup>
 
 <span class="title">2. 수은으로 인한 셀레늄 결핍 과정</span>
 
-- <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> -> <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
+- <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> &rarr; <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
 
-- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> -> <span class="substance">HgSe, CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
+- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> &rarr; <span class="substance">HgSe, CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
 
 <hr />
 
@@ -318,17 +318,17 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. HPT axis</span>
 
-- <span class="organ">Hypothalamus</span> -> <span class="substance">TRH</span> -> <span class="organ">Pituitary gland</span> -> <span class="substance">TSH</span> -> <span class="organ">Thyroid gland</span> -> <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
+- <span class="organ">Hypothalamus</span> &rarr; <span class="substance">TRH</span> &rarr; <span class="organ">Pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="organ">Thyroid gland</span> &rarr; <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
 
 <span class="title">2. 탈아이오딘화 효소와의 상호작용</span>
 
-- <span class="substance">T4</span> -> <span class="organ">D1 / D2</span> -> <span class="substance">T3</span>
+- <span class="substance">T4</span> &rarr; <span class="organ">D1 / D2</span> &rarr; <span class="substance">T3</span>
 
-- <span class="substance">rT3</span> -> <span class="organ">D1</span> -> <span class="substance">T2</span>
+- <span class="substance">rT3</span> &rarr; <span class="organ">D1</span> &rarr; <span class="substance">T2</span>
 
-- <span class="substance">T4</span> -> <span class="organ">D3</span> -> <span class="substance">rT3</span>
+- <span class="substance">T4</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">rT3</span>
 
-- <span class="substance">T3</span> -> <span class="organ">D3</span> -> <span class="substance">T2</span>
+- <span class="substance">T3</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">T2</span>
 
 <hr />
 
@@ -366,11 +366,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">무기 비소가 mitochondrion에 미치는 영향
 
-- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="interaction">ETC영향</span> -> <span class="interaction">ATP 생성 감소 / ROS 증가</span> -> <span class="interaction">막 투과성 증가</span> -> <span class="interaction">PTP 개방</span>
+- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">ETC영향</span> &rarr; <span class="interaction">ATP 생성 감소 / ROS 증가</span> &rarr; <span class="interaction">막 투과성 증가</span> &rarr; <span class="interaction">PTP 개방</span>
 
-- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="disease">mtDNA 직접적인 손상</span> -> <span class="interaction">PTP개방</span>
+- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="disease">mtDNA 직접적인 손상</span> &rarr; <span class="interaction">PTP개방</span>
 
-- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="interaction">세포 내 칼슘 농도 높임</span> -> <span class="disease">막 전위 붕괴</span> -> <span class="interaction">PTP개방</span>
+- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">세포 내 칼슘 농도 높임</span> &rarr; <span class="disease">막 전위 붕괴</span> &rarr; <span class="interaction">PTP개방</span>
 
 <hr />
 
@@ -384,7 +384,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 또한 여러 루트를 통해 `PTP`를 개방하게 되는데, 이를 통해 `ETC`에서 중요한 역할을 하는 `Cytochrome C`라는 단백질이 세포질로 방출이 된다.
 
-- <span class="interaction">PTP개방</span> -> <span class="interaction">Cytochrome C 세포질 방출</span> -> <span class="interaction">caspase 효소군 활성화</span> -> <span class="disease">apoptosis</span>
+- <span class="interaction">PTP개방</span> &rarr; <span class="interaction">Cytochrome C 세포질 방출</span> &rarr; <span class="interaction">caspase 효소군 활성화</span> &rarr; <span class="disease">apoptosis</span>
 
 - Cytochorome C 는 `Complex3(Coenzyme Q) 복합체`에서 `Complex4 복합체(Cytochrome C oxidase)` 로 전자를 전달하는 역할을 한다.
 
@@ -514,13 +514,13 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">liver blood circulation</span>
 
-- <span class="organ">심장</span> -> <span class="substance">대동맥</span> -> <span class="substance">간동맥</span> -> <span class="organ">간</span> -> <span class="substance">간정맥</span> -> <span class="organ">심장</span>
+- <span class="organ">심장</span> &rarr; <span class="substance">대동맥</span> &rarr; <span class="substance">간동맥</span> &rarr; <span class="organ">간</span> &rarr; <span class="substance">간정맥</span> &rarr; <span class="organ">심장</span>
 
-- <span class="organ">심장</span> -> <span class="substance">대동맥</span> -> <span class="organ">소화기관</span> -> <span class="substance">간문맥</span> -> <span class="organ">간</span> -> <span class="substance">간정맥</span> -> <span class="organ">심장</span>
+- <span class="organ">심장</span> &rarr; <span class="substance">대동맥</span> &rarr; <span class="organ">소화기관</span> &rarr; <span class="substance">간문맥</span> &rarr; <span class="organ">간</span> &rarr; <span class="substance">간정맥</span> &rarr; <span class="organ">심장</span>
 
 <span class="title">간이 독소를 해독하는 과정</span>
 
-- <span class="substance">독소</span> -> <span class="interaction">functionalization(phase 1)</span> -> <span class="substance">중간체(reactive metabolites)</span> -> <span class="interaction">Conjugation pathway(phase 2)</span> -> <span class="substance">water-soluble waste</span> -> <span class="interaction">배출 단계(phase 3)</span>
+- <span class="substance">독소</span> &rarr; <span class="interaction">functionalization(phase 1)</span> &rarr; <span class="substance">중간체(reactive metabolites)</span> &rarr; <span class="interaction">Conjugation pathway(phase 2)</span> &rarr; <span class="substance">water-soluble waste</span> &rarr; <span class="interaction">배출 단계(phase 3)</span>
 
 <hr />
 
@@ -584,11 +584,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">담낭(gallbladder)에 쌓이는 담즙</span>
 
-- <span class="substance">cholesterol</span> -> <span class="organ">liver / CYP7A1(8B1)(27A1)</span> -> <span class="substance">bile acid</span> -> <span class="organ">gallbladder</span>
+- <span class="substance">cholesterol</span> &rarr; <span class="organ">liver / CYP7A1(8B1)(27A1)</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="organ">gallbladder</span>
 
-- <span class="substance">cholesterol</span> -> <span class="organ">liver</span> -> <span class="organ">gallbladder</span>
+- <span class="substance">cholesterol</span> &rarr; <span class="organ">liver</span> &rarr; <span class="organ">gallbladder</span>
 
-- <span class="substance">RBC</span> -> <span class="organ">liver</span> -> <span class="substance">bilirubin</span> -> <span class="organ">gallbladder</span>
+- <span class="substance">RBC</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">bilirubin</span> &rarr; <span class="organ">gallbladder</span>
 
 <hr />
 
@@ -606,11 +606,11 @@ COX-1, COX-2 - PG합성 효소
 
 `Duodenum(십이지장)에서의 작용`
 
-- <span class="substance">fat</span> -> <span class="substance">bile acid</span> -> <span class="interaction">emulsification</span> -> <span class="interaction">incresed digestive surface area</span> -> <span class="organ">Pancreas</span> -> <span class="substance">lipase</span> -> <span class="interaction">lipid hydrolysis</span> -> <span class="substance">fatty acid + monoglyceride (micelle)</span>
+- <span class="substance">fat</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="interaction">emulsification</span> &rarr; <span class="interaction">incresed digestive surface area</span> &rarr; <span class="organ">Pancreas</span> &rarr; <span class="substance">lipase</span> &rarr; <span class="interaction">lipid hydrolysis</span> &rarr; <span class="substance">fatty acid + monoglyceride (micelle)</span>
 
 `공장(Jejunum), 회장(Ileum)의 역할`
 
-- <span class="substance">micelle</span> -> <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> -> <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
+- <span class="substance">micelle</span> &rarr; <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> &rarr; <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
 
 _Epthelial cells는 모든 부위의 상피세포를 뜻하는 포괄적인 의미_
 
@@ -628,7 +628,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">담즙 분비에 도움을 주는 올리브오일</span>
 
-- <span class="substance">olive oil(oleic acid)</span> -> <span class="organ">Duodenum / Jejunum</span> -> <span class="substance">CCK</span> -> <span class="organ">Gallbladder / Pancreas</span> -> <span class="substance">bile / lipase</span> -> <span class="organ">Duodenum</span>
+- <span class="substance">olive oil(oleic acid)</span> &rarr; <span class="organ">Duodenum / Jejunum</span> &rarr; <span class="substance">CCK</span> &rarr; <span class="organ">Gallbladder / Pancreas</span> &rarr; <span class="substance">bile / lipase</span> &rarr; <span class="organ">Duodenum</span>
 
 <hr />
 
@@ -644,9 +644,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">Enterohepatic circulation pathway</span>
 
-<span class="organ">liver</span> -> <span class="substance">bile acid(secretion)</span> -> <span class="organ">gallbladder</span> -> <span class="organ">small intestine</span> -> <span class="organ">Ileum</span> -> <span class="organ">portal vein</span> -> <span class="organ">liver</span>
+<span class="organ">liver</span> &rarr; <span class="substance">bile acid(secretion)</span> &rarr; <span class="organ">gallbladder</span> &rarr; <span class="organ">small intestine</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
 
-<span class="substance">bile acid</span> -> <span class="organ">Ileum</span> -> <span class="organ">colon</span> -> <span class="organ">portal vein</span> -> <span class="organ">liver</span>
+<span class="substance">bile acid</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">colon</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
 
 <hr />
 
@@ -680,13 +680,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">stomach protein digest pathway</span>
 
-- <span class="organ">stomach-cheif cells</span> -> <span class="substance">pepsinogen</span>
+- <span class="organ">stomach-cheif cells</span> &rarr; <span class="substance">pepsinogen</span>
 
-- <span class="organ">stomach-parietal cells</span> -> <span class="substance">gastric acid</span>
+- <span class="organ">stomach-parietal cells</span> &rarr; <span class="substance">gastric acid</span>
 
-- <span class="substance">gastric acid</span> -> <span class="organ">pepsinogen</span> -> <span class="interaction">acivation</span> -> <span class="substance">pepsin</span>
+- <span class="substance">gastric acid</span> &rarr; <span class="organ">pepsinogen</span> &rarr; <span class="interaction">acivation</span> &rarr; <span class="substance">pepsin</span>
 
-- <span class="substance">protein</span> -> <span class="interaction">pepsin(break down)</span> -> <span class="substance">peptide</span> -> <span class="organ">small instestine</span> -> <span class="substance">amino acid</span>
+- <span class="substance">protein</span> &rarr; <span class="interaction">pepsin(break down)</span> &rarr; <span class="substance">peptide</span> &rarr; <span class="organ">small instestine</span> &rarr; <span class="substance">amino acid</span>
 
 <hr />
 
@@ -798,7 +798,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 위의 벽층이 손상되어 mucosa(점막층)의 epithelium(상피층)이 손상이 되는 병적 상태를 [위미란(Gastric Erosion)](https://en.wikipedia.org/wiki/Gastric_erosion)이라고 한다.
 
-- mucosa의 epithelium -> lamina propria -> muscularis mucosae 손상을 넘어 submucosa의 손상이 시작된 상태를 [위궤양(gastric ulcer)](https://en.wikipedia.org/wiki/Peptic_ulcer_disease)라고 한다.
+- mucosa의 epithelium &rarr; lamina propria &rarr; muscularis mucosae 손상을 넘어 submucosa의 손상이 시작된 상태를 [위궤양(gastric ulcer)](https://en.wikipedia.org/wiki/Peptic_ulcer_disease)라고 한다.
 
 - 보통 궤양이 발생하는 이유는 [진통소염제(NSAID)](https://en.wikipedia.org/wiki/Non-steroidal_anti-inflammatory_drug), 또는 [helicobacter-pylori](https://en.wikipedia.org/wiki/Helicobacter_pylori) 감염때문이라 한다.
 
@@ -820,7 +820,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">gliadin이 장누수를 일으키는 과정</span>
 
-- <span class="substance">gliadin</span> -> <span class="organ">jejunum(epithelium cell)-CXCR3</span> -> <span class="interaction">combination</span> -> <span class="substance">zonulin</span> -> <span class="interaction">tight junction</span> -> <span class="disease">leaky gut</span>
+- <span class="substance">gliadin</span> &rarr; <span class="organ">jejunum(epithelium cell)-CXCR3</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">zonulin</span> &rarr; <span class="interaction">tight junction</span> &rarr; <span class="disease">leaky gut</span>
 
 **CXCR3 - CXC [Chemokine](https://en.wikipedia.org/wiki/Chemokine#CXC_chemokines) Receptor - 3**
 
@@ -890,9 +890,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="substance">Glutathione</span> = <span class="substance">Glutamate</span> + <span class="substance">Cysteine</span> + <span class="substance">Glycine</span>
 
-<span class="substance">Glutmine / Cysteine</span> -> <span class="organ">GCL</span> -> <span class="substance">r-Glutamylcysteine</span>
+<span class="substance">Glutmine / Cysteine</span> &rarr; <span class="organ">GCL</span> &rarr; <span class="substance">r-Glutamylcysteine</span>
 
-<span class="substance">r-Glutamylcysteine / Glycine</span> -> <span class="organ">GSS</span> -> <span class="substance">Glutathione</span>
+<span class="substance">r-Glutamylcysteine / Glycine</span> &rarr; <span class="organ">GSS</span> &rarr; <span class="substance">Glutathione</span>
 
 [GCL - Glutamate-Cysteine ligase(연결효소)](https://en.wikipedia.org/wiki/Glutamate%E2%80%93cysteine_ligase)
 
@@ -916,7 +916,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 [GCLM - GCL Modifier subunit](https://en.wikipedia.org/wiki/GCLM)
 
-<span class="substance">Sulforaphane</span> -> <span class="substance">KEAP1</span> -> <span class="interaction">inactive</span> -> <span class="substance">NRF2</span> -> <span class="organ">ARE</span> -> <span class="interaction">composition</span> -> <span class="interaction">transcription</span> -> <span class="substance">mRNA</span> -> <span class="organ">Ribosome</span> -> <span class="substance">GCLC/GCLM</span>
+<span class="substance">Sulforaphane</span> &rarr; <span class="substance">KEAP1</span> &rarr; <span class="interaction">inactive</span> &rarr; <span class="substance">NRF2</span> &rarr; <span class="organ">ARE</span> &rarr; <span class="interaction">composition</span> &rarr; <span class="interaction">transcription</span> &rarr; <span class="substance">mRNA</span> &rarr; <span class="organ">Ribosome</span> &rarr; <span class="substance">GCLC/GCLM</span>
 
 - ### NRF2-KEAP1 pathway
 
@@ -974,7 +974,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">혈액이 여과되는 과정</span>
 
-<span class="substance">Blood with waste</span> - <span class="organ">(kidney) - nephron - glomerulus<span class="interaction">(filteration)</span> </span> -> <span class ="organ">(renal tubule) - proximal convoluted tubule<span class="interaction">(filteration)</span> - loop of henl<span class="interaction">(filteration)</span> - distal convoluted tubule<span class="interaction">(filteration)</span> </span> -> <span class="organ">collecting duct</span> -> <span class="organ">renal pelvis</span> -> <span class="organ">ureter</span> -> <span class="organ">bladder</span> -> <span class="substance">urine output</span>
+<span class="substance">Blood with waste</span> - <span class="organ">(kidney) - nephron - glomerulus<span class="interaction">(filteration)</span> </span> &rarr; <span class ="organ">(renal tubule) - proximal convoluted tubule<span class="interaction">(filteration)</span> - loop of henl<span class="interaction">(filteration)</span> - distal convoluted tubule<span class="interaction">(filteration)</span> </span> &rarr; <span class="organ">collecting duct</span> &rarr; <span class="organ">renal pelvis</span> &rarr; <span class="organ">ureter</span> &rarr; <span class="organ">bladder</span> &rarr; <span class="substance">urine output</span>
 
 - 신장(kidney)에는 약 100만개의 **nephron** 이 있고, 각각의 nephron에는 혈액을 여과하는 **사구체(glomerulus)** 와 혈액을 운반하는 **신세뇨관(renal tubule)** 이 있다.
 
@@ -1006,31 +1006,31 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ---
 
-<span class="organ">Complex I</span> / <span class="substance">NADH</span> -> <span class="organ">ubiquinone(CoQ)</span> -> <span class="organ">Complex III</span> + <span class="substance">NAD<sup>+</sup></span> / <span class="substance">H<sup>+<sup></span>
+<span class="organ">Complex I</span> / <span class="substance">NADH</span> &rarr; <span class="organ">ubiquinone(CoQ)</span> &rarr; <span class="organ">Complex III</span> + <span class="substance">NAD<sup>+</sup></span> / <span class="substance">H<sup>+<sup></span>
 
-<span class="organ">Complex II</span> / <span class="substance">succinate(succinic acid)</span> -> <span class="organ">ubuquinone(Q)</span> -> <span class="organ">Complex III</span>
+<span class="organ">Complex II</span> / <span class="substance">succinate(succinic acid)</span> &rarr; <span class="organ">ubuquinone(Q)</span> &rarr; <span class="organ">Complex III</span>
 
 - Complex I이 NADH에 있는 전자를 [ubuquinone(CoQ)](https://en.wikipedia.org/wiki/Coenzyme_Q10)을 통해 Complex III 로 전달하거나, Complex II가 **succinate(석신산)** 을 통해 전자를 Complex III로 전달한다.
 
-- 내막에 존재하는 Complex I 은 Complex I -> Complex III 과정에서 Complex I 은 기질(matrix)에서 막간(intermembrane)으로 양성자(proton)을 이동(pump) 시킨다.
+- 내막에 존재하는 Complex I 은 Complex I &rarr; Complex III 과정에서 Complex I 은 기질(matrix)에서 막간(intermembrane)으로 양성자(proton)을 이동(pump) 시킨다.
 
   - `proton을 intermembrane으로 pump함으로써 proton gradient(프로톤 기울기)를 형성한다. 이는 Chemiosmotic phosphorylation(화학삼투적 인산화)를 통해 ATP를 생성하는데 필요하다.`
 
-- Complex I -> Complex III 전달 과정중에 **전자누수(electron leak)** 가 발생할 가능성이 있다.
+- Complex I &rarr; Complex III 전달 과정중에 **전자누수(electron leak)** 가 발생할 가능성이 있다.
 
 ---
 
-<span class="organ">Complex III</span> -> <span class="organ">Cyt C</span> -> <span class="organ">Complex IV</span>
+<span class="organ">Complex III</span> &rarr; <span class="organ">Cyt C</span> &rarr; <span class="organ">Complex IV</span>
 
 - Complex III는 전자를 [Cyt c(Cytochrome C)](https://en.wikipedia.org/wiki/Cytochrome_c)를 통해 Complex IV로 전달한다.
 
-- 이 과정중에도 Complex I -> Complex III 전자 전달 과정처럼 **전자누수** 가 발생할 가능성이 있다.
+- 이 과정중에도 Complex I &rarr; Complex III 전자 전달 과정처럼 **전자누수** 가 발생할 가능성이 있다.
 
 - 또한 **기질(matrix)** 에서 **막간(intermembrane)** 으로 양성자(proton)을 이동(pump) 시킨다.
 
 ---
 
-<span class="substance">O<sub>2</sub></span> -> <span class="organ">Complex IV</span> -> <span class="substance">H<sub>2</sub>O</span>
+<span class="substance">O<sub>2</sub></span> &rarr; <span class="organ">Complex IV</span> &rarr; <span class="substance">H<sub>2</sub>O</span>
 
 - Complex IV는 산소를 받아 물(H<sub>2</sub>O)을 생성한다.
 
@@ -1040,7 +1040,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ---
 
-<span class="substance">ADP / P<sub>i</sub></span> -> <span class="organ">ATP synthase(Complex V)</span> -> <span class="substance">H<sup>+</sup>(proton)</span> -> <span class="interaction">chemiosmotic phosphorylation</span> -> <span class="substance">ATP</span>
+<span class="substance">ADP / P<sub>i</sub></span> &rarr; <span class="organ">ATP synthase(Complex V)</span> &rarr; <span class="substance">H<sup>+</sup>(proton)</span> &rarr; <span class="interaction">chemiosmotic phosphorylation</span> &rarr; <span class="substance">ATP</span>
 
 - ATP synthase(Complex V)는 Complex I, III, IV가 전자를 전달하면서 막간으로 이동시킨 proton을 [chemiosmotic phosphorylation(화학 삼투적 인산화)](https://en.wikipedia.org/wiki/Chemiosmosis)작용을 통해 다시 maxrix(기질)로 이동시키며 ATP를 합성한다.
 
@@ -1048,7 +1048,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">ETC 전자 누수로 인한 ROS 생성 과정</span>
 
-<span class="substance">O<sub>2</sub></span> + <span class="substance">e<sup>-</sup></span> -> <span class="substance">O<sub>2</sub><sup>-</sup>(superoxide)</span> -> <span class="organ">SOD</span> -> <span class="substance">H<sup>2</sup>O<sup>2</sup>(hydrogen peroxide)</span> -> <span class="substance">Fe<sup>2+</sup></span> -> <span class="interaction">Fenton Reaction</span> -> <span class="substance">OH(Hydroxyl Radical)</span> + <span class="substance">Fe<sup>3+</sup></span>
+<span class="substance">O<sub>2</sub></span> + <span class="substance">e<sup>-</sup></span> &rarr; <span class="substance">O<sub>2</sub><sup>-</sup>(superoxide)</span> &rarr; <span class="organ">SOD</span> &rarr; <span class="substance">H<sup>2</sup>O<sup>2</sup>(hydrogen peroxide)</span> &rarr; <span class="substance">Fe<sup>2+</sup></span> &rarr; <span class="interaction">Fenton Reaction</span> &rarr; <span class="substance">OH(Hydroxyl Radical)</span> + <span class="substance">Fe<sup>3+</sup></span>
 
 - 산소는 누수된 전자와 결합하여 [superoxide(초과산화물 / O<sub>2</sub><sup>-</sup>)](https://en.wikipedia.org/wiki/Superoxide)이 된다
 
@@ -1070,7 +1070,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">HPA axis에 의해 cortisol이 분비되는 과정</span>
 
-<span class="interaction">stress</span> -> <span class="organ">Hypothalamus</span> -> <span class="substance">CRH</span> -> <span class="organ">Anterior pituitary gland</span> -> <span class="substance">ACTH</span> -> <span class="organ">Adrenal cortex</span> -> <span class="substance">cortisol</span> -> <span class="interaction">homeostasis</span>
+<span class="interaction">stress</span> &rarr; <span class="organ">Hypothalamus</span> &rarr; <span class="substance">CRH</span> &rarr; <span class="organ">Anterior pituitary gland</span> &rarr; <span class="substance">ACTH</span> &rarr; <span class="organ">Adrenal cortex</span> &rarr; <span class="substance">cortisol</span> &rarr; <span class="interaction">homeostasis</span>
 
 ---
 
@@ -1096,7 +1096,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title"> stress에 의해 epinephrine(adrenaline)이 분비되는 과정</span>
 
-stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epinephrine / norepinephrine
+stress &rarr; hypothalamus &rarr; sympathetic nervous system &rarr; adrenal medulla &rarr; epinephrine / norepinephrine
 
 - 스트레스가 **hypothalamus** 를 자극하면 CRH 분비 외에도 [교감 신경계(SNS - sympathetic nervous system)](https://en.wikipedia.org/wiki/Sympathetic_nervous_system)에 직접적인 자극을 준다.
 
@@ -1114,11 +1114,11 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">지방이 산화되는 과정 - lipid peroxidation</title>
 
-<span class="substance">free radical</span> -> <span class="substance">unsaturated fatty acid</span> -> <span class="substance">lipid radical</span> -> <span class="substance">O<sub>2</sub></span> -> <span class="interaction">combination</span> -> <span class="substance">lipid peroxy radical</span> -> <span class="substance">unsaturated fatty acid</span> -> <span class="interaction">combination(chain reaction)</span> -> <span class="substance">lipid peroxide</span>
+<span class="substance">free radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="substance">lipid radical</span> &rarr; <span class="substance">O<sub>2</sub></span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">lipid peroxy radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="interaction">combination(chain reaction)</span> &rarr; <span class="substance">lipid peroxide</span>
 
-<span class="substance">lipid peroxide</span> -> <span class="substance">MDA</span> -> <span class="disease">DNA adducts</span>
+<span class="substance">lipid peroxide</span> &rarr; <span class="substance">MDA</span> &rarr; <span class="disease">DNA adducts</span>
 
-<span class="substance">lipid peroxide</span> -> <span class="interaction">fenton reaction</span> -> <span class="substance">free radical</span> -> <span class="disease">oxidative stress</span>
+<span class="substance">lipid peroxide</span> &rarr; <span class="interaction">fenton reaction</span> &rarr; <span class="substance">free radical</span> &rarr; <span class="disease">oxidative stress</span>
 
 ---
 
@@ -1144,11 +1144,11 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">Vitamin E - Antioxidant</span>
 
-<span class="substance">vitamin E(reduced) + LOO•(lipid (hydro)peroxy radical)</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">LOOH / tocopheryl radical(oxidized vitamin E)</span>
+<span class="substance">vitamin E(reduced) + LOO•(lipid (hydro)peroxy radical)</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">LOOH / tocopheryl radical(oxidized vitamin E)</span>
 
-<span class="substance">ascorbic acid + tocopheryl radical</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">vitamin E(reduced) / dyhydroascorbic adcid(oxidized vitamin C)</span>
+<span class="substance">ascorbic acid + tocopheryl radical</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">vitamin E(reduced) / dyhydroascorbic adcid(oxidized vitamin C)</span>
 
-<span class="substance">dyhydroascorbic acid + GSH</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">ascorbic acid / GSSG(oxidized GSH)</span>
+<span class="substance">dyhydroascorbic acid + GSH</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">ascorbic acid / GSSG(oxidized GSH)</span>
 
 - vitamin E는 **LOO•(lipid (hydro)peroxy radical)** 에게 `불포화 지방산 대신 수소 원자를 주어` **LOOH(lipid (hydro)peroxide)** 를 생성하게 하고, `L•(lipid radical)을 생성하지 않도록` 해서 **연쇄반응(chain reaction)을 방지** 한다.
 
@@ -1166,7 +1166,7 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">운동이 mitochondrion에 영향을 주는 과정</span>
 
-<span class="interaciton">workout</span> -> <span class="substance">ROS</span> -> <span class="interaciton">activation</span> -> <span class="substance">PGC-l⍺</span> -> <span class="interaciton">combination</span> -> <span class="substance">NRF-1</span> -> <span class="interaciton">gene expression regulation</span> -> <span class="organ">mitochondrion</span> -> <span class="interaciton">endurance capacity</span>
+<span class="interaciton">workout</span> &rarr; <span class="substance">ROS</span> &rarr; <span class="interaciton">activation</span> &rarr; <span class="substance">PGC-l⍺</span> &rarr; <span class="interaciton">combination</span> &rarr; <span class="substance">NRF-1</span> &rarr; <span class="interaciton">gene expression regulation</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaciton">endurance capacity</span>
 
 - `PGC-1⍺ - peroxisome proliferator activated receptor 𝛄 coactivator-1⍺, 전사활성 보조인자`
 
@@ -1192,9 +1192,9 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">자가 포식이 활성화 되는 과정</span>
 
-<span class="interaction">fasting</span> -> <span class="substance">insulin / glucose / amino acid</span> - <span class="interaction">decrease</span> -> <span class="organ">mTOR</span> - <span class="interaction">inactivated</span> -> <span class="interaction">autophagy</span>
+<span class="interaction">fasting</span> &rarr; <span class="substance">insulin / glucose / amino acid</span> - <span class="interaction">decrease</span> &rarr; <span class="organ">mTOR</span> - <span class="interaction">inactivated</span> &rarr; <span class="interaction">autophagy</span>
 
-<span class="interaction">fasting</span> -> <span class="organ">AMPK</span> - <span class="interaction">activated</span> -> <span class="interaction">fat decomposition(metabolism)</span> -> <span class="substance">ketone bodies(metabolite)</span> -> <span class="interaction">ketosis</span> -> <span class="disease">ketoacidosis</span>
+<span class="interaction">fasting</span> &rarr; <span class="organ">AMPK</span> - <span class="interaction">activated</span> &rarr; <span class="interaction">fat decomposition(metabolism)</span> &rarr; <span class="substance">ketone bodies(metabolite)</span> &rarr; <span class="interaction">ketosis</span> &rarr; <span class="disease">ketoacidosis</span>
 
 `mTOR - mammal Target of Rapamycin`
 
@@ -1234,9 +1234,9 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">beteine이 주는 이로움</span>
 
-<span class="substance">betaine</span> - <span class="interaction">methyl donor</span> -> <span class="organ">DNA</span> -> <span class="interaction">Regulation of gene expression</span>
+<span class="substance">betaine</span> - <span class="interaction">methyl donor</span> &rarr; <span class="organ">DNA</span> &rarr; <span class="interaction">Regulation of gene expression</span>
 
-<span class="substance">beteine</span> - <span class="interaction">methyl donor</span> -> <span class="organ">BHMT</span> -> <span class="substance">homocysteine</span> -> <span class="substance">methionine</span>
+<span class="substance">beteine</span> - <span class="interaction">methyl donor</span> &rarr; <span class="organ">BHMT</span> &rarr; <span class="substance">homocysteine</span> &rarr; <span class="substance">methionine</span>
 
 - `BHMT - Beteine-homocysteine methyltransfrerase`
 
@@ -1270,17 +1270,17 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">맛을 느끼는 과정</span>
 
-<span class="substance">food</span> -> <span class="organ">gustatory cell</span> -> <span class="interaction">chemical reaction</span> -> <span class="interaction">gustatory cell activation</span> -> <span class="substance">neural signal</span> -> <span class="organ">cranial nerve</span> -> <span class="organ">taste center</span> -> <span class="organ">gustatory cortex of insula</span> -> <span class="interaction">recognition of taste</span>
+<span class="substance">food</span> &rarr; <span class="organ">gustatory cell</span> &rarr; <span class="interaction">chemical reaction</span> &rarr; <span class="interaction">gustatory cell activation</span> &rarr; <span class="substance">neural signal</span> &rarr; <span class="organ">cranial nerve</span> &rarr; <span class="organ">taste center</span> &rarr; <span class="organ">gustatory cortex of insula</span> &rarr; <span class="interaction">recognition of taste</span>
 
 - 음식을 섭취하면 gustatory cell에서 화학반응이 일어나 세포가 활성화되어 신경 신호를 생성한다.
 
 - 생성된 신호는 **cranial nerve(대뇌 신경)** 을 통해 `taste center(미각 중추)` 로 전달되고, **대뇌 피질(celebral cortex)** 의 [insula cortex](https://en.wikipedia.org/wiki/Insular_cortex) 부분의 위치한 **gustatory cortax(미각 피질)** 로 전달되어 우리가 맛을 인지하게 된다.
 
-`미각 신경(taste center)은 사실상 비공식 용어인데, 정확히 미각을 담당하는 중추인 연수(medulla oblongata) -> 시상(thalamus)의 내복측핵(VPM - Ventral posteromedial nucleus) 를 통해 신호가 전달 된다.`
+`미각 신경(taste center)은 사실상 비공식 용어인데, 정확히 미각을 담당하는 중추인 연수(medulla oblongata) &rarr; 시상(thalamus)의 내복측핵(VPM - Ventral posteromedial nucleus) 를 통해 신호가 전달 된다.`
 
 `대뇌 신경에서 안면(facial) 신경, 설인(grossopharyngeal) 신경, 미주(vague) 신경(7, 9 ,10번 대뇌신경)을 통해 미각 신호가 전달된다.`
 
-`gustatory nerve -> taste center -> gustatory cortex의 neural signal전달의 과정은 neurotransmission 과정의 개념이다.`
+`gustatory nerve &rarr; taste center &rarr; gustatory cortex의 neural signal전달의 과정은 neurotransmission 과정의 개념이다.`
 
 ## RBC - bilirubin
 
@@ -1294,13 +1294,13 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">빌리루빈 생성 과정</span>
 
-<span class="substance">RBC</span> -> <span class="organ">liver / spleen</span> -> <span class="interaction">decomposition</span> -> <span class="substance">heme / globin</span>
+<span class="substance">RBC</span> &rarr; <span class="organ">liver / spleen</span> &rarr; <span class="interaction">decomposition</span> &rarr; <span class="substance">heme / globin</span>
 
-<span class="substance">globin</span> -> <span class="organ">protease</span> -> <span class="interaction">hydrolysis</span> -> <span class="substance">amino acid</span>
+<span class="substance">globin</span> &rarr; <span class="organ">protease</span> &rarr; <span class="interaction">hydrolysis</span> &rarr; <span class="substance">amino acid</span>
 
-<span class="substance">heme</span> -> <span class="organ">heme oxygenase</span> -> <span class="substance">biliverdin</span> -> <span class="organ">biliverdin reductase</span> -> <span class="substance">unconjugated bilirubin</span> -> <span class="substance">albumin</span> -> <span class="interaction">combination</span> -> <span class="organ">liver</span> -> <span class="organ">UGT1A1</span> + <span class="substance">glucuronic acid</span> -> <span class="substance">bilirubin(conjugated)</span>
+<span class="substance">heme</span> &rarr; <span class="organ">heme oxygenase</span> &rarr; <span class="substance">biliverdin</span> &rarr; <span class="organ">biliverdin reductase</span> &rarr; <span class="substance">unconjugated bilirubin</span> &rarr; <span class="substance">albumin</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="organ">liver</span> &rarr; <span class="organ">UGT1A1</span> + <span class="substance">glucuronic acid</span> &rarr; <span class="substance">bilirubin(conjugated)</span>
 
-<span class="substance">bilirubin</span> -> <span class="organ">bile canaliculi</span> -> <span class="organ">bile duct</span> -> <span class="organ">gallbladder</span> -> <span class="organ">duodenum</span> -> <span class="organ">gutmicrobiota</span> -> <span class="interaction">metabolism</span> -> <span class="substance">urobilinogen</span> -> <span class="substance">stercobilinogen</span> -> <span class="substance">stercobilin</span> -> <span class="substance">feces</span>
+<span class="substance">bilirubin</span> &rarr; <span class="organ">bile canaliculi</span> &rarr; <span class="organ">bile duct</span> &rarr; <span class="organ">gallbladder</span> &rarr; <span class="organ">duodenum</span> &rarr; <span class="organ">gutmicrobiota</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">urobilinogen</span> &rarr; <span class="substance">stercobilinogen</span> &rarr; <span class="substance">stercobilin</span> &rarr; <span class="substance">feces</span>
 
 `UGT1A1 - UDP(uridine diphosphate)-glucuronosyltrasferase`
 
@@ -1336,9 +1336,9 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">양배추를 잘 씹어 먹어야 하는 이유<span>
 
-<span class="substance">cabbage(myrosinase / glucosinolates)</span>- <span class="interaction">physical break down</span> -> <span class="organ">myrosinase</span> -> <span class="substance">glucosinolates</span> - <span class="interaction">hydrolysis</span> -> <span class="substance">aglycone + glucose</span>
+<span class="substance">cabbage(myrosinase / glucosinolates)</span>- <span class="interaction">physical break down</span> &rarr; <span class="organ">myrosinase</span> &rarr; <span class="substance">glucosinolates</span> - <span class="interaction">hydrolysis</span> &rarr; <span class="substance">aglycone + glucose</span>
 
-<span class="substance">aglycone</span> -> <span class="interaction">external environment(pH, other substances)</span> -> <span class="substance">isothiocyanates(sulforaphane) / nitriles / thiocyanates</span>
+<span class="substance">aglycone</span> &rarr; <span class="interaction">external environment(pH, other substances)</span> &rarr; <span class="substance">isothiocyanates(sulforaphane) / nitriles / thiocyanates</span>
 
 - 채소의 항산화 물질 생성은 채소 세포에 있는 [myrosinase](https://en.wikipedia.org/wiki/Myrosinase) 효소가 [glucosinolates](https://en.wikipedia.org/wiki/Glucosinolate) 화합물을 `가수분해(hydrolysis)` 하는 작용에서 부터 시작된다.
 
@@ -1434,7 +1434,7 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">콜레스테롤이 사용되는 과정</span>
 
-<span class="organ">liver</span> -> <span class="substance">VLDL</span> -> <span class="organ">blood</span> -> <span class="organ">lipoprotein lipase</span> -> <span class="interaction">distribution of triglyceride</span> -> <span class="substance">LDL - apolipoprotein</span> -> <span class="interaction">receptor-mediated endocytosis</span> -> <span class="organ">lysosome / endosome</span> -> <span class="interaction">hydrolysis</span>
+<span class="organ">liver</span> &rarr; <span class="substance">VLDL</span> &rarr; <span class="organ">blood</span> &rarr; <span class="organ">lipoprotein lipase</span> &rarr; <span class="interaction">distribution of triglyceride</span> &rarr; <span class="substance">LDL - apolipoprotein</span> &rarr; <span class="interaction">receptor-mediated endocytosis</span> &rarr; <span class="organ">lysosome / endosome</span> &rarr; <span class="interaction">hydrolysis</span>
 
 ---
 
@@ -1466,7 +1466,7 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">콜레스테롤로 인해 죽상동맥경화증(atherosclerosis)에 걸리는 과정</span>
 
-<span class="substance">LDL</span> -> <span class="substance">ROS</span> -> <span class="interaction">oxidation</span> -> <span class="substance">LDL(oxidized)</span> -> <span class="organ">artery endothelial cell(vascular)</span> -> <span class="disease">inflammation</span> -> <span class="organ">macrophage</span> -> <span class="interaction">phagocytosis</span> -> <span class="substance">atherosclerotic plaque</span> -> <span class="interaction">accumulation</span> -> <span class="disease">fibrosis</span> -> <span class="disease">atherosclerosis</span>
+<span class="substance">LDL</span> &rarr; <span class="substance">ROS</span> &rarr; <span class="interaction">oxidation</span> &rarr; <span class="substance">LDL(oxidized)</span> &rarr; <span class="organ">artery endothelial cell(vascular)</span> &rarr; <span class="disease">inflammation</span> &rarr; <span class="organ">macrophage</span> &rarr; <span class="interaction">phagocytosis</span> &rarr; <span class="substance">atherosclerotic plaque</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease">fibrosis</span> &rarr; <span class="disease">atherosclerosis</span>
 
 - 축적되어 사용되지 못한 LDL은 `ROS`에 의해 산화될 수 있다.
 
@@ -1518,7 +1518,7 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">신장 결석이 생기는 과정</span>
 
-<span class="substance">oxalate</span> -> <span class="organ">small intestine</span> -> <span class="interaction">passive diffusion</span> -> <span class="organ">blood vessel</span> -> <span class="substance">calcium</span> -> <span class="interaction">combination</span> -> <span class="substance">calcium oxalate</span> -> <span class="organ">urinary organs</span> -> <span class="interaction">accumulation</span> -> <span class="substance">calcium oxalate stone</span> -> <span class="disease">renal stone</span>
+<span class="substance">oxalate</span> &rarr; <span class="organ">small intestine</span> &rarr; <span class="interaction">passive diffusion</span> &rarr; <span class="organ">blood vessel</span> &rarr; <span class="substance">calcium</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">calcium oxalate</span> &rarr; <span class="organ">urinary organs</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="substance">calcium oxalate stone</span> &rarr; <span class="disease">renal stone</span>
 
 - oxalate는 보통 small intestine에서 calcium과 결합해 calcium oxalate를 형성하는데, small intestine에서 형성된 불용성의 calcium oxalate는 더 이상 흡수되지 않아 일반적으로 문제 없이 대장(colon)을 통해 배출된다.
 
@@ -1536,7 +1536,7 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">헤모글로빈이 당화되는 과정</span>
 
-<span class="substance">HbA0</span> -> <span class="organ">blood stream</span> -> <span class="substance">glucose</span> -> <span class="interaction">non-enzymatic reaction</span> -> <span class="substance">HbA1c(glycated)</span>
+<span class="substance">HbA0</span> &rarr; <span class="organ">blood stream</span> &rarr; <span class="substance">glucose</span> &rarr; <span class="interaction">non-enzymatic reaction</span> &rarr; <span class="substance">HbA1c(glycated)</span>
 
 - 피검사 수치중 HbA1c 수치는 지난 약 3개월간의 혈당 수치를 예측할 수 있는 **임상지표** 로써 사용된다.
 
@@ -1584,8 +1584,8 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">goitrogen 생성과 갑상선종<span>
 
-<span class="substance">cruciferous vegitable - progoitrin(glucosinolate)</span> -> <span class="organ">myrosinase</span> -> <span class="interaction">hydrolysis</span> -> <span class="substance">aglycone</span> -> <span class="substance">goitrin(lactone)</span> -> <span class="organ">thyroid gland - NIS</span> -> <span class="interaction">disrupt iodine absorption</span>
--> <span class="organ">pituitary gland</span> -> <span class="substance">TSH</span> -> <span class="disease">goiter
+<span class="substance">cruciferous vegitable - progoitrin(glucosinolate)</span> &rarr; <span class="organ">myrosinase</span> &rarr; <span class="interaction">hydrolysis</span> &rarr; <span class="substance">aglycone</span> &rarr; <span class="substance">goitrin(lactone)</span> &rarr; <span class="organ">thyroid gland - NIS</span> &rarr; <span class="interaction">disrupt iodine absorption</span>
+&rarr; <span class="organ">pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="disease">goiter
 
 - progoitrin은 glucosinolate의 일종이다. sulforaphane 생성 과정 처럼 채소 세포가 파괴 될 때 myrosinase 효소와 접촉되어 goitrin 물질이 된다.</span>
 
@@ -1607,7 +1607,7 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">칼륨(potassium)과 나트륨(sodium)펌프 상호작용</span>
 
-<span class="substance">ATP + 2K<sup>+</sup></span> -> <span class="organ">membrane - sodium-potassium ATPase(Na<sup>+</sup> / K<sup>+</sup> pump)</span> -> <span class="substance">ADP + P<sub>i</sub> + 3Na<sup>+</sup></span>
+<span class="substance">ATP + 2K<sup>+</sup></span> &rarr; <span class="organ">membrane - sodium-potassium ATPase(Na<sup>+</sup> / K<sup>+</sup> pump)</span> &rarr; <span class="substance">ADP + P<sub>i</sub> + 3Na<sup>+</sup></span>
 
 - 체내로 들어온 칼륨 이온은 세포에 있는 [sodium-potassium ATPase](https://en.wikipedia.org/wiki/Sodium%E2%80%93potassium_pump) 라는 효소에 의해 세포 내부의 칼륨, 나트륨 농도가 조절된다.
 
@@ -1621,7 +1621,7 @@ stress -> hypothalamus -> sympathetic nervous system -> adrenal medulla -> epine
 
 <span class="title">고칼륨혈증 - hyperkalemia</span>
 
-<span class="organ">kidney - eGFR &lt; 45</span> -> <span class="disease">hyperkalemia</span> -> <span class="organ">adrenal cortex</span> -> <span class="substance">aldosterone</span> -> <span class="organ">nephron - distal convoluted tubule</span> -> <span class="organ">collecting duct</span> -> <span class="interaction">excretion potassium + reabsorption sodium</span> -> <span class="disease">electrolyte imbalance</span>
+<span class="organ">kidney - eGFR &lt; 45</span> &rarr; <span class="disease">hyperkalemia</span> &rarr; <span class="organ">adrenal cortex</span> &rarr; <span class="substance">aldosterone</span> &rarr; <span class="organ">nephron - distal convoluted tubule</span> &rarr; <span class="organ">collecting duct</span> &rarr; <span class="interaction">excretion potassium + reabsorption sodium</span> &rarr; <span class="disease">electrolyte imbalance</span>
 
 - 칼륨은 신장을 통해 배출되어야 하는데, **사구체 여과율(eGFR - glomerulus filteration rate)** 이 낮으면 칼륨이 배출 되지 않게되어 [고칼륨혈증(hyperkalemia)](https://en.wikipedia.org/wiki/Hyperkalemia) 상태가 될 수 있다.
 
