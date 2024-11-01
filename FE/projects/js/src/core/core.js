@@ -6,9 +6,7 @@ export class Component {
         this.props = props
         this.render()
     }
-    render() {
-        console.log('component Render')
-    }
+    render() {}
 }
 
 function routeRender(routes) {
@@ -36,8 +34,6 @@ function routeRender(routes) {
         acc[key] = value
         return acc
     }, {})
-
-    console.log(query)
 
     history.replaceState(query, '')
 

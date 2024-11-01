@@ -8,3 +8,7 @@ dist
 /FE/projects/*
 /FE/projects/js*
 /FE/projects/movie-app/*
+.DS_Store
+.vscode
+.vercel
+.env
