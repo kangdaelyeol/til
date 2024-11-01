@@ -405,3 +405,12 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Not Found */
+
+.not-found h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--color-white-10);
+  text-align: center;
+}
