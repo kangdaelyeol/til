@@ -64,7 +64,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ```text
 Estrogen - Estrogen Receptor
----> COX-1, COX-2 Transcirptional Activation(전사 활성화)
+--&rarr; COX-1, COX-2 Transcirptional Activation(전사 활성화)
 COX-1, COX-2 - PG합성 효소
 ```
 
@@ -96,7 +96,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 그래서 간이 손상된 경우 간세포가 파괴 되어 해당 효소가 혈액으로 방출이 되어 이 효소가 피검사에서 검출되는 것이다.
 
-`노화의 속도를 늦춘다 -> 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리곘다.`
+`노화의 속도를 늦춘다 &rarr; 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리곘다.`
 
 ## Dopamine
 
@@ -138,11 +138,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. 단백질의 정상 해독 과정</span>
 
-- <span class="substance">protein</span> -> <span class="interaction">metabolism</span> -> <span class="substance">ammonia(byproduct)</span> -> <span class="organ">liver</span> -> <span class="interaction">urea cycle</span> -> <span class="substance">urea</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+- <span class="substance">protein</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">ammonia(byproduct)</span> &rarr; <span class="organ">liver</span> &rarr; <span class="interaction">urea cycle</span> &rarr; <span class="substance">urea</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
 <span class="title">2. 신장 기능 저하로 인한 위험</title>
 
-- <span class="substance">ammonia</span> -> <span class="interaction">accumulation</span> -> <span class="disease">encephalopathy(간성혼수)</span>
+- <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease">encephalopathy(간성혼수)</span>
 
 <hr />
 
@@ -160,11 +160,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
 
-- <span class="substance">purine</span> -> <span class="organ">liver</span> -> <span class="substance">uric acid</span> -> <span class="organ">kidney</span> -> <span class="interaction">배출</span>
+- <span class="substance">purine</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">uric acid</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
 <span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
 
-- <span class="substance">uric acid</span> -> <span class="disease">gout(통풍)</span>
+- <span class="substance">uric acid</span> &rarr; <span class="disease">gout(통풍)</span>
 
 <hr />
 
@@ -182,13 +182,13 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. estrogen의 정상 해독 과정</span>
 
-- <span class="substance">estrogen</span> -> <span class="organ">CYP1A1 / CYP1B1</span> -> <span class="interaction">hydroxylation</span> -> <span class="substance">2/4-hydroxyestrogen</span> -> <span class="organ">COMT</span> -> <span class="interaction">methylation</span> -> <span class="substance">2/4-methoxyestrogen</span> -> <span class="interaction">대/소장 배출</span>
+- <span class="substance">estrogen</span> &rarr; <span class="organ">CYP1A1 / CYP1B1</span> &rarr; <span class="interaction">hydroxylation</span> &rarr; <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="organ">COMT</span> &rarr; <span class="interaction">methylation</span> &rarr; <span class="substance">2/4-methoxyestrogen</span> &rarr; <span class="interaction">대/소장 배출</span>
 
-- <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">glutathione</span> -> <span class="interaction">결합</span> -> <span class="interaction">대/소장 배출
+- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">glutathione</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="interaction">대/소장 배출
 
 <span class="title">2. estrogen의 비정상 해독 과정</span>
 
-- <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">quinone</span> -> <span class="substance">DNA</span> -> <span class="interaction">결합</span> -> <span class="substance">DNA adduct</span> -> <span class="disease">carginogenecity(발암성)</span>
+- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">DNA</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="substance">DNA adduct</span> &rarr; <span class="disease">carginogenecity(발암성)</span>
 
 <hr />
 
@@ -212,9 +212,9 @@ COX-1, COX-2 - PG합성 효소
 
   - <span class="title">Estrogen metabolism(Hydroxylation) pathway</span>
 
-    - <span class="substance">estrone / estradiol</span> -> <span class="interaction">CYP1A1(hydroxylation)</span> -> <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
+    - <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1A1(hydroxylation)</span> &rarr; <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
 
-    - <span class="substance">estrone / estradiol</span> -> <span class="interaction">CYP1B1(hydroxylation)</span> -> <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
+    - <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1B1(hydroxylation)</span> &rarr; <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
 
   - 각각 분자 핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.
 
@@ -228,7 +228,7 @@ COX-1, COX-2 - PG합성 효소
 
   - <span class="title">Estrogen metabolism(methylation) pathway</span>
 
-    - <span class="substance">2/4-hydroxyestrogen</span> -> <span class="interaction">"COMT(methylation)</span> -> <span class="substance">2/4-methoxyestrogen</span>
+    - <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="interaction">"COMT(methylation)</span> &rarr; <span class="substance">2/4-methoxyestrogen</span>
 
 - 메틸화까지 완료된 estrogen은 자연적으로 배출이 된다.
 
@@ -236,7 +236,7 @@ COX-1, COX-2 - PG합성 효소
 
 - - <span class="title">Estrogen redox reaction pathway</span>
 
-  - <span class="substance">4-hydroxyestrogen</span> -> <span class="interaction">redox reaction</span> -> <span class="substance">estrogen quinone</span>
+  - <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">estrogen quinone</span>
 
 - quinone은 반응성이 매우 높아서 DNA와 쉽게 결합한다.
 
@@ -260,17 +260,17 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. Glutathione의 정상적인 항산화 과정</span>
 
-- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> -> <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
+- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> &rarr; <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
 
-- <span class="substance">2GSH + <span class="organ">GPx(Sec-SeOH) -> <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
+- <span class="substance">2GSH + <span class="organ">GPx(Sec-SeOH) &rarr; <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
 
-- <span class="substance">GSSG, NADPH, H<sup>+</sup> + <span class="organ">GSR -> <span class="substance">2GSH + <span class="substance">NADP<sup>+</sup>
+- <span class="substance">GSSG, NADPH, H<sup>+</sup> + <span class="organ">GSR &rarr; <span class="substance">2GSH + <span class="substance">NADP<sup>+</sup>
 
 <span class="title">2. 수은으로 인한 셀레늄 결핍 과정</span>
 
-- <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> -> <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
+- <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> &rarr; <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
 
-- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> -> <span class="substance">HgSe, CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
+- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> &rarr; <span class="substance">HgSe, CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
 
 <hr />
 
@@ -318,17 +318,17 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">1. HPT axis</span>
 
-- <span class="organ">Hypothalamus</span> -> <span class="substance">TRH</span> -> <span class="organ">Pituitary gland</span> -> <span class="substance">TSH</span> -> <span class="organ">Thyroid gland</span> -> <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
+- <span class="organ">Hypothalamus</span> &rarr; <span class="substance">TRH</span> &rarr; <span class="organ">Pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="organ">Thyroid gland</span> &rarr; <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
 
 <span class="title">2. 탈아이오딘화 효소와의 상호작용</span>
 
-- <span class="substance">T4</span> -> <span class="organ">D1 / D2</span> -> <span class="substance">T3</span>
+- <span class="substance">T4</span> &rarr; <span class="organ">D1 / D2</span> &rarr; <span class="substance">T3</span>
 
-- <span class="substance">rT3</span> -> <span class="organ">D1</span> -> <span class="substance">T2</span>
+- <span class="substance">rT3</span> &rarr; <span class="organ">D1</span> &rarr; <span class="substance">T2</span>
 
-- <span class="substance">T4</span> -> <span class="organ">D3</span> -> <span class="substance">rT3</span>
+- <span class="substance">T4</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">rT3</span>
 
-- <span class="substance">T3</span> -> <span class="organ">D3</span> -> <span class="substance">T2</span>
+- <span class="substance">T3</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">T2</span>
 
 <hr />
 
@@ -358,7 +358,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 특히 `해조류`에 많이 존재하는 무기 비소는 우리 몸에 좋지 않다.
 
-- `유기 비소`는 수용성이 있어 빠르게 몸에서 배출되어 심각한 독성을 띄지 않는데, 무기 비소는 지용성 독소이기 때문에 몸에서 배출되기 쉽지 않다.
+- `유기 비소`는 수용성이 있어 빠르게 몸에서 배출되어 심각한 독성을 유발하지 않는데, 무기 비소는 지용성 독소이기 때문에 몸에서 배출되기 쉽지 않다.
 
 - 무기 비소는 `mitochondion` 기능 장애를 유발한다.
 
@@ -366,11 +366,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">무기 비소가 mitochondrion에 미치는 영향
 
-- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="interaction">ETC영향</span> -> <span class="interaction">ATP 생성 감소 / ROS 증가</span> -> <span class="interaction">막 투과성 증가</span> -> <span class="interaction">PTP 개방</span>
+- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">ETC영향</span> &rarr; <span class="interaction">ATP 생성 감소 / ROS 증가</span> &rarr; <span class="interaction">막 투과성 증가</span> &rarr; <span class="interaction">PTP 개방</span>
 
-- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="disease">mtDNA 직접적인 손상</span> -> <span class="interaction">PTP개방</span>
+- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="disease">mtDNA 직접적인 손상</span> &rarr; <span class="interaction">PTP개방</span>
 
-- <span class="substance">Inorganic Arsenic</span> -> <span class="organ">mitochondrion</span> -> <span class="interaction">세포 내 칼슘 농도 높임</span> -> <span class="disease">막 전위 붕괴</span> -> <span class="interaction">PTP개방</span>
+- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">세포 내 칼슘 농도 높임</span> &rarr; <span class="disease">막 전위 붕괴</span> &rarr; <span class="interaction">PTP개방</span>
 
 <hr />
 
@@ -384,7 +384,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 또한 여러 루트를 통해 `PTP`를 개방하게 되는데, 이를 통해 `ETC`에서 중요한 역할을 하는 `Cytochrome C`라는 단백질이 세포질로 방출이 된다.
 
-- <span class="interaction">PTP개방</span> -> <span class="interaction">Cytochrome C 세포질 방출</span> -> <span class="interaction">caspase 효소군 활성화</span> -> <span class="disease">apoptosis</span>
+- <span class="interaction">PTP개방</span> &rarr; <span class="interaction">Cytochrome C 세포질 방출</span> &rarr; <span class="interaction">caspase 효소군 활성화</span> &rarr; <span class="disease">apoptosis</span>
 
 - Cytochorome C 는 `Complex3(Coenzyme Q) 복합체`에서 `Complex4 복합체(Cytochrome C oxidase)` 로 전자를 전달하는 역할을 한다.
 
@@ -514,13 +514,13 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">liver blood circulation</span>
 
-- <span class="organ">심장</span> -> <span class="substance">대동맥</span> -> <span class="substance">간동맥</span> -> <span class="organ">간</span> -> <span class="substance">간정맥</span> -> <span class="organ">심장</span>
+- <span class="organ">심장</span> &rarr; <span class="substance">대동맥</span> &rarr; <span class="substance">간동맥</span> &rarr; <span class="organ">간</span> &rarr; <span class="substance">간정맥</span> &rarr; <span class="organ">심장</span>
 
-- <span class="organ">심장</span> -> <span class="substance">대동맥</span> -> <span class="organ">소화기관</span> -> <span class="substance">간문맥</span> -> <span class="organ">간</span> -> <span class="substance">간정맥</span> -> <span class="organ">심장</span>
+- <span class="organ">심장</span> &rarr; <span class="substance">대동맥</span> &rarr; <span class="organ">소화기관</span> &rarr; <span class="substance">간문맥</span> &rarr; <span class="organ">간</span> &rarr; <span class="substance">간정맥</span> &rarr; <span class="organ">심장</span>
 
 <span class="title">간이 독소를 해독하는 과정</span>
 
-- <span class="substance">독소</span> -> <span class="interaction">functionalization(phase 1)</span> -> <span class="substance">중간체(reactive metabolites)</span> -> <span class="interaction">Conjugation pathway(phase 2)</span> -> <span class="substance">water-soluble waste</span> -> <span class="interaction">배출 단계(phase 3)</span>
+- <span class="substance">독소</span> &rarr; <span class="interaction">functionalization(phase 1)</span> &rarr; <span class="substance">중간체(reactive metabolites)</span> &rarr; <span class="interaction">Conjugation pathway(phase 2)</span> &rarr; <span class="substance">water-soluble waste</span> &rarr; <span class="interaction">배출 단계(phase 3)</span>
 
 <hr />
 
@@ -566,7 +566,7 @@ COX-1, COX-2 - PG합성 효소
 
 - 우리가 먹는 약은 간에 무리를 준다고만 알려져있지만, 간 기능이 정상적이어야 약효를 볼 수 있다.
 
-  - `간에서 해독되어야 활성상태`를 띄어 약효를 볼 수 있는 약도 있다. 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
+  - `간에서 해독되어야 활성상태`를 띠어 약효를 볼 수 있는 약도 있다. 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
 
   - 약을 먹었을 때 간기능이 안좋아서 해독을 재때 못해 약효를 예상보다 많이 받아 부작용을 일으키는 경우도 있다.
 
@@ -584,11 +584,11 @@ COX-1, COX-2 - PG합성 효소
 
 <span class="title">담낭(gallbladder)에 쌓이는 담즙</span>
 
-- <span class="substance">cholesterol</span> -> <span class="organ">liver / CYP7A1(8B1)(27A1)</span> -> <span class="substance">bile acid</span> -> <span class="organ">gallbladder</span>
+- <span class="substance">cholesterol</span> &rarr; <span class="organ">liver / CYP7A1(8B1)(27A1)</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="organ">gallbladder</span>
 
-- <span class="substance">cholesterol</span> -> <span class="organ">liver</span> -> <span class="organ">gallbladder</span>
+- <span class="substance">cholesterol</span> &rarr; <span class="organ">liver</span> &rarr; <span class="organ">gallbladder</span>
 
-- <span class="substance">RBC</span> -> <span class="organ">liver</span> -> <span class="substance">bilirubin</span> -> <span class="organ">gallbladder</span>
+- <span class="substance">RBC</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">bilirubin</span> &rarr; <span class="organ">gallbladder</span>
 
 <hr />
 
@@ -596,7 +596,7 @@ COX-1, COX-2 - PG합성 효소
 
   - `담낭에 콜레스테롤이 많고, 적절히 융해 되지 않으면 담석(gallstones)이 생길 수 있다.`
 
-- billirubin은 적혈구가 분해되어 최종적으로 변환된 `혈색소`인데, 이는 담즙에 포함된다. 이 색소 수치가 높으면 황달이라고 한다.
+- bilirubin은 적혈구가 분해되어 최종적으로 변환된 `혈색소`인데, 이는 담즙에 포함된다. 이 색소 수치가 높으면 황달이라고 한다.
 
 - 이 외에도 `인지질(phospholipids)`등 담즙에 포함된 성분이 너무나도 많다.
 
@@ -606,11 +606,11 @@ COX-1, COX-2 - PG합성 효소
 
 `Duodenum(십이지장)에서의 작용`
 
-- <span class="substance">fat</span> -> <span class="substance">bile acid</span> -> <span class="interaction">emulsification</span> -> <span class="interaction">incresed digestive surface area</span> -> <span class="organ">Pancreas</span> -> <span class="substance">lipase</span> -> <span class="interaction">lipid hydrolysis</span> -> <span class="substance">fatty acid + monoglyceride (micelle)</span>
+- <span class="substance">fat</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="interaction">emulsification</span> &rarr; <span class="interaction">incresed digestive surface area</span> &rarr; <span class="organ">Pancreas</span> &rarr; <span class="substance">lipase</span> &rarr; <span class="interaction">lipid hydrolysis</span> &rarr; <span class="substance">fatty acid + monoglyceride (micelle)</span>
 
 `공장(Jejunum), 회장(Ileum)의 역할`
 
-- <span class="substance">micelle</span> -> <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> -> <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
+- <span class="substance">micelle</span> &rarr; <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> &rarr; <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
 
 _Epthelial cells는 모든 부위의 상피세포를 뜻하는 포괄적인 의미_
 
@@ -618,7 +618,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <hr />
 
-- 지방은 duedenum에서 분비된 bile acid에 의해 `emulsification(유화)`되어 `소화 표면적(digestive surface)`를 증가시킨다.
+- 지방은 duodenum에서 분비된 bile acid에 의해 `emulsification(유화)`되어 `소화 표면적(digestive surface)`를 증가시킨다.
 
 - 유화된 지방은 췌장(pancreas)에서 분비된 lipase에 의해 `가수분해(hydrolysis)`되어 지방산(fatty acid)와 monoglyceride로 분해된다.
 
@@ -628,25 +628,25 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">담즙 분비에 도움을 주는 올리브오일</span>
 
-- <span class="substance">olive oil(oleic acid)</span> -> <span class="organ">Duodenum / Jejunum</span> -> <span class="substance">CCK</span> -> <span class="organ">Gallbladder / Pancreas</span> -> <span class="substance">bile / lipase</span> -> <span class="organ">Duodenum</span>
+- <span class="substance">olive oil(oleic acid)</span> &rarr; <span class="organ">Duodenum / Jejunum</span> &rarr; <span class="substance">CCK</span> &rarr; <span class="organ">Gallbladder / Pancreas</span> &rarr; <span class="substance">bile / lipase</span> &rarr; <span class="organ">Duodenum</span>
 
 <hr />
 
 - 올리브 오일에 포함된 `oleic acid(올레산)`은 `단일 불포화 지방산(MUFA - Monounsaturated Fatty Acid)`로써 duodenum과 Jejunum을 자극해 상피세포에서 [CCK(cholecystokinin)](https://en.wikipedia.org/wiki/Cholecystokinin)을 분비하게 한다.
 
-- 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase분비를 촉진한다.
+- 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase분비를 촉진한다[
 
-## Enterohepatic Circulation - 장간 순환
+## Enterohepatic Circulation - ](#enterohepatic-circulation---장간)장간
 
 - 우리 몸에 있는 `담즙산(bile acid)`은 `enterohepatic circulation(장간 순환)`를 통해 `재사용` 된다.
 
 <hr />
 
-<span class="title">Entrohepatic circulation pathway</span>
+<span class="title">Enterohepatic circulation pathway</span>
 
-<span class="organ">liver</span> -> <span class="substance">bile acid(secretion)</span> -> <span class="organ">gallbladder</span> -> <span class="organ">small intestine</span> -> <span class="organ">Ileum</span> -> <span class="organ">portal vein</span> -> <span class="organ">liver</span>
+<span class="organ">liver</span> &rarr; <span class="substance">bile acid(secretion)</span> &rarr; <span class="organ">gallbladder</span> &rarr; <span class="organ">small intestine</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
 
-<span class="substance">bile acid</span> -> <span class="organ">Ileum</span> -> <span class="organ">colon</span> -> <span class="organ">portal vein</span> -> <span class="organ">liver</span>
+<span class="substance">bile acid</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">colon</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
 
 <hr />
 
@@ -680,13 +680,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">stomach protein digest pathway</span>
 
-- <span class="organ">stomach-cheif cells</span> -> <span class="substance">pepsinogen</span>
+- <span class="organ">stomach-cheif cells</span> &rarr; <span class="substance">pepsinogen</span>
 
-- <span class="organ">stomach-parietal cells</span> -> <span class="substance">gastric acid</span>
+- <span class="organ">stomach-parietal cells</span> &rarr; <span class="substance">gastric acid</span>
 
-- <span class="substance">gastric acid</span> -> <span class="organ">pepsinogen</span> -> <span class="interaction">acivation</span> -> <span class="substance">pepsin</span>
+- <span class="substance">gastric acid</span> &rarr; <span class="organ">pepsinogen</span> &rarr; <span class="interaction">acivation</span> &rarr; <span class="substance">pepsin</span>
 
-- <span class="substance">protein</span> -> <span class="interaction">pepsin(break down)</span> -> <span class="substance">peptide</span> -> <span class="organ">small instestine</span> -> <span class="substance">amino acid</span>
+- <span class="substance">protein</span> &rarr; <span class="interaction">pepsin(break down)</span> &rarr; <span class="substance">peptide</span> &rarr; <span class="organ">small instestine</span> &rarr; <span class="substance">amino acid</span>
 
 <hr />
 
@@ -798,7 +798,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 위의 벽층이 손상되어 mucosa(점막층)의 epithelium(상피층)이 손상이 되는 병적 상태를 [위미란(Gastric Erosion)](https://en.wikipedia.org/wiki/Gastric_erosion)이라고 한다.
 
-- mucosa의 epithelium -> lamina propria -> muscularis mucosae 손상을 넘어 submucosa의 손상이 시작된 상태를 [위궤양(gastric ulcer)](https://en.wikipedia.org/wiki/Peptic_ulcer_disease)라고 한다.
+- mucosa의 epithelium &rarr; lamina propria &rarr; muscularis mucosae 손상을 넘어 submucosa의 손상이 시작된 상태를 [위궤양(gastric ulcer)](https://en.wikipedia.org/wiki/Peptic_ulcer_disease)라고 한다.
 
 - 보통 궤양이 발생하는 이유는 [진통소염제(NSAID)](https://en.wikipedia.org/wiki/Non-steroidal_anti-inflammatory_drug), 또는 [helicobacter-pylori](https://en.wikipedia.org/wiki/Helicobacter_pylori) 감염때문이라 한다.
 
@@ -820,7 +820,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title">gliadin이 장누수를 일으키는 과정</span>
 
-- <span class="substance">gliadin</span> -> <span class="organ">jejunum(epithelium cell)-CXCR3</span> -> <span class="interaction">combination</span> -> <span class="substance">zonulin</span> -> <span class="interaction">tight junction</span> -> <span class="disease">leaky gut</span>
+- <span class="substance">gliadin</span> &rarr; <span class="organ">jejunum(epithelium cell)-CXCR3</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">zonulin</span> &rarr; <span class="interaction">tight junction</span> &rarr; <span class="disease">leaky gut</span>
 
 **CXCR3 - CXC [Chemokine](https://en.wikipedia.org/wiki/Chemokine#CXC_chemokines) Receptor - 3**
 
@@ -890,9 +890,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="substance">Glutathione</span> = <span class="substance">Glutamate</span> + <span class="substance">Cysteine</span> + <span class="substance">Glycine</span>
 
-<span class="substance">Glutmine / Cysteine</span> -> <span class="organ">GCL</span> -> <span class="substance">r-Glutamylcysteine</span>
+<span class="substance">Glutmine / Cysteine</span> &rarr; <span class="organ">GCL</span> &rarr; <span class="substance">r-Glutamylcysteine</span>
 
-<span class="substance">r-Glutamylcysteine / Glycine</span> -> <span class="organ">GSS</span> -> <span class="substance">Glutathione</span>
+<span class="substance">r-Glutamylcysteine / Glycine</span> &rarr; <span class="organ">GSS</span> &rarr; <span class="substance">Glutathione</span>
 
 [GCL - Glutamate-Cysteine ligase(연결효소)](https://en.wikipedia.org/wiki/Glutamate%E2%80%93cysteine_ligase)
 
@@ -916,13 +916,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 [GCLM - GCL Modifier subunit](https://en.wikipedia.org/wiki/GCLM)
 
-<span class="substance">Sulforaphane</span> -> <span class="substance">KEAP1</span> -> <span class="interaction">inactive</span> -> <span class="substance">NRF2</span> -> <span class="organ">ARE</span> -> <span class="interaction">composition</span> -> <span class="interaction">transcription</span> -> <span class="substance">mRNA</span> -> <span class="organ">Ribosome</span> -> <span class="substance">GCLC/GCLM</span>
+<span class="substance">Sulforaphane</span> &rarr; <span class="substance">KEAP1</span> &rarr; <span class="interaction">inactive</span> &rarr; <span class="substance">NRF2</span> &rarr; <span class="organ">ARE</span> &rarr; <span class="interaction">composition</span> &rarr; <span class="interaction">transcription</span> &rarr; <span class="substance">mRNA</span> &rarr; <span class="organ">Ribosome</span> &rarr; <span class="substance">GCLC/GCLM</span>
 
-- `NRF2-KEAP1 pathway`
+- ### NRF2-KEAP1 pathway
 
   - [세포질(Cytoplasm)](https://en.wikipedia.org/wiki/Cytoplasm)에는 KEAP1 단백질과 NRF2 전사인자가 있는데, 평소에는 KEAP1단백질이 NRF2에게 ubiquitination 작용을 해서 [ubiquitin 단백질](https://en.wikipedia.org/wiki/Ubiquitin)을 결합한 결과 NRF2효소의 [proteasome](https://en.wikipedia.org/wiki/Proteasome)분해를 촉진시킨다.
 
-- `NRF2-ARE pathway`
+- ### NRF2-ARE pathway
 
   - 하지만 산화 스트레스(Oxidative stress)또는 Sulforaphane물질등 외부 요인으로 인해 NRF2를 분해하던 KEAP1이 변형되어 활동이 억제된다.
 
@@ -933,3 +933,702 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
   - 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)**를 촉진한다.
 
   - 결과적으로 해당 단백질 발현과 관련된 mRNA이 생성되고, Ribosome에 전달되고, 번역(translation)을 통해 GCLC, GCLM이 합성된다.
+
+## liposomal glutathione
+
+- 우리 몸에 항산화 작용을 촉진하기 위해 Glutathione자체를 구입해서 먹는 경우가 있다. 하지만 이는 효과가 거의 없을 것이다.
+
+- Glutathione은 glutamic acid, cysteine, glycine 세 아미노산의 결합체인 tripeptide인데, 이를 섭취하면 glutathione은 보통 위에서 분해되어 세 아미노산을 섭취하는 것과 동일 하게 된다.
+
+- 몸에서 Glutathione합성을 촉진하기 위해 [NRF2-ARE pathway](#nrf2-are-pathway)를 유도해야 하는데, 여기서 합성에 필요한 cysteine은 체내에서 합성되기도 하지만, 필요에 따라 이보다 섭취량이 더욱 권장되는 아미노산이기 때문에 이를 따로 섭취해주는 경우가 있다. 이 경우 glutathione을 섭취하는 것 보단 합리적이다. 하지만 진정한 본질인 `NRF2-ARE pathway`를 활성화 하기엔 부족하다.
+
+- 그래서 glutathione을 그대로 보존하면서 전달해야 하는데, 이 때 liposomal glutathione을 섭취하는 것은 그나마 도움이 될 수 있다고 한다. 즉 glutathione을 [liposome](https://en.wikipedia.org/wiki/Liposome)에 감싼 형태를 섭취하는 것이다.
+
+- liposome은 최소 하나의 [lipid bilayer](https://en.wikipedia.org/wiki/Lipid_bilayer)를 포함하는 작은 인공적인 [vesicle](<https://en.wikipedia.org/wiki/Vesicle_(biology_and_chemistry)>)이다.
+
+- liposome은 위의 소화효소에 저항성을 가진다. 그래서 glutathione을 liposome으로 감싸면 안전하게 소장까지 운반할 수 있다.
+
+- 이렇게 운반된 liposomal glutathione은 소장의 **epithelial cell**에 의해 흡수되는데, 일반적으로 endocytosis를 통해 흡수된다.
+
+  - **endocytosis(세포 내 이입)** : liposomal glutathione이 세포 내로 그대로 들어와 흡수된다.
+
+## Secretin
+
+- 해독을 위해 담즙 분비가 중요하다.
+
+- 담즙 분비를 위해선 기본적으로 담즙을 생성 해야 한다.
+
+- [담즙 생성을 위해 식초(Apple cider viniger)](https://en.wikipedia.org/wiki/Apple_cider_vinegar)를 섭취하면 좋다
+
+- 식초에 있는 [Acetic acid](https://en.wikipedia.org/wiki/Acetic_acid)(초산)은 duodenum(십이지장)에서 [secretin](https://en.wikipedia.org/wiki/Secretin) 분비를 촉진시킨다.
+
+- 분비된 secretin은 **pancrea**에서 **pancreatic juice(췌장액)** 분비를 촉진하고, pancreatic juice에 포함된 biocabonate(중탄산염)는 duodenum의 산성환경을 중화시켜준다.
+
+- 또한 secretin은 간에서 bile생성을 촉진해 **gallbladder(담낭)** 으로 축적한다. 이후 [Cholecystokinin(CCK)](https://en.wikipedia.org/wiki/Cholecystokinin)에 의해 담낭이 수축되어 담즙이 분비된다.
+
+## Urine output
+
+- 우리 혈액에 쌓인 노폐물은 간을 거쳐 신장에 도달해 여과과정을 거치고, 소변을 통해 배출이 된다.
+
+- 혈액에 쌓인 노폐물중에 해독된 독소, 즉 몸에서 배출될 수 있는 형태인 **친수성(Hydrophilic)** 독소 형태로 존재하는데, 신장에서 여과되는 혈액의 `pH농도`가 강산성 또는 알칼리성을 띠는 경우 **비이온화 상태**가 되어 **친유성(lipophilic)** 상태가 되고 `재흡수(reabsorption)`될 가능성이 있다.
+
+<span class="title">혈액이 여과되는 과정</span>
+
+<span class="substance">Blood with waste</span> - <span class="organ">(kidney) - nephron - glomerulus<span class="interaction">(filteration)</span> </span> &rarr; <span class ="organ">(renal tubule) - proximal convoluted tubule<span class="interaction">(filteration)</span> - loop of henl<span class="interaction">(filteration)</span> - distal convoluted tubule<span class="interaction">(filteration)</span> </span> &rarr; <span class="organ">collecting duct</span> &rarr; <span class="organ">renal pelvis</span> &rarr; <span class="organ">ureter</span> &rarr; <span class="organ">bladder</span> &rarr; <span class="substance">urine output</span>
+
+- 신장(kidney)에는 약 100만개의 **nephron** 이 있고, 각각의 nephron에는 혈액을 여과하는 **사구체(glomerulus)** 와 혈액을 운반하는 **신세뇨관(renal tubule)** 이 있다.
+
+- glomerulus에서 혈액의 1차 여과가 발생하고 나머지 혈액은 renal tubule에서 여과가 이루어진다.
+
+- renal tubule는 **원위 세뇨세관(PCT: Proximal Convoluted Tubule)**
+
+- **Henel 고리(Loop of Henel)** - **근위 세뇨세관(DCT: Distal Convoluted Tubule)** - **집합관(Collecting duct)** 네 부분으로 이루어져 있는데, PCT - Loop of Henel - DCT를 거치는동안 여과가 발생한다. 여기서 여과를 거친 혈액은 `신장 모세혈관(peritubular capillary)`를 거쳐 흡수된다. 집합관에서는 여과가 발생하지 않는다.
+
+- 과정을 모두 마친 잔여물은 **집합관(Collecting duct)** 에서 **신우(renal pelvis)** 로 이동하고 신장을 빠져나와 **요관(Ureter)** 을 거쳐 **방광(bladder)** 으로 축적되어 소변으로 배출된다.
+
+- 여기서 여과되는 혈액이 **강산성**을 띠는 경우 친수성(hydrophilic)의 산성 독소가 **H<sup>+</sup>** 을 얻어 **친유성(lipophilic)** 을 띠어 세포막으로 쉽게 들어갈 수 있는 구조가 되어 **peritubular capillary** 를 통한 **재흡수** 가 발생할 수 있다.
+
+- 알칼리성 독소도 마찬가지인데, 우리 현대의 식습관은 혈액을 산성으로 만들기에 최적화 되어 있다. **동물성 단백질, 과다한 염분 섭취** 가 대표적이다.
+
+- 결과적으로 알칼리성 식품도 균형 있게 섭취함으로써 신장 혈액의 pH 농도를 적절히 유지하고, 독소 재흡수를 방지할 수 있다.
+
+## Mitochondrion
+
+- Mitochondrion은 ATP합성에 핵심적인 역할을 하는 **세포 소기관** 이다.
+
+- Mitochondrion의 내막(inner membrane)에 존재하는 [ETC(Electron Transport Chain)](https://en.wikipedia.org/wiki/Electron_transport_chain)라는 **단백질 복합체** 가 있다.
+
+- 이들은 ATP합성을 위해 전자를 전달하는데, 복합체들이 전자를 전달하는 과정에서 발생하는 전자 누수로 인해 `ROS(Reactive Oxygen Species)`가 생성될 수 있다.
+
+<span class="title">ETC내 전자를 전달하는 과정</span>
+
+![Etc process in mitochondrion image](./images/detox_etc.png)
+
+---
+
+<span class="organ">Complex I</span> / <span class="substance">NADH</span> &rarr; <span class="organ">ubiquinone(CoQ)</span> &rarr; <span class="organ">Complex III</span> + <span class="substance">NAD<sup>+</sup></span> / <span class="substance">H<sup>+<sup></span>
+
+<span class="organ">Complex II</span> / <span class="substance">succinate(succinic acid)</span> &rarr; <span class="organ">ubuquinone(Q)</span> &rarr; <span class="organ">Complex III</span>
+
+- Complex I이 NADH에 있는 전자를 [ubuquinone(CoQ)](https://en.wikipedia.org/wiki/Coenzyme_Q10)을 통해 Complex III 로 전달하거나, Complex II가 **succinate(석신산)** 을 통해 전자를 Complex III로 전달한다.
+
+- 내막에 존재하는 Complex I 은 Complex I &rarr; Complex III 과정에서 Complex I 은 기질(matrix)에서 막간(intermembrane)으로 양성자(proton)을 이동(pump) 시킨다.
+
+  - `proton을 intermembrane으로 pump함으로써 proton gradient(프로톤 기울기)를 형성한다. 이는 Chemiosmotic phosphorylation(화학삼투적 인산화)를 통해 ATP를 생성하는데 필요하다.`
+
+- Complex I &rarr; Complex III 전달 과정중에 **전자누수(electron leak)** 가 발생할 가능성이 있다.
+
+---
+
+<span class="organ">Complex III</span> &rarr; <span class="organ">Cyt C</span> &rarr; <span class="organ">Complex IV</span>
+
+- Complex III는 전자를 [Cyt c(Cytochrome C)](https://en.wikipedia.org/wiki/Cytochrome_c)를 통해 Complex IV로 전달한다.
+
+- 이 과정중에도 Complex I &rarr; Complex III 전자 전달 과정처럼 **전자누수** 가 발생할 가능성이 있다.
+
+- 또한 **기질(matrix)** 에서 **막간(intermembrane)** 으로 양성자(proton)을 이동(pump) 시킨다.
+
+---
+
+<span class="substance">O<sub>2</sub></span> &rarr; <span class="organ">Complex IV</span> &rarr; <span class="substance">H<sub>2</sub>O</span>
+
+- Complex IV는 산소를 받아 물(H<sub>2</sub>O)을 생성한다.
+
+- 이 과정중에도 **전자누수** 가 발생할 가능성이 있다.
+
+- 또한 **기질(matrix)** 에서 **막간(intermembrane)** 으로 **양성자(proton)** 을 이동(pump) 시킨다.
+
+---
+
+<span class="substance">ADP / P<sub>i</sub></span> &rarr; <span class="organ">ATP synthase(Complex V)</span> &rarr; <span class="substance">H<sup>+</sup>(proton)</span> &rarr; <span class="interaction">chemiosmotic phosphorylation</span> &rarr; <span class="substance">ATP</span>
+
+- ATP synthase(Complex V)는 Complex I, III, IV가 전자를 전달하면서 막간으로 이동시킨 proton을 [chemiosmotic phosphorylation(화학 삼투적 인산화)](https://en.wikipedia.org/wiki/Chemiosmosis)작용을 통해 다시 maxrix(기질)로 이동시키며 ATP를 합성한다.
+
+---
+
+<span class="title">ETC 전자 누수로 인한 ROS 생성 과정</span>
+
+<span class="substance">O<sub>2</sub></span> + <span class="substance">e<sup>-</sup></span> &rarr; <span class="substance">O<sub>2</sub><sup>-</sup>(superoxide)</span> &rarr; <span class="organ">SOD</span> &rarr; <span class="substance">H<sup>2</sup>O<sup>2</sup>(hydrogen peroxide)</span> &rarr; <span class="substance">Fe<sup>2+</sup></span> &rarr; <span class="interaction">Fenton Reaction</span> &rarr; <span class="substance">OH(Hydroxyl Radical)</span> + <span class="substance">Fe<sup>3+</sup></span>
+
+- 산소는 누수된 전자와 결합하여 [superoxide(초과산화물 / O<sub>2</sub><sup>-</sup>)](https://en.wikipedia.org/wiki/Superoxide)이 된다
+
+- superoxide는 [SOD(superoxide dismutase)](https://en.wikipedia.org/wiki/Superoxide_dismutase) 에 의해 proton과 결합되어 **hydrogen peroxide(과산화수소 / H<sup>2</sup>O<sup>2</sup>)** 를 생성한다.
+
+- hydrogen peroxide는 2가 철(Fe<sup>2+</sup>)을 촉매로써 [fenton reaction(fenton's reagent)](https://en.wikipedia.org/wiki/Fenton%27s_reagent)작용에 의해 분해 되고 결과적으로 OH(hydroxyl radical)이 생성된다.
+
+- superoxide(O<sub>2</sub><sup>-</sup>), hydrogen peroxide(H<sup>2</sup>O<sup>2</sup>), hydroxyl radical(OH)는 모두 ROS이며 우리 몸에 산화적 스트레스(oxidative stress)를 준다.
+
+- 특히 `hydroxyl radical(OH)`는 반응성이 매우 높아 짧은 순간에 DNA, 단백질 지질등과 결합해 **세포 손상**을 일으킬 수 있다.
+
+## Cortisol - stress hormone
+
+- 우리는 스트레스를 받으면 cortisol 호르몬을 방출한다.
+
+- cortisol은 [HPA axis](https://en.wikipedia.org/wiki/Hypothalamic%E2%80%93pituitary%E2%80%93adrenal_axis) 상호작용에 의해 분비된다.
+
+![HPA Axis schamtic img sample](./images/hpa_axis.png)
+
+<span class="title">HPA axis에 의해 cortisol이 분비되는 과정</span>
+
+<span class="interaction">stress</span> &rarr; <span class="organ">Hypothalamus</span> &rarr; <span class="substance">CRH</span> &rarr; <span class="organ">Anterior pituitary gland</span> &rarr; <span class="substance">ACTH</span> &rarr; <span class="organ">Adrenal cortex</span> &rarr; <span class="substance">cortisol</span> &rarr; <span class="interaction">homeostasis</span>
+
+---
+
+- 스트레스를 받으면 **Hypothalamus(시상하부)** 에서 [CRH(부신피질 자극 호르몬 방출 호르몬 - corticotropin-realeasing hormone)](https://en.wikipedia.org/wiki/Corticotropin-releasing_hormone)을 분비한다.
+
+- **CRH** 에 의해 자극받은 **Anterior pituitary(뇌하수체 전엽)** 은 [ACTH(부신피질 자극 호르몬 - adrenocorticotropic hormone)](https://en.wikipedia.org/wiki/Adrenocorticotropic_hormone)을 분비한다.
+
+- **ACTH** 은 [부신 피질(adrenal cortex)](https://en.wikipedia.org/wiki/Adrenal_cortex)을 자극해서 cortisol을 분비하게 한다, cortisol은 우리몸의 **항상성(homeostasis)** 을 조절하는 역할을 한다.
+
+- **cortisol** 은 우리 몸에 스트레스를 받을 때 면역 시스템을 조절하고, 에너지 대사를 조절하는 등 중요한 역할을 하지만, 오랫동안 cortisol에 노출되면 좋지 않다.
+
+- cortisol은 `T cell, B cell, NK cell과 같은 leukocyte(백혈구)`의 **apoptosis** 를 유도하고, 면역 반응 조절에 중요한 단백질인 [cytokine](https://en.wikipedia.org/wiki/Cytokine) 분비를 억제한다.
+
+  - T cell의 억제 외에 cortisol은 T cell을 생성하는 [Thymus(흉선)](https://en.wikipedia.org/wiki/Thymus)에도 영향을 주어 **thymic involution(흉선 위축)**을 가속화 한다.
+
+- 결과적으로 지속적인 cortisol 노출은 [lymphopenia(림프구 저하증)](https://en.wikipedia.org/wiki/Lymphocytopenia)으로 이어져 면역력이 약해질 수 있다.
+
+- 물론 `blood cortisol concentration` 이 높은 경우 시상하부와 뇌하수체 전엽에서 CRH / ACTH 분비를 조절하지만, 이에 의존해서는 안된다.
+
+- 따라서 우리는 스트레스를 받지 않기 위한 신체적, 정신적 관리가 필요하다.
+
+---
+
+<span class="title"> stress에 의해 epinephrine(adrenaline)이 분비되는 과정</span>
+
+stress &rarr; hypothalamus &rarr; sympathetic nervous system &rarr; adrenal medulla &rarr; epinephrine / norepinephrine
+
+- 스트레스가 **hypothalamus** 를 자극하면 CRH 분비 외에도 [교감 신경계(SNS - sympathetic nervous system)](https://en.wikipedia.org/wiki/Sympathetic_nervous_system)에 직접적인 자극을 준다.
+
+- 자극을 받은 **SNS** 은 [adrenal medulla(부신 수질)](https://en.wikipedia.org/wiki/Adrenal_medulla)을 자극하고, adrenal medulla에서 [epinephrine](https://en.wikipedia.org/wiki/Adrenaline)과 [norepinephrine](https://en.wikipedia.org/wiki/Norepinephrine) 호르몬이 분비된다.
+
+- 분비되는 epineprine과 norepinephrine의 비율은 **4:1** 정도이며 **epinephrine(adrenaline)** 호르몬은 [fight-or-flight response](https://en.wikipedia.org/wiki/Fight-or-flight_response) 반응을 일으키는 주 호르몬이다.
+
+## Vitamin E
+
+- 항산화 효과를 위해선 Vitamin E를 섭취하는 것도 중요하다
+
+- Vitamin E는 지질 산화물에 대한 항산화 효과가 있으며 Ascorbic Acid와 상호작용한다.
+
+![interactives in lipid oxidation image](./images/lipid_oxidation.png)
+
+<span class="title">지방이 산화되는 과정 - lipid peroxidation</title>
+
+<span class="substance">free radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="substance">lipid radical</span> &rarr; <span class="substance">O<sub>2</sub></span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">lipid peroxy radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="interaction">combination(chain reaction)</span> &rarr; <span class="substance">lipid peroxide</span>
+
+<span class="substance">lipid peroxide</span> &rarr; <span class="substance">MDA</span> &rarr; <span class="disease">DNA adducts</span>
+
+<span class="substance">lipid peroxide</span> &rarr; <span class="interaction">fenton reaction</span> &rarr; <span class="substance">free radical</span> &rarr; <span class="disease">oxidative stress</span>
+
+---
+
+- lipid oxidation은 크게 3단계로 나누어 볼 수 있다.
+
+- `Initation Phase`
+
+  - 우리 몸에 있는 `불포화지방산(unsaturated fatty acid)`은 [free radical](<https://en.wikipedia.org/wiki/Radical_(chemistry)>)의 공격을 받아 **lipid radical(L•)** 이 된다.
+
+- `Propagation Phase`
+
+  - **lipid radical** 은 **산소(O<sub>2</sub>)** 와 결합해 **lipid peroxy radical(lipid hydroperoxyl radical / LOO•)** 이 된다.
+
+  - **lipid peroxy radical(LOO•)** 은 다시 **unsaturated fatty acid** 과 결합해 **lipid peroxide(lipid hydroperoxide / LOOH)** 가 되고 새로운 **lipid radical(L•)** 을 생성한다. `이 반응은 연쇄적으로 발생한다.`
+
+- `Termination Phase`
+
+  - **lipid peroxide** 는 **철(Fe<sup>2+</sup>)** 과 **fenton reaction** 을 통해 **hydroxyl radical** 을 생성할 수 있고, 자연적으로 분해되어 [MDA(malondialdehyde)](https://en.wikipedia.org/wiki/Malondialdehyde)를 생성할 수 있다.
+
+  - `MDA(malondialdehyde)`는 다른 분자, DNA와 결합해 **DNA adducts**를 생성하거나 **세포 손상**을 일으킨다.
+
+---
+
+<span class="title">Vitamin E - Antioxidant</span>
+
+<span class="substance">vitamin E(reduced) + LOO•(lipid (hydro)peroxy radical)</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">LOOH / tocopheryl radical(oxidized vitamin E)</span>
+
+<span class="substance">ascorbic acid + tocopheryl radical</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">vitamin E(reduced) / dyhydroascorbic adcid(oxidized vitamin C)</span>
+
+<span class="substance">dyhydroascorbic acid + GSH</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">ascorbic acid / GSSG(oxidized GSH)</span>
+
+- vitamin E는 **LOO•(lipid (hydro)peroxy radical)** 에게 `불포화 지방산 대신 수소 원자를 주어` **LOOH(lipid (hydro)peroxide)** 를 생성하게 하고, `L•(lipid radical)을 생성하지 않도록` 해서 **연쇄반응(chain reaction)을 방지** 한다.
+
+- **산화된 vitamin E(tocopheryl radical)**는 **vitamin C(ascorbic acid)** 와 반응해 다시 환원되어 항산화 기능을 할 수 있게 된다.
+
+- 산화된 vitamin C(dyhydroascorbic acid)는 GSH와 반응해 다시 환원된다.
+
+- 이러한 사이클을 통해 항산화 시스템이 형성되므로 vitamin C 뿐만 아닌 vitamin E의 섭취도 중요하다.
+
+## ROS - mitochondrion
+
+- [mitochondrion](#mitochondrion)의 ETC과정에서 전자 누수로 인해 ROS 생성에 관여를 할 수 있다.
+
+- 운동을 할 경우에도 ETC를 통해 ROS가 생성되는데, 운동을 하면서 생기는 ROS는 오히려 **mitochondrion 생합성**과 **산화적 스트레스에 대한 면역력** 에 도움을 줄 수 있다.
+
+<span class="title">운동이 mitochondrion에 영향을 주는 과정</span>
+
+<span class="interaciton">workout</span> &rarr; <span class="substance">ROS</span> &rarr; <span class="interaciton">activation</span> &rarr; <span class="substance">PGC-l⍺</span> &rarr; <span class="interaciton">combination</span> &rarr; <span class="substance">NRF-1</span> &rarr; <span class="interaciton">gene expression regulation</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaciton">endurance capacity</span>
+
+- `PGC-1⍺ - peroxisome proliferator activated receptor 𝛄 coactivator-1⍺, 전사활성 보조인자`
+
+- `NRF-1 - nuclear respiratory factor-1`
+
+---
+
+- 운동을 하면 mitochondrion에 의해 ROS가 생성이 되는데, 운동으로 인한 `적당한 산화적 스트레스` 는 [산화적 스트레스에 대한 면역 향상에 도움을 주고(hormesis)](https://en.wikipedia.org/wiki/Hormesis), 근육 세포에 있는 [전사활성 보조인자(PGC-1⍺)](https://en.wikipedia.org/wiki/Pparg_coactivator_1_alpha)라는 단백질을 활성화 시킨다.
+
+- 활성화된 PGC-1⍺는 [NRF-1](https://en.wikipedia.org/wiki/NRF1) 과 결합을 하고 mitochondrion의 합성과 관련된 유전자 발현을 촉진한다.
+
+- 결과적으로 세포 내 mitochondiron 개체 수가 증가해 **지구력(endurance capacity)** 이 좋아진다.
+
+- 그렇기 때문에 운동 후 **ascorbic acid** 를 고용량으로 섭취하는 것은 면역력 향상에 대해 효율적이지 않은 방법일 수 있다. **(일반적인 식이를 통한 적절한 섭취는 괜찮다.)**
+
+- 운동으로 인해 발생한 ROS가 PGC-1⍺를 활성화 하기 전에 항산화 작용으로 인해 환원이 되어 버리면 mitochondrion 합성에 도움을 줄 수 없기 때문이다.
+
+## Autophagy - 자가 포식
+
+- 우리는 몸의 해독, 항상성 유지를 위해 의도적으로 몸 상태를 자가포식이 활성화 되는 상태로 만들 필요가 있다.
+
+- Autophagy는 우리 몸 안에 있는 손상된 세포, 오래된 세포, 손상된 단백질을 분해하고, 다시 에너지원으로 사용하는 작용이다.
+
+<span class="title">자가 포식이 활성화 되는 과정</span>
+
+<span class="interaction">fasting</span> &rarr; <span class="substance">insulin / glucose / amino acid</span> - <span class="interaction">decrease</span> &rarr; <span class="organ">mTOR</span> - <span class="interaction">inactivated</span> &rarr; <span class="interaction">autophagy</span>
+
+<span class="interaction">fasting</span> &rarr; <span class="organ">AMPK</span> - <span class="interaction">activated</span> &rarr; <span class="interaction">fat decomposition(metabolism)</span> &rarr; <span class="substance">ketone bodies(metabolite)</span> &rarr; <span class="interaction">ketosis</span> &rarr; <span class="disease">ketoacidosis</span>
+
+`mTOR - mammal Target of Rapamycin`
+
+`AMPK - AMP(adenosin monophosphate)-activated protein kinase`
+
+---
+
+- **fasting(단식)** 을 하게 되면 몸의 **insulin, amino acid, glucose(혈당)** 수치가 떨어진다.
+
+- 단식으로 인한 몸의 에너지, 인슐린 수치가 떨어지면 [mTOR(mammalian Target of Rapamycin)](https://en.wikipedia.org/wiki/MTOR) 이라는 효소의 활성이 억제되며 autophagy가 활성화 된다.
+
+  - **mTOR** 효소는 평소에 단백질을 합성하고, **세포 성장(cell growth)** , **증식(cell proliferation)** 에 관여하며 autophagy를 억제하는 효소다.
+
+  - 몸에 세포 성장과 관련된 에너지원이 없게 되면 자연스럽게 활성이 억제되면서, mTOR에 의해 억제되었던 **autophagy** 가 활성화 된다.
+
+- 또한 **fasting(단식)** 은 [AMPK(AMP-activated protein kinase)](https://en.wikipedia.org/wiki/AMP-activated_protein_kinase) 효소를 활성화 시켜 **지방을 분해(fat decomposition)** 하는 대사활동을 활성화 하고, 대사산물로 **케톤체(ketone bodies)** 를 생성한다.
+
+  - **AMPK** 효소는 세포의 에너지 상태를 관찰하며, 세포의 에너지가 부족할 때 활성화되어 지방과 혈당을 대사해서 에너지로 변환하는 역할을 한다.
+
+- 몸에서 **ketone bodies** 가 생성되는 상태를 **ketosis** 라고 한다.
+
+  - ketosis는 몸에서 지방 대사를 통해 배출된 대사산물인 ketone bodies를 에너지원으로 사용하는 대사 상태를 말한다. 그래서 ketosis상태가 되면 지방 분해가 평소보다 더욱 활발해진다.
+
+- ketosis 상태가 과해지면 **ketoacidosis(케토산증)** 이라는 **병적 상태(pathology state)** 가 될 위험이 있다.
+
+  - [ketoacidosis](https://en.wikipedia.org/wiki/Ketoacidosis)는 몸에 산성 물질인 ketone bodies의 농도가 높은 상태를 말한다.
+
+  - 일반적인 식이, 운동 요법으로 **ketoacidosis** 에 걸릴 확률은 매우 희박하고, 보통 인슐린 결핍과 같은 **type 1 diabete(제 1형 당뇨)** 를 가질 경우 ketoacidosis에 취약하다.
+
+## Beteine
+
+- `비트(beet)` 에 포함된 [Betaine(trimethyglycine)](https://en.wikipedia.org/wiki/Betaine)은 유전자 발현 조절에 효과가 있다.
+
+  - 비트(beet)는 서양에서 **사탕무(sugar beet)** 랑 같은 종이지만, 두 채소는 성분이 다르므로 혼동해서는 안된다.
+
+  - 물론 sugar beet에도 betaine이 포함되어 있다. 하지만 sucrose의 비율이 높으므로 주의해야 한다. `(betaine이란 이름은 sugar beet에서 발견되어 독립되어 지어졌고, 이후 성분 분석에 의해 trimethylglycine으로 명명되었다.)`
+
+<span class="title">beteine이 주는 이로움</span>
+
+<span class="substance">betaine</span> - <span class="interaction">methyl donor</span> &rarr; <span class="organ">DNA</span> &rarr; <span class="interaction">Regulation of gene expression</span>
+
+<span class="substance">beteine</span> - <span class="interaction">methyl donor</span> &rarr; <span class="organ">BHMT</span> &rarr; <span class="substance">homocysteine</span> &rarr; <span class="substance">methionine</span>
+
+- `BHMT - Beteine-homocysteine methyltransfrerase`
+
+---
+
+- [betaine](https://en.wikipedia.org/wiki/Betaine)은 **DNA** 에 methyl을 제공해서 유전자 발현을 조절한다. 따라서 필요한 형태, 양의 단백질이 올바르게 합성되어 세포 기능, 대사 조절이 원활하게 이루어진다.
+
+- betaine은 [BHMT](https://en.wikipedia.org/wiki/Betaine%E2%80%94homocysteine_S-methyltransferase)를 통해 [homocysteine](https://en.wikipedia.org/wiki/Homocysteine)에 methyl을 제공함으로써 [methionine](https://en.wikipedia.org/wiki/Methionine)을 생성한다.
+
+  - **homocysteine** 은 **essential amino acid** 인 methionine의 대사산물로 자연스럽게 생성되어 축적되지만, 과다축적이 되면 [hyperhomocysteinemia](https://en.wikipedia.org/wiki/Hyperhomocysteinemia)상태가 되며 **심혈관 질환(cardiovascular disease)** 위험이 높아진다.
+
+## Taste buds
+
+- 혀에는 유두(papillae)가 있고, 각 papillae에는 gustatory receptor cell의 cluster(미각 수용체 세포 - gustatory cell)인 taste buds(미뢰)가 여러 개 있다.
+
+- 혀에는 여러 papillae 부분으로 구분되어 있는데, 주로 4부분으로 나누어 볼 수 있다.
+
+- **papillae**
+
+  - foliate papillae - `(엽상)잎세` 모양(측면 뒤쪽)
+
+  - circumvallate papillae - `(유곽)성곽` 모양(혀 뒷 부분 V자 배열)
+
+  - fungiform papillae - `(심상)버섯` 모양(앞면)
+
+  - filliform papillae - `사상(실, 섬유)` 모양 **(surface of the anterior 2/3 of the tongue)**
+
+- foliate papillae, fungiform papillae, circumvallate papillae는 미뢰(taste buds)가 있으며, 각 taste bud에는 대략 50 ~ 100개의 gustatory cells가 존재한다.
+
+- **filliform papillae** 에는 taste bud이 없고, 혀의 감각, 즉 물리적인 감각(촉각)을 느끼는 부분이라 한다. 그래서 혀의 넓은 부분을 차지한다. 주로 음식을 이동 시키는 등 기계적 기능을 담당한다
+
+<span class="title">맛을 느끼는 과정</span>
+
+<span class="substance">food</span> &rarr; <span class="organ">gustatory cell</span> &rarr; <span class="interaction">chemical reaction</span> &rarr; <span class="interaction">gustatory cell activation</span> &rarr; <span class="substance">neural signal</span> &rarr; <span class="organ">cranial nerve</span> &rarr; <span class="organ">taste center</span> &rarr; <span class="organ">gustatory cortex of insula</span> &rarr; <span class="interaction">recognition of taste</span>
+
+- 음식을 섭취하면 gustatory cell에서 화학반응이 일어나 세포가 활성화되어 신경 신호를 생성한다.
+
+- 생성된 신호는 **cranial nerve(대뇌 신경)** 을 통해 `taste center(미각 중추)` 로 전달되고, **대뇌 피질(celebral cortex)** 의 [insula cortex](https://en.wikipedia.org/wiki/Insular_cortex) 부분의 위치한 **gustatory cortax(미각 피질)** 로 전달되어 우리가 맛을 인지하게 된다.
+
+`미각 신경(taste center)은 사실상 비공식 용어인데, 정확히 미각을 담당하는 중추인 연수(medulla oblongata) &rarr; 시상(thalamus)의 내복측핵(VPM - Ventral posteromedial nucleus) 를 통해 신호가 전달 된다.`
+
+`대뇌 신경에서 안면(facial) 신경, 설인(grossopharyngeal) 신경, 미주(vague) 신경(7, 9 ,10번 대뇌신경)을 통해 미각 신호가 전달된다.`
+
+`gustatory nerve &rarr; taste center &rarr; gustatory cortex의 neural signal전달의 과정은 neurotransmission 과정의 개념이다.`
+
+## RBC - bilirubin
+
+- 담즙의 구성요소인 bilirubin은 적혈구가 파괴되어 생성되는 최종 대사산물이다.
+
+- bilirubin은 우리 몸의 대변(feces)색, 담즙(bile)에 갈색을 띠게 하는 주요 물질이다.
+
+- 혈액(blood stream)에 bilirubin 수치가 높으면 jaundice(황달) 증세가 나타날 수 있다.
+
+![heme metabolism](./images/heme_metabolism.png)
+
+<span class="title">빌리루빈 생성 과정</span>
+
+<span class="substance">RBC</span> &rarr; <span class="organ">liver / spleen</span> &rarr; <span class="interaction">decomposition</span> &rarr; <span class="substance">heme / globin</span>
+
+<span class="substance">globin</span> &rarr; <span class="organ">protease</span> &rarr; <span class="interaction">hydrolysis</span> &rarr; <span class="substance">amino acid</span>
+
+<span class="substance">heme</span> &rarr; <span class="organ">heme oxygenase</span> &rarr; <span class="substance">biliverdin</span> &rarr; <span class="organ">biliverdin reductase</span> &rarr; <span class="substance">unconjugated bilirubin</span> &rarr; <span class="substance">albumin</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="organ">liver</span> &rarr; <span class="organ">UGT1A1</span> + <span class="substance">glucuronic acid</span> &rarr; <span class="substance">bilirubin(conjugated)</span>
+
+<span class="substance">bilirubin</span> &rarr; <span class="organ">bile canaliculi</span> &rarr; <span class="organ">bile duct</span> &rarr; <span class="organ">gallbladder</span> &rarr; <span class="organ">duodenum</span> &rarr; <span class="organ">gutmicrobiota</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">urobilinogen</span> &rarr; <span class="substance">stercobilinogen</span> &rarr; <span class="substance">stercobilin</span> &rarr; <span class="substance">feces</span>
+
+`UGT1A1 - UDP(uridine diphosphate)-glucuronosyltrasferase`
+
+---
+
+- 수명이 다한 적혈구는 liver과 **spleen(비장)** 에서 [heme](https://en.wikipedia.org/wiki/Heme)와 [globin](https://en.wikipedia.org/wiki/Globin)으로 분해된다. 이 과정은 대부분 liver보다 **spleen** 에서 진행된다.
+
+- 여기서 globin은 protease 효소에 의해 amino acid로 가수분해(hydrolysis)되어 재사용 될 수 있게 한다.
+
+- heme는 **heme oxygenase** 효소에 의해 산소(O<sub>2</sub>)를 얻어 [biliverdin](https://en.wikipedia.org/wiki/Biliverdin)이 된다.
+
+  - 이 과정에서 철(Fe<sup>2+</sup>)과 일산화탄소(CO)가 방출된다.
+
+- biliverdin은 **biliverdin reductase** 효소에 의해 환원되어 불용성(insoluble)을 띤 `unconjugated bilirubin` 이 된다.
+
+- unconjugated bilirubin은 간으로 이동하기 위해 혈액의 albumin과 합성된다.
+
+- 간으로 이동한 unconjugated bilirubin은 **UGT1A1 효소** 에 의해 **glucuronic acid** 와 결합하여 수용성(soluble)을 띤 **(conjugated)bilirubin** 이 된다.
+
+- [bilirubin](https://en.wikipedia.org/wiki/Bilirubin) 은 즉시 **duodenum** 으로 이동하거나 bile canaliculi(담즙 모세관)과 bile duct(담관)을 거쳐 gallbladder(담낭)으로 bile(담즙)에 축적되었다 duodenum으로 분비된다.
+
+  - 담낭에 축적된 bilirubin으로 인해 담즙이 황록색을 띤다.
+
+- large intestine(colon)으로 이동한 bilirubin은 [gut microbiota](#gut-microbiota---장내-세균총)에 의해 환원되어 **urobilinogen** 이 된다.
+
+- [urobilinogen](https://en.wikipedia.org/wiki/Urobilinogen)은 바로 **stercobilin** 으로 환원되거나 [stercobilinogen](https://en.wikipedia.org/wiki/Stercobilinogen)으로 환원되었다 **stercobilin** 으로 산화된다, heme 분해 최종산물인 [stercobilin](https://en.wikipedia.org/wiki/Stercobilin)은 **feces(대변)** 이 갈색을 띠게 한다.
+
+- 또한 [enterohepatic circulation(장간 순환)](#enterohepatic-circulation---장간) 에 의해 다시 간으로 흡수되어 처리되고, 소변에 **urobilin** 형태로 배출되어 황색을 띠게 한다.
+
+## Cruciferous Vegetables
+
+- 십자화과 채소는 충분히 입에서 씹은 후 섭취하는 것이 항산화 효과를 최대한 끌어올리는 데 도움을 준다.
+
+<span class="title">양배추를 잘 씹어 먹어야 하는 이유<span>
+
+<span class="substance">cabbage(myrosinase / glucosinolates)</span>- <span class="interaction">physical break down</span> &rarr; <span class="organ">myrosinase</span> &rarr; <span class="substance">glucosinolates</span> - <span class="interaction">hydrolysis</span> &rarr; <span class="substance">aglycone + glucose</span>
+
+<span class="substance">aglycone</span> &rarr; <span class="interaction">external environment(pH, other substances)</span> &rarr; <span class="substance">isothiocyanates(sulforaphane) / nitriles / thiocyanates</span>
+
+- 채소의 항산화 물질 생성은 채소 세포에 있는 [myrosinase](https://en.wikipedia.org/wiki/Myrosinase) 효소가 [glucosinolates](https://en.wikipedia.org/wiki/Glucosinolate) 화합물을 `가수분해(hydrolysis)` 하는 작용에서 부터 시작된다.
+
+- 하지만 myrosinase 효소와 glucosinolates 물질은 채소 내에 따로 분리`(각각 다른 세포에 존재)` 되어 있기 때문에 이 분리된 간격을 **물리적으로 파괴** 해서 myrosinase가 glucosinolates와 접촉할 수 있게 도와줄 필요가 있다.
+
+- 이러한 작용은 외부로부터 채소 자신을 보호하기 위한 **방어 기전** 으로 작용한다. 채소가 외부로부터 손상되면 myrosinase 효소가 glucosinolates와 접촉하여 대사 산물로 독성 물질을 생성하게 되는 것이다.
+
+- 결과적으로 독성물질이 생성 되는데, `적절한 섭취시 항산화 효과등 유익한 효과를 준다고 한다.`
+
+- [sulforaphane](https://en.wikipedia.org/wiki/Sulforaphane)은 glucosinolate 종류인 [glucoraphanin](https://en.wikipedia.org/wiki/Glucoraphanin) 의 분해로 생성된 물질이다. 즉 항산화 물질인 sulforaphane의 효과를 얻기 위해서 myrosinase 효소가 glucosinolates와 접촉해 대사를 할 수 있게 충분히 씹어서 섭취를 해주어야 한다.
+
+- myrosinase 효소는 높은 온도에서 활성이 줄어들기 때문에`(보통 70도가 넘어가면 다 죽는다고 한다.)` **5분 이내** 로 쪄서 먹는 것이 제일 좋다!
+
+## food additive - sugar substitute
+
+- [설탕(sucrose)](https://en.wikipedia.org/wiki/Sucrose)은 [이당류(disaccharide)](https://en.wikipedia.org/wiki/Disaccharide)의 한 종류로, [단당류의(monosaccharide)](https://en.wikipedia.org/wiki/Monosaccharide)의 종류인 [포도당(glucose)](https://en.wikipedia.org/wiki/Glucose)와 [과당(fructose)](https://en.wikipedia.org/wiki/Fructose)의 결합체다.
+
+- sucrose는 빠르게 monosaccharide로 분해되고 흡수되어 혈당을 빨리 올리고, sucrose에 포함된 fructose의 일부는 에너지로 사용될 수 있지만, `대부분 간에서만 대사 되는 당` 이기 때문에 간에 좋지 않다.
+
+- 이러한 건강 문제를 해결하기 위한 설탕 대체제(sugar substitute)가 있다.
+
+### Erythritol
+
+- [에리스리톨(Erythritol)](https://en.wikipedia.org/wiki/Erythritol)은 보통 옥수수에서 **glucose** 를 추출해 **효소(enzyme)** 를 첨가하고, **발효(fermentation)** 과정을 거쳐 최종적으로 합성한 `당 알코올(sugar alcohol)` 이다.
+
+- 약 설탕의 60 - 70%의 단맛을 제공하지만, 칼로리는 거의 없다
+
+- [최근 리포트(2024)](https://en.wikipedia.org/wiki/Erythritol#Safety)에 따르면 erithritol은 **blood clots(혈전증)** 유발과 관련이 있고, **heart disease(심장질환)** 의 위험을 증가시킨다고 한다.
+
+### Xylitol
+
+- [자일리톨(Xylitol)](https://en.wikipedia.org/wiki/Xylitol)은 `birch(자작나무)` 에서 추출한 `sugar alcohol` 이다.
+
+- birch에서 추출되었다고 해서 **birch sugar** 라고도 부른다.
+
+- 약 7정도의 GI수치를 가지고 있다고 하며, [sterptococcus mutans(충치 균)](https://en.wikipedia.org/wiki/Streptococcus_mutans) 의 성장을 억제한다고 한다.
+
+`sugar alcohol 종류는 많이 섭취하게 되면 부작용으로 삼투성 설사(osmotic diarrhea)를 일으킬 수 있으니 조심해야 한다.`
+
+### stevia(steviol glycoside)
+
+- [스테비아(steviol glycoside)](https://en.wikipedia.org/wiki/Steviol_glycoside) 는 **국화과(asteraceae)** 인 **stevia rebaudiana** 라는 식물의 잎에서 추출한 물질이다.
+
+- 설탕보다 30 - 320배의 단맛을 가지고 있다 하는데, 기술 문헌에서는 이를 인정하는 입장은 아니라고 한다. 왜냐하면 이러한 수치는 발효되지 않았고, 안정적 온도, 안정적 pH 환경에서 steviol glycoside에 대한 실험 결과이기 때문이다.
+
+- 인간에게는 steviol glycoside를 대사할 수 있는 효소가 없기 때문에 [혈당 반응(glycemic response)](https://en.wikipedia.org/wiki/Blood_sugar_level)을 일으키기 않는다.
+
+### Allulose
+
+- [알룰로스(Allulose)](https://en.wikipedia.org/wiki/Psicose)는 옥수수(corn), 사탕수수(sugar cane)에서 **fructose** 를 추출해 효소와 함께 **발효(fermentation)** 과정을 거쳐 추출한 D-psicose라는 **단당류(monosaccharide)** 물질이다.
+
+  - D-psicose에서 **D** 는 라틴어로 `Dexter(오른쪽)` 의 의미로, **입체 화학(stereochemistry)** 에서 [chirality(카이랄성)](https://en.wikipedia.org/wiki/Chirality) 성질을 가지며, 즉 [enantiomer(거울상 이성질체)](https://en.wikipedia.org/wiki/Enantiomer) 를 의미한다.
+
+  - 반대형은 `L(laevus)` 형이다.
+
+- 추출량이 적고, 자연적으로 존재하는 양이 드물어 **rare sugar** 라고도 불린다.
+
+- D-psicose는 sucrose와 달리 몸에 거의 흡수되지 않고 대부분 **kidney** 또는 **colon** 을 통해 배출(대부분 신장을 통해) 되어 혈당을 올리지 않고 인슐린 분비도 거의 되지 않는다.
+
+- FDA에서는 **nutrition and supplement facts** 라벨에 D-psicose 당 성분을 `총 당류 성분(total sugars)`에 포함시키지 않아도 된다고 허가 했지만, `총 탄수화물량`에는 1g 당 0.4 kcal로 표기하는 것을 요구한다고 한다.
+
+### luo han guo(mogroside)
+
+- [나한과(luo han guo)](https://en.wikipedia.org/wiki/Siraitia_grosvenorii)는 중국의 나한과(luo han guo - monkfruit)라는 식물이며 여기서 추출한 **sugar substitute** 의 정식 명칭은 [mogroside](https://en.wikipedia.org/wiki/Mogroside)라고 한다,
+
+- mogroside의 종류인 mogroside V는 설탕의 약 100 - 250배정도 단맛을 난다고 하며 우리가 주로 소비하는 '나한과'라고 하는 **sweetener** 는 mogroside 계열중 mogroside V라고 한다.
+
+- 또한 mogroside는 중국에서 치료 목적으로도 사용되는 물질이며 항염증, 항산화 효과가 있다고 한다.
+
+## 애호박 - pectin
+
+- [애호박(Korean zucchini)](https://en.wikipedia.org/wiki/Pectin)은 pectin이라는 성분이 많아 몸에 좋다고 한다.
+
+  - `물론 pectin은 애호박 뿐만이 아닌 식물의 세포 벽에 존재하는 다당류(polysaccharide)라고 한다. - 정확히는 heteropolysaccharide`
+
+- [pectin](https://en.wikipedia.org/wiki/Pectin)은 `수용성 식이섬유(soluble dietary fiber)` 로써, **친수성(hydrophilc)** 을 띤다.
+
+- 따라서 pectin은 장 내에 **물(H<sub>2</sub>O)** 분자와 수소 결합을 통해 수분을 끌어들이며 **팽창** 하여 `gel(겔)` 을 형성한다.
+
+- 형성된 겔은 천천히 흡수되며, 흡수된 수분으로 인해 변의 부피가 증가하고, 부드러운 변을 생성하는데 기여한다.
+
+- gel은 소장의 담즙산(bile acid)와 결합해 채외로 배출하며, 이를 통해 `장간 순환(enterohepatic circulation)` 으로 인한 재흡수가 되지 않는다.
+
+- 부족해진 bile acid를 합성하기 위해선 **콜레스테롤(cholesterol)** 이 필요한데, bile acid가 부족해지면, 간에서는 [LDL(Low-density lipoprotein)](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 을 더욱 끌어다 사용해 `Blood LDL concentration` 이 낮아진다.
+
+## cholesterol
+
+- cholesterol은 sterol의 종류이며 **유기 화합물(organic compound)** 이다 .
+
+- cholesterol은 세포막 유동 안정성, 신경 전달, 담즙산 및 콜레스테롤 생성 등 생명 유지를 위해 필수적인 물질이다.
+
+- 현대 식습관은 영양 과잉으로 콜레스테롤이 몸에 과하게 쌓이는 경우가 많다.
+
+<span class="title">콜레스테롤이 사용되는 과정</span>
+
+<span class="organ">liver</span> &rarr; <span class="substance">VLDL</span> &rarr; <span class="organ">blood</span> &rarr; <span class="organ">lipoprotein lipase</span> &rarr; <span class="interaction">distribution of triglyceride</span> &rarr; <span class="substance">LDL - apolipoprotein</span> &rarr; <span class="interaction">receptor-mediated endocytosis</span> &rarr; <span class="organ">lysosome / endosome</span> &rarr; <span class="interaction">hydrolysis</span>
+
+---
+
+### LDL(low density lipoprotein)
+
+- 콜레스테롤은 간에서 생성된 VLDL에 포함되어 있다.
+
+- [VLDL(Very low density lipoprotein)](https://en.wikipedia.org/wiki/Very_low-density_lipoprotein)은 크게 4가지 물질로 구성되어있다.
+
+  - **phospholipid(인지질)** - VLDL의 수용성 성질을 유지함
+
+  - **triglyceride(중성지방)** - 혈액을 통해 중성지방을 지방, 근육 세포로 분배함.
+
+  - **apolipoprotein** - 주로 **apolipoprotein B-100** 이 존재하며, LDL이 조직세포의 [수용체에 내포(섭취)(receptor-mediated endocytosis)](https://en.wikipedia.org/wiki/Receptor-mediated_endocytosis) 될 때 사용
+
+  - **cholesterol** - 세포내 유동 안정성, 신경전달등 여러 기능을 위한 물질.
+
+- VLDL은 혈액을 순환하며 [lipoprotein lipase](https://en.wikipedia.org/wiki/Lipoprotein_lipase) 효소에 의해 중성지방이 lipoprotein에서 가수분해되어 몸의 세포조직이 사용될 수 있게 한다.
+
+  - `lipase - 지질 가수분해 효소`
+
+- 중성지방을 분배하는 과정에서 VLDL의 중성지방 밀도가 줄어들면서 cholesterol의 비율이 상대적으로 높게되어 LDL 형태가 된다.
+
+- [LDL](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 상태가 되면 LDL의 apolipoprotein B-100 단백질이 조직세포의 LDL 수용체에 내포(receptor-mediated endocytosis)되며, [lysosome](https://en.wikipedia.org/wiki/Lysosome) 을 거쳐 [endosome](https://en.wikipedia.org/wiki/Endosome) 으로 운반되어 가수분해된다.
+
+- 이러한 메커니즘으로 조직세포는 LDL Receptor 발현을 조절해 `필요한 만큼` 끌어다 사용하는데, 이러한 LDL이 과다 축적되면 좋지 않다.
+
+---
+
+<span class="title">콜레스테롤로 인해 죽상동맥경화증(atherosclerosis)에 걸리는 과정</span>
+
+<span class="substance">LDL</span> &rarr; <span class="substance">ROS</span> &rarr; <span class="interaction">oxidation</span> &rarr; <span class="substance">LDL(oxidized)</span> &rarr; <span class="organ">artery endothelial cell(vascular)</span> &rarr; <span class="disease">inflammation</span> &rarr; <span class="organ">macrophage</span> &rarr; <span class="interaction">phagocytosis</span> &rarr; <span class="substance">atherosclerotic plaque</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease">fibrosis</span> &rarr; <span class="disease">atherosclerosis</span>
+
+- 축적되어 사용되지 못한 LDL은 `ROS`에 의해 산화될 수 있다.
+
+- 산화된 LDL은 `동맥 내피 세포(artery endothelial cell)` 같은 `혈관(vascular)` 에 붙어 **염증(inflammation)** 을 유발한다.
+
+- 이 과정에서 [대식세포(macrophagy)](https://en.wikipedia.org/wiki/Macrophage) 가 산화된 LDL을 **대식(phagocytosis)** 하며 [거품세포(foam cell / lipid-laden macrophagy)](https://en.wikipedia.org/wiki/Foam_cell)을 형성한다.
+
+- 형성된 foam cell은 쉽게 사라지지 않으며 혈관에 축적되어 **atherosclerotic plaque(죽상 플라크)** 를 형성한다.
+
+- 형성된 plaque는 지속적으로 축적될시 혈관을 막게 되고, 혈관의 탄력성을 잃게 만들어 [섬유화(fibrosis)](https://en.wikipedia.org/wiki/Fibrosis) 를 진행시킨다.
+
+- 결과적으로 이러한 병적 상태를 [죽상동맥경화증(atherosclerosis)](https://en.wikipedia.org/wiki/Atherosclerosis) 이라고 한다. `('죽상'은 foam cell이 죽처럼 걸쭉하게 혈관에 붙어 있어 붙은 명칭이라고 함)`
+
+## Tomato - lycopene
+
+- 토마토에 포함된 lycopene은 항산화 효과가 뛰어나다
+
+- [lycopene](https://en.wikipedia.org/wiki/Lycopene)은 토마토 농부의 이름에 기인 했으며, 토마토에서 발견되는 carotene 유기 화합물이다.
+
+- [carotene](https://en.wikipedia.org/wiki/Carotene) 은 [carotenoid](https://en.wikipedia.org/wiki/Carotenoid)의 한 분류이며, 붉은색을 띠는 특징을 가지는 carotenoid 화합물에서 산소 분자가 포함되지 않은 탄화수소 형태의 carotenoid 물질을 carotene 이라고 한다.
+
+  - `산소 분자를 포함한 carotenoid 물질을 xanthophyl 이라고 한다.`
+
+- lycopene은 [vitamin E(tocopherol)](#vitamin-e) 와 같은 `지용성 항산화물질` 이며, 지질층에서 tocopherol과 같이 항산화 작용을 한다.
+
+  - lycopene은 주로 [singlet oxygen](https://en.wikipedia.org/wiki/Singlet_oxygen)과 같은 고반응성 활성산소종과 반응해 중화 하는 역할을 한다.
+
+- lycopene의 생채 이용률(bioavailable)을 더욱 높히기 위해 **열을 가하는 방법(heating)** 이 있다.
+
+  - lycopene은 자연에서 안정적인 구조인 all-trans 형으로 존재하는데, 열에 안정적이기 때문에 에너지 작용을 받아 **이성질화(isomerization)** 되어 이중 결합 구조가 달라져 **cis-isomer(cis-이성질체)** 형태가 될 수 있다.
+
+  - 또한 lycopene은 **지용성 물질** 이기 때문에 기름과 함께 조리하면 흡수율이 더욱 향상된다.
+
+  - 이중 결합 구조가 달라진 형태에 따라 5-cis, 11-cis등 다양한 형태가 존재한다.
+
+  - 일부 연구에서는 all-trans lycopene보다 cis-lycopene 형태일 때 흡수가 더 잘되어 혈중 lycopene농도가 상대적으로 높아 항산화 효과가 뛰어날 수 있다고 한다.
+
+- 하지만 열을 가하면 토마토에 있는 비타민 성분들이 비활성화 되어 비타민 효과를 거의 볼 수 없다고 한다.
+
+## Oxalate
+
+- 요로결석을 예방하기 위해 옥살산과 칼슘을 적절히 섭취해야 한다.
+
+- [옥살산(oxalic acid)](https://en.wikipedia.org/wiki/Oxalic_acid)은 **유기산(organic acid)** 의 한 종류이며, 체내에서 산화 반응 등에 의해 **양성자(proton)** 를 잃게되 음이온을 띠는 oxalate 형태로 체내에 존재한다.
+
+- 옥살산은 특히 시금치, 비트에 많이 포함되어 있으며, 체내에서 **ascorbic acid** 최종 대사 산물로써 생성되거나 **특정 아미노산(glycine, serine)** , 또는 [glycolate(glycolic acid)](https://en.wikipedia.org/wiki/Glycolic_acid) 물질들이 대사되어 체내에 자연스럽게 생성되는 물질이다.
+
+- 체내에 존재하는 oxalate는 **calcium** 과 결합해 [calcium oxalate](https://en.wikipedia.org/wiki/Calcium_oxalate)결정을 형성하는데, 이는 [신장 결석(renal stone)](https://en.wikipedia.org/wiki/Kidney_stone_disease)의 주요 원인이 된다.
+
+<span class="title">신장 결석이 생기는 과정</span>
+
+<span class="substance">oxalate</span> &rarr; <span class="organ">small intestine</span> &rarr; <span class="interaction">passive diffusion</span> &rarr; <span class="organ">blood vessel</span> &rarr; <span class="substance">calcium</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">calcium oxalate</span> &rarr; <span class="organ">urinary organs</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="substance">calcium oxalate stone</span> &rarr; <span class="disease">renal stone</span>
+
+- oxalate는 보통 small intestine에서 calcium과 결합해 calcium oxalate를 형성하는데, small intestine에서 형성된 불용성의 calcium oxalate는 더 이상 흡수되지 않아 일반적으로 문제 없이 대장(colon)을 통해 배출된다.
+
+- 하지만 calcium결핍 등 여러 이유로 oxalate는 calcium과 결합하지 않고, small intestine과 혈류의 oxalate 농도 차이가 발생하며 자연스럽게 [수동적 확산(passive diffusion)](https://en.wikipedia.org/wiki/Passive_transport)되어 혈관으로 이동할 수 있다.
+
+- 혈액에서 형성된 **calcium oxalate** 는 일반적으로 **kidney** 에서 축적된다.
+
+- calcium oxalate는 결정 형태를 띠고 있으며 축적될 시 calcium oxalate stone 형태가 되고 이는 renal stone이라고 불리는 병적 상태의 요인이 된다.
+
+- renal stone의 원인은 다양하지만 그 중 대부분은 oxalate 물질이 calcium과 결합하고 신장에서 축적되어 형성되는 경우라고 한다.
+
+- 결론적으로 renal stone 현상을 예방하기 위해 자신의 신체 환경, 요인에 따라 oxalate 물질이 포함된 음식을 적절히 섭취하는 것이 좋고, 칼슘 섭취도 적절히 하는 것이 중요하다.
+
+## HbA1c
+
+<span class="title">헤모글로빈이 당화되는 과정</span>
+
+<span class="substance">HbA0</span> &rarr; <span class="organ">blood stream</span> &rarr; <span class="substance">glucose</span> &rarr; <span class="interaction">non-enzymatic reaction</span> &rarr; <span class="substance">HbA1c(glycated)</span>
+
+- 피검사 수치중 HbA1c 수치는 지난 약 3개월간의 혈당 수치를 예측할 수 있는 **임상지표** 로써 사용된다.
+
+- HbA1c는 헤모글로빈 중에 대부분(약 97%)을 차지하는 A0 아형(subtype)에 포도당(glucose)와 비효소적 결합(non-enzymatic reaction) 되어 당화된 헤모글로빈이다.
+
+  - galactose, fructose 보다 주로 **glucose** 에 의한 당화 반응이 일어난다 한다. 혈중 농도도 glucose가 월등히 높기 때문에 일반적으로 **glucose** 에 의해 당화된 헤모글로빈 임상수치로써 HbA1c를 사용한다.
+
+  - galactose(galactosylated), fructose(fructosylated)와 결합된 헤모글로빈은 따로 명칭이 없다고 한다.
+
+- 즉 HbA1c는 [당화된 헤모글로빈(glycated hemoglobin)](https://en.wikipedia.org/wiki/Glycated_hemoglobin)이라 할 수 있다.
+
+- 한 번 당화된 헤모글로빈은 적혈구가 수명을 다 할때까지 혈류를 맴돌게 된다. 하지만
+
+- 헤모글로빈이 포함돤 적혈구는 약 4개월 정도의 수명을 가지고 있지만 여러 조건을 고려해 HbA1c 지난 2~3개월간의 혈당 수치를 반영한다.
+
+- HbA1c 수치는 전체 적혈구안에서 비율을 측정하는 것이기 때문에 적혈구 수명, 생성과 관련된 질환이 있으면 측정 값이 다를 수 있다.
+
+## Alkaloid
+
+- 알칼로이드는 자연적으로 발생하는 유기 화합물 인데 **nitrogen(질소)** 원자를 포함하는 유기 화합물이다.
+
+- **cocaine, morphine** 물질도 알칼로이드에 포함된다.
+
+- 일부 알칼로이드는 **hepatotoxicity(간독성)** 이 있어 식물을 섭취할 때 주의가 필요하다.
+
+- [pyrrolizidine alkaloid](https://en.wikipedia.org/wiki/Pyrrolizidine_alkaloid)는 **pyrrolizidine** 구조를 기본으로 가지는 알칼로이드 물질인데, 이는 cocaine, morphine과 같이 **간독성** 을 띤다.
+
+  - **물론 cocaine, morphine은 간독성보단 중독성(addictive), 의존성(dependency)에 대한 문제가 크다**
+
+- pyrrolizidine alkaloid(PAs)는 보통 특정 식물에 존재한다
+
+  - [asteraceae(국화과)](https://en.wikipedia.org/wiki/Asteraceae)
+
+  - [Fabaceae(콩과)](https://en.wikipedia.org/wiki/Fabaceae)
+
+  - [Boraginaceae(지치과)](https://en.wikipedia.org/wiki/Boraginaceae)
+
+- 또한 꿀, 허브차등에 자연적으로 포함되며 다양한 pyrrolizidine alkaloid 물질이 있다고 한다.
+
+## goitrogen
+
+- [goitrogen](https://en.wikipedia.org/wiki/Goitrogen)은 갑상선의 기능을 방해해 갑상선종(goiter)을 유발한다는데에서 이름이 기원했다.
+  자연적으로 존재하는 유기황화합물(organicsulfur compound)이며
+- 십자화과 채소 섭취를 통해 goitrogen의 영향을 받을 수 있다.
+
+<span class="title">goitrogen 생성과 갑상선종<span>
+
+<span class="substance">cruciferous vegitable - progoitrin(glucosinolate)</span> &rarr; <span class="organ">myrosinase</span> &rarr; <span class="interaction">hydrolysis</span> &rarr; <span class="substance">aglycone</span> &rarr; <span class="substance">goitrin(lactone)</span> &rarr; <span class="organ">thyroid gland - NIS</span> &rarr; <span class="interaction">disrupt iodine absorption</span>
+&rarr; <span class="organ">pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="disease">goiter
+
+- progoitrin은 glucosinolate의 일종이다. sulforaphane 생성 과정 처럼 채소 세포가 파괴 될 때 myrosinase 효소와 접촉되어 goitrin 물질이 된다.</span>
+
+- [goitrin](https://en.wikipedia.org/wiki/Goitrin)은 **유기황화합물(organosulfar compound)** 이며 glucosinonate의 최종 대사 물질 형태인 thiocyanate, isothiocyanate, nitrile과 다른 [lactone](https://en.wikipedia.org/wiki/Lactone) 구조를 가지고 있는 물질이라고 한다.
+
+- 활성된 goitrin은 갑상선의 [NIS(sodium-iodine symporter)](https://en.wikipedia.org/wiki/Sodium/iodide_cotransporter) 공동 수용체의 아이오딘 수용 기능을 방해해 갑상선 호르몬 생성(T3, T4)을 방해한다.
+
+  - 이로 인해 [HPT axis](#thyroid-gland---mercury) 균형의 혼란이 생기며, **뇌하수체(pituitary gland)** 는 **TSH(Thyroid-Stimulating hormone)** 호르몬을 갑상선으로 계속 분비를 하게 된다.
+
+  - 하지만 갑상선은, 갑상선 호르몬(T3, T4) 생성을 위한 아이오딘을 수용할 수 없는 상태다. 이러한 상태가 계속되면 갑상선이 비대해져서 결국 [갑상선종(goiter)](https://en.wikipedia.org/wiki/Goitre)이 발생할 수 있다.
+
+## Potassuim
+
+- 칼륨(K) 이라 불리는 Potassium의 섭취는 중요하다
+
+- 칼륨은 체내 나트륨과 상호작용하며 나트륨 관리에 필수적이다.
+
+- 나트륨도 우리 몸에 반드시 필요한 요소지만, 현대 식문화 관점에서 나트륨을 과다 섭취하므로 칼륨 섭취에 대한 중요성을 알아야 한다.
+
+<span class="title">칼륨(potassium)과 나트륨(sodium)펌프 상호작용</span>
+
+<span class="substance">ATP + 2K<sup>+</sup></span> &rarr; <span class="organ">membrane - sodium-potassium ATPase(Na<sup>+</sup> / K<sup>+</sup> pump)</span> &rarr; <span class="substance">ADP + P<sub>i</sub> + 3Na<sup>+</sup></span>
+
+- 체내로 들어온 칼륨 이온은 세포에 있는 [sodium-potassium ATPase](https://en.wikipedia.org/wiki/Sodium%E2%80%93potassium_pump) 라는 효소에 의해 세포 내부의 칼륨, 나트륨 농도가 조절된다.
+
+- 칼륨이 세포 내로 유입되고, 나트륨이 세포 외로 빠져 나갈 때 ATP에 있는 하나의 인산 분자가 무기 인산으로 분해되는데, 이로 인해 세포막에 **전위차** 가 생기며, 이는 신경 자극 및 전기적 신호 생성에 기여한다.
+
+- 세포내에서 혈액으로 방출된 나트륨은 신장을 통해 배출될 수 있으므로, 이러한 작용을 통해 나트륨 배출을 유도함으로써 체내 나트륨 농도를 조절할 수 있다.
+
+- 하지만 신장의 기능이 좋지 않다면, 칼륨 및 나트륨 배출에 문제가 생기므로 이 또한 고려해야 한다.
+
+---
+
+<span class="title">고칼륨혈증 - hyperkalemia</span>
+
+<span class="organ">kidney - eGFR &lt; 45</span> &rarr; <span class="disease">hyperkalemia</span> &rarr; <span class="organ">adrenal cortex</span> &rarr; <span class="substance">aldosterone</span> &rarr; <span class="organ">nephron - distal convoluted tubule</span> &rarr; <span class="organ">collecting duct</span> &rarr; <span class="interaction">excretion potassium + reabsorption sodium</span> &rarr; <span class="disease">electrolyte imbalance</span>
+
+- 칼륨은 신장을 통해 배출되어야 하는데, **사구체 여과율(eGFR - glomerulus filteration rate)** 이 낮으면 칼륨이 배출 되지 않게되어 [고칼륨혈증(hyperkalemia)](https://en.wikipedia.org/wiki/Hyperkalemia) 상태가 될 수 있다.
+
+- 체내 칼륨농도가 높아지면 일반적으로 **부신 피질(adrenal cortex)** 에서 **aldosterone** 이라는 호르몬을 분비한다.
+
+- [aldosterone](https://en.wikipedia.org/wiki/Aldosterone) 호르몬은 주로 nephron의 **원위 세뇨관(distal convoluted tubule)와 집합관(collecting duct)** 에서 **체내 칼륨을 분비** 하도록 유도하여 칼륨 농도를 조절하는 동시에 **나트륨을 재흡수** 하도록 유도한다.
+
+  - `proximal / distal convoluted tubule, loop of henle은 각각의 nephron마다 있지만 collecting duct는 각 nephrone의 여과 결과물을 모아 연결하므로 상대적으로 수가 적다.`
+
+- 하지만 체내 칼륨 농도가 과도하게 높아 **hyperkalemia** 상태가 되면 aldosterone의 작용을 과도하게 받게 된다. 이로 인해 [전해질 불균형(electrolyte imbalance)](https://en.wikipedia.org/wiki/Electrolyte_imbalance) 상태가 될 수 있어 주의가 필요하다.
