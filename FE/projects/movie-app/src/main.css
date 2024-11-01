@@ -29,6 +29,18 @@ body {
   padding: 40px 0;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
+
 .btn {
   height: 50px;
   padding: 0 20px;
@@ -117,6 +129,20 @@ header .user:hover {
 
 header .user img {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 14px 20px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .user {
+    right: 20px;
+  }
 }
 
 /* Headline */
@@ -358,6 +384,27 @@ header .user img {
 .the-movie .plot.skeleton {
   width: 80%;
   height: 400px;
+}
+
+@media (max-width: 1200px) {
+  .the-movie {
+    gap: 30px;
+  }
+
+  .the-movie .poster {
+    --width: 300px;
+  }
+}
+
+@media (max-width: 720px) {
+  .the-movie {
+    display: block;
+  }
+
+  .the-movie .title {
+    font-size: 50px;
+    margin-top: 50px;
+  }
 }
 
 /* About */
