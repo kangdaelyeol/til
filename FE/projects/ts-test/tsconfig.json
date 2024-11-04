@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "ES2015", // TS를 ECMA2015 버전으로 변환 하겠다.
+		"module": "ESNext", // ES의 가장 최신 버전의 모듈을 사용하겠다.
+		"moduleResolution": "Node", // Node.js 방식으로 파일을 해석하겠다.
+		"esModuleInterop": true, // Interop(interoperability - 정보 처리 상호 운용 가능성) - front의 ESM과 Node의 Common.js 방식을 호환되게 하곘다.
+		"lib": ["ESNext", "DOM"], // ts 파일을 js 파일로 변환할 때 두 모듈을 사용하겠다.
+		"strict": true
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules"]
+}
