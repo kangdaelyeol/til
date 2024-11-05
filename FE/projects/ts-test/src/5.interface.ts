@@ -1,6 +1,6 @@
 // Interface
 
-// 선택적 속성 - ?
+// 선택적 속성(Optional) - ?
 // 읽기 전용 속성 - readonly
 
 interface MyUser {

@@ -36,5 +36,5 @@ getValue('abc', false)
 
 // Assignment Assertion - 할당 단언
 
-let numb!: number // ! 키워드 - 할당 했다고 단언 함으로써 할당 에러 제거하기.
+let numb!: number // ! 키워드 - 할당 했다고 단언 함으로써 nullable 에러 제거하기.
 console.log(numb)

@@ -15,4 +15,4 @@ function addNum(x: number, y = 2) {
 
 // type inference 를 사용하는 것은 코드의 가독성을 높이는 효과가 있음
 
-// type inference 로 인해 코드상으로 type을 명시하지 않았다는 것이라 해서 코드의 목적, 즉 코드의 안전성 해치는 것이 아님.
+// type inference 로 인해 코드상으로 type을 명시하지 않았다는 것이라 해서 TS의 목적, 즉 코드의 안전성을 해치는 것이 아님.

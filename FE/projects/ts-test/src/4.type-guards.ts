@@ -7,12 +7,12 @@ function logText(el: Element) {
 
 const h1El = document.querySelector('h1')
 
-// Type Guard - condition statement with instanceof operator
+// Type Guard - conditional statement with instanceof operator
 if (h1El instanceof HTMLHeadingElement) {
     logText(h1El)
 }
 
-// Type Guard - condition statement with typeof operator
+// Type Guard - conditional statement with typeof operator
 function logAdd(val: string | number | boolean | null) {
     let res = 'Result => '
     if (typeof val === 'number') {
