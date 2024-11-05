@@ -46,6 +46,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [간기능 - liver funciton test](#간기능---liver-function-test)
 
+- [Dopamine](#dopamine)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -122,19 +124,21 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## Dopamine
 
-- 도파민은 자극에 대한 `보상을 예측`하는 호르몬이다.
+- [도파민(Dopamine - Dihydroxyphenethylamine)](https://en.wikipedia.org/wiki/Dopamine)은 자극에 대한 **보상을 예측** 하는 신경조절물질이자 호르몬이다.
 
 - 우리의 뇌는 본능적으로 도파민을 쫒는다.
 
-- 뇌는 여러 상황을 통해서 도파민 분비에 대한 `학습`을 한다.
+- 뇌는 여러 상황을 통해서 보상과 관련된 행동 패턴을 학습하며, 이를 기반으로 도파민 분비가 조절된다.
 
-  1. **경험 기반의 기대** - `과거의 경험을 배탕으로` 행위, 자극에 대한 `결과를 예측`한다.
+  1. **경험 기반의 기대** - `과거의 경험을 바탕으로` 행위, 자극에 대한 `결과를 예측`한다.
 
   2. **보상 예측** - 보상이 기대되는 상황에서 보상이 발생하기 전에 `미리 행복을 느낀다`.
 
-  3. **학습과 강화** - `예측 오류(Prediciton error)`를 통한 학습 강화. 예상보다 보상이 크면 도파민 분비가 증가하고, 보상이 작으면 분비가 적어진다.
+  3. **학습과 강화** - `예측 오류(Prediction error)`를 통한 학습 강화. 예상보다 보상이 크면 도파민 분비가 증가하고, 보상이 작으면 분비가 적어진다.
 
-  4. **동기부여** - 예상되는 보상을 기반으로 `동기를 부여`해주고, 목표를 달성하도록 노력을 촉진시킨다.
+  4. **동기부여** - 예상되는 보상을 기반으로 `동기를 부여` 해주고, 목표를 달성하도록 노력을 촉진시킨다.
+
+- 도파민은 신경 자극을 받을 때 분비 되는데, 도파민 합성을 위한 [tyrosine](https://en.wikipedia.org/wiki/Tyrosine) 아미노산을 섭취하는 것도 중요하다.
 
 ## Prefrontal Cortex - 전전두엽
 
