@@ -48,6 +48,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Dopamine](#dopamine)
 
+- [Prefrontal Cortex - 전전두엽](#prefrontal-cortex---전전두엽)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -142,7 +144,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## Prefrontal Cortex - 전전두엽
 
-- 우리의 본능을 따르지 않으려면 prefrontal cortex의 컨트롤이 가장 중요하다.
+- 우리의 본능을 따르지 않으려면 [prefrontal cortex](https://en.wikipedia.org/wiki/Prefrontal_cortex)의 기능을 유지하는 것이 가장 중요하다.
 
 - 뇌에서 Prefrontal Cortex는 `고차원적 인지, 사고`를 하는 역할을 담당한다
 
@@ -156,9 +158,11 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
   - 창의적 사고
 
-- 우리가 바쁘거나 스트레스를 받게 되면 prefrontal cortex의 기능이 저하된다. 이는 곧 `본능적 사고`를 이끌고 이는 `도파민을 요구`하게 된다.
+  - 감정 조절
 
-- 따라서 `생각이 오염`되지 않도록 마음가짐을 잘해야 한다.
+- 우리가 바쁘거나 스트레스를 받게 되면 prefrontal cortex의 기능이 저하된다. 이는 곧 본능적인 사고나 충동을 일으키고, 이는 곧 도파민을 요구 하게 된다.
+
+- 따라서 `생각이 오염` 되지 않도록 내면의 상태를 평온하게 유지하려는 노력을 해야 한다.
 
 ## Urea(요소) - Uric Acid(요산)
 
