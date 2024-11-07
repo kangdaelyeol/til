@@ -52,7 +52,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Urea(요소) - Uric Acid(요산)](#urea요소---uric-acid요산)
 
--[Estrogen metabolism](#estrogen-metabolism)
+- [Estrogen metabolism](#estrogen-metabolism)
 
 ## Propionic Acid(PPA) - 프로피온산
 
