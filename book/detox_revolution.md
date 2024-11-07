@@ -52,6 +52,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Urea(요소) - Uric Acid(요산)](#urea요소---uric-acid요산)
 
+-[Estrogen metabolism](#estrogen-metabolism)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -232,7 +234,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 <hr />
 
-- 일반적으로 신체에 주로 존재하는 에스트로겐은 세 가지 종류가 있다.
+- 일반적으로 신체에 주로 존재하는 에스트로겐은 세 종류가 있다.
 
   - `Estrone(E1)` - 폐경기 이후 주로 분비
 
@@ -240,51 +242,53 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
   - `Estriol(E3)` - 임신중
 
-- 여기서 에스트리올(E3)은 E1, E2와 달리 다른 대사 과정을 통해 배출된다고 한다.
+- 여기서 Estriol(E3)은 E1, E2와 달리 다른 대사 과정을 통해 배출된다고 한다.
 
-- 에스트로겐(E1, E2)이 대사를 통해 몸에서 배출이 되기 까지 기본적으로 `수산화(hydroxylation)`, `메틸화(methylation)` 두 과정을 거친다.
+- 에스트로겐(E1, E2)이 대사를 통해 몸에서 배출이 되기 위해 **수산화(hydroxylation), 메틸화(methylation)`** 두 과정을 거친다.
 
 - **Hydroxylation**
 
-  - 수산화는 `수산기(hydroxyl radical / OH)`를 붙이는 과정이다.
+  - 수산화는 **수산기(hydroxyl radical / OH)** 를 붙이는 과정이다.
 
-  - `estrone`, `estradiol`은 `cytochrome P450` 효소군의 `CYP1A1`, `CYP1B1`효소를 통해 수산화를 거친다
+  - estrone(E1)과 estradiol(E2) 은 **cytochrome P450** 효소군의 `CYP1A1, CYP1B1` 효소를 통해 수산화를 거친다
 
-  - <span class="title">Estrogen metabolism(Hydroxylation) pathway</span>
+<span class="title">Estrogen metabolism(Hydroxylation) pathway</span>
 
-    - <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1A1(hydroxylation)</span> &rarr; <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
+- <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1A1(hydroxylation)</span> &rarr; <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
 
-    - <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1B1(hydroxylation)</span> &rarr; <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
+- <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1B1(hydroxylation)</span> &rarr; <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
 
-  - 각각 분자 핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.
+- 접두사로 붙은 숫자는 각각 분자 핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.
 
 - **Methylation**
 
-  - 메틸화는 `메틸기(methyl radical / CH3)`를 붙이는 과정이다.
+  - 메틸화는 **메틸기(methyl radical / CH<sub>3</sub>)** 를 붙이는 과정이다.
 
-  - 수산화된 hydroxyestrogen은 `COMT(Catechol - O - methyltransferase)` 효소를 통해 methylation과정을 거친다.
+  - 수산화된 hydroxyestrogen은 **COMT(Catechol - O - methyltransferase)** 효소를 통해 methylation과정을 거친다.
 
-  - `COMT는 말그대로 Catechol구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.`
+  - COMT는 말그대로 [catechol](https://en.wikipedia.org/wiki/Catechol) 구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.
 
-  - <span class="title">Estrogen metabolism(methylation) pathway</span>
+<span class="title">Estrogen metabolism(methylation) pathway</span>
 
-    - <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="interaction">"COMT(methylation)</span> &rarr; <span class="substance">2/4-methoxyestrogen</span>
+- <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="interaction">"COMT(methylation)</span> &rarr; <span class="substance">2/4-methoxyestrogen</span>
 
 - 메틸화까지 완료된 estrogen은 자연적으로 배출이 된다.
 
 - 문제는 4-hydroxyestrogen의 다른 대사 과정을 통해 발암 위험이 높아진다는 것이다.
 
-- - <span class="title">Estrogen redox reaction pathway</span>
+<span class="title">Estrogen redox reaction pathway</span>
 
-  - <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">estrogen quinone</span>
+- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">catechol quinone</span>
 
-- quinone은 반응성이 매우 높아서 DNA와 쉽게 결합한다.
+- 수산화 되어 catechol 구조를 가지게 된 catechol estrogen 물질은 redox 반응을 통해 catechol quinone 물질로 변할 수 있다
 
-- estrogen quinone과 DNA와 결합해서 `DNA adduct`를 생성하는데 이는 발암물질이다.
+- catechol quinone 물질은 반응성이 매우 높아서 DNA와 쉽게 결합한다.
 
-- 하지만 우리는 이 과정을 `glutathione`의 도움을 받아 회피 할 수 있다.
+- catechol quinone과 DNA와 결합해서 [DNA adduct](https://en.wikipedia.org/wiki/DNA_adduct) 물질을 생성하는데 이는 발암물질이다.
 
-- quinone은 또한 glutathione과 결합해 해독 과정을 거친다음 안전하게 배출이 된다.
+- 하지만 우리는 이 과정을 **glutathione** 항산화 물질의 도움을 받아 회피 할 수 있다.
+
+- quinone 물질은 또한 glutathione 물질과 결합해 해독 과정을 거친다음 안전하게 배출이 된다.
 
 ## Mercury Poisoning - 수은 중독
 
