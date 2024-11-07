@@ -50,6 +50,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Prefrontal Cortex - 전전두엽](#prefrontal-cortex---전전두엽)
 
+- [Urea(요소) - Uric Acid(요산)](#urea요소---uric-acid요산)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -166,27 +168,35 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## Urea(요소) - Uric Acid(요산)
 
-<span class="title">1. 단백질의 정상 해독 과정</span>
+<span class="title">단백질의 정상 해독 과정</span>
 
 - <span class="substance">protein</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">ammonia(byproduct)</span> &rarr; <span class="organ">liver</span> &rarr; <span class="interaction">urea cycle</span> &rarr; <span class="substance">urea</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
-<span class="title">2. 신장 기능 저하로 인한 위험</title>
+<span class="title">간 기능 저하로 인한 간성 혼수 위험</title>
 
-- <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease">encephalopathy(간성혼수)</span>
+- <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperammonemia </span> &rarr; <span class="disease">(hepatic) encephalopathy</span>
 
 <hr />
 
-- 단백질은 몸에서 `대사(metabolism)`를 통해 `암모니아(ammonia)`를 `부산물(byproduct)`로써 생성한다.
+- 단백질은 몸에서 [이화 작용(catabolism)](https://en.wikipedia.org/wiki/Catabolism)을 거쳐 **암모니아(ammonia)** 를 부산물(byproduct) 로써 생성한다.
 
-  - 물질이 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 `대사산물(metabolite)`라고 한다.
+  - 물질이 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 **대사산물(metabolite)** 라고 한다.
 
-  - 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물보단 부산물이 맞다.
+  - 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물보단 **부산물** 이 맞다.
 
-- 암모니아는 간에서 `Urea Cycle`을 통해 한 번더 대사되어 `요소(urea)로` 변환된다.
+- 암모니아(ammonia)는 독성이 강하기 때문에 우리 몸에서 배출되어야 하지만, 우리 몸에서 암모니아를 안전하게 배출할 수 없다. 그래서 암모니아에 **이산화탄소** 를 추가함으로써 독성이 약한 **요소(Urea)** 를 생성할 수 있고 안전하게 배출할 수 있다.
 
-- 변환된 urea는 혈액에 축적되어 `신장(kidney)`을 통해 배출이 된다.
+- 암모니아는 간에서 [Urea Cycle](https://en.wikipedia.org/wiki/Urea_cycle) 을 통해 한 번더 대사되어 `요소(urea)로` 변환된다.
 
-- ammonia가 배출되지 못하고 혈액에 축적되면 `간성혼수(encephalopathy)`가 발병될 확률이 높아진다.
+  - Urea Cycle은 **총 5가지의 효소적 반응(enzymatic reaction)** 으로 이루어져 있으며 총 **5종류의 효소** 가 관여한다.
+
+  - 첫 두 단계의 반응은 **미토콘드리아(mitochondrial) 반응**, 그리고 나머지 세 반응은 **세포질 (cytosolic) 반응** 이다
+
+- 변환된 urea는 혈액을 통해 **신장(kidney)** 으로 운반되어 배출이 된다.
+
+- 인간과 같이 포유류 또는 **양서류(amphibian)** 는 이러한 방식으로 **질소를 요소로써 배출하는 종(ureotelic)** 이다.
+
+- ammonia가 선천적인 요인, 또는 간 기능 저하로 인해 배출되지 못하고 혈액에 축적되어 [고암모니아혈증(Hyperammonemia)](https://en.wikipedia.org/wiki/Hyperammonemia) 상태가 될 수 있고, 이는 곧 [간성혼수(hepatic encephalopathy)](https://en.wikipedia.org/wiki/Hepatic_encephalopathy)를 일으킬 확률이 높아진다.
 
 <span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
 
@@ -194,19 +204,19 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 <span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
 
-- <span class="substance">uric acid</span> &rarr; <span class="disease">gout(통풍)</span>
+- <span class="substance">uric acid</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperuricemia </span> &rarr; <span class="substance"> uric crystal </span> &rarr; <span class="disease">gout(통풍)</span>
 
 <hr />
 
-- 퓨린을 섭취하면 간에서 대사를 통해 요산(uric acid)을 배출한다.
+- [purine](https://en.wikipedia.org/wiki/Purine) 을 섭취하면 간에서 대사를 통해 [요산(uric acid)](https://en.wikipedia.org/wiki/Uric_acid)을 생성한다.
 
-- 요산은 신장을 통해 소변으로 배출이 되어야 한다. 많이 축적이 되면 `고요산혈증(hyperuricemia)`이라는 상태가 되며 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
+- 요산(uric acid)은 신장을 통해 소변으로 배출이 되어야 한다. 요산이 배출되지 못하고 축적되면 [고요산혈증(hyperuricemia)](https://en.wikipedia.org/wiki/Hyperuricemia) 상태가 되며 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
 
-  - 따라서 hyperuricemia 상태라고 해서 gout라 판단할 수 없다.
+  - `따라서 hyperuricemia 상태라고 해서 gout 라고 판단할 수 없다.`
 
-- 만약 요산으로 인한 통풍이 오면, 즉 uric acid가 모여 uric crystal이 신체 관절등 부위에 쌓여 통증을 일으키는 것이 확인 되면 통풍이라 한다. 평생 관리해야 한다.
+- 만약 요산으로 인한 통풍이 오면, 즉 혈중 uric acid 물질이 **uric crystal(요산 결정)** 형태로 축적되어 관절등 부위에 쌓여 통증을 일으키는 것이 확인 되면 통풍이라 한다. 이는 평생 관리해야 하는 만성 질환이다.
 
-- uric acid수치는 신장 기능이 저하되거나 단백질, 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아질 수 있으며, 이는 꾸준한 관리가 필요하다.
+- 혈중 uric acid 수치는 신장 기능이 저하되거나 단백질, 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아질 수 있으며, 이는 꾸준한 관리가 필요하다.
 
 ## Estrogen metabolism
 
