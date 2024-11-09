@@ -54,6 +54,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Estrogen metabolism](#estrogen-metabolism)
 
+- [Mercury Poisoning - 수은 중독](#mercury-poisoning---수은-중독)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -294,27 +296,27 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 몸의 항산화 기능을 위해서 glutathione의 역할이 중요하다.
 
-- `glutathione peroxidase(GPx)` 효소에 존재하는 `Selenocysteine(Sec)`이라는 아미노산에 `셀레늄(Se)`이 있는데, 이 부분이 항산화 기능의 핵심 부분이다.
+- [glutathione peroxidase(GPx)](https://en.wikipedia.org/wiki/Glutathione_peroxidase) 효소에 존재하는 [Selenocysteine(Sec)](https://en.wikipedia.org/wiki/Selenocysteine) 아미노산의 **셀레늄(Se)** 은 항산화 기능의 핵심 물질이다.
 
-- `수은은 셀레늄과 결합성이 매우 강하기 때문에` 수은이 체내로 들어오게 되면 셀레늄과 결합하여 항산화 기능이 제대로 발현되지 않는다.
+- **수은(Hg)** 은 셀레늄과 **결합성** 이 매우 강하기 때문에 수은이 체내로 들어오게 되면 셀레늄과 결합하여 항산화 기능이 제대로 발현되지 않는다.
 
-- 수은(Hg)은 자연에서 `무기 수은(Hg`<sup>`2+`</sup>`)` 형태로 존재하는데 `생물 농축(bioaccumulation)`, `생물 증폭(biomagnification)`을 통해 `메틸 수은(CH`<sub>`3`</sub>`Hg`<sup>`+`</sup>`)` 형태로 체내에 들어온다.
+- 수은(Hg)은 자연에서 `무기 수은(Hg`<sup>`2+`</sup>`)` 형태로 존재하는데 **생물 농축(bioaccumulation)과 생물 증폭(biomagnification)** 과정을 통해 `메틸 수은(CH`<sub>`3`</sub>`Hg`<sup>`+`</sup>`)` 형태로 체내에 흡수된다.
 
 <hr />
 
-<span class="title">1. Glutathione의 정상적인 항산화 과정</span>
+<span class="title">Glutathione의 정상적인 항산화 과정</span>
 
-- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> &rarr; <span class="substance">H<sub>2</sub>O, ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
+- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> &rarr; <span class="substance">H<sub>2</sub>O + ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
 
-- <span class="substance">2GSH + <span class="organ">GPx(Sec-SeOH) &rarr; <span class="substance">GSSG + <span class="organ">GPx(Sec-H)
+- <span class="substance">2GSH</span> + <span class="organ">GPx(Sec-SeOH)</span> &rarr; <span class="substance">GSSG</span> + <span class="organ">GPx(Sec-H)</span>
 
-- <span class="substance">GSSG, NADPH, H<sup>+</sup> + <span class="organ">GSR &rarr; <span class="substance">2GSH + <span class="substance">NADP<sup>+</sup>
+- <span class="substance">GSSG, NADPH + H<sup>+</sup></span> + <span class="organ">GSR</span> &rarr; <span class="substance">2GSH</span> + <span class="substance">NADP<sup>+</sup></span>
 
-<span class="title">2. 수은으로 인한 셀레늄 결핍 과정</span>
+<span class="title">수은으로 인한 셀레늄 결핍 과정</span>
 
 - <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> &rarr; <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
 
-- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> &rarr; <span class="substance">HgSe, CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
+- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> &rarr; <span class="substance">HgSe + CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
 
 <hr />
 
@@ -336,21 +338,21 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 <hr />
 
-- 활성산소종(ROS)은 `산화적 스트레스`를 발생시키는데, 이는 몸에 좋지 않다.
+- 활성산소종(ROS)은 [산화스트레스(Oxidative stress)](https://en.wikipedia.org/wiki/Oxidative_stress) 를 발생시켜 세포의 기능을 저하한다.
 
-- GPx효소는 `Sec(Selenocysteine)`이라는 특이한 `아미노산`을 가지고 있는데, 여기서 셀레늄이 항산화 기능에 중요한 역할을 한다.
+- GPx효소는 **Sec(Selenocysteine)** 아미노산 을 가지고 있는데 Sec에 포함된 셀레늄이 항산화 기능에 중요한 역할을 한다.
 
-  - ROS는 주로 **과산화물(H<sub>2</sub>O<sub>2</sub>)** 또는 **유기 과산화물(ROOH)** 형태로 존재하는데, 이들과 만나 Sec의 셀레늄(Se)이 `SeOH(selenenic acid)`로 `산화` 되면서 과산화물을를 물과 알코올로 `환원`시킨다.
+  - ROS는 주로 **과산화물(H<sub>2</sub>O<sub>2</sub>)** 또는 **유기 과산화물(ROOH)** 형태로 존재하는데 이들이 Selenocysteine의 셀레늄(Se)과 만나게되면 산화-환원 반응에 의해 셀레늄은 [SeOH(selenenic acid)](https://en.wikipedia.org/wiki/Selenic_acid) 형태로 산화 되고 과산화물(ROS)을 물과 알코올로 환원 시킨다.
 
-  - SeOH를 가진 GPx의 Sec는 두 개의 `GSH(Reduced Glutathione)`과 반응하여 다시 `환원형(Sec-H)`으로 돌아가는데, 여기서 두 GSH는 GSSG(Oxidized Glutathione)로 산화 된다.
+  - SeOH를 가진 GPx의 Sec는 두 개의 **GSH(Reduced Glutathione)** 물질과 반응하여 다시 **환원형(Sec-H)** 으로 돌아가는데, 여기서 두 GSH는 **GSSG(Oxidized Glutathione)** 로 결합된 형태로 산화 된다.
 
-  - 산화된 glutathione(GSSG)은 `GSR(Glutathione-disulfide reductase)`이라는 효소와 환원형인 `NADPH` 조효소와 함께 반응해서 다시 환원형 glutathione(GSH)으로 전환된다. 이렇게 항산화 사이클을 형성한다.
+  - 산화된 glutathione(GSSG)은 [GSR(Glutathione-disulfide reductase)](https://en.wikipedia.org/wiki/Glutathione_reductase) 효소와 환원형인 [NADPH](https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide_phosphate) 조효소와 함께 반응해서 다시 환원형 glutathione(GSH)으로 전환된다. 이렇게 항산화 사이클을 형성한다.
 
 - 수은은 셀레늄과 강한 결합성을 가지고 있기 때문에 체내로 오게 되면 셀레늄과 결합해서 항산화 시스템 균형을 잃게 만든다.
 
-  - 메틸 수은 **(CH<sub>3</sub>Hg<sup>+</sup>)** 은 환원형 Sec와 반응해서 항산화 기능을 상실한 상태인 **GPx(SecHgCH<sub>3</sub>)** 로 전환된다.
+  - 메틸 수은 **(CH<sub>3</sub>Hg<sup>+</sup>)** 은 GPx 효소의 환원형 selenocysteine(Sec-H) 과 반응해서 항산화 기능을 상실한 상태인 **GPx(SecHgCH<sub>3</sub>)** 상태로 전환된다.
 
-  - 기능을 상실한 효소는 GSH와 반응해서 **Hg-Se** 복합체와 **CH<sub>3</sub>SH(methanethiol)** 로 분해되어 배출이 될 수 있다. 이 과정에서 GSH는 GSSG로 산화된다.
+  - 기능을 상실한 효소는 GSH와 반응해서 **Hg-Se** 복합체와 **CH<sub>3</sub>SH(methanethiol)** 으로 분해되어 배출이 될 수 있다. 이 과정에서 GSH는 GSSG로 산화된다.
 
 ## Thyroid gland - Mercury
 
