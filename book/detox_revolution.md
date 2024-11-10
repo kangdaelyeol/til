@@ -56,6 +56,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Mercury Poisoning - 수은 중독](#mercury-poisoning---수은-중독)
 
+- [Mercury - Thyroid gland](#mercury---thyroid-gland)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -354,19 +356,19 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
   - 기능을 상실한 효소는 GSH와 반응해서 **Hg-Se** 복합체와 **CH<sub>3</sub>SH(methanethiol)** 으로 분해되어 배출이 될 수 있다. 이 과정에서 GSH는 GSSG로 산화된다.
 
-## Thyroid gland - Mercury
+## Mercury - Thyroid gland
 
-- 수은은 갑상선 호르몬 균형을 무너뜨린다.
+- 수은은 몸의 갑상선 호르몬 균형을 무너뜨린다.
 
-- 갑상선에서 분비되는 호르몬은 우리 몸의 `항상성(homeostasis)`을 유지 한다.
+- 갑상선에서 분비되는 호르몬은 우리 몸의 **항상성(homeostasis)** 을 유지 하는 역할을 한다.
 
 <hr />
 
-<span class="title">1. HPT axis</span>
+<span class="title">HPT axis</span>
 
 - <span class="organ">Hypothalamus</span> &rarr; <span class="substance">TRH</span> &rarr; <span class="organ">Pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="organ">Thyroid gland</span> &rarr; <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
 
-<span class="title">2. 탈아이오딘화 효소와의 상호작용</span>
+<span class="title">탈아이오딘화 효소와의 상호작용</span>
 
 - <span class="substance">T4</span> &rarr; <span class="organ">D1 / D2</span> &rarr; <span class="substance">T3</span>
 
@@ -378,7 +380,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 <hr />
 
-- `TRH - Thyrotropin Releasing Hormone: 갑상선 자극 호르몬 방출 호르몬`
+- `TRH - Thyrotropin Releasing Hormone: 갑상선 자극 호르몬 방출(분비) 호르몬`
 
 - `TSH - Thyroid Stimulating Hormone: 갑상선 자극 호르몬`
 
@@ -390,15 +392,21 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 <hr />
 
-- `T3(Triiodothyrodine)` 호르몬은 우리 몸의 기능을 조절하는데 중요한 역할을 한다.
+- **T3(Triiodothyronine)** 갑상선 호르몬은 우리 몸의 기능을 조절하는데 중요한 역할을 한다.
 
-- `Deiodinase 효소`는 thyroid hormone 활성화의 균형을 맞추는 역할을 하고, 호르몬 분비는 HPT axis에 의해 조절된다.
+- **Deiodinase** 효소 는 thyroid hormone 활성화 균형을 맞추는 역할을 하고, 호르몬 분비는 HPT axis 메커니즘에 의해 조절된다.
 
-- `수은(Mercury)`은 갑상선 호르몬 균형을 유지하려는 효소인 `탈아이오딘화 효소(Deiodinase)`의 `selenoprotein`과 결합해 효소 기능을 무력화시켜 호르몬 균형을 무너뜨린다.
+- **수은(Mercury)** 은 갑상선 호르몬 균형을 유지하려는 효소인 탈아이오딘화 효소(Deiodinase)의 [selenoprotein](https://en.wikipedia.org/wiki/Selenoprotein) 단백질의 셀레늄과 결합해 효소 기능을 무력화시켜 호르몬 균형을 무너뜨린다.
 
-- 특히 `D2(Deiodinase Type 2)`는 보통 뇌하수체에 존재하는데, D2기능이 저하되면 T4를 T3로 전환시키는 기능이 저하되어 T3가 결핍이된다. 그래서 뇌하수체는 이를 인지해 TSH를 많이 분비하게 되는데, 이는 갑상선에 무리를 줄 수 있고, 결과적으로 혈중 호르몬 농도를 증가 시킨다. 이러한 경우 `Hyperthyrodism(갑상선 기능 항진증)`으로 이어진다.
+- 일반적으로 TSH 호르몬에 의해 자극받은 갑상선은 T3, T4 호르몬을 분비하는데, T3 호르몬을 T4 호르몬에 비해 적게 분비한다.
 
-- 이러한 호르몬 과다분비는 결과적으로 `Pituitary gland`와 `Thyroid gland`에 무리를 주기 때문에 `TSH`분비, `Thyroid hormone`분비 저하로 이어질 수 있다. 이러한 경우 `Hypothyrodism(갑상선 기능 저하증)`으로 이어진다.
+- T4(thyroxine) 호르몬은 아이오딘 원자가 4개 있는데, 탈아이오딘화 효소(deiodinase)에 의해 아이오딘 분자를 잃어서 활성도가 높은 T3(triiodothyronine) 형태가 될수 있다.
+
+- T3호르몬은 T4호르몬에 비해 신체 활성도가 약 3 ~ 5배 정도이며 탈아이오딘화 효소에 의해 활성도가 조절된다.
+
+- **D2(Deiodinase Type 2)** 효소는 보통 뇌하수체에 존재하는데, D2기능이 저하되면 T4를 T3로 전환시키는 기능이 저하되어 T3 호르몬 결핍이된다. 그래서 뇌하수체는 이를 인지해 TSH 호르몬을 많이 분비하는데, 이는 갑상선에 무리를 줄 수 있고, 결과적으로 혈중 갑상선 호르몬 농도를 증가 시킨다. 이러한 경우 [Hyperthyrodism(갑상선 기능 항진증)](https://en.wikipedia.org/wiki/Hyperthyroidism) 으로 이어진다.
+
+- 이러한 호르몬 과다분비는 결과적으로 Pituitary gland 와 Thyroid gland 에 무리를 주기 때문에 TSH 호르몬 Thyroid hormone 분비 저하로 이어질 수 있다. 이러한 경우 [Hypothyrodism(갑상선 기능 저하증)](https://en.wikipedia.org/wiki/Hypothyroidism) 으로 이어진다.
 
 ## Inorganic Arsenic (무기 비소)
 
