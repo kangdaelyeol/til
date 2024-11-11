@@ -23,7 +23,14 @@ export class Component {
     render() {}
 }
 
-function renderRouter(routes) {
+interface Route {
+    path: string
+    component: typeof Component // Component 클래스 인스턴스 타입을 지정
+}
+
+type Routes = Route[]
+
+function renderRouter(routes: Routes) {
     if (!location.hash) {
         history.replaceState(null, '', '/#/')
     }
@@ -32,11 +39,16 @@ function renderRouter(routes) {
 
     const [hash, queryString = ''] = location.hash.split('?')
 
+    interface Query {
+        [key: string]: string
+    }
+
     const query = queryString.split('&').reduce((acc, cur) => {
         const [key, val] = cur.split('=')
         acc[key] = val
         return acc
-    }, {})
+        // 필요에 따라 type assertion 적용이 필요하다
+    }, {} as Query)
 
     history.replaceState(query, '')
 
@@ -44,8 +56,11 @@ function renderRouter(routes) {
         new RegExp(`${route.path}\/?$`).test(hash),
     )
 
-    routerView.innerHTML = ''
-    routerView.append(new currentRoute.component().el)
+    // type guard - 두 요소(routerView, currentRoute)를 한 번에 type guard를 만드는 것은 주의가 필요하다.
+    if (routerView) {
+        routerView.innerHTML = ''
+        currentRoute && routerView.append(new currentRoute.component().el)
+    }
 
     window.scrollTo(0, 0)
 }
