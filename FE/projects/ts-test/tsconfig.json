@@ -1,12 +1,32 @@
 {
   "compilerOptions": {
     "target": "ES2015", // TS를 ECMA2015 버전으로 변환 하겠다.
-    "module": "ESNext", // ES의 가장 최신 버전의 모듈을 사용하겠다.
-    "moduleResolution": "Node", // Node.js 방식으로 파일을 해석하겠다.
-    "esModuleInterop": true, // Interop(interoperability - 정보 처리 상호 운용 가능성) - front의 ESM과 Node의 Common.js 방식을 호환되게 하곘다.
-    "lib": ["ESNext", "DOM"], // ts 파일을 js 파일로 변환할 때 두 모듈을 사용하겠다.
-    "strict": true
+    "module": "ESNext", // ES의 가장 최신 버전의 모듈을 사용하겠다. Node.js는 Common.js 방식을 사용. ESNext는 브라우저에서 사용하는 JS의 최산버전(ESM - 최신버전 -> ESNext)
+    "moduleResolution": "Node", // Node.js 방식으로 파일을 해석(탐색 - resolution) 하겠다.
+    // ESM 모듈 방식 호환성 활성화 여부
+    // Interop(interoperability - 정보 처리 상호 운용 가능성) - front의 ESM과 Node의 Common.js 방식을 호환되게 하곘다.
+    // Node.js 환경에서 사용하는 Commmon Js 환경에서는 module 방식의 export - import 키워드는 사용할 수 없다. Node ts환경에서 ESM 방식의 import - export 키워드를 사용하기 위해 호환성 옵션을 설정한다.
+    "esModuleInterop": true,
+    // 모든 파일을 '모듈' 로써 관리(컴파일)할 지의 유무 - 모든 파일에 export / import 키워드를 사용함으로써 모듈 방식으로 파일을 관리한다. 이는 프로젝트 전체적으로 관리에 용이할 수 있다.
+    "isolatedModules": false,
+    "baseUrl": "./", // 파일 탐색 기본 경로를 지정
+    "typeRoots": ["./node_modules/@types"], // 컴파일러가 참조할 타입선언(d.ts)의 경로를 지정
+    // ts 파일을 js 파일로 변환할 때 사용할 외부 라이브러리 지정
+    // 최신 Js와 관련한 컴파일을 위해 ESNext 라이브러리와 브라우저와 관련된 컴파일을 위해 DOM 라이브러리를 사용한다.
+    "lib": ["ESNext", "DOM"],
+    "strict": false, // 엄격한 타입 검사 활성화
+
+    // strict 속성이 true 값을 가지면 하위의 속성들도 true 값으로 설정된다.
+    "noImplicitAny": false, // 엄격한 any 타입 검사 활성화
+    "noImplicitThis": false, // 엄격한 this 타입 검사 활성화
+    "strictNullChecks": false, // 엄격한 Nullish 타입 검사 활성화
+    "strictFunctionTypes": false, // 엄격한 함수의 매개변수 타입 검사 활성화
+    "strictPropertyInitialization": false, // 엄격한 클래스의 속성 초기화 검사 활성화
+    "strictBindCallApply": false, // 엄격한 Bind, Call, Apply 메서드의 인수 검사 활성화
+
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts"], // 컴파일 파일 경로 목록
+  "exclude": ["node_modules"] // 컴파일 제외 파일 경로 목록
 }
