@@ -1,5 +1,18 @@
+interface ComponentPayload {
+    tagName?: string
+    props?: {
+        [key: string]: unknown
+    }
+    state?: {
+        [key: string]: unknown
+    }
+}
+
 export class Component {
-    constructor(payload = {}) {
+    public el
+    public props
+    public state
+    constructor(payload: ComponentPayload = {}) {
         const { tagName = 'div', props = {}, state = {} } = payload
         this.el = document.createElement(tagName)
         this.props = props
