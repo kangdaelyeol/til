@@ -38,9 +38,9 @@ export default class MovieList extends Component {
             ),
         )
 
-        const loaderEl = this.el.querySelector('.the-loader')
-        movieStore.state.loading
-            ? loaderEl.classList.remove('hide')
-            : loaderEl.classList.add('hide')
+        const loaderEl = this.el.querySelector('.the-loader') // element를 확실히 가져온다면 'as' type assertion 사용해도 괜찮다. -> as HTMLDivElement
+        movieStore.state.loading // optional chaining operator 사용
+            ? loaderEl?.classList.remove('hide')
+            : loaderEl?.classList.add('hide')
     }
 }
