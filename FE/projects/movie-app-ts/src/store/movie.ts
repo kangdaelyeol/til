@@ -1,10 +1,60 @@
 import { Store } from '../core/core'
 
-const store = new Store({
+interface SimpleMovie {
+    Title: string
+    Year: string
+    imdbID: string
+    Type: string
+    Poster: string
+}
+
+interface DetailedMovie {
+    Title: string
+    Year: string
+    Rated: string
+    Released: string
+    Runtime: string
+    Genre: string
+    Director: string
+    Writer: string
+    Actors: string
+    Plot: string
+    Language: string
+    Country: string
+    Awards: string
+    Poster: string
+    // 타입 구조가 간단한 경우 interface로 따로 빼두어 정의하지 않고 바로 선언을 해주는 방법도 가독성, 직관성 측면에서 더 좋을 수 있다.
+    Ratings: {
+        Source: string
+        Value: string
+    }[]
+    Metascore: string
+    imdbRating: string
+    imdbVotes: string
+    imdbID: string
+    Type: string
+    DVD: string
+    BoxOffice: string
+    Production: string
+    Website: string
+    Response: string
+}
+
+interface State {
+    searchText: string
+    page: number
+    movies: SimpleMovie[]
+    movieDetail: DetailedMovie
+    pageMax: number
+    loading: boolean
+    message: string
+}
+
+const store = new Store<State>({
     searchText: '',
     page: 1,
     movies: [],
-    movieDetail: {},
+    movieDetail: {} as DetailedMovie,
     pageMax: 1,
     loading: false,
     message: '',
@@ -12,7 +62,7 @@ const store = new Store({
 
 export default store
 
-export const searchMovies = async (page) => {
+export const searchMovies = async (page: number) => {
     store.state.loading = true
     store.state.message = ''
     if (page === 1) {
@@ -51,7 +101,7 @@ export const searchMovies = async (page) => {
     }
 }
 
-export const getMovieDetails = async (id) => {
+export const getMovieDetails = async (id: string) => {
     try {
         const json = await (
             await fetch('/api/movie', {
