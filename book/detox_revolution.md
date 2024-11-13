@@ -62,6 +62,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Environmental hormone - 환경 호르몬](#environmental-hormone---환경-호르몬)
 
+- [농약 - herbicide](#농약---herbicide)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -538,13 +540,13 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## 농약 - herbicide
 
-- 보통 미국 같은데에서 옥수수를 재배하기 직전 `Roundup`이라는 제초제를 사용하는데, 좀 많이 사용한다.
+- 보통 미국 같은데에서 옥수수를 재배하기 직전 [Roundup](<https://en.wikipedia.org/wiki/Roundup_(herbicide)>) 이라는 제초제를 주로 사용한다
 
-- Roundup은 사실 상표, 브랜드 명이다. 이 회사에서는 `Glyphosate-based herbicide`를 제조하는데, 이는 몸에 좋지 않다고 한다.
+- Roundup은 사실 상표, 브랜드 명이다. 이 회사에서는 `Glyphosate-based herbicide` 제초제를 제조하는데, 이는 몸에 좋지 않다고 한다.
 
-- Glyphosate는 식물에서 [aromatic amino acid](https://en.wikipedia.org/wiki/Aromatic_amino_acid) 생성을 위한 7과정의 [shikimate pathway](https://en.wikipedia.org/wiki/Shikimate_pathway)중 [EPSP syntase](https://en.wikipedia.org/wiki/EPSP_synthase)라는 효소의 기능을 저하해 아미노산 합성을 방해해 식물을 죽게 한다.
+- [Glyphosate](https://en.wikipedia.org/wiki/Glyphosate)는 식물에서 [aromatic amino acid](https://en.wikipedia.org/wiki/Aromatic_amino_acid) 생성을 위한 7과정의 [shikimate pathway](https://en.wikipedia.org/wiki/Shikimate_pathway) 과정중 [EPSP synthase](https://en.wikipedia.org/wiki/EPSP_synthase) 효소의 기능을 저하해 아미노산 합성을 방해해 식물을 죽게 한다.
 
-- 하지만 이는 제초제라 농작물도 죽게 하지만 `GMO` 개발로 `Roundup free` 농작물이 있다.
+- 하지만 이는 제초제라 농작물도 죽게 하지만 GMO 개발로 Roundup 제초제에 대한 저항성을 가진 Roundup-free 농작물이 있다.
 
 ## Advanced Glycation end-products - 최종 당화 산물
 
