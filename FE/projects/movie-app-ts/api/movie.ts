@@ -8,5 +8,5 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         ? `https://omdbapi.com?apikey=${API_KEY}&i=${id}&plot=full`
         : `https://omdbapi.com?apikey=${API_KEY}&s=${title}&page=${page}`
 
-    res.status(200).json(await (await fetch(url)).json())
+    return res.status(200).json(await (await fetch(url)).json())
 }
