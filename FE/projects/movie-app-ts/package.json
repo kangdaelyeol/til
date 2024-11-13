@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node-fetch": "^2.6.12",
     "dotenv": "^16.4.5",
     "parcel": "^2.12.0",
     "vercel": "^37.14.0"
