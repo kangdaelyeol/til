@@ -64,7 +64,11 @@ export default class Chatbot extends Component {
 
         inputEl?.addEventListener('keydown', (event: Event) => {
             // type guard
-            if (event instanceof KeyboardEvent && event.key === 'Enter') {
+            if (
+                event instanceof KeyboardEvent &&
+                event.key === 'Enter' &&
+                !event.isComposing // CJK 텍스트의 경우 브라우저가 분석하는 과정을 거치기 때문에 이벤트가 두 번 발생할 수 있다 - isComposing
+            ) {
                 sendMessages()
             }
         })
@@ -92,5 +96,11 @@ export default class Chatbot extends Component {
         chatsEl?.addEventListener('click', (event: Event) => {
             event.stopPropagation()
         })
+
+        const messageListEl = this.el.querySelector('.chats ul')
+
+        messageListEl?.scrollTo(0, messageListEl.scrollHeight || 0)
+
+        inputEl?.focus()
     }
 }
