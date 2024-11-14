@@ -584,6 +584,13 @@ footer a:hover {
   display: none;
 }
 
+.chatbot.chatbot--on .chat-starter .icon--open {
+  display: none;
+}
+.chatbot.chatbot--on .chat-starter .icon--close {
+  display: block;
+}
+
 /* Not Found */
 
 .not-found h1 {
