@@ -225,6 +225,10 @@ header .user img {
   text-align: center;
 }
 
+.movie-list .the-loader {
+  margin: 30px auto;
+}
+
 .movies .movie {
   --width: 200px;
   position: relative;
@@ -392,10 +396,6 @@ header .user img {
 .the-movie .plot.skeleton {
   width: 80%;
   height: 400px;
-}
-
-.the-movie .the-loader {
-  margin: 30px auto;
 }
 
 @media (max-width: 1200px) {
