@@ -1,17 +1,13 @@
+import OpenAI from 'openai'
 import { Store } from 'src/core/core'
 
 interface State {
     chatText: string
-    messages: Message[]
+    messages: OpenAI.ChatCompletionMessageParam[]
     loading: boolean
 }
 
-interface Message {
-    role: 'user' | 'assistant'
-    content: string
-}
-
-const defaultMessages: Message[] = [
+const defaultMessages: OpenAI.ChatCompletionMessageParam[] = [
     { role: 'assistant', content: '좋아하는 영화 장르나 제목을 알려주세요' },
 ]
 
@@ -23,7 +19,7 @@ const store = new Store<State>({
 
 export default store
 
-export const sendMesages = async () => {
+export const sendMessages = async () => {
     if (!store.state.chatText.trim()) return
     if (store.state.loading) return
     store.state.loading = true
