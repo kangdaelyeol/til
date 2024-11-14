@@ -69,6 +69,15 @@ body {
   color: var(--color-white);
 }
 
+.btn-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+}
 /* The Header */
 
 header {
@@ -276,7 +285,6 @@ header .user img {
 .the-loader {
   width: 30px;
   height: 30px;
-  margin: 30px auto;
   border: 4px solid var(--color-primary);
   border-top-color: transparent;
   border-radius: 50%;
@@ -386,6 +394,10 @@ header .user img {
   height: 400px;
 }
 
+.the-movie .the-loader {
+  margin: 30px auto;
+}
+
 @media (max-width: 1200px) {
   .the-movie {
     gap: 30px;
@@ -451,6 +463,125 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Chatbot */
+
+.chatbot {
+  --position-bottom: 20px;
+  --position-right: 40px;
+}
+
+@media (max-width: 600px) {
+  .chatbot {
+    --position-right: 20px;
+  }
+}
+
+.chatbot .chats {
+  width: calc(100% - var(--position-right) * 2);
+  max-width: 450px;
+  border: 1px solid var(--color-black);
+  border-radius: 20px 20px 4px 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-area);
+  position: fixed;
+  bottom: calc(var(--position-bottom) + 50px + 14px);
+  right: var(--position-right);
+  z-index: 1;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.chatbot.chatbot--on .chats {
+  visibility: visible;
+  opacity: 1;
+}
+
+.chatbot .chats ul {
+  max-height: calc(100vh - 340px);
+  padding: 60px 20px 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chatbot .chats li {
+  position: relative;
+  max-width: 70%;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.chatbot .chats li.assistant {
+  align-self: flex-start;
+  border-top-left-radius: 4px;
+  background-color: var(--color-white-5);
+}
+
+.chatbot .chats li.user {
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+.chatbot .chats li.assistant .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: -10px;
+  color: rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-white-5);
+}
+
+.chatbot .chats li.assistant .the-loader {
+  width: 13px;
+  height: 13px;
+  border-width: 3px;
+}
+
+.chatbot .input {
+  padding: 14px 20px 20px;
+  border-top: 1px solid var(--color-white-5);
+  display: flex;
+  gap: 10px;
+}
+
+.chatbot .input input {
+  flex-grow: 1;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px 4px 4px 10px;
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: var(--color-white-5);
+}
+
+.chatbot .chat-starter {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: var(--position-bottom);
+  right: var(--position-right);
+  z-index: 1;
+}
+
+.chatbot .chat-starter .icon--open {
+  display: block;
+}
+
+.chatbot .chat-starter .icon--close {
+  display: none;
 }
 
 /* Not Found */

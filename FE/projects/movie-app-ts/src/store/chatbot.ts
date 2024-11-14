@@ -23,7 +23,7 @@ const store = new Store<State>({
 
 export default store
 
-export const semdMesages = async () => {
+export const sendMesages = async () => {
     if (!store.state.chatText.trim()) return
     if (store.state.loading) return
     store.state.loading = true
