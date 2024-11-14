@@ -64,6 +64,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [농약 - herbicide](#농약---herbicide)
 
+- [Advanced Glycation end-products - 최종 당화 산물](#advanced-glycation-end-products---최종-당화-산물)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -550,27 +552,27 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## Advanced Glycation end-products - 최종 당화 산물
 
-- 단백질과 지방이 당(sugar)와 함께 `비효소적 반응(non-enzymatic reaction)`을 거치면 최종 당화산물이 생성이 된다.
+- 단백질과 지방이 당(sugar)와 함께 `비효소적 반응(non-enzymatic reaction)` 을 거쳐 최종 당화산물이 생성이 된다.
 
-  - [마이야르 반응(maillard reaction)](https://testbook.com/chemistry/maillard-reaction)이 대표적인 non-enzymatic reaction중 하나다.
+  - [마이야르 반응(Maillard reaction)](https://testbook.com/chemistry/maillard-reaction)이 대표적인 non-enzymatic reaction 중 하나다.
 
-  - [캐러멜화(caramelization reaction)](https://en.wikipedia.org/wiki/Caramelization)도 비효소적 반응인데 당 성분이 오직 열에 의해서 browning되는 [열분해(pyrolysis)](https://en.wikipedia.org/wiki/Pyrolysis) 반응이다. 아미노산이 포함되어 반응하는 마이야르 반응과는 다른 메커니즘이다.
+  - [캐러멜화(caramelization reaction)](https://en.wikipedia.org/wiki/Caramelization)도 비효소적 반응인데 당 성분이 오직 열에 의해서 갈변(browning)되는 [열분해(pyrolysis)](https://en.wikipedia.org/wiki/Pyrolysis) 과정이다. 이는 **아미노산** 이 포함되어 반응하는 마이야르 반응과는 다른 메커니즘이다.
 
-  - 우리 몸에서도 자연스럽게 [당화 반응(Glycation)](https://en.wikipedia.org/wiki/Glycation)이 발생한다. 이는 자연스럽게 발생되며 `노화(aging)`와 연관이 있다.
+  - 우리 몸에서도 [당화 반응(Glycation)](https://en.wikipedia.org/wiki/Glycation)이 발생한다. 이는 자연스럽게 발생되며 **노화(aging)** 와 연관이 있다.
 
-- AGEs는 `RAGE(Receptor)`와 반응해서 `노화(aging)`, `만성 질환(chronic condition, disease)`, `신경 독성(neurotoxicity)`을 일으키는데, `APOE`유전형에 따라 Alzheimer's disease와 연관성이 있다고 한다.
+- AGEs는 **RAGE(Receptor)** 수용체와 결합해 노화(aging), 만성 질환(chronic condition, disease), **신경 독성(neurotoxicity)** 등을 유발할 수 있으며, **APOE** 유전형에 따라 Alzheimer's disease 와 연관성이 있다고 한다.
 
-- **APOE - Apolioprotein E genotype**
+- **APOE - Apolipoprotein E genotype**
 
-  - [APOE](https://en.wikipedia.org/wiki/Apolipoprotein_E) 단백질은 우리 몸에서 `콜레스테롤, 지질(지방) 대사`에 관여한다.
+  - [APOE](https://en.wikipedia.org/wiki/Apolipoprotein_E) 단백질은 우리 몸에서 **콜레스테롤, 지질(지방) 대사** 에 관여한다.
 
-  - APOE를 생성하는 대표적인 세 가지의 대립 형질(allele)이 있는데, `APOE 4` 유전형을 가진 사람이 `AGEs`에 노출되면 `Alzheimer's disease`에 취약하다고 한다.
+  - APOE를 생성하는 대표적인 세 가지의 대립 형질(allele)이 있는데, `APOE 4` 유전형을 가진 사람이 **AGEs** 물질에 노출되면 **Alzheimer's disease** 에 취약하다고 한다.
 
-  - 우리 몸에서 단백질 대사가 발생하면 부산물로 `B-amyloid`가 생긴다.
+  - 우리 몸에서 단백질 대사가 발생하면 부산물로 [B-amyloid](https://en.wikipedia.org/wiki/Amyloid_beta) 라는 펩타이드가 생성된다.
 
-  - 이렇게 쌓인 B-amyloid는 뇌에서 면역기능을 담당하는 [미세아교세포(microglia)](https://en.wikipedia.org/wiki/Microglia)에 의해 제거되어야 하는데, APOE4단백질은 그 기능을 방해한다.
+  - 이렇게 쌓인 B-amyloid 펩타이드는 뇌에서 면역기능을 담당하는 [미세아교세포(microglia)](https://en.wikipedia.org/wiki/Microglia)에 의해 제거되어야 하는데, APOE4 단백질은 그 제거 과정을 방해한다.
 
-  - 제거 되지 못한 B-amyloid는 `plaque`형태로 쌓이는데, `염증반응(Inflammatory Response)`을 일으키고, `시냅스(synapse)`의 기능을 저하한다. 이는 결국 alzheimer로 이어진다.
+  - 제거 되지 못한 B-amyloid는 **plaque** 형태로 쌓이게 되면 염증반응(Inflammatory Response) 을 일으키고, **시냅스(synapse)** 기능을 저하시킨다. 이는 결국 alzheimer로 이어진다.
 
 ## liver
 
