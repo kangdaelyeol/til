@@ -66,6 +66,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Advanced Glycation end-products - 최종 당화 산물](#advanced-glycation-end-products---최종-당화-산물)
 
+- [liver](#liver)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -576,9 +578,9 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## liver
 
-- 간은 우리 몸의 독소를 해독하는데 매우 중요한 역할을 한다.
+- 간은 몸에서 독소를 해독하는데 중요한 역할을 한다.
 
-- 우리 몸의 피는 무조건 간을 거쳐서 해독된다고 보면 된다.
+- 우리 몸의 피는 무조건 간을 거쳐서 해독된다고 볼 수 있다.
 
 <hr />
 
@@ -600,15 +602,15 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - **Phase 1 - functionalization / 변환 단계**
 
-  - 지용성 독소는 간에서 지용성 독소를 `CYP 효소`에 의해 중간체로 변한다.
+  - 지용성 독소는 간에서 [CYP 효소](https://en.wikipedia.org/wiki/Cytochrome_P450) 에 의해 중간체로 변환된다.
 
-  - 이 과정에서 `비타민 B군`이 사용된다.
+  - 이 과정에서 **비타민 B군** 이 사용된다.
 
-  - 변환된 `중간체(intermediate metabolite)`는 `반응성이 매우 높은` 대사산물(reactive metabolite)로 독성이 강하다. 그래서 이 물질을 빠르게 Phase 2에서 결합을 거처야 한다.
+  - 변환된 **중간체(intermediate metabolite)** 는 **반응성이 매우 높은** 대사산물(reactive metabolites)로 독성이 강하다. 그래서 이 물질을 안정적인 물질로 변환하기 위해 Phase 2 과정을 거쳐야 한다.
 
 - **Phase 2 - Conjugation / 결합 단계**
 
-  - phase 1을 거쳐 생성된 reactive metabolism에 친수성 물질을 결합하는 과정을 거친다.
+  - phase 1 과정을 거쳐 생성된 reactive metabolites 물질에 친수성 물질을 결합하는 과정을 거친다.
 
   - 독소와 결합할 수 있는 여러가지 방법, 물질이 존재한다. 그래서 결합하는 경로도 여러가지다.
 
@@ -618,7 +620,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
     - **Glucuronidation**: glucuronic acid(글루크론산)과 결합
 
-    - **surfation(황산화)**: 황산염(sulfate)과 결합
+    - **sulfation(황산화)**: 황산염(sulfate)과 결합
 
     - **methylation**: 메틸기(Methyl group)와 결합
 
@@ -626,19 +628,20 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - **Phase 3 - 배출 단계**
 
-  - 배출 단계를 Phase 3라 따로 두지 않고, 독립적인 과정으로 설명하거나, 포함하거나, phase2에 포함시키는 설명이 있어 혼동이 왔지만, 나는 phase 3 이라 하겠다.
+  - 배출 단계를 Phase 3으로써 구분하지 않고, 독립적인 과정으로 설명하거나, phase 2 과정에 포함시키는등 여러 설명이 있어 혼동이 왔지만, 나는 phase
+    3 으로 구분하겠다.
 
-  - Phase 2를 통해 해독된 독소는 `수용성(water-soluble)`을 가지게 되어 배출될 수 있는 형태가 된다.
+  - Phase 2를 통해 해독된 독소는 **수용성(water-soluble)** 성질을 가지게 되어 쉽게 배출될 수 있다.
 
-  - 독소는 각각 형태에 따라 `담즙(bile)`을 통해 대장으로 배출 되거나, `신장(kidney)`을 통해 소변으로 배출이 된다.
+  - 독소는 각각 형태에 따라 **담즙(bile)** 을 통해 대장으로 배출 되거나, **신장(kidney)** 을 통해 소변으로 배출이 된다.
 
 - 우리는 간의 해독 시스템 보존에 신경써야 한다.
 
 - 우리가 먹는 약은 간에 무리를 준다고만 알려져있지만, 간 기능이 정상적이어야 약효를 볼 수 있다.
 
-  - `간에서 해독되어야 활성상태`를 띠어 약효를 볼 수 있는 약도 있다. 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
+  - **간에서 해독되어야 활성상태** 를 띠어 약효를 볼 수 있는 약(prodrug) 도 있다. 이러한 작용으로 간 기능이 정상적이지 않으면 약을 아무리 먹어도 약효를 볼 수 없는 경우도 있다.
 
-  - 약을 먹었을 때 간기능이 안좋아서 해독을 재때 못해 약효를 예상보다 많이 받아 부작용을 일으키는 경우도 있다.
+  - 약을 먹었을 때 간기능이 안좋아서 해독을 제때 못해 약효를 예상보다 많이 받아 부작용을 일으키는 경우도 있다.
 
 ## bile - 담즙의 중요성
 
