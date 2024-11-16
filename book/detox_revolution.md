@@ -68,6 +68,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [liver](#liver)
 
+- [bile - 담즙의 중요성](#bile---담즙의-중요성)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -645,13 +647,15 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## bile - 담즙의 중요성
 
-- 담즙은 우리가 먹은 음식을 소화하는데 매우 중요한 역할을 한다.
+- 담즙은 음식물을 소화하는데 중요한 역할을 한다.
 
-- 담즙 제대로 분비가 되지 않으면 우리가 아무리 좋은 음식을 먹어도 의미가 없고, 오히려 흡수가 이루어지지 않아 다른 장내 세균에 의해 분해되어 유독성 물질로 변해 우리 몸에 축적이 될 수 있다.
+- 담즙 제대로 분비가 되지 않으면 아무리 좋은 음식을 섭취해도 의미가 없다.
 
-- 담즙은 `지방을 유화`시키고, `지용성 독소를 배출`하고, `스테로이드 호르몬을 배출`하는데 중요한 역할을 한다.
+- 특히 지방의 소화가 원활히 이루어지지 않아 영양소 흡수에 문제가 발생하고, 흡수되지 못한 지방은 다른 장내 세균에 의해 분해되어 독성 물질로써 작용될 수 있다.
 
-- 담즙은 `담즙산(bile acid)`를 포함한 여러 물질이 있다. 여기서 소화에 중요한 역할을 하는 것이 bile acid다.
+- 담즙은 지방을 유화 시키고, 지용성 독소를 배출 하고, 스테로이드 호르몬을 배출 하는데 중요한 역할을 한다.
+
+- 담즙에 포함된 여러 물질 중에 소화에 중요한 역할을 하는 물질이 **담즙산(bile acid)** 이다.
 
 <hr />
 
@@ -665,13 +669,11 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 <hr />
 
-- cholesterol은 간에서 CYP효소에 의해 여러 경로를 거쳐 bile acid로 변환되어 담낭에 저장되는데, 과잉이 되면 콜레스테롤 그대로 담낭에 저장이 된다.
+- cholesterol은 간에서 CYP효소에 의해 여러 경로를 거쳐 bile acid로 변환되어 담낭에 저장되는데 콜레스테롤 과잉시 그대로 담낭에 저장 된다.
 
   - `담낭에 콜레스테롤이 많고, 적절히 융해 되지 않으면 담석(gallstones)이 생길 수 있다.`
 
-- bilirubin은 적혈구가 분해되어 최종적으로 변환된 `혈색소`인데, 이는 담즙에 포함된다. 이 색소 수치가 높으면 황달이라고 한다.
-
-- 이 외에도 `인지질(phospholipids)`등 담즙에 포함된 성분이 너무나도 많다.
+- [bilirubin](https://en.wikipedia.org/wiki/Bilirubin) 은 적혈구의 헤모글로빈이 최종 대사산물로써 변환된 **혈색소** 다. 이는 담즙에 포함된 물질인데, 이 색소 수치가 높으면 [황달](https://en.wikipedia.org/wiki/Jaundice) 상태가 된다.
 
 <hr />
 
@@ -685,17 +687,21 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - <span class="substance">micelle</span> &rarr; <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> &rarr; <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
 
-_Epthelial cells는 모든 부위의 상피세포를 뜻하는 포괄적인 의미_
+_Epithelial cells는 모든 부위의 상피세포를 뜻하는 포괄적인 의미_
 
-_Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. 그래서 entrocytes가 더 적절해 보인다._
+_Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. 그래서 enterocytes가 더 적절한 표현으로 보인다._
 
 <hr />
 
-- 지방은 duodenum에서 분비된 bile acid에 의해 `emulsification(유화)`되어 `소화 표면적(digestive surface)`를 증가시킨다.
+- 담즙산(bile acid)은 담낭(gallbladder)에서 십이지장(duodenum)으로 분비된다.
 
-- 유화된 지방은 췌장(pancreas)에서 분비된 lipase에 의해 `가수분해(hydrolysis)`되어 지방산(fatty acid)와 monoglyceride로 분해된다.
+- 십이지장에서 지방이 담즙산에 의해 **emulsification(유화)** 되어 **소화 표면적(digestive surface)** 을 증가시킨다.
 
-- 분해된 지방산과 모노글리세라이드는 bile acid와 결합해 `micelle`형태로 존재하는데, 이는 Jejunum, Ileum의 `흡수 상피세포(Absorptive enterocyte)`에 가까워지면 담즙산이 `해리(dissocate)`되어 흡수된다.
+- 유화된 지방은 췌장(pancreas)에서 분비된 lipase에 의해 가수분해(hydrolysis) 되어 지방산(fatty acid)와 monoglyceride로 분해된다.
+
+- 분해된 지방산과 모노글리세라이드는 답즙의 bile acid, phospholipids(인지질)와 결합해 **micelle(미셀)** 을 형성한다.
+
+- micelle은 Jejunum, Ileum의 **흡수 상피세포(Absorptive enterocyte)** 에 가까워지면 담즙산이 `해리(dissociate)` 되어 지방산과 모노글리세라이드가 흡수되고, 담즙산은 Ileum에서 대부분 재흡수된다.
 
 <hr />
 
@@ -705,11 +711,11 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <hr />
 
-- 올리브 오일에 포함된 `oleic acid(올레산)`은 `단일 불포화 지방산(MUFA - Monounsaturated Fatty Acid)`로써 duodenum과 Jejunum을 자극해 상피세포에서 [CCK(cholecystokinin)](https://en.wikipedia.org/wiki/Cholecystokinin)을 분비하게 한다.
+- 올리브 오일에 포함된 [oleic acid(올레산)](https://en.wikipedia.org/wiki/Oleic_acid)은 오메가-9 포지션인 단일 불포화 지방산(MUFA - Monounsaturated Fatty Acid) 으로써 duodenum과 Jejunum의 [I세포](https://en.wikipedia.org/wiki/Enteroendocrine_cell#Intestinal_enteroendocrine_cells) 를 자극해 상피세포에서 [CCK(cholecystokinin)](https://en.wikipedia.org/wiki/Cholecystokinin)을 분비하게 한다.
 
-- 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase분비를 촉진한다[
+- 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase 분비를 촉진한다
 
-## Enterohepatic Circulation - ](#enterohepatic-circulation---장간)장간
+## Enterohepatic Circulation - 장간 순환
 
 - 우리 몸에 있는 `담즙산(bile acid)`은 `enterohepatic circulation(장간 순환)`를 통해 `재사용` 된다.
 
