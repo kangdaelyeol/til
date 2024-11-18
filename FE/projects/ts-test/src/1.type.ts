@@ -6,6 +6,9 @@ let red: string = 'red'
 const fruits: string[] = ['apple', 'banana']
 
 // union - vertical bar
+// union 타입은 OR과 비슷한 기능을 하며 타입 가능성을 확장한다. - 타입의 엄격함이 떨어짐
+// intersection 타입은 AND와 비슷한 기능을 하며 타입 가능성을 축소한다.
+// 무엇이 좋고 나쁜지 비교할 수 있는 개념이 아닌, 상황과 목적에 따라 적절히 사용할 수 있는 타입 기호.
 const union: (string | number)[] = ['abc', 123, 'asc']
 
 const unionVal: string | number | null = null
