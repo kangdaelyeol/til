@@ -517,17 +517,17 @@ footer a:hover {
   font-weight: 500;
 }
 
-.chatbot .chats li.assistant {
-  align-self: flex-start;
-  border-top-left-radius: 4px;
-  background-color: var(--color-white-5);
-}
-
 .chatbot .chats li.user {
   align-self: flex-end;
   border-bottom-right-radius: 4px;
   background-color: var(--color-primary);
   color: var(--color-black);
+}
+
+.chatbot .chats li.assistant {
+  align-self: flex-start;
+  border-top-left-radius: 4px;
+  background-color: var(--color-white-5);
 }
 
 .chatbot .chats li.assistant .photo {
@@ -548,6 +548,15 @@ footer a:hover {
   width: 13px;
   height: 13px;
   border-width: 3px;
+}
+
+.chatbot .chats li.assistant .movie-title {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.chatbot .chats li.assistant .movie-title:hover {
+  text-decoration: underline;
 }
 
 .chatbot .input {

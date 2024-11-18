@@ -1,5 +1,6 @@
 import { Component } from 'src/core/core'
 import chatStore, { sendMessages } from '../store/chatbot'
+import movieStore, { searchMovies } from '../store/movie'
 
 export default class Chatbot extends Component {
     constructor() {
@@ -27,7 +28,16 @@ export default class Chatbot extends Component {
                             `
                             : ''
                     }
-                  ${msg.content}
+                  ${
+                      typeof msg.content === 'string' // type guard
+                          ? msg.content.replace(
+                                /{{(.*?)\/\/(.*?)}}/g,
+                                (match, ko, en) => /* html */ `
+                    <span class="movie-title" data-movie-title="${en}">${ko}</span>
+                  `,
+                            )
+                          : ''
+                  }
                 </li>
                     `,
                         )
@@ -57,6 +67,7 @@ export default class Chatbot extends Component {
             </div>
         `
 
+        // chatbot input
         const inputEl = this.el.querySelector('input')
         inputEl?.addEventListener('input', () => {
             chatStore.state.chatText = inputEl.value
@@ -73,11 +84,28 @@ export default class Chatbot extends Component {
             }
         })
 
+        // movie title link
+        const movieTitleElList =
+            document.querySelectorAll<HTMLElement>('.movie-title')
+
+        movieTitleElList.forEach((el) => {
+            el.addEventListener('click', () => {
+                const searchInputEl =
+                    document.querySelector<HTMLInputElement>('.search input')
+                if (!searchInputEl) return
+                const titleText = el.dataset.movieTitle || ''
+                movieStore.state.searchText = titleText
+                searchInputEl.value = titleText
+                searchMovies(1)
+            })
+        })
+
         const btnEl = this.el.querySelector('.input .btn')
         btnEl?.addEventListener('click', () => {
             sendMessages()
         })
 
+        // chat starter button
         const chatStarterEl = this.el.querySelector('.chat-starter')
         chatStarterEl?.addEventListener('click', (event: Event) => {
             event.stopPropagation()
