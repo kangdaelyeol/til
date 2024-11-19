@@ -51,3 +51,29 @@ function App() {
 - 각 정의된 컴포넌트는 반드시 최상위 요소로써 하나의 요소를 반환해야 한다.
 
 - 불필요한 상위 요소를 정의하는 것을 방지하기 위해 Fragement Tag를 사용할 수 있다 - 이는 Empty tag와 같다(shorthand)
+
+## React - Synthetic event
+
+- React 환경에서는 브라우저에서 제공하는 native event와 유사한 [synthetic event](https://react.dev/reference/react-dom/components/common#react-event-object) 객체를 제공한다.
+
+- 일반적으로 native event의 기능을 제공하는 동시에, 브라우저간의 이벤트 구현 차이를 통합시켜준다. 즉 일관된 크로스 브라우저 이벤트 객체라고 할 수 있다.
+
+```js
+function App() {
+	const alertUserText = (e) => {
+		e.preventDefault();
+		// 기본 native event와 동일하게, HTMLFormControlsCollection 데이터 타입이 있는 elements 프로퍼티에 접근이 가능하다.
+		if (e.target.elements instanceof HTMLFormControlsCollection)
+			alert(e.target.elements.user.value);
+	};
+	return (
+		<div>
+			{/* react - synthetic event */}
+			<form onSubmit={alertUserText}>
+				<input type='text' name='user' />
+				<button>submit</button>
+			</form>
+		</div>
+	);
+}
+```
