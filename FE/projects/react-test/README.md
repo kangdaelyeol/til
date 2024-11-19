@@ -41,3 +41,13 @@ function App() {
 	);
 }
 ```
+
+## JSX - javascript XML
+
+- JSX는 JS의 **문법 확장** 이다.
+
+- JS 환경에서 React의 HTML과 유사한 문법 구조를 통해 Component 작성을 할 수 있도록 만들어주는 문법 확장이다.
+
+- 각 정의된 컴포넌트는 반드시 최상위 요소로써 하나의 요소를 반환해야 한다.
+
+- 불필요한 상위 요소를 정의하는 것을 방지하기 위해 Fragement Tag를 사용할 수 있다 - 이는 Empty tag와 같다(shorthand)
