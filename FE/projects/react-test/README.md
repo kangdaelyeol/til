@@ -1,8 +1,43 @@
-# React + Vite
+## 안티 패턴 - 조건부 랜더링
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 조건에 따라 요소를 랜더링하는 경우 그 조건을 컴포넌트 내부가 아닌 외부에서 알 수 있게 하는 것이 좋다.
 
-Currently, two official plugins are available:
+```js
+const Fruits = ({ fruits }) => {
+	// 안티 패턴 - 해당 컴포넌트의 랜더링 유무(조건)을 외부에서 확인할 수 있어야 함.
+	if (fruits.length > 0) return <div>{fruits.join(', ')}</div>;
+	else return null;
+};
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+export default Fruits;
+```
+
+## key
+
+- 배열의 map 메서드를 통해 랜더링 되는 요소는 key 속성값을 가져야 한다.
+
+- 배열 요소에서 할당되는 각 key값은 리엑트 내부에서 상태 변경 감지를 할 때 사용된다.
+
+### key 값의 조건
+
+- **안정적인 값이어야 한다** - 리엑트 내부에서 이전 랜더와 현재 랜더트리의 키값을 비교하여 랜더링 될 요소를 결정하는데, 키값이 매번 변하면 매번 상태가 변한다고 간주되므로 불필요한 랜더링이 발생할 수 있다.
+
+- **고유한 값이어야 한다** - 각 요소는 고유한 키값을 가져 이전 랜더트리와 비교될 수 있는 상태를 가져야 한다.
+
+  - 따라서 index값을 key값으로 주는 것은 지양해야 한다. 배열 요소가 shift연산으로 맨 앞에 추가가 된다면 변경 감지 메커니즘에 문제가 생긴다.
+
+```js
+// react 내부 메커니즘에 의해 key속성을 가지고 이전 렌더링 트리와 현재 랜더링 트리를 비교해 랜더할 요소를 결정한다.
+// key 값을 통해 요소의 변화를 감지한다.
+// key 값은 각 루프마다 독립적이므로, 다른 루프간 중복된 값의 사용이 가능하다.
+// key 값은 안정적인 값이어야 한다. 매 랜더링마다 동적으로 변하는 값이 되면 요소의 변화를 매 랜더링마다 감지하게 된다.
+function App() {
+	return (
+		<div>
+			{data.map((item) => (
+				<div key={item}>{item}</div>
+			))}
+		</div>
+	);
+}
+```
