@@ -77,3 +77,47 @@ function App() {
 	);
 }
 ```
+
+## React - State
+
+- useState를 통해 사용되는 [State는 Snapshot과 같이 행동한다.](https://react.dev/learn/state-as-a-snapshot) 즉 한 번 설정된 값은 해당 랜더링 페이지에 변하지 않고, 리랜더링(re-render)을 발생시키는 트리거로써의 역할을 한다.
+
+```jsx
+const Counter = () => {
+	const [count, setCount] = useState(0);
+
+	const countState = () => {
+		// 각 count는 랜더링시 값이 결정되므로(behave like a snapshot) 모두 같은 값을 가지게 된다. 따라서 각 setState에 입력되는 인수의 값은 같다.
+		setCount(count + 1);
+		setCount(count + 1);
+		setCount(count + 1);
+	};
+
+	return (
+		<div className=''>
+			<span>{count}</span>
+			<button onClick={countState}>count!</button>
+		</div>
+	);
+};
+```
+
+## Rendering
+
+- trigger -> rendering -> committing
+
+- first rendering / subsequent rendering
+
+  - first(initial) rendering - call the root component
+
+  - subsequent rendering - call the function component whose state update triggered the render -> changes to match the latest rendering
+
+  `Pitfall` - rendering must be a pure calculation(function)
+
+  - same input -> same output: Given the same inputs, a component should always return the same JSX.
+
+  - It minds its own business: it should not change any objects or values that existed before rendering
+
+  - otherwise: you can encounter confusing bugs and unpredictable behavior as your codebase grows in complexity
+
+- browser rendering - refer to it as `painting` to avoid confusion throughtout the docs.
