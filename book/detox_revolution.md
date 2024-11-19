@@ -74,6 +74,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [stomach - 위](#stomach---위)
 
+- [gut microbiota - 장내 세균총](#gut-microbiota---장내-세균총)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -789,9 +791,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## gut microbiota - 장내 세균총
 
-- 우리의 몸은 다양한 미생물이 살고있다. 이러한 미생물과 유기적으로 공존하면서 생활하게 된다.
+- 몸 안에 다양한 미생물이 살고있다. 우리는 이러한 미생물과 유기적으로 공존하면서 생활하게 된다.
 
-- 우리 몸의 미생물과의 상호작용이 중요한데, 미생물도 크게 두가지 종류가 있다.
+- 우리 몸의 미생물과의 상호작용이 중요한데, 미생물은 크게 두 종류로 구분된다.
 
 - `gram-positive bacteria`
 
@@ -799,33 +801,37 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - 이들의 특징은 세포의 외막(outer membrane)이 없고 대신 매우 두꺼운 [peptidoglycan](https://en.wikipedia.org/wiki/Peptidoglycan)층이 있다.
 
-  - 두꺼운 peptidoglycan층이 gram stain에서 사용하는 [Crystal violet](https://en.wikipedia.org/wiki/Crystal_violet)같은 보라색 염료들을 잘 유지해줘서 보라색으로 염색된다고 한다.
+  - 두꺼운 peptidoglycan 층이 gram stain에서 사용하는 [Crystal violet](https://en.wikipedia.org/wiki/Crystal_violet)같은 보라색 염료들을 빠져나가지 않게 잘 유지해줘서 보라색으로 염색된다고 한다.
 
 - `gram-negative bacteria`
 
-  - [gram-negative bacteria](https://en.wikipedia.org/wiki/Gram-negative_bacteria)는 gram stain에서 붉은색, 분홍색 계열로 염새되는 박테리아들을 말한다.
+  - [gram-negative bacteria](https://en.wikipedia.org/wiki/Gram-negative_bacteria)는 gram stain에서 붉은색, 분홍색 계열로 염색되는 박테리아들을 말한다.
 
   - outer membrane이 있고, 중간층인 peptidoglycan이 gram-positive bacteria에 비해 얇다. 그래서 gram stain에서 outer membrane과 얇은 peptidoglycan에 의해 보라색 염료를 유지하지 못하고, 대신 [safranin](https://en.wikipedia.org/wiki/Safranin)염료가 남아서 붉은색으로 보인다고 한다.
 
   - 이들은 세포에 외막(outer membrane)이 있고, 외막은 [지질 다당류(lipopolysaccharide)](https://en.wikipedia.org/wiki/Lipopolysaccharide)로 되어있다.
 
-  - lipopolisaccharide는 내독소(endotoxin)이라고도 하는데, 이는 우리 몸에 안좋은 영향을 미친다.
+  - lipopolysaccharide(LPS)는 내독소(endotoxin) 라고도 한다.
 
-- `LPS - lipopolisaccharide(endotoxin)`
+- `LPS - lipopolysaccharide(endotoxin)`
 
-  - LPS는 우리 몸에 굉장히 좋지 않다.
+  - gram-negative bacteria가 죽으면 그 시체에 남아있던 LPS는 방출되어 몸에 안좋은 작용을 하는데, 이는 장 투과성을 증가시켜 [장 누수 증후군(gut leaky syndrome)](https://en.wikipedia.org/wiki/Leaky_gut_syndrome)를 일으킬 수 있다
 
-  - gram-negative bacteria가 죽으면 그 시체에 있는 LPS가 방출되어 몸에 안좋은 작용을하는데, 이는 장 투과성을 증가시켜 [장 누수 증후군(gut leaky syndrome)](https://en.wikipedia.org/wiki/Leaky_gut_syndrome)를 일으킬 수 있다
-
-  - 이로 인해 LPS가 혈류로 들어가면 [내독소혈증(endotoxemia)](https://en.wikipedia.org/wiki/Lipopolysaccharide#Endotoxemia)를 일으키며 이는 제2형 `당뇨(type 2 diabete)`또는 [신경염증(neuroinflammation)](https://en.wikipedia.org/wiki/Neuroinflammation)을 유발한다.
+  - 이로 인해 LPS가 혈류로 들어가면 [내독소혈증(endotoxemia)](https://en.wikipedia.org/wiki/Lipopolysaccharide#Endotoxemia)를 일으키며 이는 제 2형 `당뇨(type 2 diabete)`또는 [신경염증(neuroinflammation)](https://en.wikipedia.org/wiki/Neuroinflammation)을 유발한다.
 
   - gram-negative bacteria 자체가 혈류로 들어가게 되는 경우 [패혈증(sepsis)](https://en.wikipedia.org/wiki/Sepsis)를 유발하며, 박테리아는 혈류 안에서 LPS를 방출하므로 [패혈성 쇼크(septic shock)](https://en.wikipedia.org/wiki/Septic_shock)를 일으킬 수 있다.
 
-- 좋은 장환경을 위해서 장내 유익균(gram-positive bacteria)의 관리가 중요하다
+- 좋은 장내 환경을 위해서 장내 유익균의 관리가 중요하다
+
+  - 일반적으로 gram-positive bacteria 들이 유익균 측에 속하지만 반드시 그렇지는 않다.
+
+  - gram-positive bacteria 중에서도 유해균에 속하는 균이 있다.
+   
+  - 반대로 gram-negative bacteria 중에서도 유익균에 속하는 균이 있다.
 
 - 장내 유익균을 위해선 식이섬유를 많이 섭취해야 한다
 
-- 하지만 평소에 식이섬유 섭취를 자주 하지 않은 사람이 갑자기 야채를 많이 섭취하면 좋지 않을 수 있다. 장내 유익균의 비율이 비교적 적기 때문이다.
+- 하지만 평소에 식이섬유 섭취를 자주 하지 않은 사람이 갑자기 야채를 많이 섭취하면. 장내 유익균의 비율이 비교적 적기 때문에 식이섬유가 온전하게 소화되지 않을 수 있다.
 
 - 천천히 야채를 섭취해, 그 양을 늘려가는 방식으로 식습관을 형성해야 한다. 그렇지 않으면 야채의 좋은 성분들 조차 일부 유해균(gram-negative bacteria)에 의해 부산물이나 독성물질로 대사될 수 있기 떄문이다.
 
