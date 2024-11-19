@@ -1,19 +1,32 @@
 import './App.css';
-import { useState } from 'react';
+import { useReducer, useState } from 'react';
+
+const reducer = (state, action) => {
+	switch (action.type) {
+		case 'INCREASE':
+			return { count: state.count + 1 };
+		case 'DECREASE':
+			return { count: state.count - 1 };
+		case 'DOUBLE':
+			return { count: state.count * 2 };
+		case 'SQRT':
+			return { count: Number(Math.sqrt(state.count).toFixed(0)) };
+
+		default:
+			throw new Error('invalid type: ' + action.type);
+	}
+};
 
 const Counter = () => {
-	const [count, setCount] = useState(0);
-
-	const countState = () => {
-		setCount(count + 1);
-		setCount(count + 1);
-		setCount(count + 1);
-	};
+	const [{ count }, dispatch] = useReducer(reducer, { count: 0 });
 
 	return (
 		<div className=''>
 			<span>{count}</span>
-			<button onClick={countState}>count!</button>
+			<button onClick={() => dispatch({ type: 'INCREASE' })}>inc</button>
+			<button onClick={() => dispatch({ type: 'DECREASE' })}>dec</button>
+			<button onClick={() => dispatch({ type: 'DOUBLE' })}>double</button>
+			<button onClick={() => dispatch({ type: 'SQRT' })}>SQRT</button>
 		</div>
 	);
 };
