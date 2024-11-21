@@ -78,6 +78,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Stomach - Gastric Ulcer, GERD](#stomach---gastric-ulcer-gerd)
 
+- [Gluten](#gluten)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -907,9 +909,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Gluten
 
-- 우리가 즐겨먹는 밀가루에는 gluten이 많이 있다.
+- 밀가루에는 gluten 성분이 많이 포함되어 있다.
 
-- Gluten은 크게 [gliadin](https://en.wikipedia.org/wiki/Gliadin), [glutenin](https://en.wikipedia.org/wiki/Glutenin)이라는 단백질의 결합으로 이루어져 있는데, 여기서 gliadin은 장누수(leaky gut)를 일으킬 수 있는 위험이 있다.
+- Gluten은 [gliadin](https://en.wikipedia.org/wiki/Gliadin)과 [glutenin](https://en.wikipedia.org/wiki/Glutenin) 단백질의 결합으로 이루어져 있는데, gliadin 단백질은 장누수(leaky gut)를 일으킬 수 있다.
 
 <hr />
 
@@ -923,11 +925,15 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - gliadin은 소화 효소에 부분적으로 저항성이 있다.
 
-- gliadin의 일부는 분해되지 않고 공장(jejumun) 상피세포(epithelium)에 있는 CXCR3 수용체와 결합해 zonulin이라는 단백질을 분비하도록 촉진한다.
+- gliadin의 일부는 분해되지 않고 공장(jejunum)의 상피세포(epithelium)에 있는 CXCR3 수용체와 결합해 zonulin 단백질을 분비하도록 촉진한다.
 
-- zolulin은 세포의 [밀착연접(tight junction)](https://en.wikipedia.org/wiki/Tight_junction)을 느슨하게 만들어 장 투과성을 증가시킨다.
+- [zonulin](https://en.wikipedia.org/wiki/Zonulin) 단백질은 세포의 [밀착연접(tight junction)](https://en.wikipedia.org/wiki/Tight_junction)을 느슨하게 만들어 장 투과성을 증가시킨다.
 
 - 이를 통해 분해되지 않은 큰 분자 물질이 혈액으로 들어갈 가능성이 있으며 이는 면역 반응, 감염등을 일으킬 수 있다.
+
+- gliadin은 불용성 성질을 띤다. 또한 소장 상피세포를 투과할 수 있으며, 산모가 섭취할 경우 모유에서 높은 수치로 발견된다.
+
+- 또한 gliadin은 autoimmune disease인 [Celiac disease](https://en.wikipedia.org/wiki/Celiac_disease) 발병 원인이 된다.
 
 ## casein protein
 
