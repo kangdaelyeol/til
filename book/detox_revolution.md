@@ -80,6 +80,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Gluten](#gluten)
 
+- [Casein protein](#casein-protein)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -935,13 +937,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 또한 gliadin은 autoimmune disease인 [Celiac disease](https://en.wikipedia.org/wiki/Celiac_disease) 발병 원인이 된다.
 
-## casein protein
+## Casein protein
 
-- 우유의 하얀색을 띠게 하는 [casein protein](https://en.wikipedia.org/wiki/Casein)은 우리 몸에 안좋은 영향을 미칠 가능성이 있다.
+- 우유의 하얀색을 띠게 하는 단백질 [casein protein](https://en.wikipedia.org/wiki/Casein)은 몸에 안좋은 영향을 미칠 가능성이 있다.
 
-- casein은 장내 산성 환경에 의해 겔화(gelation)되어 매우 천천히 분해된다. 그래서 자기 전에 섭취를 하게 되면 그 동안 장이 쉬지 못해 좋지 않다.
+- casein은 장내 산성 환경에 의해 겔화(gelation)되어 매우 천천히 분해된다. 그래서 자기 전에 섭취를 하게 될 경우, 수면 시간동안 장이 휴식할 시간을 갖지 못한다.
 
-  - 또한 우유의 casein은 이질적인 물질이라 우리 몸에 흡수 되었을 때 어떠한 면역 반응을 일으킬지 모른다.
+  - 또한 우유의 casein은 모유의 casein 단백질과 달리 이질적인 물질이라 우리 몸에 흡수 되었을 때 어떠한 면역 반응을 일으킬지 모른다.
 
   - casein이 장내에서 분해된 peptide는 장 누수 증후군이 있을 때 혈류로 들어와 면역 반응을 일으킬 수 있다.
 
@@ -951,9 +953,17 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - b-casein도 A1, [A2 b-casein](https://en.wikipedia.org/wiki/A2_milk) 두 변이형이 있다.
 
-  - 여기서 A1 b-casein이 소화되면서 나오는 [BCM-7(b-casomorphin)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9094626/)이라는 peptide 성분은 opioid작용이 있어 opioid receptor과 결합시 [morphine](https://en.wikipedia.org/wiki/Morphine)효과를 줄 수 있다.
+  - 하나의 아미노산 분자 구성의 차이로 두 타입이 구분된다
+
+    - **A1 b-casein:** [histidine](https://en.wikipedia.org/wiki/Histidine) occurs position 67 in chain of amino acids
+
+    - **A2 b-casein:** [proline](https://en.wikipedia.org/wiki/Proline) occurs position 67 in chain of amino acids
+
+  - 여기서 A1 b-casein이 소화 효소에 의해 생성되는 [BCM-7(b-casomorphin)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9094626/)이라는 peptide 성분은 opioid작용이 있어 opioid receptor과 결합시 [morphine](https://en.wikipedia.org/wiki/Morphine)효과를 줄 수 있다.
 
   - 그래서 A1 b-casein은 morphine효과를 줌으로 써 중추 신경계(Central Nervous System)에 영향을 준다. 이는 신경계 질환(neurological disorder)으로 이어질 수 있다.
+
+- 우유의 casein 단백질이 [암의 위험을 증가시키는 증거는 발견되지 않았다 한다.](https://en.wikipedia.org/wiki/Casein#Disease)
 
 ## fiber - 식이섬유
 
