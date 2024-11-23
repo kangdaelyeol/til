@@ -82,6 +82,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Casein protein](#casein-protein)
 
+- [fiber - 식이섬유](#fiber---식이섬유)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -973,7 +975,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - 우리 몸에서 흡수되는 경로가 존재하는 식이섬유이다.
 
-  - 수용성 식이섬유는 일반적으로 gram-positive bacteria에 의해 발효(fermentation)되어 나온 `단쇄 지방산(SCFA - Short-chain Fatty Acid)`과 같은 byproducts들은 장내 PH농도를 낮추어 gram-negative bacteria의 활동을 저하시킨다.
+  - 수용성 식이섬유는 일반적으로 gut microbiota에 의해 발효(fermentation)되어 `단쇄 지방산(SCFA - Short-chain Fatty Acid)` 으로 변환된다.
+
+  - SCFA와 같은 byproducts들은 장내 pH농도를 낮추어 gram-negative bacteria의 활동을 저하시키는데 기여한다.
 
 - **Insoluble fiber - 불용성 식이섬유**
 
@@ -983,17 +987,23 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - 장의 운동을 촉진함으로써 변비에 걸리지 않게 되고, 장내 독소를 재흡수하는 가능성도 줄일 수 있다.
 
-  - 결과적으로 `대변(feces)`의 크기, 배출 속도가 빨라지는 효과를 볼 수 있다.
+  - 결과적으로 `대변(feces)` 의 크기, 배출 속도가 빨라지는 효과를 볼 수 있다.
 
   - 대변의 성분중 수분이 대부분이지만 그 외에 음식물 보다 장내 세균이 더 많이 포함되어있다고 한다. 불용성 식이섬유는 흡수되지 않고 배출되기 때문에 변의 크기가 먹은 것에 비해 증가된 효과를 볼 수 있다.
+
+  - coarsely ground insoluble fiber triggers the secretion of mucus in the large intestine providing bulking.
+
+  - finely ground insoluble fiber does not have this effect and instead can cause a constipation.
 
 - 하지만 그렇다고 평소에 식이섬유를 자주 섭취하지 않는 사람이 갑작스럽게 식습관을 바꾸면 문제가 될 수 있다. 평소에 채식을 하지 않은 사람들의 장내 유익균 비율이 현저히 낮기 때문이다.
 
 - 그래서 장내 유익균이 최대한 증식할 수 있도록 충분한 간격을 두어 천천히 식이섬유 섭취를 늘려야 한다.
 
-- 그렇지 않으면 유익균이 감당할 수 있는 식이섬유를 초과하기 때문에, 그 초과된 식이섬유에 대해서는 유해균이 **발효(부패 - putrefaction)**를 하기 때문이다.
+- 그렇지 않으면 유익균이 감당할 수 있는 식이섬유를 초과하기 때문에, 그 초과된 식이섬유에 대해서는 유해균이 **발효(부패 - putrefaction)** 를 하기 때문이다.
 
 - 이는 결국 식이섬유를 섭취해도 몸에 독소를 생성하게 만드는 꼴이 되어버린다.
+
+- 또한 급격한 식이섬유 섭취를 통한 장내 미생물의 균형이 일시적으로 깨져 소화 불량등이 발생할 수 있다.
 
 ## Glutathione Composition
 
