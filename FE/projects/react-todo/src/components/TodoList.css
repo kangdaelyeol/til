@@ -1,0 +1,32 @@
+.todo-list {
+	border: 1px solid gray;
+	border-radius: 6px;
+	margin-top: 16px;
+}
+
+.todo-header {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding: 0 12px;
+	gap: 12px;
+}
+
+.todo-header-text {
+	flex-grow: 1;
+}
+
+.todo-header-button {
+	border: var(--border-style);
+	border-radius: 6px;
+	background-color: transparent;
+	padding: 0 12px;
+	color: white;
+	flex-shrink: 0;
+	height: 30px;
+}
+
+.todo-checkbox {
+  width: 16px;
+  height: 16px;
+}

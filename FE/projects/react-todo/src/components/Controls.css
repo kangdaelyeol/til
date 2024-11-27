@@ -1,0 +1,25 @@
+.controls {
+	display: flex;
+	gap: 6px;
+	height: 30px;
+}
+
+.input {
+	flex-grow: 1;
+	border: var(--border-style);
+	border-radius: 6px;
+	background-color: transparent;
+	padding: 4px 12px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.button,
+.select {
+	border: var(--border-style);
+	border-radius: 6px;
+	background-color: transparent;
+	padding: 0 12px;
+	color: white;
+	flex-shrink: 0;
+}
