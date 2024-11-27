@@ -3,7 +3,7 @@ import { useReducer, useState } from 'react';
 import { MyComponent, MyProvider } from './MyComponent';
 import { ThemeComponent, ThemeProvider } from './Theme';
 import { Timer, FocusInput } from './RefComponent';
-
+import { Basic } from './UseEffectComponent';
 const reducer = (state, action) => {
 	switch (action.type) {
 		case 'INCREASE':
@@ -36,6 +36,7 @@ const Counter = () => {
 
 function App() {
 	// useState - update function / snapshot
+	const [count, setCount] = useState(0);
 	return (
 		<div>
 			<MyProvider>
@@ -46,6 +47,7 @@ function App() {
 			</ThemeProvider>
 			<Timer />
 			<FocusInput />
+			<Basic cnt={count} setCnt={setCount}/>
 		</div>
 	);
 }
