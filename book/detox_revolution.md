@@ -84,6 +84,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [fiber - 식이섬유](#fiber---식이섬유)
 
+- [Glutathione Composition](#glutathione-composition)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1011,7 +1013,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="substance">Glutathione</span> = <span class="substance">Glutamate</span> + <span class="substance">Cysteine</span> + <span class="substance">Glycine</span>
 
-<span class="substance">Glutmine / Cysteine</span> &rarr; <span class="organ">GCL</span> &rarr; <span class="substance">r-Glutamylcysteine</span>
+<span class="substance">Glutmate / Cysteine</span> &rarr; <span class="organ">GCL</span> &rarr; <span class="substance">r-Glutamylcysteine</span>
 
 <span class="substance">r-Glutamylcysteine / Glycine</span> &rarr; <span class="organ">GSS</span> &rarr; <span class="substance">Glutathione</span>
 
@@ -1019,15 +1021,15 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 [GSS - Glutathione synthetase(합성효소)](https://en.wikipedia.org/wiki/Glutathione_synthetase)
 
-- 항산화작용에서 중요한 역할을 하는 Glutathione은 세 가지 아미노산이 결합된 형태의 peptide로, 이러한 종류를 **tripeptide**라고 한다.
+- 항산화작용에서 중요한 역할을 하는 Glutathione은 세 가지 아미노산이 결합된 **tripeptide** 형태다.
 
-- 우선 Glutamate와 Cysteine이 **GCL**에 의해 연결되어 dipeptide인 [r-Glutamylcysteine(GGC)](https://en.wikipedia.org/wiki/%CE%93-L-Glutamyl-L-cysteine)이 된다.
+- Glutamate와 Cysteine이 **GCL** 효소에 의해 연결되어 dipeptide 형태인 [r-Glutamylcysteine(GGC)](https://en.wikipedia.org/wiki/%CE%93-L-Glutamyl-L-cysteine)이 된다.
 
-- r-Glutamylcysteine은 **GSS**에 의해 glycine과 합성되어 tripeptide인 Glutathione이 된다.
+- r-Glutamylcysteine은 **GSS** 효소에 의해 glycine과 합성되어 tripeptide 형태인 Glutathione이 된다.
 
-- 하지만 몸에서 glutathione 합성을 유도하기 위해 해당 아미노산을 많이 섭취한다고 해서 glutathione이 합성되지는 않는다.
+- 따라서 glutathione 합성을 유도하기 위해 구성 아미노산을 많이 섭취한다고 해서 glutathione이 합성되지는 않는다.
 
-- glutathione합성을 위해 GCL, GSS이 반드시 필요하다. 여기서 중요한점은 GCL의 비율인데, GCL이 우리몸에서 생성되기 위해 Sulforaphane이 필요하다.
+- glutathione합성을 위해 GCL, GSS 효소의 도움이 반드시 필요하다. 여기서 중요한점은 GCL의 생성인데, GCL이 생성되기 위해 Sulforaphane 물질의 도움이 필요하다.
 
 <span class="title">Glutamate-cysteine ligase가 생성되는 과정</span>
 
@@ -1041,17 +1043,19 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - ### NRF2-KEAP1 pathway
 
-  - [세포질(Cytoplasm)](https://en.wikipedia.org/wiki/Cytoplasm)에는 KEAP1 단백질과 NRF2 전사인자가 있는데, 평소에는 KEAP1단백질이 NRF2에게 ubiquitination 작용을 해서 [ubiquitin 단백질](https://en.wikipedia.org/wiki/Ubiquitin)을 결합한 결과 NRF2효소의 [proteasome](https://en.wikipedia.org/wiki/Proteasome)분해를 촉진시킨다.
+  - [세포질(Cytoplasm)](https://en.wikipedia.org/wiki/Cytoplasm)에는 KEAP1 단백질과 [NRF2](https://en.wikipedia.org/wiki/NFE2L2) 전사인자가 있는데, 평소에는 KEAP1단백질은 NRF2와 ubiquitination 작용을 통해 [ubiquitin](https://en.wikipedia.org/wiki/Ubiquitin) 단백질을 결합함으로써 NRF2 효소의 [proteasome](https://en.wikipedia.org/wiki/Proteasome) 분해를 촉진시킨다.
+
+  - 정확히 [Cullin3](https://en.wikipedia.org/wiki/CUL3) 단백질과 NRF2의 직접적인 ubiquitination 작용이 이루어지고 Ubiquitine ligase 복합체의 일부인 KEAP1 단백질은 이를 촉진한다.
 
 - ### NRF2-ARE pathway
 
-  - 하지만 산화 스트레스(Oxidative stress)또는 Sulforaphane물질등 외부 요인으로 인해 NRF2를 분해하던 KEAP1이 변형되어 활동이 억제된다.
+  - 산화 스트레스(Oxidative stress)또는 Sulforaphane 물질등 외부 요인으로 인해 NRF2와 ubiquitination 작용을 하던 KEAP1 단백질 변형되어 활동이 억제된다.
 
-  - **세포핵(Cell Nucleus)**안에 있는 DNA에 GCLC, GCLM 유전자 발현을 하는 부분이 있는데 이 부분을 **Promotor**라고 한다.
+  - **세포핵(Cell Nucleus)** 안에 있는 DNA에 GCLC, GCLM 유전자 발현을 하는 부분을 **Promoter** 라고 한다.
 
-  - GCLC, GCLM Promotor에는 [ARE(Antioxidant Response Element)](https://en.wikipedia.org/wiki/NFE2L2#Localization_and_function)라는 부분이 있는데, KEAP1로부터 해방된 NRF2 전사인자는 이 ARE와 결합한다.
+  - GCLC, GCLM Promotor에는 [ARE(Antioxidant Response Element)](https://en.wikipedia.org/wiki/NFE2L2#Localization_and_function) 라는 부분이 있는데, KEAP1로부터 해방된 NRF2 전사인자는 ARE와 결합한다.
 
-  - 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)**를 촉진한다.
+  - 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)** 를 촉진한다.
 
   - 결과적으로 해당 단백질 발현과 관련된 mRNA이 생성되고, Ribosome에 전달되고, 번역(translation)을 통해 GCLC, GCLM이 합성된다.
 
