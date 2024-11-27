@@ -1,5 +1,7 @@
 import './App.css';
 import { useReducer, useState } from 'react';
+import { MyComponent, MyProvider } from './MyComponent';
+import { ThemeComponent, ThemeProvider } from './Theme';
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -35,7 +37,12 @@ function App() {
 	// useState - update function / snapshot
 	return (
 		<div>
-			<Counter />
+			<MyProvider>
+				<MyComponent />
+			</MyProvider>
+			<ThemeProvider>
+				<ThemeComponent />
+			</ThemeProvider>
 		</div>
 	);
 }
