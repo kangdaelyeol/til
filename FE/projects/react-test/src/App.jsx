@@ -2,6 +2,7 @@ import './App.css';
 import { useReducer, useState } from 'react';
 import { MyComponent, MyProvider } from './MyComponent';
 import { ThemeComponent, ThemeProvider } from './Theme';
+import { Timer, FocusInput } from './RefComponent';
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -43,6 +44,8 @@ function App() {
 			<ThemeProvider>
 				<ThemeComponent />
 			</ThemeProvider>
+			<Timer />
+			<FocusInput />
 		</div>
 	);
 }
