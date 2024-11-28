@@ -1,56 +1,62 @@
-import { useState, useRef } from 'react';
+import { useEffect, useReducer } from 'react';
 import Controls from './components/Controls';
 import Layout from './components/Layout';
 import Title from './components/Title';
 import TodoList from './components/TodoList';
+import {
+	reducer,
+	TODO_SUBMIT,
+	TODO_DELETE,
+	TODO_DELETE_COMPLETED,
+	TODO_TOGGLE,
+	TODO_TOGGLE_ALL,
+	TODO_EDIT_TEXT,
+	TODO_FILTER_TYPE,
+} from '../reducer';
 function App() {
-	const idRef = useRef(0);
-	const [data, setData] = useState([]);
-	const [filterType, setFilterType] = useState('ALL');
+	const [state, dispatch] = useReducer(reducer, {
+		data: JSON.parse(localStorage.getItem('DATA')),
+		id: localStorage.getItem('ID'),
+		filterType: localStorage.getItem('FILTER_TYPE'),
+	});
+
+	useEffect(() => {
+		localStorage.setItem('DATA', JSON.stringify(state.data));
+		localStorage.setItem('ID', state.id);
+		localStorage.setItem('FILTER_TYPE', state.filterType);
+	}, [state]);
 
 	const handleSubmit = (text) => {
-		setData((prev) =>
-			prev.concat({
-				id: (idRef.current += 1),
-				text,
-				completed: false,
-			})
-		);
+		dispatch({ type: TODO_SUBMIT, text });
 	};
 
-	const handleFilterType = (type) => {
-		setFilterType(type);
+	const handleFilterType = (option) => {
+		dispatch({ type: TODO_FILTER_TYPE, option });
 	};
 
 	const handleDelete = (id) => {
-		setData((prev) => prev.filter((item) => item.id !== id));
+		dispatch({ type: TODO_DELETE, id });
 	};
 
 	const handleDeleteCompleted = () => {
-		setData((prev) => prev.filter((item) => !item.completed));
+		dispatch({ type: TODO_DELETE_COMPLETED });
 	};
 
 	const handleToggle = (id) => {
-		setData((prev) =>
-			prev.map((item) =>
-				item.id === id ? { ...item, completed: !item.completed } : item
-			)
-		);
+		dispatch({ type: TODO_TOGGLE, id });
 	};
 
 	const handleToggleAll = (flag) => {
-		setData((prev) => prev.map((item) => ({ ...item, completed: flag })));
+		dispatch({ type: TODO_TOGGLE_ALL, flag });
 	};
 
 	const handleEditText = (id, text) => {
-		setData((prev) =>
-			prev.map((item) => (item.id === id ? { ...item, text } : item))
-		);
+		dispatch({ type: TODO_EDIT_TEXT, id, text });
 	};
 
-	const filteredList = data.filter((item) => {
-		if (filterType === 'ALL') return true;
-		else if (filterType === 'TODO') return !item.completed;
+	const filteredList = state.data.filter((item) => {
+		if (state.filterType === 'ALL') return true;
+		else if (state.filterType === 'TODO') return !item.completed;
 		else return item.completed;
 	});
 
@@ -60,7 +66,7 @@ function App() {
 				<Title />
 				<Controls
 					onSubmit={handleSubmit}
-					filterType={filterType}
+					filterType={state.filterType}
 					onChangeFilterType={handleFilterType}
 				/>
 				<TodoList
