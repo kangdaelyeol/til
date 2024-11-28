@@ -86,6 +86,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Glutathione Composition](#glutathione-composition)
 
+- [liposomal glutathione](#liposomal-glutathione)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1061,15 +1063,17 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## liposomal glutathione
 
-- 우리 몸에 항산화 작용을 촉진하기 위해 Glutathione자체를 구입해서 먹는 경우가 있다. 하지만 이는 효과가 거의 없을 것이다.
+- 항산화 작용을 촉진하기 위해 Glutathione자체를 먹는 경우가 있다. 하지만 이는 효과가 거의 없을 것이다.
 
-- Glutathione은 glutamic acid, cysteine, glycine 세 아미노산의 결합체인 tripeptide인데, 이를 섭취하면 glutathione은 보통 위에서 분해되어 세 아미노산을 섭취하는 것과 동일 하게 된다.
+- Glutathione은 glutamic acid, cysteine, glycine 세 아미노산의 결합체인 tripeptide 형태인데, 이를 섭취하면 glutathione은 보통 위에서 세 아미노산으로 분해되어 결과적으로 아미노산을 섭취하는 것과 동일 하게 된다.
 
-- 몸에서 Glutathione합성을 촉진하기 위해 [NRF2-ARE pathway](#nrf2-are-pathway)를 유도해야 하는데, 여기서 합성에 필요한 cysteine은 체내에서 합성되기도 하지만, 필요에 따라 이보다 섭취량이 더욱 권장되는 아미노산이기 때문에 이를 따로 섭취해주는 경우가 있다. 이 경우 glutathione을 섭취하는 것 보단 합리적이다. 하지만 진정한 본질인 `NRF2-ARE pathway`를 활성화 하기엔 부족하다.
+- 몸에서 Glutathione 합성을 촉진하기 위해 [NRF2-ARE pathway](#nrf2-are-pathway)를 유도해야 하는데, 여기서 합성에 필요한 cysteine은 조건부 필수 아미노산으로, 체내에서 합성되지만, 필요량을 충족시키기에 부족할 수 있어 필요에 따라 섭취가 권장되는 아미노산이다. 이 경우 glutathione을 섭취하는것 보다 합리적이다.
 
-- 그래서 glutathione을 그대로 보존하면서 전달해야 하는데, 이 때 liposomal glutathione을 섭취하는 것은 그나마 도움이 될 수 있다고 한다. 즉 glutathione을 [liposome](https://en.wikipedia.org/wiki/Liposome)에 감싼 형태를 섭취하는 것이다.
+- cystein 아미노산이 충분해도 GCL 효소가 없다면 무의미하다. 즉 GCLC, GCLM 합성을 위해 `NRF2-ARE pathway` 활성화 조건이 충족되지 않는다.
 
-- liposome은 최소 하나의 [lipid bilayer](https://en.wikipedia.org/wiki/Lipid_bilayer)를 포함하는 작은 인공적인 [vesicle](<https://en.wikipedia.org/wiki/Vesicle_(biology_and_chemistry)>)이다.
+- glutathione을 섭취할 경우 분해 없이 형태를 보존하면서 흡수되어야 한다. 이 때 liposomal glutathione을 섭취하는 것은 도움이 될 수 있다고 한다. 즉 glutathione을 [liposome](https://en.wikipedia.org/wiki/Liposome)에 감싼 형태를 섭취하는 것이다.
+
+- liposome은 최소 하나의 [lipid bilayer](https://en.wikipedia.org/wiki/Lipid_bilayer)를 포함하는 작은 인공적인 [vesicle](<https://en.wikipedia.org/wiki/Vesicle_(biology_and_chemistry)>) 구조이다.
 
 - liposome은 위의 소화효소에 저항성을 가진다. 그래서 glutathione을 liposome으로 감싸면 안전하게 소장까지 운반할 수 있다.
 
