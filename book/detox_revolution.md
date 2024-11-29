@@ -88,6 +88,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [liposomal glutathione](#liposomal-glutathione)
 
+- [Secretin](#secretin)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1085,15 +1087,23 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 해독을 위해 담즙 분비가 중요하다.
 
-- 담즙 분비를 위해선 기본적으로 담즙을 생성 해야 한다.
+- 담즙 분비를 위해선 담즙을 생성하고, 담낭(gallbladder)에 저장되어야 한다
 
-- [담즙 생성을 위해 식초(Apple cider viniger)](https://en.wikipedia.org/wiki/Apple_cider_vinegar)를 섭취하면 좋다
+- [식초(Apple cider vinegar)](https://en.wikipedia.org/wiki/Apple_cider_vinegar)를 섭취하면 담즙 생성에 도움을 줄 수 있다.
 
-- 식초에 있는 [Acetic acid](https://en.wikipedia.org/wiki/Acetic_acid)(초산)은 duodenum(십이지장)에서 [secretin](https://en.wikipedia.org/wiki/Secretin) 분비를 촉진시킨다.
+- 식초에 있는 [Acetic acid](https://en.wikipedia.org/wiki/Acetic_acid)(초산)은 duodenum(십이지장)에서 [secretin](https://en.wikipedia.org/wiki/Secretin) 분비에 도움을 줄 수 있다.
 
-- 분비된 secretin은 **pancrea**에서 **pancreatic juice(췌장액)** 분비를 촉진하고, pancreatic juice에 포함된 biocabonate(중탄산염)는 duodenum의 산성환경을 중화시켜준다.
+- 분비된 secretin은 **pancreatic juice(췌장액)** 분비를 촉진시키고, pancreatic juice에 포함된 bicabonate(중탄산염)는 duodenum 내부의 산성환경을 중화시켜준다.
 
-- 또한 secretin은 간에서 bile생성을 촉진해 **gallbladder(담낭)** 으로 축적한다. 이후 [Cholecystokinin(CCK)](https://en.wikipedia.org/wiki/Cholecystokinin)에 의해 담낭이 수축되어 담즙이 분비된다.
+  - 췌장(pancreas)의 **duct cell(도관 세포)** 에서 중탄산염(bicarbonate)을 생성하고 분비한다고 한다.
+
+  - 또한 secretin은 위장의 parietal cell에서 위산(HCl) 분비를 억제시켜 산성도를 조절한다.
+
+- 또한 secretin은 간에서 bile 생성을 촉진해 **gallbladder(담낭)** 으로 축적한다. 이후 [Cholecystokinin(CCK)](https://en.wikipedia.org/wiki/Cholecystokinin) 호르몬에 의해 담낭이 수축되어 담즙이 분비된다.
+
+  - Cholecystokinin 호르몬은 췌장액 분비를 촉진시켜서 **pancreozymin** 이라고 불렸다.
+
+  - Cholecystokinin 호르몬은 십이지장(duodenum)의 **장내분비세포(enteroendocrine)** 에서 합성되고 분비된다.
 
 ## Urine output
 
