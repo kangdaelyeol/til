@@ -90,6 +90,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Secretin](#secretin)
 
+- [Urine output](#urine-output)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1107,25 +1109,27 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Urine output
 
-- 우리 혈액에 쌓인 노폐물은 간을 거쳐 신장에 도달해 여과과정을 거치고, 소변을 통해 배출이 된다.
+- 우리 혈액에 쌓인 노폐물은 간을 거쳐 신장에 도달해 여과 과정을 거치고, 소변을 통해 배출이 된다.
 
-- 혈액에 쌓인 노폐물중에 해독된 독소, 즉 몸에서 배출될 수 있는 형태인 **친수성(Hydrophilic)** 독소 형태로 존재하는데, 신장에서 여과되는 혈액의 `pH농도`가 강산성 또는 알칼리성을 띠는 경우 **비이온화 상태**가 되어 **친유성(lipophilic)** 상태가 되고 `재흡수(reabsorption)`될 가능성이 있다.
+- 혈액에 쌓인 노폐물중에 해독된 독소는 몸에서 배출될 수 있는 형태인 **친수성(Hydrophilic)** 형태로 존재하는데, 신장에서 여과되는 혈액의 pH수준이 강산성 또는 알칼리성을 띠는 경우 **비이온화 상태**가 되어 **친유성(lipophilic)** 상태가 되고 **재흡수(reabsorption)** 될 가능성이 있다.
 
 <span class="title">혈액이 여과되는 과정</span>
 
-<span class="substance">Blood with waste</span> - <span class="organ">(kidney) - nephron - glomerulus<span class="interaction">(filteration)</span> </span> &rarr; <span class ="organ">(renal tubule) - proximal convoluted tubule<span class="interaction">(filteration)</span> - loop of henl<span class="interaction">(filteration)</span> - distal convoluted tubule<span class="interaction">(filteration)</span> </span> &rarr; <span class="organ">collecting duct</span> &rarr; <span class="organ">renal pelvis</span> &rarr; <span class="organ">ureter</span> &rarr; <span class="organ">bladder</span> &rarr; <span class="substance">urine output</span>
+<span class="substance">Blood with waste</span> - <span class="organ">(kidney) - nephron - glomerulus<span class="interaction">(filtration)</span> </span> &rarr; <span class ="organ">(renal tubule) - proximal convoluted tubule<span class="interaction">(filtration)</span> - loop of henl<span class="interaction">(filtration)</span> - distal convoluted tubule<span class="interaction">(filtration)</span> </span> &rarr; <span class="organ">collecting duct</span> &rarr; <span class="organ">renal pelvis</span> &rarr; <span class="organ">ureter</span> &rarr; <span class="organ">bladder</span> &rarr; <span class="substance">urine output</span>
 
 - 신장(kidney)에는 약 100만개의 **nephron** 이 있고, 각각의 nephron에는 혈액을 여과하는 **사구체(glomerulus)** 와 혈액을 운반하는 **신세뇨관(renal tubule)** 이 있다.
 
-- glomerulus에서 혈액의 1차 여과가 발생하고 나머지 혈액은 renal tubule에서 여과가 이루어진다.
+- glomerulus에서 혈액의 1차 여과가 발생하고 renal tubule으로 이동한다. 여과되지 않은 혈액은 신장을 빠져나간다.
 
-- renal tubule는 **원위 세뇨세관(PCT: Proximal Convoluted Tubule)**
+- renal tubule는 **원위 세뇨세관(PCT: Proximal Convoluted Tubule)** , **Henel 고리(Loop of Henel)** , **근위 세뇨세관(DCT: Distal Convoluted Tubule)** , **집합관(Collecting duct)** 네 부분으로 이루어져 있다.
 
-- **Henel 고리(Loop of Henel)** - **근위 세뇨세관(DCT: Distal Convoluted Tubule)** - **집합관(Collecting duct)** 네 부분으로 이루어져 있는데, PCT - Loop of Henel - DCT를 거치는동안 여과가 발생한다. 여기서 여과를 거친 혈액은 `신장 모세혈관(peritubular capillary)`를 거쳐 흡수된다. 집합관에서는 여과가 발생하지 않는다.
+- PCT - Loop of Henel - DCT를 거치는동안 여과가 발생한다. 여과된 혈액은 `신장 모세혈관(peritubular capillary)` 을 거쳐 흡수된다. 집합관에서는 여과가 발생하지 않는다.
 
 - 과정을 모두 마친 잔여물은 **집합관(Collecting duct)** 에서 **신우(renal pelvis)** 로 이동하고 신장을 빠져나와 **요관(Ureter)** 을 거쳐 **방광(bladder)** 으로 축적되어 소변으로 배출된다.
 
-- 여기서 여과되는 혈액이 **강산성**을 띠는 경우 친수성(hydrophilic)의 산성 독소가 **H<sup>+</sup>** 을 얻어 **친유성(lipophilic)** 을 띠어 세포막으로 쉽게 들어갈 수 있는 구조가 되어 **peritubular capillary** 를 통한 **재흡수** 가 발생할 수 있다.
+- 여기서 여과되는 혈액이 **강산성**을 띠는 경우 친수성(hydrophilic)의 산성 독소가 **H<sup>+</sup>** 와 결합해 **친유성(lipophilic)** 을 띠며 이는 비이온화 상태이다.
+
+- 비이온화 상태인 물질은 세포막을 쉽게 통과할 수 있는 구조가 된다. 따라서 **peritubular capillary** 를 통한 **재흡수** 가 발생할 수 있다.
 
 - 알칼리성 독소도 마찬가지인데, 우리 현대의 식습관은 혈액을 산성으로 만들기에 최적화 되어 있다. **동물성 단백질, 과다한 염분 섭취** 가 대표적이다.
 
@@ -1762,7 +1766,7 @@ stress &rarr; hypothalamus &rarr; sympathetic nervous system &rarr; adrenal medu
 
 <span class="organ">kidney - eGFR &lt; 45</span> &rarr; <span class="disease">hyperkalemia</span> &rarr; <span class="organ">adrenal cortex</span> &rarr; <span class="substance">aldosterone</span> &rarr; <span class="organ">nephron - distal convoluted tubule</span> &rarr; <span class="organ">collecting duct</span> &rarr; <span class="interaction">excretion potassium + reabsorption sodium</span> &rarr; <span class="disease">electrolyte imbalance</span>
 
-- 칼륨은 신장을 통해 배출되어야 하는데, **사구체 여과율(eGFR - glomerulus filteration rate)** 이 낮으면 칼륨이 배출 되지 않게되어 [고칼륨혈증(hyperkalemia)](https://en.wikipedia.org/wiki/Hyperkalemia) 상태가 될 수 있다.
+- 칼륨은 신장을 통해 배출되어야 하는데, **사구체 여과율(eGFR - glomerulus filtration rate)** 이 낮으면 칼륨이 배출 되지 않게되어 [고칼륨혈증(hyperkalemia)](https://en.wikipedia.org/wiki/Hyperkalemia) 상태가 될 수 있다.
 
 - 체내 칼륨농도가 높아지면 일반적으로 **부신 피질(adrenal cortex)** 에서 **aldosterone** 이라는 호르몬을 분비한다.
 
