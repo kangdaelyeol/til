@@ -14,7 +14,7 @@ export const reducer = (state, action) => {
 				data: state.data.concat({
 					text: action.text,
 					id: state.id,
-					conpleted: false,
+					completed: false,
 				}),
 				id: state.id + 1,
 			};

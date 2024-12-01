@@ -1,7 +1,12 @@
 import { useState } from 'react';
 import './Controls.css';
+import { useContext } from 'react';
+import { TodoContext } from '../context';
+import { TODO_FILTER_TYPE, TODO_SUBMIT } from '../reducer';
 
-export default function Controls({ onSubmit, filterType, onChangeFilterType }) {
+export default function Controls() {
+	const { state, dispatch } = useContext(TodoContext);
+
 	const [text, setText] = useState('');
 
 	const handleChange = (e) => {
@@ -9,7 +14,7 @@ export default function Controls({ onSubmit, filterType, onChangeFilterType }) {
 	};
 
 	const handleSubmit = () => {
-		onSubmit(text);
+		dispatch({ type: TODO_SUBMIT, text });
 		setText('');
 	};
 
@@ -26,8 +31,10 @@ export default function Controls({ onSubmit, filterType, onChangeFilterType }) {
 				추가
 			</button>
 			<select
-			value={filterType}
-				onChange={(e) => onChangeFilterType(e.target.value)}
+				value={state.data.filterType}
+				onChange={(e) =>
+					dispatch({ type: TODO_FILTER_TYPE, option: e.target.value })
+				}
 				className='select'
 			>
 				<option value='ALL'>전체</option>

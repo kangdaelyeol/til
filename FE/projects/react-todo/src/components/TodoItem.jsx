@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import './TodoItem.css';
+import { useContext } from 'react';
+import { TodoContext } from '../context';
+import { TODO_DELETE, TODO_EDIT_TEXT, TODO_TOGGLE } from '../reducer';
 
-export default function TodoItem({
-	text,
-	completed,
-	id,
-	onToggle,
-	onDelete,
-	onEditText,
-}) {
+export default function TodoItem({ text, completed, id }) {
+	const { dispatch } = useContext(TodoContext);
 	const [edit, setEdit] = useState(false);
 
 	const handleToggleEdit = () => {
@@ -16,13 +13,13 @@ export default function TodoItem({
 	};
 
 	const handleChange = (e) => {
-		onEditText(id, e.target.value);
+		dispatch({ type: TODO_EDIT_TEXT, id, text: e.target.value });
 	};
 
 	return (
 		<div className='todo-item'>
 			<input
-				onChange={() => onToggle(id)}
+				onChange={() => dispatch({ type: TODO_TOGGLE, id })}
 				className='todo-checkbox'
 				type='checkbox'
 				checked={completed}
@@ -43,7 +40,10 @@ export default function TodoItem({
 			<button onClick={handleToggleEdit} className='todo-item-button'>
 				수정
 			</button>
-			<button onClick={() => onDelete(id)} className='todo-item-button'>
+			<button
+				onClick={() => dispatch({ type: TODO_DELETE, id })}
+				className='todo-item-button'
+			>
 				삭제
 			</button>
 		</div>
