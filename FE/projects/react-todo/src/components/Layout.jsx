@@ -1,5 +1,13 @@
-import styles from './Layout.module.css';
+import styled from '@emotion/styled';
 
 export default function Layout({ children }) {
-	return <div className={styles['layout']}>{children}</div>;
+	return <Component>{children}</Component>;
 }
+
+const Component = styled.div`
+	border: 1px solid gray;
+	padding: 32px;
+	border-radius: 6px;
+	width: 50%;
+	margin: auto;
+`;

@@ -1,5 +1,7 @@
 import styles from './Title.module.css';
-
+import styled from '@emotion/styled';
 export default function Title() {
-	return <div className={styles['title']}>To-Do List</div>;
+	return <Component>To-Do List</Component>;
 }
+
+const Component = styled.div``;
