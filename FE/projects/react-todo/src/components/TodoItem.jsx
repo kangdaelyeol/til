@@ -12,14 +12,10 @@ export default function TodoItem({ text, completed, id }) {
 		setEdit((prev) => !prev);
 	};
 
-	const handleChange = (e) => {
-		dispatch({ type: TODO_EDIT_TEXT, id, text: e.target.value });
-	};
-
 	return (
 		<div className='todo-item'>
 			<input
-				onChange={() => dispatch({ type: TODO_TOGGLE, id })}
+				onChange={() => dispatch({ type: TODO_TOGGLE, payload: { id } })}
 				className='todo-checkbox'
 				type='checkbox'
 				checked={completed}
@@ -27,7 +23,12 @@ export default function TodoItem({ text, completed, id }) {
 
 			{edit ? (
 				<input
-					onChange={handleChange}
+					onChange={(e) =>
+						dispatch({
+							type: TODO_EDIT_TEXT,
+							payload: { id, text: e.target.value },
+						})
+					}
 					className='todo-item-input'
 					value={text}
 					size={1}
@@ -41,7 +42,7 @@ export default function TodoItem({ text, completed, id }) {
 				수정
 			</button>
 			<button
-				onClick={() => dispatch({ type: TODO_DELETE, id })}
+				onClick={() => dispatch({ type: TODO_DELETE, payload: { id } })}
 				className='todo-item-button'
 			>
 				삭제

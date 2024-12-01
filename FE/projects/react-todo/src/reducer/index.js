@@ -12,7 +12,7 @@ export const reducer = (state, action) => {
 			return {
 				...state,
 				data: state.data.concat({
-					text: action.text,
+					text: action.payload.text,
 					id: state.id,
 					completed: false,
 				}),
@@ -21,7 +21,7 @@ export const reducer = (state, action) => {
 		case TODO_DELETE:
 			return {
 				...state,
-				data: state.data.filter((item) => item.id !== action.id),
+				data: state.data.filter((item) => item.id !== action.payload.id),
 			};
 		case TODO_DELETE_COMPLETED:
 			return {
@@ -32,25 +32,25 @@ export const reducer = (state, action) => {
 			return {
 				...state,
 				data: state.data.map((item) =>
-					item.id === action.id ? { ...item, completed: !item.completed } : item
+					item.id === action.payload.id ? { ...item, completed: !item.completed } : item
 				),
 			};
 		case TODO_TOGGLE_ALL:
 			return {
 				...state,
-				data: state.data.map((item) => ({ ...item, completed: action.flag })),
+				data: state.data.map((item) => ({ ...item, completed: action.payload.flag })),
 			};
 		case TODO_EDIT_TEXT:
 			return {
 				...state,
 				data: state.data.map((item) =>
-					item.id === action.id ? { ...item, text: action.text } : item
+					item.id === action.payload.id ? { ...item, text: action.payload.text } : item
 				),
 			};
 		case TODO_FILTER_TYPE:
 			return {
 				...state,
-				filterType: action.option,
+				filterType: action.payload.option,
 			};
 		default:
 			return state;

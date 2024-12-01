@@ -14,7 +14,7 @@ export default function Controls() {
 	};
 
 	const handleSubmit = () => {
-		dispatch({ type: TODO_SUBMIT, text });
+		dispatch({ type: TODO_SUBMIT, payload: { text } });
 		setText('');
 	};
 
@@ -33,7 +33,10 @@ export default function Controls() {
 			<select
 				value={state.data.filterType}
 				onChange={(e) =>
-					dispatch({ type: TODO_FILTER_TYPE, option: e.target.value })
+					dispatch({
+						type: TODO_FILTER_TYPE,
+						payload: { option: e.target.value },
+					})
 				}
 				className='select'
 			>

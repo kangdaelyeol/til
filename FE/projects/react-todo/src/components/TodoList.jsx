@@ -19,7 +19,7 @@ export default function TodoList() {
 				return true;
 		}
 	});
-	
+
 	const isAllCompleted =
 		filteredList.length > 0 && filteredList.every((item) => item.completed);
 	return (
@@ -30,7 +30,10 @@ export default function TodoList() {
 					type='checkbox'
 					checked={isAllCompleted}
 					onChange={(e) =>
-						dispatch({ type: TODO_TOGGLE_ALL, flag: e.target.checked })
+						dispatch({
+							type: TODO_TOGGLE_ALL,
+							payload: { flag: e.target.checked },
+						})
 					}
 				/>
 				<p className='todo-header-text'>할 일</p>
