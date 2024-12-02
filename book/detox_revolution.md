@@ -94,6 +94,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Mitochondrion](#mitochondrion)
 
+- [Cortisol - stress hormone](#cortisol---stress-hormone)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1227,13 +1229,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - **cortisol** 은 우리 몸에 스트레스를 받을 때 면역 시스템을 조절하고, 에너지 대사를 조절하는 등 중요한 역할을 하지만, 오랫동안 cortisol에 노출되면 좋지 않다.
 
-- cortisol은 `T cell, B cell, NK cell과 같은 leukocyte(백혈구)`의 **apoptosis** 를 유도하고, 면역 반응 조절에 중요한 단백질인 [cytokine](https://en.wikipedia.org/wiki/Cytokine) 분비를 억제한다.
+- cortisol은 `T cell, B cell, NK cell과 같은 lymphocyte(림프구)` 의 **apoptosis** 를 유도하고, 면역 반응 조절에 중요한 단백질인 [cytokine](https://en.wikipedia.org/wiki/Cytokine) 분비를 억제한다.
 
-  - T cell의 억제 외에 cortisol은 T cell을 생성하는 [Thymus(흉선)](https://en.wikipedia.org/wiki/Thymus)에도 영향을 주어 **thymic involution(흉선 위축)**을 가속화 한다.
+  - T cell의 억제 외에 cortisol은 T cell을 생성하는 [Thymus(흉선)](https://en.wikipedia.org/wiki/Thymus)에도 영향을 주어 **thymic involution(흉선 위축)** 을 가속화 한다.
 
 - 결과적으로 지속적인 cortisol 노출은 [lymphopenia(림프구 저하증)](https://en.wikipedia.org/wiki/Lymphocytopenia)으로 이어져 면역력이 약해질 수 있다.
 
-- 물론 `blood cortisol concentration` 이 높은 경우 시상하부와 뇌하수체 전엽에서 CRH / ACTH 분비를 조절하지만, 이에 의존해서는 안된다.
+- 물론 **blood cortisol concentration** 이 높은 경우 시상하부와 뇌하수체 전엽에서 CRH / ACTH 분비를 조절하지만, 이에 의존해서는 안된다.
 
 - 따라서 우리는 스트레스를 받지 않기 위한 신체적, 정신적 관리가 필요하다.
 
@@ -1241,13 +1243,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="title"> stress에 의해 epinephrine(adrenaline)이 분비되는 과정</span>
 
-stress &rarr; hypothalamus &rarr; sympathetic nervous system &rarr; adrenal medulla &rarr; epinephrine / norepinephrine
+<span class='interaction'>stress</span> &rarr; <span class='organ'>hypothalamus</span> &rarr; <span class='organ'>sympathetic nervous system</span> &rarr; <span class='organ'>adrenal medulla</span> &rarr; <span class='substance'>epinephrine / norepinephrine</span>
 
 - 스트레스가 **hypothalamus** 를 자극하면 CRH 분비 외에도 [교감 신경계(SNS - sympathetic nervous system)](https://en.wikipedia.org/wiki/Sympathetic_nervous_system)에 직접적인 자극을 준다.
 
 - 자극을 받은 **SNS** 은 [adrenal medulla(부신 수질)](https://en.wikipedia.org/wiki/Adrenal_medulla)을 자극하고, adrenal medulla에서 [epinephrine](https://en.wikipedia.org/wiki/Adrenaline)과 [norepinephrine](https://en.wikipedia.org/wiki/Norepinephrine) 호르몬이 분비된다.
 
-- 분비되는 epineprine과 norepinephrine의 비율은 **4:1** 정도이며 **epinephrine(adrenaline)** 호르몬은 [fight-or-flight response](https://en.wikipedia.org/wiki/Fight-or-flight_response) 반응을 일으키는 주 호르몬이다.
+- 분비되는 epinephrine과 norepinephrine의 비율은 **4:1** 정도이며 **epinephrine(adrenaline)** 호르몬은 [fight-or-flight response](https://en.wikipedia.org/wiki/Fight-or-flight_response) 반응을 일으키는 주 호르몬이다.
 
 ## Vitamin E
 
