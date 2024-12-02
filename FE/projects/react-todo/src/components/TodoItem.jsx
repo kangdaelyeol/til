@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { useContext } from 'react';
-import { TodoContext } from '../context';
-import { TODO_DELETE, TODO_EDIT_TEXT, TODO_TOGGLE } from '../reducer';
+import { useDispatch } from 'react-redux';
+import { deleteTodo, toggleTodo, updateTodo } from '../store/todoSlice';
 
 export default function TodoItem({ text, completed, id }) {
-	const { dispatch } = useContext(TodoContext);
+	const dispatch = useDispatch();
 	const [edit, setEdit] = useState(false);
 
 	const handleToggleEdit = () => {
@@ -15,7 +14,7 @@ export default function TodoItem({ text, completed, id }) {
 		<div className={todoClassName}>
 			<input
 				className={checkboxClassName}
-				onChange={() => dispatch({ type: TODO_TOGGLE, payload: { id } })}
+				onChange={() => dispatch(toggleTodo({ id }))}
 				type='checkbox'
 				checked={completed}
 			/>
@@ -23,12 +22,7 @@ export default function TodoItem({ text, completed, id }) {
 			{edit ? (
 				<input
 					className={inputClassName}
-					onChange={(e) =>
-						dispatch({
-							type: TODO_EDIT_TEXT,
-							payload: { id, text: e.target.value },
-						})
-					}
+					onChange={(e) => dispatch(updateTodo({ id, text: e.target.value }))}
 					value={text}
 					size={1}
 				/>
@@ -47,7 +41,7 @@ export default function TodoItem({ text, completed, id }) {
 			</button>
 			<button
 				className={buttonClassName}
-				onClick={() => dispatch({ type: TODO_DELETE, payload: { id } })}
+				onClick={() => dispatch(deleteTodo({ id }))}
 			>
 				삭제
 			</button>

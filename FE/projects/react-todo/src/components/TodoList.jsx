@@ -1,10 +1,9 @@
-import { useContext } from 'react';
 import TodoItem from './TodoItem';
-import { TodoContext } from '../context';
-import { TODO_DELETE_COMPLETED, TODO_TOGGLE_ALL } from '../reducer';
-
+import { useSelector, useDispatch } from 'react-redux';
+import { deleteCompletedTodo, toggleTodoAll } from '../store/todoSlice';
 export default function TodoList() {
-	const { state, dispatch } = useContext(TodoContext);
+	const state = useSelector((state) => state.todo);
+	const dispatch = useDispatch();
 
 	const completedCount = state.data.filter((item) => item.completed).length;
 
@@ -21,6 +20,7 @@ export default function TodoList() {
 
 	const isAllCompleted =
 		filteredList.length > 0 && filteredList.every((item) => item.completed);
+
 	return (
 		<div className={todoListClassName}>
 			<div className={headerClassName}>
@@ -28,18 +28,13 @@ export default function TodoList() {
 					className='h-[16px] w-[16px]'
 					type='checkbox'
 					checked={isAllCompleted}
-					onChange={(e) =>
-						dispatch({
-							type: TODO_TOGGLE_ALL,
-							payload: { flag: e.target.checked },
-						})
-					}
+					onChange={(e) => dispatch(toggleTodoAll({ flag: e.target.checked }))}
 				/>
 				<p className='grow'>할 일</p>
 				{completedCount > 0 && (
 					<button
 						className={headerButtonClassName}
-						onClick={() => dispatch({ type: TODO_DELETE_COMPLETED })}
+						onClick={() => dispatch(deleteCompletedTodo())}
 					>
 						{completedCount}개 선택 삭제
 					</button>

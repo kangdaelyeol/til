@@ -1,11 +1,7 @@
 import { createContext, useEffect, useReducer } from 'react';
-import { reducer } from '../reducer';
+import { reducer, initialState } from '../reducer';
 
-export const TodoContext = createContext({
-	data: [],
-	id: 0,
-	filterType: 'ALL',
-});
+export const TodoContext = createContext(initialState);
 
 export const TodoProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(reducer, {

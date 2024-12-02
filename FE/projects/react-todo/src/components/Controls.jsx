@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useContext } from 'react';
-import { TodoContext } from '../context';
-import { TODO_FILTER_TYPE, TODO_SUBMIT } from '../reducer';
+import { useSelector, useDispatch } from 'react-redux';
+import { addTodo, setFilter } from '../store/todoSlice';
 
 export default function Controls() {
-	const { state, dispatch } = useContext(TodoContext);
+	const state = useSelector((state) => state.todo);
+	const dispatch = useDispatch();
 
 	const [text, setText] = useState('');
 
@@ -13,7 +13,7 @@ export default function Controls() {
 	};
 
 	const handleSubmit = () => {
-		dispatch({ type: TODO_SUBMIT, payload: { text } });
+		dispatch(addTodo({ text }));
 		setText('');
 	};
 
@@ -32,12 +32,7 @@ export default function Controls() {
 			<select
 				className={selectClassName}
 				value={state.data.filterType}
-				onChange={(e) =>
-					dispatch({
-						type: TODO_FILTER_TYPE,
-						payload: { option: e.target.value },
-					})
-				}
+				onChange={(e) => dispatch(setFilter({ option: e.target.value }))}
 			>
 				<option value='ALL'>전체</option>
 				<option value='TODO'>할 일</option>
