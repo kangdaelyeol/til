@@ -5,6 +5,9 @@ import Title from './components/Title';
 import TodoList from './components/TodoList';
 
 import { TodoProvider } from './context';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchTodos } from './store/todoSlice';
 
 // styled component -> tagged template literal 방식을 기반으로 한 colocation 디자인 기법
 // JS 코드를 직접 입력할 수 있어 용이하지만 런타임에 생성되어 성능 비효율적이다.
@@ -23,6 +26,10 @@ const tag = (strings, ...values) => {
 };
 
 function App() {
+	const dispatch = useDispatch();
+	useEffect(() => {
+		dispatch(fetchTodos());
+	}, []);
 	return (
 		<TodoProvider>
 			<Layout>

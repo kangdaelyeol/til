@@ -1,6 +1,9 @@
 import TodoItem from './TodoItem';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteCompletedTodo, toggleTodoAll } from '../store/todoSlice';
+import {
+	deleteTodoCompletedThunk,
+	toggleTodoAllThunk,
+} from '../store/todoSlice';
 export default function TodoList() {
 	const state = useSelector((state) => state.todoSlice);
 	const dispatch = useDispatch();
@@ -28,13 +31,15 @@ export default function TodoList() {
 					className='h-[16px] w-[16px]'
 					type='checkbox'
 					checked={isAllCompleted}
-					onChange={(e) => dispatch(toggleTodoAll({ flag: e.target.checked }))}
+					onChange={(e) =>
+						dispatch(toggleTodoAllThunk({ flag: e.target.checked }))
+					}
 				/>
 				<p className='grow'>할 일</p>
 				{completedCount > 0 && (
 					<button
 						className={headerButtonClassName}
-						onClick={() => dispatch(deleteCompletedTodo())}
+						onClick={() => dispatch(deleteTodoCompletedThunk())}
 					>
 						{completedCount}개 선택 삭제
 					</button>

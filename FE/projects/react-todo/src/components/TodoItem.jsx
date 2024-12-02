@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteTodo, toggleTodo, updateTodo } from '../store/todoSlice';
+import {
+	deleteTodoThunk,
+	toggleTodoThunk,
+	updateTodoThunk,
+} from '../store/todoSlice';
 
 export default function TodoItem({ text, completed, id }) {
 	const dispatch = useDispatch();
@@ -14,7 +18,9 @@ export default function TodoItem({ text, completed, id }) {
 		<div className={todoClassName}>
 			<input
 				className={checkboxClassName}
-				onChange={() => dispatch(toggleTodo({ id }))}
+				onChange={(e) =>
+					dispatch(toggleTodoThunk({ id, completed: e.target.checked }))
+				}
 				type='checkbox'
 				checked={completed}
 			/>
@@ -22,7 +28,9 @@ export default function TodoItem({ text, completed, id }) {
 			{edit ? (
 				<input
 					className={inputClassName}
-					onChange={(e) => dispatch(updateTodo({ id, text: e.target.value }))}
+					onChange={(e) =>
+						dispatch(updateTodoThunk({ id, text: e.target.value }))
+					}
 					value={text}
 					size={1}
 				/>
@@ -41,7 +49,7 @@ export default function TodoItem({ text, completed, id }) {
 			</button>
 			<button
 				className={buttonClassName}
-				onClick={() => dispatch(deleteTodo({ id }))}
+				onClick={() => dispatch(deleteTodoThunk({ id }))}
 			>
 				삭제
 			</button>
