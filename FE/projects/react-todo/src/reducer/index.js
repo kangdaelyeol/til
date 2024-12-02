@@ -6,6 +6,12 @@ export const TODO_TOGGLE_ALL = 'todoToggleAll';
 export const TODO_EDIT_TEXT = 'todoEditText';
 export const TODO_FILTER_TYPE = 'todoFilterType';
 
+export const initialState = {
+	data: [],
+	id: 0,
+	filterType: 'ALL',
+};
+
 export const reducer = (state, action) => {
 	switch (action.type) {
 		case TODO_SUBMIT:
@@ -32,19 +38,26 @@ export const reducer = (state, action) => {
 			return {
 				...state,
 				data: state.data.map((item) =>
-					item.id === action.payload.id ? { ...item, completed: !item.completed } : item
+					item.id === action.payload.id
+						? { ...item, completed: !item.completed }
+						: item
 				),
 			};
 		case TODO_TOGGLE_ALL:
 			return {
 				...state,
-				data: state.data.map((item) => ({ ...item, completed: action.payload.flag })),
+				data: state.data.map((item) => ({
+					...item,
+					completed: action.payload.flag,
+				})),
 			};
 		case TODO_EDIT_TEXT:
 			return {
 				...state,
 				data: state.data.map((item) =>
-					item.id === action.payload.id ? { ...item, text: action.payload.text } : item
+					item.id === action.payload.id
+						? { ...item, text: action.payload.text }
+						: item
 				),
 			};
 		case TODO_FILTER_TYPE:
