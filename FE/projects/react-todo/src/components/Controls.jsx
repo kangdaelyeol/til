@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addTodo, setFilter } from '../store/todoSlice';
 
 export default function Controls() {
-	const state = useSelector((state) => state.todo);
+	const state = useSelector((state) => state.todoSlice);
 	const dispatch = useDispatch();
 
 	const [text, setText] = useState('');

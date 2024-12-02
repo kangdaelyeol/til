@@ -2,7 +2,7 @@ import TodoItem from './TodoItem';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteCompletedTodo, toggleTodoAll } from '../store/todoSlice';
 export default function TodoList() {
-	const state = useSelector((state) => state.todo);
+	const state = useSelector((state) => state.todoSlice);
 	const dispatch = useDispatch();
 
 	const completedCount = state.data.filter((item) => item.completed).length;
