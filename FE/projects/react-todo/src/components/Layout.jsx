@@ -1,13 +1,7 @@
-import styled from '@emotion/styled';
-
 export default function Layout({ children }) {
-	return <Component>{children}</Component>;
+	return (
+		<div className='border-[1px] p-[32px] rounded-[6px] w-[50%] m-[auto]'>
+			{children}
+		</div>
+	);
 }
-
-const Component = styled.div`
-	border: 1px solid gray;
-	padding: 32px;
-	border-radius: 6px;
-	width: 50%;
-	margin: auto;
-`;

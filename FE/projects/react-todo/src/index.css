@@ -1,11 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* tailwind 기본(reset) 스타일 불러오기 */
+/* tailwind에서 제공하는 컴포넌트 스타일 불러오기 */
+/* utility 클래스 불러오기 - jsx className에 직접 적용시켜 세말하게 스타일 제어 가능 */
+
 :root {
 	--border-style: 1px solid gray;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 }
 
 body {

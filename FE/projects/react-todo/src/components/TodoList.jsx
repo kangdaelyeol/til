@@ -1,9 +1,7 @@
 import { useContext } from 'react';
 import TodoItem from './TodoItem';
-import styles from './TodoList.module.css';
 import { TodoContext } from '../context';
 import { TODO_DELETE_COMPLETED, TODO_TOGGLE_ALL } from '../reducer';
-import styled from '@emotion/styled';
 
 export default function TodoList() {
 	const { state, dispatch } = useContext(TodoContext);
@@ -24,10 +22,10 @@ export default function TodoList() {
 	const isAllCompleted =
 		filteredList.length > 0 && filteredList.every((item) => item.completed);
 	return (
-		<Component className={styles['todo-list']}>
-			<Header className={styles['todo-header']}>
-				<Checkbox
-					className={styles['todo-checkbox']}
+		<div className={todoListClassName}>
+			<div className={headerClassName}>
+				<input
+					className='h-[16px] w-[16px]'
 					type='checkbox'
 					checked={isAllCompleted}
 					onChange={(e) =>
@@ -37,53 +35,27 @@ export default function TodoList() {
 						})
 					}
 				/>
-				<HeaderText className={styles['todo-header-text']}>할 일</HeaderText>
+				<p className='grow'>할 일</p>
 				{completedCount > 0 && (
-					<HeaderButton
+					<button
+						className={headerButtonClassName}
 						onClick={() => dispatch({ type: TODO_DELETE_COMPLETED })}
 					>
 						{completedCount}개 선택 삭제
-					</HeaderButton>
+					</button>
 				)}
-			</Header>
+			</div>
 			<div>
 				{filteredList.map((item) => (
 					<TodoItem key={item.id} {...item} />
 				))}
 			</div>
-		</Component>
+		</div>
 	);
 }
 
-const Component = styled.div`
-	border: var(--border-style);
-	border-radius: 6px;
-	margin-top: 16px;
-`;
+const todoListClassName = `border-[1px] border-solid border-gray-500 rounded-[6px] mt-[16px]`;
 
-const Header = styled.div`
-	display: flex;
-	align-items: center;
-	height: 40px;
-	padding: 0 12px;
-	gap: 12px;
-`;
+const headerClassName = `flex items-center h-[40px] py-0 px-[12px] gap-[12px]`;
 
-const HeaderText = styled.p`
-	flex-grow: 1;
-`;
-
-const HeaderButton = styled.button`
-	border: var(--border-style);
-	border-radius: 6px;
-	background-color: transparent;
-	padding: 0 12px;
-	color: white;
-	flex-shrink: 0;
-	height: 30px;
-`;
-
-const Checkbox = styled.input`
-	width: 16px;
-	height: 16px;
-`;
+const headerButtonClassName = `border-[1px] border-solid border-gray-500 bg-transparent py-[0] px-[12px] text-white shrink-0 h-[30px]`;
