@@ -10,6 +10,7 @@ import NotFound from './routes/NotFound.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 import Bug from './routes/Bug.jsx'
 import User from './routes/User.jsx'
+import Count from './components/Count.jsx'
 
 const router = createBrowserRouter([
     {
@@ -42,13 +43,17 @@ const router = createBrowserRouter([
         ],
     },
     {
-        path: 'bug',
+        path: '/bug',
         element: <Bug />,
         errorElement: <ErrorPage />,
     },
     {
-        path: 'user/:id',
+        path: '/user/:id',
         element: <User />,
+    },
+    {
+        path: '/count',
+        element: <Count />,
     },
 ])
 

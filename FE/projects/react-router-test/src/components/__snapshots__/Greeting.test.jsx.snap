@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Greeting Component test > should render 1`] = `
+<DocumentFragment>
+  <div>
+    Hello, Alice
+  </div>
+</DocumentFragment>
+`;
