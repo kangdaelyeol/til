@@ -142,7 +142,7 @@ function sumPlus(...rest) {
 
 // console.log(sumPlus(1, 2, 3, 4, 5, 3))
 
-// IIFE - immediately-invoked function expression
+// IIFE - immediately invoked function expression
 console.log(
     1 +
         -!!1 -
