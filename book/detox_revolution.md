@@ -96,6 +96,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Cortisol - stress hormone](#cortisol---stress-hormone)
 
+- [Vitamin E](#vitamin-e)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1255,13 +1257,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 항산화 효과를 위해선 Vitamin E를 섭취하는 것도 중요하다
 
-- Vitamin E는 지질 산화물에 대한 항산화 효과가 있으며 Ascorbic Acid와 상호작용한다.
+- Vitamin E는 **지질 과산화** 에 대한 항산화 효과가 있으며 Ascorbic Acid와 상호작용한다.
 
 ![interactives in lipid oxidation image](./images/lipid_oxidation.png)
 
-<span class="title">지방이 산화되는 과정 - lipid peroxidation</title>
+<span class="title">지방이 산화되는 과정 - lipid peroxidation</span>
 
-<span class="substance">free radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="substance">lipid radical</span> &rarr; <span class="substance">O<sub>2</sub></span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">lipid peroxy radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="interaction">combination(chain reaction)</span> &rarr; <span class="substance">lipid peroxide</span>
+<span class="substance">free radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="substance">lipid radical</span> &rarr; <span class="substance">O<sub>2</sub></span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">lipid peroxyl radical</span> &rarr; <span class="substance">unsaturated fatty acid</span> &rarr; <span class="interaction">combination(chain reaction)</span> &rarr; <span class="substance">lipid peroxide</span>
 
 <span class="substance">lipid peroxide</span> &rarr; <span class="substance">MDA</span> &rarr; <span class="disease">DNA adducts</span>
 
@@ -1271,37 +1273,37 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - lipid oxidation은 크게 3단계로 나누어 볼 수 있다.
 
-- `Initation Phase`
+- `Initiation Phase`
 
-  - 우리 몸에 있는 `불포화지방산(unsaturated fatty acid)`은 [free radical](<https://en.wikipedia.org/wiki/Radical_(chemistry)>)의 공격을 받아 **lipid radical(L•)** 이 된다.
+  - `불포화지방산(unsaturated fatty acid)` 은 [free radical](<https://en.wikipedia.org/wiki/Radical_(chemistry)>)의 공격을 받아 **lipid radical(L•)** 이 된다.
 
 - `Propagation Phase`
 
-  - **lipid radical** 은 **산소(O<sub>2</sub>)** 와 결합해 **lipid peroxy radical(lipid hydroperoxyl radical / LOO•)** 이 된다.
+  - **lipid radical** 은 **산소(O<sub>2</sub>)** 와 결합해 **lipid peroxyl radical(lipid hydroperoxyl radical / LOO•)** 이 된다.
 
-  - **lipid peroxy radical(LOO•)** 은 다시 **unsaturated fatty acid** 과 결합해 **lipid peroxide(lipid hydroperoxide / LOOH)** 가 되고 새로운 **lipid radical(L•)** 을 생성한다. `이 반응은 연쇄적으로 발생한다.`
+  - **lipid peroxyl radical(LOO•)** 은 다시 **unsaturated fatty acid** 의 수소 원자를 빼앗아 **lipid peroxide(lipid hydroperoxide / LOOH)** 가 되고, 이를 통해 새로운 **lipid radical(L•)** 을 생성한다. `이 반응은 연쇄적으로 발생한다.`
 
 - `Termination Phase`
 
   - **lipid peroxide** 는 **철(Fe<sup>2+</sup>)** 과 **fenton reaction** 을 통해 **hydroxyl radical** 을 생성할 수 있고, 자연적으로 분해되어 [MDA(malondialdehyde)](https://en.wikipedia.org/wiki/Malondialdehyde)를 생성할 수 있다.
 
-  - `MDA(malondialdehyde)`는 다른 분자, DNA와 결합해 **DNA adducts**를 생성하거나 **세포 손상**을 일으킨다.
+  - `MDA(malondialdehyde)` 는 다른 분자, DNA와 결합해 **DNA adducts**를 생성하거나 **세포 손상**을 일으킨다.
 
 ---
 
 <span class="title">Vitamin E - Antioxidant</span>
 
-<span class="substance">vitamin E(reduced) + LOO•(lipid (hydro)peroxy radical)</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">LOOH / tocopheryl radical(oxidized vitamin E)</span>
+<span class="substance">vitamin E(reduced) + LOO•(lipid (hydro)peroxyl radical)</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">LOOH / tocopheryl radical(oxidized vitamin E)</span>
 
-<span class="substance">ascorbic acid + tocopheryl radical</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">vitamin E(reduced) / dyhydroascorbic adcid(oxidized vitamin C)</span>
+<span class="substance">ascorbic acid + tocopheryl radical</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">vitamin E(reduced) / dehydroascorbic acid(oxidized vitamin C)</span>
 
-<span class="substance">dyhydroascorbic acid + GSH</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">ascorbic acid / GSSG(oxidized GSH)</span>
+<span class="substance">dehydroascorbic acid + GSH</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">ascorbic acid / GSSG(oxidized GSH)</span>
 
-- vitamin E는 **LOO•(lipid (hydro)peroxy radical)** 에게 `불포화 지방산 대신 수소 원자를 주어` **LOOH(lipid (hydro)peroxide)** 를 생성하게 하고, `L•(lipid radical)을 생성하지 않도록` 해서 **연쇄반응(chain reaction)을 방지** 한다.
+- vitamin E는 **LOO•(lipid (hydro)peroxyl radical)** 에게 `불포화 지방산 대신 수소 원자를 주어` **LOOH(lipid (hydro)peroxide)** 를 생성하게 하고, L•(lipid radical)을 생성하지 않도록 해서 **연쇄반응(chain reaction)을 방지** 한다.
 
-- **산화된 vitamin E(tocopheryl radical)**는 **vitamin C(ascorbic acid)** 와 반응해 다시 환원되어 항산화 기능을 할 수 있게 된다.
+- **산화된 vitamin E(tocopheryl radical)** 는 **vitamin C(ascorbic acid)** 와 반응해 다시 환원되어 항산화 기능을 할 수 있게 된다.
 
-- 산화된 vitamin C(dyhydroascorbic acid)는 GSH와 반응해 다시 환원된다.
+- 산화된 vitamin C(dehydroascorbic acid)는 GSH와 반응해 다시 환원된다.
 
 - 이러한 사이클을 통해 항산화 시스템이 형성되므로 vitamin C 뿐만 아닌 vitamin E의 섭취도 중요하다.
 
