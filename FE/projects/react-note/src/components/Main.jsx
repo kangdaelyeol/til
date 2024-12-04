@@ -1,11 +1,8 @@
-import NoteDetail from './NoteDetail'
-import NodeList from './NoteList'
-
+import { Outlet } from 'react-router-dom'
 const Main = () => {
     return (
         <div className="grow bg-gray-800 py-[70px]">
-            {/* <NodeList /> */}
-            <NoteDetail />
+            <Outlet />
         </div>
     )
 }

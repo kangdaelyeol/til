@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const NoteList = () => {
     return (
         <div className="max-w-[1030px] m-auto rounded-lg bg-gray-900 p-4">
@@ -11,8 +13,8 @@ const NoteList = () => {
             </div>
             <ul>
                 <li>
-                    <a
-                        href="/"
+                    <Link
+                        to="/notes/1"
                         className="flex items-center justify-between bg-gray-800 p-4 rounded-lg mb-2 hover:bg-gray-700"
                     >
                         <div>
@@ -24,7 +26,7 @@ const NoteList = () => {
                         <div>
                             <time className="text-sm text-gray-400">2024</time>
                         </div>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>
