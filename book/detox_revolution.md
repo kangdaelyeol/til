@@ -98,6 +98,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Vitamin E](#vitamin-e)
 
+- [ROS - mitochondrion](#ros---mitochondrion)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1311,27 +1313,33 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - [mitochondrion](#mitochondrion)의 ETC과정에서 전자 누수로 인해 ROS 생성에 관여를 할 수 있다.
 
-- 운동을 할 경우에도 ETC를 통해 ROS가 생성되는데, 운동을 하면서 생기는 ROS는 오히려 **mitochondrion 생합성**과 **산화적 스트레스에 대한 면역력** 에 도움을 줄 수 있다.
+- 운동을 할 경우에도 ETC를 통해 ROS가 생성되는데, 운동을 하면서 생기는 ROS는 오히려 **mitochondrion 생합성** 과 **산화적 스트레스에 대한 면역력 강화** 에 도움을 줄 수 있다.
 
 <span class="title">운동이 mitochondrion에 영향을 주는 과정</span>
 
 <span class="interaciton">workout</span> &rarr; <span class="substance">ROS</span> &rarr; <span class="interaciton">activation</span> &rarr; <span class="substance">PGC-l⍺</span> &rarr; <span class="interaciton">combination</span> &rarr; <span class="substance">NRF-1</span> &rarr; <span class="interaciton">gene expression regulation</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaciton">endurance capacity</span>
 
-- `PGC-1⍺ - peroxisome proliferator activated receptor 𝛄 coactivator-1⍺, 전사활성 보조인자`
+- `PGC-1⍺ - peroxisome proliferator-activated receptor 𝛄 coactivator-1⍺, 전사활성 보조인자`
 
 - `NRF-1 - nuclear respiratory factor-1`
 
 ---
 
-- 운동을 하면 mitochondrion에 의해 ROS가 생성이 되는데, 운동으로 인한 `적당한 산화적 스트레스` 는 [산화적 스트레스에 대한 면역 향상에 도움을 주고(hormesis)](https://en.wikipedia.org/wiki/Hormesis), 근육 세포에 있는 [전사활성 보조인자(PGC-1⍺)](https://en.wikipedia.org/wiki/Pparg_coactivator_1_alpha)라는 단백질을 활성화 시킨다.
+- 운동을 하면 mitochondrion에 의해 ROS가 생성이 되는데, 운동으로 인한 `적당한 산화적 스트레스` 는 [산화적 스트레스에 대한 면역 향상에 도움을 주고(hormesis)](https://en.wikipedia.org/wiki/Hormesis), 근육 세포에 있는 [전사활성 보조인자(PGC-1⍺)](https://en.wikipedia.org/wiki/Pparg_coactivator_1_alpha) 단백질을 활성화 시킨다.
 
-- 활성화된 PGC-1⍺는 [NRF-1](https://en.wikipedia.org/wiki/NRF1) 과 결합을 하고 mitochondrion의 합성과 관련된 유전자 발현을 촉진한다.
+  - 전사활성 보조인자 단백질은 구인(ape man)과 현재 인간을 구분하는 지표로도 알려져 있다.
+
+  - 전사활성 보조인자는 간에서 **포도당신생합성(gluconeogenesis)** 에 대해 주요 조절자 역할을 담당한다. 또한 이와 관련된 유전자 발현에 대한 조절자 역할도 한다.
+
+- 활성화된 PGC-1⍺는 [NRF-1](https://en.wikipedia.org/wiki/NRF1)과 결합을 하고 mitochondrion의 합성과 관련된 유전자 발현을 촉진한다.
+
+  - 정확히 전사활성 보조인자는 [receptor](https://en.wikipedia.org/wiki/Peroxisome_proliferator-activated_receptor_gamma)와 상호작용 함으로써 전사(transcription)을 활성화 시킨다.
 
 - 결과적으로 세포 내 mitochondiron 개체 수가 증가해 **지구력(endurance capacity)** 이 좋아진다.
 
-- 그렇기 때문에 운동 후 **ascorbic acid** 를 고용량으로 섭취하는 것은 면역력 향상에 대해 효율적이지 않은 방법일 수 있다. **(일반적인 식이를 통한 적절한 섭취는 괜찮다.)**
+- 그렇기 때문에 운동 후 **ascorbic acid** 를 고용량으로 섭취하는 것은 면역력 강화를 오히려 방해할 수 있다. **(일반적인 식이를 통한 적절한 섭취는 괜찮다.)**
 
-- 운동으로 인해 발생한 ROS가 PGC-1⍺를 활성화 하기 전에 항산화 작용으로 인해 환원이 되어 버리면 mitochondrion 합성에 도움을 줄 수 없기 때문이다.
+- 운동으로 인해 발생한 ROS가 PGC-1⍺를 활성화 하기 전에 ascorbic acid의 항산화 작용으로 인해 환원이 되어 버리면 mitochondrion 합성에 도움을 줄 수 없기 때문이다.
 
 ## Autophagy - 자가 포식
 
