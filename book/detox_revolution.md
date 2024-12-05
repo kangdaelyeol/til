@@ -100,6 +100,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [ROS - mitochondrion](#ros---mitochondrion)
 
+- [Autophagy - 자가 포식](#autophagy---자가-포식)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1343,9 +1345,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Autophagy - 자가 포식
 
-- 우리는 몸의 해독, 항상성 유지를 위해 의도적으로 몸 상태를 자가포식이 활성화 되는 상태로 만들 필요가 있다.
+- 몸의 해독, 항상성 유지를 위해 의도적으로 몸 상태를 자가포식이 활성화 되는 상태로 만들 필요가 있다.
 
-- Autophagy는 우리 몸 안에 있는 손상된 세포, 오래된 세포, 손상된 단백질을 분해하고, 다시 에너지원으로 사용하는 작용이다.
+- [Autophagy](https://en.wikipedia.org/wiki/Autophagy)는 몸 안에 손상된 세포, 오래된 세포, 손상된 단백질을 분해하고, 다시 에너지원으로 사용하는 작용이다.
 
 <span class="title">자가 포식이 활성화 되는 과정</span>
 
@@ -1367,19 +1369,19 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - 몸에 세포 성장과 관련된 에너지원이 없게 되면 자연스럽게 활성이 억제되면서, mTOR에 의해 억제되었던 **autophagy** 가 활성화 된다.
 
-- 또한 **fasting(단식)** 은 [AMPK(AMP-activated protein kinase)](https://en.wikipedia.org/wiki/AMP-activated_protein_kinase) 효소를 활성화 시켜 **지방을 분해(fat decomposition)** 하는 대사활동을 활성화 하고, 대사산물로 **케톤체(ketone bodies)** 를 생성한다.
+- 또한 fasting(단식) 은 [AMPK(AMP-activated protein kinase)](https://en.wikipedia.org/wiki/AMP-activated_protein_kinase) 효소를 활성화 시켜 **지방 분해(fat decomposition)** 대사활동을 활성화 하고, 대사산물로 **케톤체(ketone bodies)** 를 생성한다.
 
   - **AMPK** 효소는 세포의 에너지 상태를 관찰하며, 세포의 에너지가 부족할 때 활성화되어 지방과 혈당을 대사해서 에너지로 변환하는 역할을 한다.
 
-- 몸에서 **ketone bodies** 가 생성되는 상태를 **ketosis** 라고 한다.
+- 몸에서 **ketone bodies(케톤체)** 가 생성되는 상태를 **ketosis** 라고 한다.
 
-  - ketosis는 몸에서 지방 대사를 통해 배출된 대사산물인 ketone bodies를 에너지원으로 사용하는 대사 상태를 말한다. 그래서 ketosis상태가 되면 지방 분해가 평소보다 더욱 활발해진다.
+  - ketosis는 몸에서 지방 대사를 통해 배출된 대사산물인 ketone bodies(케톤체)를 에너지원으로 사용하는 대사 상태를 말한다. 따라서 ketosis 상태가 되면 지방 분해가 평소보다 더욱 활발해진다.
 
-- ketosis 상태가 과해지면 **ketoacidosis(케토산증)** 이라는 **병적 상태(pathology state)** 가 될 위험이 있다.
+- ketosis 상태가 과해지면 **ketoacidosis(케토산증)** 상태가 될 위험이 있다.
 
-  - [ketoacidosis](https://en.wikipedia.org/wiki/Ketoacidosis)는 몸에 산성 물질인 ketone bodies의 농도가 높은 상태를 말한다.
+  - [ketoacidosis](https://en.wikipedia.org/wiki/Ketoacidosis)는 몸에 산성 물질인 ketone bodies 농도가 높은 **병적 상태(pathology state)** 를 말한다.
 
-  - 일반적인 식이, 운동 요법으로 **ketoacidosis** 에 걸릴 확률은 매우 희박하고, 보통 인슐린 결핍과 같은 **type 1 diabete(제 1형 당뇨)** 를 가질 경우 ketoacidosis에 취약하다.
+  - 일반적인 식이, 운동 요법으로 **ketoacidosis** 에 걸릴 확률은 매우 희박하고, 보통 **type 1 diabete(제 1형 당뇨)** 와 같은 인슐린 결핍증을 가질 경우 ketoacidosis에 취약하다.
 
 ## Beteine
 
