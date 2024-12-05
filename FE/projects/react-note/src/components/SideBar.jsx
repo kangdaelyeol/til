@@ -45,7 +45,7 @@ const SideBar = () => {
             </div>
             <div className="mt-4">
                 {notes.map((note) => (
-                    <li key={note.id}>
+                    <li className="mb-2 list-none" key={note.id}>
                         <NavLink
                             className={({ isActive }) =>
                                 isActive
