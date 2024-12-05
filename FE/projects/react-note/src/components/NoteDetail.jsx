@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams, useNavigate } from 'react-router-dom'
 import { deleteNote, updateNote } from '../store/notesSlice'
 import { fetchOpenAI } from '../api'
+import { format } from 'date-fns'
 const NoteDetail = () => {
     const navigate = useNavigate()
     const params = useParams()
@@ -43,7 +44,9 @@ const NoteDetail = () => {
         <div className="bg-gray-900 p-6">
             <div className="flex justify-between items-center mb-4">
                 <div>
-                    <time className="text-gray-400 text-sm">2024</time>
+                    <time className="block text-gray-400 text-sm">
+                        {format(note.time, 'yyyy-MM-dd HH:mm')}
+                    </time>
                     <input
                         type="text"
                         value={note.title}
