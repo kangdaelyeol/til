@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams, useNavigate } from 'react-router-dom'
 import { deleteNote, updateNote } from '../store/notesSlice'
+import { fetchOpenAI } from '../api'
 const NoteDetail = () => {
     const navigate = useNavigate()
     const params = useParams()
@@ -31,6 +32,11 @@ const NoteDetail = () => {
     const handleDelete = () => {
         dispatch(deleteNote(params.id))
         navigate('/')
+    }
+
+    const handleSubmit = async () => {
+        const data = await fetchOpenAI(note.content)
+        dispatch(updateNote({ ...note, summary: data }))
     }
 
     return (
@@ -64,7 +70,10 @@ const NoteDetail = () => {
                         value={note.content}
                         onChange={handleChangeContent}
                     ></textarea>
-                    <button className="bg-blue-600 hover:bg-blue-500 py-2 px-4 mt-4 rounded">
+                    <button
+                        onClick={handleSubmit}
+                        className="bg-blue-600 hover:bg-blue-500 py-2 px-4 mt-4 rounded"
+                    >
                         요약
                     </button>
                 </div>
