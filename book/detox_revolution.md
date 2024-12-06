@@ -102,6 +102,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Autophagy - 자가 포식](#autophagy---자가-포식)
 
+- [Beteine](#beteine)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1387,9 +1389,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - `비트(beet)` 에 포함된 [Betaine(trimethyglycine)](https://en.wikipedia.org/wiki/Betaine)은 유전자 발현 조절에 효과가 있다.
 
-  - 비트(beet)는 서양에서 **사탕무(sugar beet)** 랑 같은 종이지만, 두 채소는 성분이 다르므로 혼동해서는 안된다.
+  - 비트(beet)는 서양에서 **사탕무(sugar beet)** 와 같은 종이지만, 두 채소는 성분이 다르므로 혼동해서는 안된다.
 
-  - 물론 sugar beet에도 betaine이 포함되어 있다. 하지만 sucrose의 비율이 높으므로 주의해야 한다. `(betaine이란 이름은 sugar beet에서 발견되어 독립되어 지어졌고, 이후 성분 분석에 의해 trimethylglycine으로 명명되었다.)`
+  - 물론 sugar beet에도 betaine이 포함되어 있다. 하지만 sucrose 비율이 높으므로 주의해야 한다. `(betaine이란 이름은 sugar beet에서 발견되어 독립되어 지어졌고, 이후 성분 분석에 의해 trimethylglycine으로 명명되었다.)`
 
 <span class="title">beteine이 주는 이로움</span>
 
@@ -1401,11 +1403,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ---
 
-- [betaine](https://en.wikipedia.org/wiki/Betaine)은 **DNA** 에 methyl을 제공해서 유전자 발현을 조절한다. 따라서 필요한 형태, 양의 단백질이 올바르게 합성되어 세포 기능, 대사 조절이 원활하게 이루어진다.
+- [betaine](https://en.wikipedia.org/wiki/Betaine)은 **DNA** 에 methyl을 제공해서 유전자 발현을 조절한다. 따라서 필요한 형태, 필요한 양의 단백질이 올바르게 합성되어 세포 기능, 대사 조절이 원활하게 이루어진다.
 
-- betaine은 [BHMT](https://en.wikipedia.org/wiki/Betaine%E2%80%94homocysteine_S-methyltransferase)를 통해 [homocysteine](https://en.wikipedia.org/wiki/Homocysteine)에 methyl을 제공함으로써 [methionine](https://en.wikipedia.org/wiki/Methionine)을 생성한다.
+- betaine은 [BHMT](https://en.wikipedia.org/wiki/Betaine%E2%80%94homocysteine_S-methyltransferase)를 통해 [homocysteine](https://en.wikipedia.org/wiki/Homocysteine)을 메틸화(methylation) 함으로써 [methionine](https://en.wikipedia.org/wiki/Methionine) 아미노산을 생성한다.
 
-  - **homocysteine** 은 **essential amino acid** 인 methionine의 대사산물로 자연스럽게 생성되어 축적되지만, 과다축적이 되면 [hyperhomocysteinemia](https://en.wikipedia.org/wiki/Hyperhomocysteinemia)상태가 되며 **심혈관 질환(cardiovascular disease)** 위험이 높아진다.
+  - **homocysteine** 은 **essential amino acid** 인 methionine의 대사산물로 자연스럽게 생성되어 축적되지만, 과다축적이 되면 [hyperhomocysteinemia](https://en.wikipedia.org/wiki/Hyperhomocysteinemia)상태가 된다.
+
+  - hyperhomocysteinemia 상태가 되면 **심혈관 질환(cardiovascular disease)** 위험이 높아지고, 조기 유산(early-term spountanious abortion) 가능성이 높아진다.
 
 ## Taste buds
 
