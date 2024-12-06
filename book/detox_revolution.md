@@ -102,7 +102,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Autophagy - 자가 포식](#autophagy---자가-포식)
 
-- [Beteine](#beteine)
+- [Betaine](#betaine)
 
 ## Propionic Acid(PPA) - 프로피온산
 
@@ -1385,7 +1385,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - 일반적인 식이, 운동 요법으로 **ketoacidosis** 에 걸릴 확률은 매우 희박하고, 보통 **type 1 diabete(제 1형 당뇨)** 와 같은 인슐린 결핍증을 가질 경우 ketoacidosis에 취약하다.
 
-## Beteine
+## Betaine
 
 - `비트(beet)` 에 포함된 [Betaine(trimethyglycine)](https://en.wikipedia.org/wiki/Betaine)은 유전자 발현 조절에 효과가 있다.
 
@@ -1393,13 +1393,13 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - 물론 sugar beet에도 betaine이 포함되어 있다. 하지만 sucrose 비율이 높으므로 주의해야 한다. `(betaine이란 이름은 sugar beet에서 발견되어 독립되어 지어졌고, 이후 성분 분석에 의해 trimethylglycine으로 명명되었다.)`
 
-<span class="title">beteine이 주는 이로움</span>
+<span class="title">betaine이 주는 이로움</span>
 
 <span class="substance">betaine</span> - <span class="interaction">methyl donor</span> &rarr; <span class="organ">DNA</span> &rarr; <span class="interaction">Regulation of gene expression</span>
 
-<span class="substance">beteine</span> - <span class="interaction">methyl donor</span> &rarr; <span class="organ">BHMT</span> &rarr; <span class="substance">homocysteine</span> &rarr; <span class="substance">methionine</span>
+<span class="substance">betaine</span> - <span class="interaction">methyl donor</span> &rarr; <span class="organ">BHMT</span> &rarr; <span class="substance">homocysteine</span> &rarr; <span class="substance">methionine</span>
 
-- `BHMT - Beteine-homocysteine methyltransfrerase`
+- `BHMT - Betaine-homocysteine methyltransfrerase`
 
 ---
 
