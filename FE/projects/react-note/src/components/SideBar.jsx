@@ -1,13 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { NavLink } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid'
 import { addNote } from '../store/notesSlice.js'
-const SideBar = () => {
-    const navigate = useNavigate()
 
+export default function Sidebar() {
     const notes = useSelector((state) => state.notes)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const handleClick = () => {
         const id = uuidv4()
@@ -62,5 +61,3 @@ const SideBar = () => {
         </div>
     )
 }
-
-export default SideBar
