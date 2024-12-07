@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+    @apply bg-color-black;
+    @apply text-color-white;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  .btn {
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    @apply text-color-white;
+    @apply bg-color-area;
+  }
+
+  .btn:hover {
+    @apply bg-color-hover;
+  }
+
+  .btn-primary {
+    @apply bg-color-primary;
+    @apply text-color-black;
+  }
+
+  .btn-primary:hover {
+    @apply bg-color-hover;
+    @apply text-color-white;
+  }
+}
+
+@layer utilities {
+  .font-Oswald {
+    font-family: "Oswald", sans-serif;
+  }
+}
