@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Headline() {
     return (
-        <div className="container mb-[40px]">
+        <div className="mb-[40px]">
             <h1 className="font-Oswald text-[80px] leading-[1] mb-[40px]">
                 <span className="text-color-primary">OMDb API</span>
                 <br />

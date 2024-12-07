@@ -51,4 +51,8 @@
   .font-Oswald {
     font-family: "Oswald", sans-serif;
   }
+
+  .bg-header {
+    background-color: rgba(14, 17, 27, 0.9);
+  }
 }

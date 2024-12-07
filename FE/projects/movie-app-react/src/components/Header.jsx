@@ -18,7 +18,7 @@ const menuList = [
 
 export default function Header() {
     return (
-        <div className="py-[20px] px-[40px] bg-[rgba(14, 17, 27, 0.9)] sticky top-0 z-9 flex items-end gap-[40px]">
+        <div className="py-[20px] px-[40px] bg-header sticky top-[0] z-9 flex items-end gap-[40px]">
             <NavLink
                 to="/"
                 className="text-[20px] font-Oswald text-color-white-50 decoration-none"
