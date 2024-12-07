@@ -55,4 +55,8 @@
   .bg-header {
     background-color: rgba(14, 17, 27, 0.9);
   }
+
+  .bg-movie-info {
+    background-color: rgba(14, 17, 27, 0.3);
+  }
 }
