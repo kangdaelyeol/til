@@ -24,7 +24,7 @@ export default function MovieList() {
             ) : (
                 <div className="flex flex-wrap justify-center gap-[20px]">
                     {tempMovieList.map((movie) => (
-                        <MovieItem movie={movie} />
+                        <MovieItem key={movie.Title} movie={movie} />
                     ))}
                 </div>
             )}

@@ -18,7 +18,7 @@ const menuList = [
 
 export default function Header() {
     return (
-        <div className="py-[20px] px-[40px] bg-header sticky top-[0] z-9 flex items-end gap-[40px]">
+        <div className="py-[20px] px-[40px] bg-header sticky top-[0] z-10 flex items-end gap-[40px]">
             <NavLink
                 to="/"
                 className="text-[20px] font-Oswald text-color-white-50 decoration-none"
@@ -28,19 +28,22 @@ export default function Header() {
             <nav>
                 <ul className="flex gap-[14px]">
                     {menuList.map((menu) => {
-                        const hash = location.hash.split('?')[0]
-                        const href = menu.href.split('?')[0]
-                        const isActive = hash === href
                         return (
                             <li key={menu.name}>
                                 <NavLink
-                                    className={[
-                                        'text-[14px] font-bold decoration-none',
+                                    className={({ isActive }) =>
                                         isActive
-                                            ? 'text-color-primary'
-                                            : 'text-color-white-50',
-                                    ].join(' ')}
+                                            ? [
+                                                  'text-color-primary',
+                                                  linkClassName,
+                                              ].join(' ')
+                                            : [
+                                                  'text-color-white-50',
+                                                  linkClassName,
+                                              ].join(' ')
+                                    }
                                     to={menu.href}
+                                    end
                                 >
                                     {menu.name}
                                 </NavLink>
@@ -62,3 +65,5 @@ export default function Header() {
         </div>
     )
 }
+
+const linkClassName = 'text-[14px] font-bold decoration-none'
