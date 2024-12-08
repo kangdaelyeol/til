@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import classNames from 'classnames'
 
 const menuList = [
     {
@@ -32,15 +33,12 @@ export default function Header() {
                             <li key={menu.name}>
                                 <NavLink
                                     className={({ isActive }) =>
-                                        isActive
-                                            ? [
-                                                  'text-color-primary',
-                                                  linkClassName,
-                                              ].join(' ')
-                                            : [
-                                                  'text-color-white-50',
-                                                  linkClassName,
-                                              ].join(' ')
+                                        classNames(
+                                            {
+                                                'text-color-primary': isActive,
+                                            },
+                                            'text-[14px] font-bold decoration-none',
+                                        )
                                     }
                                     to={menu.href}
                                     end
@@ -65,5 +63,3 @@ export default function Header() {
         </div>
     )
 }
-
-const linkClassName = 'text-[14px] font-bold decoration-none'

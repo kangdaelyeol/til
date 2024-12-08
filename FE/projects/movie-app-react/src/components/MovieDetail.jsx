@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { callMovieInfo } from '../api'
+import classNames from 'classnames'
 
 export default function MovieDetail() {
     const [data, setData] = useState({})
@@ -32,14 +33,14 @@ export default function MovieDetail() {
     }, [param, loading])
 
     return loading ? (
-        <div className={[movieClassName].join(' ')}>
-            <div className={[posterClassName, 'skeleton'].join(' ')}></div>
+        <div className={movieClassName}>
+            <div className={classNames(posterClassName, 'skeleton')}></div>
             <div className="grow">
                 <div
-                    className={[titleClassName, 'h-[70px] skeleton'].join(' ')}
+                    className={classNames(titleClassName, 'h-[70px] skeleton')}
                 ></div>
                 <div
-                    className={[labelsClassName, 'h-[30px] skeleton'].join(' ')}
+                    className={classNames(labelsClassName, 'h-[30px] skeleton')}
                 ></div>
                 <div className="w-[80%] h-[400px] skeleton"></div>
             </div>
@@ -50,7 +51,7 @@ export default function MovieDetail() {
                 style={{
                     '--bg': `url(${Poster.replace('SX300', 'SX700')})`,
                 }}
-                className={[posterClassName, 'bg-[image:var(--bg)]'].join(' ')}
+                className={classNames(posterClassName, 'bg-[image:var(--bg)]')}
             ></div>
             <div className="grow">
                 <div className={titleClassName}>{Title}</div>

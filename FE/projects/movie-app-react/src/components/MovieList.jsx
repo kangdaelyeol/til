@@ -2,6 +2,7 @@ import React from 'react'
 import MovieItem from './MovieItem'
 import { useSelector } from 'react-redux'
 import MovieListMore from './MovieListMore'
+import classNames from 'classnames'
 
 export default function MovieList() {
     const state = useSelector((state) => state.movies)
@@ -22,10 +23,12 @@ export default function MovieList() {
             {state.page < state.maxPage && !state.loading && <MovieListMore />}
 
             <div
-                className={[
+                className={classNames(
                     'w-[30px] h-[30px] my-[30px] mx-auto border-[4px] border-solid border-color-primary border-t-transparent rounded-[50%] animate-spin',
-                    !state.loading && 'hidden',
-                ].join(' ')}
+                    {
+                        hidden: !state.loading,
+                    },
+                )}
             ></div>
         </div>
     )
