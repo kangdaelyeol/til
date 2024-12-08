@@ -7,7 +7,7 @@ export default function About() {
     return (
         <div>
             <div
-                className={`w-[230px] h-[230px] mx-auto mt-0 mb-[20px] rounded-[10px] bg-cover bg-[image:var(--bg)]`}
+                className="w-[230px] h-[230px] mx-auto mt-0 mb-[20px] rounded-[10px] bg-cover bg-[image:var(--bg)]"
                 style={{
                     '--bg': `url(${PHOTO})`,
                 }}
