@@ -65,7 +65,7 @@ export default function MovieDetail() {
                 <div>
                     <h3 className={h3ClassName}>Ratings</h3>
                     {Ratings.map(({ Source, Value }) => (
-                        <p>
+                        <p key={Source}>
                             {Source} - {Value}
                         </p>
                     ))}
