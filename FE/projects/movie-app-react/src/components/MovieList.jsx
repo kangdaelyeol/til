@@ -1,30 +1,21 @@
 import React from 'react'
 import MovieItem from './MovieItem'
-
-const tempMovieList = [
-    {
-        imdbID: 'testid',
-        Poster: 'testPoster',
-        Year: 2024,
-        Title: 'testTitle',
-    },
-]
-
-const errorMessage = ''
-
-const isHide = true
+import { useSelector } from 'react-redux'
 
 export default function MovieList() {
+    const state = useSelector((state) => state.movies)
+
+    console.log(state.movieList)
     return (
         <div className="p-[20px] rounded-[4px] bg-color-area">
-            {errorMessage ? (
+            {state.message ? (
                 <div className="text-color-primary text-[20px] text-center">
-                    ${errorMessage}
+                    {state.message}
                 </div>
             ) : (
                 <div className="flex flex-wrap justify-center gap-[20px]">
-                    {tempMovieList.map((movie) => (
-                        <MovieItem key={movie.Title} movie={movie} />
+                    {state.movieList.map((movie) => (
+                        <MovieItem key={movie.imdbID} movie={movie} />
                     ))}
                 </div>
             )}
@@ -32,7 +23,7 @@ export default function MovieList() {
             <div
                 className={[
                     'w-[30px] h-[30px] my-[30px] mx-auto border-[4px] border-solid border-color-primary border-t-transparent rounded-[50%] animate-spin',
-                    isHide && 'none',
+                    !state.loading && 'hidden',
                 ].join(' ')}
             ></div>
         </div>

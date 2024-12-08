@@ -6,9 +6,11 @@ export default function MovieItem({ movie }) {
         <NavLink
             className={`relative w-[200px] h-[300px]
                rounded-[4px] bg-color-black bg-cover overflow-hidden 
-               bg-[url('${movie.Poster}')] 
                hover:after:content-[""] hover:after:absolute hover:after:inset-0 
-               hover:after:border-[6px] hover:after:border-solid hover:after:border-color-primary}`}
+               hover:after:border-[6px] hover:after:border-solid hover:after:border-color-primary
+               bg-[image:var(--bg)]
+               `}
+            style={{ '--bg': `url(${movie.Poster})` }}
             to={`/movie?id=${movie.imdbID}`}
         >
             <div className="w-full p-[14px] box-border text-[14px] text-center absolute left-0 bottom-0 bg-movie-info backdrop-blur-[10px]">
