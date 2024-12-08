@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 const about = {
     photo: 'https://avatars.githubusercontent.com/u/27201345?v=4',
     name: 'DANIEL / KangDaeLyeol',
@@ -11,6 +12,7 @@ const about = {
 
 export default function About() {
     const { name, email, github, blog, photo } = about
+
     return (
         <div>
             <div
@@ -23,23 +25,23 @@ export default function About() {
                 {name}
             </p>
             <p className={pClassName}>
-                <Link
+                <a
                     className={linkClassName}
-                    to={`https://mail.google.com/main/?view=cm&fs=1&to=${email}`}
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
                     target="_blank"
                 >
                     {email}
-                </Link>
+                </a>
             </p>
             <p className={pClassName}>
-                <Link className={linkClassName} to={github} target="_blank">
+                <a className={linkClassName} href={github} target="_blank">
                     GitHub
-                </Link>
+                </a>
             </p>
             <p className={pClassName}>
-                <Link className={linkClassName} to={blog} target="_blank">
+                <a className={linkClassName} href={blog} target="_blank">
                     Blog
-                </Link>
+                </a>
             </p>
         </div>
     )
