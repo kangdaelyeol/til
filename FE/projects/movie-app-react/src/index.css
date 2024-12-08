@@ -45,6 +45,39 @@
     @apply bg-color-hover;
     @apply text-color-white;
   }
+
+  .skeleton {
+    @apply relative;
+    @apply overflow-hidden;
+    @apply bg-color-area;
+    border-radius: 10px;
+  }
+
+  .skeleton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0)
+    );
+    transform: translateX(100%);
+    animation: skeleton-loader 1s infinite;
+  }
+
+  @keyframes skeleton-loader {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
 }
 
 @layer utilities {

@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainPage from './pages/MainPage'
 import Home from './components/Home'
 import About from './components/About'
+import MovieDetail from './components/MovieDetail'
 
 const routerConfig = [
     {
@@ -15,6 +16,10 @@ const routerConfig = [
             {
                 path: '/about',
                 element: <About />,
+            },
+            {
+                path: '/movie',
+                element: <MovieDetail />,
             },
         ],
     },
