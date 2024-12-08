@@ -1,24 +1,27 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import * as profile from '../constants'
 
 export default function Footer() {
+    const { REPOSITORY, GITHUB } = profile
     return (
         <div className="pt-[40px] px-[40px] pb-[60px] text-center">
             <div>
-                <Link
+                <a
                     className="text-color-white-20 decoration-color-white-20 hover:underline"
-                    to="${repository}"
+                    target="_blank"
+                    href={REPOSITORY}
                 >
                     GitHub Repository
-                </Link>
+                </a>
             </div>
             <div>
-                <Link
+                <a
                     className="text-color-white-20 hover:underline"
-                    to="${github}"
+                    target="_blank"
+                    href={GITHUB}
                 >
                     {new Date().getFullYear()} KangDaeLyeol
-                </Link>
+                </a>
             </div>
         </div>
     )
