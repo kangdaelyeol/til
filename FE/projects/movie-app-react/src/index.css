@@ -4,10 +4,9 @@
 
 @layer base {
   html {
+    @apply bg-color-black text-color-white;
     font-family: "Roboto", sans-serif;
     line-height: 1.4;
-    @apply bg-color-black;
-    @apply text-color-white;
   }
 }
 
@@ -19,6 +18,7 @@
   }
 
   .btn {
+    @apply bg-color-area text-color-white;
     height: 50px;
     padding: 0 20px;
     border: none;
@@ -28,8 +28,6 @@
     font-weight: 700;
     cursor: pointer;
     transition: 0.3s;
-    @apply text-color-white;
-    @apply bg-color-area;
   }
 
   .btn:hover {
@@ -37,29 +35,21 @@
   }
 
   .btn-primary {
-    @apply bg-color-primary;
-    @apply text-color-black;
+    @apply bg-color-primary text-color-black;
   }
 
   .btn-primary:hover {
-    @apply bg-color-hover;
-    @apply text-color-white;
+    @apply bg-color-hover text-color-white;
   }
 
   .skeleton {
-    @apply relative;
-    @apply overflow-hidden;
-    @apply bg-color-area;
+    @apply relative overflow-hidden bg-color-area;
     border-radius: 10px;
   }
 
   .skeleton::after {
+    @apply absolute top-0 left-0 w-full h-full;
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(
       270deg,
       rgba(255, 255, 255, 0),
