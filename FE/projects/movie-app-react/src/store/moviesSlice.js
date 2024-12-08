@@ -32,6 +32,7 @@ const moviesSlice = createSlice({
             .addCase(searchMovieThunk.pending, (state, action) => {
                 if (action.meta.arg.page === 1) state.movieList = []
                 state.loading = true
+                state.message = ''
             })
             .addCase(searchMovieThunk.fulfilled, (state, action) => {
                 state.loading = false
@@ -41,7 +42,6 @@ const moviesSlice = createSlice({
                     state.maxPage = 0
                     state.movieList = []
                 } else {
-                    state.message = ''
                     state.page = action.meta.arg.page
                     state.movieList.push(...action.payload.Search)
                     state.maxPage = Math.ceil(
