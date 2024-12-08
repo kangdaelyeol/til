@@ -1,22 +1,13 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { searchMovieThunk, updateKeyword } from '../store/moviesSlice'
+import useSearch from '../hooks/useSearch'
 
 export default function Search() {
-    const state = useSelector((state) => state.movies)
-    const dispatch = useDispatch()
-    const searchMovie = () => {
-        dispatch(searchMovieThunk({ keyword: state.keyword, page: 1 }))
-    }
-
-    const changeKeyword = (e) => {
-        dispatch(updateKeyword({ keyword: e.target.value }))
-    }
+    const { changeKeyword, searchMovie, value } = useSearch()
     return (
         <div className="flex gap-[10px] mb-[30px]">
             <input
                 onChange={changeKeyword}
-                value={state.keyword}
+                value={value}
                 className="grow-[1] h-[50px] px-[20px] rounded-[4px] border-none outline-none text-[14px] text-color-white bg-color-area placeholder::text-color-white-30"
                 placeholder="Enter the movie title to search!"
             />
