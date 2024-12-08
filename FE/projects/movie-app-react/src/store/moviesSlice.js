@@ -17,29 +17,41 @@ const moviesSlice = createSlice({
     initialState: {
         movieList: [],
         page: 1,
+        maxPage: 0,
         message: '',
         loading: false,
+        keyword: '',
     },
-    reducers: {},
+    reducers: {
+        updateKeyword: (state, action) => {
+            state.keyword = action.payload.keyword
+        },
+    },
     extraReducers: (builder) => {
         builder
-            .addCase(searchMovieThunk.pending, (state) => {
+            .addCase(searchMovieThunk.pending, (state, action) => {
+                if (action.meta.arg.page === 1) state.movieList = []
                 state.loading = true
-                state.movieList = []
             })
             .addCase(searchMovieThunk.fulfilled, (state, action) => {
                 state.loading = false
                 if (action.payload.Error) {
                     state.message = action.payload.Error
-                    state.page = 1
+                    state.page = action.meta.arg.page
+                    state.maxPage = 0
                     state.movieList = []
                 } else {
                     state.message = ''
-                    state.page = 1
-                    state.movieList = action.payload.Search
+                    state.page = action.meta.arg.page
+                    state.movieList.push(...action.payload.Search)
+                    state.maxPage = Math.ceil(
+                        Number(action.payload.totalResults) / 10,
+                    )
                 }
             })
     },
 })
+
+export const { updateKeyword } = moviesSlice.actions
 
 export default moviesSlice.reducer
