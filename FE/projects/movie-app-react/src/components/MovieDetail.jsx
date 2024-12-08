@@ -1,25 +1,9 @@
 import React, { useState, useEffect } from 'react'
-
-const data = {
-    Poster: '',
-    Ratings: [
-        {
-            Source: 3,
-            Value: 1,
-        },
-    ],
-    Title: 'test title',
-    Released: 'test Released',
-    Runtime: 'test Runtime',
-    Country: 'test Country',
-    Actors: 'test Actors',
-    Director: 'test Director',
-    Production: 'test Production',
-    Genre: 'test Genre',
-    Plot: 'test plot',
-}
+import { useSearchParams } from 'react-router-dom'
+import { callMovieInfo } from '../api'
 
 export default function MovieDetail() {
+    const [data, setData] = useState({})
     const {
         Title,
         Released,
@@ -29,16 +13,24 @@ export default function MovieDetail() {
         Director,
         Production,
         Genre,
-        Poster,
         Ratings,
         Plot,
+        Poster,
     } = data
     const [loading, setLoading] = useState(true)
+
+    const [param, setParam] = useSearchParams()
+    console.log(param.get('id'))
+
     useEffect(() => {
-        setTimeout(() => {
+        if (!param) return
+        ;(async function () {
+            const res = await callMovieInfo({ id: param.get('id') })
+            setData({ ...res.data })
             setLoading(false)
-        }, 50000)
-    }, [])
+        })()
+    }, [param, loading])
+
     return loading ? (
         <div className={[movieClassName].join(' ')}>
             <div className={[posterClassName, 'skeleton'].join(' ')}></div>
@@ -47,9 +39,7 @@ export default function MovieDetail() {
                     className={[titleClassName, 'h-[70px] skeleton'].join(' ')}
                 ></div>
                 <div
-                    className={[labelsClassName, 'h-[30px] skeleton'].join(
-                        ' ',
-                    )}
+                    className={[labelsClassName, 'h-[30px] skeleton'].join(' ')}
                 ></div>
                 <div className="w-[80%] h-[400px] skeleton"></div>
             </div>
@@ -58,9 +48,9 @@ export default function MovieDetail() {
         <div className={movieClassName}>
             <div
                 style={{
-                    backgroundImage: `url(Poster.replace('SX300', 'SX700'))`,
+                    '--bg': `url(${Poster.replace('SX300', 'SX700')})`,
                 }}
-                className={posterClassName}
+                className={[posterClassName, 'bg-[image:var(--bg)]'].join(' ')}
             ></div>
             <div className="grow">
                 <div className={titleClassName}>{Title}</div>
@@ -78,7 +68,7 @@ export default function MovieDetail() {
                         <p>
                             {Source} - {Value}
                         </p>
-                    )).join('')}
+                    ))}
                 </div>
                 <div>
                     <h3 className={h3ClassName}>Actors</h3>
