@@ -32,7 +32,7 @@ export default function Header() {
                         const href = menu.href.split('?')[0]
                         const isActive = hash === href
                         return (
-                            <li>
+                            <li key={menu.name}>
                                 <NavLink
                                     className={[
                                         'text-[14px] font-bold decoration-none',

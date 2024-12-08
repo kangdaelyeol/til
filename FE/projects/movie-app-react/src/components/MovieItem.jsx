@@ -12,8 +12,8 @@ export default function MovieItem({ movie }) {
             to={`/movie?id=${movie.imdbID}`}
         >
             <div className="w-full p-[14px] box-border text-[14px] text-center absolute left-0 bottom-0 bg-movie-info backdrop-blur-[10px]">
-                <div className="text-color-primary">${movie.Year}</div>
-                <div className="text-color-white">${movie.Title}</div>
+                <div className="text-color-primary">{movie.Year}</div>
+                <div className="text-color-white">{movie.Title}</div>
             </div>
         </NavLink>
     )
