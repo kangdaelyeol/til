@@ -1,15 +1,8 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { searchMovieThunk } from '../store/moviesSlice'
+import useMovirListMore from '../hooks/useMovieListMore'
 
 export default function MovieListMore() {
-    const dispatch = useDispatch()
-    const { keyword, page } = useSelector((state) => state.movies)
-
-    const searchMovieMore = () => {
-        dispatch(searchMovieThunk({ keyword, page: page + 1 }))
-    }
-
+    const { searchMovieMore } = useMovirListMore()
     return (
         <button
             onClick={searchMovieMore}
