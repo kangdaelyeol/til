@@ -14,10 +14,9 @@ export default function About() {
     return (
         <div>
             <div
-                // TailWindcss - bg-[url()] 적용 안됨.
-                className={`w-[230px] h-[230px] mx-auto mt-0 mb-[20px] rounded-[10px] bg-cover bg-[url(${photo})]`}
+                className={`w-[230px] h-[230px] mx-auto mt-0 mb-[20px] rounded-[10px] bg-cover bg-[image:var(--bg)]`}
                 style={{
-                    backgroundImage: `url(${photo})`,
+                    '--bg': `url(${photo})`,
                 }}
             ></div>
             <p className="text-[40px] font-Oswald leading-[1.5] text-center mb-[4px]">
