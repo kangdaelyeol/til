@@ -23,33 +23,28 @@ export default function About() {
             <p className="text-[40px] font-Oswald leading-[1.5] text-center mb-[4px]">
                 {name}
             </p>
-            <p className="leading-[1.5] text-center mb-[4px]">
+            <p className={pClassName}>
                 <Link
-                    className="text-color-primary hover:decoration-underline"
+                    className={linkClassName}
                     to={`https://mail.google.com/main/?view=cm&fs=1&to=${email}`}
                     target="_blank"
                 >
                     {email}
                 </Link>
             </p>
-            <p className="leading-[1.5] text-center mb-[4px]">
-                <Link
-                    className="text-color-primary hover:decoration-underline"
-                    to={github}
-                    target="_blank"
-                >
+            <p className={pClassName}>
+                <Link className={linkClassName} to={github} target="_blank">
                     GitHub
                 </Link>
             </p>
-            <p className="leading-[1.5] text-center mb-[4px]">
-                <Link
-                    className="text-color-primary hover:decoration-underline"
-                    to={blog}
-                    target="_blank"
-                >
+            <p className={pClassName}>
+                <Link className={linkClassName} to={blog} target="_blank">
                     Blog
                 </Link>
             </p>
         </div>
     )
 }
+
+const linkClassName = 'text-color-primary hover:underline'
+const pClassName = 'leading-[1.5] text-center mb-[4px]'
