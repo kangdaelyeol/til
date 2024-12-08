@@ -1,11 +1,11 @@
 import React from 'react'
 import MovieItem from './MovieItem'
 import { useSelector } from 'react-redux'
+import MovieListMore from './MovieListMore'
 
 export default function MovieList() {
     const state = useSelector((state) => state.movies)
 
-    console.log(state.movieList)
     return (
         <div className="p-[20px] rounded-[4px] bg-color-area">
             {state.message ? (
@@ -19,6 +19,7 @@ export default function MovieList() {
                     ))}
                 </div>
             )}
+            {state.page < state.maxPage && !state.loading && <MovieListMore />}
 
             <div
                 className={[
