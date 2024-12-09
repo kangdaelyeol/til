@@ -5,8 +5,10 @@ import {
     sendChatbotMessageThunk,
     updateChatMessage,
 } from '../store/chatbotSlice'
+import { updateKeyword } from '../store/moviesSlice'
 
 const ContentRenderer = ({ content }) => {
+    const dispatch = useDispatch()
     const map = []
     const regExp = /{{(.*?)\/\/(.*?)}}/g
     let match
@@ -20,7 +22,7 @@ const ContentRenderer = ({ content }) => {
             <span
                 key={fullMatch}
                 className="cursor-pointer text-color-primary hover:underline"
-                data-movie-title={en}
+                onClick={() => dispatch(updateKeyword({ keyword: en }))}
             >
                 {ko}
             </span>,
