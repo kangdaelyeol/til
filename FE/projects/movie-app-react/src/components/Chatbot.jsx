@@ -113,11 +113,9 @@ export default function Chatbot() {
                 onClick={() => setVisible((pre) => !pre)}
                 className="btn btn-circle chat-starter fixed z-1"
             >
-                {visible ? (
-                    <span className="material-symbols-outlined">close</span>
-                ) : (
-                    <span className="material-symbols-outlined ">chat</span>
-                )}
+                <span className="material-symbols-outlined">
+                    {visible ? 'close' : 'chat'}
+                </span>
             </div>
         </div>
     )
