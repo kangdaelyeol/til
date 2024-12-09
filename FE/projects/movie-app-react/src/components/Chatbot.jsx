@@ -25,7 +25,7 @@ const ContentRenderer = ({ content }) => {
                 {ko}
             </span>,
         )
-        startIndex = match.index + fullMatch.length
+        startIndex = regExp.lastIndex
     }
     contentList.push(content.slice(startIndex))
 
