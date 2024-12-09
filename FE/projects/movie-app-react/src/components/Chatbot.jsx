@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+import { useDispatch } from 'react-redux'
 import className from 'classnames'
-import {
-    sendChatbotMessageThunk,
-    updateChatMessage,
-} from '../store/chatbotSlice'
+
 import { updateKeyword } from '../store/moviesSlice'
+import useChatbot from '../hooks/useChatbot'
 
 const ContentRenderer = ({ content }) => {
     const dispatch = useDispatch()
-    const map = []
+    const contentList = []
     const regExp = /{{(.*?)\/\/(.*?)}}/g
     let match
     let startIndex = 0
@@ -17,8 +15,8 @@ const ContentRenderer = ({ content }) => {
     while ((match = regExp.exec(content)) !== null) {
         const [fullMatch, ko, en] = match
         if (startIndex < match.index)
-            map.push(content.slice(startIndex, match.index))
-        map.push(
+            contentList.push(content.slice(startIndex, match.index))
+        contentList.push(
             <span
                 key={fullMatch}
                 className="cursor-pointer text-color-primary hover:underline"
@@ -29,23 +27,19 @@ const ContentRenderer = ({ content }) => {
         )
         startIndex = match.index + fullMatch.length
     }
-    map.push(content.slice(startIndex))
+    contentList.push(content.slice(startIndex))
 
-    return <>{map}</>
+    return <>{contentList}</>
 }
 
 export default function Chatbot() {
-    const [visible, setVisible] = useState(false)
-    const dispatch = useDispatch()
-    const state = useSelector((state) => state.chatbot)
-
-    const handleChatInput = (e) => {
-        dispatch(updateChatMessage({ message: e.target.value }))
-    }
-
-    const handleSubmitMessage = () => {
-        dispatch(sendChatbotMessageThunk({ message: state.message }))
-    }
+    const {
+        visible,
+        handleChatInput,
+        handleSubmitMessage,
+        handleVisible,
+        state,
+    } = useChatbot()
 
     return (
         <div className="chatbot">
@@ -110,7 +104,7 @@ export default function Chatbot() {
                 </div>
             </div>
             <div
-                onClick={() => setVisible((pre) => !pre)}
+                onClick={() => handleVisible()}
                 className="btn btn-circle chat-starter fixed z-1"
             >
                 <span className="material-symbols-outlined">
