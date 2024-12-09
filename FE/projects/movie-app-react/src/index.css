@@ -18,15 +18,13 @@
   }
 
   .btn {
-    @apply bg-color-area text-color-white;
+    @apply bg-color-area text-color-white cursor-pointer font-bold;
     height: 50px;
     padding: 0 20px;
     border: none;
     border-radius: 4px;
     outline: none;
     font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
     transition: 0.3s;
   }
 
@@ -40,6 +38,14 @@
 
   .btn-primary:hover {
     @apply bg-color-hover text-color-white;
+  }
+
+  .btn-circle {
+    @apply flex justify-center items-center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
   }
 
   .skeleton {
@@ -68,6 +74,27 @@
       transform: translateX(100%);
     }
   }
+
+  .chatbot {
+    --position-bottom: 20px;
+    --position-right: 40px;
+  }
+
+  .chats {
+    width: calc(100% - var(--position-right) * 2);
+    bottom: calc(var(--position-bottom) + 50px + 14px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .chat-starter {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    bottom: var(--position-bottom);
+    right: var(--position-right);
+  }
+
+  .assistant-photo {
+    color: rgba(255, 255, 255, 0.3);
+    bottom: calc(100% + 4px);
+  }
 }
 
 @layer utilities {
@@ -81,5 +108,9 @@
 
   .bg-movie-info {
     background-color: rgba(14, 17, 27, 0.3);
+  }
+
+  .max-h-chats-ul {
+    max-height: calc(100vh - 340px);
   }
 }
