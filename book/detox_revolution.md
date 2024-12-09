@@ -104,6 +104,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Betaine](#betaine)
 
+- [Taste buds](#taste-buds)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1413,9 +1415,11 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Taste buds
 
-- 혀에는 유두(papillae)가 있고, 각 papillae에는 gustatory receptor cell의 cluster(미각 수용체 세포 - gustatory cell)인 taste buds(미뢰)가 여러 개 있다.
+- 혀에는 유두(papillae)가 있고, 각 papillae는 gustatory receptor cell의 cluster(미각 수용체 세포 - gustatory cell)인 taste buds(미뢰)가 여러 개 있다.
 
-- 혀에는 여러 papillae 부분으로 구분되어 있는데, 주로 4부분으로 나누어 볼 수 있다.
+- 혀에는 여러 papillae 부분으로 구분되어 있는데, 주로 네 부분으로 나누어 볼 수 있다.
+
+![structure of papillae position](./images/papillae.png)
 
 - **papillae**
 
@@ -1425,11 +1429,11 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - fungiform papillae - `(심상)버섯` 모양(앞면)
 
-  - filliform papillae - `사상(실, 섬유)` 모양 **(surface of the anterior 2/3 of the tongue)**
+  - filiform papillae - `사상(실, 섬유)` 모양 **(surface of the anterior 2/3 of the tongue)**
 
 - foliate papillae, fungiform papillae, circumvallate papillae는 미뢰(taste buds)가 있으며, 각 taste bud에는 대략 50 ~ 100개의 gustatory cells가 존재한다.
 
-- **filliform papillae** 에는 taste bud이 없고, 혀의 감각, 즉 물리적인 감각(촉각)을 느끼는 부분이라 한다. 그래서 혀의 넓은 부분을 차지한다. 주로 음식을 이동 시키는 등 기계적 기능을 담당한다
+- **filiform papillae** 에는 taste bud이 없고, 물리적 감각(촉각)을 느끼는 부분이다. 그래서 넓은 부분을 차지한다. 주로 음식을 이동 시키는 등 기계적 기능을 담당한다.
 
 <span class="title">맛을 느끼는 과정</span>
 
@@ -1437,13 +1441,15 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 음식을 섭취하면 gustatory cell에서 화학반응이 일어나 세포가 활성화되어 신경 신호를 생성한다.
 
-- 생성된 신호는 **cranial nerve(대뇌 신경)** 을 통해 `taste center(미각 중추)` 로 전달되고, **대뇌 피질(celebral cortex)** 의 [insula cortex](https://en.wikipedia.org/wiki/Insular_cortex) 부분의 위치한 **gustatory cortax(미각 피질)** 로 전달되어 우리가 맛을 인지하게 된다.
+- 생성된 신호는 **cranial nerve(대뇌 신경)** 을 통해 `taste center(미각 중추)` 로 전달된다.
 
-`미각 신경(taste center)은 사실상 비공식 용어인데, 정확히 미각을 담당하는 중추인 연수(medulla oblongata) &rarr; 시상(thalamus)의 내복측핵(VPM - Ventral posteromedial nucleus) 를 통해 신호가 전달 된다.`
+  - 대뇌 신경에서 [안면 신경(facial nerve)](https://en.wikipedia.org/wiki/Facial_nerve), [설인 신경(glossopharyngeal nerve)](https://en.wikipedia.org/wiki/Glossopharyngeal_nerve), [미주 신경(vague nerve)](https://en.wikipedia.org/wiki/Vagus_nerve) (7, 9 ,10번 대뇌신경)을 통해 미각 신호가 전달된다.
 
-`대뇌 신경에서 안면(facial) 신경, 설인(grossopharyngeal) 신경, 미주(vague) 신경(7, 9 ,10번 대뇌신경)을 통해 미각 신호가 전달된다.`
+- 미각 중추를 거쳐 **대뇌 피질(celebral cortex)** 의 [insula cortex](https://en.wikipedia.org/wiki/Insular_cortex) 부분의 위치한 **gustatory cortex(미각 피질)** 로 전달되어 맛을 인지하게 된다.
 
-`gustatory nerve &rarr; taste center &rarr; gustatory cortex의 neural signal전달의 과정은 neurotransmission 과정의 개념이다.`
+  - **미각 중추(taste center)** 는 사실상 비공식 용어인데, 정확히 미각을 담당하는 중추인 **연수(medulla oblongata)** &rarr; 시상(thalamus)의 **내복측핵(VPM - Ventral Posteromedial Nucleus)** 을 통해 신호가 전달 된다.
+
+  - gustatory nerve &rarr; taste center &rarr; gustatory cortex의 neural signal 전달 과정은 neurotransmission 과정의 개념이다.
 
 ## RBC - bilirubin
 
