@@ -106,6 +106,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Taste buds](#taste-buds)
 
+- [RBC - bilirubin](#rbc---bilirubin)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1455,7 +1457,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 담즙의 구성요소인 bilirubin은 적혈구가 파괴되어 생성되는 최종 대사산물이다.
 
-- bilirubin은 우리 몸의 대변(feces)색, 담즙(bile)에 갈색을 띠게 하는 주요 물질이다.
+- bilirubin은 우리 몸의 대변(feces)색, 담즙(bile)에 갈색을 띠게하는 주요 성분이다.
 
 - 혈액(blood stream)에 bilirubin 수치가 높으면 jaundice(황달) 증세가 나타날 수 있다.
 
@@ -1485,17 +1487,17 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - biliverdin은 **biliverdin reductase** 효소에 의해 환원되어 불용성(insoluble)을 띤 `unconjugated bilirubin` 이 된다.
 
-- unconjugated bilirubin은 간으로 이동하기 위해 혈액의 albumin과 합성된다.
+- unconjugated bilirubin은 간으로 이동하기 위해 혈액의 [albumin](https://en.wikipedia.org/wiki/Albumin) 단백질과 결합된다.
 
 - 간으로 이동한 unconjugated bilirubin은 **UGT1A1 효소** 에 의해 **glucuronic acid** 와 결합하여 수용성(soluble)을 띤 **(conjugated)bilirubin** 이 된다.
 
-- [bilirubin](https://en.wikipedia.org/wiki/Bilirubin) 은 즉시 **duodenum** 으로 이동하거나 bile canaliculi(담즙 모세관)과 bile duct(담관)을 거쳐 gallbladder(담낭)으로 bile(담즙)에 축적되었다 duodenum으로 분비된다.
+- [bilirubin](https://en.wikipedia.org/wiki/Bilirubin) 은 즉시 **duodenum** 으로 이동하거나 bile canaliculi(담즙 모세관)과 bile duct(담관)을 거쳐 gallbladder(담낭)으로 이동하여 gallbladder(담낭)에 축적되었다 duodenum으로 분비된다.
 
   - 담낭에 축적된 bilirubin으로 인해 담즙이 황록색을 띤다.
 
 - large intestine(colon)으로 이동한 bilirubin은 [gut microbiota](#gut-microbiota---장내-세균총)에 의해 환원되어 **urobilinogen** 이 된다.
 
-- [urobilinogen](https://en.wikipedia.org/wiki/Urobilinogen)은 바로 **stercobilin** 으로 환원되거나 [stercobilinogen](https://en.wikipedia.org/wiki/Stercobilinogen)으로 환원되었다 **stercobilin** 으로 산화된다, heme 분해 최종산물인 [stercobilin](https://en.wikipedia.org/wiki/Stercobilin)은 **feces(대변)** 이 갈색을 띠게 한다.
+- [urobilinogen](https://en.wikipedia.org/wiki/Urobilinogen)은 바로 **stercobilin** 으로 환원되거나 [stercobilinogen](https://en.wikipedia.org/wiki/Stercobilinogen)으로 환원되었다 **stercobilin** 으로 산화된다, heme 분해 최종산물인 [stercobilin](https://en.wikipedia.org/wiki/Stercobilin)으로 인해 **feces(대변)** 이 갈색을 띤다.
 
 - 또한 [enterohepatic circulation(장간 순환)](#enterohepatic-circulation---장간) 에 의해 다시 간으로 흡수되어 처리되고, 소변에 **urobilin** 형태로 배출되어 황색을 띠게 한다.
 
