@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import MovieItem from './MovieItem'
 import { useSelector } from 'react-redux'
 import MovieListMore from './MovieListMore'
 import classNames from 'classnames'
+import { ThemeContext } from '../context/ThemeContext'
 
 export default function MovieList() {
     const state = useSelector((state) => state.movies)
-
+    const { theme } = useContext(ThemeContext)
     return (
-        <div className="p-[20px] rounded-[4px] bg-color-area">
+        <div
+            className={classNames('p-[20px] rounded-[4px]', {
+                'bg-color-area': theme === 'dark',
+            })}
+        >
             {state.message ? (
                 <div className="text-color-primary text-[20px] text-center">
                     {state.message}

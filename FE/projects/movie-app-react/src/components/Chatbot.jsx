@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useDispatch } from 'react-redux'
 import className from 'classnames'
 
 import { updateKeyword } from '../store/moviesSlice'
 import useChatbot from '../hooks/useChatbot'
+import { ThemeContext } from '../context/ThemeContext'
+import classNames from 'classnames'
 
 const ContentRenderer = ({ content }) => {
     const dispatch = useDispatch()
@@ -41,14 +43,29 @@ export default function Chatbot() {
         state,
     } = useChatbot()
 
+    const { theme } = useContext(ThemeContext)
+
+    const assistantClass = classNames(
+        'self-start rounded-tl-[4px] bg-color-white-5',
+        {
+            'bg-color-white-5': theme === 'dark',
+            'bg-gray-200': theme === 'light',
+        },
+    )
+
+    const userClass =
+        'self-end border-br-[4px] bg-color-primary text-color-black'
+
     return (
         <div className="chatbot">
             <div
                 className={className(
-                    'chats max-w-[450px] border-solid border-[1px] border-color-black rounded-[20px_20px_4px_20px] bg-color-area fixed right-[20px] z-[1] duration-[0.3s]',
+                    'chats max-w-[450px] border-solid border-[1px] rounded-[20px_20px_4px_20px] fixed right-[20px] z-[1] duration-[0.3s]',
                     {
                         'visible opacity-1': visible,
                         'opacity-0 invisible': !visible,
+                        'border-color-black bg-color-area': theme === 'dark',
+                        'border-gray-200 bg-gray-100': theme === 'light',
                     },
                 )}
             >
@@ -65,7 +82,16 @@ export default function Chatbot() {
                             )}
                         >
                             {msg.role === 'assistant' ? (
-                                <div className="assistant-photo flex justify-center items-center absolute left-[-10px] w-[40px] h-[40px] rounded-[50%] bg-color-white-5">
+                                <div
+                                    className={classNames(
+                                        'assistant-photo flex justify-center items-center absolute left-[-10px] w-[40px] h-[40px] rounded-[50%]',
+                                        {
+                                            'bg-color-white-5':
+                                                theme === 'dark',
+                                            'bg-gray-600': theme === 'light',
+                                        },
+                                    )}
+                                >
                                     <span className="material-symbols-outlined">
                                         smart_toy
                                     </span>
@@ -77,8 +103,24 @@ export default function Chatbot() {
                         </li>
                     ))}
                     {state.loading ? (
-                        <li className="relative max-w-[70%] py-[12px] px-[18px] rounded-[20px] text-[15px] font-medium self-start rounded-tl-[4px] bg-color-white-5">
-                            <div className="assistant-photo flex justify-center items-center absolute left-[-10px] w-[40px] h-[40px] rounded-[50%] bg-color-white-5">
+                        <li
+                            className={classNames(
+                                'relative max-w-[70%] py-[12px] px-[18px] rounded-[20px] text-[15px] font-medium self-start rounded-tl-[4px]',
+                                {
+                                    'bg-color-white-5': theme === 'dark',
+                                    'bg-gray-600': theme === 'light',
+                                },
+                            )}
+                        >
+                            <div
+                                className={classNames(
+                                    'assistant-photo flex justify-center items-center absolute left-[-10px] w-[40px] h-[40px] rounded-[50%]',
+                                    {
+                                        'bg-color-white-5': theme === 'dark',
+                                        'bg-gray-600': theme === 'light',
+                                    },
+                                )}
+                            >
                                 <span className="material-symbols-outlined">
                                     smart_toy
                                 </span>
@@ -93,7 +135,14 @@ export default function Chatbot() {
                     <input
                         onChange={handleChatInput}
                         value={state.message}
-                        className="grow py-0 px-[20px] rounded-[4px_4px_4px_10px] text-[14px] text-color-white bg-color-white-5"
+                        className={classNames(
+                            'grow py-0 px-[20px] rounded-[4px_4px_4px_10px] text-[14px] bg-color-white-5',
+                            {
+                                'text-color-white': theme === 'dark',
+                                'text-color-area border-solid border-[2px] border-color-area':
+                                    theme === 'light',
+                            },
+                        )}
                     />
                     <button
                         onClick={handleSubmitMessage}
@@ -114,7 +163,3 @@ export default function Chatbot() {
         </div>
     )
 }
-
-const assistantClass = 'self-start rounded-tl-[4px] bg-color-white-5'
-
-const userClass = 'self-end border-br-[4px] bg-color-primary text-color-black'

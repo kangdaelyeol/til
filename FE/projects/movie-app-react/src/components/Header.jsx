@@ -22,10 +22,24 @@ const menuList = [
 export default function Header() {
     const { theme, changeTheme } = useContext(ThemeContext)
     return (
-        <div className="py-[20px] px-[40px] bg-header sticky top-[0] z-10 flex items-end gap-[40px]">
+        <div
+            className={classNames(
+                'py-[20px] px-[40px] sticky top-[0] z-10 flex items-end gap-[40px]',
+                {
+                    'bg-header-dark': theme === 'dark',
+                    'bg-header-light': theme === 'light',
+                },
+            )}
+        >
             <NavLink
                 to="/"
-                className="text-[20px] font-Oswald text-color-white-50 decoration-none"
+                className={classNames(
+                    'text-[20px] font-Oswald decoration-none',
+                    {
+                        'text-color-white-50': theme === 'dark',
+                        'text-color-black': theme === 'light',
+                    },
+                )}
             >
                 <span className="text-color-primary">OMDbAPI</span>.COM
             </NavLink>

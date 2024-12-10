@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-color-black text-color-white;
+    /* @apply bg-color-black text-color-white; */
     font-family: "Roboto", sans-serif;
     line-height: 1.4;
   }
@@ -49,21 +49,37 @@
   }
 
   .skeleton {
-    @apply relative overflow-hidden bg-color-area;
+    @apply relative overflow-hidden;
     border-radius: 10px;
+  }
+
+  .skeleton.skeleton-dark {
+    @apply bg-color-area;
   }
 
   .skeleton::after {
     @apply absolute top-0 left-0 w-full h-full;
     content: "";
+    transform: translateX(100%);
+    animation: skeleton-loader 1s infinite;
+  }
+
+  .skeleton.skeleton-dark::after {
     background: linear-gradient(
       270deg,
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.02),
       rgba(255, 255, 255, 0)
     );
-    transform: translateX(100%);
-    animation: skeleton-loader 1s infinite;
+  }
+
+  .skeleton.skeleton-light::after {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.02),
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.02)
+    );
   }
 
   @keyframes skeleton-loader {
@@ -102,8 +118,12 @@
     font-family: "Oswald", sans-serif;
   }
 
-  .bg-header {
+  .bg-header-dark {
     background-color: rgba(14, 17, 27, 0.9);
+  }
+
+  .bg-header-light {
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .bg-movie-info {

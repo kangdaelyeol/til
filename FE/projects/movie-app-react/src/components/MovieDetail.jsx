@@ -1,21 +1,73 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import classNames from 'classnames'
 import useMovieDetail from '../hooks/useMovieDetail'
+import { ThemeContext } from '../context/ThemeContext'
 
 export default function MovieDetail() {
     const { data, loading } = useMovieDetail()
+    const { theme } = useContext(ThemeContext)
+
+    const movieClassName = classNames('flex gap-[70px]', {
+        'text-color-white-50': theme === 'dark',
+        'text-gray-600': theme === 'light',
+    })
+
+    const labelsClassName = 'text-color-primary mb-[20px]'
+
+    const titleClassName = classNames(
+        'text-[70px] font-Oswald leading-1 mb-[30px]',
+        {
+            'text-color-white': theme === 'dark',
+            'text-gray-900': theme === 'light',
+        },
+    )
+
+    const posterClassName = classNames(
+        'shrink-0 w-[500px] h-[750px] rounded-[10px] bg-cover',
+        {
+            'bg-color-area': theme === 'dark',
+        },
+    )
+
+    const h3ClassName = classNames(
+        'text-[20px] font-Oswald mx-0 mt-[24px] mb-[6px]',
+        {
+            'text-color-white': theme === 'dark',
+            'text-gray-900': theme === 'light',
+        },
+    )
 
     return loading ? (
         <div className={movieClassName}>
-            <div className={classNames(posterClassName, 'skeleton')}></div>
+            <div
+                className={classNames(posterClassName, 'skeleton', {
+                    'skeleton-dark': theme === 'dark',
+                    'skeleton-light': theme === 'light',
+                })}
+            ></div>
             <div className="grow">
                 <div
-                    className={classNames(titleClassName, 'h-[70px] skeleton')}
+                    className={classNames(titleClassName, 'h-[70px] skeleton', {
+                        'skeleton-dark': theme === 'dark',
+                        'skeleton-light': theme === 'light',
+                    })}
                 ></div>
                 <div
-                    className={classNames(labelsClassName, 'h-[30px] skeleton')}
+                    className={classNames(
+                        labelsClassName,
+                        'h-[30px] skeleton',
+                        {
+                            'skeleton-dark': theme === 'dark',
+                            'skeleton-light': theme === 'light',
+                        },
+                    )}
                 ></div>
-                <div className="w-[80%] h-[400px] skeleton"></div>
+                <div
+                    className={classNames('w-[80%] h-[400px] skeleton', {
+                        'skeleton-dark': theme === 'dark',
+                        'skeleton-light': theme === 'light',
+                    })}
+                ></div>
             </div>
         </div>
     ) : (
@@ -64,16 +116,3 @@ export default function MovieDetail() {
         </div>
     )
 }
-
-const movieClassName = 'text-color-white-50 flex gap-[70px]'
-
-const labelsClassName = 'text-color-primary mb-[20px]'
-
-const titleClassName =
-    'text-[70px] font-Oswald leading-1 text-color-white mb-[30px]'
-
-const posterClassName =
-    'shrink-0 w-[500px] h-[750px] rounded-[10px] bg-cover bg-color-area'
-
-const h3ClassName =
-    'text-[20px] font-Oswald text-color-white mx-0 mt-[24px] mb-[6px]'

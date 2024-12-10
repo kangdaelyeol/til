@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import * as profile from '../constants'
+import { ThemeContext } from '../context/ThemeContext'
+import classNames from 'classnames'
 
 export default function Footer() {
     const { REPOSITORY, GITHUB } = profile
+    const { theme } = useContext(ThemeContext)
     return (
         <div className="pt-[40px] px-[40px] pb-[60px] text-center">
             <div>
                 <a
-                    className="text-color-white-20 decoration-color-white-20 hover:underline"
+                    className={classNames('hover:underline', {
+                        'text-color-white-20': theme === 'dark',
+                        'text-gray-500': theme === 'light',
+                    })}
                     target="_blank"
                     href={REPOSITORY}
                 >
@@ -16,7 +22,10 @@ export default function Footer() {
             </div>
             <div>
                 <a
-                    className="text-color-white-20 hover:underline"
+                    className={classNames('hover:underline', {
+                        'text-color-white-20': theme === 'dark',
+                        'text-gray-500': theme === 'light',
+                    })}
                     target="_blank"
                     href={GITHUB}
                 >
