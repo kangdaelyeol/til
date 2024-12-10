@@ -15,16 +15,6 @@ export default function MovieDetail() {
         },
     )
 
-    const labelsClassName = 'text-color-primary mb-[20px]'
-
-    const titleClassName = classNames(
-        'text-[70px] font-Oswald leading-1 mb-[30px] max-mob-lg:text-[50px] max-mob-lg:mt-[50px]',
-        {
-            'text-color-white': theme === 'dark',
-            'text-gray-900': theme === 'light',
-        },
-    )
-
     const posterClassName = classNames(
         'shrink-0 w-[500px] h-[750px] rounded-[10px] bg-cover',
         {
@@ -50,20 +40,19 @@ export default function MovieDetail() {
             ></div>
             <div className="grow">
                 <div
-                    className={classNames(titleClassName, 'h-[70px] skeleton', {
-                        'skeleton-dark': theme === 'dark',
-                        'skeleton-light': theme === 'light',
-                    })}
-                ></div>
-                <div
                     className={classNames(
-                        labelsClassName,
-                        'h-[30px] skeleton',
+                        'h-[70px] mb-[30px] max-mob-lg:mt-[50px] skeleton',
                         {
                             'skeleton-dark': theme === 'dark',
                             'skeleton-light': theme === 'light',
                         },
                     )}
+                ></div>
+                <div
+                    className={classNames('h-[30px] skeleton mb-[20px]', {
+                        'skeleton-dark': theme === 'dark',
+                        'skeleton-light': theme === 'light',
+                    })}
                 ></div>
                 <div
                     className={classNames('w-[80%] h-[400px] skeleton', {
@@ -82,8 +71,18 @@ export default function MovieDetail() {
                 className={classNames(posterClassName, 'bg-[image:var(--bg)]')}
             ></div>
             <div className="grow">
-                <div className={titleClassName}>{data.Title}</div>
-                <div className={labelsClassName}>
+                <div
+                    className={classNames(
+                        'text-[70px] font-Oswald leading-1 max-mob-lg:text-[50px] mb-[30px] max-mob-lg:mt-[50px]',
+                        {
+                            'text-color-white': theme === 'dark',
+                            'text-gray-900': theme === 'light',
+                        },
+                    )}
+                >
+                    {data.Title}
+                </div>
+                <div className="text-color-primary mb-[20px]">
                     <span>{data.Released}</span>
                     &nbsp;/&nbsp;
                     <span>{data.Runtime}</span>
