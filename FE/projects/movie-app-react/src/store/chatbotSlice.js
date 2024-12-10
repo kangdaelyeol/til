@@ -4,10 +4,7 @@ import { callOpenAI } from '../api'
 export const sendChatbotMessageThunk = createAsyncThunk(
     'chatbot/sendChatbotMessageThunk',
     async ({ message }) => {
-        console.log(message)
-        const data = await callOpenAI({ role: 'user', content: message })
-
-        return data
+        return await callOpenAI(message)
     },
 )
 

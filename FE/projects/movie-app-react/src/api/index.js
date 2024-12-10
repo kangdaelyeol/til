@@ -17,7 +17,7 @@ const openai = new OpenAI({
     dangerouslyAllowBrowser: true,
 })
 
-export const callOpenAI = async (messages) => {
+export const callOpenAI = async (message) => {
     const fineTunedMessages = [
         {
             role: 'system',
@@ -76,7 +76,7 @@ export const callOpenAI = async (messages) => {
         },
     ]
     const chatCompletion = await openai.chat.completions.create({
-        messages: [messages, ...fineTunedMessages],
+        messages: [{ role: 'user', content: message }, ...fineTunedMessages],
         model: 'gpt-4o-mini-2024-07-18',
     })
 
