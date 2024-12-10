@@ -7,15 +7,18 @@ export default function MovieDetail() {
     const { data, loading } = useMovieDetail()
     const { theme } = useContext(ThemeContext)
 
-    const movieClassName = classNames('flex gap-[70px]', {
-        'text-color-white-50': theme === 'dark',
-        'text-gray-600': theme === 'light',
-    })
+    const movieClassName = classNames(
+        'flex gap-[70px] max-tablet:gap-[30px] max-mob-lg:block',
+        {
+            'text-color-white-50': theme === 'dark',
+            'text-gray-600': theme === 'light',
+        },
+    )
 
     const labelsClassName = 'text-color-primary mb-[20px]'
 
     const titleClassName = classNames(
-        'text-[70px] font-Oswald leading-1 mb-[30px]',
+        'text-[70px] font-Oswald leading-1 mb-[30px] max-mob-lg:text-[50px] max-mob-lg:mt-[50px]',
         {
             'text-color-white': theme === 'dark',
             'text-gray-900': theme === 'light',

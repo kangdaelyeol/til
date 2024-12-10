@@ -24,7 +24,7 @@ export default function Header() {
     return (
         <div
             className={classNames(
-                'py-[20px] px-[40px] sticky top-[0] z-10 flex items-end gap-[40px]',
+                'py-[20px] px-[40px] sticky top-[0] z-10 flex items-end gap-[40px] max-mob:py-[14px] max-mob:px-[20px]',
                 {
                     'bg-header-dark': theme === 'dark',
                     'bg-header-light': theme === 'light',
@@ -43,7 +43,7 @@ export default function Header() {
             >
                 <span className="text-color-primary">OMDbAPI</span>.COM
             </NavLink>
-            <nav>
+            <nav className="max-mob:hidden">
                 <ul className="flex gap-[14px]">
                     {menuList.map((menu) => {
                         return (
@@ -69,7 +69,7 @@ export default function Header() {
             </nav>
             <div
                 onClick={() => changeTheme()}
-                className="absolute flex justify-center items-center cursor-pointer top-0 bottom-0 right-[100px] m-auto"
+                className="absolute flex justify-center items-center cursor-pointer top-0 bottom-0 right-[100px] max-mob:right-[70px] m-auto"
             >
                 <span className="material-symbols-outlined">
                     {theme === 'light' ? 'dark_mode' : 'light_mode'}
@@ -77,7 +77,7 @@ export default function Header() {
             </div>
             <NavLink
                 to="/"
-                className="w-[40px] h-[40px] rounded-[50%] bg-color-area cursor-pointer absolute top-0 bottom-0 right-[40px] m-auto transition-[0.3s] hover:scale-[1.2]"
+                className="w-[40px] h-[40px] rounded-[50%] bg-color-area cursor-pointer absolute top-0 bottom-0 right-[40px] max-mob:right-[20px] m-auto transition-[0.3s] hover:scale-[1.2]"
             >
                 <img className="w-full" src={profile.PHOTO} alt="User" />
             </NavLink>

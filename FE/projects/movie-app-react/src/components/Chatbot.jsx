@@ -76,7 +76,7 @@ export default function Chatbot() {
         <div className="chatbot">
             <div
                 className={className(
-                    'chats max-w-[450px] border-solid border-[1px] rounded-[20px_20px_4px_20px] fixed right-[20px] z-[1] duration-[0.3s]',
+                    'chats max-w-[450px] border-solid border-[1px] rounded-[20px_20px_4px_20px] fixed z-[1] duration-[0.3s]',
                     {
                         'visible opacity-1': visible,
                         'opacity-0 invisible': !visible,

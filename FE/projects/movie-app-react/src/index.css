@@ -17,6 +17,18 @@
     padding: 40px 0;
   }
 
+  @media (max-width: 1200px) {
+    .container {
+      padding: 40px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 40px 20px;
+    }
+  }
+
   .btn {
     @apply bg-color-area text-color-white cursor-pointer font-bold;
     height: 50px;
@@ -96,10 +108,17 @@
     --position-right: 40px;
   }
 
+  @media (max-width: 600px) {
+    .chatbot {
+      --position-right: 20px;
+    }
+  }
+
   .chats {
     width: calc(100% - var(--position-right) * 2);
     bottom: calc(var(--position-bottom) + 50px + 14px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    right: var(--position-right);
   }
   .chat-starter {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

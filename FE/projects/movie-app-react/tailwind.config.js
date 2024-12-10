@@ -17,6 +17,11 @@ export default {
                 'color-area': '#1c212e',
             },
         },
+        screens: {
+            mob: '600px',
+            'mob-lg': '720px',
+            tablet: '1200px',
+        },
     },
     plugins: [],
 }
