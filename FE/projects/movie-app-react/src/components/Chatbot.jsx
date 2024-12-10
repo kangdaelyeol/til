@@ -56,6 +56,22 @@ export default function Chatbot() {
     const userClass =
         'self-end border-br-[4px] bg-color-primary text-color-black'
 
+    const ChatbotIcon = () => {
+        return (
+            <div
+                className={classNames(
+                    'assistant-photo flex justify-center items-center absolute left-[-10px] w-[40px] h-[40px] rounded-[50%]',
+                    {
+                        'bg-color-white-5': theme === 'dark',
+                        'bg-gray-600': theme === 'light',
+                    },
+                )}
+            >
+                <span className="material-symbols-outlined">smart_toy</span>
+            </div>
+        )
+    }
+
     return (
         <div className="chatbot">
             <div
@@ -81,54 +97,30 @@ export default function Chatbot() {
                                 },
                             )}
                         >
-                            {msg.role === 'assistant' ? (
-                                <div
-                                    className={classNames(
-                                        'assistant-photo flex justify-center items-center absolute left-[-10px] w-[40px] h-[40px] rounded-[50%]',
-                                        {
-                                            'bg-color-white-5':
-                                                theme === 'dark',
-                                            'bg-gray-600': theme === 'light',
-                                        },
-                                    )}
-                                >
-                                    <span className="material-symbols-outlined">
-                                        smart_toy
-                                    </span>
-                                </div>
-                            ) : (
-                                ''
-                            )}
-                            {<ContentRenderer content={msg.content} />}
+                            {msg.role === 'assistant' && <ChatbotIcon />}
+                            <ContentRenderer content={msg.content} />
                         </li>
                     ))}
-                    {state.loading ? (
+                    {state.loading && (
                         <li
                             className={classNames(
                                 'relative max-w-[70%] py-[12px] px-[18px] rounded-[20px] text-[15px] font-medium self-start rounded-tl-[4px]',
                                 {
                                     'bg-color-white-5': theme === 'dark',
-                                    'bg-gray-600': theme === 'light',
+                                    'bg-gray-200': theme === 'light',
                                 },
                             )}
                         >
+                            <ChatbotIcon />
                             <div
                                 className={classNames(
-                                    'assistant-photo flex justify-center items-center absolute left-[-10px] w-[40px] h-[40px] rounded-[50%]',
+                                    'w-[13px] h-[13px] border-[3px] animate-spin',
                                     {
-                                        'bg-color-white-5': theme === 'dark',
-                                        'bg-gray-600': theme === 'light',
+                                        'bg-gray-500': theme === 'light',
                                     },
                                 )}
-                            >
-                                <span className="material-symbols-outlined">
-                                    smart_toy
-                                </span>
-                            </div>
-                            <div className="w-[13px] h-[13px] border-[3px] animate-spin"></div>
+                            ></div>
                         </li>
-                    ) : (
-                        ''
                     )}
                 </ul>
                 <div className="px-[20px] pt-[14px] pb-[20px] border-t-[1px] border-t-solid border-t-color-white-5 flex gap-[10px]">
