@@ -108,6 +108,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [RBC - bilirubin](#rbc---bilirubin)
 
+- [Cruciferous Vegetables](#cruciferous-vegetables)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1503,9 +1505,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Cruciferous Vegetables
 
-- 십자화과 채소는 충분히 입에서 씹은 후 섭취하는 것이 항산화 효과를 최대한 끌어올리는 데 도움을 준다.
+- 십자화과 채소는 충분히 씹은 후 섭취해야 항산화 효과를 최대한 이끌어낼 수 있다.
 
-<span class="title">양배추를 잘 씹어 먹어야 하는 이유<span>
+<span class="title">양배추를 잘 씹어 먹어야 하는 이유</span>
 
 <span class="substance">cabbage(myrosinase / glucosinolates)</span>- <span class="interaction">physical break down</span> &rarr; <span class="organ">myrosinase</span> &rarr; <span class="substance">glucosinolates</span> - <span class="interaction">hydrolysis</span> &rarr; <span class="substance">aglycone + glucose</span>
 
@@ -1513,15 +1515,25 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 채소의 항산화 물질 생성은 채소 세포에 있는 [myrosinase](https://en.wikipedia.org/wiki/Myrosinase) 효소가 [glucosinolates](https://en.wikipedia.org/wiki/Glucosinolate) 화합물을 `가수분해(hydrolysis)` 하는 작용에서 부터 시작된다.
 
-- 하지만 myrosinase 효소와 glucosinolates 물질은 채소 내에 따로 분리`(각각 다른 세포에 존재)` 되어 있기 때문에 이 분리된 간격을 **물리적으로 파괴** 해서 myrosinase가 glucosinolates와 접촉할 수 있게 도와줄 필요가 있다.
+  - myrosinase 효소와 glucosinolates 물질은 채소 내에 따로 분리`(각각 다른 세포에 존재)` 되어 있다.
 
-- 이러한 작용은 외부로부터 채소 자신을 보호하기 위한 **방어 기전** 으로 작용한다. 채소가 외부로부터 손상되면 myrosinase 효소가 glucosinolates와 접촉하여 대사 산물로 독성 물질을 생성하게 되는 것이다.
+  - 분리된 간격을 **물리적으로 파괴** 해서 myrosinase 효소가 glucosinolates와 접촉할 수 있게 해야 한다.
 
-- 결과적으로 독성물질이 생성 되는데, `적절한 섭취시 항산화 효과등 유익한 효과를 준다고 한다.`
+- [sulforaphane](https://en.wikipedia.org/wiki/Sulforaphane)은 glucosinolates의 한 종류인 [glucoraphanin](https://en.wikipedia.org/wiki/Glucoraphanin)으로부터 생성된 물질이다. 즉 항산화 물질인 sulforaphane의 효과를 얻기 위해서 myrosinase 효소가 glucosinolates와 접촉해 대사를 할 수 있게 충분히 씹어서 섭취를 해주어야 한다.
 
-- [sulforaphane](https://en.wikipedia.org/wiki/Sulforaphane)은 glucosinolate 종류인 [glucoraphanin](https://en.wikipedia.org/wiki/Glucoraphanin) 의 분해로 생성된 물질이다. 즉 항산화 물질인 sulforaphane의 효과를 얻기 위해서 myrosinase 효소가 glucosinolates와 접촉해 대사를 할 수 있게 충분히 씹어서 섭취를 해주어야 한다.
+  - myrosinase 효소는 높은 온도에서 활성이 줄어들기 때문에`(보통 70도가 넘어가면 활성을 잃는다.)` **5분 이내** 로 쪄서 먹는 것이 제일 좋다!
 
-- myrosinase 효소는 높은 온도에서 활성이 줄어들기 때문에`(보통 70도가 넘어가면 다 죽는다고 한다.)` **5분 이내** 로 쪄서 먹는 것이 제일 좋다!
+- 이러한 채소의 기전, 형태를 [mustard oil bomb](https://en.wikipedia.org/wiki/Mustard_oil_bomb)이라고 한다.
+
+  - mustard oil bomb은 초식동물로부터 채소 자신을 보호하기 위한 **방어 기전** 을 위해 존재한다.
+
+  - mustard oil bomb은 myrosinase 효소와 glucosinolates가 따로 분리되어 있는 채소 조직 내부의 형태다.
+
+  - 외부 손상으로 인해 mustard oil bomb안에 분리되어 있었던 myrosinase 효소와 glucosinolates가 결합함으로써 대사 산물을 생성한다.
+
+  - glucosinolates의 대사산물은 초식동물로부터 자신을 보호하기 위한 독성물질로써 작용하도록 존재한다. 하지만 현재 초식동물에게 영향을 미칠정도로 독성이 강하지 않다.
+
+  - 결과적으로 외부 손상으로부터 독성물질을 생성하는 방어 기전 작용이다. 하지만 적절한 섭취시 항산화 효과 등 유익한 효과를 준다고 한다.
 
 ## food additive - sugar substitute
 
