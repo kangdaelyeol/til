@@ -110,6 +110,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Cruciferous Vegetables](#cruciferous-vegetables)
 
+- [food additive - sugar substitute](#food-additive---sugar-substitute)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1541,6 +1543,12 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - sucrose는 빠르게 monosaccharide로 분해되고 흡수되어 혈당을 빨리 올리고, sucrose에 포함된 fructose의 일부는 에너지로 사용될 수 있지만, `대부분 간에서만 대사 되는 당` 이기 때문에 간에 좋지 않다.
 
+  - fructose는 소화 과정중에 장을 통해 흡수되며 바로 혈류(blood stream)로 가게 된다.
+
+  - 간은 galactose를 포함하여 fructose를 처리하여 glucose 형태로 변환한다. 이는 보통 [glycogen](https://en.wikipedia.org/wiki/Glycogen) 형태로 축적한다고 한다.
+
+  - fructose는 식후 혈당을 증가시키지 않는다. 이에 따라 fructose의 과다 섭취가 insulin resistence등 다양한 metabolic syndrome을 일으키는 인과 관계성에 관한 논쟁이 많았다.
+
 - 이러한 건강 문제를 해결하기 위한 설탕 대체제(sugar substitute)가 있다.
 
 ### Erythritol
@@ -1557,15 +1565,15 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - birch에서 추출되었다고 해서 **birch sugar** 라고도 부른다.
 
-- 약 7정도의 GI수치를 가지고 있다고 하며, [sterptococcus mutans(충치 균)](https://en.wikipedia.org/wiki/Streptococcus_mutans) 의 성장을 억제한다고 한다.
+- 약 7정도의 GI수치를 가지고 있다고 하며, [sterptococcus mutans(충치 균)](https://en.wikipedia.org/wiki/Streptococcus_mutans) 성장 억제 효과가 있다고 한다.
 
 `sugar alcohol 종류는 많이 섭취하게 되면 부작용으로 삼투성 설사(osmotic diarrhea)를 일으킬 수 있으니 조심해야 한다.`
 
 ### stevia(steviol glycoside)
 
-- [스테비아(steviol glycoside)](https://en.wikipedia.org/wiki/Steviol_glycoside) 는 **국화과(asteraceae)** 인 **stevia rebaudiana** 라는 식물의 잎에서 추출한 물질이다.
+- [스테비아(steviol glycoside)](https://en.wikipedia.org/wiki/Steviol_glycoside) 는 **국화과(asteraceae)** 인 **stevia rebaudiana** 식물의 잎에서 추출한 물질이다.
 
-- 설탕보다 30 - 320배의 단맛을 가지고 있다 하는데, 기술 문헌에서는 이를 인정하는 입장은 아니라고 한다. 왜냐하면 이러한 수치는 발효되지 않았고, 안정적 온도, 안정적 pH 환경에서 steviol glycoside에 대한 실험 결과이기 때문이다.
+- 설탕보다 30 - 320배의 단맛을 가지고 있다 하는데, 기술 문헌에서는 이를 인정하는 입장은 아니라고 한다. 이러한 결과 값의 차이가 발생하는 이유는, 대부분 실험에 사용된 steviol glycoside는 발효되지 않았고, 안정적 온도, 안정적 pH 환경에서 steviol glycoside에 대한 실험 결과이기 때문이다.
 
 - 인간에게는 steviol glycoside를 대사할 수 있는 효소가 없기 때문에 [혈당 반응(glycemic response)](https://en.wikipedia.org/wiki/Blood_sugar_level)을 일으키기 않는다.
 
@@ -1579,9 +1587,9 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 추출량이 적고, 자연적으로 존재하는 양이 드물어 **rare sugar** 라고도 불린다.
 
-- D-psicose는 sucrose와 달리 몸에 거의 흡수되지 않고 대부분 **kidney** 또는 **colon** 을 통해 배출(대부분 신장을 통해) 되어 혈당을 올리지 않고 인슐린 분비도 거의 되지 않는다.
+- D-psicose는 sucrose와 달리 몸에 거의 흡수되지 않고 대부분 **kidney** 또는 **colon** 을 통해 배출(대부분 신장을 통해) 되어 혈당을 올리지 않고 인슐린도 거의 분비되지 않는다.
 
-- FDA에서는 **nutrition and supplement facts** 라벨에 D-psicose 당 성분을 `총 당류 성분(total sugars)`에 포함시키지 않아도 된다고 허가 했지만, `총 탄수화물량`에는 1g 당 0.4 kcal로 표기하는 것을 요구한다고 한다.
+- FDA에서는 **nutrition and supplement facts** 라벨에 D-psicose 당 성분을 `총 당류 성분(total sugars)`에 포함시키지 않아도 된다고 허가 했지만, `총 탄수화물량` 에 관하여 1g 당 0.4 kcal로 표기하는 것을 요구한다고 한다.
 
 ### luo han guo(mogroside)
 
