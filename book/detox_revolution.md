@@ -112,6 +112,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [food additive - sugar substitute](#food-additive---sugar-substitute)
 
+- [애호박 - pectin](#애호박---pectin)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1601,19 +1603,31 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## 애호박 - pectin
 
-- [애호박(Korean zucchini)](https://en.wikipedia.org/wiki/Pectin)은 pectin이라는 성분이 많아 몸에 좋다고 한다.
+- [애호박(Korean zucchini)](https://en.wikipedia.org/wiki/Aehobak)은 pectin 성분이 많다.
 
-  - `물론 pectin은 애호박 뿐만이 아닌 식물의 세포 벽에 존재하는 다당류(polysaccharide)라고 한다. - 정확히는 heteropolysaccharide`
+  - `물론 pectin은 애호박 뿐만이 아닌 식물의 세포 벽에 존재하는 다당류(polysaccharide)의 일종이다. - 정확히는 heteropolysaccharide 라고 한다.`
 
 - [pectin](https://en.wikipedia.org/wiki/Pectin)은 `수용성 식이섬유(soluble dietary fiber)` 로써, **친수성(hydrophilc)** 을 띤다.
 
-- 따라서 pectin은 장 내에 **물(H<sub>2</sub>O)** 분자와 수소 결합을 통해 수분을 끌어들이며 **팽창** 하여 `gel(겔)` 을 형성한다.
+- pectin은 구조적인 중합체이며, galacturonic acid 성분으로 이루어져 있다.
 
-- 형성된 겔은 천천히 흡수되며, 흡수된 수분으로 인해 변의 부피가 증가하고, 부드러운 변을 생성하는데 기여한다.
+  - galacturonic acid는 galactose의 산성 형태다.
 
-- gel은 소장의 담즙산(bile acid)와 결합해 채외로 배출하며, 이를 통해 `장간 순환(enterohepatic circulation)` 으로 인한 재흡수가 되지 않는다.
+- pectin은 주로 세포 외분비를 통해 세포 벽으로 침전(deposited)되며, 육상 식물(terrestrial plants) 세포 벽과 중층(middle lamella)에 존재한다.
+
+- pectin은 장 내에 **물(H<sub>2</sub>O)** 분자와 수소 결합을 통해 수분을 끌어들이며 **팽창** 하여 `gel(겔)` 을 형성한다.
+
+  - 콜레스테롤과 장내 탄수화물을 잡아두기 떄문에 콜레스테롤 수치 감소에 도움을 주고, 포도당 흡수속도도 감소한다.
+
+- pectin gel은 천천히 흡수되며, 흡수된 수분으로 인해 변의 부피가 증가하고, 부드러운 변을 생성하는데 기여한다.
+
+- pectin gel은 소장의 담즙산(bile acid)와 결합해 채외로 배출하며, 이를 통해 `장간 순환(enterohepatic circulation)` 으로 인한 재흡수가 되지 않는다.
 
 - 부족해진 bile acid를 합성하기 위해선 **콜레스테롤(cholesterol)** 이 필요한데, bile acid가 부족해지면, 간에서는 [LDL(Low-density lipoprotein)](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 을 더욱 끌어다 사용해 `Blood LDL concentration` 이 낮아진다.
+
+- pectin은 식물이 익을 때(ripening) [pectinase](https://en.wikipedia.org/wiki/Pectinase)와 같은 효소가 활성화 되어 가수분해 되어 해당 식물의 즙(juice)을 추출할 수 있다.
+
+  - pectinase는 일반적으로 45 - 55°C , pH 3.0 - 6.5 정도에서 활성을 띤다고 한다.
 
 ## cholesterol
 
