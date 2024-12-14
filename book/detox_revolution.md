@@ -114,6 +114,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [애호박 - pectin](#애호박---pectin)
 
+- [cholesterol](#cholesterol)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1631,15 +1633,17 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## cholesterol
 
-- cholesterol은 sterol의 종류이며 **유기 화합물(organic compound)** 이다 .
+- [cholesterol](https://en.wikipedia.org/wiki/Cholesterol)은 sterol 종류의 **유기 화합물(organic compound)** 이다.
 
-- cholesterol은 세포막 유동 안정성, 신경 전달, 담즙산 및 콜레스테롤 생성 등 생명 유지를 위해 필수적인 물질이다.
+  - sterol은 [gonane](https://en.wikipedia.org/wiki/Gonane) 유기 화합물 구조에서 C3 carbon 위치에 OH(hydroxyl group) 물질이 대체된 형태이다.
 
-- 현대 식습관은 영양 과잉으로 콜레스테롤이 몸에 과하게 쌓이는 경우가 많다.
+- cholesterol은 세포막 유동 안정성, 신경 전달, 담즙산 및 콜레스테롤 생성 등, 생명 유지를 위한 필수적인 물질이다.
+
+- 현대 식습관은 영양 과잉으로 몸에 콜레스테롤이 과하게 축적되는 경우가 많다.
 
 <span class="title">콜레스테롤이 사용되는 과정</span>
 
-<span class="organ">liver</span> &rarr; <span class="substance">VLDL</span> &rarr; <span class="organ">blood</span> &rarr; <span class="organ">lipoprotein lipase</span> &rarr; <span class="interaction">distribution of triglyceride</span> &rarr; <span class="substance">LDL - apolipoprotein</span> &rarr; <span class="interaction">receptor-mediated endocytosis</span> &rarr; <span class="organ">lysosome / endosome</span> &rarr; <span class="interaction">hydrolysis</span>
+<span class="organ">liver</span> &rarr; <span class="substance">VLDL</span> &rarr; <span class="organ">blood</span> &rarr; <span class="organ">lipoprotein lipase</span> &rarr; <span class="interaction">distribution of triglyceride</span> &rarr; <span class="substance">LDL - apolipoprotein</span> &rarr; <span class="interaction">receptor-mediated endocytosis</span> &rarr; <span class="organ">endosome / lysosome</span> &rarr; <span class="interaction">hydrolysis</span>
 
 ---
 
@@ -1663,7 +1667,7 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 중성지방을 분배하는 과정에서 VLDL의 중성지방 밀도가 줄어들면서 cholesterol의 비율이 상대적으로 높게되어 LDL 형태가 된다.
 
-- [LDL](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 상태가 되면 LDL의 apolipoprotein B-100 단백질이 조직세포의 LDL 수용체에 내포(receptor-mediated endocytosis)되며, [lysosome](https://en.wikipedia.org/wiki/Lysosome) 을 거쳐 [endosome](https://en.wikipedia.org/wiki/Endosome) 으로 운반되어 가수분해된다.
+- [LDL](https://en.wikipedia.org/wiki/Low-density_lipoprotein) 상태가 되면 LDL의 apolipoprotein B-100 단백질이 조직세포의 LDL 수용체에 내포(receptor-mediated endocytosis)되며, [endosome](https://en.wikipedia.org/wiki/Endosome)을 거쳐 [lysosome](https://en.wikipedia.org/wiki/Lysosome)으로 운반되어 가수분해된다.
 
 - 이러한 메커니즘으로 조직세포는 LDL Receptor 발현을 조절해 `필요한 만큼` 끌어다 사용하는데, 이러한 LDL이 과다 축적되면 좋지 않다.
 
@@ -1673,17 +1677,17 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="substance">LDL</span> &rarr; <span class="substance">ROS</span> &rarr; <span class="interaction">oxidation</span> &rarr; <span class="substance">LDL(oxidized)</span> &rarr; <span class="organ">artery endothelial cell(vascular)</span> &rarr; <span class="disease">inflammation</span> &rarr; <span class="organ">macrophage</span> &rarr; <span class="interaction">phagocytosis</span> &rarr; <span class="substance">atherosclerotic plaque</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease">fibrosis</span> &rarr; <span class="disease">atherosclerosis</span>
 
-- 축적되어 사용되지 못한 LDL은 `ROS`에 의해 산화될 수 있다.
+- 축적되어 사용되지 못한 LDL은 `ROS` 에 의해 산화될 수 있다.
 
 - 산화된 LDL은 `동맥 내피 세포(artery endothelial cell)` 같은 `혈관(vascular)` 에 붙어 **염증(inflammation)** 을 유발한다.
 
-- 이 과정에서 [대식세포(macrophagy)](https://en.wikipedia.org/wiki/Macrophage) 가 산화된 LDL을 **대식(phagocytosis)** 하며 [거품세포(foam cell / lipid-laden macrophagy)](https://en.wikipedia.org/wiki/Foam_cell)을 형성한다.
+- 이 과정에서 [대식세포(macrophage)](https://en.wikipedia.org/wiki/Macrophage) 가 산화된 LDL을 **대식(phagocytosis)** 하며 [거품세포(foam cell / lipid-laden macrophage)](https://en.wikipedia.org/wiki/Foam_cell)을 형성한다.
 
 - 형성된 foam cell은 쉽게 사라지지 않으며 혈관에 축적되어 **atherosclerotic plaque(죽상 플라크)** 를 형성한다.
 
 - 형성된 plaque는 지속적으로 축적될시 혈관을 막게 되고, 혈관의 탄력성을 잃게 만들어 [섬유화(fibrosis)](https://en.wikipedia.org/wiki/Fibrosis) 를 진행시킨다.
 
-- 결과적으로 이러한 병적 상태를 [죽상동맥경화증(atherosclerosis)](https://en.wikipedia.org/wiki/Atherosclerosis) 이라고 한다. `('죽상'은 foam cell이 죽처럼 걸쭉하게 혈관에 붙어 있어 붙은 명칭이라고 함)`
+- 결과적으로 이러한 병적 상태를 [죽상동맥경화증(atherosclerosis)](https://en.wikipedia.org/wiki/Atherosclerosis) 이라고 한다. `'죽상'은 foam cell이 죽처럼 걸쭉하게 혈관에 붙어 있어 붙은 명칭이라고 한다`
 
 ## Tomato - lycopene
 
