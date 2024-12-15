@@ -116,6 +116,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [cholesterol](#cholesterol)
 
+- [Tomato - lycopene](#tomato---lycopene)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1693,27 +1695,27 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 토마토에 포함된 lycopene은 항산화 효과가 뛰어나다
 
-- [lycopene](https://en.wikipedia.org/wiki/Lycopene)은 토마토 농부의 이름에 기인 했으며, 토마토에서 발견되는 carotene 유기 화합물이다.
+- [lycopene](https://en.wikipedia.org/wiki/Lycopene)의 이름은 이전 고대 토마토 종인 [Lycopersicon](https://en.wikipedia.org/wiki/Lycopersicon)으로부터 유래 했으며, 토마토에서 발견되는 carotene 유기 화합물이다.
 
-- [carotene](https://en.wikipedia.org/wiki/Carotene) 은 [carotenoid](https://en.wikipedia.org/wiki/Carotenoid)의 한 분류이며, 붉은색을 띠는 특징을 가지는 carotenoid 화합물에서 산소 분자가 포함되지 않은 탄화수소 형태의 carotenoid 물질을 carotene 이라고 한다.
+- [carotene](https://en.wikipedia.org/wiki/Carotene) 은 [carotenoid](https://en.wikipedia.org/wiki/Carotenoid)의 한 종류이며, 붉은색을 띠는 특징을 가지는 carotenoid 화합물에서 산소 분자가 포함되지 않은 탄화수소 형태의 carotenoid 물질을 carotene 이라고 한다.
 
-  - `산소 분자를 포함한 carotenoid 물질을 xanthophyl 이라고 한다.`
+  - 산소 분자를 포함한 carotenoid는 [xanthophyl](https://en.wikipedia.org/wiki/Xanthophyll) 이라고 한다.
 
-- lycopene은 [vitamin E(tocopherol)](#vitamin-e) 와 같은 `지용성 항산화물질` 이며, 지질층에서 tocopherol과 같이 항산화 작용을 한다.
+- lycopene은 [vitamin E(tocopherol)](#vitamin-e)와 같은 `지용성 항산화물질` 이며, 지질층에서 tocopherol과 같이 항산화 작용을 한다.
 
   - lycopene은 주로 [singlet oxygen](https://en.wikipedia.org/wiki/Singlet_oxygen)과 같은 고반응성 활성산소종과 반응해 중화 하는 역할을 한다.
 
 - lycopene의 생채 이용률(bioavailable)을 더욱 높히기 위해 **열을 가하는 방법(heating)** 이 있다.
 
-  - lycopene은 자연에서 안정적인 구조인 all-trans 형으로 존재하는데, 열에 안정적이기 때문에 에너지 작용을 받아 **이성질화(isomerization)** 되어 이중 결합 구조가 달라져 **cis-isomer(cis-이성질체)** 형태가 될 수 있다.
+  - lycopene은 자연에서 안정적인 구조인 **all-trans** 형으로 존재하는데, 열에 안정적이기 때문에 에너지 작용을 받아 **이성질화(isomerization)** 되어 이중 결합 구조가 달라져 **cis-isomer(cis-이성질체)** 형이 될 수 있다.
 
   - 또한 lycopene은 **지용성 물질** 이기 때문에 기름과 함께 조리하면 흡수율이 더욱 향상된다.
 
   - 이중 결합 구조가 달라진 형태에 따라 5-cis, 11-cis등 다양한 형태가 존재한다.
 
-  - 일부 연구에서는 all-trans lycopene보다 cis-lycopene 형태일 때 흡수가 더 잘되어 혈중 lycopene농도가 상대적으로 높아 항산화 효과가 뛰어날 수 있다고 한다.
+  - 일부 연구에서는 lycopene이 all-trans 형태보다 cis-isomer 형태일 때 흡수율이 높다고 한다. 따라서 혈중 lycopene농도가 상대적으로 높아져 항산화 효과가 뛰어날 수 있다고 한다.
 
-- 하지만 열을 가하면 토마토에 있는 비타민 성분들이 비활성화 되어 비타민 효과를 거의 볼 수 없다고 한다.
+- 하지만 열을 가하면 토마토에 있는 비타민 성분들이 비활성화되어 비타민 효과를 거의 볼 수 없다고 한다.
 
 ## Oxalate
 
