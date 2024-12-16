@@ -118,6 +118,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Tomato - lycopene](#tomato---lycopene)
 
+- [Oxalate](#oxalate)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1721,11 +1723,17 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 요로결석을 예방하기 위해 옥살산과 칼슘을 적절히 섭취해야 한다.
 
-- [옥살산(oxalic acid)](https://en.wikipedia.org/wiki/Oxalic_acid)은 **유기산(organic acid)** 의 한 종류이며, 체내에서 산화 반응 등에 의해 **양성자(proton)** 를 잃게되 음이온을 띠는 oxalate 형태로 체내에 존재한다.
+- [옥살산(oxalic acid)](https://en.wikipedia.org/wiki/Oxalic_acid)은 **유기산(organic acid)** 의 한 종류이며, 체내에서 산화 반응 등에 의해 **양성자(proton)** 를 잃어 음이온을 띠는 **oxalate** 형태로 체내에 존재한다.
 
-- 옥살산은 특히 시금치, 비트에 많이 포함되어 있으며, 체내에서 **ascorbic acid** 최종 대사 산물로써 생성되거나 **특정 아미노산(glycine, serine)** , 또는 [glycolate(glycolic acid)](https://en.wikipedia.org/wiki/Glycolic_acid) 물질들이 대사되어 체내에 자연스럽게 생성되는 물질이다.
+- 옥살산은 특히 시금치, 비트에 많이 포함되어 있으며, **ascorbic acid** 최종 대사 산물로써 생성되거나 **특정 아미노산(glycine, serine)** , 또는 [glycolate(glycolic acid)](https://en.wikipedia.org/wiki/Glycolic_acid) 물질이 대사되어 체내에 자연스럽게 생성되는 물질이다.
 
 - 체내에 존재하는 oxalate는 **calcium** 과 결합해 [calcium oxalate](https://en.wikipedia.org/wiki/Calcium_oxalate)결정을 형성하는데, 이는 [신장 결석(renal stone)](https://en.wikipedia.org/wiki/Kidney_stone_disease)의 주요 원인이 된다.
+
+  - 참고로 calcium oxalate crystal은 **지의류(lichens)** 에서 두 종류의 미네랄 형태로 발견된다고 한다.
+
+    - purina - lichens 겉표면에 파우더의 형태로 코팅된 형태
+
+    - thallus - 내부 구조를 구성하는 형태
 
 <span class="title">신장 결석이 생기는 과정</span>
 
@@ -1733,15 +1741,15 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - oxalate는 보통 small intestine에서 calcium과 결합해 calcium oxalate를 형성하는데, small intestine에서 형성된 불용성의 calcium oxalate는 더 이상 흡수되지 않아 일반적으로 문제 없이 대장(colon)을 통해 배출된다.
 
-- 하지만 calcium결핍 등 여러 이유로 oxalate는 calcium과 결합하지 않고, small intestine과 혈류의 oxalate 농도 차이가 발생하며 자연스럽게 [수동적 확산(passive diffusion)](https://en.wikipedia.org/wiki/Passive_transport)되어 혈관으로 이동할 수 있다.
+- 하지만 calcium결핍 등 여러 이유로 oxalate는 calcium과 결합하지 않고, small intestine과 혈류 사이 oxalate 농도 차이가 발생하며 자연스럽게 [수동적 확산(passive diffusion)](https://en.wikipedia.org/wiki/Passive_transport)되어 혈관으로 이동할 수 있다.
 
-- 혈액에서 형성된 **calcium oxalate** 는 일반적으로 **kidney** 에서 축적된다.
+- 혈액의 칼슘과 결합되어 형성된 **calcium oxalate** 는 일반적으로 **kidney** 에 축적된다.
 
-- calcium oxalate는 결정 형태를 띠고 있으며 축적될 시 calcium oxalate stone 형태가 되고 이는 renal stone이라고 불리는 병적 상태의 요인이 된다.
+- calcium oxalate는 결정 형태를 띠고 있으며 축적될 시 calcium oxalate stone 형태가 되고 이는 **renal stone** 이라고 불리는 병적 상태의 요인이 된다.
 
-- renal stone의 원인은 다양하지만 그 중 대부분은 oxalate 물질이 calcium과 결합하고 신장에서 축적되어 형성되는 경우라고 한다.
+- renal stone의 원인은 다양하지만 그 중 대부분이 calcium oxalate 가 신장에서 축적되어 형성되는 경우라고 한다.
 
-- 결론적으로 renal stone 현상을 예방하기 위해 자신의 신체 환경, 요인에 따라 oxalate 물질이 포함된 음식을 적절히 섭취하는 것이 좋고, 칼슘 섭취도 적절히 하는 것이 중요하다.
+- 결론적으로 renal stone 현상을 예방하기 위해 자신의 신체 환경, 요인에 따라 oxalate 물질이 포함된 음식을 적절히 섭취하는 것이 좋고, 칼슘도 적절히 섭취하는 것이 중요하다.
 
 ## HbA1c
 
