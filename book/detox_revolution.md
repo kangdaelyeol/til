@@ -120,6 +120,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Oxalate](#oxalate)
 
+- [HbA1c](#hba1c)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1757,19 +1759,25 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 <span class="substance">HbA0</span> &rarr; <span class="organ">blood stream</span> &rarr; <span class="substance">glucose</span> &rarr; <span class="interaction">non-enzymatic reaction</span> &rarr; <span class="substance">HbA1c(glycated)</span>
 
-- 피검사 수치중 HbA1c 수치는 지난 약 3개월간의 혈당 수치를 예측할 수 있는 **임상지표** 로써 사용된다.
+- 혈액의 HbA1c 수치는 지난 약 3개월간의 혈당 수치를 예측할 수 있는 **임상지표** 로써 사용된다.
 
-- HbA1c는 헤모글로빈 중에 대부분(약 97%)을 차지하는 A0 아형(subtype)에 포도당(glucose)와 비효소적 결합(non-enzymatic reaction) 되어 당화된 헤모글로빈이다.
+  - HbA1c 수치를 통해 당뇨 합병증 및 심장 질환 위험을 진단할 수 있다.
+
+- HbA1c는 헤모글로빈 중에 대부분(약 97%)을 차지하는 A0 아형(subtype)이 포도당(glucose)과 비효소적 결합(non-enzymatic reaction) 되어 당화된 헤모글로빈이다.
 
   - galactose, fructose 보다 주로 **glucose** 에 의한 당화 반응이 일어난다 한다. 혈중 농도도 glucose가 월등히 높기 때문에 일반적으로 **glucose** 에 의해 당화된 헤모글로빈 임상수치로써 HbA1c를 사용한다.
 
-  - galactose(galactosylated), fructose(fructosylated)와 결합된 헤모글로빈은 따로 명칭이 없다고 한다.
+  - galactose, fructose와 결합된 헤모글로빈은 따로 명칭이 없다고 한다.
 
 - 즉 HbA1c는 [당화된 헤모글로빈(glycated hemoglobin)](https://en.wikipedia.org/wiki/Glycated_hemoglobin)이라 할 수 있다.
 
-- 한 번 당화된 헤모글로빈은 적혈구가 수명을 다 할때까지 혈류를 맴돌게 된다. 하지만
+  - glycosylated hemoglobin은 잘못된 호칭이다.
 
-- 헤모글로빈이 포함돤 적혈구는 약 4개월 정도의 수명을 가지고 있지만 여러 조건을 고려해 HbA1c 지난 2~3개월간의 혈당 수치를 반영한다.
+  - 효소에 의해 특정 위치에 당 사슬이 결합되는 [glycosylation](https://en.wikipedia.org/wiki/Glycosylation) 반응과, 비효소적으로 당류가 단백질, 또는 지방 등에 비가역적 결합되는 [glycation](https://en.wikipedia.org/wiki/Glycation) 반응은 각각 다른 과정이다.
+
+- 한 번 당화된 헤모글로빈은 적혈구가 수명을 다 할때까지 혈류를 맴돌게 된다.
+
+- 헤모글로빈이 포함돤 적혈구는 약 4개월 정도의 수명을 가지고 있지만, 여러 조건을 고려해 HbA1c 수치는 지난 2~3개월간의 혈당 수치를 반영한다.
 
 - HbA1c 수치는 전체 적혈구안에서 비율을 측정하는 것이기 때문에 적혈구 수명, 생성과 관련된 질환이 있으면 측정 값이 다를 수 있다.
 
