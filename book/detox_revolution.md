@@ -122,6 +122,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [HbA1c](#hba1c)
 
+- [Alkaloid](#alkaloid)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -1783,15 +1785,21 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Alkaloid
 
-- 알칼로이드는 자연적으로 발생하는 유기 화합물 인데 **nitrogen(질소)** 원자를 포함하는 유기 화합물이다.
+- [Alkaloid](https://en.wikipedia.org/wiki/Alkaloid)는 자연적으로 존재하면서 최소 한 개의 **nitrogen atom(질소 원자)** 을 포함하는 유기 화합물이다.
 
-- **cocaine, morphine** 물질도 알칼로이드에 포함된다.
+  - 알칼로이드는 약리학적으로 다양한 효과가 있는 물질이며, 보통 현대 약리학에 사용되거나, 마약의 발견에 기인한다.
 
-- 일부 알칼로이드는 **hepatotoxicity(간독성)** 이 있어 식물을 섭취할 때 주의가 필요하다.
+  - 주로 동물의 대사 시스템(metabolic system) 안에서 중요한 역할을 하며, 쓴맛(bitter taste)이 난다.
 
-- [pyrrolizidine alkaloid](https://en.wikipedia.org/wiki/Pyrrolizidine_alkaloid)는 **pyrrolizidine** 구조를 기본으로 가지는 알칼로이드 물질인데, 이는 cocaine, morphine과 같이 **간독성** 을 띤다.
+  - **cocaine, morphine** 물질도 알칼로이드에 포함된다.
 
-  - **물론 cocaine, morphine은 간독성보단 중독성(addictive), 의존성(dependency)에 대한 문제가 크다**
+  - 사실상 질소 원자를 포함한 자연 화합물과 알칼로이드의 경계는 명확하지 않다. amino acid, peptide, protein과 같이 고리외(exocyclic) 위치에 질소를 포함한 화합물은 [amine](https://en.wikipedia.org/wiki/Amine)으로 분류하거나, 일부는 알칼로이드를 특별한 amine으로 간주한다.
+
+- 일부 알칼로이드는 **hepatotoxicity(간독성)** 이 있어 알칼로이드를 포함한 식물을 섭취할 때 주의가 필요하다.
+
+- [pyrrolizidine alkaloid](https://en.wikipedia.org/wiki/Pyrrolizidine_alkaloid)는 **pyrrolizidine** 구조를 기본으로 가지는 알칼로이드 물질이다. 이는 cocaine, morphine과 같이 **간독성** 을 띤다.
+
+  - **물론 cocaine, morphine은 간독성보단 중독성(addictive), 의존성(dependency)과 관련된 문제가 더 주목된다.**
 
 - pyrrolizidine alkaloid(PAs)는 보통 특정 식물에 존재한다
 
