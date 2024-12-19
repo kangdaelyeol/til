@@ -124,6 +124,8 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Alkaloid](#alkaloid)
 
+- [goitrogen](#goitrogen)
+
 ## Propionic Acid(PPA) - 프로피온산
 
 - [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
@@ -464,7 +466,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - **수은(Mercury)** 은 갑상선 호르몬 균형을 유지하려는 효소인 탈아이오딘화 효소(Deiodinase)의 [selenoprotein](https://en.wikipedia.org/wiki/Selenoprotein) 단백질의 셀레늄과 결합해 효소 기능을 무력화시켜 호르몬 균형을 무너뜨린다.
 
-- 일반적으로 TSH 호르몬에 의해 자극받은 갑상선은 T3, T4 호르몬을 분비하는데, T3 호르몬을 T4 호르몬에 비해 적게 분비한다.
+- 일반적으로 TSH 호르몬에 의해 자극받은 갑상선은 T<sub>3</sub>, T<sub>4</sub> 호르몬을 분비하는데, T3 호르몬을 T4 호르몬에 비해 적게 분비한다.
 
 - T4(thyroxine) 호르몬은 아이오딘 원자가 4개 있는데, 탈아이오딘화 효소(deiodinase)에 의해 아이오딘 분자를 잃어서 활성도가 높은 T3(triiodothyronine) 형태가 될수 있다.
 
@@ -1813,24 +1815,26 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## goitrogen
 
-- [goitrogen](https://en.wikipedia.org/wiki/Goitrogen)은 갑상선의 기능을 방해해 갑상선종(goiter)을 유발한다는데에서 이름이 기원했다.
-  자연적으로 존재하는 유기황화합물(organicsulfur compound)이며
-- 십자화과 채소 섭취를 통해 goitrogen의 영향을 받을 수 있다.
+- goitrogen은 자연적으로 존재하는 유기황화합물(organosulfur compound)이며, 십자화과 채소 섭취를 통해 영향을 받을 수 있다.
+
+- [goitrogen](https://en.wikipedia.org/wiki/Goitrogen)의 이름은 갑상선(thyroid gland) 기능을 방해해 갑상선종(goiter)을 유발한다는데에서 기원했다.
 
 <span class="title">goitrogen 생성과 갑상선종<span>
 
-<span class="substance">cruciferous vegitable - progoitrin(glucosinolate)</span> &rarr; <span class="organ">myrosinase</span> &rarr; <span class="interaction">hydrolysis</span> &rarr; <span class="substance">aglycone</span> &rarr; <span class="substance">goitrin(lactone)</span> &rarr; <span class="organ">thyroid gland - NIS</span> &rarr; <span class="interaction">disrupt iodine absorption</span>
-&rarr; <span class="organ">pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="disease">goiter
+<span class="substance">cruciferous vegetable - progoitrin(glucosinolate)</span> &rarr; <span class="organ">myrosinase</span> &rarr; <span class="interaction">hydrolysis</span> &rarr; <span class="substance">aglycone</span> &rarr; <span class="substance">goitrin(lactone)</span> &rarr; <span class="organ">thyroid gland - NIS</span> &rarr; <span class="interaction">disrupt iodine absorption</span>
+&rarr; <span class="organ">pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="disease">goiter</span>
 
-- progoitrin은 glucosinolate의 일종이다. sulforaphane 생성 과정 처럼 채소 세포가 파괴 될 때 myrosinase 효소와 접촉되어 goitrin 물질이 된다.</span>
+- progoitrin은 glucosinolate의 일종이다. [sulforaphane](#cruciferous-vegetables) 생성 과정 처럼 채소 세포가 파괴 될 때 myrosinase 효소와 접촉되어 goitrin 물질이 된다.
 
-- [goitrin](https://en.wikipedia.org/wiki/Goitrin)은 **유기황화합물(organosulfar compound)** 이며 glucosinonate의 최종 대사 물질 형태인 thiocyanate, isothiocyanate, nitrile과 다른 [lactone](https://en.wikipedia.org/wiki/Lactone) 구조를 가지고 있는 물질이라고 한다.
+  - [goitrin](https://en.wikipedia.org/wiki/Goitrin)은 **유기황화합물(organosulfur compound)** 이며 glucosinonate의 일반적인 최종 대사 물질 형태인 thiocyanate, isothiocyanate, nitrile 구조와 다른 [lactone](https://en.wikipedia.org/wiki/Lactone) 구조를 가지고 있는 물질이다.
 
-- 활성된 goitrin은 갑상선의 [NIS(sodium-iodine symporter)](https://en.wikipedia.org/wiki/Sodium/iodide_cotransporter) 공동 수용체의 아이오딘 수용 기능을 방해해 갑상선 호르몬 생성(T3, T4)을 방해한다.
+- 활성된 goitrin은 갑상선의 [NIS(sodium-iodine symporter)](https://en.wikipedia.org/wiki/Sodium/iodide_cotransporter) 공동 수용체의 **아이오딘 수용 기능** 을 방해해 갑상선 호르몬 생성(T<sub>3</sub>, T<sub>4</sub>)을 방해한다.
+
+  - NIS는 외부로부터 아이오딘을 수용해 thyroid follicular cell로 전달함으로써 갑상선호르몬(T<sub>3</sub>, T<sub>4</sub>) 생성에 관여하는데, goitrogen으로 인해 수용 기능이 방해된다.
 
   - 이로 인해 [HPT axis](#thyroid-gland---mercury) 균형의 혼란이 생기며, **뇌하수체(pituitary gland)** 는 **TSH(Thyroid-Stimulating hormone)** 호르몬을 갑상선으로 계속 분비를 하게 된다.
 
-  - 하지만 갑상선은, 갑상선 호르몬(T3, T4) 생성을 위한 아이오딘을 수용할 수 없는 상태다. 이러한 상태가 계속되면 갑상선이 비대해져서 결국 [갑상선종(goiter)](https://en.wikipedia.org/wiki/Goitre)이 발생할 수 있다.
+  - 하지만 갑상선은, 갑상선 호르몬(T<sub>3</sub>, T<sub>4</sub>) 생성을 위한 아이오딘을 수용할 수 없는 상태다. 이는 갑상선 조직의 성장을 촉진하며, 갑상선이 비대해져 [갑상선종(goiter)](https://en.wikipedia.org/wiki/Goitre)이 발생할 수 있다.
 
 ## Potassuim
 
