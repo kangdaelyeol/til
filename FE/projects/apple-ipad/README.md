@@ -16,6 +16,8 @@
 
 - [dropdown menu - arrow](#dropdown-menu---arrow)
 
+- [Event.stopPropagation](#eventstoppropagation)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -179,7 +181,7 @@ header .basket > .arrow::before {
 
 - 이는 매우 비효율적인 방법이기 때문에 `transform-origin: 0 0`을 사용하는 것이 적절하다.
 
-## event.stopPropagation()
+## Event.stopPropagation
 
 - dropdown menu의 특정 아이콘 매뉴가 활성화 될 경우, 이를 비활성화 하기 위해 아무 곳이나 클릭 할 수 있는 기능을 추가 하려면 [event bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Event_bubbling)을 막아야 한다.
 
@@ -189,11 +191,9 @@ searchCloserEl.addEventListener('click', hideSearch)
 window.addEventListener('click', hideSearch)
 ```
 
-- bubbling으로 인해 어떠한 하위 요소를 클릭하더라도 반드시 이 메서드가 실행된다.
+- 하위요소인 dropdown container를 클릭하더라도 **event bubbling** 에 의해 event가 하위요소로부터 최상위(window)까지 전파되어 window에 등록된 이벤트 핸들러가 호출된다.
 
-- 즉 활성화된 dropdown container를 클릭하더라도 **event bubbling** 에 의해 event가 하위요소로부터 최상위(window)까지 전파되어 window에 대한 Listener가 실행된다.
-
-- 즉 구조상 showSearch가 실행되면 hideSearch는 실행되지 않아야 하므로 showSearch에서 Event전파를 막아주는 `stopPropagation`이 필요하다.
+- 즉 구조상 showSearch 핸들러가 실행되면 hideSearch 핸들러는 실행되지 않아야 하므로 showSearch 로직에서 Event전파를 막아주는 `stopPropagation` 메서드 적용이 필요하다.
 
 ```javascript
 const showSearch = (e) => {
@@ -203,7 +203,7 @@ const showSearch = (e) => {
 }
 ```
 
-- 이러한 방식으로 Event bubbling을 방지하기 위해선 하나의 기능을 목적으로 묶인 모든 box에 대해 bubbling을 방지해 주어야 한다.
+- 이러한 방식으로 Event bubbling을 방지하기 위해선 하나의 기능을 목적으로 묶인 모든 요소에 대해 bubbling을 방지해 주어야 한다.
 
 ```html
 <div class="search-wrap">
@@ -248,9 +248,9 @@ searchWrapEl.addEventListener('click', (e) => {
 
 - 이 경우 search-wrap - window 사이에 다른 section이 끼어 있거나 같은 event action에 대한 window만의 고유 event handling이 필요한 경우 이 방법은 옳지 않다.
 
-- 이를 고안한 다른 방법은 `e.target`에서 특정 element를 구분하는 것이다.
+- 이러한 문제점을 해결하기 위해 고안한 다른 방법은 `e.target` 에서 특정 element를 구분하는 것이다.
 
-- `e.target.classList.contains()`, `e.target.nodeName`등을 활용한 구별 방법도 있지만 이는 코드가 길어지거나 예외 상황이 많았다.
+- `e.target.classList.contains()`, `e.target.nodeName`등을 활용한 구별 방법도 있지만, 이로 인해 코드가 길어져 가독성이 떨어지고 예외 상황이 많았다.
 
 - 여기서 가장 효율적인 [Element.closest()](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest) 메서드를 사용하는 방법을 알 수 있었다.
 
@@ -262,7 +262,7 @@ window.addEventListener((e) => {
 })
 ```
 
-- `element.closest(Selector)` 메서드는 Selector와 일치하는 가장 가까운 조상 element를 찾는데(자신포함) 여기서 만약 window를 클릭한다면 결과 값은 null이 나오기 때문에 숨기는 기능을 실행할 수 있고, window로 전파된 이벤트를 이어서 handling할 수 있다.
+- `Element.closest` 메서드는 CSS Selector와 일치하는 가장 가까운 조상 element를 찾는데(자신포함) 여기서 만약 window를 클릭한다면 결과 값은 null이 나오기 때문에 숨기는 로직을 실행할 수 있고, 또한 window로 전파된 이벤트를 이어서 handling할 수 있어 확장성이 좋다.
 
 ## visibility - interpolation
 
