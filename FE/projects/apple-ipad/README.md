@@ -18,6 +18,8 @@
 
 - [Event.stopPropagation](#eventstoppropagation)
 
+- [visibility - interpolation](#visibility---interpolation)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -270,13 +272,13 @@ window.addEventListener((e) => {
 
 - 만약 opacity만 변화를 주어 element를 보이지 않게 할 경우 보여지지 않을 뿐 해당 element의 모든 속성은 유지되어 클릭 등 `focus` 접근을 할 때 방해를 줄 수 있다.
 
-- [visibility hidden 특성](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#hidden)상 **hidden** 값을 가지게 되면 `focus`를 받을 수 없는 상태가 되므로 사용자와 상호작용 할 수 없는 상태가 된다.
+- [visibility hidden 특성](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#hidden)상 **hidden** 값을 가지게 되면 `focus` 를 받을 수 없는 상태가 되므로 사용자와 상호작용 할 수 없는 상태가 된다.
 
 - 또한 hidden 옵션은 [accessibility tree](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility#accessibility_apis)로부터 제거된다.
 
   - 접근성 트리에서 제거되면 접근성 측면에 관한 요소 접근이 불가능해진다 **(e.g., 스크린 리더 접근)**
 
-  - `accessbility tree에서 요소가 제거 되었다 해서 focus를 받을 수 없는 상태가 되는 것은 아니다`: DOM tree(render tree)에는 남아있어 해당 요소의 크기만큼 layout이 유지된다.
+  - accessbility tree에서 요소가 제거되지만, DOM tree(render tree)에는 남아있어 해당 요소의 크기만큼 layout이 유지된다(occupying space).
 
 - `transition`을 활용해서 특정 element의 opacity를 자연스럽게 변환시키는 동시에 focus를 받을 수 없는 상태로 만들기 위해 `visibility` 속성을 사용한다.
 
@@ -294,7 +296,7 @@ header.searching .search-wrap {
 }
 ```
 
-- 이렇게 되면 visibility 의 [interpolation](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#interpolation) 특성에 의해 animation이 있다면, 모두 처리된 후 visible / not-visible 처리가 된다.
+- 요소 변화에 animation이 있다면, visibility 의 [interpolation](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#interpolation) 특성에 의해 애니메이션이 모두 처리된 후 visible / not-visible 처리가 된다.
 
 ### display - block / none animating display
 
@@ -314,7 +316,7 @@ header.searching .search-wrap {
 }
 ```
 
-- transition을 활용해 display속성의 연속적인 전환을 이끌어낼 수 없지만 `animation`으로 일부 효과는 이끌어낼 수 있다.
+- transition을 활용해 display 속성을 none에서 block으로 연속적인 전환을 이끌어낼 수 없지만 `animation` 으로 일부 효과는 이끌어낼 수 있다.
 
 ```css
 .box {
@@ -337,17 +339,17 @@ header.searching .search-wrap {
 }
 ```
 
-### difference between display:none
+### difference between 'display: none'
 
-- [visibility: hidden](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#hidden)은 `display:none`과 달리 `layout`에는 자신의 크기만큼 영향을 미친다.
+- [visibility: hidden](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility#hidden)은 'display:none' 과 달리 layout에는 자신의 크기만큼 영향을 미친다(occupying space).
 
-- selector에 그대로 적용하는 경우 display가 우선적으로 적용되기 때문에 fade-out은 이끌어 낼 수 없다.
+- selector에 'display: none' 스타일을 그대로 적용하는 경우 애니메이션 보다 우선적으로 적용되기 때문에 요소가 바로 사라지게 된다. 따라서 이 경우 fade-out은 이끌어 낼 수 없다.
 
-- display속성의 [animating display](https://developer.mozilla.org/en-US/docs/Web/CSS/display#animating_display) 특성상 block -> none으로 변환 할 때 none은 `animation duration`이 100% 진행도가 되었을때 변한다.
+- display속성의 [animating display](https://developer.mozilla.org/en-US/docs/Web/CSS/display#animating_display) 특성상 block -> none으로 변환은 `animation duration` 진행이 100%가 되었을때 이산(discrete)적으로 변한다.
 
-- 반대로 none -> block으로 변환하는 경우 `display: block`스타일이 `animation duration`진행도가 0%부터 적용되기 때문에 fade-in효과를 구현할 수 있다.
+- 반대로 none -> block으로 변환에서 `display: block` 스타일은 `animation duration` 진행이 0%부터 바로 적용되기 때문에 fade-in효과를 구현할 수 있다.
 
-- 하지만 여기서 animation 진행 자체에 display를 설정함으로 써 원하는 fade-out 모션도 구현할 수 있었다.
+- 여기서 animation 진행 자체에 display를 설정함으로 써 원하는 fade-out 모션도 구현할 수 있었다.
 
 ```css
 .hide {
@@ -357,20 +359,22 @@ header.searching .search-wrap {
 
 @keyframes hideBox {
   0% {
+    /* animation duration 진행도가 0%일 때부터 display: block 적용 */
     display: block;
     opacity: 1;
   }
   100% {
+    /* 100% 진행도가 되었을 때 display: block 속성을 제거해 기존에 있던 display: none 스타일을 적용 */
     opacity: 0;
   }
 }
 ```
 
-- hideBox animation 부분의 0%에 display:block으로 설정하면 .hide의 display: none과 관계 없이 animation이 진행되는 것을 볼 수 있엇다.
+- hideBox keyframes의 '0% keyframe' 에 'display: block' 스타일을 설정하면 기존 'display: none' 스타일과 관계 없이 animation이 진행되는 것을 볼 수 있었다.
 
 - 즉 show와 hide를 모두 구현한 후 이 둘을 js로 toggle하는 방식으로 DOM을 조작하면 구현할 수 있다.
 
-- 하지만 이 방식은 매우 비효율적이기 때문에 `visibility`를 사용한다.
+- 하지만 이 방식은 매우 비효율적이기 때문에 `visibility` 속성을 사용한다.
 
 ## html - fixed
 
@@ -631,7 +635,7 @@ btnEl.addEventListener('click', () => {
 
 - toggle을 사용함으로써 간단히 override를 적용시킬 수 있었고, if-else문을 사용하지 않아 코드가 간결해졌다.
 
-- 하지만 이 또한 처음 페이지 랜더링 완료시 show 애니매이션이 실행되어 브라우저상 표현이 어색해 비효율적이다.
+- 하지만 이 또한 처음 페이지 랜더링 완료시 show 애니메이션이 실행되어 브라우저상 표현이 어색해 비효율적이다.
 
 ## animation-timing-function - steps
 
@@ -639,7 +643,7 @@ btnEl.addEventListener('click', () => {
 
 ![sprite_img_example](./readme_img/sprite_image_example.png)
 
-- sprite image에 여러 이미지가 있고, 그 이미지를 순차적으로 보여줌으로써 하나의 작은 애니매이션을 형성하려 할 때 `steps()`를 활용할 수 있다.
+- sprite image에 여러 이미지가 있고, 그 이미지를 순차적으로 보여줌으로써 하나의 작은 애니메이션을 형성하려 할 때 `steps()`를 활용할 수 있다.
 
 - sprite에 포함된 여러 이미지를 차례대로 보여주기 위해 translate속성을 변환시키는데, animaion은 기본적으로 linear속성을 가지므로 이미지의 위치가 변하는 과정이 연속적으로 보여 이는 자연스럽지 않다.
 
@@ -666,15 +670,15 @@ btnEl.addEventListener('click', () => {
 
 - 이 경우 animation의 스타일 변화는 두 개의 step 사이 단 한 번 일어나브로 1개의 변화 과정을 두 개의 step으로 표현한다. `i. e., (100px -> 150px -> 200px)`
 
-- 하지만 여기서 2개의 상태값은 1개의 간격을 가지므로, `애니매이션의 진행도가 100%에 도달했다는 것은 시각적으로 0%진행도에 도달했다는 의미`이므로 **두 진행도(0% duration / 100% duration)는 시각적으로 겹치게 된다.**
+- 하지만 여기서 2개의 상태값은 1개의 간격을 가지므로, `애니메이션의 진행도가 100%에 도달했다는 것은 시각적으로 0%진행도에 도달했다는 의미`이므로 **두 진행도(0% duration / 100% duration)는 시각적으로 겹치게 된다.**
 
 - 따라서 0%진행도의 상태와 100%진행도의 상태 스타일이 다르다면 둘 중 하나의 스타일을 적용시켜야 한다.
 
 ![step_function_progress_image](./readme_img/step_function_progress.png)
 
-- 각 스타일 변환 기준점(step)에서 다음 기준점으로 애니매이션을 진행하는 동안 이전 기준점(from)의 스타일을 사용할지, 다음 기준점(to)의 스타일을 사용할 지 결정해야 한다.
+- 각 스타일 변환 기준점(step)에서 다음 기준점으로 애니메이션을 진행하는 동안 이전 기준점(from)의 스타일을 사용할지, 다음 기준점(to)의 스타일을 사용할 지 결정해야 한다.
 
-- 결국 2개의 steps을 가진 애니매이션에 steps(1)값을 설정할 경우, 이는 step-end와 같은 효과를 내므로 from의 스타일만 지속적으로 보여주게 될 것이다.
+- 결국 2개의 steps을 가진 애니메이션에 steps(1)값을 설정할 경우, 이는 step-end와 같은 효과를 내므로 from의 스타일만 지속적으로 보여주게 될 것이다.
 
 - 결론적으로 step-easing-function을 사용할 경우, **처음 step(from)** 의 스타일과 **마지막 step(to)** 의 스타일이 일치하지 않다면, `두 스타일 중 하나는 포기해야 한다.`
 
