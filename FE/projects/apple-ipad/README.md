@@ -20,6 +20,8 @@
 
 - [visibility - interpolation](#visibility---interpolation)
 
+- [html - fixed](#html---fixed)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -380,7 +382,7 @@ header.searching .search-wrap {
 
 - 특정 section이 활성화 될 때 전체 document 페이지가 고정되어야 할 필요가 있다.
 
-- html 자체에 `position: fixed`값을 설정해 page를 고정시키고 `overflow-y: scroll`설정으로 스크롤바가 표시 되도록 한다.
+- html 자체에 `position: fixed` 스타일을 설정해 페이지를 고정시키고 `overflow-y: scroll` 설정으로 스크롤바가 표시 되도록 한다.
 
 ```css
 html.fixed {
@@ -389,6 +391,8 @@ html.fixed {
   overflow-y: scroll;
 }
 ```
+
+- 'overflow-y: scroll' 스타일을 적용하지 않으면 기존에 있던 스크롤바가 사라져 레이아웃에 영향을 미쳐 reflow가 발생할 수 있고, 화면이 움직이는 현상이 발생한다.
 
 ### 'wheel' event
 
@@ -404,11 +408,27 @@ document.body.addEventListener(
 )
 ```
 
-**(`window`, `document.body`에 대해선 preventDefault를 적용시키기 위해 `passive` 옵션이 필요하다)**
+- 스크롤 동작에 대한 브라우저 기본 동작을 취소함으로써 스크롤을 제어한다.
 
-- 이 경우 **event bubbling** 에 의해 **wheel event** 가 최상위 element인 body / window까지 전파시킬 수 있으므로, 전파된 event에 대한 기본 동작을 취소시켜 scroll이 되지 않게 할 수 있다. 중요한 점은 하위 element에 대해 **stopPropagation으로 bubbling을 막은경우** wheel을 하게 되면 스크롤이 동작하게 된다.
+- **event bubbling** 에 의해 **wheel event** 가 최상위 element인 body / window까지 전파시킬 수 있으므로, 전파된 event에 대한 기본 동작을 취소시켜 scroll이 되지 않게 할 수 있다.
 
-- 따라서 wheel 이벤트를 제어함으로써 스크롤을 방지하려면 많은 요소에 대해 `preventDefault()`를 설정 해주어야 한다. 이는 매우 복잡하므로 `position: fixed`를 html에 직접 스타일링 해주는 것이 효율적이다.
+- 만약 하위 element의 이벤트 핸들러에서 **stopPropagation** 메서드를 통해 이벤트 전파를 막은 경우, 상위 요소까지 이벤트 전파가 되지 않아 해당 요소에서 기본 동작이 수행되어 스크롤이 동작하게 된다.
+
+- 따라서 wheel 이벤트를 제어함으로써 스크롤을 방지하기 위해 하위 요소에 대해서 기본 동작을 고려해야 하는 상황이 발생한다. 이는 요소간 의존성을 형성하게 되어 복잡하므로 `position: fixed` 스타일을 html에 직접 설정 해주는 것이 효율적이다.
+
+### [Using passive listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#using_passive_listeners)
+
+- `window`, `document.body`에 대해서 특정 이벤트에 대해 preventDefault를 적용시키기 위해 `passive: false` 옵션이 필요하다
+
+- 브라우저는 기본적으로 **이벤트 핸들러에 대한 내용을 모두 실행 후 기본 동작을 실행한다.** 이는 이벤트 핸들러에서 preventDefault 메서드를 호출함으로써 기본 동작을 취소할 수 있기 때문이다.
+
+  - 이벤트 핸들러가 수행되고 기본 동작을 취하는 옵션으로 대부분의 이벤트 리스너에 대해 `{passive: false}` 옵션이 설정된다.
+
+- 하지만 스크롤 이벤트와 같이 자주 발생하는 이벤트에 대해서 비용이 큰 이벤트 핸들러를 등록하게 되면 브라우저 동작이 완만하지 않아 [Jank](https://developer.mozilla.org/en-US/docs/Glossary/Jank) 현상이 발생할 수 있다.
+
+- 따라서 브라우저는 최상위 요소(window, document)에 대해 'wheel', 'touchmove' 등 특정 이벤트에 대해서는 `{passive: true}` 옵션을 기본값으로 가지고 있다.
+
+- '{passive: true}' 옵션을 가지면 이벤트 핸들러가 수행되기 전 기본 동작을 수행한다. 따라서 preventDefault 메서드를 호출해도 아무런 효과가 나타나지 않게 된다.
 
 ## figure - figcaption alt
 
