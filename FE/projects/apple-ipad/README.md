@@ -22,6 +22,8 @@
 
 - [html - fixed](#html---fixed)
 
+- [figure - figcaption alternate text](#figure---figcaption-alternate-text)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -84,7 +86,7 @@ header ul.menu > li.basket-starter {
 
   - **white-space** 속성 외에 `text-wrap: nowrap` 설정으로 같은 결과를 볼 수 있다.
 
-  - [mdn문서](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)를 보면 white-space 속성에 white-space-collapse, text-wrap 두 속성에 대한 값을 shorthand property로써 한 번에 설정 할 수 있다고 한다. **nowrap** 기능에 대해서 같은 기능을 수행하는 것 같다.
+  - [mdn문서](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)를 보면 white-space 속성에 white-space-collapse, text-wrap 두 속성에 대한 값을 shorthand property로써 한 번에 설정 할 수 있다고 한다. 결과적으로 **nowrap** 에 대해서 같은 기능을 수행하는 것 같다.
 
 - 여러 방법이 있기 떄문에 -9999px을 사용하는 방법이 정답은 아닌 것 같다.
 
@@ -430,9 +432,9 @@ document.body.addEventListener(
 
 - '{passive: true}' 옵션을 가지면 이벤트 핸들러가 수행되기 전 기본 동작을 수행한다. 따라서 preventDefault 메서드를 호출해도 아무런 효과가 나타나지 않게 된다.
 
-## figure - figcaption alt
+## figure - figcaption alternate text
 
-- figure에 포함된 이미지를 설명하는 figcaption이 image로 디자인된 text인 경우 background-url로 이미지 텍스트를 삽입하고, text는 숨긴다.
+- figure 태그에 포함된 이미지를 설명하는 figcaption 부분이 image text인 경우 background-url로 이미지 텍스트를 삽입하고, text는 숨긴다.
 
 ```html
 <figure>
@@ -455,7 +457,7 @@ document.body.addEventListener(
 }
 ```
 
-- [text-indent: 9999px를 사용하게 되는 경우](#background-image---alternate-text)
+[**text-indent: 9999px를 사용하게 되는 경우**](#background-image---alternate-text)
 
 ```html
 <figure class="bgtext">
@@ -476,9 +478,9 @@ document.body.addEventListener(
 }
 ```
 
-- 최상위 element(figure)에 class를 걸어두어도 하위 요소에 모두 들여쓰기가 적용되어 코드가 간결해지는 결과를 볼 수 있지만, render과정에서 자원소모가 비교적 크다 하고 **(간단히 측정해 봤는데 거의 차이가 없다고 봐도 될 정도)** `-9999px`이라는 표현 자체가 관습적이라고는 하지만 논리적인 측면에서 부적절한 면이 있다고 생각이든다.
+- 최상위 element(figure)에 class를 설정하면 하위 요소에 모두 들여쓰기가 적용되어 코드가 간결해지는 결과를 볼 수 있지만, render과정에서 자원소모가 비교적 크다 하고 **(간단히 측정해 봤는데 거의 차이가 없다고 봐도 될 정도)** , `-9999px` 값이 관습적인 표현이라고는 하지만 논리적인 측면에서 부적절한 면이 있다고 생각이든다.
 
-- 따라서 `text-indent를 100%`와 `overflow:hidden`을 적용하는 방식으로 대체 택스트를 구현.
+- 따라서 `text-indent: 100%; overflow:hidden` 스타일을 적용하는 방식으로 대체 택스트를 구현하는 것이 목적이 더욱 명확해 보인다.
 
 ## vender prefix - 공급업체 접두사
 
