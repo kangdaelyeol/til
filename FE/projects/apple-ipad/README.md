@@ -26,6 +26,8 @@
 
 - [vender prefix - 공급업체 접두사](#vender-prefix---공급업체-접두사)
 
+- [Declaring global CSS variables](#declaring-global-css-variables)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -504,7 +506,7 @@ img {
 
 ## Declaring global CSS variables
 
-- 2개의 dash(--)를 사용해서 CSS안에 [custom property](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)를 선언할 수 있다.
+- CSS 속성에 2개의 dash(--)를 접두사로 추가함으로써 [custom property](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)를 선언할 수 있다.
 
 - 보통 **최상위 element** 에 global variables로써 선언하는데, html에 선언 하는 것 보다 `:root` 가상 클래스 안에 선언 한다.
 
@@ -526,13 +528,13 @@ img {
 }
 ```
 
-- [:root pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)는 html을 선택하는 것과 같다.
+- [:root pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)는 `<html>` 태그를 지정하는 것과 같다.
 
-- 차이점은 브라우저가 CSS 스타일을 결정할 때 가장 관련있는 스타일 선택의 우선순위, 즉 [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)가 다르다.
+- 차이점은 브라우저가 CSS 스타일을 결정할 때 스타일 선택의 우선순위, 즉 [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)가 다르다.
 
-- 가장 연관있는 CSS 스타일을 선택하는 알고리즘인 **spicificity** 에 의해 `html보다 :root pseudo-class의 스타일이 우선 적용 된다.`
+- 가장 연관있는 CSS 스타일을 선택하는 알고리즘인 **specificity** 에 의해 `<html> 보다 :root 가상 클래스의 스타일이 우선 적용 된다.`
 
-- spicificity algorithm에서 사용되는 [selector weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_weight_categories)규칙에 의해 html은 type column에 해당하므로 0-0-1의 **무게 값(weight value)** 을 가지고, :root는 가상 클래스이기 때문에 class column에 해당한다. 따라서 :root는 0-1-0의 weight value를 가진다.
+- specificity algorithm에서 사용되는 [selector weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_weight_categories)규칙에 의해 html은 **type column** 에 해당하므로 0-0-1의 **무게 값(weight value)** 을 가지고, :root는 가상 클래스이기 때문에 **class column**에 해당한다. 따라서 :root는 0-1-0의 weight value를 가진다.
 
 ## margin positioning - absolutely positioned box
 
