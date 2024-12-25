@@ -24,6 +24,8 @@
 
 - [figure - figcaption alternate text](#figure---figcaption-alternate-text)
 
+- [vender prefix - 공급업체 접두사](#vender-prefix---공급업체-접두사)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -484,9 +486,9 @@ document.body.addEventListener(
 
 ## vender prefix - 공급업체 접두사
 
-- css 속성에서 아직 모든 브라우저에서 지원하지 않고 개발중인 속성이 있다.
+- css 속성에서 모든 브라우저에서 지원되지 않고, 개발 진행중인 속성이 있다.
 
-- 이러한 속성은 부분적으로 기능을 제공하는데, `vender prefix`를 붙힘으로써 속성을 사용할 수 있다.
+- 이러한 속성은 부분적으로 기능을 제공하는데, `vender prefix` 를 추가함으로써 스타일을 적용할 수 있다.
 
 ```css
 img {
@@ -496,9 +498,9 @@ img {
 }
 ```
 
-- **user-drag** 속성은 현재 Chrome browser에서 기능 개발이 완료되지 않은 속성(partial support)이기 때문에 `-webkit-` 이라는 vender prefix를 붙힌 속성을 사용할 수 있다.
+- **user-drag** 속성은 현재 Chrome browser에서 기능 개발이 완료되지 않은 속성(partial support)이기 때문에 `-webkit-` vender prefix를 추가해 스타일을 적용할 수 있다.
 
-- 브라우저 지원 현황은 [caniuse 웹 사이트](https://caniuse.com/?search=user-drag)에서 확인 할 수 있다.
+- 브라우저 지원 현황은 [caniuse 사이트](https://caniuse.com/?search=user-drag)에서 확인 할 수 있다.
 
 ## Declaring global CSS variables
 
