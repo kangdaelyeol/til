@@ -30,6 +30,8 @@
 
 - [margin positioning - absolutely positioned box](#margin-positioning---absolutely-positioned-box)
 
+- [animation-fill-mode](#animation-fill-mode)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -615,6 +617,16 @@ img {
 
 - 보통 이 속성은 animation-delay와 함께 상호작용을 할 수 있고, 또한 animation 완료 이후 상태를 유지할 수 있게 해준다는 점이 매력적인 것 같다.
 
+- 일반적으로 backward, forwards, both 옵션을 사용한다.
+
+  - forwards 옵션은 애니매이션 진행이 종료되어도 마지막 keyframe에 있는 스타일을 유지한다.
+
+  - backward 옵션은 animation-delay 속성이 있는 경우, delay 기간 동안에도, 애니매이션의 처음 스타일을 적용한다.
+
+    - 보통 애니매이션 시작 전 딜레이 기간때 애니매이션 스타일이 적용되지 않는다.
+
+  - both 옵션은 forwards, backward 옵션을 모두 포함한다.
+
 - animation-fill-mode 속성을 통해 fade-in, fade-out을 더욱 간략히 구현 할 수 있었다.
 
 ```css
@@ -622,11 +634,11 @@ img {
   width: 100px;
   height: 100px;
   background-color: black;
-  animation: show 1s both;
+  animation: show 1s both; /* animation-fill-mode: both - shorthand property */
 }
 
 .hide {
-  animation: hide 1s both;
+  animation: hide 1s both; /* animation-fill-mode: both - shorthand property */
 }
 
 @keyframes show {
@@ -649,9 +661,9 @@ img {
 }
 ```
 
-- `animation-fill-mode: both`를 적용해서 시작 전, 후를 항상 animation에 의존한 스타일로 설정했다. **(사실상 animation-delay 속성이 없기 때문에 forwards옵션을 적용해도 결과는 같다.)**
+- `animation-fill-mode: both` 스타일을 적용해서 애니매이션 시작 전, 후 상태를 항상 animation keyframe에 의존하도록 했다. **(사실상 animation-delay 속성이 없기 때문에 forwards옵션을 적용해도 결과는 같다.)**
 
-- box에 show animation을 default로 두어 hide적용시 override될 수 있도록 한다.
+- box에 show animation을 default로 두어 '.hide' 클래스 적용시 override될 수 있도록 한다.
 
 ```javascript
 btnEl.addEventListener('click', () => {
@@ -659,9 +671,9 @@ btnEl.addEventListener('click', () => {
 })
 ```
 
-- toggle을 사용함으로써 간단히 override를 적용시킬 수 있었고, if-else문을 사용하지 않아 코드가 간결해졌다.
+- toggle을 사용함으로써 간단히 override를 적용시킬 수 있었고, if-else 문을 사용하지 않아 코드가 간결해졌다.
 
-- 하지만 이 또한 처음 페이지 랜더링 완료시 show 애니메이션이 실행되어 브라우저상 표현이 어색해 비효율적이다.
+- 하지만 처음 페이지 랜더링 완료시 초기에 show 애니메이션이 실행되어 요소 표현이 어색하다.
 
 ## animation-timing-function - steps
 
