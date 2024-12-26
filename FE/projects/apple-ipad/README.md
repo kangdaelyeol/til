@@ -28,6 +28,8 @@
 
 - [Declaring global CSS variables](#declaring-global-css-variables)
 
+- [margin positioning - absolutely positioned box](#margin-positioning---absolutely-positioned-box)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -538,11 +540,9 @@ img {
 
 ## margin positioning - absolutely positioned box
 
-- [absolutely positioned box](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute) 특성상 margin은 서로 겹치지 않는다.
+- top, left등의 속성으로 위치를 조정을 할 수 있지만, margin을 사용해 2차적으로 세부적인 위치 조정을 할 수 있다.
 
-- absolute를 사용해 **이미지 요소** 를 배치할 때 이미지 요소 주변 약간의 공백(white space) 또는 여백(margin)이 있어 positioning에 약간의 오차가 발생할 수 있다.
-
-- 이 때 top, left등의 속성으로 미세한 조정을 할 수 있지만, margin을 사용해 2차적으로 세부 위치 조정을 할 수 있다.
+  - [absolutely positioned box](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute) 특성상 margin은 서로 겹치지(collapse) 않는다.
 
 ```css
 .box {
@@ -554,17 +554,17 @@ img {
 }
 ```
 
-- 이 경우 `top:0; left: 0;`과 같은 결과가 보여진다.
+- 이 경우 `top:0; left: 0;` 스타일을 적용했을때와 같은 결과가 보여진다.
 
-- margin을 음수, 양수값을 자유롭게 사용하며 positioning이 가능하다.
+- margin 속성에 음수, 양수값을 자유롭게 사용하며 positioning이 가능하다.
 
-### lab: padding을 이용하는 것은 어떨까
+### padding을 이용하는 것은 어떨까
 
 - 결론적으로 padding을 활용한 positioning은 불가능하다.
 
-- `box-sizing: content-box(default)`인 경우 요소의 크기가 늘어나며, top, left같은 기준 위치를 벗어나지 않는다.
+- `box-sizing: content-box(default)` 스타일인 경우 padding 값을 적용했을때 요소의 크기가 늘어나며, top, left같은 기준 위치를 벗어나지 않는다.
 
-- [css padding syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax)상으로도 padding에 negative value는 입력할 수 없다.
+- [css padding syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax) 규칙에서 padding 값에 negative value는 입력할 수 없다.
 
 ```css
 .box1 {
@@ -584,9 +584,9 @@ img {
 
 - 이 경우 각 box안에 content가 없다면 같은 결과를 볼 수 있다.
 
-- padding-top이라 해서 box가 위쪽으로 100px이 늘어나는 것이 아닌 `top: 100px`위치 밑에서 부터 padding이 생겨나 결과적으로 height가 밑으로 커지는 효과를 볼 수 있다.
+- padding-top 속성을 적용하게 되면 box가 위쪽으로 100px이 늘어나는 것이 아닌 현재 위치에서 밑으로 padding 공간이 발생한다. 결과적으로 height가 밑으로 커지는 효과를 볼 수 있다.
 
-- `box-sizing: border;` 인 경우, 지정된 width, height를 초과한 padding에 대해서만 box의 크기가 커진다.
+- `box-sizing: border;` 인 경우, 지정된 width, height 크기를 초과한 padding에 대해서만 box의 크기가 커진다.
 
 ```css
 .box1 {
@@ -605,9 +605,9 @@ img {
 }
 ```
 
-- **box1** 의 크기는 padding에 의해 width, height크기가 각각 100px씩 증가될 것이다.
+- **box1** 의 크기는 padding에 의해 width, height 크기가 각각 100px씩 증가될 것이다.
 
-- **box2** 는 크기가 커지지 않는다. padding이 가로 세로로 100px씩 box의 크기만큼 딱 차지 되었기 때문이다.
+- **box2** 는 크기가 커지지 않는다. padding이 가로 세로로 100px씩 증가했지만 box의 기존 크기와 일치하기 때문이다.
 
 ## animation-fill-mode
 
