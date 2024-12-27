@@ -32,6 +32,8 @@
 
 - [animation-fill-mode](#animation-fill-mode)
 
+- [animation-timing-function](#animation-timing-function)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -675,21 +677,21 @@ btnEl.addEventListener('click', () => {
 
 - 하지만 처음 페이지 랜더링 완료시 초기에 show 애니메이션이 실행되어 요소 표현이 어색하다.
 
-## animation-timing-function - steps
+## animation-timing-function
 
 - CSS animation 진행 과정을 제어하기 위해 [animaion-timing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function) 속성을 설정한다.
 
 ![sprite_img_example](./readme_img/sprite_image_example.png)
 
-- sprite image에 여러 이미지가 있고, 그 이미지를 순차적으로 보여줌으로써 하나의 작은 애니메이션을 형성하려 할 때 `steps()`를 활용할 수 있다.
+- sprite에 포함된 여러 이미지를 차례대로 보여주기 위해 translate속성을 변환시키는데, animaion은 기본적으로 linear속성을 가지므로 이미지의 위치가 변하는 과정이 연속적으로 보여 sprite 이미지가 전체적으로 움직이는 것을 볼 수 있다. 이는 자연스럽지 않다.
 
-- sprite에 포함된 여러 이미지를 차례대로 보여주기 위해 translate속성을 변환시키는데, animaion은 기본적으로 linear속성을 가지므로 이미지의 위치가 변하는 과정이 연속적으로 보여 이는 자연스럽지 않다.
+- sprite image의 여러 이미지를 각각 순차적으로 보여주는데, 연속적이 아닌 이산적으로 보여줌으로써 하나의 작은 애니메이션을 형성하려 할 때 `steps()` 를 활용할 수 있다.
 
-- 이미지 위치가 연속적(linear)으로 변하는 모션을 보여주지 않고 **이산적(discrete)으로** 변환하는 모션을 보여주려 할 때 `steps-easing-function` 을 활용할 수 있다.
+  - **steps()** 함수는 **animation-timing-function** 속성에 설정할 수 있는 [easing function](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function) 함수 타입중 [step-easing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function#step-easing-function) 함수의 하위 옵션이다.
 
-- steps는 **animation-timing-function** 속성에 설정할 수 있는 [easing function](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function#step-easing-function)의 하위 옵션이다.
+  - 즉, `step-easing-function` 함수를 통해 이미지 위치가 연속적(linear)으로 변하는 모션을 보여주지 않고 **이산적(discrete)으로** 변환하는 모션을 보여줄 수 있다.
 
-- `step-easing-function` 은 animation의 각 step, 즉 animation에서 설정한 이전, 이후 두 상태의 간격에 대해 `스타일 상태를 몇 번에 걸쳐 변환할 것인가`에 대해 결정하는 함수다.
+- `step-easing-function` 함수는 animation의 각 step, 즉 animation에서 설정한 이전과 이후, 두 keyframes 스타일 사이에 대해 `스타일 상태를 몇 번에 걸쳐 변환할 것인가` 에 대해 결정한다.
 
 ```css
 .box1 {
@@ -706,19 +708,19 @@ btnEl.addEventListener('click', () => {
 }
 ```
 
-- 이 경우 animation의 스타일 변화는 두 개의 step 사이 단 한 번 일어나브로 1개의 변화 과정을 두 개의 step으로 표현한다. `i. e., (100px -> 150px -> 200px)`
+- 이 경우 animation의 스타일 변화는 두 개의 steps(keyframes) 사이 한 번 일어나므로, 1개의 변화 과정을 두 개의 steps 로 표현한다. `i. e., (100px -> 150px -> 200px)`
 
-- 하지만 여기서 2개의 상태값은 1개의 간격을 가지므로, `애니메이션의 진행도가 100%에 도달했다는 것은 시각적으로 0%진행도에 도달했다는 의미`이므로 **두 진행도(0% duration / 100% duration)는 시각적으로 겹치게 된다.**
+- 하지만 `애니메이션의 진행도가 100%에 도달했다는 것은 시각적으로 0% 진행도에 도달했다는 의미` 와 같으므로, **두 진행도(0% duration / 100% duration)는 시각적으로 겹치게 된다.**
 
-- 따라서 0%진행도의 상태와 100%진행도의 상태 스타일이 다르다면 둘 중 하나의 스타일을 적용시켜야 한다.
+- 따라서 0% 진행도의 상태와 100% 진행도의 keyframe 스타일이 다르다면 두 keyframes 중 하나의 스타일을 적용시켜야 한다.
 
 ![step_function_progress_image](./readme_img/step_function_progress.png)
 
 - 각 스타일 변환 기준점(step)에서 다음 기준점으로 애니메이션을 진행하는 동안 이전 기준점(from)의 스타일을 사용할지, 다음 기준점(to)의 스타일을 사용할 지 결정해야 한다.
 
-- 결국 2개의 steps을 가진 애니메이션에 steps(1)값을 설정할 경우, 이는 step-end와 같은 효과를 내므로 from의 스타일만 지속적으로 보여주게 될 것이다.
+- 결국 2개의 keyframes를 가진 애니메이션에 'steps(1)' 값을 설정할 경우, 이는 'step-end'와 같은 효과를 내므로 from keyframe 스타일만 지속적으로 보여주게 될 것이다.
 
-- 결론적으로 step-easing-function을 사용할 경우, **처음 step(from)** 의 스타일과 **마지막 step(to)** 의 스타일이 일치하지 않다면, `두 스타일 중 하나는 포기해야 한다.`
+- 결론적으로 step-easing-function을 사용할 경우, **처음 keyframe(from)** 의 스타일과 **마지막 keyframe(to)** 의 스타일이 일치하지 않다면, `두 keyframes 스타일 중 하나는 포기해야 한다.`
 
 ## mask image
 
