@@ -34,6 +34,8 @@
 
 - [animation-timing-function](#animation-timing-function)
 
+- [mask image](#mask-image)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -48,7 +50,7 @@
 
 - 보통 img tag에는 alt속성이 있기 때문에 해당 속성에 대체 택스트를 입력함으로써 [접근성(accessibility)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#accessibility) 을 보장할 수 있다.
 
-- 하지만 div같이 img 태그가 아닌 요소에 background-image 스타일로 이미지를 입력한 경우 **alt** 속성 처럼 대체 택스트를 입력할 수 있는 속성이 지원되지 않는다.
+- 하지만 div같이 img 태그가 아닌 요소에 background-image 스타일로 이미지를 입력한 경우 **alt** 속성처럼 대체 택스트를 입력할 수 있는 속성이 지원되지 않는다.
 
 - 해당 태그 안에 text를 입력하고 `text-indent` 속성을 활용해 alt 속성값처럼 유사하게 대체 택스트를 구현할 수 있다.
 
@@ -185,7 +187,7 @@ header .basket > .arrow::before {
 
 - 빨간 사각형 변의 길이를 `a` 라고 가정하면, transform-origin 스타일의 속성값은 `a/2 a/2(initial value - 50% 50% 0)` 다.
 
-- 여기서 `transform-origin: 0 0` 스타일을 적용한 것 처럼 사각형을 이동시키려면 sqrt를 사용한 결과의 값이 필요하다.
+- 여기서 `transform-origin: 0 0` 스타일을 적용한 것처럼 사각형을 이동시키려면 sqrt를 사용한 결과의 값이 필요하다.
 
   - 검은 사각형의 윗변으로부터 빨간 사각형의 윗꼭짓점(vertex)사이 최단 거리 **sqrt(2a<sup>2</sup>)/2 - (a/2)**
 
@@ -726,21 +728,23 @@ btnEl.addEventListener('click', () => {
 
 - css의 [mask-image](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image) 속성으로 `mask layer` 에 사용될 이미지를 설정함으로써 요소의 표현 범위를 설정할 수 있다.
 
-- video의 기울기 표현을 디자인 하기 위해 미리 기울어진 video source와, 기울 어진 video를 표현할 범위의 mask image가 필요하다.
+  - mask image는 다른 이미지와 alpha channel(opacity)에 대해 상호작용(multiplied)함으로써 요소의 표현 범위를 제한할 수 있다.
+
+- video의 기울기 표현을 디자인 하기 위해 기울어진 video source와, 기울어진 video 요소에서 출력되는 영역만을 포함할 크기의 mask image가 필요하다.
 
 ---
 
 <img src="./readme_img/mask-default-picture.png" width="250"/> <img src="./readme_img/mask-image.png" width="250"/> <img src="./readme_img/mask-video.png" width="250"/>
 
-- 기본 이미지로 아이패드의 모서리를 표현하고, 마스크 이미지, 동영상 세 자원을 겹쳐 아이패드의 기울어진 각도에 자연스럽게 맞추어 배치할 수 있다.
+- 기본 이미지로 아이패드 화면의 모서리(edge)를 표현하고, 마스크 이미지, 동영상, 세 이미지 요소를 겹쳐 아이패드의 기울어진 각도에 자연스럽게 맞추어 배치할 수 있다.
 
-- css의 **transform** 속성으로 기울기를 조절한 것이 아닌, 이미지 자체가 기본적으로 기울어져 디자인 되어 있다.
+  - css의 **transform** 속성으로 기울기를 조절한 것이 아닌, 이미지 자체가 기본적으로 기울어져 디자인 되어 있어 추가적인 작업이 필요하지 않았다.
 
-- 또한 해상도가 같은 크기로 되어 있기 때문에 이미지를 겹쳐 표현하기도 매우 수월했다.
+  - 또한 해상도가 같은 크기로 되어 있기 때문에 이미지를 겹쳐 표현하기도 매우 수월했다.
 
 ---
 
-### Lab - mask-image속성을 js를 통해 조작함으로써 스크롤에 따른 인터렉티브한 이미지 표현도 구현해볼 수 있었다.
+### Lab - mask-image속성을 js를 통해 조작함으로써 화면 스크롤에 따른 인터렉티브한 이미지 표현도 구현해볼 수 있었다.
 
 ```html
 <!DOCTYPE html>
@@ -783,11 +787,11 @@ btnEl.addEventListener('click', () => {
 </html>
 ```
 
-- `position: sticky` 옵션과 scroll 비율에 따른 `mask-position` 이동으로 이미지를 원하는 부분만큼 표현할 수 있다.
+- `position: sticky` 옵션과 scroll 비율에 따른 `mask-position` 값 제어를 통해 이미지를 원하는 부분만큼 표현할 수 있다.
 
-- transform-origin처럼 [mask-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin) 위치를 임의로 설정하고, mask-size 크기를 줄이는 방법을 사용할 수 없기 때문에, position을 사용하지 않으면 box의 왼쪽 위 모서리의 mask-image 시작점이 고정되어버린다.
+- 'transform-origin' 속성처럼 [mask-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin) 속성은 숫자 값을 사용할 수 없다. 따라서 mask image 위치를 임의로 설정하고, mask-size 크기를 줄이는 방법을 사용할 수 없기 때문에, position을 사용하지 않으면 box의 왼쪽 위 모서리의 mask-image 시작점이 고정되어버린다.
 
-- `따라서 이런 기법은 background-attachment: fixed 옵션을 사용하는 것이 더욱 수월해 보인다.`
+- `따라서 이런 기법을 위해 background-attachment: fixed 옵션을 사용하는 것이 더욱 수월해 보인다.`
 
 ## textContent - innerHTML / innerText
 
