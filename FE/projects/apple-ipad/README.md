@@ -36,6 +36,8 @@
 
 - [mask image](#mask-image)
 
+- [textContent - innerHTML / innerText](#textcontent---innerhtml--innertext)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -795,19 +797,19 @@ btnEl.addEventListener('click', () => {
 
 ## textContent - innerHTML / innerText
 
-- 요소의 text 부분을 수정할 때 `textContent` 를 사용하는 것이 효율적이다.
+- 요소의 text 부분을 수정할 때 [Node.textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) 프로퍼티를 사용하는 것이 효율적이다.
 
 ### Node.textContent
 
-- Node interface의 속성으로, 요소의 text를 그대로 설정한다.
+- Node interface에서 제공하는 프로퍼티로, 요소의 text를 그대로 설정한다.
 
-- setter로 사용할 때 HTML문법에 맞추어 설정해도 브라우저에는 text로써 표현이 된다. 따라서 `XSS` 공격에 안전하다.
+- setter로 사용할 때 HTML문법에 맞추어 설정해도 브라우저에는 그대로 text로써 표현된다. 따라서 `XSS` 공격에 안전하다.
 
 ### innerHTML
 
-- innerHTML속성은 `HTMLElement` interface의 속성으로, 요소의 HTML부분까지 모두 포함한다.
+- Element interface에서 제공하는 innerHTML 프로퍼티로, 요소의 HTML 구조를 설정할 수 있다.
 
-- setter로 사용할 때 브라우저는 HTML 문법에 따라 parsing 과정을 거치며, CSS, JS가 포함될시, 기능을 모두 수행할 수 있다. 따라서 `XSS` 공격에 취약하다.
+- setter로 사용할 때 데이터 입력시, 브라우저는 입력 데이터를 HTML 문법에 따라 parsing 과정을 거치며, CSS, JS 부분이 포함될시, 해당 기능을 모두 수행할 수 있다. 따라서 `XSS` 공격에 취약하다.
 
 ```javascript
 const divEl = document.createElement('div')
@@ -815,19 +817,19 @@ const divEl = document.createElement('div')
 divEl.innerHTML = '<img src="xxxx" onerror="XSS" />'
 ```
 
-- 이 경우 divEl 요소가 브라우저에 삽입이 될 경우 img 요소가 parsing되어 onerror부분이 실행된다.
+- 이 경우 divEl 요소가 브라우저에 삽입이 될 경우 img 요소가 parsing 되어 onerror 이벤트 핸들러가 실행된다.
 
 #### textContent vs innerHTML
 
-- textContent 속성값은 브라우저에서 [HTML parsing등 어떠한 해석 과정도 거치지 않고 표현하기 때문에](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#differences_from_innerhtml) innerHTML과 비교해서 매우 효율적이다.
+- textContent 프로퍼티는 브라우저에서 [HTML parsing 등 어떠한 해석 과정도 거치지 않고 표현하기 때문에](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#differences_from_innerhtml) innerHTML 프로퍼티와 비교해서 매우 효율적이다.
 
-- innerHTML은 요소의 text부분을 설정하는 것이 아닌, JS에서 동적으로 HTML요소를 삽입할 때 사용하는 것이 목적에 맞다.
+- innerHTML 프로퍼티는 요소의 text부분을 설정하는 것이 아닌, JS에서 동적으로 HTML요소를 삽입할 때 사용하는 것이 목적에 맞다.
 
 ### innerText
 
-- HTMLElement interface의 속성인 innerText는 `브라우저 상에 표현된, 즉 브라우저상에서 표현된(rendered) 텍스트 값만을 포함한다.`
+- HTMLElement interface에서 제공하는 innerText 프로퍼티는 브라우저 상에 표현된 텍스트, 즉 `브라우저상에서 표현된(rendered) 텍스트 값만을 포함한다.`
 
-- 또한 innerText는 `style` 에 영향을 받는다. 요소의 스타일이 `display: none, visibility: hidden처럼 브라우저에서 보이지 않게하는 스타일`을 적용받는 요소의 텍스트 값은 포함하지 않는다. `(opacity: 0 스타일은 innerText에 포함된다)`
+- 또한 innerText는 `style` 에 영향을 받는다. 요소의 스타일이 'display: none', 'visibility: hidden' 스타일처럼 브라우저에서 보이지 않게하는 스타일을 적용받는 요소의 텍스트는 포함하지 않는다. `('opacity: 0' 스타일을 적용받은 경우 innerText에 포함된다)`
 
   - [요소 자체가 render되지 않은 경우는 textContent와 같은 값을 포함하고 있다.](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText#value)
 
@@ -835,7 +837,7 @@ divEl.innerHTML = '<img src="xxxx" onerror="XSS" />'
 
 #### textContent vs innerText
 
-- innerText는 style을 parsing 과정을 거치므로, layout 해석과정에서 textContent와 비교했을 때 성능적인 차이가 있기 때문에 이를 고려해야 한다. `(물론 요소 안에 style을 삽입하는 경우는 없을 것이다.)`
+- innerText는 style 부분을 해석(parsing) 한다. 이로 인해 컴퓨팅적 비용 소모와, 스타일로 인한 layout 해석 및 reflow 발생 가능성이 있다. 따라서 textContent와 비교했을 때 성능적인 차이가 있기 때문에 이를 고려해야 한다. `(물론 요소 안에 style을 삽입하는 경우는 없을 것이다.)`
 
 ## toLocaleString
 
