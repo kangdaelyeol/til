@@ -42,6 +42,8 @@
 
 - [footnotes](#footnotes)
 
+- [breadcrumb](#breadcrumb)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -935,11 +937,11 @@ ol li::marker {
 
 - breadcrumb은 웹 서비스 내에서 자신이 현재 어느 페이지 경로에 있는지 알려주는 역할을 한다.
 
-- 또한 검색 엔진에도 노출될 수 있기 때문에 `SEO(Search Enging Optimization)` 관점에서도 중요하게 작용한다.
+- 또한 검색 엔진에도 노출될 수 있기 때문에 [SEO(Search Enging Optimization)](https://en.wikipedia.org/wiki/Search_engine_optimization) 관점에서도 중요한 요소다.
 
-- breadcrumb은 웹 페이지상 자신의 경로를 알려주기 때문에 사용자 관점에서 페이지를 바로 나가지 않고 뒤로가기를 유도해 [이탈률(bounce rate)](https://en.wikipedia.org/wiki/Bounce_rate)을 줄일 수 있다.
+- breadcrumb은 웹 페이지상 자신의 경로를 알려주기 때문에 사용자 관점에서 페이지를 바로 나가지 않고 뒤로가기를 유도해 페이지 [이탈률(bounce rate)](https://en.wikipedia.org/wiki/Bounce_rate)을 줄일 수 있다.
 
-- breadcrumb item 사이에 간격을 두고 separator를 삽입하는데, flex 속성과 gap 속상을 활용할 수 있다.
+- breadcrumb item 요소 사이에 간격을 두고 separator 요소를 삽입하기 위해 flex 속성과 gap 속성을 활용할 수 있다.
 
 ```css
 .footer .breadcrumbs {
@@ -963,9 +965,9 @@ ol li::marker {
 
 - separator를 이미지로써 사용하는 경우 이미지의 width크기와 breadcrumb items 사이 gap 크기를 계산해 중앙에 배치하도록 한다.
 
-  - **separator의 left / right 각 여백 = gap(30px) - width(8px) / 2 = 11px**
+  - **separator 이미지의 left / right 각 여백 = gap(30px) - width(8px) / 2 = 11px**
 
-  - 즉 right값을 separator의 width크기값(8px)를 포함해 총 -19px만큼 이동시키면 separator를 중앙에 배치할 수 있다.
+  - 즉 right값을 separator의 width 크기의 절반(4px)을 포함해 총 -19px만큼 이동시키면 separator를 중앙에 배치할 수 있다.
 
 ## flex-box - remaining space(positive free space)
 
