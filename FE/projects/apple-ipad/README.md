@@ -40,6 +40,8 @@
 
 - [toLocaleString vs Intl](#tolocalestring-vs-intl)
 
+- [footnotes](#footnotes)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -884,13 +886,13 @@ Every time toLocaleString is called, it has to perform a search in a big databas
 
 ## footnotes
 
-- 제품 설명의 부가적인 설명을 덧붙이기 위해 [footnote]() 를 사용한다.
+- 제품 설명의 부가적인 설명을 덧붙이기 위해 [footnote](<https://en.wikipedia.org/wiki/Note_(typography)>) 를 사용한다.
 
 ### sup tag로 윗 첨자 추가
 
-- `sup(superscript)` 태그로 윗첨자를 추가하고 `a` 태그의 href속성을 설정해 해당 부분을 클릭시 footnote로 이동할 수 있게 한다.
+- `sup(superscript)` 태그로 윗 첨자를 추가하고 `a` 태그의 href속성을 설정해 해당 부분을 클릭시 footnote로 이동할 수 있게 한다.
 
-- sup 태그가 문장에서 글씨 윗 부분에 고정될 수 있는 이유는 브라우저에서 제공하는 기본 스타일중 `vertical-align: super` 스타일이 설정되어있는데, `reset.css` 등 스타일을 모두 초기화하는 스타일을 적용시킨 경우, 다시 스타일을 설정해주어야 한다.
+- sup 태그가 문장에서 글씨 윗 부분에 고정될 수 있는 이유는 브라우저에서 제공하는 기본 스타일(user-agent style)중 `vertical-align: super` 스타일이 설정되어있는데, reset.css 등 커스텀 스타일을 적용한 경우, 스타일을 재설정해야 한다.
 
 ```css
 sup {
@@ -901,13 +903,13 @@ sup {
 
 - font-size 크기도 조절해 footnote를 구현한다.
 
-- pixel 값보단 em등 상대단위를 사용하는 것이 반응형 디자인에 더욱 유리하다.
+- pixel 단위처럼 정적인 값 보단 em 등 상대단위를 사용하는 것이 반응형 디자인에 더욱 유리하다.
 
 ### ol tag로 순서 정렬
 
 ![footnotes](./readme_img/footnotes.png)
 
-- 페이지 맨 마지막에 표현된 footnote의 순서를 부여하기 위해 ol 태그를 사용한다.
+- 가장 마지막에 표현된 footnote의 순서를 부여하기 위해 ol 태그를 사용한다.
 
 - ol태그 또한 reset.css 스타일이 적용된 경우 기본 스타일이 적용되지 않았으므로 `list-style` 속성을 설정해야 한다.
 
@@ -921,11 +923,11 @@ ol li::marker {
 }
 ```
 
-- `list-style: decimal` 스타일을 적용함으로써 해당 리스트에 포함된 li 들은 `marker`를 가지게 되며, `li::marker`로써 가상요소가 생성된다.
+- `list-style: decimal` 스타일을 적용함으로써 해당 리스트에 포함된 li 요소들은 `marker` 가상 요소를 가지게 되며, `li::marker`로써 가상 요소가 기본적으로 생성된다.
 
-- marker는 각 li안에 자식요소로 써 생성 되기 때문에 ol또는 li의 font 관련 스타일 변경시 marker에도 같이 적용 되지만, marker에 대해 따로 적용하고 싶을 땐, li::marker 가상 요소를 선택하여 따로 스타일을 변경할 수 있다.
+- marker는 각 li 요소안에 자식요소로써 생성 되기 때문에 ol 또는 li 태그의 font 관련 스타일 변경시 상속 관계를 통해 marker에도 같은 스타일이 적용되지만, marker 가상요소에 한정된 스타일을 적용하고 싶을 땐, li::marker 가상 요소를 선택하여 따로 스타일을 변경할 수 있다.
 
-- ::marker는 가상요소이지만, ::after, ::before과 다르게 스타일을 적용시킬 수 있는 범위가 한정되어있다. 즉 `::marker` 가상요소는 스타일 적용 범위가 제한적이다.
+- ::marker는 가상 요소이지만, '::after', '::before' 요소와 다르게 스타일을 적용시킬 수 있는 범위가 한정되어있다. 즉 '::marker' 가상요소는 스타일 적용 범위가 제한적이다.
 
 ## breadcrumb
 
