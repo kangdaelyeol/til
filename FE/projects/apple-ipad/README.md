@@ -46,6 +46,8 @@
 
 - [flex-box - remaining space(positive free space)](#flex-box---remaining-spacepositive-free-space)
 
+- [appendChild - append](#appendchild---append)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -1107,15 +1109,11 @@ ol li::marker {
 
 ### appendChild
 
-- [Node interface의 appendChild 메서드](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)는 요소의 맨 마지막 자식 요소로써 `Node` 를 추가한다.
+- [Node interface의 appendChild 메서드](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)는 요소의 마지막 자식 요소로써 Node 를 추가한다.
 
-- **appendChild(aChild)**
+- 입력되는 인수 값은 [DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment) 타입이거나 DocumentType, Element 또는 CharacterData 인터페이스를 상속하는 타입의 값이어야 한다. - `즉 일반적인 String, Number 같은 데이터는 text node로 써 입력할 수 없다.(text 노드는 ChararaterData 인터페이스와 상속 구조로써, 노드를 직접 생성하고 추가해야 한다.)`
 
-  - [aChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild#achild) parameter를 받아 자식 요소로써 추가한다.
-
-  - argument는 `Node interface`를 상속받는 DocumentFragment, Element, CharacterData, DocumentType 을 상속하는 타입의 값이어야 한다. - `즉 일반적인 String, Number 같은 데이터는 text node로 써 입력할 수 없다.`
-
-- appendChild는 삽입된 자신의 Node를 반환하므로 method chaining 기법을 통해 반복 호출함으로써 [nested DOM structure](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild#creating_a_nested_dom_structure)를 생성할 수 있다.
+- appendChild는 삽입된 자신의 Node를 반환하므로 method chaining 기법을 통해 반복 호출함으로써 [nested DOM](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild#creating_a_nested_dom_structure) 구조를 생성할 수 있다.
 
 ```javascript
 // main.js - Compare Item Group - ipad item render
@@ -1208,17 +1206,17 @@ ipadDataList.forEach((data) => {
 })
 ```
 
-- comment tagged template로 작성된 HTML구조를 appendChild를 사용한 형식으로 변경해보았다.
+- **comment tagged template** 형식으로 작성된 HTML구조를 appendChild를 사용한 형식으로 변경해보았다.
 
-- 코드가 길어지고, 가독성 측면에서 React문법과 유사한 comment tagged template와 비교해서 비효율적이다.
+- 결과적으로 코드가 길어지며 복잡성이 증가했고, React 문법과 유사한 comment tagged template 형식과 비교했을 때 가독성이 떨어지고 비효율적이다.
 
 - 해당 HTML 구조 생성은 nested DOM structure 생성에 유리한 appendChild의 장점을 살리지 못한것 같아 아쉽다.
 
 ### append
 
-- Element interface의 메서드인 append는 appendChild 메서드보다 이후에 표준화된 메서드다.
+- Element interface의 [append](https://developer.mozilla.org/en-US/docs/Web/API/Element/append) 메서드는 appendChild 메서드 이후에 표준화된 메서드다.
 
-- appendChild와 달리 `여러개의 arguments`를 입력할 수 있고, `String type value` 또한 입력할 수 있다. 이는 내부적으로 textNode로 변경되어 삽입된다고 한다. 대신 반환값은 없다.
+- appendChild와 달리 여러개의 인수를 입력할 수 있고, 문자열(string type value) 또한 입력할 수 있다. 이는 내부적으로 textNode로 변경되어 삽입된다고 한다.
 
 - 위에 appendChild 메서드를 사용한 HTML구조를 append 메서드를 사용한 구조로 변경해보았다.
 
@@ -1279,9 +1277,9 @@ ipadDataList.forEach((data) => {
 })
 ```
 
-- 여러개의 arguments를 입력할 수 있는 장점 외엔 별 차이가 없어보인다. 이 마저도 가독성 측면에서 보면 장점이라고 보여지지 않는다.
+- 여러개의 arguments를 입력할 수 있는 장점 외엔 별 차이가 없어보인다. appendChild 메서드를 사용했을 때와 비교했을때, 가독성 측면에서 차이점이 없지만 편의성은 높아졌다.
 
-- `결론적으로 복잡한 HTML구조를 javascript상에서 동적으로 생성할 때 comment tagged template를 사용하는 것이 가장 효율적이라 판단.`
+- `결론적으로 복잡한 HTML구조를 javascript상에서 동적으로 생성할 때 comment tagged template 형식을 사용하는 것이 가장 효율적이라 판단.`
 
 ## image positioning - figure
 
