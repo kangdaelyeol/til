@@ -48,6 +48,8 @@
 
 - [appendChild - append](#appendchild---append)
 
+- [image positioning - figure](#image-positioning---figure)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -1283,7 +1285,7 @@ ipadDataList.forEach((data) => {
 
 ## image positioning - figure
 
-- 이미지를 배치하기 위해 figcaption 태그와 함께 [figure tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) 안에 배치한다.
+- 이미지 요소를 figcaption 태그와 함께 [figure 태그](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) 안에 그룹화 함으로써 논리적인 구조로 표현한다.
 
 ![img positioning sample](./readme_img/img-positioning.png)
 
@@ -1324,7 +1326,7 @@ ipadDataList.forEach((data) => {
 </div>
 ```
 
-- 각 info-box와 figure-box는 normal flow에 영향을 주는, 공간을 가지는 element로 배치한다.
+- 각 info-box와 figure-box 요소는 normal flow에 영향을 주는, 공간을 가지는 요소로 배치한다.
 
 ### info-box
 
@@ -1348,9 +1350,9 @@ ipadDataList.forEach((data) => {
 }
 ```
 
-- info-box 요소 안에 있는 info 정보들은 세로 축으로 공간을 차지하며 flex를 통해 오른쪽으로 밀어냄으로 써 배치될 수 있다.
+- info-box 요소 안에 있는 info 정보들은 세로 축으로 공간을 차지하며 flex를 통해 오른쪽으로 정렬함으로써 배치될 수 있다.
 
-- flex를 배치를 통해 왼쪽에 remaining space 공간을 두어 viewport 크기가 줄어들었을 때 유연하게 브라우저 상에 요소가 표현될 수 있게 한다.
+- flex를 배치를 통해 왼쪽에 remaining space 공간을 두어서 viewport 크기가 줄어들었을 때 유연하게 브라우저 상에 요소가 표현될 수 있게 한다.
 
 ### figure-box
 
@@ -1384,9 +1386,15 @@ ipadDataList.forEach((data) => {
 }
 ```
 
-- 이미지 요소들은 absolutely positioned element로써 위치를 변경하고 자유로운 위치에 배치되어야 하므로, 이미지 요소의 크기가 최상위 요소인 figure-box의 크기에 영향을 미치게 되면 레이아웃 계산이 힘들어진다.
+- 이미지 요소들은 absolutely positioned element로써 위치를 변경하고 자유로운 위치에 배치되어야 하므로, 이미지 요소의 크기가 최상위 요소인 figure-box 크기에 영향을 미치게 되면 레이아웃 계산이 힘들어진다.
 
-- 따라서 이미지 요소 배치를 위한 최상위 요소는 css 스타일상 height 크기를 임의로 주어서 normal flow에 영향을 주어야 한다.
+- 따라서 이미지 요소 배치를 위한 최상위 요소는 고정적인 height 크기를 주어서 normal flow에 영향을 주고, 하위 요소에 의해 height 크기가 변하지 않도록 한다.
+
+  - height 영역을 지정하는 것은 이미지가 대략적으로 배치될 공간을 확보하기 위함이다.
+
+  - 현재 디자인에서 figure-box는 normal flow에 영향을 주는 크기(height)를 가지지만, 상황에 따라 height 크기를 직접 지정하지 않고, normal flow에 영향을 주지 않아도 된다. 최상위 요소의 height 크기가 변해도 이미지의 위치는 변하지 않기 때문이다.
+
+  - 만약 figcaption 요소와 img 요소 모두 absolute position 속성을 가지게 되면 부모 요소인 figure 요소의 height값이 0px 크기를 가지게 되지만, 최상위 요소인 **figure-box의 height 크기가 정해져있기 때문에** layout 배치에 영향을 주진 않는다.
 
 - figure 요소를 wrapper요소(figure-1, figure-2, figure-3)를 정의하여 한 번 더 감싸줌으로써 대략적인 배치를 먼저 해준다.
 
@@ -1394,7 +1402,7 @@ ipadDataList.forEach((data) => {
 
   - figure wrapper 요소는 상위 요소인 figure-box의 flex 속성 영향을 받아 cross-axis 방향 공간을 모두 차지하는 것을 볼 수 있다. 큰 의미는 없다.
 
-  - 각각 wrapper 요소의 class이름을 다르게 주어 구분할 수 있게 한다. CSS selector에서 각각의 wrapper 요소의 클래스를 선택하고, 하위 요소로 figure 요소를 선택하고, 위치를 변경할 수 있다.
+  - 각각 wrapper 요소의 class이름을 다르게 주어 구분할 수 있게 한다. CSS selector에서 각각 다른 클래스 이름의 wrapper 요소를 선택하고, 하위 요소로 figure 요소를 선택함으로써 위치를 변경한다.
 
 ```css
 .figure-1 figure {
@@ -1418,13 +1426,15 @@ ipadDataList.forEach((data) => {
 
 ---
 
-- `figure` 요소는 img 요소와 figcaption 요소를 포함하고, 해당 요소들을 함께 움직여야 하기 때문에 absolute position 속성을 가진다.
+- 각각의 figure-1, 2, 3 wrapper 요소는 하위 요소의 absolute positioning 배치를 위한 기준점이 될 필요가 있다. 따라서 'position: relative' 스타일을 적용한다.
 
-- `figcaption` 요소는 `img` 요소 주변에 적절히 배치 되어야 하므로 absolute position 속성을 가지고, img 요소는 부모 요소인 figure 요소가 위치를 이동함으로 써 자연스럽게 배치될 것이기 때문에 absolute position 속성을 가지지 않아도 무관하다.
+  - 'position: absolute' 스타일이 적용된 요소는 **가장 가까운 위치의 조상 요소(nearest positioned ancestor)** 를 기준으로 배치(offset) 된다고 한다.
 
-- 만약 figcaption 요소와 img 요소 모두 absolute position 속성을 가지게 되면 부모 요소인 figure 요소의 height값이 0px 크기를 가지게 되지만, 최상위 요소인 **figure-box의 height 크기가 정해져있기 때문에** layout 배치에 영향을 주진 않는다.
+  - 그 조상 요소는 'position: static' 스타일이 아닌 요소인데, 이러한 요소를 어떻게 부르는지 MDN 문서에도 정의되어 있지 않다.
 
-- 현재 디자인에서 figure-box는 normal flow에 영향을 주는 크기를 가지지만, 상황에 따라 height를 직접 지정하지 않고, normal flow에 영향을 주지 않아도 된다. 최상위 요소의 height 크기가 변해도 이미지의 위치는 변하지 않는다.
+- `figure` 요소는 img 요소와 figcaption 요소를 포함하고, 해당 요소들을 함께 움직여야 하기 때문에 'absolute: position' 스타일을 가진다.
+
+- `figcaption` 요소는 img 요소 주변에 적절히 배치 되어야 하므로 absolute position 속성을 가지고, img 요소는 부모 요소인 figure 요소가 위치를 이동함으로 써 자연스럽게 배치될 것이기 때문에 'absolute: position' 스타일을 가지지 않아도 무관하다.
 
 ## flex - negative margin
 
