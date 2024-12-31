@@ -122,4 +122,6 @@ web_modules/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
-.cache
+dist
+
+.history
