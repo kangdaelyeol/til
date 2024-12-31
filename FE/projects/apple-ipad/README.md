@@ -50,6 +50,8 @@
 
 - [image positioning - figure](#image-positioning---figure)
 
+- [flex - negative margin](#flex---negative-margin)
+
 ## word-break: keep-all
 
 - width 제한이 있는 container에 text를 입력할 때 줄 바꿈(wrap)을 단어별로 발생시키기 위해 [word-break: keep-all](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#keep-all) 스타일을 사용한다.
@@ -1438,7 +1440,7 @@ ipadDataList.forEach((data) => {
 
 ## flex - negative margin
 
-- flex container안에서 flex item의 negative margin 크기에 의해 flex container의 크기가 0이 된 이후 작용하는 positioning에 대해 알아보았다.
+- flex container 내부 flex item의 negative margin 크기에 의해 flex container의 크기가 0이 된 이후 작용하는 positioning에 대해 알아보았다.
 
 - 결과적으로 negative margin값으로 인해 flex container의 크기가 0이 된 이후 flex item의 positioning 규칙과 style상 위치 값에 의해 요소의 위치가 결정된다.
 
@@ -1465,25 +1467,31 @@ ipadDataList.forEach((data) => {
 
 - flex contatiner(p)는 space-between 분배 스타일을 가지고 있어 첫 요소와 마지막 요소는 각각 flex container의 각 끝 모서리에 위치한다.
 
-#### top 요소의 margin-top을 줄였을 때
+#### top 요소의 margin-top 크기를 줄였을 때
 
 <img src="./readme_img/nagative__justify-space-between2.png" /> <img src="./readme_img/nagative__justify-space-between3.png" />
 
-- margin-top 속성은 요소 자신의 위치까지 이동시키므로 flex container 공간을 overflow하게 된다.
+- margin-top 속성은 요소 자신의 위치까지 이동시키므로 flex container 공간을 overflow 한다.
 
-- flex container의 크기가 완전히 줄어들기 전까지는 negative margin 여백에 의해 flex container의 크기 감소로 인한 요소들의 `상대적인 이동` 이 발생하고 그 이후 flex 정렬 방식에 의한 특성, 요소들의 style상 위치값 계산에 의한 레이아웃이 결정된다.
+- flex container의 크기가 완전히 줄어들기 전까지는 negative margin 여백에 의해 flex container의 크기 감소로 인한 요소들의 normal document flow 에 기반한 `상대적인 이동` 이 발생하고 그 이후 flex 정렬 방식에 의한 특성, 요소들의 style상 위치값 계산에 의한 레이아웃이 결정된다.
 
-- top 요소는 margin-top 크기를 줄이고, `justify-content: space-between` 특성상 첫 가장자리에 위치하려 하기 때문에 계속해서 위로 이동 할 수 있다.
+- top 요소의 margin-top 크기를 감소시키면 요소가 위쪽으로 향하는데, `justify-content: space-between` 특성상 첫 가장자리에 위치하려 하기 때문에 계속해서 위로 이동 할 수 있다.
 
 - middle 요소는 top 요소의 위치값에 따라 bottom요소 사이에 위치하려 하므로 이동이 가능하다.
 
 - bottom 요소는 맨 끝 가장자리에 위치하려 하기 때문에 flex container의 크기가 모두 즐어든 후 이동하지 않는다.
 
-#### top 요소의 margin-bottom을 줄였을 때
+##### conclusion
+
+- margin-top 크기 감소 -> 요소들이 위쪽으로 이동(위쪽에 보이지 않는 공간 생성)
+
+- 이동하는 요소 - t, m, b 요소 / 정렬 방식 - justify-content: space-between -> 이에 맞추어 정렬
+
+#### top 요소의 margin-bottom 크기를 줄였을 때
 
 <img src="./readme_img/nagative__justify-space-between4.png" /> <img src="./readme_img/nagative__justify-space-between5.png" />
 
-- margin-bottom 속성은 일반적으로 자신보다 밑에 쌓인 요소의 위치를 변경한다.
+- margin-bottom 속성은 일반적으로 layout상 자신보다 뒤에 위치한 요소들 위치를 변경한다.
 
 - negative margin 크기를 두어 flex container의 크기를 최대한 줄인 경우 예상한 대로 overflow가 발생한다.
 
@@ -1491,9 +1499,9 @@ ipadDataList.forEach((data) => {
 
 - `justify-content: space-between` 스타일 특성상 top요소는 첫 가장자리에 위치하려하고, bottom요소는 끝 가장자리에 위치하려 한다.
 
-- bottom, middle요소가 top요소보다 위로 가게 된 것은 negative margin으로 flex container의 크기 감소로 인한 요소들의 `상대적인 이동`이며, container가 완전히 사라진 후 다른 메커니즘으로 계산이 되어 middle 요소만 위로 이동하게 된다.
+- bottom, middle요소가 top요소보다 위로 가게 된 것은 negative margin으로 flex container의 크기 감소와 관련된 요소들의 정상적인 이동이며, container가 완전히 사라진 후 다른 메커니즘을 통해 계산되어 middle 요소만 위로 이동하게 된다.
 
-- `상대적인 요소의 이동` 이 끝난후 브라우저는 요소의 style상 크기, positioning(flex positioning) 조건을 따져 요소를 배치하게 된다.
+- flex container와 상호작용에 의한 요소의 이동 이 끝난후 브라우저(chrome)는 요소의 style상 크기, **flex positioning(justify-content)** 조건에 따라 요소를 배치하게 된다.
 
 - top 요소의 음수값의 margin-bottom 으로 인해 layout상 top의 가장자리는 top요소보다 위쪽에 위치하게 된다.
 
@@ -1501,9 +1509,15 @@ ipadDataList.forEach((data) => {
 
 - top 요소는 margin-bottom으로 인해 자신이 이동하지 않으므로 자신의 위치를 그대로 지킨다.
 
-- bottom 요소는 가상의 top 위치 값이 위로 이동했지만 space-between 스타일 특성상 밑 가장자리에 위치하려 하므로 더이상 이동하지 않는다.
+- middle 요소는 top 요소의 margin-bottom 값에 의해 위로 이동하므로 flex positioning(justify-content: space-between) 조건에 맞춰 적당히 위로 이동하게 된다.
 
-- middle 요소는 가상의 top 위치 값이 위로 이동했으므로 이에 맞추어 위로 이동하게 된다.
+- bottom 요소는 가상의 top 위치 값이 위로 이동했지만 space-between 스타일 특성상 밑쪽 가장자리에 위치하려 하므로 더 이상 이동하지 않는다.
+
+##### conclusion
+
+- margin-bottom 크기 감소 -> 요소들이 위쪽으로 이동(위쪽에 보이지 않는 공간 생성)
+
+- 이동하는 요소 - m, b 요소 / 정렬 방식 - justify-content: space-between -> 이에 맞추어 m, b 요소 정렬
 
 ### 중간 결과
 
@@ -1513,7 +1527,7 @@ ipadDataList.forEach((data) => {
 
   - 맨 끝 가장자리에 위치하는 특성이 없는, 중간 위치에 있는 요소들은 이동한다.
 
-- 그렇다면 모든 요소의 위치가 어정쩡한, 중간에 위치하는 `justify-content: space around` 스타일이 적용되면 어떨까?
+- 그렇다면 모든 요소가 flex container 안에서 고르게 정렬되는 `justify-content: space around` 스타일이 적용되면 어떨까?
 
 ### justify-content: space-around
 
@@ -1533,22 +1547,28 @@ ipadDataList.forEach((data) => {
 
 - margin-bottom 속성은 요소의 위치를 변경시키지 않고, normal flow상 밑에 위치하는 요소의 위치를 변경시킨다.
 
-- flex container 요소의 크기가 0이 된 후 하위 요소들은 top의 margin-bottom 값의 관점으로 top 요소가 윗방향에 위치하고 위쪽으로 이동하기 때문에 이에 맞추어 middle 요소와 bottom요소는 이동하게 된다.
+- flex container 요소의 크기가 0이 된 후 하위 요소들은 top의 margin-bottom 값의 관점으로 늘어난 가상의 공간이 위쪽 방향으로 늘어나기 때문에 이에 맞추어 middle 요소와 bottom요소는 이동하게 된다.
 
-- top 요소는 margin-bottom 속성으로 자신이 이동할 수 없지만, flex container 크기가 0이 된 후 `줄어들 크기가 없어 결국 자신이 이동하게 된다`.
+- top 요소는 margin-bottom 속성 특성상 자신이 이동할 수 없지만, flex container 크기가 0이 된 후 `줄어들 크기가 없어 결국 자신이 이동하게 된다`.
 
-- space around 특성상 모든 요소가 이동 가능하고, 위치에 따라 이동 비율이 다르기 떄문에 가장자리에 존재하는 top요소는 비교척 천천히 이동한다.
+- space around 특성상 모든 요소가 이동 가능하고, 위치에 따라 이동 비율이 다르기 떄문에 가장자리에 존재하는 top 요소는 비교척 천천히 이동한다.
+
+##### conclusion
+
+- margin-bottom 크기 감소 -> 요소들이 위쪽으로 이동(위쪽에 보이지 않는 공간 생성)
+
+- 이동하는 요소 - m, b 요소 / 정렬 방식 - justify-content: space-around -> 이에 맞추어 m, b 요소 정렬
+
+  - top 요소는 flex-positioning 방식에 따라 자신의 위쪽에도 추가 공간(remaining space)에 따른 공간이 생기므로, 그 공간만큼 밑으로 이동
 
 ### 최종 결과
 
 - negative margin으로 인한 flex container의 layout 방식과 관련된 문서를 찾을 수 없어 각종 경우의 수를 두고 실험을 해서 margin과 layout의 관계에 대해 깊게 생각해 볼 수 있었다.
 
-- 이는 flex container의 목적에 맞는 사용방법이 아니기 때문에, 이와 관련된 명확히 정의된 사용 방법이 존재하지 않았고, 목적에 어긋난 방법으로 flex를 사용한 결과로써 `undefined behavior` 와 같은 개념이라 판단, 즉 브라우저마다 작동 방식이 다를 수 있고, 크로스 브라우징, 동등성 측면에서 매우 비효율적인 접근, 활용 방식이라고 생각한다.
+- 이는 flex container의 목적에 맞는 사용방법이 아니기 때문에, 이와 관련하여 명확히 정의된 사용 방법이 존재하지 않았다. 결과적으로 목적에 어긋난 방법으로 flex를 사용한 결과로써 `undefined behavior` 와 같은 개념이라 판단, 즉 브라우저마다 작동 방식이 다를 수 있고, 크로스 브라우징, 동등성 측면에서 매우 비효율적인 접근, 활용 방식이라고 생각한다.
 
-- 그래도 결과를 내보자면
+#### 그래도 결과를 내보자면
 
-  1. flex 정렬방식(justify-content)에 의도된 메커니즘으로 요소들이 이동하려고 한다.
+1. flex 정렬 방식(justify-content)에 의도된 메커니즘으로 요소들이 이동하려고 한다.
 
-  1. margin에 의해 이동하는 요소들은 margin크기 변경에 일치된 방향으로 이동한다.
-
-  1. margin에 의해 이동하지 않는 요소들(normal flow / layout상 상위 / 이전 위치에 있는 요소들)은 margin으로 인해 축소되는 방향과 반대로 이동한다.
+1. margin에 의해 이동하는 요소들은 margin 크기 변경에 따라 일관된 방향으로 이동한다.
