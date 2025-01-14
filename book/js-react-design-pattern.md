@@ -107,3 +107,100 @@
 - 행위 패턴은 시스템 내의 객체간의 커뮤니케이션을 개선하거나 간소화 하는 방법에 중점을 둔다. 객체간의 공통적인 커뮤니케이션 패턴을 감지하고 책임을 분배함으로써 커뮤니케이션의 유연성을 높이고 객체의 행위를 추상화한다.
 
 - 이터레이터(Iterator), 중재자(Mediator), 관찰자(Observer), 방문자(Visitor) 패턴이 행위 패턴에 속한다.
+
+## 자바스크립트 디자인 패턴
+
+### 모듈 패턴
+
+- 모듈 패턴은 클래스 기반 언어에서 **캡슐화** 구현하기 위해 고안된 개념이다.
+
+- JS 환경에서 모듈 패턴은 클로저를 활용해 비공개 상태와 구성을 캡슐화 한다.
+
+```js
+// count 변수는 모듈 스코프 내에서만 접근 가능한 비공개 변수로서 작동한다.
+let count = 0;
+
+// count 자유변수는 testModule 클로저의 스코프에서 유효하다. 따라서 메서드를 통해서 참조가 가능하다.
+const testModule = {
+	increment() {
+		return count++;
+	},
+
+	reset() {
+		console.log(`count value prior to reset: ${count}`);
+		count = 0;
+	},
+};
+
+export default testModule;
+```
+
+#### 모듈에서 default로 공개하는 클로저를 namespace로써 사용이 가능하다.
+
+```js
+let privateVar = 0;
+
+const privateMethod = (value) => {
+	console.log(value);
+};
+
+// nameSpace 객체는 공개변수, 공개함수만이 정의되어 있고, 메서드를 통해 비공개 변수, 메서드에 접근할 수 있다.
+// 즉 비공개 변수, 메서드는 모듈 스코프를 유효범위로 갖는 myNamespace 클로저 내부에서 보호된다.
+const myNamespace = {
+	publicVar: 'foo',
+
+	publicFunc(value) {
+		privateVar++;
+
+		privateMethod(value);
+	},
+};
+
+export default myNamespace;
+```
+
+- 모듈 패턴은 클로저를 통해 비공개 맴버를 쉽게 정의하고 관리할 수 있으며, 관련 기능을 한 객체에 모아두기 때문에 디버깅에서도 용이하다.
+
+- 단점으로는 자동화 단위 테스트(unit test)에서 비공개 맴버는 접근이 어려워 테스트 범위가 제한되고, 오류를 고칠 때 복잡도를 높인다. 비공개 멤버를 고치기 위해서 해당 비공개 맴버를 사용하는 모든 공개 메서드를 보아야 하기 때문이다.
+
+#### WeakMap을 사용하는 모듈 패턴
+
+- class와 WeakMap을 활용한 모듈을 생성할 수 있다.
+
+- WeakMap은 객체의 참조를 key로 사용하여 해당 객체가 가비지컬렉션 대상이 될 경우 자동으로 소멸되어 메모리 누수를 방지해준다.
+
+```js
+const basket = new WeakMap();
+const privateMethod = new WeakMap();
+
+class BasketModule {
+	constructor() {
+		// WeakMap은 객체를 key값으로 받는다. 생성자 함수에서 생성된 this 객체를 key 값으로 설정하여 비공개 맴버를 생성한다.
+
+		basket.set(this, []);
+		privateMethod.set(this, () => {
+			// do something...
+		});
+	}
+
+	// 공개 메서드를 정의하고, 공개 메서드에서 비공개 맴버를 참조하는 로직을 구현한다.
+
+	doPublicMethod() {
+		privateMethod.get(this)();
+	}
+
+	addItem(values) {
+		const basketData = basket.get(this);
+		basketData.push(values);
+		basket.set(this, basketData);
+	}
+
+	getItemCount() {
+		return basket.get(this).length;
+	}
+
+	getTotalPrice() {
+		return basket.get(this).reduce((pre, item) => item.price + pre, 0);
+	}
+}
+```
