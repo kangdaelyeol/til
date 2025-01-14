@@ -204,3 +204,49 @@ class BasketModule {
 	}
 }
 ```
+
+### 싱글톤 패턴
+
+- 싱글톤(Singleton) 패턴은 클래스의 인스턴스가 오직 하나만 존재하도록 제한하는 패턴이다.
+
+- 싱글톤 패턴은 전역에서 접근 및 공유해야 하는 단 하나의 객체가 필요할 때 사용된다.
+
+- 싱글톤 패턴은 C++, Java와 같은 언어에서 **static** 키워드를 통해 생성하는 정적 클래스 인스턴스와 달리 객체 초기화 시점을 제어할 수 있다. 이는 객체를 초기화 할 때 필요한 정보가 아직 유효하지 않을 수 있기 때문이다.
+
+  - 싱글톤은 C++같은 언어에서 지연된 실행(Lazy Loading)을 통해 개발자에게 제어권을 주어 동적 초기화 순서의 예측 불가능성을 제거하는 역할을 한다.
+
+```js
+// 모듈 스코프에 유효한 싱글톤 인스턴스 참조와 비공개 맴버를 생성한다.
+let instance;
+
+const privateMethod = () => {
+	// do something...
+};
+
+const privateVariable = 'private';
+
+const randomNumber = Math.random();
+
+class MySingleton {
+	constructor() {
+		// 클래스 생성자는 암묵적으로 this를 반환하지만, 인스턴스 참조 변수를 반환하도록 설정하여 클래스 생성자 함수에서 공통된 참조를 반환하도록 한다.
+		if (!instance) {
+			// do something...
+			instance = this;
+		}
+
+    // 항상 같은 인스턴스 참조를 반환하여 싱글톤을 보장한다.
+		return instance;
+	}
+
+	publicMethod() {
+		// do something...
+	}
+
+	getRandomNumber() {
+		return randomNumber;
+	}
+}
+```
+
+- 싱글톤은 유용하지만 인스턴스를 생성하기 위해 클래스를 선언해야 하는 Java, C++ 언어와 달리 JS 환경에서는 객체 리터럴을 통해 바로 생성할 수 있다. 따라서 JS 환경에서 싱글톤이 필요하다는 것은 재설계를 고려해야 한다는 신호일 수도 있다.
