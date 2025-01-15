@@ -292,3 +292,116 @@ const myCar = Object.create(carProto, {
 
 myCar.sayHello(); // 메서드는 프로토타입 객체에 정의되어 있고, 새로 생성된 객체는 그 참조를 가리킨다.
 ```
+
+### 팩토리 패턴
+
+- 팩토리 패턴은 객체 생성을 담당하는 **팩토리 객체** 를 생성하여 객체 생성 과정을 추상화 하는 패턴이다.
+
+  - 즉, 객체 생성 로직을 별도의 팩토리 객체에 위임함으로써 클래스 생성자나 복잡한 설정 과정을 직접 드러내지 않도록 추상화 한다.
+
+- 팩토리 패턴을 사용하는 것이 유용한 상황
+
+  - 객체 생성 과정이 복잡할 때
+
+  - 같은 속성을 공유하는 여러개의 작은 객체 또는 컴포넌트를 다뤄야 할 때
+
+  - [duck typing](https://en.wikipedia.org/wiki/Duck_typing)과 같이, 특정 API 조건을 충족하는 다른 객체 인스턴스와 함께 인스턴스를 구성할 때
+
+- 하지만 팩토리 패턴은 객체 생성 과정을 인터페이스(팩토리) 뒤로 추상화 하기 때문에 객체 생성 과정이 복잡할 경우 단위 테스트의 복잡성을 증가시킬 수 있다.
+
+```js
+class Car {
+	constructor({ wheel = 4, name = 'myCar', doors = 4, color = 'silver' }) {
+		this.wheel = wheel;
+		this.name = name;
+		this.doors = doors;
+		this.color = color;
+	}
+}
+
+class Truck {
+	constructor({ wheelSize = 'large', name = 'myTruck', color = 'silver' }) {
+		this.wheelSize = wheelSize;
+		this.name = name;
+		this.color = color;
+	}
+}
+
+// 여러 타입의 객체를 생성 할 수 있는 팩토리 인터페이스를 선언한다.
+// 객체의 생성 과정(constructor)은 팩토리 인터페이스 뒤로 추상화 한다.
+class VehicleFactory {
+	constructor() {
+		this.vehicleClass = Car;
+	}
+
+	getVehicle({ vehicleType, ...attr }) {
+		switch (vehicleType) {
+			case 'car':
+				this.vehicleClass = Car;
+				break;
+			case 'truck':
+				this.vehicleClass = Truck;
+				break;
+			default:
+				console.warn(`Unknown vehicle type: ${vehicleType}`);
+		}
+
+		return new this.vehicleClass(attr);
+	}
+}
+
+const carFactory = new VehicleFactory();
+
+const myCar = carFactory.getVehicle({
+	wheel: 1,
+	name: 'rkdeofuf',
+});
+
+const myTruck = carFactory.getVehicle({
+	vehicleType: 'truck',
+	wheelSize: 'sm',
+});
+```
+
+#### 추상 팩토리 패턴
+
+- 추상 팩토리 패턴은 같은 목표를 가진 각각의 팩토리들을 하나의 그룹으로 캡슐화 하는 패턴이다.
+
+  - 즉, 여러 팩토리를 하나의 상위 인터페이스로 묶는 패턴이다.
+
+```js
+class AbstractVehicleFactory {
+	constructor() {
+		this.types = {};
+	}
+
+	registerVehicle(typeName, type) {
+		// 공통된 목적을 충족하는 팩토리만 생성하기 위해 팩토리 생성 조건을 설정한다.
+		const proto = type.prototype;
+		if (!proto.drive) return;
+
+		this.types[typeName] = type;
+	}
+
+	getVehicle(typeName, ...attr) {
+		const type = this.types[typeName];
+		return type ? new type(attr) : null;
+	}
+}
+
+const vehicleFactory = new AbstractVehicleFactory();
+
+// 클래스를 인수로 입력해 팩토리를 등록한다.
+vehicleFactory.registerVehicle('car', Car);
+vehicleFactory.registerVehicle('truck', Truck);
+
+const myCar = vehicleFactory.getVehicle('car', {
+	wheel: 1,
+	name: 'rkdeofuf',
+});
+
+const myTruck = vehicleFactory.getVehicle('truck', {
+	vehicleType: 'truck',
+	wheelSize: 'sm',
+});
+```
