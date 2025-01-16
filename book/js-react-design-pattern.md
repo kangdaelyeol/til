@@ -108,7 +108,7 @@
 
 - 이터레이터(Iterator), 중재자(Mediator), 관찰자(Observer), 방문자(Visitor) 패턴이 행위 패턴에 속한다.
 
-## 자바스크립트 디자인 패턴
+## 자바스크립트 디자인 패턴 - Creational Pattern
 
 ### 모듈 패턴
 
@@ -405,3 +405,45 @@ const myTruck = vehicleFactory.getVehicle('truck', {
 	wheelSize: 'sm',
 });
 ```
+
+## 자바스크립트 디자인 패턴 - Structural Pattern
+
+### 퍼사드 패턴
+
+- 퍼사드(Facade)란 실제 모습을 숨기고 꾸며낸 겉모습만을 세상에 드러내는 것을 말한다. 이러한 뜻에서 영감을 받아 퍼사드 패턴이라고 이름이 지어졌다.
+
+- 퍼사드 패턴의 특징은 사용성이 높은 수준의 인터페이스를 제공하는것이다.
+
+  - 즉, 코드의 **구현 부분과 사용 부분을 분리** 함으로써 인터페이스를 단순화 하며, 단순화된 인터페이스만 노출한다.
+
+```js
+// API 인터페이스 구현 부분
+const _private = {
+	num: 1,
+	get() {
+		return this.num;
+	},
+	set(value) {
+		this.num = value;
+	},
+	run() {
+		// do something...
+	},
+};
+
+// 구현한 인터페이스의 사용을 추상화(facade) 함으로써 실제 퍼사드를 사용하는 부분의 코드를 간략히 하고, 사용성을 높인다.
+const module = {
+	facade({ value, run }) {
+		_private.set(value);
+		_private.get();
+		if (run) {
+			_private.run();
+		}
+	},
+};
+
+// 모듈 내부에선 구현된 동작이 수행되지만, 사용자는 내부에서 무슨 일이 벌어지는지 몰라도 된다.
+module.facade({ value: 123, run: true });
+```
+
+- 퍼사드 패턴은 여러 동작을 추상화하는 레이어를 추가하기 때문에 시스템 자체가 단순한 경우 오히려 코드의 복잡성이 증가하고, 유지보수성이 떨어질 수 있다.
