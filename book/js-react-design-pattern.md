@@ -447,3 +447,61 @@ module.facade({ value: 123, run: true });
 ```
 
 - 퍼사드 패턴은 여러 동작을 추상화하는 레이어를 추가하기 때문에 시스템 자체가 단순한 경우 오히려 코드의 복잡성이 증가하고, 유지보수성이 떨어질 수 있다.
+
+### 믹스인 패턴
+
+- 믹스인(Mixin)이란 기존 클래스(super class)에 특정 기능을 간단하게 **섞어 넣을 수 있도록(mix in)** 설계된 재사용 가능한 코드 구성을 말한다.
+
+  - 즉, 하나의 클래스로부터 여러 기능을 상속받기 어렵거나, 다양한 기능을 조합해 써야 할 때, 믹스인 패턴은 유용하게 사용된다.
+
+- JS 환경에서 클래스는 일급 객체로써 표현식으로 사용할 수 있으며 함수의 인수로 입력될 수 있다.
+
+- 또한 extends 키워드에 클래스를 변수로써 입력받아 동적으로 상속이 가능하다. 이를 활용하여 믹스인 함수를 정의할 수 있다.
+
+```js
+// 핵심 로직을 담당하는 클래스(superclass)를 받아 부가적 기능을 상속후 반환하는 믹스인 함수를 정의한다.
+const HelloMixin = (superclass) => {
+	return class extends superclass {
+		constructor(props) {
+			super(props);
+
+			this.name = props.name;
+		}
+		sayHello() {
+			console.log('my name is:', this.name);
+		}
+	};
+};
+
+const ByeMixin = (superclass) => {
+	return class extends superclass {
+		sayBye() {
+			console.log('bye!');
+		}
+	};
+};
+
+class Car {
+	constructor(props) {
+		const { wheel } = props;
+		this.wheel = wheel;
+	}
+	moveUp() {
+		// do something...
+	}
+
+	moveDown() {
+		// do something
+	}
+}
+
+// 믹스인 함수에 기존 핵심 클래스를 입력해 부가적 기능을 추가한 새로운 클래스를 선언한다.
+class MyCar extends ByeMixin(HelloMixin(Car)) {}
+
+const myCar = new MyCar({ name: 'eofuf', wheel: 4 });
+
+myCar.sayHello();
+myCar.sayBye();
+```
+
+- JS 환경에서 다중 상속을 지원하지 않지만, 믹스인 체이닝을 통해 여러 클래스(기능)을 섞어 새 클래스를 생성할 수 있다.
