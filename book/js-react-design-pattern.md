@@ -452,7 +452,7 @@ module.facade({ value: 123, run: true });
 
 - 믹스인(Mixin)이란 기존 클래스(super class)에 특정 기능을 간단하게 **섞어 넣을 수 있도록(mix in)** 설계된 재사용 가능한 코드 구성을 말한다.
 
-  - 즉, 하나의 클래스로부터 여러 기능을 상속받기 어렵거나, 다양한 기능을 조합해 써야 할 때, 믹스인 패턴은 유용하게 사용된다.
+  - 즉, 하나의 클래스로부터 여러 기능을 상속받기 어렵거나 다양한 기능을 조합해 써야 할 때 믹스인 패턴은 유용하게 사용된다.
 
 - JS 환경에서 클래스는 일급 객체로써 표현식으로 사용할 수 있으며 함수의 인수로 입력될 수 있다.
 
@@ -505,3 +505,161 @@ myCar.sayBye();
 ```
 
 - JS 환경에서 다중 상속을 지원하지 않지만, 믹스인 체이닝을 통해 여러 클래스(기능)을 섞어 새 클래스를 생성할 수 있다.
+
+### 데코레이터 패턴
+
+- 데코레이터(Decorator) 패턴은 동적 서브클래싱과 코드 재사용을 목표로 하는 패턴이다.
+
+- 데코레이터는 핵심 도메인 로직이 구현된 기존 클래스에 동적으로 기능을 추가하기 위해 사용된다.
+
+- 기능 확장에 따라 다양한 객체 요구가 되면 각 객체에 해당하는 다양한 클래스를 설계하게 되는 현상이 발생한다.
+
+  - 기능이 확장됨에 따라 생성해야 하는 클래스는 복리적으로 늘어날 수 있다. 이는 효율적이지 않기 때문에 객체 생성에 초점을 맞추지 않고, 기능 확장에 초점을 두는 것이다.
+
+- JS 환경에서 클래스 인스턴스에 직접적으로 새로운 메서드를 추가할 때, 메서드를 데코레이터로써 추가한다고 볼 수 있다.
+
+  - 하지만 이러한 단순 구현으로 데코레이터의 이점을 챙길 수 없기 때문에, 데코레이터 클래스를 선언한다.
+
+```js
+class MacBook {
+	constructor() {
+		this.cost = 997;
+		this.screenSize = 11.6;
+	}
+
+	getCost() {
+		return this.cost;
+	}
+
+	getScreenSize() {
+		return this.screenSize;
+	}
+}
+
+// 베이스 클래스 인스턴스를 받아 기능을 확장하는 데코레이터 클래스 선언
+// 기능을 확장할 핵심 클래스(MacBook)를 명시적으로 확장하고, 기존 클래스 메서드를 데코레이터로 오버라이드(override)한다.
+class Memory extends MacBook {
+	constructor(macBook) {
+		super();
+		this.macBook = macBook;
+	}
+
+	getCost() {
+		// 주의할 점은 데코레이터가 상속받은 클래스의 메서드를 호출하는 것이 아닌, 생성자 함수에서 파라미터로 받은 인스턴스의 메서드를 호출하는 것이다.
+		// 엄밀히 말하면 오버라이딩이라 볼 수 없고, 기존 반환값에 추가적으로 반환값을 더하는 재귀호출이라고 볼 수 있다.
+		return this.macBook.getCost() + 75;
+	}
+}
+
+class Engraving extends MacBook {
+	constructor(macBook) {
+		super();
+		this.macBook = macBook;
+	}
+
+	getCost() {
+		return this.macBook.getCost() + 200;
+	}
+}
+
+let macBook = new MacBook();
+
+// 기존 객체에 기능을 추가(decorate) 한다.
+macBook = new Memory(macBook);
+
+// 기존 객체에 기능을 추가(decorate) 한다.
+macBook = new Engraving(macBook);
+
+console.log(macBook.getCost()); // 1272 (997 + 75 + 200)
+```
+
+#### 추상 데코레이터
+
+- 데코레이터 패턴에서 데코레이터 전용 인터페이스를 따로 정의하여, 이를 바탕으로 구체적 데코레이터들을 생성하는 변형 패턴이다.
+
+- 인터페이스를 사용하는 이유?
+
+  - 인터페이스는 스스로의 문서 역할을 하고 재사용성을 높인다.
+
+  - 이론적으로 인터페이스의 변경사항이 객체의 구현에도 반영되게 하므로, 코드의 안정성과 일관성을 높여 준다.
+
+- 추상 데코레이터 패턴의 구성 요소
+
+  - Component: 클래스 인터페이스
+
+  - Concrete Compoenent: 클래스 인터페이스의 구현체(실제 클래스)
+
+  - Decorator: 데코레이터 인터페이스, Component와 동일한 인터페이스를 제공하면서 내부적으로 Component를 참조한다.
+
+  - Concrete Decorator: 데코레이터 인터페이스의 구현체(데코레이터 클래스)
+
+```js
+// Component: JS 환경에는 인터페이스가 없기 때문에, 임의로 인터페이스 구현을 가정
+const MacBookInterface = new Interface('MacBook', [
+	'addEngraving',
+	'addParallels',
+	'add4GBRam',
+	'add8GBRam',
+	'addCase',
+	'getPrice',
+]);
+
+// Concrete Component
+class MacBook {
+	// MacBook 구현
+}
+
+// Decorator - 추상 데코레이터 정의, JS 환경은 추상 클래스를 지원하지 않으므로 보일러플레이트 형식으로 정의
+class MacBookDecorator {
+	constructor(macBook) {
+		// 입력받은 인스턴스가 인터페이스에 맞는지 확인하는 과정 추상화
+		Interface.ensureImplements(macBook, MacBookInterface);
+		this.macBook = macBook;
+	}
+
+	// 기본적으로 원본 객체에 메서드를 위임
+	addEngraving() {
+		return this.macBook.addEngraving();
+	}
+
+	addParallels() {
+		return this.macBook.addParallels();
+	}
+
+	add4GBRam() {
+		return this.macBook.add4GBRam();
+	}
+
+	add8GBRam() {
+		return this.macBook.add8GBRam();
+	}
+
+	addCase() {
+		return this.macBook.addCase();
+	}
+
+	getPrice() {
+		return this.macBook.getPrice();
+	}
+}
+
+// Concrete Decorator - 컴포넌트를 확장한 데코레이터 인터페이스를 구현.
+// 기능을 부분적으로 확장한다.
+class CaseDecorator extends MacBookDecorator {
+	constructor(macBook) {
+		super(macBook);
+	}
+
+	addCase() {
+		return `${this.macBook.addCase()}Adding case to macbook`;
+	}
+
+	getPrice() {
+		return this.macBook.getPrice() + 45;
+	}
+}
+```
+
+- 추상 데코레이터 패턴은 여러 데코레이터가 같은 인터페이스(추상 클래스)를 공유하므로, 코드 일관성과 확장성이 높다. 데코레이터를 체인으로 연결해도 구조가 단순해지고, 교체하거나 추가하기도 쉽다.
+
+- 하지만 모든 데코레이터가 같은 인터페이스를 구현해야 하므로, 간단한 기능 확장시 번거로울 수 있다.
