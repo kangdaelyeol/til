@@ -781,3 +781,135 @@ const testFlyWeight = () => {
 	}
 };
 ```
+
+#### 플라이웨이트 패턴을 사용한 도서 대출 관련 기능 구현
+
+**플라이웨이트 최적화 이전**
+
+- 대출 가능한 책의 클래스를 선언한다
+
+```js
+// 단 하나의 객체가 모든 상태를 관리
+class Book {
+	constructor(
+		id,
+		title,
+		author,
+		ISBN,
+		availability,
+		checkoutDate,
+		checkoutMember,
+		dueReturnDate
+		// More attrs ...
+	) {
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		this.ISBN = ISBN;
+		this.availability = availability;
+		this.checkoutDate = checkoutDate;
+		this.checkoutMember = checkoutMember;
+		this.dueReturnDate = dueReturnDate;
+	}
+
+	// Getter ...
+
+	updateCheckoutStatus(
+		id,
+		newStatus,
+		checkoutDate,
+		checkoutMember,
+		newReturnDate
+	) {
+		this.id = id;
+		this.availability = newStatus;
+		this.checkoutDate = checkoutDate;
+		this.checkoutMember = checkoutMember;
+		this.dueReturnDate = newReturnDate;
+	}
+
+	// Methods ...
+}
+```
+
+- 상태와 메서드를 모두 포함하는 기본적인 클래스 형태는 단 하나의 클래스에 모든 로직이 정의되었기 때문에 코드의 의도를 파악하기 쉽다.
+
+- 하지만 예외 상황(중복된 책이 여러 개 있는 경우)으로 인해 중복된 데이터가 여러 개 생성될 수 있다. 이는 메모리 사용에 비효율적이다.
+
+**플라이웨이트 최적화 이후**
+
+- 공유될 수 있는 내부 상태(intrinsic state)만을 포함하는 Book 클래스를 선언하고, 이를 생성하는 팩토리를 선언한다.
+
+```js
+// 공유되는 플라이웨이트 객체를 저장하는 객체는 싱글톤으로써 정의한다.
+const existingBooks = {};
+
+class Book {
+	constructor(
+		title,
+		author,
+		ISBN
+		// More attrs ...
+	) {
+		this.title = title;
+		this.author = author;
+		this.ISBN = ISBN;
+	}
+}
+
+class BookFactory {
+	createBook({ title, author, ISBN }) {
+		// ISBN 값은 책마다 고유하므로 책의 식별자(PK) 역할을 한다.
+		// 같은 책에 대한 입력값은 같은 객체를 반환하도록 설계한다.
+		let book = existingBooks[ISBN];
+		if (!book) {
+			existingBooks[ISBN] = new Book(title, author, ISBN);
+			book = existingBooks[ISBN];
+		}
+		return book;
+	}
+}
+```
+
+- 대출 정보를 관리하는 매니저 클래스를 선언한다.
+
+- 대출 정보를 저장하는 데이터베이스 객체도 싱글톤으로 관리되도록 한다.
+
+```js
+const bookRecordDatabase = {};
+
+class BookRecordManager {
+	addBookRecord({
+		// 중복된 책에 대하여 구분하기 위한 고유한 식별자 id값을 할당한다.
+		id,
+		title,
+		author,
+		ISBN,
+		checkoutDate,
+		checkoutMember,
+		dueReturnDate,
+		availability,
+	}) {
+		const book = bookFactory.createBook({ title, author, ISBN });
+
+		// 데이터베이스 정보에 외부 상태와 내부 상태를 저장한다.
+		bookRecordDatabase[id] = {
+			book,
+			checkoutDate,
+			checkoutMember,
+			dueReturnDate,
+			availability,
+		};
+	}
+
+	// 변경할 수 있는 외부 상태에 대한 메서드를 정의한다.
+	updateCheckoutStatus({ id, newStatus }) {
+		const record = bookRecordDatabase[id];
+		record.availability = newStatus;
+	}
+}
+```
+
+- 이러한 방식으로 중복되는 내부 상태만을 남기고, 고유 상태를 기반으로 데이터를 관리하는 구조를 설계할 수 있다.
+
+- 플라이웨이트 패턴은 최종적으로 객체 구조의 복잡성을 더하게 되지만, 중복된 데이터가 많은 객체를 생성하게 되는 애플리케이션 구조의 경우 최적화를 통해 많은 이점을 얻을 수 있다.
