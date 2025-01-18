@@ -663,3 +663,121 @@ class CaseDecorator extends MacBookDecorator {
 - 추상 데코레이터 패턴은 여러 데코레이터가 같은 인터페이스(추상 클래스)를 공유하므로, 코드 일관성과 확장성이 높다. 데코레이터를 체인으로 연결해도 구조가 단순해지고, 교체하거나 추가하기도 쉽다.
 
 - 하지만 모든 데코레이터가 같은 인터페이스를 구현해야 하므로, 간단한 기능 확장시 번거로울 수 있다.
+
+### 플라이웨이트 패턴
+
+- 플라이웨이트(flyweight) 패턴은 객체 생성의 중복을 없애기 위해 나온 기법이며, 결과적으로 메모리 사용을 최적화 하기 위한 기법이다.
+
+  - '플라이웨이트' 용어는 격투기에서 경량급(flyweight) 에서 유래했으며, 용어의 뜻 그대로 경량화에 초점을 맞추었다.
+
+- 객체는 상태(state)를 갖는데, **공유할 수 있는 상태(intrinsic state)** 는 객체에 유지하고, **공유할 수 없는 상태(extrinsic state)** 는 객체 외부로 빼내어 **컨텍스트(context)** 헬퍼가 관리하여 필요할 때만 객체에 주입하도록 설계한다.
+
+- 플라이웨이트 패턴 구조
+
+  - Flyweight: 플라이웨이트 클래스 인터페이스
+
+  - Concrete Flyweight: 플라이웨이트 인터페이스 구현체(클래스)
+
+  - Extrinsic State Helper Context: 공유 불가능한 상태를 관리하는 헬퍼 객체
+
+  - Flyweight Factory: 플라이웨이트 객체를 생성하는 팩토리
+
+```js
+// JS 환경은 객체를 동적으로 프로토타입 상속 구조로 만들어주는 메서드가 없기 때문에, 임의적으로 객체(Interface)를 상속받게 할 수 있는 로직을 구현한다.
+
+// 책에서는 이러한 기법을 'duck punching' 이라 설명한다.
+// - 하지만 'duck punching(monkey patching)' 기법은 기존의 기능(source)의 교체 없이 확장하는 기법이므로, 동적으로 새로운 프로토타입 상속구조를 형성하는 것은 duck punching 기법 특징에 맞지 않는다. 따라서 '동적 프로토타입 상속' 이라고 보는 것이 맞다.
+class InterfaceImplementation {
+	static implementsFor(superclassOrInterface) {
+		if (superclassOrInterface instanceof Funciton) {
+			this.prototype = Object.create(superclassOrInterface);
+			this.prototype.constructor = this;
+		} else {
+			this.prototype = Object.create(superclassOrInterface);
+			this.prototype.constructor = this;
+		}
+	}
+}
+
+// flyweight - 인터페이스를 객체로써 선언한다.
+const CoffeeOrder = {
+	serveCoffee(context) {},
+	getFlavor() {},
+};
+
+// concrete flyweight - 인터페이스를 구현한 실제 플라이웨이트 클래스를 선언한다.
+class CoffeeFlavor extends InterfaceImplementation {
+	constructor(newFlavor) {
+		super();
+		// flavor 프로퍼티는 공유될 수 있는 고유의 상태(intrinsic state)이기 때문에 인스턴스의 프로퍼티로써 존재할 수 있다.
+		this.flavor = newFlavor;
+	}
+
+	getFlavor() {
+		return this.flavor;
+	}
+
+	// 공유 될 수 없는 고유의 상태(extrinsic)는 context로 캡슐화 되어 플라이웨이트 객체로 전달받아 기능을 수행한다.
+	serveCoffee(context) {
+		console.log(
+			`Serving Coffee flavor ${this.flavor} to table ${context.getTable()}`
+		);
+	}
+}
+
+// Coffee Order 인터페이스 객체를 프로토타입으로써 상속 받는 구조를 형성한다.
+CoffeeFlavor.implementsFor(CoffeeOrder);
+
+// 공유될 수 없는 고유의 상태(extrinsic state)를 컨텍스트(context) 객체로 캡슐화하는 헬퍼를 정의한다.
+const CoffeeOrderContext = (tableNumber) => ({
+	getTable() {
+		return tableNumber;
+	},
+});
+
+// flyweight factory - 재사용 될 수 있는 플라이웨이트 객체를 생성하는 팩토리 클래스를 선언한다.
+class CoffeeFlavorFactory {
+	constructor() {
+		this.flavors = {};
+		this.length = 0;
+	}
+
+	// factory method - 특정 프로퍼티를 받아 해당 프로퍼티를 갖는 객체가 있으면 공유될 수 있는 객체이므로 같은 객체를 반환하는 로직을 형성한다.
+	getCoffeeFlavor(flavorName) {
+		let flavor = this.flavors[flavorName];
+		if (!flavor) {
+			flavor = new CoffeeFlavor(flavorName);
+			this.flavors[flavorName] = flavor;
+			this.length++;
+		}
+		return flavor;
+	}
+
+	getTotalCoffeeFlavorsMade() {
+		return this.length;
+	}
+}
+
+const testFlyWeight = () => {
+	const flavors = [];
+	const tables = [];
+	let ordersMade = 0;
+	const flavorFactory = new CoffeeFlavorFactory();
+
+	const takeOrders = (flavorIn, table) => {
+		// 만약 주문(takeOrders)이 많다면, 커피의 맛(flavor)은 한정되어 있고 해당 프로퍼티를 가진 객체는 공유될 수 있으므로, 같은 객체를 생성한다.
+		flavors.push(flavorFactory.getCoffeeFlavor(flavorIn));
+
+		// 테이블 번호는 공유 될 수 없는 고유의 속성이므로 따로 컨텍스트로써 관리된다.
+		tables.push(CoffeeOrderContext(table));
+		ordersMade++;
+	};
+
+	takeOrders('Cappuchino', 2);
+
+	for (let i = 0; i < ordersMade; i++) {
+		// flyweight객체는 공유될 수 없는 속성(extrinsic state)를 받아 고유의 동작을 수행한다.
+		flavors[i].serveCoffee(tables[i]);
+	}
+};
+```
