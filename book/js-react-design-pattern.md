@@ -672,7 +672,7 @@ class CaseDecorator extends MacBookDecorator {
 
 - 객체는 상태(state)를 갖는데, **공유할 수 있는 상태(intrinsic state)** 는 객체에 유지하고, **공유할 수 없는 상태(extrinsic state)** 는 객체 외부로 빼내어 **컨텍스트(context)** 헬퍼가 관리하여 필요할 때만 객체에 주입하도록 설계한다.
 
-- 플라이웨이트 패턴 구조
+- 플라이웨이트 패턴 구성 요소
 
   - Flyweight: 플라이웨이트 클래스 인터페이스
 
@@ -940,3 +940,139 @@ class BookRecordManager {
 - 이벤트 핸들러에 포함된 데이터와 로직는 공유될 수 있는 데이터이자 로직이므로, 내부 상태(intrinsic state)로 간주할 수 있다. 즉, 여러 li 요소가 같은 이벤트 핸들러를 사용하기 때문이다.
 
 - 이벤트 핸들러는 li 태그의 textContent를 사용하므로, 각 li 태그에 입력된 텍스트는 외부 상태(extrinsic state)이며, li 태그의 DOM 객체는 외부 상태를 캡슐화한 컨텍스트(Context)로 간주할 수 있다.
+
+## 자바스크립트 디자인 패턴 - Behavioral Pattern
+
+### 관찰자 패턴
+
+- 관찰자(Observer) 패턴은 한 객체가 변경될 때 다른 객체들에게 변경되었음을 알릴 수 있게 해주는 패턴이다.
+
+- 변경된 객체는 누가 자신을 구독하는지 알 필요 없이 모든 구독자에게 알림을 보낼 수 있다.
+
+**관찰자 패턴 구성 요소**
+
+- 주체(Subject): 관찰자 리스트(Observer list) 관리에 관한 기능을 제공하는 인터페이스
+
+- 관찰자(Observer): 주체의 상태 변화 알림을 감지하는 기능을 제공하는 인터페이스
+
+- 구체적 주쳬(Concrete Subject): 주체(Subject) 인터페이스를 구현한 클래스. 관찰자를 저장하고 목적에 맞게 관찰자들에게 알림을 전달하는 인터페이스를 구현.
+
+- 구체적 관찰자(Concrete Observer): 관찰자(Observer) 인터페이스를 구현한 클래스. 주체의 상태 변화와 관찰자의 상태 변화를 일치하는 인터페이스를 구현.
+
+**전통적인 관찰자 패턴**
+
+- 버튼 요소를 클릭하면 컨테이너에 관찰자(Concrete Observer) 체크박스가 추가되며, 각 요소들은 주체(Concrete Subject) 체크박스의 상태 변경을 감지해 값을 동기화 하는 기능 구현.
+
+```js
+// 주체(Subject)가 포함할 관찰자 리스트를 클래스로 추상화
+// 관찰자 리스트 클래스는 리스트에 관리에 대한 행동(method)을 포함
+class ObserverList {
+	constructor() {
+		this.observerList = [];
+	}
+
+	add(obj) {
+		return this.observerList.push(obj);
+	}
+
+	count() {
+		return this.observerList.length;
+	}
+
+	get(index) {
+		if (index < 0 || index >= this.observerList.length) {
+			return;
+		}
+
+		return this.observerList[index];
+	}
+
+	indexOf(obj, startIndex) {
+		let i = startIndex;
+
+		while (i < this.observerList.length) {
+			if (this.observerList[i] === obj) {
+				return i;
+			}
+			i++;
+		}
+		return -1;
+	}
+
+	removeAt(index) {
+		this.observerList.splice(index, 1);
+	}
+}
+
+// 주체(Subject) - 관찰자 목록을 추가, 제거하고 알리는 기본적인 기능을 제공하는 인터페이스
+class Subject {
+	constructor() {
+		this.observerList = new ObserverList();
+	}
+
+	addObserver(observer) {
+		this.observerList.add(observer);
+	}
+
+	removeObserver(observer) {
+		this.observerList.removeAt(this.observerList.indexOf(observer, 0));
+	}
+
+	notify(context) {
+		const observerCount = this.observerList.count();
+		for (let i = 0; i < observerCount; i++) {
+			this.observerList.get(i).update(context);
+		}
+	}
+}
+
+// 구체적 주체(Concrete Subject) - 주체 역할을 하는 요소를 캡슐화하며, 상태 변화에 관한 조건을 정의
+class ConcreteSubject extends Subject {
+	constructor(element) {
+		super();
+		this.element = element;
+
+		// 상태 변화를 일으키는 조건을 주체 자신의 상태값이 변경되는 사건으로 정의하며, 이에 따라 관찰자(Observer)에게 알림(notify) 전송
+		this.element.addEventListener('change', () => {
+			this.notify(this.element.checked);
+		});
+	}
+}
+
+// 관찰자(Observer) - 자신의 상태를 변화하는 기능을 포함하는 인터페이스
+class Observer {
+	constructor() {}
+	update() {}
+}
+
+// 구체적 관찰자(Concrete Observer) - 관찰자 역할을 하는 요소를 캡슐화하며, 상태 변화를 감지하고, 주체의 상태 변화에 따른 자신의 상태 변화(update)를 구체화
+class ConcreteObserver extends Observer {
+	constructor(element) {
+		super();
+		this.element = element;
+	}
+
+	// 관찰자의 변화될 수 있는 상태를 요소의 체크 상태(element.checked) 프로퍼티로 정의.
+	update(value) {
+		this.element.checked = value;
+	}
+}
+
+const addBtn = document.querySelector('.btn');
+const container = document.querySelector('.btn-container');
+
+// 요소를 구제척 주체(Concrete Subject)로 캡슐화
+const checkBox = new ConcreteSubject(document.querySelector('.check-box'));
+
+addBtn.addEventListener('click', () => {
+	const newCheckBox = document.createElement('input');
+	newCheckBox.type = 'checkbox';
+
+	// 새로 생성되는 요소를 구체적 관찰자(Concrete Observer)로 캡슐화
+	const observer = new ConcreteObserver(newCheckBox);
+
+	checkBox.addObserver(observer);
+
+	container.append(newCheckBox);
+});
+```
