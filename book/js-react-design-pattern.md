@@ -913,3 +913,30 @@ class BookRecordManager {
 - 이러한 방식으로 중복되는 내부 상태만을 남기고, 고유 상태를 기반으로 데이터를 관리하는 구조를 설계할 수 있다.
 
 - 플라이웨이트 패턴은 최종적으로 객체 구조의 복잡성을 더하게 되지만, 중복된 데이터가 많은 객체를 생성하게 되는 애플리케이션 구조의 경우 최적화를 통해 많은 이점을 얻을 수 있다.
+
+#### 중앙 집중식 이벤트 핸들링
+
+- DOM 이벤트 버블링을 활용하여 공통된 이벤트 핸들러를 상위 요소에 등록하고 하위 요소가 이를 공통 참조 함으로써 메모리 사용을 최적화 할 수 있다.
+
+```html
+<ul class="fruit-list">
+	<li>apple</li>
+	<li>banana</li>
+	<li>tomato</li>
+</ul>
+<script>
+	document.querySelector('.fruit-list').addEventListener('click', (e) => {
+		if (e.target.tagName !== 'LI') return;
+
+		const text = 'click';
+
+		e.target.textContent += text;
+	});
+</script>
+```
+
+- ul 태그에 등록된 이벤트 핸들러는 하위 li 요소들에 의해 공통적으로 사용되므로, 이를 공유 객체인 flyweight 객체로 간주할 수 있다.
+
+- 이벤트 핸들러에 포함된 데이터와 로직는 공유될 수 있는 데이터이자 로직이므로, 내부 상태(intrinsic state)로 간주할 수 있다. 즉, 여러 li 요소가 같은 이벤트 핸들러를 사용하기 때문이다.
+
+- 이벤트 핸들러는 li 태그의 textContent를 사용하므로, 각 li 태그에 입력된 텍스트는 외부 상태(extrinsic state)이며, li 태그의 DOM 객체는 외부 상태를 캡슐화한 컨텍스트(Context)로 간주할 수 있다.
