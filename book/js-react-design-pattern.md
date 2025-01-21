@@ -1092,3 +1092,84 @@ addBtn.addEventListener('click', () => {
 	container.append(newCheckBox);
 });
 ```
+
+### 발행/구독 패턴
+
+- 실제 JS 환경에서는 관찰자(Observer) 패턴의 변형인 발행/구독(Publish/Subscribe) 패턴이 더 널리 사용된다.
+
+- 이는 JS 환경 특성상 이벤트 기반의 로직인 발행자(publisher)와 구독자(subscriber) 객체가 느슨하게 연결되는 구조가 자주 쓰이기 때문이다.
+
+**발행/구독 패턴 특징**
+
+- 발행/구독 패턴에서는 발행자와 구독자 사이 토픽/이벤트 채널(Topic/Event Channel)을 두어 발행자와 구독자가 서로 직접 참조하지 않아도 되도록 느슨한 결합(loose coupling)을 유지한다.
+
+- 객체(발행자)는 다른 구독자의 메서드를 직접 호출하는 대신, 특정 토픽에 메시지(이벤트)를 발행하고, 특정 토픽(topic)을 구독하고 있는 구독자들은 이벤트가 발생했을 때 알림을 받아 콜백을 실행한다.
+
+- 이로써, 발행자와 구독자의 관계가 독립적으로 유지되어, 서로의 내부 구조나 메서드를 알 필요가 없다.
+
+**발행/구독 패턴 구현**
+
+- 메시지 로깅과 관련된 기능을 구독(subscribe)하여 토픽/이벤트 채널에 등록하고, 이벤트 발행(publish)시 메시지를 로그로 출력하는 기능 구현
+
+```js
+// Topic/Event Channel 클래스 구현
+class PubSub {
+	constructor() {
+		this.topics = {};
+
+		this.subscriptionUID = 0;
+	}
+
+	// publish - 지정된 topic에 대한 구독자의(subscribe) 메서드를 호출한다.
+	publish(topic, ...args) {
+		const subscriberList = this.topics[topic];
+
+		if (!subscriberList) return;
+
+		subscriberList.forEach((sub) => sub.func(topic, ...args));
+	}
+
+	// subscribe - 입력된 topic에 대한 콜백 함수를 등록하여 구독한다.
+	subscribe(topic, cb) {
+		if (!this.topics[topic]) this.topics[topic] = [];
+
+		this.topics[topic].push({
+			func: cb,
+			token: ++this.subscriptionUID,
+		});
+
+		return this.subscriptionUID;
+	}
+
+	// unsubscribe - 구독시 발행된 토큰을 입력하여 구독 정보를 삭제한다.
+	unsubscribe(token) {
+		for (const topic in this.topics) {
+			this.topics[topic] = this.topics[topic].filter(
+				(sub) => sub.token !== token
+			);
+		}
+	}
+}
+
+const pubsub = new PubSub();
+
+const messageLogger = (topic, data) => {
+	console.log(`${topic} : ${data}`);
+};
+
+const subscription1 = pubsub.subscribe('message', messageLogger);
+
+pubsub.publish('message', 'message1');
+
+pubsub.unsubscribe(subscription1);
+
+pubsub.publish('message', 'message2'); // 출력 x
+```
+
+**발행/구독 패턴 단점**
+
+- 발행/구독 패턴에서는 발행자와 구독자의 연결을 분리한다. 따라서 특정 부분들이 기대하고 있는데로 동작하고 있다는 것을 보장하기 어려워질 수 있다.
+
+- 발행자는 구독자의 의존 정보를 모르고, 또한 구독자는 다른 구독자의 존재를 모르기 때문에 실행 흐름을 파악하려 할 때 이벤트 소비 순서와 의존 관계에 대한 추적이 어렵다.
+
+- 구독자와 발행자 사이의 관계가 동적으로 결정되기 때문에 시스템이 커질수록 구독자 / 발행자의 의존 관계를 파악하기 어려워질 수 있다.
