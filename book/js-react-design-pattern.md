@@ -1178,7 +1178,7 @@ pubsub.publish('message', 'message2'); // 출력 x
 
 - 발행/구독 패턴은 이벤트 집합(Event Aggregation) 패턴과 유사하다.
 
-- 두 패턴은 구조적 측면으로 같다고 생각해도 되지만, 이벤트(topic)를 보내는 발행자와, 알림 또는 이벤트을 받는 구독자의 사이 관계, 워크플로 처리 형태와 목적에 차이점이 있다.
+- 두 패턴은 구조적 측면으로 같다고 생각해도 되지만, 이벤트(topic)를 보내는 발행자와, 알림 또는 이벤트을 받는 구독자의 사이 관계, 워크플로 처리 형태와 목적, 즉 패턴에 의도에 차이점이 있다.
 
 **발행/구독 패턴 특징**
 
@@ -1197,3 +1197,104 @@ pubsub.publish('message', 'message2'); // 출력 x
 - 발행자와 구독자가 특정되지 않는 경우가 많다.
 
 - 발행/구독 패턴 방식보다 가벼운 작업에 대해 해당 개념 사용 (주로 가벼운 이벤트 흐름이나 UI 이벤트 등에서 하나의 이벤트 버스로 간단히 관리할 때)
+
+### 중재자 패턴
+
+- 중재자(Mediator) 패턴은 다수의 객체들이 직접 통신하지 않고 중앙 객체(중재자)를 통해 상호작용하도록 만드는 디자인 패턴이다.
+
+- 중재자 패턴은 **워크플로 객체(중재자 객체)** 를 중앙 관리자로 두어 비즈니스와 로직과 워크플로를 중재자 내부로 집중시킨다. 따라서 객체(협력자) 사이 이벤트 처리를 조건에 따라 제어한다.
+
+**중재자 패턴 구성 요소**
+
+- Mediator - 중재자의 행위를 추상적으로 정의한 인터페이스
+
+- Concrete Mediator - 중재자 인터페이스의 행위를 구현한 클래스(인스턴스)
+
+- Colleague - 중재자와 소통할 수 있는 협력자의 행위를 추상화 하여 포함한 인터페이스
+
+- Concrete Colleague - 협력자 인터페이스를 구현한 클래스(인스턴스)
+
+**이벤트 집합(Event Aggregation - Pub/Sub) 패턴과 비교**
+
+- 유사점
+
+  - 이벤트 집합 패턴과 같이 중앙 관리자를 두어 객체 사이의 관계를 느슨하게 하는 특징은 동일하다고 볼 수 있다.
+
+- 차이점
+
+  - 이벤트 집합 패턴에서 서드 파티 객체(이벤트 채널)는 이벤트가 연결되도록 지원하는 역할만 하기 때문에 내부적으로 이벤트 처리에 대한 제어를 하지 않는다. 즉, 모든 워크플로와 비즈니스 로직은 발행자(Source), 구독자(handler) 객체에 직접 구현된다.
+
+  - 중재자 패턴에서 비즈니스 로직과 워크플로는 서드 파티 객체(중재자) 내부에 집중된다. 자신이 소유한 정보를 바탕으로 각 협력자 객체들의 행위(메서드 호출) 필요성을 판단한다. 즉, 객체들의 적절한 행위 시기를 판단하여 알려준다.
+
+  - 이벤트 집합 패턴은 **발행 후 망각(fire and forgot)** 방식의 소통 모델을 사용한다. 발행자는 구독자의 존재 여부와 상관없이 이벤트를 발행한 후 처리를 위임한다.
+
+  - 중재자 패턴은 미리 설정해 둔 특정 입력(arguments) 또는 활동에 주목하여 역할이 분명한 협력자 사이의 행동을 조율한다.
+
+**중재자 패턴을 활용한 메시지 전달 기능 구현**
+
+```js
+// Concrete Mediator
+class Mediator {
+	constructor() {
+		this.participants = [];
+	}
+
+	register(participant) {
+		participant.setMediator(this);
+		this.participants.push(participant);
+	}
+
+	// 협력자(Colleague)의 행위를 입력값과 협력자 주체에 따라 다른 협력자의 행위를 중재자 내부에서 제어한다.
+	send(message, from, to) {
+		if (from === to) return;
+
+		if (to) {
+			to.receive(message, from);
+		} else {
+			this.participants.forEach((participant) => {
+				if (participant !== from) participant.receive(message, from);
+			});
+		}
+	}
+}
+
+// Concrete Colleague
+class Participant {
+	constructor(name) {
+		this.name = name;
+		this.mediator = null;
+	}
+
+	setMediator(mediator) {
+		this.mediator = mediator;
+	}
+
+	// 협력자(Colleague)의 행위는 중재자(Mediator)와 소통한다.
+	send(message, to) {
+		this.mediator.send(message, this, to);
+	}
+
+	// 중재자의 제어 로직에 따라 협력자의 행위가 호출된다.
+	receive(message, from) {
+		console.log(
+			`${this.name} received message: ${message} - from ${from.name}`
+		);
+	}
+}
+
+const mediator = new Mediator();
+
+const bob = new Participant('Bob');
+const alice = new Participant('Alice');
+const john = new Participant('John');
+
+mediator.register(bob);
+mediator.register(alice);
+mediator.register(john);
+
+bob.send('hello bob!', alice);
+
+alice.send('hello everyone!');
+
+john.send('hello john', john);
+```
