@@ -1298,3 +1298,141 @@ alice.send('hello everyone!');
 
 john.send('hello john', john);
 ```
+
+### 커맨드 패턴
+
+- 커맨드 패턴은 명령을 내리는 객체(Invoker)와 명령을 실행하는 객체(Receiver)를 분리함으로써 객체의 책임을 분리하는 패턴이다.
+
+- 주체(Invoker)의 행위 또는 명령을 입력값(arguments)와 함께 객체(Command)로 캡슐화하고, 명령을 내리는 객체(Invoker)로 입력함으로써 실행을 위임한다. 따라서 실행 시점, 취소, 로그(redo, undo, log 등)를 유연하게 제어할 수 있다.
+
+- 커맨드 패턴은 설계의 유연성, 확장성 측면에서 장점을 제공하지만, 주체의 행위를 객체로 캡슐화 하기 때문에 각 행위마다 새로운 클래스를 선언해야 한다. 따라서 코드의 규모(클래스 수)가 커지는 단점이 있다.
+
+**커맨드 패턴 구성 요소**
+
+- Command: 주체가 수행하는 동작에 대해 여러 형태를 통합된 API 동작으로 인터페이스
+
+- Concrete Command: Command 인터페이스를 기반으로 특정 주체의 행위(메서드) 실행을 구현하고, 이를 캡슐화한 클래스(인스턴스)
+
+- Receiver: 명령에 대한 핵심 로직을 가진 주체, 명령 실행 권한을 Invoker 객체에 위임한다.
+
+- Invoker: Receiver 객체로부터 캡슐화된 명령 객체를 입력 받아 실행을 제어하는 클래스(인스턴스)
+
+**전통적인 커맨드 패턴 구현**
+
+```js
+// Command interface
+class Command {
+	execute() {
+		throw 'this method must be overridden';
+	}
+	undo() {} // optional
+}
+
+// Concrete Command
+// 각 명령에 대해 입력값(arguments)을 받아 캡슐화 한다.
+// 주체의 작업을 클래스 이름으로 표현하고, 각 메서드는 Invoker 객체가 호출할 수 있는 제어 목적의 공통된 인터페이스로 정의한다.
+class AddTextCommand extends Command {
+	constructor(document, text) {
+		super();
+		this.document = document;
+		this.text = text;
+	}
+
+	execute() {
+		this.document.addText(this.text);
+	}
+
+	undo() {
+		this.document.remove(this.text.length);
+	}
+}
+
+// Concrete Command
+class AddTextCommandAtFront extends Command {
+	constructor(document, text) {
+		super();
+		this.document = document;
+		this.text = text;
+	}
+
+	execute() {
+		this.document.addTextAtFront(this.text);
+	}
+
+	undo() {
+		this.document.removeAtFront(this.text.length);
+	}
+}
+
+// Receiver
+class DocumentReceiver {
+	constructor() {
+		this.content = '';
+	}
+
+	addText(text) {
+		this.content += text;
+		console.log(this.content);
+	}
+
+	addTextAtFront(text) {
+		this.content = text + this.content;
+		console.log(this.content);
+	}
+
+	remove(length) {
+		this.content = this.content.slice(0, this.content.length - length);
+		console.log(this.content);
+	}
+
+	removeAtFront(length) {
+		this.content = this.content.slice(length, this.content.length);
+		console.log(this.content);
+	}
+}
+
+// Invoker - 명령에 필요한 입력값들은 명령 객체에 캡슐화 되어 있다. 따라서 실행 제어만 담당한다.
+class CommandInvoker {
+	constructor() {
+		this.commandHistory = [];
+	}
+
+	runCommand(cmd) {
+		cmd.execute();
+		this.commandHistory.push(cmd);
+	}
+
+	undo() {
+		const cmd = this.commandHistory.pop();
+
+		if (cmd?.undo) cmd.undo();
+		else {
+			console.log("command history doesn't exist");
+		}
+	}
+
+	// 최근 실행 명령을 재실행 한다.
+	redo() {
+		if (this.commandHistory.length > 0) {
+			const cmd = this.commandHistory[this.commandHistory.length - 1];
+			cmd.execute();
+			this.commandHistory.push(cmd);
+		}
+	}
+}
+
+const doc = new DocumentReceiver();
+const invoker = new CommandInvoker();
+
+const command1 = new AddTextCommand(doc, 'hello! ');
+const command3 = new AddTextCommandAtFront(doc, 'say - ');
+const command2 = new AddTextCommand(doc, 'world!');
+
+invoker.runCommand(command1);
+invoker.runCommand(command2);
+invoker.runCommand(command3);
+
+invoker.undo();
+invoker.undo();
+invoker.undo();
+```
