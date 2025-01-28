@@ -1642,3 +1642,84 @@ makeRequestWithRetry(1000, 3)
 	.then((res) => console.log('resolved!', res))
 	.catch(console.log);
 ```
+
+### 비동기 반복
+
+- 비동기 반복(async iteration) 패턴은 for-await-of 반복문과 제너레이터(generator)를 활용하여 프로미스를 순차적으로 실행할 수 있는 패턴이다.
+
+```js
+// 제너레이터의 각 순회(next)마다 프로미스를 반환한다.
+async function* createAsyncGenerator(value) {
+	yield new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(value * 2);
+		}, 1000);
+	});
+
+	yield new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(value * 5);
+		}, 1000);
+	});
+
+	yield new Promise((resolve, reject) => {
+		setTimeout(() => {
+			reject(new Error('reject!'));
+		}, 1000);
+	});
+}
+
+const main = async () => {
+	try {
+		// 프로미스 기반의 제너레이터 객체는 for await 문을 사용하여 순회(iteration)할 수 있다.
+		for await (const res of createAsyncGenerator(100)) {
+			console.log(res);
+		}
+	} catch (e) {
+		console.log(e);
+	}
+};
+
+main();
+```
+
+### async/await 데코레이터
+
+- 고차함수를 데코레이터로써 선언하여 비동기 처리 요청 과정에 추가 기능을 적용할 수 있다.
+
+```js
+// 프로미스를 반환하는 요청을 모듈화 한다.
+const makeRequest = (arg) => {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(arg * 10);
+		}, 1000);
+	});
+};
+
+// 실전으로 fetch를 사용하여 비동기(async) 함수를 정의할 수 있다.
+const makeFetch = async (url) => {
+	const res = await fetch(url);
+	const json = await res.json();
+
+	return json;
+};
+
+// 데코레이터 함수 - 비동기 처리 시작 전, 시작 후 로그 기능을 제공한다.
+const asyncLogger = (fn) => {
+	return async (...args) => {
+		console.log('call async function');
+		try {
+			const res = await fn(...args);
+			console.log('finish async function');
+			return res;
+		} catch (e) {
+			console.log('error async function', e);
+		}
+	};
+};
+
+const asyncRequest = asyncLogger(makeRequest);
+
+asyncRequest(100).then(console.log);
+```
