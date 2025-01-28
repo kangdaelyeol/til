@@ -1548,3 +1548,97 @@ invoker.undo();
 - View: 순수하게 데이터를 표현하는 역할을 한다. Presentational Component와 같다.
 
 - Model View: 모델의 정보를 뷰가 사용할 수 있는 형태로 변환하고, 뷰에서 발생한 명령(event)을 모델로 전달한다. Container Component와 같다.
+
+## 비동기 프로그래밍 패턴
+
+- 프로미스(Promise)와 비동기(async / await) 문법을 활용해 코드의 가독성과 이해도를 높일 수 있다.
+
+### 프로미스 순차 실행
+
+- [Promise.resolve](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) 메서드를 활용하여 프로미스를 순차적으로 실행할 수 있다.
+
+- 메서드 특성상 입력 값에 원시값 또는 [thenable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#thenables)을 입력할 수 있고, then 메서드의 콜백함수인 onFulfilled 메서드를 통해 다음 then 메서드로 결과값(res)을 넘겨주지 않더라도 프로미스를 순차적으로 실행해야 할 필요가 있을 때 활용이 가능하다.
+
+```js
+const makeRequest = (res) =>
+	new Promise((resolve) => {
+		console.log(res);
+		setTimeout(() => {
+			resolve(res * 2);
+		}, 1000);
+	});
+
+Promise.resolve(123)
+	.then((res) => makeRequest(res))
+	.then(() => makeRequest(100))
+	.then(console.log);
+```
+
+### 프로미스 메모이제이션
+
+- 프로미스 메모이제이션(promise memoization) 패턴은 **캐시** 를 구현하여 프로미스의 결과 값을 저장함으로써 중복 호출을 방지하는 패턴이다.
+
+```js
+// Map을 cache로써 구현한다.
+const cache = new Map();
+
+const makeMemoizedRequest = (prop) => {
+	console.log(prop);
+	if (cache.has(prop)) return cache.get(prop);
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			const res = prop * 10; // 요청 값(prop)에 대한 결과값(res) 계산
+			cache.set(prop, res); // 요청 값(prop)을 key값으로 결과 값(res)를 저장한다
+			resolve(res);
+		}, 1000);
+	});
+};
+
+makeMemoizedRequest(100)
+	.then((res) => makeMemoizedRequest(res))
+	.then((res) => makeMemoizedRequest(res))
+	// 이후 요청부터는 setTimeOut에 의해 블로킹 되지 않고 cache에 저장된 값을 즉시 반환
+	.then(() => makeMemoizedRequest(100))
+	.then((res) => makeMemoizedRequest(res))
+	.then((res) => makeMemoizedRequest(res));
+```
+
+### 프로미스 재시도
+
+- 프로미스 재시도(promise retry) 패턴은 프로미스가 실패(rejected) 했을 때 재시도하는 과정을 캡슐화 하는 패턴이다.
+
+- 외부 요청에 대하여 프로미스를 사용할 때 요청의 특징을 파악해 시도횟수를 결정할 수 있고, 요청에 실패했을 때 요청 조건을 변경하여 재시도 할 수 있다.
+
+```js
+const makeRequestWithRetry = (val, maxAttempts = 1) => {
+	let attempts = 0;
+
+	const makeRequest = (keyValue) =>
+		// promise를 반환하는 요청을 생성한다. 실재로 fetch를 사용하여 활용할 수 있다.
+		new Promise((resolve, reject) => {
+			if (keyValue < 100) resolve(keyValue);
+			// 실패(rejected)시 요청값을 입력한다.
+			else reject(keyValue);
+		});
+
+	// onRejected 부분에 입력할 콜백 메서드
+	const retry = (errorValue) => {
+		console.log(errorValue);
+		// 시도횟수를 결정한다.
+		if (attempts > maxAttempts) {
+			throw new Error('Request failed after 3 attempts.');
+		}
+
+		attempts++;
+		// 임의로 재요청 값을 설정하여 재요청 한다.
+		console.log('retry with value: ', errorValue / 2);
+		return makeRequest(errorValue / 2).catch(retry);
+	};
+
+	return makeRequest(val).catch(retry);
+};
+
+makeRequestWithRetry(1000, 3)
+	.then((res) => console.log('resolved!', res))
+	.catch(console.log);
+```
