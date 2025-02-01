@@ -1772,3 +1772,37 @@ function myApplication_methodA() {}
 ```
 
 - 전역 네임스페이스 패턴을 사용하면 단일 전역 변수 패턴을 사용하는 것 보다 이름 충돌 가능성을 줄일 수 있지만 프로젝트의 규모가 커질 수록 많은 전역 객체가 생성된다는 단점이 있다.
+
+### 객체 리터럴 표기법 패턴
+
+- 객체 리터럴 표기법(Object literal Notation) 패턴은 객체를 네임스페이스로써 사용하는 방법이다.
+
+```js
+// 객체를 네임스페이스 공간으로써 사용한다.
+const myApplication = {
+	getInfo() {
+		// implementation ...
+	},
+
+	models: {},
+
+	// 객체 안에 추가로 네임스페이스를 만들 수 있다.
+	views: {
+		pages: {},
+	},
+};
+
+// 네임스페이스에 직접 추가할 수 있다.
+myApplication.utils = {
+	toString() {
+		// implementation ...
+	},
+};
+```
+
+- 객체 리터럴 표기법 패턴 또한 전역 변수를 선언하기 때문에 이름 충돌 가능성이 있다. 따라서 이를 방지하기 위해 동일한 이름의 변수가 선언되었는지 검사하는 과정을 추가한다.
+
+```js
+// const 형으로 선언할 경우 const로 선언된 myApplication을 const로 재선언할 가능성이 있기 때문에 에러가 발생할 수 있다. 따라서 let 형으로 선언한다.
+let myApplication = myApplication || {};
+```
