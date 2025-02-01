@@ -1723,3 +1723,52 @@ const asyncRequest = asyncLogger(makeRequest);
 
 asyncRequest(100).then(console.log);
 ```
+
+## 네임스페이스 패턴
+
+- 네임스페이스(namespace)란 코드 단위를 고유한 식별자로 그룹화한 것이다.
+
+- 네임스페이스를 통해 서드파티 스크립트 등으로 인해 변수 또는 메서드 이름이 충돌하여 발생하는 에러를 방지할 수 있다.
+
+- JS 환경에서는 네임스페이스를 지원하지 않지만, 객체와 클로저를 활용하여 비슷한 효과를 얻을 수 있다.
+
+### 단일 전역 변수 패턴
+
+- 하나의 전역 변수를 주요 참조 객체로 사용할 수 있다.
+
+```js
+// IIFE를 통해 객체를 고유한 네임스페이스로써 생성하고, 이를 전역 변수에 반환한다.
+const myUniqueApplication = (() => {
+	function myMethod() {
+		// implementation ...
+	}
+
+	function otherMethod() {
+		// implementation ...
+	}
+
+	return {
+		myMethod,
+		otherMethod,
+	};
+})();
+
+myUniqueApplication.myMethod();
+```
+
+- 단일 전역 변수 패턴에서 사용하는 전역 변수의 이름이 다른 스크립트의 변수, 메서드의 이름과 겹치게 되면 충돌이 발생한다.
+
+### 접두사 네임스페이스 패턴
+
+- 단일 전역 변수 패턴의 문제점을 해결하기 위해 피터 미쇼(Peter Michaux)는 접두사 네임스페이스(prefix namespace) 패턴을 제안했다.
+
+- 전역 객체(네임스페이스)를 정의할 때 자신의 고유한 이름의 접두사를 선정한 다음에 메서드, 변수, 객체의 이름을 접두사 뒤에 붙여서 정의하는 것이다.
+
+```js
+// 접두사를 'myApplication_'으로 선정
+const myApplication_propertyA = {};
+const myApplication_propertyB = {};
+function myApplication_methodA() {}
+```
+
+- 전역 네임스페이스 패턴을 사용하면 단일 전역 변수 패턴을 사용하는 것 보다 이름 충돌 가능성을 줄일 수 있지만 프로젝트의 규모가 커질 수록 많은 전역 객체가 생성된다는 단점이 있다.
