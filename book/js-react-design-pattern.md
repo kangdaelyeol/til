@@ -1900,3 +1900,37 @@ myApp.utils = {};
 ```
 
 - 네임스페이스 주입 패턴또한 모듈 시스템(ESM)이 없던 시절에 전역 변수를 오염시키지 않고 은닉과 확장을 구현하기 위해 자주 쓰였지만, 현대는 ESM이 보편화 되면서 거의 사용되지 않는다.
+
+### 중첩 네임스페이스 자동화 패턴
+
+- 애플리케이션의 규모가 커질수록 네임스페이스의 구조가 복잡해진다. 따라서 복잡한 네임스페이스를 직접 정의하는 것은 번거로운 작업이 될 수 있다.
+
+- 중첩된 네임스페이스를 자동으로 정의해주는 유틸리티 메서드를 정의함으로써 복잡한 구조의 네임스페이스를 간편하게 정의할 수 있다.
+
+```js
+const myApp = {};
+
+const extend = (namespace, path) => {
+	const pathList = path.split('.');
+	let cur = namespace;
+
+	pathList.forEach((part) => {
+		if (!cur[part]) cur[part] = {};
+		cur = cur[part];
+	});
+
+	// 최종 하위 네임스페이스를 반환한다.
+	return cur;
+};
+
+const moduleB = extend(myApp, 'parent.child.moduleA.moduleB');
+
+// 최하위 중첩된 네임스페이스를 변수로 받아 해당 네임스페이스 위치를 기준으로 간편하게 변수와 메서드를 정의할 수 있다.
+console.log(moduleB === myApp.parent.child.moduleA.moduleB); // true
+
+moduleB.someMethod = () => {
+	console.log('Hello');
+};
+
+myApp.parent.child.moduleA.moduleB.someMethod();
+```
