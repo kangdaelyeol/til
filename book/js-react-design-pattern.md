@@ -1834,3 +1834,36 @@ myapp.routers.doSomething = () => {
 ```
 
 - 단일 객체 네임스페이스 패턴과 비교할 때 중첩 네임스페이스 패턴은 객체 존재 여부를 확인하기 위해 초기 참조가 많아 비용이 많이 들 수 있지만, 성능상 차이가 크지 않다.
+
+### 즉시 실행 함수 표현식 패턴
+
+- IIFE(Immediately Invoked Function Expressions)를 활용하여 네임스페이스를 정의할 수 있다.
+
+```js
+let namespace;
+
+((namespace) => {
+	// IIFE 내부의 변수는 비공개(private) 변수로서 정의한다.
+	let count = 0;
+
+	// 네임스페이스에 정의된 변수, 메서드는 공개(public) 변수, 메서드가 된다.
+	namespace.name = 'myNamespace';
+	namespace.getCount = () => {
+		return count;
+	};
+	namespace.increaseCount = () => {
+		count++;
+	};
+	// 즉시 실행 함수에 네임스페이스를 입력한다.
+	// 현재는 보편적으로 ESM을 사용하기 때문에 window 전역객체를 사용하지 않아 전역 변수로 namespace를 선언함. (기존에는 window.namespace = window.namespace || {} 형식임.)
+})((namespace = namespace || {}));
+
+// IIFE를 여러 번 정의함으로써 전역 충돌 없이 추가적인 기능으로 확장 또는 수정이 가능하다.
+((namespace) => {
+	namespace.newMethod = () => {
+		console.log('New method in namespace');
+	};
+})(namespace);
+```
+
+- IIFE 네임스페이스 패턴은 모듈 시스템(ESM)이 없던 시절에 전역 변수를 오염시키지 않고 은닉과 확장을 구현하기 위해 자주 쓰였지만, 현대는 ESM이 보편화 되면서 간단한 방법으로 모듈화를 처리한다.
