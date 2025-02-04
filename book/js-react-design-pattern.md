@@ -1867,3 +1867,36 @@ let namespace;
 ```
 
 - IIFE 네임스페이스 패턴은 모듈 시스템(ESM)이 없던 시절에 전역 변수를 오염시키지 않고 은닉과 확장을 구현하기 위해 자주 쓰였지만, 현대는 ESM이 보편화 되면서 간단한 방법으로 모듈화를 처리한다.
+
+### 네임스페이스 주입 패턴
+
+- 네임스페이스 주입(Namespace Injection) 패턴은 즉시 실행 함수 패턴의 변형이다.
+
+- 네임스페이스 주입 패턴은 함수 내의 this를 네임스페이스의 프록시(proxy)로 활용하여 메서드와 속성을 주입한다.
+
+```js
+const myApp = {};
+myApp.utils = {};
+
+(function () {
+	// 비공개(private) 맴버 변수 정의
+	let val = 5;
+
+	this.getValue = () => val;
+
+	this.setValue = (newVal) => {
+		val = newVal;
+	};
+
+	this.tools = {};
+
+	// 즉시 실행 함수를 apply 메서드로 호출하며, this에 네임스페이스를 바인딩 하며 속성과 메서드를 초기화 한다.
+}).apply(myApp.utils);
+
+// 즉시 실행 함수 패턴과 마찬가지로 여러 번 호출함으로써 확장이 가능하다.
+(function () {
+	this.diagnose = 'diagnose';
+}).apply(myApp.utils.tools);
+```
+
+- 네임스페이스 주입 패턴또한 모듈 시스템(ESM)이 없던 시절에 전역 변수를 오염시키지 않고 은닉과 확장을 구현하기 위해 자주 쓰였지만, 현대는 ESM이 보편화 되면서 거의 사용되지 않는다.
