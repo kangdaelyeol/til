@@ -2011,3 +2011,63 @@ extendObject(myNamespace, {
 
 console.log(myNamespace);
 ```
+
+## 리엑트 디자인 패턴
+
+### 고차 컴포넌트
+
+- 고차 컴포넌트(HOC - Higher-Order Component)는 컴포넌트를 인수로 받아 새로운 컴포넌트를 반환하는 **함수** 다.
+
+- 고차 컴포넌트는 함수형 프로그래밍의 고차 함수(HOF - Higher-Order Function)에서 유래되었다.
+
+- 고차 컴포넌트를 통해 반복되는 로직을 분리하여 여러 컴포넌트에 적용시킴으로써 코드의 중복성을 줄일 수 있다.
+
+```js
+// 고차 컴포넌트(HOC) 정의
+const withStyle = (Component) => {
+	return (props) => {
+		// style 프로퍼티는 중복 입력될 가능성이 높으므로, 입력될 경우 병합한다.
+		const style = {
+			height: '100px',
+			width: '20px',
+			...props.style,
+		};
+
+		return <Component {...props} style={style} />;
+	};
+};
+
+const withAuth = (Component) => {
+	return (props) => {
+		if (!props.isLoggedIn) {
+			return <div>로그인이 필요합니다.</div>;
+		}
+
+		return <Component {...props} />;
+	};
+};
+
+// 컴포넌트 정의
+const MyButton = ({ style }) => <button style={style}>MyButton</button>;
+const MainPage = () => <div>Main Page</div>;
+
+function App() {
+	// 고차 컴포넌트에 기존 컴포넌트를 입력하여 새로운 컴포넌트 생성
+	const StyledBtn = withStyle(MyButton);
+	const ProtectedMainPage = withAuth(MainPage);
+	return (
+		<>
+			<ProtectedMainPage isLoggedIn={false} />
+			<StyledBtn style={{ width: '100px' }} />
+		</>
+	);
+}
+```
+
+- 현재 고차 컴포넌트는 커스텀 훅(Custom Hooks)으로 로직 분리를 대체함으로써 props drilling 문제를 해결할 수 있다.
+
+- HOC패턴을 남발하여 사용하는 경우 props를 계속해서 내려주기 때문에 에러 발생시 추적이 복잡해질 수 있다.
+
+  - HOC는 컴포넌트간의 의존성을 나타낸 props를 내려주지 않고, HOC에 입력되는 컴포넌트에 대한 로직을 분리하는 목적으로 사용하기 때문에, HOC를 사용했다 해서 컴포넌트간 의존성이 높아지지는 않는다.
+
+- 결론적으로 현재는 커스텀 훅이 HOC 패턴을 대체함으로써 로직 분리가 더욱 깔끔하게 되므로, 재사용성이 높은 로직이 있을때 커스텀 훅과 비교하여 HOC를 사용하는 것이 더욱 직관성이 있거나 효율적이라 판단될 때 사용하는 것이 좋다.
