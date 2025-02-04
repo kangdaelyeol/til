@@ -1934,3 +1934,27 @@ moduleB.someMethod = () => {
 
 myApp.parent.child.moduleA.moduleB.someMethod();
 ```
+
+### 의존성 선언 패턴
+
+- 의존성 선언(Dependency Declaration) 패턴은 중첩 네임스페이스 패턴의 변형이다.
+
+- 중첩 네임스페이스에 접근시 여러 하위 네임스페이스를 참조해야 하는 경우, 프로퍼티 체인을 따라가는 참조에 대한 비용이 든다.
+
+- 따라서 이를 최적화 하기 위해 로컬 변수를 따로 선언하여 객체(네임스페이스) 참조를 캐싱함으로써 네임스페이스 접근 비용을 절약할 수 있다.
+
+```js
+// 로컬 변수를 선언하여 참조를 캐싱 한다.
+// 최신 문법인 구조분해 할당(destructuring assignment)을 사용하여 더욱 간략히 할 수 있다
+// -> const {math, drawing, actions} = myApp.utilities
+const math = myApp.utilities.math;
+const drawing = myApp.utilities.drawing;
+const actions = myApp.utilities.actions;
+
+// 네임스페이스에 쉽게 접근하며 성능이 향상된다. (단 수백, 수천번 호출해야 의미있는 효과를 볼 수 있다.)
+math.fibonacci(25);
+drawing.plot(10);
+actions.sayHello();
+```
+
+- 이러한 방식은 코드 가독성 면에서도 편리하므로, 중첩된 네임스페이스가 깊을 때 로컬 변수에 참조를 저장해 두는 방식을 자주 사용한다.
