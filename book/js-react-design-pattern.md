@@ -1958,3 +1958,56 @@ actions.sayHello();
 ```
 
 - 이러한 방식은 코드 가독성 면에서도 편리하므로, 중첩된 네임스페이스가 깊을 때 로컬 변수에 참조를 저장해 두는 방식을 자주 사용한다.
+
+### 심층 객체 확장 패턴
+
+- JS 환경에서 객체로써 선언된 네임스페이스는 다른 네임스페이스와 함께 확장 또는 병합될 수 있다. 이러한 과정을 자동화 해주는 유틸리티 메서드를 정의함으로써 간편하게 확장할 수 있다.
+
+```js
+// 객체 확장 유틸리티 메서드 정의
+// 현재 유틸리티 메서드 구현 로직은 완벽하지 않기 때문에 아이디어에 대한 전체적인 개념만 참고한다.
+// 실제 이러한 패턴을 사용하는 경우 이미 구현된 라이브러리(lodash)를 사용하는것 권장한다.
+const extendObject = (destinationObject, sourceObject) => {
+	for (const key in sourceObject) {
+		if (
+			sourceObject[key] &&
+			typeof sourceObject[key] === 'object' &&
+			!Array.isArray(sourceObject[key])
+		) {
+			// 원본 객체의 프로퍼티가 객체로써 존재할때 병합하는 경우, 병합하는 객체에 의해 기존 프로퍼티 값이 덮어씌워지므로 이를 검사한다.
+			if (
+				!destinationObject[key] ||
+				typeof destinationObject[key] !== 'object'
+			) {
+				destinationObject[key] = {};
+			}
+
+			// 확장(병합)하는 프로퍼티의 타입이 객체인 경우 할당 후 재귀호출을 통해 모든 프로퍼티를 병합 한다.
+			extendObject(destinationObject[key], sourceObject[key]);
+		} else {
+			// 프로퍼티값이 원시 값인 경우 할당만 한다.
+			destinationObject[key] = sourceObject[key];
+		}
+	}
+
+	return destinationObject;
+};
+
+const myNamespace = {
+	utils: {},
+};
+
+extendObject(myNamespace, {
+	hello: {
+		helloTest: 'hello test',
+		world: {
+			worldTest: 'world test',
+			wave: {
+				waveTest: 'wave test',
+			},
+		},
+	},
+});
+
+console.log(myNamespace);
+```
