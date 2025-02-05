@@ -2071,3 +2071,127 @@ function App() {
   - HOC는 컴포넌트간의 의존성을 나타낸 props를 내려주지 않고, HOC에 입력되는 컴포넌트에 대한 로직을 분리하는 목적으로 사용하기 때문에, HOC를 사용했다 해서 컴포넌트간 의존성이 높아지지는 않는다.
 
 - 결론적으로 현재는 커스텀 훅이 HOC 패턴을 대체함으로써 로직 분리가 더욱 깔끔하게 되므로, 재사용성이 높은 로직이 있을때 커스텀 훅과 비교하여 HOC를 사용하는 것이 더욱 직관성이 있거나 효율적이라 판단될 때 사용하는 것이 좋다.
+
+### 랜더링 props(render props)
+
+- 랜더링 props(render props) 패턴이란 JSX를 반환하는 함수를 props 형태로 줌으로써 props를 받는 컴포넌트를 재사용하는 기법이다.
+
+- 랜더링 props는 컴포넌트에 포함된 props 형태의 JSX 반환 함수를 의미한다.
+
+```js
+// 랜더링 props를 받아 랜더링 메서드를 호출함으로써 JSX를 반환하는 컴포넌트 정의
+const SpecialStyle = (props) => {
+	const style = {
+		width: '100px',
+		height: '100px',
+		backgroundColor: 'black',
+	};
+
+	return props.render(style);
+};
+
+function App() {
+	// 컴포넌트를 호출하며 JSX를 반환하는 메서드를 render props에 입력.
+	// JSX를 반환하는 메서드의 이름은 반드시 'render'일 필요는 없음.
+	return (
+		<>
+			<SpecialStyle render={(style) => <div style={style}>hello!</div>} />
+		</>
+	);
+}
+```
+
+- 랜더링 props 패턴을 활용하여 상태를 끌어올려 공통 컴포넌트 사이에서만 상태가 관리되게 할 수 있다.
+
+```js
+const Fahrenheit = ({ value = 0 }) => {
+	return <div>{(value * 9) / 5 + 32}F</div>;
+};
+
+const Kelvin = ({ value = 0 }) => {
+	return <div>{value + 273.15}K</div>;
+};
+
+const Input = (props) => {
+	// 기존에 상위 컴포넌트(App)에서 관리되어야하거나, 각 온도를 표시하는 하위 컴포넌트에서 따로 관리되어야 할 상태 value를 Input 컴포넌트로 끌어 올림.
+	const [value, setValue] = useState('');
+
+	// Input 컴포넌트는 자신의 상태관리 로직과 랜더링 props를 받아 JSX를 반환한다.
+	return (
+		<>
+			<input
+				type='text'
+				placeholder='Temp in C'
+				onChange={(e) => setValue(e.target.value)}
+			/>
+			{props.children(value)}
+		</>
+	);
+};
+
+function App() {
+	return (
+		<>
+			<Input
+				renderTemperature={(value) => (
+					<>
+						<Fahrenheit value={value} />
+						<Kelvin value={value} />
+					</>
+				)}
+			/>
+		</>
+	);
+}
+```
+
+- props.children 방식으로도 랜더링 props 패턴을 사용할 수 있다.
+
+```js
+const Input = (props) => {
+	const [value, setValue] = useState('');
+	return (
+		<>
+			<input
+				type='text'
+				placeholder='Temp in C'
+				onChange={(e) => setValue(e.target.value)}
+			/>
+			// props.children은 컴포넌트가 아닌 함수이므로 호출함으로써 JSX를 반환한다.
+			{props.children(value)}
+		</>
+	);
+};
+
+function App() {
+	// 랜더링 props 함수를 props.children으로써 받도록 함수를 컴포넌트로 감싼다.
+	return (
+		<>
+			<Input>
+				{(value) => (
+					<>
+						<Fahrenheit value={value} />
+						<Kelvin value={value} />
+					</>
+				)}
+			</Input>
+		</>
+	);
+}
+```
+
+**랜더링 props 패턴 장점**
+
+- HOC 패턴과 같이 로직과 뷰를 분리하며, HOC 패턴에서 발생할 수 있는 이름 충돌 문제 또한 해결할 수 있다.
+
+- props를 명시적으로 전달함으로써 props의 추적이 편하고 가독성이 좋아진다.
+
+**랜더링 props 패턴 단점**
+
+- 보편적이고 효율적인 리엑트 Hooks 패턴을 통해 랜더링 props 문제를 충분히 해결할 수 있다.
+
+  - 커스텀 훅을 통해 로직을 간결하게 공유할 수 있고, render 함수 구조를 만들 필요가 없어서 더욱 직관적이다.
+
+- 렌더링 prop에는 라이프사이클 관련 메서드를 추가할 수 없기 때문에 렌더링에 치중한 컴포넌트에만 사용할 수 있다.
+
+  - 물론 현재 함수형 컴포넌트와 Hooks를 사용하기 때문에 ComponentDidMount같은 라이프 사이클 메서드가 필요 없긴 하다.
