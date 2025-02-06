@@ -2252,3 +2252,61 @@ function App() {
 	);
 }
 ```
+
+### 동적 가져오기(dynamic import)
+
+- React 환경에서 일반적으로 ESM(export - import) 방식으로 모듈을 정적(static)으로 가져온다.
+
+- 모듈을 정적으로 가져오는 방식은 webpack을 통해 사전에 모듈이 병합되어 하나의 번들(bundle)로써 브라우저에 랜더링 된다.
+
+- 프로젝트의 규모가 커질 수록 번들의 크기는 증가하기 때문에 브라우저에서 페이지의 로딩시간이 길어질 수 있다.
+
+- 한 번에 모든 페이지를 로딩하는 방식은 UX에 부정적이다. 따라서 초기에 필요한 페이지만 따로 로딩한 후, 다음에 필요한 페이지는 필요할 때 로딩하는 동적 가져오기 방식을 사용할 수 있다.
+
+```js
+// react 라이브러리의 lazy, Suspense 기능을 사용하여 동적 가져오기를 사용할 수 있다.
+import { lazy, Suspense, useReducer } from 'react';
+import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+// import 키워드를 메서드로 사용할 시 모듈(JS chunk)을 동적으로 가져온다.
+const Main = lazy(() => import('./components/Main'));
+
+function App() {
+	const [displayMain, toggleDisplayMain] = useReducer((state) => !state, false);
+
+	// 메인 컴포넌트 렌더링이 완료된 경우 필요시 effect hook을 통해 미리 컴포넌트(JS chunk)를 다운로드를 할 수 있다.
+	useEffect(() => {
+		import('./components/Main');
+	}, []);
+
+	return (
+		<>
+			<Header />
+			// Suspense 컴포넌트안에 동적으로 가져올 모듈을 삽입할 수 있다 // fallback
+			props에 모듈이 로딩되는 동안 사용할 대체 컴포넌트를 입력할 수 있다.
+			<Suspense fallback={<p>Loading...</p>}>
+				{displayMain && <Main />}
+			</Suspense>
+			<button onClick={toggleDisplayMain}>Display Main Page</button>
+			<Footer />
+		</>
+	);
+}
+
+export default App;
+```
+
+- Suspense 기능은 컴포넌트가 네트워크 리소스 요청을 통해 JS chunk을 받는 과정 이외에도 해당 컴포넌트가 내부 연산을 통해 렌더링 될 때 까지 컴포넌트 랜더링을 중지(suspense)하고 대체(fallback)한다.
+
+```js
+// Main 컴포넌트(Suspense에 포함된 컴포넌트)는 컴포넌트 내부 연산이 끝날 때 까지 대기하므로, 컴포넌트(JS chunk) 리소스가 네트워크를 통해서 다운로드가 완료 되었다 하더라도, 추가적으로 내부 연산을 모두 마칠 때 까지 대기한다.
+export default function Main() {
+	let content = '';
+	for (let i = 0; i < 200000; i++) {
+		content += i;
+	}
+	return <div>Main component</div>;
+}
+```
