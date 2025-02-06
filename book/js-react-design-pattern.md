@@ -2195,3 +2195,60 @@ function App() {
 - 렌더링 prop에는 라이프사이클 관련 메서드를 추가할 수 없기 때문에 렌더링에 치중한 컴포넌트에만 사용할 수 있다.
 
   - 물론 현재 함수형 컴포넌트와 Hooks를 사용하기 때문에 ComponentDidMount같은 라이프 사이클 메서드가 필요 없긴 하다.
+
+### 커스텀 훅
+
+- 리액트(React)에서 기본적으로 제공하는 훅(Hooks)을 조합하여 로직을 모듈화 할 수 있다.
+
+- 즉, 공통적으로 사용되는 로직을 추출해 이를 커스텀 훅(custom hooks)으로 만들어 재사용할 수 있다.
+
+- 커스텀 훅의 이름에 관례적으로 접두사 'use'를 붙임으로써 해당 모듈이 훅이라는 것을 직관적으로 판단할 수 있다.
+
+```js
+// useKeyPress custom hook 정의
+// 받은 파라미터(의도된 키) 값이 눌렸는지에 대한 상태 논리값 반환
+const useKeyPress = (targetKey) => {
+	const [keyPressed, setKeyPressed] = useState(false);
+
+	useEffect(() => {
+		const handleKeyDown = (e) => {
+			// 키가 계속 눌린 상태일 경우 키가 연속으로 눌려 다중 호출이 되므로 이를 방지
+			if (keyPressed) return;
+			if (targetKey === e.key) setKeyPressed(true);
+		};
+
+		const handleKeyUp = (e) => {
+			if (targetKey === e.key) setKeyPressed(false);
+		};
+		window.addEventListener('keydown', handleKeyDown);
+		window.addEventListener('keyup', handleKeyUp);
+
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+			window.removeEventListener('keyup', handleKeyUp);
+		};
+	}, [keyPressed]);
+
+	return keyPressed;
+};
+
+export default useKeyPress;
+
+// App.jsx
+
+import useKeyPress from './useKeyPress';
+
+function App() {
+	// 커스텀훅을 여러 컴포넌트에서, 여러번 재사용 할 수 있다.
+	const escKeyPressed = useKeyPress('Escape');
+	const qKeyPressed = useKeyPress('Q');
+	const wKeyPressed = useKeyPress('W');
+	return (
+		<>
+			{escKeyPressed && 'Escape!'}
+			{qKeyPressed && 'q'}
+			{wKeyPressed && 'w'}
+		</>
+	);
+}
+```
