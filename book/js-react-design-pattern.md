@@ -2310,3 +2310,30 @@ export default function Main() {
 	return <div>Main component</div>;
 }
 ```
+
+- [IntersectionObserver API](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) 기반의 'react-loadable-visibility' 라이브러리를 활용하여 화면에 보일시 컴포넌트를 동적으로 로딩할 수 있다.
+
+- 'react-loadable-visibility' 라이브러리는 리엑트 16.x 버전에서 지원했으며 현재 리엑트에 내장되어 있는 Lazy, Suspense를 공식적으로 지원하므로 이러한 방법은 자주 사용되지 않는다고 한다.
+
+```js
+import React, { useReducer } from 'react';
+import { Link } from 'react-router-dom';
+import LoadableVisibility from 'react-loadable-visibility/react-loadable';
+
+const MainContent = LoadableVisibility({
+	// default Import인 경우, module.default를 반환하여 loader에 추가한다.
+	loader: () => import('@/components/MainContent').then((m) => m.default),
+	loading: () => <div>Loading...</div>,
+});
+
+export default function Main() {
+	const [contentOpen, toggleContent] = useReducer((state) => !state, false);
+	return (
+		<div style={{ width: '300px', wordWrap: 'break-word' }}>
+			<Link to='/other'>Main page</Link>
+			<button onClick={() => toggleContent()}>show content</button>
+			{contentOpen && <MainContent />}
+		</div>
+	);
+}
+```
