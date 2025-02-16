@@ -2311,9 +2311,9 @@ export default function Main() {
 }
 ```
 
-- [IntersectionObserver API](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) 기반의 'react-loadable-visibility' 라이브러리를 활용하여 화면에 보일시 컴포넌트를 동적으로 로딩할 수 있다.
+- [IntersectionObserver API](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) 기반의 'react-loadable-visibility' 라이브러리를 활용하여 화면에 보일시 컴포넌트를 동적으로 로딩할 수 있다(import on visibility).
 
-- 'react-loadable-visibility' 라이브러리는 리엑트 16.x 버전에서 지원했으며 현재 리엑트에 내장되어 있는 Lazy, Suspense를 공식적으로 지원하므로 이러한 방법은 자주 사용되지 않는다고 한다.
+- 'react-loadable-visibility' 라이브러리는 리엑트 16.x 버전에서 지원했으며, 현재 리엑트에 내장되어 있는 Lazy, Suspense를 공식적으로 지원하므로 이러한 방법은 자주 사용되지 않는다고 한다.
 
 ```js
 import React, { useReducer } from 'react';
@@ -2337,3 +2337,50 @@ export default function Main() {
 	);
 }
 ```
+
+### 코드 스플리팅
+
+- 코드 스플리팅(code splitting) 웹 애플리케이션의 리소스를 필요할 때 동적으로 요청하는 기법이다.
+
+- 웹 애플리케이션을 여러 페이지(route)로 분할할 경우, 경로마다 리소스를 요청하는 방식으로 사용할 수 있다. 이러한 기법을 **경로 기반 분할(Route-based Splitting)** 이라고도 한다.
+
+- 경로 기반 분할을 통해 번들을 여러 부분으로 나눔으로써 불필요한 리소스를 받지 않고, 초기 로딩 시간을 단축할 수 있다.
+
+```js
+// router/index.jsx
+
+const Other = lazy(() => import('@/components/Other'));
+const Main = lazy(() => import('@/components/Main'));
+
+// 각 경로에 Suspense를 두는 것은 경로 기반 분할과 관계 없으며, 로딩 화면을 구분하기 위함이다.
+// 각 경로마다 lazy 컴포넌트를 따로 두어 해당 경로로 이동할 시 동적으로 컴포넌트를 가져올 수 있게 한다.
+
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <Homepage />,
+		children: [
+			{
+				index: true,
+				element: (
+					<Suspense fallback={<div>Loading Main Page...</div>}>
+						<Main />
+					</Suspense>
+				),
+			},
+			{
+				path: 'other',
+				element: (
+					<Suspense fallback={<div>Loading Other Page...</div>}>
+						<Other />
+					</Suspense>
+				),
+			},
+		],
+	},
+]);
+
+export default router;
+```
+
+- 페이지 이동시 로딩 시간이 걸리는 것은 사용자들이 보편적으로 경험하는 현상이므로, 하나의 큰 용량의 번들을 받음으로써 초기에 긴 로딩 시간을 가지는것 보다 경로 별로 번들을 작게 나눔으로써 지연 로딩을 사용하는 방식이 효율적일 수 있다.
