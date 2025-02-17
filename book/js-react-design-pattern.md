@@ -2406,3 +2406,65 @@ export default router;
   - 또한 모든 컨텐츠가 로드된 후 `사용자와 상호작용할 수 있는 상태가 되기까지 시간 - 메인 쓰레드가 이벤트에 즉시 반응할 수 있는 상태(TTI: Time To Interactive)` 도 고려해야 한다. UI는 번들이 모두 로드되고 실행된 후에만 상호작용이 가능하다.
 
 - 결과적으로 우선순위가 높지 않은 코드를 요청할 때는 초기 페이지 렌더링에 필요한 코드와 분리해서 지연 로딩(lazy loading) 방식을 사용하는 것이 좋다.
+
+### PRPL 패턴
+
+- PRPL(Push Render Pre-cache Lazy-loading) 패턴은 구글에서 제안한 웹 성능 최적화 패턴으로, 웹 페이지 랜더링 속도를 높이고, 최소한의 지연 로딩으로 로딩 속도 최적화를 목표로 한다.
+
+- 즉, 웹페이지가 빠르게 로딩되도록 리소스를 효율적으로 제공하는 방법이다.
+
+#### PRPL의 네 가지 핵심 요소
+
+**P: `Push` critical resources with HTTP/2**
+
+- 중요한 자원을 효율적으로 푸시해서 서버 왕복횟수를 최소화하고 로딩시간을 단축한다.
+
+- Push의 개념은 기존 HTTP/1.1 통신 방식에서 HTTP/2 프로토콜의 서버 푸시(server push)방식을 도입해 최적화된 데이터 가져오기 방식을 구현한다.
+
+- HTTP/1.1 방식은 하나의 TCP요청은 하나의 응답만을 지원한다. 즉, HTML parsing 과정에서 css, js 파일을 가져오는 코드를 만나게되면 추가로 요청을 해야 한다.
+
+- 또한 HTTP/1.1 방식은 각 호스트(브라우저)마다 최대 6개의 TCP연결을 지원하며, 요청된 순서에 따른 응답을 순차적으로 기다려야 하므로, 여러 요청이 발생하게 되면 뒤에 오는 다른 요청들이 차단되는 **HOL blocking(Head-of-Line blocking)** 현상이 발생한다.
+
+- 반면에 HTTP/2 방식은 하나의 TCP 연결에서 여러 양방향 스트림(stream)방식으로 통신한다. 따라서 하나의 TCP 연결 안에서 여러 stream을 형성하여 여러 요청과 동시에 여러 응답을 주고 받을 수 있으며 멀티플렉싱(multiplexing)을 지원하기 때문에 순차적 요청에 따른 응답을 순차적으로 기다릴 필요가 없이 비동기적으로 다수의 응답을 받을 수 있다.
+
+- [HTTP/2 - server push with Node.js](https://github.com/RisingStack/http2-push-example/blob/master/src/server.js)
+
+- server push를 지원하지 않는 HTTP/1.1 또는 3 버전에서는 클라이언트 사이드의 `preload` 를 활용하여 구현할 수 있다.
+
+```html
+<!-- preload 속성값을 통해 서버로부터 미리 데이터를 로드한다 -->
+<!-- 이 방식은 HTTP/3에서 성능 최적화가 유효할 수 있으나, HTTP/1.1 방식에서는 TCP 통신 방식의 한계로 인해 성능 최적화를 기대하기 힘듦 -->
+<link rel="preload" href="/styles.css" as="style" />
+<link rel="preload" href="/script.js" as="script" />
+```
+
+**R: `Render` the initial route as soon as possible**
+
+- 초기 화면을 빠르게 보여줌으로써 사용자 경험을 개선한다.
+
+- React에서 Suspense, lazy를 활용하여 **초기 페이지(Application shell - Header, Footer 등 공통적으로 사용되는 컴포넌트)** 와 skeleton UI를 활용하여 구현할 수 있다.
+
+**P: `Pre-cache` remaining assets**
+
+- 자주 방문하는 경로의 자원을 미리 캐싱하여 서버 요청 횟수를 줄이고, 더 나은 오프라인 경험을 제공한다.
+
+- React에서 code splitting 된 번들을 동적으로 가져옴으로써 구현할 수 있다.
+
+```js
+const Main = () => {
+	// Main 페이지에서 OtherPage로 이동하는 경우가 많을 경우 해당 번들을 미리 로드.
+	useEffect(() => {
+		import('./OtherPage');
+	}, []);
+
+	return(
+		// JSX...
+	);
+};
+```
+
+**L: `Lazy-load` non critical-resources**
+
+- 자주 요청되지 않는 자원(특정 페이지에 대한 번들)은 지연 로딩한다.
+
+- React에서 Suspense, lazy를 통해 간단히 구현할 수 있다.
