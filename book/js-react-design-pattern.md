@@ -2468,3 +2468,58 @@ const Main = () => {
 - 자주 요청되지 않는 자원(특정 페이지에 대한 번들)은 지연 로딩한다.
 
 - React에서 Suspense, lazy를 통해 간단히 구현할 수 있다.
+
+### 로딩 우선순위 패턴
+
+- 로딩 우선순위 패턴은 **preload, prefetch** 키워드를 통해 필요하다고 예상되는 특정 리소스를 우선적으로 요청하도록 설정하는 기법이다.
+
+- 주요 리소스의 로딩 순서를 수동으로 제어하면, 핵심 웹 지표(CWV: Core Web Vital)의 로딩 성능 및 지표에 긍정적인 영향을 미칠 수 있다.
+
+```html
+<html>
+	<head>
+		<!-- preload 적용으로 인해 해당 스크립트 파일이 초기에 먼저 로드된다. 로드된 스크립트의 실행은 script 태그를 통해 진행된다. -->
+		<link rel="preload" href="./buttonScript.js" as="script" />
+
+		<script src="./script1.js" defer></script>
+		<script src="./script2.js" defer></script>
+		<!-- A lot of script tags... -->
+	</head>
+	<body>
+		<!-- HTML Tags ...  -->
+
+		<button class="btn">buttonScript 파일에 의존하는 DOM</button>
+		<!-- defer 속성을 사용하면 HTML 파싱이 완료된 후 스크립트를 실행하므로 preload 적용의 의미가 없다. 따라서 async 속성을 적용해 스크립트가 로드되는 즉시 실행할 수 있도록 함. -->
+		<script src="./buttonScript.js" async></script>
+
+		<!-- HTML Tags ...  -->
+	</body>
+</html>
+```
+
+- 이러한 방식으로 특정 페이지의 크기가 클 경우, 특정 요소의 실행 우선순위를 수동으로 지정하기 위해 preload를 사용할 수 있다.
+
+**preload in React.js**
+
+- 리엑트에서 동적 가져오기(dynamic import)문에 webpack 번들러에 요청하기 위한 **매직 주석(magic comments)** 을 추가함으로써 preload 기능을 구현할 수 있다.
+
+```js
+// Webpack bundler는 해당 주석을 보고 빌드시 해당 컴포트에 관한 preload link 태그를 추가한다.
+const MainComponent = import(/* webpackPreload: true */ './Main');
+```
+
+**preload 사용의 trade-off**
+
+- preload 사용은 TTI(Time To Interactive) 또는 FID(First Input Delay) 지표를 최적화 하는데 도움이 될 수 있다.
+
+- 하지만 이로 인해 FCP(First Contentful Paint) 또는 LCP(Largest Contentful Paint) 시간이 지연되는 것은 피해야 한다.
+
+- HTTP/1.1 방식은 클라이언트당 최대 6개의 TCP 연결을 지원하므로, preload로 인해 다른 리소스의 로딩 우선순위가 밀려 오히려 효과적이지 않을 수 있다.
+
+- HTTP/2 방식은 하나의 TCP 연결안에서 멀티플렉싱을 지원하므로, 로딩이 지연되지는 않지만 preload가 적용된 리소스 로딩으로 인해 다른 리소스의 로딩이 약간 지연될 가능성이 있다.
+
+**prefetch 사용**
+
+- preload 속성은 네트워크 등 조건을 고려하지 않고 무조건 해당 리소스를 우선적으로 가져온다. 따라서 반드시 필요한 상황에만 preload를 사용하는 것이 권장되며, 대신 prefetch 속성을 사용하는 것이 좋다.
+
+- prefetch 속성은 브라우저가 네트워크, 대역폭 상태를 고려하여 어떤 리소스를 미리 가져올지 판단한다.
