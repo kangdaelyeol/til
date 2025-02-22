@@ -2072,14 +2072,14 @@ function App() {
 
 - 결론적으로 현재는 커스텀 훅이 HOC 패턴을 대체함으로써 로직 분리가 더욱 깔끔하게 되므로, 재사용성이 높은 로직이 있을때 커스텀 훅과 비교하여 HOC를 사용하는 것이 더욱 직관성이 있거나 효율적이라 판단될 때 사용하는 것이 좋다.
 
-### 랜더링 props(render props)
+### 렌더링 props(render props)
 
-- 랜더링 props(render props) 패턴이란 JSX를 반환하는 함수를 props 형태로 줌으로써 props를 받는 컴포넌트를 재사용하는 기법이다.
+- 렌더링 props(render props) 패턴이란 JSX를 반환하는 함수를 props 형태로 줌으로써 props를 받는 컴포넌트를 재사용하는 기법이다.
 
-- 랜더링 props는 컴포넌트에 포함된 props 형태의 JSX 반환 함수를 의미한다.
+- 렌더링 props는 컴포넌트에 포함된 props 형태의 JSX 반환 함수를 의미한다.
 
 ```js
-// 랜더링 props를 받아 랜더링 메서드를 호출함으로써 JSX를 반환하는 컴포넌트 정의
+// 렌더링 props를 받아 렌더링 메서드를 호출함으로써 JSX를 반환하는 컴포넌트 정의
 const SpecialStyle = (props) => {
 	const style = {
 		width: '100px',
@@ -2101,7 +2101,7 @@ function App() {
 }
 ```
 
-- 랜더링 props 패턴을 활용하여 상태를 끌어올려 공통 컴포넌트 사이에서만 상태가 관리되게 할 수 있다.
+- 렌더링 props 패턴을 활용하여 상태를 끌어올려 공통 컴포넌트 사이에서만 상태가 관리되게 할 수 있다.
 
 ```js
 const Fahrenheit = ({ value = 0 }) => {
@@ -2116,7 +2116,7 @@ const Input = (props) => {
 	// 기존에 상위 컴포넌트(App)에서 관리되어야하거나, 각 온도를 표시하는 하위 컴포넌트에서 따로 관리되어야 할 상태 value를 Input 컴포넌트로 끌어 올림.
 	const [value, setValue] = useState('');
 
-	// Input 컴포넌트는 자신의 상태관리 로직과 랜더링 props를 받아 JSX를 반환한다.
+	// Input 컴포넌트는 자신의 상태관리 로직과 렌더링 props를 받아 JSX를 반환한다.
 	return (
 		<>
 			<input
@@ -2145,7 +2145,7 @@ function App() {
 }
 ```
 
-- props.children 방식으로도 랜더링 props 패턴을 사용할 수 있다.
+- props.children 방식으로도 렌더링 props 패턴을 사용할 수 있다.
 
 ```js
 const Input = (props) => {
@@ -2164,7 +2164,7 @@ const Input = (props) => {
 };
 
 function App() {
-	// 랜더링 props 함수를 props.children으로써 받도록 함수를 컴포넌트로 감싼다.
+	// 렌더링 props 함수를 props.children으로써 받도록 함수를 컴포넌트로 감싼다.
 	return (
 		<>
 			<Input>
@@ -2180,15 +2180,15 @@ function App() {
 }
 ```
 
-**랜더링 props 패턴 장점**
+**렌더링 props 패턴 장점**
 
 - HOC 패턴과 같이 로직과 뷰를 분리하며, HOC 패턴에서 발생할 수 있는 이름 충돌 문제 또한 해결할 수 있다.
 
 - props를 명시적으로 전달함으로써 props의 추적이 편하고 가독성이 좋아진다.
 
-**랜더링 props 패턴 단점**
+**렌더링 props 패턴 단점**
 
-- 보편적이고 효율적인 리엑트 Hooks 패턴을 통해 랜더링 props 문제를 충분히 해결할 수 있다.
+- 보편적이고 효율적인 리엑트 Hooks 패턴을 통해 렌더링 props 문제를 충분히 해결할 수 있다.
 
   - 커스텀 훅을 통해 로직을 간결하게 공유할 수 있고, render 함수 구조를 만들 필요가 없어서 더욱 직관적이다.
 
@@ -2257,7 +2257,7 @@ function App() {
 
 - React 환경에서 일반적으로 ESM(export - import) 방식으로 모듈을 정적(static)으로 가져온다.
 
-- 모듈을 정적으로 가져오는 방식은 webpack을 통해 사전에 모듈이 병합되어 하나의 번들(bundle)로써 브라우저에 랜더링 된다.
+- 모듈을 정적으로 가져오는 방식은 webpack을 통해 사전에 모듈이 병합되어 하나의 번들(bundle)로써 브라우저에 렌더링 된다.
 
 - 프로젝트의 규모가 커질 수록 번들의 크기는 증가하기 때문에 브라우저에서 페이지의 로딩시간이 길어질 수 있다.
 
@@ -2298,7 +2298,7 @@ function App() {
 export default App;
 ```
 
-- Suspense 기능은 컴포넌트가 네트워크 리소스 요청을 통해 JS chunk을 받는 과정 이외에도 해당 컴포넌트가 내부 연산을 통해 렌더링 될 때 까지 컴포넌트 랜더링을 중지(suspense)하고 대체(fallback)한다.
+- Suspense 기능은 컴포넌트가 네트워크 리소스 요청을 통해 JS chunk을 받는 과정 이외에도 해당 컴포넌트가 내부 연산을 통해 렌더링 될 때 까지 컴포넌트 렌더링을 중지(suspense)하고 대체(fallback)한다.
 
 ```js
 // Main 컴포넌트(Suspense에 포함된 컴포넌트)는 컴포넌트 내부 연산이 끝날 때 까지 대기하므로, 컴포넌트(JS chunk) 리소스가 네트워크를 통해서 다운로드가 완료 되었다 하더라도, 추가적으로 내부 연산을 모두 마칠 때 까지 대기한다.
@@ -2409,7 +2409,7 @@ export default router;
 
 ### PRPL 패턴
 
-- PRPL(Push Render Pre-cache Lazy-loading) 패턴은 구글에서 제안한 웹 성능 최적화 패턴으로, 웹 페이지 랜더링 속도를 높이고, 최소한의 지연 로딩으로 로딩 속도 최적화를 목표로 한다.
+- PRPL(Push Render Pre-cache Lazy-loading) 패턴은 구글에서 제안한 웹 성능 최적화 패턴으로, 웹 페이지 렌더링 속도를 높이고, 최소한의 지연 로딩으로 로딩 속도 최적화를 목표로 한다.
 
 - 즉, 웹페이지가 빠르게 로딩되도록 리소스를 효율적으로 제공하는 방법이다.
 
@@ -2523,3 +2523,115 @@ const MainComponent = import(/* webpackPreload: true */ './Main');
 - preload 속성은 네트워크 등 조건을 고려하지 않고 무조건 해당 리소스를 우선적으로 가져온다. 따라서 반드시 필요한 상황에만 preload를 사용하는 것이 권장되며, 대신 prefetch 속성을 사용하는 것이 좋다.
 
 - prefetch 속성은 브라우저가 네트워크, 대역폭 상태를 고려하여 어떤 리소스를 미리 가져올지 판단한다.
+
+### 리스트 가상화
+
+- 리스트 가상화(List Virtualization)이란 대규모의 데이터 리스트를 렌더링 할 때 화면에 보이는 부분만 동적으로 렌더링하는 기법이다.
+
+- 리스트 가상화를 구현한 핵심적인 기법으로 윈도잉(windowing)이 있다.
+
+- 윈도잉을 통해 대규모 리스트 데이터의 렌더링을 최적화 함으로써 중저사양 기기에서도 빠른 렌더링 속도를 유지할 수 있다.
+
+- react-window 라이브러리를 활용해 윈도잉을 구현할 수 있다.
+
+```js
+import { FixedSizeList as List, FixedSizeGrid as Grid } from 'react-window';
+import AutoSizer from 'react-virtualized-auto-sizer';
+
+const dataList = [
+	{ name: 'myname', age: 28 },
+	// data list...
+];
+
+// 각 리스트 아이템을 표현할 컴포넌트를 정의한다.
+// 리스트의 index와 style을 프로퍼티로 받는다.
+// style 프로퍼티는 가상화 라이브러리가 스크롤 위치 계산을 위해 반드시 DOM에 적용해야 하는 스타일이다.
+// 따라서 windowing 기법에 사용되는 스타일을 적용하기 위해 반드시 style 프로퍼티를 jsx 태그에 적용시켜야 한다.
+const Row = ({ index, style }) => {
+	const { name, age } = dataList[index];
+	return (
+		<div style={style}>
+			name: {name}
+			age: {age}
+		</div>
+	);
+};
+
+const ListComponent = () => (
+	// FixedSizedList 컴포넌트의 크기는 정적인 값을 주어야한다.
+	// AutoSizer 컴포넌트를 추가함으로써 정적인 윈도잉 컴포넌트의 크기를 상위 컴포넌트 크기에 맞게 동적으로 조절할 수 있다.
+	<AutoSizer>
+		{({ width, height }) => (
+			<List
+				itemCount={dataList.length}
+				width={width}
+				height={height}
+				// itemSize값은 각 리스트 아이템의 높이값이다. 정적인 값을 주어야 한다.
+				itemSize={35}
+			>
+				{Row}
+			</List>
+		)}
+	</AutoSizer>
+);
+
+const dataGridList = [
+	[
+		{ name: 1, age: 28 },
+		{ name: 12, age: 28 },
+		{ name: 123, age: 28 },
+		{ name: 1234, age: 28 },
+		{ name: 234, age: 28 },
+	],
+	// grid list data...
+];
+
+// 그리드 아이템을 표현하기 위한 셀 컴포넌트를 정의한다.
+const Cell = ({ columnIndex, rowIndex, style }) => {
+	const { name, age } = dataGridList[rowIndex][columnIndex];
+	return (
+		<div style={style}>
+			name: {name}
+			age: {age}
+		</div>
+	);
+};
+
+const GridComponent = () => (
+	<AutoSizer>
+		{({ width, height }) => (
+			<Grid
+				columnCount={dataGridList[0].length}
+				rowCount={dataGridList.length}
+				// 각 아이템(Cell) 컴포넌트의 너비, 높이 값을 지정한다.
+				columnWidth={100}
+				rowHeight={150}
+				// 그리드 컴포넌트의 너비, 높이를 지정한다.
+				width={width}
+				heigth={height}
+			>
+				{Cell}
+			</Grid>
+		)}
+	</AutoSizer>
+);
+
+export default function Main() {
+	return (
+		<div>
+			// AutoSizer 기능으로 인해 각 리스트, 그리드 컴포넌트의 크기가 부모 요소
+			크기에 의해 조정된다.
+			<div style={{ width: '500px', height: '500px' }}>
+				<GridComponent />
+			</div>
+			<div style={{ width: '500px', height: '500px' }}>
+				<ListComponent />
+			</div>
+		</div>
+	);
+}
+```
+
+- CSS의 [content-visibility: auto](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility) 속성을 통해서도 가상화 효과를 사용할 수 있다.
+
+- 하지만 이는 초기 페인팅, 레이아웃에 한정되었으며, window-react 라이브러리에서 제공하는 기능 처럼 정밀하게 DOM 조작을 통한 windowing 기능은 제공하지 않는다.
