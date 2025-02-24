@@ -2647,3 +2647,29 @@ export default function Main() {
 - UX 최적화를 위해 [핵심 웹 지표(CWV - Core Web Vitals)](https://web.dev/explore/learn-core-web-vitals?hl=en)를 기준으로 애플리케이션을 최적화해야 한다.
 
   - 또한 CWV 최적화를 통해 [검색 엔진 최적화(SEO - search engine optimization)](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=en)에 대해서도 긍정적인 효과를 줄 수 있다.
+
+### 클라이언트 사이드 렌더링(CSR)
+
+- CSR(Client-Side Rendering)은 페이지 새로고침 없이 탐색을 지원하는 SPA(Single Page Application)를 구축할 수 있게 한다.
+
+- 리엑트의 CSR에서는 대부분 애플리케이션 로직이 클라이언트에서 실행되며, 데이터 CRUD에 관한 API를 통해 서버와 상호작용 한다.
+
+- 즉, 전체 웹 애플리케이션은 첫 요청시 모두 클라이언트로 로드 된다.
+
+  - 따라서 사용자가 링크를 통해 새로운 페이지를 탐색할 때 동적 데이터 로딩을 제외하고, 페이지 렌더링을 위한 HTML 요청을 서버로 보내지 않는다.
+
+  - 즉, 새로운 HTML을 서버로부터 받지 않고 SPA 라우터가 화면을 갱신한다.
+
+**CSR 단점**
+
+- CSR은 큰 자바스크립트 번들을 만들도록 하여 페이지의 FCP(First Contentful Paint)와 TTI(Time to Interactive)를 증가시킨다.
+
+- 애플리케이션의 의미 있는 콘텐츠가 시간에 맞춰 렌더링 되지 않을 가능성이 있어 SEO에 영향을 미칠 수 있다.
+
+  - 전통적인 검색 엔진 크롤러는 HTML을 기반으로 페이지 내용을 색인(indexing)한다.
+
+  - CSR 환경은 초기에 빈 HTML만 로드 되고, 이후 JS를 실행함으로써 실제 콘텐츠를 렌더링한다.
+
+  - 따라서 크롤러가 JS 렌더링을 놓친다면, 중요한 정보를 놓칠 가능성이 있다.
+
+  - 현대 구글 검색 엔진은 어느정도 JS 렌더링을 지원하지만 CSR은 다른 렌더링 패턴(SSR, SSG)에 비해 SEO 측면에서 불리하다.
