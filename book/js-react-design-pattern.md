@@ -2635,3 +2635,15 @@ export default function Main() {
 - CSS의 [content-visibility: auto](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility) 속성을 통해서도 가상화 효과를 사용할 수 있다.
 
 - 하지만 이는 초기 페인팅, 레이아웃에 한정되었으며, window-react 라이브러리에서 제공하는 기능 처럼 정밀하게 DOM 조작을 통한 windowing 기능은 제공하지 않는다.
+
+## 렌더링 패턴
+
+### 랜더링 패턴의 중요성
+
+- 렌더링 패턴은 다양한 사용 사례에 맞는 최적의 콘텐츠 렌더링 방식을 제공한다.
+
+- 주어진 상황에 적합한 렌더링 패턴을 선택하는 것은 개발 경험(DX - developer experience)과 사용자 경험(UX)에 엄청난 차이를 만들 수 있다.
+
+- UX 최적화를 위해 [핵심 웹 지표(CWV - Core Web Vitals)](https://web.dev/explore/learn-core-web-vitals?hl=en)를 기준으로 애플리케이션을 최적화해야 한다.
+
+  - 또한 CWV 최적화를 통해 [검색 엔진 최적화(SEO - search engine optimization)](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=en)에 대해서도 긍정적인 효과를 줄 수 있다.
