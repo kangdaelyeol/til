@@ -2751,3 +2751,13 @@ export default function Main() {
 - 여러 엣지 서버가 사용자의 요청을 분산처리하므로 서버의 부하가 줄어들어 빠른 응답이 가능하다.
 
 - AWS, Cloudflare 등 클라우드 서비스 제공업체를 통해 여러 엣지 서버를 제공받을 수 있다. 서버 사용량에 따라 과금된다.
+
+### 점진적 하이드레이션
+
+- 점진적 하이드레이션(incremental(partial) hydration)은 각 노드를 중요도에 따라 우선적으로 하이드레이션(Hydration)하는 기법이다.
+
+  - 이를 통해 빠르게 사용자에게 중요한 콘텐츠를 제공할 수 있다.
+
+- 리엑트의 18 SSR 스트리밍과 동시성 기능을 활용하여 점진적 하이드레이션 구현에 근접할 수 있다.
+
+  - **Suspense** API를 활용하여 컴포넌트를 부분적으로 표현할 수 있고, [useTransition](https://react.dev/reference/react/useTransition) Hook을 활용하여 내부 작업의 우선순위를 상대적으로 낮추어 사용자 입력 등 요청이 우선적으로 처리되도록 할 수 있다.
