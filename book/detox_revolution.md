@@ -6,29 +6,29 @@
 
 - **빈부 격차는 기회를 빼앗지만, 건강 격차는 삶을 빼앗는다.**
 
-- 몸을 단순히 개별 장기의 집합으로 보는 것이 아닌 하나의 시스템으로 이해하는 것.
+- 몸을 단순히 개별 장기의 집합으로 보는 것이 아닌, 하나의 시스템으로 이해하는 것.
 
-- 즉 몸은 하나의 시스템으로 연결 되어 있다는 것이다. 그래서 `삶을 대하는 태도`, 즉 생활습관과 식습관이 우리의 건강을 결정한다.
+- 즉, 몸은 하나의 시스템으로 연결 되어 있다는 것이다. 그래서 `삶을 대하는 태도`, 즉 생활습관과 식습관이 우리의 건강을 결정한다.
 
 - 노화의 속도를 늦춘다 &rarr; 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리곘다.
 
 - **건강 지식**
 
-  - `적확` 하고 우리의 삶에 적용 시킬 수 있는, 내면화 할 수 있는 지식을 잘 쌓아야 한다.
+  - `적확` 하고 우리의 삶에 적용 시킬 수 있고 내면화할 수 있는 지식을 잘 쌓아야 한다.
 
-  - 그러한 지식이 우리의 삶을 바꾸는 지식이 된다.
+  - 활용 가능한 지식이 우리의 삶을 바꾸는 지식이 된다.
 
 - **몸의 연결**
 
-  - 우리 몸의 시스템을 `망라`하는 원리를 파악하는것부터 시작.
+  - 우리 몸의 시스템을 망라하는 원리를 파악하는것부터 시작.
 
-  - 그 안에서 우리의 생활습관, 식습관과 관련된 원인을 찾는 것.
+  - 그 안에서 우리의 생활습관 및 식습관과 관련된 원인을 찾는 것.
 
 - **건강한 몸**
 
-  - 건강한 몸을 위해선 `해독(detox)`은 필수 선결 조건이다.
+  - 건강한 몸을 위해선 해독(detox)은 필수 선결 조건이다.
 
-  - 이 책에서는 해독을 위해 `십자화과 채소(cruciferous vegetable)` 섭취를 강조한다.
+  - 이 책은 해독을 위해 `십자화과 채소(cruciferous vegetable)` 섭취를 강조한다.
 
   - 십자화과 채소에 포함된 `phytochemical` 의 종류인 `sulforaphane` 이라는 물질은 `glutathione` 항산화 물질 생성을 촉진한다.
 
@@ -37,6 +37,10 @@ _적확하다 - 조금도 틀리거나 어긋남 없이 정확하고 확실하�
 _망라하다 - 널리 받아들여 모두 포함하다_
 
 _phytochemical - 모든 식물에 포함된 유기적 물질_
+
+---
+
+---
 
 ### Table of contents
 
@@ -128,9 +132,13 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Potassium](#potassium)
 
+---
+
+---
+
 ## Propionic Acid(PPA) - 프로피온산
 
-- [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 중 한 종류다.
+- [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 의 한 종류다.
 
 - PPA는 일반적으로 식품의 유통기한을 늘리기 위해 `방부제` 같은 느낌으로 넣는 `식품첨가제` 로도 사용되는 물질이다.
 
@@ -138,9 +146,13 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 하지만 PPA를 과다 섭취하면 [신경줄기세포](https://en.wikipedia.org/wiki/Neural_stem_cell) 에 안좋은 영향을 미친다. `신경회로` 를 변경해서 일부 신경세포를 과다 증식하게 만든다.
 
-  - 신경회로가 변경되는 형태가 자폐아동 뇌 양상과 동일했다.
+  - 신경회로가 변경되는 형태가 자폐아동의 뇌 양상과 동일했다.
 
   - 그래서 `임신중` 에 PPA를 과도하게 섭취하게 되면 태아의 자폐 발생 확률이 높아진다고 한다.
+
+---
+
+---
 
 ## Prostaglandin(PG)
 
@@ -150,9 +162,9 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 불포화 지방산인 오메가-6라고 불리는 [arachidonic acid](https://en.wikipedia.org/wiki/Arachidonic_acid) 지방산이 효소적 또는 비효소적 반응에 의해 **신호분자(signaling molecule)** 인 [eicosanoid](https://en.wikipedia.org/wiki/Eicosanoid) 물질이 된다.
 
-- **arachidonic acid** 물질은 여러 경로에 의해 다른 물질로 변하며, 그 중 [COX(cyclooxygenase)](https://en.wikipedia.org/wiki/Cyclooxygenase) 효소에 의한 대사(산화) 경로를 거쳐 생성된 eicosanoid 물질이 활성화되면 prostaglandin이라 할 수 있다.
+- **arachidonic acid** 물질은 여러 경로를 통해 여러 종류의 물질로 변할 수 있다. 여러 경로중 [COX(cyclooxygenase)](https://en.wikipedia.org/wiki/Cyclooxygenase) 효소에 의한 대사(산화) 경로를 거치면 eicosanoid 물질이 생성된다. prostaglandin(PG)는 eicosanoid 물질의 하위 그룹이다.
 
-  - 즉 오메가-6 지방산은 Prostaglandin 물질의 전구체(precursor)라고 할 수 있겠다.
+  - 즉, 오메가-6 지방산은 Prostaglandin 물질의 전구체(precursor)라고 할 수 있겠다.
 
 - PG 물질도 COX-1, COX-2 효소 경로에 따라 생성되는 종류가 다르다.
 
@@ -168,39 +180,49 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - `진통소염제(NSAID: Non-steroidal Anti-inflammatory Drug)`의 역할이 PG농도룰 줄이는 역할이라고 한다. 하지만 NSAID를 장기적으로 복용하게 되면 항상성 유지에 관여하는 COX-1 효소의 역할도 억제되어, 결국 장 건강에 좋지 않다고 한다.
 
+### Estrogen과의 관계
+
 - PG는 [Estrogen](#estrogen-metabolism)과 간접적으로 관계가 있다.
 
-  - Estrogen은 `생리통과 관련된 PG를 합성하는 효소(COX-2)의 발현`을 촉진시킨다.
+- Estrogen은 `생리통과 관련된 PG를 합성하는 효소(COX-2)의 발현` 을 촉진시킨다.
 
-  - 그래서 Estrogen 수치를 조절하는 것이 중요하다.
+- 그래서 Estrogen 수치를 조절하는 것이 중요하다.
 
-  - Estrogen은 대사, 간해독 과정을 통해서 결과적으로 `장으로 배출` 되어야 한다.
+- Estrogen은 대사, 간해독 과정을 통해서 결과적으로 장으로 배출되어야 한다.
 
-  - 하지만 변비 또는 장내 세균총 문제등으로 인해 배출이 안되면 `장내 혈관을 통해 재흡수` 될 수 있다.
+- 하지만 변비 또는 장내 세균총 문제 등으로 인해 배출이 안되면 `장내 혈관을 통해 재흡수` 될 수 있다.
 
-  - 따라서 장건강을 유지해서 장배출이 잘 되도록 해야한다.
+- 따라서 장건강을 유지해서 장배출이 잘 되도록 해야한다.
+
+---
+
+---
 
 ## 간기능 - liver function test
 
+- ALT, AST, GGT 효소는 간세포에 많이 분포한다.
+
 - `ALT - Alanine Aminotransferase`
-
-- `AST - Aspartate Aminotransferase`
-
-- `GGT - Gamma-glutamyltransferase`
-
-- 피검사를 할 때 세 가지 요소의 수치가 높게 나오면 간의 상태가 좋지 않다고 판단할 수 있다.
-
-- ALT, AST, GGT 효소는 `간세포`에 많이 분포한다.
 
   - [ALT](https://en.wikipedia.org/wiki/Alanine_transaminase) 효소는 [alanine](https://en.wikipedia.org/wiki/Alanine) 아미노산 과 관련한 에너지, 아미노산 대사에 관여하는 효소로, 주로 간세포에 분포해서 간이 손상되면 해당 수치가 높게 나온다.
 
+- `AST - Aspartate Aminotransferase`
+
   - [AST](https://en.wikipedia.org/wiki/Aspartate_transaminase) 효소는 [aspartic acid](https://en.wikipedia.org/wiki/Aspartic_acid) 아미노산과 관련된 아미노산, 에너지 대사에 관여하는 효소로, 간 뿐만이 아닌 다른 기관에도 분포하기 때문에 `간 특이성` 이 ALT에 비해 상대적으로 낮다.
 
-    - 그래서 일반적으로 간 수치를 볼 떄 ALT/AST 두 수치를 보고 평가하며, [AST/ALT Ratio](https://en.wikipedia.org/wiki/AST/ALT_ratio)에 따라 간 질환 유형을 감별한다.
+- `GGT - Gamma-glutamyltransferase`
 
   - [GGT](https://en.wikipedia.org/wiki/Gamma-glutamyltransferase) 효소는 [Glutathione](#glutathione-composition) 과 관련된 대사에 관여하는 효소다. 간에 주로 분포를 하지만 간 손상뿐만이 아닌 산화적 스트레스등 이유로 수치가 높게 나오기도 한다.
 
-- 결론저긍로 간이 손상된 경우 간세포의 투과성이 증가되거나 파괴 되어 해당 효소가 혈액으로 방출된다. 이로 인해 해당 효소들이 혈액에서 검출되는 것이다.
+- 피검사를 할 때 세 가지 요소의 수치가 높게 나오면 간의 상태가 좋지 않다고 판단할 수 있다.
+
+- 일반적으로 간 수치를 볼 때 ALT/AST 수치를 보고 평가하며, [AST/ALT Ratio](https://en.wikipedia.org/wiki/AST/ALT_ratio)에 따라 간 질환 유형을 감별한다.
+
+- 결론적으로 간이 손상된 경우 간세포의 투과성이 증가되거나 파괴 되어 해당 효소가 혈액으로 방출된다. 이로 인해 효소들이 혈액에서 검출되는 것이다.
+
+---
+
+---
 
 ## Dopamine
 
@@ -210,21 +232,29 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 뇌는 여러 상황을 통해서 보상과 관련된 행동 패턴을 학습하며, 이를 기반으로 도파민 분비가 조절된다.
 
-  1. **경험 기반의 기대** - `과거의 경험을 바탕으로` 행위, 자극에 대한 `결과를 예측`한다.
+- **뇌의 학습과 기대**
 
-  2. **보상 예측** - 보상이 기대되는 상황에서 보상이 발생하기 전에 `미리 행복을 느낀다`.
+  1. **경험 기반의 기대** - 과거의 경험을 바탕으로 행위와 자극에 대한 결과를 예측한다.
 
-  3. **학습과 강화** - `예측 오류(Prediction error)`를 통한 학습 강화. 예상보다 보상이 크면 도파민 분비가 증가하고, 보상이 작으면 분비가 적어진다.
+  2. **보상 예측** - 보상이 기대되는 상황에서 보상이 발생하기 전에 미리 행복을 느낀다.
 
-  4. **동기부여** - 예상되는 보상을 기반으로 `동기를 부여` 해주고, 목표를 달성하도록 노력을 촉진시킨다.
+  3. **학습과 강화** - 예측 오류(Prediction error)를 통한 학습 강화. 예상보다 보상이 크면 도파민 분비가 증가하고, 보상이 작으면 분비가 적어진다.
 
-- 도파민은 신경 자극을 받을 때 분비 되는데, 도파민 합성을 위한 [tyrosine](https://en.wikipedia.org/wiki/Tyrosine) 아미노산을 섭취하는 것도 중요하다.
+  4. **동기부여** - 예상되는 보상을 기반으로 동기를 부여하고, 목표를 달성하도록 노력을 촉진시킨다.
+
+- 도파민은 신경 자극을 받을 때 분비되는데, 도파민 합성을 위한 [tyrosine](https://en.wikipedia.org/wiki/Tyrosine) 아미노산을 섭취하는 것도 중요하다.
+
+---
+
+---
 
 ## Prefrontal Cortex - 전전두엽
 
 - 우리의 본능을 따르지 않으려면 [prefrontal cortex](https://en.wikipedia.org/wiki/Prefrontal_cortex)의 기능을 유지하는 것이 가장 중요하다.
 
-- 뇌에서 Prefrontal Cortex는 `고차원적 인지, 사고`를 하는 역할을 담당한다
+- 뇌에서 Prefrontal Cortex는 고차원적 인지와 사고를 하는 역할을 담당한다.
+
+- **전전두엽의 역할**
 
   - 추론, 문제 해결
 
@@ -238,61 +268,77 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
   - 감정 조절
 
-- 우리가 바쁘거나 스트레스를 받게 되면 prefrontal cortex의 기능이 저하된다. 이는 곧 본능적인 사고나 충동을 일으키고, 이는 곧 도파민을 요구 하게 된다.
+- 우리가 바쁘거나 스트레스를 받게 되면 prefrontal cortex의 기능이 저하된다.
+
+- prefrontal cortex 기능 저하는 본능적인 사고나 충동을 일으키며, 곧 도파민을 요구 하게 된다.
 
 - 따라서 `생각이 오염` 되지 않도록 내면의 상태를 평온하게 유지하려는 노력을 해야 한다.
 
+---
+
+---
+
 ## Urea(요소) - Uric Acid(요산)
 
-<span class="title">단백질의 정상 해독 과정</span>
+### <span class="title">단백질의 정상 해독 과정</span>
 
 - <span class="substance">protein</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">ammonia(byproduct)</span> &rarr; <span class="organ">liver</span> &rarr; <span class="interaction">urea cycle</span> &rarr; <span class="substance">urea</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
-<span class="title">간 기능 저하로 인한 간성 혼수 위험</title>
+### <span class="title">간 기능 저하로 인한 간성 혼수 위험</title>
 
 - <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperammonemia </span> &rarr; <span class="disease">(hepatic) encephalopathy</span>
 
 <hr />
 
-- 단백질은 몸에서 [이화 작용(catabolism)](https://en.wikipedia.org/wiki/Catabolism)을 거쳐 **암모니아(ammonia)** 를 부산물(byproduct) 로써 생성한다.
+### Protein - Ammonia - Urea
 
-  - 물질이 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 **대사산물(metabolite)** 라고 한다.
+- 단백질은 몸에서 [이화 작용(catabolism)](https://en.wikipedia.org/wiki/Catabolism)을 거쳐 **암모니아(ammonia)** 를 부산물(byproduct)로써 생성한다.
+
+  - 우리가 섭취한 물질은 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 **대사산물(metabolite)** 라고 한다.
 
   - 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물보단 **부산물** 이 맞다.
 
 - 암모니아(ammonia)는 독성이 강하기 때문에 우리 몸에서 배출되어야 하지만, 우리 몸에서 암모니아를 안전하게 배출할 수 없다. 그래서 암모니아에 **이산화탄소** 를 추가함으로써 독성이 약한 **요소(Urea)** 를 생성할 수 있고 안전하게 배출할 수 있다.
 
-- 암모니아는 간에서 [Urea Cycle](https://en.wikipedia.org/wiki/Urea_cycle) 을 통해 한 번더 대사되어 `요소(urea)로` 변환된다.
+- 암모니아는 간에서 [Urea Cycle](https://en.wikipedia.org/wiki/Urea_cycle) 과정을 통해 한 번 더 대사되어 요소(urea)로 변환된다.
 
-  - Urea Cycle은 **총 5가지의 효소적 반응(enzymatic reaction)** 으로 이루어져 있으며 총 **5종류의 효소** 가 관여한다.
+  - Urea Cycle은 총 다섯 가지의 효소적 반응(enzymatic reaction)으로 이루어져 있으며 총 다섯 종류의 효소가 관여한다.
 
-  - 첫 두 단계의 반응은 **미토콘드리아(mitochondrial) 반응**, 그리고 나머지 세 반응은 **세포질 (cytosolic) 반응** 이다
+  - 첫 두 단계의 반응은 **미토콘드리아(mitochondrial) 반응**, 그리고 나머지 세 반응은 **세포질(cytosolic) 반응** 이다
 
-- 변환된 urea는 혈액을 통해 **신장(kidney)** 으로 운반되어 배출이 된다.
+- 변환된 urea는 혈액을 통해 **신장(kidney)** 으로 운반되어 배출된다.
 
 - 인간과 같이 포유류 또는 **양서류(amphibian)** 는 이러한 방식으로 **질소를 요소로써 배출하는 종(ureotelic)** 이다.
 
-- ammonia가 선천적인 요인, 또는 간 기능 저하로 인해 배출되지 못하고 혈액에 축적되어 [고암모니아혈증(Hyperammonemia)](https://en.wikipedia.org/wiki/Hyperammonemia) 상태가 될 수 있고, 이는 곧 [간성혼수(hepatic encephalopathy)](https://en.wikipedia.org/wiki/Hepatic_encephalopathy)를 일으킬 확률이 높아진다.
+- ammonia가 선천적인 요인 또는 간 기능 저하로 인해 배출되지 못하고 혈액에 축적되어 [고암모니아혈증(Hyperammonemia)](https://en.wikipedia.org/wiki/Hyperammonemia) 상태가 될 수 있으며, 이는 곧 [간성혼수(hepatic encephalopathy)](https://en.wikipedia.org/wiki/Hepatic_encephalopathy)를 일으킬 확률이 높아진다.
 
-<span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
+---
+
+### <span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
 
 - <span class="substance">purine</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">uric acid</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
-<span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
+### <span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
 
 - <span class="substance">uric acid</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperuricemia </span> &rarr; <span class="substance"> uric crystal </span> &rarr; <span class="disease">gout(통풍)</span>
 
 <hr />
 
-- [purine](https://en.wikipedia.org/wiki/Purine) 을 섭취하면 간에서 대사를 통해 [요산(uric acid)](https://en.wikipedia.org/wiki/Uric_acid)을 생성한다.
+### Purine - Liver - Uric Acid
 
-- 요산(uric acid)은 신장을 통해 소변으로 배출이 되어야 한다. 요산이 배출되지 못하고 축적되면 [고요산혈증(hyperuricemia)](https://en.wikipedia.org/wiki/Hyperuricemia) 상태가 되며 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
+- [purine](https://en.wikipedia.org/wiki/Purine)을 섭취하면 간에서 대사를 통해 [요산(uric acid)](https://en.wikipedia.org/wiki/Uric_acid)을 생성한다.
+
+- 요산(uric acid)은 신장을 통해 소변으로 배출되어야 한다. 요산이 배출되지 못하고 축적되면 [고요산혈증(hyperuricemia)](https://en.wikipedia.org/wiki/Hyperuricemia) 상태가 되며, 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
 
   - `따라서 hyperuricemia 상태라고 해서 gout 라고 판단할 수 없다.`
 
-- 만약 요산으로 인한 통풍이 오면, 즉 혈중 uric acid 물질이 **uric crystal(요산 결정)** 형태로 축적되어 관절등 부위에 쌓여 통증을 일으키는 것이 확인 되면 통풍이라 한다. 이는 평생 관리해야 하는 만성 질환이다.
+- 만약 요산으로 인한 통풍이 올 때, 즉 혈중 uric acid 물질이 **uric crystal(요산 결정)** 형태로 축적되어 관절등 부위에 쌓여 통증을 일으키는 것이 확인되면, 이를 통풍이라고 한다. 통풍은 평생 관리해야 하는 만성 질환이다.
 
-- 혈중 uric acid 수치는 신장 기능이 저하되거나 단백질, 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아질 수 있으며, 이는 꾸준한 관리가 필요하다.
+- 혈중 uric acid 수치는 신장 기능이 저하되거나 단백질 또는 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아질 수 있다. 요산 수치는 꾸준한 관리가 필요하다.
+
+---
+
+---
 
 ## Estrogen metabolism
 
