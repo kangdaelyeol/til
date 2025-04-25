@@ -286,7 +286,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - #### <span class="substance">protein</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">ammonia(byproduct)</span> &rarr; <span class="organ">liver</span> &rarr; <span class="interaction">urea cycle</span> &rarr; <span class="substance">urea</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
-### <span class="title">간 기능 저하로 인한 간성 혼수 위험</title>
+### <span class="title">간 기능 저하로 인한 간성 혼수 위험</span>
 
 - #### <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperammonemia </span> &rarr; <span class="disease">(hepatic) encephalopathy</span>
 
@@ -312,7 +312,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 인간과 같이 포유류 또는 **양서류(amphibian)** 는 이러한 방식으로 **질소를 요소로써 배출하는 종(ureotelic)** 이다.
 
-### 간성혼수(Hepaticencephalopathy)
+### 간성혼수(Hepatic encephalopathy)
 
 - ammonia가 선천적인 요인 또는 간 기능 저하로 인해 배출되지 못하고 혈액에 축적되어 [고암모니아혈증(Hyperammonemia)](https://en.wikipedia.org/wiki/Hyperammonemia) 상태가 될 수 있으며, 이는 곧 [간성혼수(hepatic encephalopathy)](https://en.wikipedia.org/wiki/Hepatic_encephalopathy)를 일으킬 확률이 높아진다.
 
@@ -418,11 +418,11 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - catechol quinone과 DNA와 결합해서 [DNA adduct](https://en.wikipedia.org/wiki/DNA_adduct) 물질을 생성하며, 이는 발암물질이다.
 
-- **Glutathione**
+### Glutathione
 
-  - 하지만 우리는 이 과정을 **glutathione** 항산화 물질의 도움을 받아 회피 할 수 있다.
+- 하지만 우리는 수산화된 에스트로겐이 퀴논으로 변환되는 과정을 **glutathione** 항산화 물질의 도움을 받아 회피 할 수 있다.
 
-  - quinone 물질은 또한 glutathione 물질과 결합해 해독 과정을 거친다음 안전하게 배출된다.
+- 또한 만약 quinone 물질이 되었다 해도, glutathione과 결합해 해독 과정을 거친 다음 안전하게 배출될 수 있다.
 
 ---
 
