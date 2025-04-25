@@ -202,19 +202,21 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - ALT, AST, GGT 효소는 간세포에 많이 분포한다.
 
-- `ALT - Alanine Aminotransferase`
+### ALT - Alanine Aminotransferase
 
-  - [ALT](https://en.wikipedia.org/wiki/Alanine_transaminase) 효소는 [alanine](https://en.wikipedia.org/wiki/Alanine) 아미노산 과 관련한 에너지, 아미노산 대사에 관여하는 효소로, 주로 간세포에 분포해서 간이 손상되면 해당 수치가 높게 나온다.
+- [ALT](https://en.wikipedia.org/wiki/Alanine_transaminase) 효소는 [alanine](https://en.wikipedia.org/wiki/Alanine) 아미노산 과 관련한 에너지, 아미노산 대사에 관여하는 효소로, 주로 간세포에 분포해서 간이 손상되면 해당 수치가 높게 나온다.
 
-- `AST - Aspartate Aminotransferase`
+### AST - Aspartate Aminotransferase
 
-  - [AST](https://en.wikipedia.org/wiki/Aspartate_transaminase) 효소는 [aspartic acid](https://en.wikipedia.org/wiki/Aspartic_acid) 아미노산과 관련된 아미노산, 에너지 대사에 관여하는 효소로, 간 뿐만이 아닌 다른 기관에도 분포하기 때문에 `간 특이성` 이 ALT에 비해 상대적으로 낮다.
+- [AST](https://en.wikipedia.org/wiki/Aspartate_transaminase) 효소는 [aspartic acid](https://en.wikipedia.org/wiki/Aspartic_acid) 아미노산과 관련된 아미노산, 에너지 대사에 관여하는 효소로, 간 뿐만이 아닌 다른 기관에도 분포하기 때문에 `간 특이성` 이 ALT에 비해 상대적으로 낮다.
 
-- `GGT - Gamma-glutamyltransferase`
+### GGT - Gamma-glutamyltransferase
 
-  - [GGT](https://en.wikipedia.org/wiki/Gamma-glutamyltransferase) 효소는 [Glutathione](#glutathione-composition) 과 관련된 대사에 관여하는 효소다. 간에 주로 분포를 하지만 간 손상뿐만이 아닌 산화적 스트레스등 이유로 수치가 높게 나오기도 한다.
+- [GGT](https://en.wikipedia.org/wiki/Gamma-glutamyltransferase) 효소는 [Glutathione](#glutathione-composition) 과 관련된 대사에 관여하는 효소다. 간에 주로 분포를 하지만 간 손상뿐만이 아닌 산화적 스트레스등 이유로 수치가 높게 나오기도 한다.
 
-- 피검사를 할 때 세 가지 요소의 수치가 높게 나오면 간의 상태가 좋지 않다고 판단할 수 있다.
+### 간 수치
+
+- 피검사를 할 때 세 가지 요소(AST, ALT, GGT)의 수치가 높게 나오면 간의 상태가 좋지 않다고 판단할 수 있다.
 
 - 일반적으로 간 수치를 볼 때 ALT/AST 수치를 보고 평가하며, [AST/ALT Ratio](https://en.wikipedia.org/wiki/AST/ALT_ratio)에 따라 간 질환 유형을 감별한다.
 
@@ -232,15 +234,15 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 뇌는 여러 상황을 통해서 보상과 관련된 행동 패턴을 학습하며, 이를 기반으로 도파민 분비가 조절된다.
 
-- **뇌의 학습과 기대**
+### 뇌의 학습과 기대
 
-  1. **경험 기반의 기대** - 과거의 경험을 바탕으로 행위와 자극에 대한 결과를 예측한다.
+1. **경험 기반의 기대** - 과거의 경험을 바탕으로 행위와 자극에 대한 결과를 예측한다.
 
-  2. **보상 예측** - 보상이 기대되는 상황에서 보상이 발생하기 전에 미리 행복을 느낀다.
+2. **보상 예측** - 보상이 기대되는 상황에서 보상이 발생하기 전에 미리 행복을 느낀다.
 
-  3. **학습과 강화** - 예측 오류(Prediction error)를 통한 학습 강화. 예상보다 보상이 크면 도파민 분비가 증가하고, 보상이 작으면 분비가 적어진다.
+3. **학습과 강화** - 예측 오류(Prediction error)를 통한 학습 강화. 예상보다 보상이 크면 도파민 분비가 증가하고, 보상이 작으면 분비가 적어진다.
 
-  4. **동기부여** - 예상되는 보상을 기반으로 동기를 부여하고, 목표를 달성하도록 노력을 촉진시킨다.
+4. **동기부여** - 예상되는 보상을 기반으로 동기를 부여하고, 목표를 달성하도록 노력을 촉진시킨다.
 
 - 도파민은 신경 자극을 받을 때 분비되는데, 도파민 합성을 위한 [tyrosine](https://en.wikipedia.org/wiki/Tyrosine) 아미노산을 섭취하는 것도 중요하다.
 
@@ -282,33 +284,35 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ### <span class="title">단백질의 정상 해독 과정</span>
 
-- <span class="substance">protein</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">ammonia(byproduct)</span> &rarr; <span class="organ">liver</span> &rarr; <span class="interaction">urea cycle</span> &rarr; <span class="substance">urea</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
+- #### <span class="substance">protein</span> &rarr; <span class="interaction">metabolism</span> &rarr; <span class="substance">ammonia(byproduct)</span> &rarr; <span class="organ">liver</span> &rarr; <span class="interaction">urea cycle</span> &rarr; <span class="substance">urea</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
 ### <span class="title">간 기능 저하로 인한 간성 혼수 위험</title>
 
-- <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperammonemia </span> &rarr; <span class="disease">(hepatic) encephalopathy</span>
+- #### <span class="substance">ammonia</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperammonemia </span> &rarr; <span class="disease">(hepatic) encephalopathy</span>
 
-<hr />
+### 암모니아(Ammonia)
 
-### Protein - Ammonia - Urea
+- 단백질은 몸에서 [이화 작용(catabolism)](https://en.wikipedia.org/wiki/Catabolism)을 거쳐 **암모니아(Ammonia)** 를 부산물(byproduct)로써 생성한다.
 
-- 단백질은 몸에서 [이화 작용(catabolism)](https://en.wikipedia.org/wiki/Catabolism)을 거쳐 **암모니아(ammonia)** 를 부산물(byproduct)로써 생성한다.
+- 우리가 섭취한 물질은 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 **대사산물(metabolite)** 라고 한다.
 
-  - 우리가 섭취한 물질은 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 **대사산물(metabolite)** 라고 한다.
+- 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물보단 **부산물** 이 맞다.
 
-  - 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물보단 **부산물** 이 맞다.
+- 암모니아는 독성이 강하기 때문에 우리 몸에서 배출되어야 하지만, 우리 몸에서 암모니아를 안전하게 배출할 수 없다. 그래서 암모니아에 **이산화탄소** 를 추가함으로써 독성이 약한 **요소(Urea)** 를 생성할 수 있고 안전하게 배출할 수 있다.
 
-- 암모니아(ammonia)는 독성이 강하기 때문에 우리 몸에서 배출되어야 하지만, 우리 몸에서 암모니아를 안전하게 배출할 수 없다. 그래서 암모니아에 **이산화탄소** 를 추가함으로써 독성이 약한 **요소(Urea)** 를 생성할 수 있고 안전하게 배출할 수 있다.
+### 요소(Urea)
 
-- 암모니아는 간에서 [Urea Cycle](https://en.wikipedia.org/wiki/Urea_cycle) 과정을 통해 한 번 더 대사되어 요소(urea)로 변환된다.
+- 암모니아는 간에서 [Urea Cycle](https://en.wikipedia.org/wiki/Urea_cycle) 과정을 통해 한 번 더 대사되어 요소(Urea)로 변환된다.
 
-  - Urea Cycle은 총 다섯 가지의 효소적 반응(enzymatic reaction)으로 이루어져 있으며 총 다섯 종류의 효소가 관여한다.
+- Urea Cycle은 총 다섯 가지의 효소적 반응(enzymatic reaction)으로 이루어져 있으며 총 다섯 종류의 효소가 관여한다.
 
-  - 첫 두 단계의 반응은 **미토콘드리아(mitochondrial) 반응**, 그리고 나머지 세 반응은 **세포질(cytosolic) 반응** 이다
+- 첫 두 단계의 반응은 **미토콘드리아(mitochondrial) 반응**, 그리고 나머지 세 반응은 **세포질(cytosolic) 반응** 이다
 
-- 변환된 urea는 혈액을 통해 **신장(kidney)** 으로 운반되어 배출된다.
+- 변환된 요소는 혈액을 통해 **신장(kidney)** 으로 운반되어 배출된다.
 
 - 인간과 같이 포유류 또는 **양서류(amphibian)** 는 이러한 방식으로 **질소를 요소로써 배출하는 종(ureotelic)** 이다.
+
+### 간성혼수(Hepaticencephalopathy)
 
 - ammonia가 선천적인 요인 또는 간 기능 저하로 인해 배출되지 못하고 혈액에 축적되어 [고암모니아혈증(Hyperammonemia)](https://en.wikipedia.org/wiki/Hyperammonemia) 상태가 될 수 있으며, 이는 곧 [간성혼수(hepatic encephalopathy)](https://en.wikipedia.org/wiki/Hepatic_encephalopathy)를 일으킬 확률이 높아진다.
 
@@ -316,21 +320,21 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ### <span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
 
-- <span class="substance">purine</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">uric acid</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
+- #### <span class="substance">purine</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">uric acid</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
 ### <span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
 
-- <span class="substance">uric acid</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperuricemia </span> &rarr; <span class="substance"> uric crystal </span> &rarr; <span class="disease">gout(통풍)</span>
+- #### <span class="substance">uric acid</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperuricemia </span> &rarr; <span class="substance"> uric crystal </span> &rarr; <span class="disease">gout(통풍)</span>
 
-<hr />
+### 요산(Uric Acid)
 
-### Purine - Liver - Uric Acid
+- [퓨린(Purine)](https://en.wikipedia.org/wiki/Purine)을 섭취하면 간에서 대사를 통해 [요산(Uric Acid)](https://en.wikipedia.org/wiki/Uric_acid)을 생성한다.
 
-- [purine](https://en.wikipedia.org/wiki/Purine)을 섭취하면 간에서 대사를 통해 [요산(uric acid)](https://en.wikipedia.org/wiki/Uric_acid)을 생성한다.
+### 통풍(Gout)
 
-- 요산(uric acid)은 신장을 통해 소변으로 배출되어야 한다. 요산이 배출되지 못하고 축적되면 [고요산혈증(hyperuricemia)](https://en.wikipedia.org/wiki/Hyperuricemia) 상태가 되며, 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
+- 요산은 신장을 통해 소변으로 배출되어야 한다. 요산이 배출되지 못하고 축적되면 [고요산혈증(hyperuricemia)](https://en.wikipedia.org/wiki/Hyperuricemia) 상태가 되며, 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
 
-  - `따라서 hyperuricemia 상태라고 해서 gout 라고 판단할 수 없다.`
+- `따라서 hyperuricemia 상태라고 해서 gout 라고 판단할 수 없다.`
 
 - 만약 요산으로 인한 통풍이 올 때, 즉 혈중 uric acid 물질이 **uric crystal(요산 결정)** 형태로 축적되어 관절등 부위에 쌓여 통증을 일으키는 것이 확인되면, 이를 통풍이라고 한다. 통풍은 평생 관리해야 하는 만성 질환이다.
 
@@ -342,17 +346,17 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## Estrogen metabolism
 
-<span class="title">1. estrogen의 정상 해독 과정</span>
+### <span class="title">1. estrogen의 정상 해독 과정</span>
 
-- <span class="substance">estrogen</span> &rarr; <span class="organ">CYP1A1 / CYP1B1</span> &rarr; <span class="interaction">hydroxylation</span> &rarr; <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="organ">COMT</span> &rarr; <span class="interaction">methylation</span> &rarr; <span class="substance">2/4-methoxyestrogen</span> &rarr; <span class="interaction">대/소장 배출</span>
+- #### <span class="substance">estrogen</span> &rarr; <span class="organ">CYP1A1 / CYP1B1</span> &rarr; <span class="interaction">hydroxylation</span> &rarr; <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="organ">COMT</span> &rarr; <span class="interaction">methylation</span> &rarr; <span class="substance">2/4-methoxyestrogen</span> &rarr; <span class="interaction">대/소장 배출</span>
 
-- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">glutathione</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="interaction">대/소장 배출
+- #### <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">glutathione</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="interaction">대/소장 배출
 
-<span class="title">2. estrogen의 비정상 해독 과정</span>
+### <span class="title">2. estrogen의 비정상 해독 과정</span>
 
-- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">DNA</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="substance">DNA adduct</span> &rarr; <span class="disease">carginogenecity(발암성)</span>
+- #### <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">quinone</span> &rarr; <span class="substance">DNA</span> &rarr; <span class="interaction">결합</span> &rarr; <span class="substance">DNA adduct</span> &rarr; <span class="disease">carginogenecity(발암성)</span>
 
-<hr />
+### Estrogen 배출
 
 - 일반적으로 신체에 주로 존재하는 에스트로겐은 세 종류가 있다.
 
@@ -364,113 +368,135 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 여기서 Estriol(E3)은 E1, E2와 달리 다른 대사 과정을 통해 배출된다고 한다.
 
-- 에스트로겐(E1, E2)이 대사를 통해 몸에서 배출이 되기 위해 **수산화(hydroxylation), 메틸화(methylation)`** 두 과정을 거친다.
+- 에스트로겐(E1, E2)이 대사를 통해 몸에서 배출이 되기 위해 **수산화(hydroxylation)** 와 **메틸화(methylation)`** 과정을 거친다.
 
-- **Hydroxylation**
+---
 
-  - 수산화는 **수산기(hydroxyl radical / OH)** 를 붙이는 과정이다.
+### <span class="title">Estrogen metabolism(Hydroxylation) pathway</span>
 
-  - estrone(E1)과 estradiol(E2) 은 **cytochrome P450** 효소군의 `CYP1A1, CYP1B1` 효소를 통해 수산화를 거친다
+- #### <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1A1(hydroxylation)</span> &rarr; <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
 
-<span class="title">Estrogen metabolism(Hydroxylation) pathway</span>
+- #### <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1B1(hydroxylation)</span> &rarr; <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
 
-- <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1A1(hydroxylation)</span> &rarr; <span class="substance">2-hydroxyestrone / 2-hydroxyestradiol</span>
+`접두사로 붙은 숫자는 각각 분자핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.`
 
-- <span class="substance">estrone / estradiol</span> &rarr; <span class="interaction">CYP1B1(hydroxylation)</span> &rarr; <span class="substance">4-hydroxyestrone / 4-hydroxyestradiol</span>
+### <span class="title">Estrogen metabolism(methylation) pathway</span>
 
-- 접두사로 붙은 숫자는 각각 분자 핵의 2번, 4번 탄소위치에 hydroxyl radical을 붙이는 것에서 구분된다.
+- #### <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="interaction">"COMT(methylation)</span> &rarr; <span class="substance">2/4-methoxyestrogen</span>
 
-- **Methylation**
+### 수산화(Hydroxylation)
 
-  - 메틸화는 **메틸기(methyl radical / CH<sub>3</sub>)** 를 붙이는 과정이다.
+- 수산화는 **수산기(hydroxyl radical / OH)** 를 붙이는 과정이다.
 
-  - 수산화된 hydroxyestrogen은 **COMT(Catechol - O - methyltransferase)** 효소를 통해 methylation과정을 거친다.
+- estrone(E1)과 estradiol(E2) 은 **cytochrome P450** 효소군의 `CYP1A1, CYP1B1` 효소를 통해 수산화를 거친다
 
-  - COMT는 말그대로 [catechol](https://en.wikipedia.org/wiki/Catechol) 구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.
+### 메틸화(Methylation)
 
-<span class="title">Estrogen metabolism(methylation) pathway</span>
+- 메틸화는 **메틸기(methyl radical / CH<sub>3</sub>)** 를 붙이는 과정이다.
 
-- <span class="substance">2/4-hydroxyestrogen</span> &rarr; <span class="interaction">"COMT(methylation)</span> &rarr; <span class="substance">2/4-methoxyestrogen</span>
+- 수산화된 hydroxyestrogen은 **COMT(Catechol - O - methyltransferase)** 효소를 통해 methylation과정을 거친다.
+
+- COMT는 말그대로 [catechol](https://en.wikipedia.org/wiki/Catechol) 구조를 갖는 물질에 메틸기를 붙이는 촉매 역할을 한다.
+
+### 에스트로겐 산화-환원 반응
 
 - 메틸화까지 완료된 estrogen은 자연적으로 배출이 된다.
 
-- 문제는 4-hydroxyestrogen의 다른 대사 과정을 통해 발암 위험이 높아진다는 것이다.
+- 문제는 메틸화 이전의 에스트로겐인 4-hydroxyestrogen의 다른 대사 과정을 통해 발암 위험이 높아진다는 것이다.
 
-<span class="title">Estrogen redox reaction pathway</span>
+---
 
-- <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">catechol quinone</span>
+### <span class="title">Estrogen redox reaction pathway</span>
 
-- 수산화 되어 catechol 구조를 가지게 된 catechol estrogen 물질은 redox 반응을 통해 catechol quinone 물질로 변할 수 있다
+- #### <span class="substance">4-hydroxyestrogen</span> &rarr; <span class="interaction">redox reaction</span> &rarr; <span class="substance">catechol quinone</span>
+
+### Cathchol Quinone
+
+- 수산화 되어 catechol 구조를 가지게 된 catechol estrogen 물질은 redox 반응을 통해 **catechol quinone** 물질로 변할 수 있다
 
 - catechol quinone 물질은 반응성이 매우 높아서 DNA와 쉽게 결합한다.
 
-- catechol quinone과 DNA와 결합해서 [DNA adduct](https://en.wikipedia.org/wiki/DNA_adduct) 물질을 생성하는데 이는 발암물질이다.
+- catechol quinone과 DNA와 결합해서 [DNA adduct](https://en.wikipedia.org/wiki/DNA_adduct) 물질을 생성하며, 이는 발암물질이다.
 
-- 하지만 우리는 이 과정을 **glutathione** 항산화 물질의 도움을 받아 회피 할 수 있다.
+- **Glutathione**
 
-- quinone 물질은 또한 glutathione 물질과 결합해 해독 과정을 거친다음 안전하게 배출이 된다.
+  - 하지만 우리는 이 과정을 **glutathione** 항산화 물질의 도움을 받아 회피 할 수 있다.
+
+  - quinone 물질은 또한 glutathione 물질과 결합해 해독 과정을 거친다음 안전하게 배출된다.
+
+---
+
+---
 
 ## Mercury Poisoning - 수은 중독
+
+### 셀레늄(Se)
 
 - 몸의 항산화 기능을 위해서 glutathione의 역할이 중요하다.
 
 - [glutathione peroxidase(GPx)](https://en.wikipedia.org/wiki/Glutathione_peroxidase) 효소에 존재하는 [Selenocysteine(Sec)](https://en.wikipedia.org/wiki/Selenocysteine) 아미노산의 **셀레늄(Se)** 은 항산화 기능의 핵심 물질이다.
 
+### 수은과 셀레늄
+
 - **수은(Hg)** 은 셀레늄과 **결합성** 이 매우 강하기 때문에 수은이 체내로 들어오게 되면 셀레늄과 결합하여 항산화 기능이 제대로 발현되지 않는다.
 
 - 수은(Hg)은 자연에서 `무기 수은(Hg`<sup>`2+`</sup>`)` 형태로 존재하는데 **생물 농축(bioaccumulation)과 생물 증폭(biomagnification)** 과정을 통해 `메틸 수은(CH`<sub>`3`</sub>`Hg`<sup>`+`</sup>`)` 형태로 체내에 흡수된다.
 
-<hr />
+---
 
-<span class="title">Glutathione의 정상적인 항산화 과정</span>
+### <span class="title">Glutathione의 정상적인 항산화 과정</span>
 
-- <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> &rarr; <span class="substance">H<sub>2</sub>O + ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
+- #### <span class="substance">Peroxide / Reactive Oxygen Species(ROS) + GPx(Sec-H)</span> &rarr; <span class="substance">H<sub>2</sub>O + ROH(알코올)</span> + <span class="organ">GPx(Sec-SeOH)</span>
 
-- <span class="substance">2GSH</span> + <span class="organ">GPx(Sec-SeOH)</span> &rarr; <span class="substance">GSSG</span> + <span class="organ">GPx(Sec-H)</span>
+- #### <span class="substance">2GSH</span> + <span class="organ">GPx(Sec-SeOH)</span> &rarr; <span class="substance">GSSG</span> + <span class="organ">GPx(Sec-H)</span>
 
-- <span class="substance">GSSG, NADPH + H<sup>+</sup></span> + <span class="organ">GSR</span> &rarr; <span class="substance">2GSH</span> + <span class="substance">NADP<sup>+</sup></span>
+- #### <span class="substance">GSSG, NADPH + H<sup>+</sup></span> + <span class="organ">GSR</span> &rarr; <span class="substance">2GSH</span> + <span class="substance">NADP<sup>+</sup></span>
 
-<span class="title">수은으로 인한 셀레늄 결핍 과정</span>
+### <span class="title">수은으로 인한 셀레늄 결핍 과정</span>
 
-- <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> &rarr; <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
+- #### <span class="substance">CH<sub>3</sub>Hg<sup>+</sup></span> + <span class="organ">GPx(Sec-H)</span> &rarr; <span class="substance">H<sup>+</sup></span> + <span class="organ">GPx(SecHgCH<sub>3</sub>)</span>
 
-- <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> &rarr; <span class="substance">HgSe + CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
+- #### <span class="organ">GPx(SecHgCH<sub>3</sub>)</span> + <span class="substance">GSH</span> &rarr; <span class="substance">HgSe + CH<sub>3</sub>SH</span> + <span class="substance">GSSG</span>
 
-<hr />
+`GPx - Glutathione Peroxidase`
 
-- `GPx - Glutathione Peroxidase`
+`Sec - Selenocysteine`
 
-- `Sec - Selenocysteine`
+`GSH - Reduced Glutathione`
 
-- `GSH - Reduced Glutathione`
+`GSSG - Oxidized Glutathione(Disulfie)`
 
-- `GSSG - Oxidized Glutathione(Disulfie)`
+`GSR - Glutathione-disulfide reductase`
 
-- `GSR - Glutathione-disulfide reductase`
+`NADP - Nicotine Adenine Dinucleotide Phosphane H(Reduced)`
 
-- `NADP - Nicotine Adenine Dinucleotide Phosphane H(Reduced)`
+`ROH(알코올) - Alkyl group + OH`
 
-- `ROH(알코올) - Alkyl group + OH`
+`SeOH - Selenenic acid`
 
-- `SeOH - Selenenic acid`
-
-<hr />
+### 활성 산소종과 글루타치온
 
 - 활성산소종(ROS)은 [산화스트레스(Oxidative stress)](https://en.wikipedia.org/wiki/Oxidative_stress) 를 발생시켜 세포의 기능을 저하한다.
 
-- GPx효소는 **Sec(Selenocysteine)** 아미노산 을 가지고 있는데 Sec에 포함된 셀레늄이 항산화 기능에 중요한 역할을 한다.
+- GPx효소는 **Sec(Selenocysteine)** 아미노산을 가지고 있는데, Sec에 포함된 셀레늄이 항산화 기능에 중요한 역할을 한다.
 
-  - ROS는 주로 **과산화물(H<sub>2</sub>O<sub>2</sub>)** 또는 **유기 과산화물(ROOH)** 형태로 존재하는데 이들이 Selenocysteine의 셀레늄(Se)과 만나게되면 산화-환원 반응에 의해 셀레늄은 [SeOH(selenenic acid)](https://en.wikipedia.org/wiki/Selenic_acid) 형태로 산화 되고 과산화물(ROS)을 물과 알코올로 환원 시킨다.
+- ROS는 주로 **과산화물(H<sub>2</sub>O<sub>2</sub>)** 또는 **유기 과산화물(ROOH)** 형태로 존재하는데 이들이 Selenocysteine의 셀레늄(Se)과 만나게되면 산화-환원 반응에 의해 셀레늄은 [SeOH(selenenic acid)](https://en.wikipedia.org/wiki/Selenic_acid) 형태로 산화 되고 과산화물(ROS)을 물과 알코올로 환원 시킨다.
 
-  - SeOH를 가진 GPx의 Sec는 두 개의 **GSH(Reduced Glutathione)** 물질과 반응하여 다시 **환원형(Sec-H)** 으로 돌아가는데, 여기서 두 GSH는 **GSSG(Oxidized Glutathione)** 로 결합된 형태로 산화 된다.
+- SeOH를 가진 GPx의 Sec는 두 개의 **GSH(Reduced Glutathione)** 물질과 반응하여 다시 **환원형(Sec-H)** 으로 돌아가는데, 여기서 두 GSH는 **GSSG(Oxidized Glutathione)** 로 결합된 형태로 산화 된다.
 
-  - 산화된 glutathione(GSSG)은 [GSR(Glutathione-disulfide reductase)](https://en.wikipedia.org/wiki/Glutathione_reductase) 효소와 환원형인 [NADPH](https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide_phosphate) 조효소와 함께 반응해서 다시 환원형 glutathione(GSH)으로 전환된다. 이렇게 항산화 사이클을 형성한다.
+- 산화된 glutathione(GSSG)은 [GSR(Glutathione-disulfide reductase)](https://en.wikipedia.org/wiki/Glutathione_reductase) 효소와 환원형인 [NADPH](https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide_phosphate) 조효소와 함께 반응해서 다시 환원형 glutathione(GSH)으로 전환된다. 이렇게 항산화 사이클을 형성한다.
+
+### 수은과 글루타치온
 
 - 수은은 셀레늄과 강한 결합성을 가지고 있기 때문에 체내로 오게 되면 셀레늄과 결합해서 항산화 시스템 균형을 잃게 만든다.
 
-  - 메틸 수은 **(CH<sub>3</sub>Hg<sup>+</sup>)** 은 GPx 효소의 환원형 selenocysteine(Sec-H) 과 반응해서 항산화 기능을 상실한 상태인 **GPx(SecHgCH<sub>3</sub>)** 상태로 전환된다.
+- 메틸 수은 **(CH<sub>3</sub>Hg<sup>+</sup>)** 은 GPx 효소의 환원형 selenocysteine(Sec-H) 과 반응해서 항산화 기능을 상실한 상태인 **GPx(SecHgCH<sub>3</sub>)** 상태로 전환된다.
 
-  - 기능을 상실한 효소는 GSH와 반응해서 **Hg-Se** 복합체와 **CH<sub>3</sub>SH(methanethiol)** 으로 분해되어 배출이 될 수 있다. 이 과정에서 GSH는 GSSG로 산화된다.
+- 기능을 상실한 효소는 GSH와 반응해서 **Hg-Se** 복합체와 **CH<sub>3</sub>SH(methanethiol)** 으로 분해되어 배출이 될 수 있다. 이 과정에서 GSH는 GSSG로 산화된다.
+
+---
+
+---
 
 ## Mercury - Thyroid gland
 
@@ -478,41 +504,41 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 갑상선에서 분비되는 호르몬은 우리 몸의 **항상성(homeostasis)** 을 유지 하는 역할을 한다.
 
-<hr />
+---
 
-<span class="title">HPT axis</span>
+### <span class="title">HPT axis</span>
 
-- <span class="organ">Hypothalamus</span> &rarr; <span class="substance">TRH</span> &rarr; <span class="organ">Pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="organ">Thyroid gland</span> &rarr; <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
+- #### <span class="organ">Hypothalamus</span> &rarr; <span class="substance">TRH</span> &rarr; <span class="organ">Pituitary gland</span> &rarr; <span class="substance">TSH</span> &rarr; <span class="organ">Thyroid gland</span> &rarr; <span class="substance">T3(20%) / T4(80 ~ 90%)</span>
 
-<span class="title">탈아이오딘화 효소와의 상호작용</span>
+### <span class="title">탈아이오딘화 효소와의 상호작용</span>
 
-- <span class="substance">T4</span> &rarr; <span class="organ">D1 / D2</span> &rarr; <span class="substance">T3</span>
+- #### <span class="substance">T4</span> &rarr; <span class="organ">D1 / D2</span> &rarr; <span class="substance">T3</span>
 
-- <span class="substance">rT3</span> &rarr; <span class="organ">D1</span> &rarr; <span class="substance">T2</span>
+- #### <span class="substance">rT3</span> &rarr; <span class="organ">D1</span> &rarr; <span class="substance">T2</span>
 
-- <span class="substance">T4</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">rT3</span>
+- #### <span class="substance">T4</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">rT3</span>
 
-- <span class="substance">T3</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">T2</span>
+- #### <span class="substance">T3</span> &rarr; <span class="organ">D3</span> &rarr; <span class="substance">T2</span>
 
-<hr />
+`TRH - Thyrotropin Releasing Hormone: 갑상선 자극 호르몬 방출(분비) 호르몬`
 
-- `TRH - Thyrotropin Releasing Hormone: 갑상선 자극 호르몬 방출(분비) 호르몬`
+`TSH - Thyroid Stimulating Hormone: 갑상선 자극 호르몬`
 
-- `TSH - Thyroid Stimulating Hormone: 갑상선 자극 호르몬`
+`D - Deiodinase: 탈아이오딘화 효소`
 
-- `D - Deiodinase: 탈아이오딘화 효소`
+`T3 - Triiodothyronine`
 
-- `T3 - Triiodothyronine`
+`T4 - Thyroxine`
 
-- `T4 - Thyroxine`
-
-<hr />
+### 갑상선 호르몬
 
 - **T3(Triiodothyronine)** 갑상선 호르몬은 우리 몸의 기능을 조절하는데 중요한 역할을 한다.
 
-- **Deiodinase** 효소 는 thyroid hormone 활성화 균형을 맞추는 역할을 하고, 호르몬 분비는 HPT axis 메커니즘에 의해 조절된다.
+- **탈아이오딘화 효소(Deiodinase)** 는 thyroid hormone 활성화 균형을 맞추는 역할을 하고, 호르몬 분비는 HPT axis 메커니즘에 의해 조절된다.
 
-- **수은(Mercury)** 은 갑상선 호르몬 균형을 유지하려는 효소인 탈아이오딘화 효소(Deiodinase)의 [selenoprotein](https://en.wikipedia.org/wiki/Selenoprotein) 단백질의 셀레늄과 결합해 효소 기능을 무력화시켜 호르몬 균형을 무너뜨린다.
+### 수은의 영향
+
+- **수은(Mercury)** 은 갑상선 호르몬 균형을 유지하는 효소인 탈아이오딘화 효소(Deiodinase)의 [selenoprotein](https://en.wikipedia.org/wiki/Selenoprotein) 단백질의 셀레늄과 결합해 효소 기능을 무력화시켜 호르몬 균형을 무너뜨린다.
 
 - 일반적으로 TSH 호르몬에 의해 자극받은 갑상선은 T<sub>3</sub>, T<sub>4</sub> 호르몬을 분비하는데, T3 호르몬을 T4 호르몬에 비해 적게 분비한다.
 
@@ -520,9 +546,19 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - T3호르몬은 T4호르몬에 비해 신체 활성도가 약 3 ~ 5배 정도이며 탈아이오딘화 효소에 의해 활성도가 조절된다.
 
-- **D2(Deiodinase Type 2)** 효소는 보통 뇌하수체에 존재하는데, D2기능이 저하되면 T4를 T3로 전환시키는 기능이 저하되어 T3 호르몬 결핍이된다. 그래서 뇌하수체는 이를 인지해 TSH 호르몬을 많이 분비하는데, 이는 갑상선에 무리를 줄 수 있고, 결과적으로 혈중 갑상선 호르몬 농도를 증가 시킨다. 이러한 경우 [Hyperthyrodism(갑상선 기능 항진증)](https://en.wikipedia.org/wiki/Hyperthyroidism) 으로 이어진다.
+- **D2(Deiodinase Type 2)** 효소는 보통 뇌하수체에 존재하는데, 수은에 의해 D2효소의 기능이 저하되면 T4를 T3로 전환시키는 기능이 저하되어 T3 호르몬이 결핍된다.
 
-- 이러한 호르몬 과다분비는 결과적으로 Pituitary gland 와 Thyroid gland 에 무리를 주기 때문에 TSH 호르몬 Thyroid hormone 분비 저하로 이어질 수 있다. 이러한 경우 [Hypothyrodism(갑상선 기능 저하증)](https://en.wikipedia.org/wiki/Hypothyroidism) 으로 이어진다.
+- 그래서 뇌하수체는 이를 인지하여 결핍된 T3호르몬 분비를 위해 TSH 호르몬을 많이 분비한다.
+
+### 갑상선 호르몬 균형 붕괴
+
+- 과도한 TSH 호르몬 분비는 갑상선에 무리를 줄 수 있으며, 결과적으로 혈중 갑상선 호르몬 농도를 증가 시킨다. 이러한 경우 [Hyperthyrodism(갑상선 기능 항진증)](https://en.wikipedia.org/wiki/Hyperthyroidism) 으로 이어진다.
+
+- 이러한 호르몬 과다분비는 또한 Pituitary gland 와 Thyroid gland 에 무리를 주기 때문에 TSH 호르몬 Thyroid hormone 분비 저하로도 이어질 수 있다. 이러한 경우 [Hypothyrodism(갑상선 기능 저하증)](https://en.wikipedia.org/wiki/Hypothyroidism) 으로 이어진다.
+
+---
+
+---
 
 ## Inorganic Arsenic (무기 비소)
 
