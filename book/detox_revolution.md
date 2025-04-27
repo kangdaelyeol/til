@@ -562,45 +562,59 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## Inorganic Arsenic (무기 비소)
 
-- **해조류** 에 많이 존재하는 무기 비소는 우리 몸에 좋지 않다.
+### 무기 비소와 유기 비소
 
-- **유기 비소** 는 빠르게 몸에서 배출되어 심각한 독성을 유발하지 않는데, 무기 비소는 독성이 높으며 몸에서 배출되기 쉽지 않다.
+- 비소는 크게 무기 비소와 유기 비소로 구분할 수 있다.
 
-- 무기 비소는 **mitochondrion** 기능 장애를 유발한다.
+- **해조류** 에 많이 존재하는 무기 비소는 몸에 좋지 않다.
 
-<hr />
+- **유기 비소(Organic Arsenic)** 는 빠르게 몸에서 배출되어 심각한 독성을 유발하지 않는데, 무기 비소는 독성이 높으며 몸에서 배출되기 쉽지 않다.
 
-<span class="title">무기 비소가 mitochondrion에 미치는 영향
+- 무기 비소는 **미토콘드리아(Mitochondrion)** 기능 장애를 유발한다.
 
-- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">ETC영향</span> &rarr; <span class="interaction">ATP 생성 감소 / ROS 증가</span> &rarr; <span class="interaction">막 투과성 증가</span> &rarr; <span class="interaction">PTP 개방</span>
+---
 
-- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="disease">mtDNA 직접적인 손상</span> &rarr; <span class="interaction">PTP개방</span>
+### <span class="title">무기 비소가 mitochondrion에 미치는 영향
 
-- <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">세포 내 칼슘 농도 높임</span> &rarr; <span class="disease">막 전위 붕괴</span> &rarr; <span class="interaction">PTP개방</span>
+- #### <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">ETC영향</span> &rarr; <span class="interaction">ATP 생성 감소 / ROS 증가</span> &rarr; <span class="interaction">막 투과성 증가</span> &rarr; <span class="interaction">PTP 개방</span>
 
-- <span class="interaction">PTP개방</span> &rarr; <span class="interaction">Cytochrome C 세포질 방출</span> &rarr; <span class="interaction">caspase 효소군 활성화</span> &rarr; <span class="disease">apoptosis</span>
+- #### <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="disease">mtDNA 직접적인 손상</span> &rarr; <span class="interaction">PTP개방</span>
 
-<hr />
+- #### <span class="substance">Inorganic Arsenic</span> &rarr; <span class="organ">mitochondrion</span> &rarr; <span class="interaction">세포 내 칼슘 농도 높임</span> &rarr; <span class="disease">막 전위 붕괴</span> &rarr; <span class="interaction">PTP개방</span>
 
-- `mPTP - Mitochondrial permeability transition pore - (mitochondrion)투과성 전이공`
+### PTP 개방으로 인한 영향
 
-<hr />
+- #### <span class="interaction">PTP개방</span> &rarr; <span class="interaction">Cytochrome C 세포질 방출</span> &rarr; <span class="interaction">caspase 효소군 활성화</span> &rarr; <span class="disease">apoptosis</span>
 
-- inorganic arsenic 물질은 mitochondrion의 기능을 저하시킨다.
+`mPTP - Mitochondrial Permeability Transition Pore - (mitochondrion)투과성 전이공`
 
-- mitochondrion의 기능이 저하되면 ATP생성에 지장이 생기며, 이는 곧 에너지 대사에 심각한 영향을 미친다.
+### 무기 비소의 위험성
 
-- 또한 여러 루트를 통해 [mPTP](https://en.wikipedia.org/wiki/Mitochondrial_permeability_transition_pore)를 개방하게 되는데, 이를 통해 [ETC](https://en.wikipedia.org/wiki/Electron_transport_chain) 그룹 에서 중요한 역할을 하는 `Cytochrome C` 단백질이 막간(intermembrane) 에서 세포질로 방출이 된다.
+- 무기 비소(inorganic arsenic)는 mitochondrion의 기능을 저하시킨다.
 
-  - Cytochrome C 는 Complex3(Coenzyme Q) 복합체 에서 Complex4(Cytochrome C oxidase) 복합체 로 전자를 전달하는 역할을 한다.
+- mitochondrion 기능이 저하되면 ATP생성에 지장이 생기며, 이는 곧 에너지 대사에 심각한 영향을 미친다.
 
-  - 이 과정은 ATP 합성 과정에 굉장히 중요한 역할을 하는데, Cyt C 방출로 인해 ATP 합성이 저하된다.
+- 무기 비소의 작용으로 인한 여러 루트를 통해서 미토콘드리아는 [mPTP](https://en.wikipedia.org/wiki/Mitochondrial_permeability_transition_pore)를 개방하게 된다.
 
-- 또한 Cytochrome C 단백질은 세포질로 방출이 되면 [caspase](https://en.wikipedia.org/wiki/Caspase) 효소군 을 활성화 한다. caspase 효소군은 **세포 자살(apoptosis)** 과정에 중요한 역할을한다.
+### mPTP(mitochondrial Permeability Transition Pore) 개방으로 인한 영향
 
-- 즉 mitochondrion 밖에서의 Cytochrome C는 세포의 자살 경로를 활성화 함으로써 세포 기능을 저하시킨다.
+- mPTP 개방 통해 [ETC](https://en.wikipedia.org/wiki/Electron_transport_chain) 그룹 에서 중요한 역할을 하는 `Cytochrome C` 단백질이 막간(intermembrane) 에서 세포질로 방출이 된다.
 
-- 또한 세포 스트레스로 인한 [necrosis](https://en.wikipedia.org/wiki/Necrosis) 과정이 유발될 수 있다.
+- Cytochrome C 는 Complex3(Coenzyme Q) 복합체 에서 Complex4(Cytochrome C oxidase) 복합체 로 전자를 전달하는 역할을 한다.
+
+- 전자를 전달하는 과정은 ATP 합성 과정에 굉장히 중요한 역할을 하는데, Cyt C 단백질이 mPTP 개방으로 인한 방출로 인해 ATP 합성이 저하된다.
+
+- 또한 Cytochrome C 단백질은 세포질로 방출되면 [caspase](https://en.wikipedia.org/wiki/Caspase) 효소군 을 활성화 한다. caspase 효소군은 **세포 자살(apoptosis)** 과정에 중요한 역할을한다.
+
+  - 즉, mitochondrion 밖에서의 Cytochrome C는 세포의 자살 경로를 활성화 함으로써 세포 기능을 저하시킨다.
+
+- 세포 스트레스로 인해 [necrosis](https://en.wikipedia.org/wiki/Necrosis) 과정이 유발될 수 있다.
+
+![Necrosis](./images/necrosis.png)
+
+---
+
+---
 
 ## Environmental hormone - 환경 호르몬
 
