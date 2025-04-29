@@ -64,7 +64,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Inorganic Arsenic (무기 비소)](#inorganic-arsenic-무기-비소)
 
-- [Environmental hormone - 환경 호르몬](#environmental-hormone---환경-호르몬)
+- [Environmental Hormone - 환경 호르몬](#environmental-hormone---환경-호르몬)
 
 - [농약 - herbicide](#농약---herbicide)
 
@@ -616,87 +616,83 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ---
 
-## Environmental hormone - 환경 호르몬
+## Environmental Hormone - 환경 호르몬
 
-- endocrine disruptor - 내분비계 교란 물질, [환경 호르몬](https://en.wikipedia.org/wiki/Endocrine_disruptor) 이란 우리 몸에서 호르몬과 유사한 반응을 주어서 내분비계를 교란 시키는 화학물질이다.
+- [환경 호르몬](https://en.wikipedia.org/wiki/Endocrine_disruptor) 이란 내분비계 교란 물질(endocrine disruptor)이며, 몸에서 호르몬과 유사한 반응을 일으켜 내분비계를 교란시키는 화학물질이다.
 
-<hr />
+### phthalate - 프탈레이트
 
-- **phthalate - 프탈레이트**
+- 프탈레이트는 플라스틱을 유연(plasticizer)하게 하는 성질이 있어 가소제로 많이 쓰인다, e. g., 아이들 장난감이나 의료용 장갑에 쓰임.
 
-  - 플라스틱을 **유연(plasticizer)** 하게 하는 성질이 있어 가소제로 많이 쓰임, e. g., 아이들 장난감이나 의료용 장갑에 쓰임.
+- 또한 향을 붙잡아 주는 역할을 해서 향수, 디퓨저, 샴푸같은데도 사용된다.
 
-  - 향을 붙잡아 주는 역할을 해서 향수, 디퓨저, 샴푸같은데도 사용한다고 한다.
+- 그래서 향수 같은 제품을 고를 때 **phthalate free** 제품을 골라야 한다.
 
-  - 그래서 향수 같은 제품을 고를 때 **phthalate free** 제품을 골라야 한다.
+### paraben - 파라벤
 
-<hr />
+- 파라벤은 미생물의 성장을 억제해서 방부제로 많이 쓰인다
 
-- **paraben - 파라벤**
+- 항균 또는 방부 효과가 있으며, 식품에 사용되는것은 극히 제한적이라고 한다.
 
-  - 미생물의 성장을 억제해서 **방부제** 로 많이 쓰인다
+- 주로 위생용품(치약, 비누 등)과 화장품(크림, 샴푸, 로션 등)에 사용되어 미생물의 성장을 억제한다.
 
-    - 항균, 방부 효과가 있으며 식품에 사용되는것은 극히 제한적이라고 한다.
+- 파라벤은 **estrogen-like effects** 효과를 준다. 즉, 파라벤에 노출되면 여성 호르몬 불균형을 일으킬 수 있다.
 
-    - 주로 위생용품(치약, 비누 등), 화장품(크림, 샴푸, 로션 등)에 사용되어 미생물의 성장을 억제한다.
+- 그래서 **paraben free** 제품을 골라야 한다
 
-  - paraben은 **estrogen-like effects** 효과를 준다.
+### PFAS - Per and Polyfluoroalkyl Substance - 과불화화합물
 
-  - 그래서 **paraben free** 제품을 골라야 한다
+- [불소계면활성제](https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances) 라고도 한다.
 
-<hr />
+- 불소계면활성제는 탄소와 플루오린이 결합된 **유기불소합성화학물질(organofluorine chemical compounds)** 의 총칭이다.
 
-- **PFAS - Per and Polyfluoroalkyl Substance - 과불화화합물**
+- **탄소와 플루오린 결합(C-F)사이 강력한 결합** 을 통해 방수성이 있으며, 열과 화학물질에 대한 저항성을 가진다.
 
-  - [불소계면활성제](https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances) 라고도 한다.
+- 자연적인 분해가 어려워 **bioaccumulation / biomagnification** 을 통해 우리 몸에 축적된다.
 
-    - 탄소와 플루오린이 결합된 **유기불소합성화학물질(organofluorine chemical compounds)** 의 총칭이다.
+- 대표적으로 자주 사용되었던 PFOA / PFOS 물질이 있다.
 
-  - **C-F사이 강력한 결합** 을 통해 - 방수성이 있고, 열과 화학물질에 대한 저항성을 가진다.
+**PFOA - Perfluorooctanoic Acid - 과불화옥탄산**
 
-  - 자연적인 분해가 어려워 **bioaccumulation / biomagnification** 을 통해 우리 몸에 축적된다.
+- **코팅팬** 에 사용되는데, 비점착성 물질(테프론)이 팬의 표면에 잘 고르게 퍼지도록 하는 **보조제(계면활성제 / 유화제(emulsifier))** 역할을 했다.
 
-  - 대표적으로 자주 사용되었던 PFOA / PFOS 물질이 있다.
+- 현재는 유해성이 많이 알려서 사용하지 않는다 `(PFOA free)`.
 
-  - **PFOA - Perfluorooctanoic Acid - 과불화옥탄산**
+**PFOS - Perfluorooctanesulfonic acid - 과불화옥탄설폰산**
 
-    - **코팅팬** 에 사용되는데, 비점착성 물질(테프론)이 팬의 표면에 잘 고르게 퍼지도록 하는 **보조제(계면활성제 / 유화제(emulsifier))** 역할을 했다.
+- 섬유등의 방수 / 방오 코팅 용도로 많이 사용된다.
 
-    - 현재는 유해성이 많이 알려서 사용하지 않는다 `(PFOA free)`.
+- PFOA와 마찬가지로 잔류성이 강해 [POP(Persistent Organic Pollutant)](https://en.wikipedia.org/wiki/Persistent_organic_pollutant)로 분류되었다. PFOS는 PFOA보다 생물학적 반감기가 더 길어서 잔류성이 높다.
 
-  - **PFOS - Perfluorooctanesulfonic acid - 과불화옥탄설폰산**
+### Bisphenol - 비스페놀
 
-    - 섬유등의 방수 / 방오 코팅 용도로 많이 사용된다.
+- [비스페놀](https://en.wikipedia.org/wiki/Bisphenol)은 **diphenylmethane** 형태의 화합물 그룹이다.
 
-    - PFOA와 마찬가지로 잔류성이 강해 [POP(Persistent Organic Pollutant)](https://en.wikipedia.org/wiki/Persistent_organic_pollutant)로 분류되었다. PFOS는 PFOA보다 생물학적 반감기가 더 길어서 잔류성이 높다.
+- 비스페놀은 주로 `영수증` 과 플라스틱에 사용된다.
 
-<hr />
+  - 영수증을 만지는 것 만으로도 비스페놀에 노출되기 때문에 영수증 되도록 만지지 않는 것이 좋다.
 
-- **Bisphenol - 비스페놀**
+  - 손이 젖어있거나 기름진 경우 흡수율이 높아질 수 있다.
 
-  - [비스페놀](https://en.wikipedia.org/wiki/Bisphenol)은 **diphenylmethane** 형태의 화합물 그룹이다.
+  - 영수증과 많이 접촉하는 직종은 장갑을 착용하는 것이 권장된다.
 
-    - 비스페놀은 주로 `영수증` 과 플라스틱에 사용된다
+- 또한 플라스틱을 딱딱하게 만드는 **경화제(hardener)** 역할을 함.
 
-    - 플라스틱을 딱딱하게 만드는 **경화제(hardener)** 역할을 함.
+- **estrogen-like effects** 특징이 있으며, 유해성이 많이 알려진 물질이다.
 
-    - 영수증을 만지는 것 만으로도 비스페놀에 노출되기 때문에 영수증 되도록 만지지 않는 것이 좋다.
+- 보통 사용되던 종류는 **BPA(Bisphenol-A)** 였는데, 이를 대체하기 위해 BPS, BPF 물질이 제안되었다.
 
-      - 손이 젖어있거나 기름진 경우 흡수율이 높아질 수 있다.
+  - BPA - diphenylolpropane - **propane(CH<sub>3</sub>)구조**
 
-    - 영수증과 많이 접촉하는 직종은 장갑을 착용하는 것이 권장된다.
+  - BPF - dihydroxydiphenylmethane - **methane(CH<sub>2</sub>)구조**
 
-  - **estrogen-like effects** 특징이 있고 유해성이 많이 알려진 물질이다.
+  - BPS - sulphonyldiphenol - **sulfony(SO<sub>2</sub>)구조**
 
-  - 보통 사용되던 종류는 **BPA(Bisphenol-A)** 였는데, 이를 대체하기 위한 `BPS, BPF` 물질이 제안되었다.
+- BPF, BPS는 현재 연구상 위험성이 확실하게 밝혀지지는 않았지만, 그렇다고 안전하다고 할 수 없다. 더욱 연구가 필요한 물질이라고 한다.
 
-    - BPA - diphenylolpropane - **propane(CH<sub>3</sub>)구조**
+---
 
-    - BPF - dihydroxydiphenylmethane - **methane(CH<sub>2</sub>)구조**
-
-    - BPS - sulphonyldiphenol - **sulfony(SO<sub>2</sub>)구조**
-
-  - BPF, BPS는 현재 연구상 위험성이 확실하게 밝혀지지는 않았지만, 그렇다고 안전하다고 할 수 없다. 더욱 연구가 필요한 물질이라고 한다.
+---
 
 ## 농약 - herbicide
 
