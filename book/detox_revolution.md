@@ -66,7 +66,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Environmental Hormone - 환경 호르몬](#environmental-hormone---환경-호르몬)
 
-- [농약 - herbicide](#농약---herbicide)
+- [herbicide - 농약](#herbicide---농약)
 
 - [Advanced Glycation end-products - 최종 당화 산물](#advanced-glycation-end-products---최종-당화-산물)
 
@@ -694,39 +694,57 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ---
 
-## 농약 - herbicide
+## herbicide - 농약
 
-- 보통 미국 같은데에서 옥수수를 재배하기 직전 [Roundup](<https://en.wikipedia.org/wiki/Roundup_(herbicide)>) 이라는 제초제를 주로 사용한다
+### Roundup
 
-- Roundup은 사실 상표, 브랜드 명이다. 이 회사에서는 `Glyphosate-based herbicide` 제초제를 제조하는데, 이는 몸에 좋지 않다고 한다.
+- 보통 미국 같은데에서 옥수수를 재배하기 직전 [Roundup](<https://en.wikipedia.org/wiki/Roundup_(herbicide)>) 이라는 제초제를 주로 사용한다.
 
-- [Glyphosate](https://en.wikipedia.org/wiki/Glyphosate)는 식물에서 [aromatic amino acid](https://en.wikipedia.org/wiki/Aromatic_amino_acid) 생성을 위한 7과정의 [shikimate pathway](https://en.wikipedia.org/wiki/Shikimate_pathway) 과정중 [EPSP synthase](https://en.wikipedia.org/wiki/EPSP_synthase) 효소의 기능을 저하해 아미노산 합성을 방해해 식물을 죽게 한다.
+- Roundup은 사실 상표 또는 브랜드 이름이다. 이 회사에서는 `Glyphosate-based herbicide` 제초제를 제조하는데, 이는 몸에 좋지 않다고 한다.
 
-- 하지만 이는 제초제라 농작물도 죽게 하지만 GMO 개발로 Roundup 제초제에 대한 저항성을 가진 Roundup-free 농작물이 있다.
+### Glyphosate
 
-## Advanced Glycation end-products - 최종 당화 산물
+- 식물은 [aromatic amino acid](https://en.wikipedia.org/wiki/Aromatic_amino_acid) 를 합성해야 생장에 필요한 단백질과 호르몬을 만들 수 있다. 아로마틱 아미노산을 생성하기 위해 일곱 단계로 이루어진 [shikimate pathway](https://en.wikipedia.org/wiki/Shikimate_pathway)를 거친다.
 
-- 단백질과 지방이 당(sugar)와 함께 `비효소적 반응(non-enzymatic reaction)` 을 거쳐 최종 당화산물이 생성이 된다.
+- [Glyphosate](https://en.wikipedia.org/wiki/Glyphosate)는 시킴산 경로에서 [EPSP synthase](https://en.wikipedia.org/wiki/EPSP_synthase) 효소의 기능을 저해해 아미노산 합성을 방해한다. 이를 통해 식물을 죽음에 이르게 한다.
 
-  - [마이야르 반응(Maillard reaction)](https://testbook.com/chemistry/maillard-reaction)이 대표적인 non-enzymatic reaction 중 하나다.
+- 하지만 Glyphosate 는 제초제이기 때문에 농작물도 죽게 한다. 따라서 GMO 개발을 통해, Roundup 제초제에 대한 저항성을 가진 'Roundup Ready' 농작물이 있다.
 
-  - [캐러멜화(caramelization reaction)](https://en.wikipedia.org/wiki/Caramelization)도 비효소적 반응인데 당 성분이 오직 열에 의해서 갈변(browning)되는 [열분해(pyrolysis)](https://en.wikipedia.org/wiki/Pyrolysis) 과정이다. 이는 **아미노산** 이 포함되어 반응하는 마이야르 반응과는 다른 메커니즘이다.
+---
 
-  - 우리 몸에서도 [당화 반응(Glycation)](https://en.wikipedia.org/wiki/Glycation)이 발생한다. 이는 자연스럽게 발생되며 **노화(aging)** 와 연관이 있다.
+---
 
-- AGEs는 **RAGE(Receptor)** 수용체와 결합해 노화(aging), 만성 질환(chronic condition, disease), **신경 독성(neurotoxicity)** 등을 유발할 수 있으며, **APOE** 유전형에 따라 Alzheimer's disease 와 연관성이 있다고 한다.
+## Advanced Glycation End-Products - 최종 당화 산물
 
-- **APOE - Apolipoprotein E genotype**
+### 비효소적 반응
 
-  - [APOE](https://en.wikipedia.org/wiki/Apolipoprotein_E) 단백질은 우리 몸에서 **콜레스테롤, 지질(지방) 대사** 에 관여한다.
+- 단백질 또는 지방이 당(sugar)와 함께 `비효소적 반응(non-enzymatic reaction)` 을 거쳐 최종 당화산물이 생성된다.
 
-  - APOE를 생성하는 대표적인 세 가지의 대립 형질(allele)이 있는데, `APOE 4` 유전형을 가진 사람이 **AGEs** 물질에 노출되면 **Alzheimer's disease** 에 취약하다고 한다.
+- [마이야르 반응(Maillard Reaction)](https://testbook.com/chemistry/maillard-reaction)이 대표적인 non-enzymatic reaction 중 하나다.
 
-  - 우리 몸에서 단백질 대사가 발생하면 부산물로 [B-amyloid](https://en.wikipedia.org/wiki/Amyloid_beta) 라는 펩타이드가 생성된다.
+- [캐러멜화(Caramelization Reaction)](https://en.wikipedia.org/wiki/Caramelization)도 비효소적 반응인데 당 성분이 오직 열에 의해서 갈변(browning)되는 [열분해(Pyrolysis)](https://en.wikipedia.org/wiki/Pyrolysis) 과정이다. 이는 아미노산이 포함되어 반응하는 마이야르 반응과는 다른 메커니즘이다.
 
-  - 이렇게 쌓인 B-amyloid 펩타이드는 뇌에서 면역기능을 담당하는 [미세아교세포(microglia)](https://en.wikipedia.org/wiki/Microglia)에 의해 제거되어야 하는데, APOE4 단백질은 그 제거 과정을 방해한다.
+- 우리 몸에서도 [당화 반응(Glycation)](https://en.wikipedia.org/wiki/Glycation)이 자연스럽게 발생한다. 이는 **노화(aging)** 와 연관이 있다.
 
-  - 제거 되지 못한 B-amyloid는 **plaque** 형태로 쌓이게 되면 염증반응(Inflammatory Response) 을 일으키고, **시냅스(synapse)** 기능을 저하시킨다. 이는 결국 alzheimer로 이어진다.
+- AGEs는 **RAGE(Receptor)** 수용체와 결합해 노화(aging), 만성 질환(chronic condition, disease), **신경 독성(neurotoxicity)** 등을 유발할 수 있다.
+
+### APOE - Apolipoprotein E genotype
+
+- AGEs는 **APOE** 유전형에 따라 AGEs에 노출되었을 때 치매(Alzheimer's disease) 위험에 영향을 준다.
+
+- [APOE](https://en.wikipedia.org/wiki/Apolipoprotein_E) 단백질은 몸에서 **콜레스테롤 대사와 지질(지방) 대사** 에 관여한다.
+
+- APOE를 생성하는 대표적인 세 가지의 대립 형질(allele)이 있는데, `APOE 4` 유전형을 가진 사람이 **AGEs** 물질에 노출되면 **Alzheimer's disease** 에 취약하다고 한다.
+
+- 우리 몸에서 신경세포 막 단백질인 APP(amyloid precursor protein)이 효소적으로 절단되면 부산물로 [B-amyloid](https://en.wikipedia.org/wiki/Amyloid_beta) 라는 펩타이드가 생성된다.
+
+- B-amyloid 펩타이드는 뇌에서 면역기능을 담당하는 [미세아교세포(microglia)](https://en.wikipedia.org/wiki/Microglia)에 의해 제거되어야 하는데, APOE4 단백질은 그 제거 과정을 방해한다.
+
+- 제거 되지 못한 B-amyloid는 **plaque** 형태로 쌓여 염증 반응(Inflammatory Response) 을 일으키며, **시냅스(synapse)** 기능을 저하시킨다. 이는 결국 치매로 이어진다.
+
+---
+
+---
 
 ## liver
 
