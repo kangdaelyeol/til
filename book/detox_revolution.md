@@ -821,71 +821,81 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 담즙은 음식물을 소화하는데 중요한 역할을 한다.
 
-- 담즙 제대로 분비가 되지 않으면 아무리 좋은 음식을 섭취해도 의미가 없다.
+- 담즙 제대로 분비되지 않으면 아무리 좋은 음식을 섭취해도 의미가 없다.
 
-- 특히 지방의 소화가 원활히 이루어지지 않아 영양소 흡수에 문제가 발생하고, 흡수되지 못한 지방은 다른 장내 세균에 의해 분해되어 독성 물질로써 작용될 수 있다.
+- 답즘 분비가 제대로 이루어지지 않으면, 특히 지방의 소화가 원활히 이루어지지 않게 되어 영양소 흡수에 문제가 발생하고, 흡수되지 못한 지방은 다른 장내 세균에 의해 분해되어 독성 물질로 작용될 수 있다.
 
-- 담즙은 지방을 유화 시키고, 지용성 독소를 배출 하고, 스테로이드 호르몬을 배출 하는데 중요한 역할을 한다.
+- 담즙은 지방을 유화 시키고, 지용성 독소를 배출하고, 스테로이드 호르몬을 배출하는데 중요한 역할을 한다.
 
-- 담즙에 포함된 여러 물질 중에 소화에 중요한 역할을 하는 물질이 **담즙산(bile acid)** 이다.
+- 담즙에 포함된 여러 물질 중에 소화에 중요한 역할을 하는 물질은 **담즙산(bile acid)** 이다.
 
-<hr />
+---
 
-<span class="title">담낭(gallbladder)에 쌓이는 담즙</span>
+### <span class="title">담낭(gallbladder)에 쌓이는 담즙</span>
 
-- <span class="substance">cholesterol</span> &rarr; <span class="organ">liver / CYP7A1(8B1)(27A1)</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="organ">gallbladder</span>
+- #### <span class="substance">cholesterol</span> &rarr; <span class="organ">liver / CYP7A1(8B1)(27A1)</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="organ">gallbladder</span>
 
-- <span class="substance">cholesterol</span> &rarr; <span class="organ">liver</span> &rarr; <span class="organ">gallbladder</span>
+- #### <span class="substance">cholesterol</span> &rarr; <span class="organ">liver</span> &rarr; <span class="organ">gallbladder</span>
 
-- <span class="substance">RBC</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">bilirubin</span> &rarr; <span class="organ">gallbladder</span>
+- #### <span class="substance">RBC</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">bilirubin</span> &rarr; <span class="organ">gallbladder</span>
 
-<hr />
+### 콜레스테롤 -> 담즙산
 
-- cholesterol은 간에서 CYP효소에 의해 여러 경로를 거쳐 bile acid로 변환되어 담낭에 저장되는데 콜레스테롤 과잉시 그대로 담낭에 저장 된다.
+- cholesterol은 간에서 CYP효소에 의해 여러 경로를 거쳐 답즙산(bile acid)으로 변환되어 담낭에 저장되는데, 콜레스테롤 과잉시 그대로 담낭에 저장된다.
 
-  - `담낭에 콜레스테롤이 많고, 적절히 융해 되지 않으면 담석(gallstones)이 생길 수 있다.`
+- `담낭에 콜레스테롤이 많고, 적절히 융해 되지 않으면 담석(gallstones)이 생길 수 있다.`
 
-- [bilirubin](https://en.wikipedia.org/wiki/Bilirubin) 은 적혈구의 헤모글로빈이 최종 대사산물로써 변환된 **혈색소** 다. 이는 담즙에 포함된 물질인데, 이 색소 수치가 높으면 [황달](https://en.wikipedia.org/wiki/Jaundice) 상태가 된다.
+### 빌리루빈(Bilirubin)
 
-<hr />
+- [bilirubin](https://en.wikipedia.org/wiki/Bilirubin) 은 적혈구의 헤모글로빈이 최종 대사산물로 변환된 **혈색소** 다.
 
-<span class="title">소장(small intestine)에서 영양분 흡수</span>
+- 빌리루빈은 담즙에 포함된 물질인데, 이 색소 수치가 높으면 [황달](https://en.wikipedia.org/wiki/Jaundice) 상태가 된다.
 
-`Duodenum(십이지장)에서의 작용`
+---
 
-- <span class="substance">fat</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="interaction">emulsification</span> &rarr; <span class="interaction">incresed digestive surface area</span> &rarr; <span class="organ">Pancreas</span> &rarr; <span class="substance">lipase</span> &rarr; <span class="interaction">lipid hydrolysis</span> &rarr; <span class="substance">fatty acid + monoglyceride (micelle)</span>
+### <span class="title">소장(small intestine)에서 영양분 흡수</span>
 
-`공장(Jejunum), 회장(Ileum)의 역할`
+#### `Duodenum(십이지장)에서의 작용`
 
-- <span class="substance">micelle</span> &rarr; <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> &rarr; <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
+- #### <span class="substance">fat</span> &rarr; <span class="substance">bile acid</span> &rarr; <span class="interaction">emulsification</span> &rarr; <span class="interaction">incresed digestive surface area</span> &rarr; <span class="organ">Pancreas</span> &rarr; <span class="substance">lipase</span> &rarr; <span class="interaction">lipid hydrolysis</span> &rarr; <span class="substance">fatty acid + monoglyceride (micelle)</span>
+
+#### `공장(Jejunum), 회장(Ileum)의 역할`
+
+- #### <span class="substance">micelle</span> &rarr; <span class="organ">Jejunum - Epithelial cells(Absorpive Enterocytes)</span> &rarr; <span class="organ">Ileum - Epithelial cells(Absorpive Enterocytes)</span>
 
 _Epithelial cells는 모든 부위의 상피세포를 뜻하는 포괄적인 의미_
 
 _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. 그래서 enterocytes가 더 적절한 표현으로 보인다._
 
-<hr />
+### 지방 유화(emulsification)
 
 - 담즙산(bile acid)은 담낭(gallbladder)에서 십이지장(duodenum)으로 분비된다.
 
 - 십이지장에서 지방이 담즙산에 의해 **emulsification(유화)** 되어 **소화 표면적(digestive surface)** 을 증가시킨다.
 
-- 유화된 지방은 췌장(pancreas)에서 분비된 lipase에 의해 가수분해(hydrolysis) 되어 지방산(fatty acid)와 monoglyceride로 분해된다.
+### 지방 가수분해(hydrolysis)
 
-- 분해된 지방산과 모노글리세라이드는 답즙의 bile acid, phospholipids(인지질)와 결합해 **micelle(미셀)** 을 형성한다.
+- 유화된 지방은 췌장(pancreas)에서 분비된 lipase에 의해 가수분해(hydrolysis) 되어 지방산(fatty acid)과 모노글리세라이드(monoglyceride)로 분해된다.
 
-- micelle은 Jejunum, Ileum의 **흡수 상피세포(Absorptive enterocyte)** 에 가까워지면 담즙산이 `해리(dissociate)` 되어 지방산과 모노글리세라이드가 흡수되고, 담즙산은 Ileum에서 대부분 재흡수된다.
+- 분해된 지방산과 모노글리세라이드는 답즙의 답즙산과 인지질(phospholipids)과 결합해 **micelle(미셀)** 을 형성한다.
 
-<hr />
-
-<span class="title">담즙 분비에 도움을 주는 올리브오일</span>
-
-- <span class="substance">olive oil(oleic acid)</span> &rarr; <span class="organ">Duodenum / Jejunum</span> &rarr; <span class="substance">CCK</span> &rarr; <span class="organ">Gallbladder / Pancreas</span> &rarr; <span class="substance">bile / lipase</span> &rarr; <span class="organ">Duodenum</span>
+- micelle은 공장(Jejunum) 또는 회장(Ileum)의 **흡수 상피세포(Absorptive enterocyte)** 에 가까워지면 담즙산이 `해리(dissociate)` 되어 지방산과 모노글리세라이드가 흡수되고, 담즙산은 회장에서 대부분 재흡수된다.
 
 <hr />
+
+### <span class="title">담즙 분비에 도움을 주는 올리브오일</span>
+
+- #### <span class="substance">olive oil(oleic acid)</span> &rarr; <span class="organ">Duodenum / Jejunum</span> &rarr; <span class="substance">CCK</span> &rarr; <span class="organ">Gallbladder / Pancreas</span> &rarr; <span class="substance">bile / lipase</span> &rarr; <span class="organ">Duodenum</span>
+
+### 올레산(oleic acid)
 
 - 올리브 오일에 포함된 [oleic acid(올레산)](https://en.wikipedia.org/wiki/Oleic_acid)은 오메가-9 포지션인 단일 불포화 지방산(MUFA - Monounsaturated Fatty Acid) 으로써 duodenum과 Jejunum의 [I세포](https://en.wikipedia.org/wiki/Enteroendocrine_cell#Intestinal_enteroendocrine_cells) 를 자극해 상피세포에서 [CCK(cholecystokinin)](https://en.wikipedia.org/wiki/Cholecystokinin)을 분비하게 한다.
 
 - 분비된 CCK는 장내에 영향을 미치는데, 주로 담낭을 자극해 담즙 분비를 촉진시키고, 췌장을 자극해 lipase 분비를 촉진한다
+
+---
+
+---
 
 ## Enterohepatic Circulation - 장간 순환
 
