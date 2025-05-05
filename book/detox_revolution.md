@@ -929,49 +929,55 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ---
 
-## stomach - 위
+## Stomach - 위
 
-- 우리 몸에서 음식물을 소화하기 위해서 첫 번째로 위(stomach)의 역할이 중요하다.
+- 음식물을 소화하기 위해서 첫 번째로 위(stomach)의 역할이 중요하다.
 
-- 위에서 음식물(단백질)이 완전히 소화, 분해되지 못하고 소장(small intestine)으로 가게 되면 아무리 좋은 음식을 먹어도 의미가 없다.
+- 위에서 음식물(단백질)이 완전히 소화 또는 분해되지 못하고 소장(small intestine)으로 가게 되면 아무리 좋은 음식을 먹어도 의미가 없다.
 
-  - 물론 음식이 위에서 분해되지 못하고 소장으로 가는 것은 정상적이다. 단 위의 소화 기능이 떨어지게 되면 영양소 흡수 효율이 저하될 수 있다.
+- 물론 일부 음식이 위에서 분해되지 못하고 소장으로 가는 것은 정상적이다. 단, 위의 소화 기능이 떨어지게 되면 영양소 흡수 효율이 저하될 수 있다.
 
-  - 흡수되지 못한 음식물은 **장내 세균총(gut microbiota)** 에 의해 다른 독성 물질로 대사되거나 음식물 자체 요인으로 인해 염증(Inflammation) 을 유발할 수 있다.
+- 흡수되지 못한 음식물은 **장내 세균총(gut microbiota)** 에 의해 다른 독성 물질로 대사되거나 음식물 자체 요인으로 인해 염증(inflammation)을 유발할 수 있다.
 
-- 음식물이 위에서 온전히 소화되기 위해선 **위산(Gastric Acid)** 분비가 중요하다
+- 음식물이 위에서 온전히 소화되기 위해선 **위산(Gastric Acid)** 분비가 중요하다.
 
-- 주로 위에서는 단백질을 분해하는데, `펩타이드(peptide)` 형태로 분해되어 소장에서 `아미노산(amino acid)` 으로써 흡수된다.
+- 주로 위에서는 단백질을 분해한다. 단백질은 `펩타이드(peptide)` 형태로 분해되어 소장에서 `아미노산(amino acid)` 으로 흡수된다.
 
-  - 정확하게, 분해된 펩타이드는 소장에서 [췌장으로부터 분비된 소화 효소](https://en.wikipedia.org/wiki/Pancreas#Digestion)에 의해 아미노산으로 분해 되어 흡수된다.
+  - 정확하게, 분해된 펩타이드는 소장에서 [췌장으로부터 분비된 소화 효소](https://en.wikipedia.org/wiki/Pancreas#Digestion)에 의해 아미노산으로 분해되어 흡수된다.
 
-<hr />
+---
 
-<span class="title">stomach protein digest pathway</span>
+### <span class="title">stomach protein digest pathway</span>
 
-- <span class="organ">stomach-chief cells</span> &rarr; <span class="substance">pepsinogen</span>
+- #### <span class="organ">stomach-chief cells</span> &rarr; <span class="substance">pepsinogen</span>
 
-- <span class="organ">stomach-parietal cells</span> &rarr; <span class="substance">gastric acid</span>
+- #### <span class="organ">stomach-parietal cells</span> &rarr; <span class="substance">gastric acid</span>
 
-- <span class="substance">gastric acid</span> &rarr; <span class="organ">pepsinogen</span> &rarr; <span class="interaction">activation</span> &rarr; <span class="substance">pepsin</span>
+- #### <span class="substance">gastric acid</span> &rarr; <span class="organ">pepsinogen</span> &rarr; <span class="interaction">activation</span> &rarr; <span class="substance">pepsin</span>
 
-- <span class="substance">protein</span> &rarr; <span class="interaction">pepsin(break down)</span> &rarr; <span class="substance">peptide</span> &rarr; <span class="organ">small instestine</span> &rarr; <span class="substance">amino acid</span>
+- #### <span class="substance">protein</span> &rarr; <span class="interaction">pepsin(break down)</span> &rarr; <span class="substance">peptide</span> &rarr; <span class="organ">small instestine</span> &rarr; <span class="substance">amino acid</span>
 
-<hr />
+### 주세포와 벽세포
 
-- 위의 장벽에는 **주세포(chief cell)** 와 **벽세포(parietal cell)** 가 있다.
+- 위벽(gastric mucosa)에는 **주세포(chief cell)** 와 **벽세포(parietal cell)** 가 있다.
 
-- chief cell은 pepsinogen을 분비하고 parietal cell은 gastric acid를 분비(secretion)한다.
+- 주세포(chief cell)는 펩시노겐(pepsinogen)을 분비하고 벽세포(parietal cell)는 위산(gastric acid)을 분비한다.
 
-- pepsinogen은 gastric acid에 의한 산성환경에 의해 활성 형태 인 pepsin이 된다.
+- 펩시노겐(pepsinogen)은 위산에 의한 산성환경에 의해 활성형태인 펩신(pepsin)이 된다.
 
-- pepsin은 단백질의 [peptide bond](https://en.wikipedia.org/wiki/Peptide_bond)을 분해해서 펩타이드를 소장으로 보내 흡수 할 수 있게끔 한다.
+### 단백질 흡수
 
-- pepsin은 단백질의 중간에 위치한 펩타이드 결합을 끊는 효소이기 때문에 [endopeptidase](https://en.wikipedia.org/wiki/Endopeptidase)의 일종이다.
+- 펩신은 단백질의 [펩타이드 결합(peptide bond)](https://en.wikipedia.org/wiki/Peptide_bond)을 분해해서 펩타이드를 소장에서 흡수할 수 있게 한다.
+
+- 펩신은 단백질 중간에 위치한 펩타이드 결합을 끊는 효소이기 때문에 [endopeptidase](https://en.wikipedia.org/wiki/Endopeptidase)의 일종이다.
 
   - 단백질 끝부분에 위치한 펩타이드 결합을 끊는 효소는 [exopeptidase](https://en.wikipedia.org/wiki/Exopeptidase)라고 한다.
 
-- 본질적으로 pepsin과 pepsinogen은 같은 효소인데, [pepsinogen은 활성화되지 않은(inactive)pepsin](https://en.wikipedia.org/wiki/Pepsin#Precursor)이다. 이러한 효소를 [zymogen(proenzyme)](https://en.wikipedia.org/wiki/Zymogen)이라고 한다.
+- 본질적으로 펩신과 펩시노겐은 같은 효소인데, 펩시노겐은 [활성화되지 않은(inactive)펩신](https://en.wikipedia.org/wiki/Pepsin#Precursor)이다. 이러한 효소를 [zymogen(proenzyme)](https://en.wikipedia.org/wiki/Zymogen)이라고 한다.
+
+---
+
+---
 
 ## gut microbiota - 장내 세균총
 
