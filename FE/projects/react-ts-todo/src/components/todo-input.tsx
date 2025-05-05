@@ -5,6 +5,8 @@ interface TodoInputProps {
 }
 
 export default function TodoInput({ onAddTodo }: TodoInputProps) {
+	console.log('TodoInput rendered');
+
 	const [newTodo, setNewTodo] = useState<string>('');
 
 	const addTodo = () => {
