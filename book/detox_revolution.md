@@ -74,7 +74,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [bile - 담즙의 중요성](#bile---담즙의-중요성)
 
-- [Enterohepatic Circulation - 장간 순환](#enterohepatic-circulation---장간-순환)
+- [Enterohepatic Circulation - 장간순환](#enterohepatic-circulation---장간순환)
 
 - [stomach - 위](#stomach---위)
 
@@ -897,29 +897,37 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ---
 
-## Enterohepatic Circulation - 장간 순환
+## Enterohepatic Circulation - 장간순환
 
-- **담즙산(bile acid)** 은 **enterohepatic circulation(장간 순환)** 을 통해 **재사용** 된다.
+- 담즙산(bile acid) **장간순환(Enterohepatic Circulation)** 을 통해 **재사용** 된다.
 
-<hr />
+---
 
-<span class="title">Enterohepatic circulation pathway</span>
+### <span class="title">Enterohepatic Circulation Pathway</span>
 
-<span class="organ">liver</span> &rarr; <span class="substance">bile acid(secretion)</span> &rarr; <span class="organ">gallbladder</span> &rarr; <span class="organ">small intestine</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
+- #### <span class="organ">liver</span> &rarr; <span class="substance">bile acid(secretion)</span> &rarr; <span class="organ">gallbladder</span> &rarr; <span class="organ">small intestine</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
 
-<span class="substance">bile acid</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">colon</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
+- #### <span class="substance">bile acid</span> &rarr; <span class="organ">Ileum</span> &rarr; <span class="organ">colon</span> &rarr; <span class="organ">portal vein</span> &rarr; <span class="organ">liver</span>
 
-<hr />
+### 담즙산의 사용
 
-- 대부분(약 95%)의 bile acid는 **회장(Ileum)** 에서 사용되며 [간문맥(hepatic portal vein)](https://en.wikipedia.org/wiki/Portal_vein) 을 통해 재흡수 된다.
+- 대부분(약 95%)의 담즙산(bile acid)은 **회장(ileum)** 에서 사용되며 [간문맥(hepatic portal vein)](https://en.wikipedia.org/wiki/Portal_vein) 을 통해 재흡수된다.
 
-- 일부(5%)의 bile acid는 **결장(colon)** 에서 재흡수 되거나 배출이 된다.
+- 일부 담즙산(약 5%)은 **결장(colon)** 에서 재흡수되거나 배출된다.
 
-- 결장에 있는 담즙산의 대부분은 `liver detoxification pathway` 를 거쳐 해독된 수용성 독소와 결합된 상태로 있는데, 이 독소가 변비등 문제로 인해 재흡수 되는 경우가 있다.
+### 해독된 독소의 재흡수
 
-- 또한 대장의 gut microbiota가 생성하는 `B-glucuronidase` 효소가 있는데, 이 효소가 해독된 독소의 `글루크론산 결합(glucuronidation)을 분해` 해서 재흡수 가능한 상태로 만들게되고 결국 해독되었던 독소가 재흡수 되는 경우도 있다고 한다.
+- 결장에 있는 담즙산의 대부분은 `liver detoxification pathway` 를 거쳐 해독된 수용성 독소와 결합된 상태로 존재한다.
 
-- 변비로 인해 대장에서 estrogen 같은 해독된 steroid hormone 이 제때 배출 되지 못하고, 재흡수 되어 호르몬 불균형(imbalance) 을 일으킬 가능성이 있다.
+- 결장에 존재하는 해독된 독소는 변비 등 문제로 인해 배출되지 못하고 재흡수되는 경우가 있다.
+
+- 또한 대장의 장내 세균총(gut microbiota)이 생성하는 `B-glucuronidase` 효소는 해독된 독소의 `글루크론산 결합(glucuronidation)을 분해` 해서 독소를 재흡수 가능한 상태로 만든다. 이러한 경로를 통해 해독된 독소가 재흡수되는 경우도 있다.
+
+- 변비로 인해 대장에서 estrogen 같은 해독된(글루크론산화된) 스테로이드 호르몬이 제때 배출되지 못하고 재흡수되어 호르몬 불균형(imbalance)을 일으킬 가능성이 있다.
+
+---
+
+---
 
 ## stomach - 위
 
