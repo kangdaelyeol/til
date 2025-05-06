@@ -29,6 +29,8 @@ export default function TodoInput({ onAddTodo }: TodoInputProps) {
 		return largeDataset.filter((todo) => todo.done);
 	}, []);
 
+	console.log(filteredLargeDataset);
+
 	useEffect(() => {
 		console.log('onAddTodo changed!');
 	}, [onAddTodo]);
