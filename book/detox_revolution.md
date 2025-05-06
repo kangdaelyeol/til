@@ -620,7 +620,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [환경 호르몬](https://en.wikipedia.org/wiki/Endocrine_disruptor) 이란 내분비계 교란 물질(endocrine disruptor)이며, 몸에서 호르몬과 유사한 반응을 일으켜 내분비계를 교란시키는 화학물질이다.
 
-### phthalate - 프탈레이트
+### Phthalate - 프탈레이트
 
 - 프탈레이트는 플라스틱을 유연(plasticizer)하게 하는 성질이 있어 가소제로 많이 쓰인다, e. g., 아이들 장난감이나 의료용 장갑에 쓰임.
 
@@ -628,7 +628,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - 그래서 향수 같은 제품을 고를 때 **phthalate free** 제품을 골라야 한다.
 
-### paraben - 파라벤
+### Paraben - 파라벤
 
 - 파라벤은 미생물의 성장을 억제해서 방부제로 많이 쓰인다
 
@@ -694,7 +694,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ---
 
-## herbicide - 농약
+## Herbicide - 농약
 
 ### Roundup
 
@@ -746,7 +746,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ---
 
-## liver
+## Liver
 
 - 간은 몸에서 독소를 해독하는데 중요한 역할을 한다.
 
@@ -817,7 +817,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ---
 
-## bile - 담즙의 중요성
+## Bile - 담즙의 중요성
 
 - 담즙은 음식물을 소화하는데 중요한 역할을 한다.
 
@@ -1031,37 +1031,45 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Stomach - Gastric Ulcer, GERD
 
-- 몸의 위 관리는 중요하다
+- 위 관리는 중요하다
 
-- 몸의 **식도(Esophagus)** 의 **하부 식도 괄약근(LES - Lower Esophageal Sphincter)** 은 섭취한 음식이 위에서 역류하지 않도록 조절하는 역할을 하는데 비만, 과식을 하는 사람들을 LES의 기능이 저하될 가능성이 있다.
+### Esophagus - 식도
 
-- [lower esophageal sphincter](https://en.wikipedia.org/wiki/Esophagus#Structure)의 기능이 떨어져 섭취한 음식물이 식도로 역류해 염증을 일으키는 증상을 [역류성 식도염(Gastroesophageal Reflux Disease)](https://en.wikipedia.org/wiki/Gastroesophageal_reflux_disease)이라고 한다.
+- **식도(Esophagus)** 의 **하부 식도 괄약근(LES - Lower Esophageal Sphincter)** 은 섭취한 음식이 위에서 역류하지 않도록 조절하는 역할을 하는데 비만 또는 과식하는 사람은 LES의 기능이 저하될 가능성이 있다.
 
-**stomach structure**
+- [하부 식도 괄약근(Lower esophageal sphincter)](https://en.wikipedia.org/wiki/Esophagus#Structure)의 기능이 떨어져 섭취한 음식물이 식도로 역류해 염증을 일으키는 증상을 [역류성 식도염(Gastroesophageal Reflux Disease)](https://en.wikipedia.org/wiki/Gastroesophageal_reflux_disease)이라고 한다.
+
+### 위의 구조
 
 - 위는 크게 4가지 층으로 나눌 수 있다
 
-  - `mucosa - 점막층`
+  - `Mucosa - 점막층`
 
-  - submucosa - 점막하층
+  - Submucosa - 점막하층
 
-  - muscularis propria - 근육층
+  - Muscularis propria - 근육층
 
-  - serosa - 장막층
+  - Serosa - 장막층
+
+#### Mucosa
 
 - 여기서 [점막층(mucosa)](https://en.wikipedia.org/wiki/Gastric_mucosa)도 3가지 층으로 구분할 수 있다
 
-  - epithelium - 상피층
+- epithelium - 상피층
 
-  - lamina propria - 고유판
+- lamina propria - 고유판
 
-  - muscularis mucosae - 점막근층
+- muscularis mucosae - 점막근층
 
-- epithelium은 [위소와(gastric pits)](https://en.wikipedia.org/wiki/Gastric_pits)가 있는 층이다. 이는 lamina propria에 있는 위선(gastric gland)으로 들어가는 입구다.
+#### Mucosa - Epithelium
+
+- 상피층(epithelium)은 [위소와(gastric pits)](https://en.wikipedia.org/wiki/Gastric_pits)가 있는 층이다. 이는 고유판(lamina propria)에 있는 위선(gastric gland)으로 들어가는 입구다.
 
   - epithelium(gastric pits) &rarr; lamina propria(gastric gland)
 
-- [gastric gland](https://en.wikipedia.org/wiki/Gastric_glands)에는 크게 다섯 가지 세포가 있다.
+#### Mucosa - Gastric gland
+
+- 고유판(lamina propria)에 위치한 [위선(gastric gland)](https://en.wikipedia.org/wiki/Gastric_glands)에는 크게 다섯 가지 세포가 있다.
 
   - chief cell - pepsinogen 분비
 
@@ -1071,31 +1079,39 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
   - [surface mucous cell(표면 점액 세포)](https://en.wikipedia.org/wiki/Foveolar_cell) - mucus, 중탄산염(bicarbonate) 분비
 
-  - [gastric enteroendocrine cell](https://en.wikipedia.org/wiki/Enteroendocrine_cell#Gastric_enteroendocrine_cells) - gastrin 분비
+  - [gastric enteroendocrine cell(위장내분비세포)](https://en.wikipedia.org/wiki/Enteroendocrine_cell#Gastric_enteroendocrine_cells) - gastrin 분비
+
+- 점액 경부 세포(mucous neck cell)와 표면 점액 세포(surface mucous cell) 로부터 분비되는 점액(mucus)은 벽세포(parietal cell)로부터 분비되는 위산(HCl)을 방어하는 역할을 한다.
+
+- 또한 표면 점액 세포(surface mucous cell)로부터 분비되는 중탄산염(bicarbonate)은 위산(HCl)을 중화하는 역할을 한다.
+
+#### Gastric juice
 
 - 네 종류의 세포가 분비하는 pepsinogen, HCl, mucus를 통틀어 gastric juice 라고 한다.
 
-- enteroendocrine cell은 여러 종류가 있는데, 여기서 분비되는 **gastrin** 호르몬은 위에 분비되지 않고 혈류에 분비되어 위액 분비를 촉진한다. 그래서 위액(gastric juice) 성분에 포함되지 않는다.
+- 장내분비세포(enteroendocrine cell)는 여러 종류가 있는데, 여기서 분비되는 **gastrin** 호르몬은 위에 분비되지 않고 혈류에 분비되어 위액 분비를 촉진한다. 그래서 위액(gastric juice) 성분에 포함되지 않는다.
 
-- mucous neck cell, **surface mucous cell** 로부터 분비되는 점액(mucus)은 parietal cell로부터 분비되는 HCl를 방어하는 역할을 한다.
+### 위손상
 
-- 또한 **surface mucous cell** 로부터 분비되는 중탄산염(bicarbonate)은 HCl를 중화하는 역할을 한다.
-
-- 위산 분비과다 또는, mucus, bicarbonate 분비 균형이 무너지면 위는 손상된다.
+- 위산 분비과다 또는 mucus와 bicarbonate 분비 균형이 무너지면 위는 손상된다.
 
 - 위의 벽층이 손상되어 mucosa(점막층)의 epithelium(상피층)이 손상이 되는 병적 상태를 [위미란(Gastric Erosion)](https://en.wikipedia.org/wiki/Gastric_erosion)이라고 한다.
 
 - 점막층(mucosa)의 epithelium &rarr; lamina propria &rarr; muscularis mucosae 손상을 넘어 점막하층(submucosa)의 손상이 시작된 상태를 [위궤양(gastric ulcer)](https://en.wikipedia.org/wiki/Peptic_ulcer_disease)라고 한다.
 
-- 보통 궤양이 발생하는 이유는 [진통소염제(NSAID)](https://en.wikipedia.org/wiki/Non-steroidal_anti-inflammatory_drug), 또는 [helicobacter pylori](https://en.wikipedia.org/wiki/Helicobacter_pylori) 감염때문이라 한다.
+- 보통 궤양이 발생하는 이유는 [진통소염제(NSAID)](https://en.wikipedia.org/wiki/Non-steroidal_anti-inflammatory_drug) 또는 [helicobacter pylori](https://en.wikipedia.org/wiki/Helicobacter_pylori) 감염때문이라 한다.
 
-**olive oil**
+### 올리브 오일
 
 - 올리브 오일을 섭취하면 위질환을 예방에 도움을 줄 수 있다.
 
-- 올리브오일에 포함된 polyphenol성분 중에 hydroxytyrosol 과 oleocanthal 성분은 항산화(antioxidant), 항염증(anti-inflammatory)기능을 가진다.
+- 올리브오일에 포함된 폴리페놀(polyphenol)성분 중에 hydroxytyrosol 과 oleocanthal 성분은 항산화(antioxidant) 기능과 항염증(anti-inflammatory) 기능을 가진다.
 
-- [oleocanthal](https://en.wikipedia.org/wiki/Oleocanthal)은 고급의 올리브오일에 포함된 성분인데, 천연 페놀물질로 인해 섭취시 목에서 작열감을 줄 수 있다. 그래서 올리브 오일을 섭취했을 때 목이 타는 느낌을 받는다면 그 오일은 좋은 오일이라 할 수 있다.
+- [oleocanthal](https://en.wikipedia.org/wiki/Oleocanthal)은 고급 올리브오일에 포함된 성분인데, 천연 페놀물질로 인해 섭취시 목에서 작열감을 줄 수 있다. 그래서 올리브 오일을 섭취했을 때 목이 타는 느낌을 받는다면 그 오일은 좋은 오일이라 할 수 있다.
+
+---
+
+---
 
 ## Gluten
 
