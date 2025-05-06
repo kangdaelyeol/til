@@ -979,51 +979,55 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ---
 
-## gut microbiota - 장내 세균총
+## Gut Microbiota - 장내 세균총
 
-- 몸 안에 다양한 미생물이 살고있다. 우리는 이러한 미생물과 유기적으로 공존하면서 생활하게 된다.
+- 몸 안에 다양한 미생물이 살고있다. 우리는 이러한 미생물과 유기적으로 공존하면서 생활한다.
 
-- 우리 몸의 미생물과의 상호작용이 중요한데, 미생물은 크게 두 종류로 구분된다.
+- 몸의 미생물과의 상호작용이 중요하다. 장내 미생물은 크게 두 종류로 구분된다.
 
-- `gram-positive bacteria`
+### gram-positive bacteria
 
-  - [gram-positive bacteria](https://en.wikipedia.org/wiki/Gram-positive_bacteria)는 [gram stain(그람 염색)](https://en.wikipedia.org/wiki/Gram_stain)에서 보라색으로 염색되는 박테리아들을 말한다.
+- [그람 양성균(Gram-positive bacteria)](https://en.wikipedia.org/wiki/Gram-positive_bacteria)은 [그람 염색(gram stain)](https://en.wikipedia.org/wiki/Gram_stain)에서 보라색으로 염색되는 박테리아들을 말한다.
 
-  - 이들의 특징은 세포의 외막(outer membrane)이 없고 대신 매우 두꺼운 [peptidoglycan](https://en.wikipedia.org/wiki/Peptidoglycan)층이 있다.
+- 이들의 특징은 세포 외막(outer membrane)이 없고 대신 매우 두꺼운 [peptidoglycan](https://en.wikipedia.org/wiki/Peptidoglycan) 층이 있다.
 
-  - 두꺼운 peptidoglycan 층이 gram stain에서 사용하는 [Crystal violet](https://en.wikipedia.org/wiki/Crystal_violet)같은 보라색 염료들을 빠져나가지 않게 잘 유지해줘서 보라색으로 염색된다고 한다.
+- 두꺼운 peptidoglycan 층이 gram stain에서 사용하는 [crystal violet](https://en.wikipedia.org/wiki/Crystal_violet)같은 보라색 염료들을 빠져나가지 않게 잘 유지해줘서 보라색으로 염색된다고 한다.
 
-- `gram-negative bacteria`
+### gram-negative bacteria
 
-  - [gram-negative bacteria](https://en.wikipedia.org/wiki/Gram-negative_bacteria)는 gram stain에서 붉은색, 분홍색 계열로 염색되는 박테리아들을 말한다.
+- [그람 음성균(Gram-negative bacteria)](https://en.wikipedia.org/wiki/Gram-negative_bacteria)는 그람 염색(gram stain)에서 붉은색 또는 분홍색 계열로 염색되는 박테리아들을 말한다.
 
-  - outer membrane이 있고, 중간층인 peptidoglycan이 gram-positive bacteria에 비해 얇다. 그래서 gram stain에서 outer membrane과 얇은 peptidoglycan에 의해 보라색 염료를 유지하지 못하고, 대신 [safranin](https://en.wikipedia.org/wiki/Safranin)염료가 남아서 붉은색으로 보인다고 한다.
+- 외막(outer membrane)이 있고 중간층인 peptidoglycan이 그람 양성균(gram-positive bacteria)에 비해 얇다. 그래서 gram stain에서 두꺼운 외막과 얇은 peptidoglycan 층에 의해 보라색 염료를 유지하지 못하고, 대신 [safranin](https://en.wikipedia.org/wiki/Safranin)염료가 남아서 붉은색으로 보인다고 한다.
 
-  - 이들은 세포에 외막(outer membrane)이 있고, 외막은 [지질 다당류(lipopolysaccharide)](https://en.wikipedia.org/wiki/Lipopolysaccharide)로 되어있다.
+- 이들은 세포에 외막(outer membrane)이 있고, 외막의 주요 성분은 [지질 다당류(lipopolysaccharide)](https://en.wikipedia.org/wiki/Lipopolysaccharide)로 되어있다.
 
-  - lipopolysaccharide(LPS)는 내독소(endotoxin) 라고도 한다.
+- lipopolysaccharide(LPS)는 내독소(endotoxin)라고도 한다.
 
-- `LPS - lipopolysaccharide(endotoxin)`
+### LPS - lipopolysaccharide(endotoxin)
 
-  - gram-negative bacteria가 죽으면 그 시체에 남아있던 LPS는 방출되어 몸에 안좋은 작용을 하는데, 이는 장 투과성을 증가시켜 [장 누수 증후군(gut leaky syndrome)](https://en.wikipedia.org/wiki/Leaky_gut_syndrome)를 일으킬 수 있다
+- 그람 음성균(gram-negative bacteria)이 죽으면 그 시체에 남아있던 외막의 주요 성분인 LPS는 방출되어 몸에 안좋은 작용을 하는데, 이는 장 투과성을 증가시켜 [장 누수 증후군(gut leaky syndrome)](https://en.wikipedia.org/wiki/Leaky_gut_syndrome)를 일으킬 수 있다.
 
-  - 이로 인해 LPS가 혈류로 들어가면 [내독소혈증(endotoxemia)](https://en.wikipedia.org/wiki/Lipopolysaccharide#Endotoxemia)를 일으키며 이는 제 2형 `당뇨(type 2 diabete)`또는 [신경염증(neuroinflammation)](https://en.wikipedia.org/wiki/Neuroinflammation)을 유발한다.
+- 이로 인해 LPS가 혈류로 들어가면 [내독소혈증(endotoxemia)](https://en.wikipedia.org/wiki/Lipopolysaccharide#Endotoxemia)를 일으키며 이는 제 2형 `당뇨(type 2 diabetes)`또는 [신경염증(neuroinflammation)](https://en.wikipedia.org/wiki/Neuroinflammation)을 유발한다.
 
-  - gram-negative bacteria 자체가 혈류로 들어가게 되는 경우 [패혈증(sepsis)](https://en.wikipedia.org/wiki/Sepsis)를 유발하며, 박테리아는 혈류 안에서 LPS를 방출하므로 [패혈성 쇼크(septic shock)](https://en.wikipedia.org/wiki/Septic_shock)를 일으킬 수 있다.
+- 그람 음성균 자체가 혈류로 들어가게 되는 경우 [패혈증(sepsis)](https://en.wikipedia.org/wiki/Sepsis)를 유발하며, 박테리아는 혈류 안에서 LPS를 방출하므로 [패혈성 쇼크(septic shock)](https://en.wikipedia.org/wiki/Septic_shock)를 일으킬 수 있다.
 
-- 좋은 장내 환경을 위해서 장내 유익균의 관리가 중요하다
+### 장내 유익균 관리
 
-  - 일반적으로 gram-positive bacteria 들이 유익균 측에 속하지만 반드시 그렇지는 않다.
+- 좋은 장내 환경을 위해서 장내 유익균의 관리가 중요하다.
 
-  - gram-positive bacteria 중에서도 유해균에 속하는 균이 있다.
+- 일반적으로 대부분의 그람 양성균(gram-positive bacteria)들이 유익균 측에 속하지만, 반드시 그렇지는 않다.
 
-  - 반대로 gram-negative bacteria 중에서도 유익균에 속하는 균이 있다.
+- 그람 양성균 중에서도 유해균에 속하는 균이 있으며, 그럼 음성균 중에서도 유익균에 속하는 균이 있다.
 
-- 장내 유익균을 위해선 식이섬유를 많이 섭취해야 한다
+- 장내 유익균을 위해선 식이섬유를 많이 섭취해야 한다.
 
 - 하지만 평소에 식이섬유 섭취를 자주 하지 않은 사람이 갑자기 야채를 많이 섭취하면. 장내 유익균의 비율이 비교적 적기 때문에 식이섬유가 온전하게 소화되지 않을 수 있다.
 
-- 천천히 야채를 섭취해, 그 양을 늘려가는 방식으로 식습관을 형성해야 한다. 그렇지 않으면 야채의 좋은 성분들 조차 일부 유해균(gram-negative bacteria)에 의해 부산물이나 독성물질로 대사될 수 있기 떄문이다.
+- 천천히 야채를 섭취하면서 양을 늘려가는 방식으로 식습관을 형성해야 한다. 그렇지 않으면 야채의 좋은 성분들 조차 일부 유해균(gram-negative bacteria)에 의해 부산물이나 독성물질로 대사될 수 있기 때문이다.
+
+---
+
+---
 
 ## Stomach - Gastric Ulcer, GERD
 
