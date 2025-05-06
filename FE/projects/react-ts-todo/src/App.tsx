@@ -1,4 +1,4 @@
-import { PropsWithChildren, useState } from 'react';
+import { PropsWithChildren, useCallback, useState } from 'react';
 import './App.css';
 import Checkbox from './components/checkbox';
 import TodoInput from './components/todo-input';
@@ -47,18 +47,18 @@ function TodoContainer() {
 
 	console.log('TodoContainer rendered');
 
-	const addTodo = (text: string) => {
+	const addTodo = useCallback((text: string) => {
 		setTodos((prev) => {
 			return [
 				...prev,
 				{
-					id: todos.length + 1,
+					id: prev.length + 1,
 					text,
 					done: false,
 				},
 			];
 		});
-	};
+	}, []);
 
 	const toggleTodo = (id: number) => {
 		setTodos((prev) => {

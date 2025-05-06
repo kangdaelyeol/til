@@ -1,8 +1,18 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useMemo, useState } from 'react';
 
 interface TodoInputProps {
 	onAddTodo: (text: string) => void;
 }
+
+const generateLargeDataset = (size: number) => {
+	return Array.from({ length: size }, (_, index) => ({
+		index,
+		done: index % 2 !== 0,
+		text: `할 일: ${index + 1}`,
+	}));
+};
+
+const largeDataset = generateLargeDataset(10_000);
 
 export default function TodoInput({ onAddTodo }: TodoInputProps) {
 	console.log('TodoInput rendered');
@@ -13,6 +23,15 @@ export default function TodoInput({ onAddTodo }: TodoInputProps) {
 		onAddTodo(newTodo);
 		setNewTodo('');
 	};
+
+	const filteredLargeDataset = useMemo(() => {
+		console.log('generate dataset');
+		return largeDataset.filter((todo) => todo.done);
+	}, []);
+
+	useEffect(() => {
+		console.log('onAddTodo changed!');
+	}, [onAddTodo]);
 
 	const onInputTodo = (e: ChangeEvent<HTMLInputElement>) => {
 		setNewTodo(e.currentTarget.value);
