@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@reference "./tailwind/color.css"
+
+html,
+body {
+  height: 100%;
+}

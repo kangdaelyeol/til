@@ -1,37 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Dropdown from './components/common/dropdown'
+import MainLayout from './components/common/main-layout'
+import Panel, {
+    PanelBody,
+    PanelCap,
+    PanelFooter,
+    PanelHeader,
+} from './components/common/panel'
+import Tabs, {
+    Tab,
+    TabList,
+    TabPanel,
+    TabPanels,
+} from './components/common/tabs'
+import QuestionEditor from './components/edit/question-editor'
 
 function App() {
-    const [count, setCount] = useState(0)
-
     return (
-        <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="bg-red-400">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="">Click on the Vite and React logos to learn more</p>
-            <div className=""></div>
-        </>
+        <MainLayout>
+            <Tabs>
+                <TabList>
+                    <Tab index={0}>tab1</Tab>
+                    <Tab index={1}>tab2</Tab>
+                </TabList>
+                <TabPanels>
+                    <TabPanel index={0}>
+                        <QuestionEditor />
+                    </TabPanel>
+                    <TabPanel index={1}>panel2</TabPanel>
+                </TabPanels>
+            </Tabs>
+        </MainLayout>
     )
 }
 
