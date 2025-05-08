@@ -9,17 +9,22 @@ import CheckBoxIcon from '../../assets/icons/check_circle.svg?react'
 import DropdownIcon from '../../assets/icons/arrow_circle_down.svg?react'
 import DateIcon from '../../assets/icons/calendar_today.svg?react'
 import TimeIcon from '../../assets/icons/schedule.svg?react'
-import { useState } from 'react'
 import QuestionBodyEditor from './question-body-editor'
+import type Question from '../../models/question'
+import { observer } from 'mobx-react-lite'
 
-export default function QuestionEditor() {
-    const [type, setType] = useState<QuestionType>('shortText')
+interface Props {
+    question: Question
+}
+
+const QuestionEditor = observer(function ({ question }: Props) {
     return (
         <Panel>
             <PanelHeader className="flex mb-[25px]">
                 <Input className="flex-1 mr-[30px]" />
                 <Dropdown<QuestionType>
-                    onChange={(type) => setType(type)}
+                    defaultValue={question.type}
+                    onChange={(type) => question.setType(type)}
                     options={[
                         {
                             label: (
@@ -88,8 +93,10 @@ export default function QuestionEditor() {
                 />
             </PanelHeader>
             <PanelBody>
-                <QuestionBodyEditor type={type} />
+                <QuestionBodyEditor type={question.type} />
             </PanelBody>
         </Panel>
     )
-}
+})
+
+export default QuestionEditor
