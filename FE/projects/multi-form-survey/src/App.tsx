@@ -6,7 +6,7 @@ import Tabs, {
     TabPanel,
     TabPanels,
 } from './components/common/tabs'
-import SectionEditor from './components/edit/section-editor'
+import SectionEditorList from './components/edit/section-editor-list'
 import { SurveyStoreProvider } from './store'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                     </TabList>
                     <TabPanels>
                         <TabPanel index={0}>
-                            <SectionEditor />
+                            <SectionEditorList />
                         </TabPanel>
                         <TabPanel index={1}>panel2</TabPanel>
                     </TabPanels>
