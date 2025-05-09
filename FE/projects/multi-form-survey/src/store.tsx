@@ -7,7 +7,7 @@ class SurveyStore {
     focusedSectionId: number | null = null
 
     constructor() {
-        makeAutoObservable(this)
+        makeAutoObservable(this, {}, { autoBind: true })
 
         this.sections = [new Section()]
         this.focusedSectionId = this.sections[0].id
@@ -27,6 +27,10 @@ class SurveyStore {
         if (section) {
             section.addQuestion()
         }
+    }
+
+    setFocusedSectionId(id: number) {
+        this.focusedSectionId = id
     }
 }
 
