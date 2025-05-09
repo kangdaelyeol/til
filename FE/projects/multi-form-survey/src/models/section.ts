@@ -4,6 +4,7 @@ import Question from './question'
 type SectionData = {
     id: number
     title: string
+    description: string
     questions: Question[]
 }
 
@@ -11,18 +12,29 @@ export default class Section implements SectionData {
     id: number
     title: string
     questions: Question[]
+    description: string
 
     constructor(
         data: SectionData = {
             id: Date.now(),
             title: '',
             questions: [new Question()],
+            description: '',
         },
     ) {
         makeAutoObservable(this)
         this.id = data.id
         this.title = data.title
         this.questions = data.questions
+        this.description = data.description
+    }
+
+    setTitle(title: string) {
+        this.title = title
+    }
+
+    setDescription(description: string) {
+        this.description = description
     }
 
     addQuestion() {
