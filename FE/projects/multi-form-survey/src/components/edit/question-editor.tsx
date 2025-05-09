@@ -24,7 +24,11 @@ const QuestionEditor = observer(function ({
     return (
         <Panel className="border-l-[10px] border-l-transparent focus-within:border-l-main">
             <PanelHeader className="flex mb-[25px]">
-                <Input className="flex-1 mr-[30px]" />
+                <Input
+                    value={question.title}
+                    onChange={(e) => question.setTitle(e.currentTarget.value)}
+                    className="flex-1 mr-[30px]"
+                />
                 <QuestionTypeEditor
                     type={question.type}
                     onChange={question.setType}
