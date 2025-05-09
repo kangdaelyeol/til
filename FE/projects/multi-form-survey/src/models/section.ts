@@ -22,7 +22,8 @@ export default class Section implements SectionData {
             description: '',
         },
     ) {
-        makeAutoObservable(this)
+        makeAutoObservable(this, {}, { autoBind: true })
+
         this.id = data.id
         this.title = data.title
         this.questions = data.questions
@@ -47,6 +48,7 @@ export default class Section implements SectionData {
 
     copyQuestion(id: number) {
         const question = this.questions.find((question) => question.id === id)
+        console.log(question)
         if (question) {
             this.questions.push(new Question({ ...question, id: Date.now() }))
         }

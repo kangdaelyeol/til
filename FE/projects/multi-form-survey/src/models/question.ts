@@ -23,7 +23,8 @@ export default class Question implements QuestionData {
             required: false,
         },
     ) {
-        makeAutoObservable(this)
+        makeAutoObservable(this, {}, { autoBind: true })
+
         this.id = data.id
         this.title = data.title
         this.type = data.type
@@ -49,12 +50,11 @@ export default class Question implements QuestionData {
     }
 
     setRequired(required: boolean) {
-      this.required = required;
-
+        this.required = required
     }
 
     setOptions(options: string[]) {
-      this.options = options
+        this.options = options
     }
 
     // TODO: 하나의 옵션을 변경할 수 있도록 하는 메서드 추가

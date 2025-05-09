@@ -13,10 +13,10 @@ export default function EditorMenu({ className }: Cn) {
                 className,
             )}
         >
-            <button onClick={surveyStore.addQuestion}>
+            <button onClick={() => surveyStore.addQuestion()}>
                 <PlusIcon />
             </button>
-            <button onClick={surveyStore.addSection}>
+            <button onClick={() => surveyStore.addSection()}>
                 <SectionPlusIcon />
             </button>
         </div>
