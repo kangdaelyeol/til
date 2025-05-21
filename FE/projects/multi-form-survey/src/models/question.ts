@@ -1,13 +1,6 @@
 import { makeAutoObservable } from 'mobx'
-import type { QuestionType } from '../types/app'
+import type { QuestionData, QuestionType } from '../types/app'
 
-type QuestionData = {
-    id: number
-    title: string
-    type: QuestionType
-    required: boolean
-    options?: string[]
-}
 export default class Question implements QuestionData {
     id: number
     title: string
