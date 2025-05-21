@@ -1,3 +1,4 @@
 @import "tailwindcss";
 @reference "./tailwind/color.css";
 @reference "./tailwind/breakpoint.css";
+@reference "./tailwind/utility.css";

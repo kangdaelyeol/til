@@ -57,5 +57,11 @@ export default class Question implements QuestionData {
         this.options = options
     }
 
-    // TODO: 하나의 옵션을 변경할 수 있도록 하는 메서드 추가
+    setOption(index: number, option: string) {
+        if (!this.options) {
+            return
+        }
+
+        this.options[index] = option
+    }
 }

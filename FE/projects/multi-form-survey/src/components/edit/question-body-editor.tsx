@@ -1,13 +1,15 @@
-import type { QuestionType } from '../../types/app'
+import type Question from '../../models/question'
 import Input from '../common/input'
 import OptionEditor from './option-editor'
 
 interface QuestionBodyEditorProps {
-    type: QuestionType
+    question: Question
 }
 
-export default function QuestionBodyEditor({ type }: QuestionBodyEditorProps) {
-    switch (type) {
+export default function QuestionBodyEditor({
+    question,
+}: QuestionBodyEditorProps) {
+    switch (question.type) {
         case 'shortText':
         case 'longText':
         case 'date':
@@ -16,7 +18,7 @@ export default function QuestionBodyEditor({ type }: QuestionBodyEditorProps) {
         case 'multipleChoice':
         case 'checkbox':
         case 'dropdown':
-            return <OptionEditor type={type} />
+            return <OptionEditor question={question} />
         default:
             return null
     }

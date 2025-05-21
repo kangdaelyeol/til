@@ -1,11 +1,11 @@
 import { toJS } from 'mobx'
-import SectionEditorList from '../components/edit/section-editor-list'
+import SectionListEditor from '../components/edit/section-list-editor'
 import { useSurveyStore } from '../store'
 import callApi from '../utils/api'
 import { useLocation, useParams } from 'react-router'
 import { useEffect, useState } from 'react'
 import Button from '../components/common/button'
-import Modal from '../components/common/Modal'
+import Modal from '../components/common/modal'
 import SendModalContent from '../components/edit/send-modal-content'
 
 export default function EditPage() {
@@ -34,7 +34,7 @@ export default function EditPage() {
             <Button onClick={handleSubmit} className="absolute top-0 right-0">
                 보내기
             </Button>
-            <SectionEditorList />
+            <SectionListEditor />
             <Modal opened={opened}>
                 <SendModalContent
                     emailCollected={surveyStore.emailCollected}

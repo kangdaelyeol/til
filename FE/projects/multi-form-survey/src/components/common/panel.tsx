@@ -33,9 +33,11 @@ export function PanelFooter({ className, children }: PropsWithChildren<Cn>) {
 export function PanelCap({ children }: PropsWithChildren) {
     return (
         <div className="-mb-[10px] relative">
-            <div className="inline-block px-[14px] pt-[10px] pb-[6px] bg-main rounded-t-[10px] text-[15px] text-[white]">
-                {children}
-            </div>
+            {children && (
+                <div className="inline-block px-[14px] pt-[10px] pb-[6px] bg-main rounded-t-[10px] text-[15px] text-[white]">
+                    {children}
+                </div>
+            )}
             <div className="bg-main h-[9px]" />
         </div>
     )

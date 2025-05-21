@@ -1,12 +1,13 @@
 import type { InputHTMLAttributes, RefObject } from 'react'
 import cn from 'classnames'
+import type { RefCallBack } from 'react-hook-form'
 
 export default function Input({
     className,
     ref,
     ...props
 }: InputHTMLAttributes<HTMLInputElement> & {
-    ref?: RefObject<HTMLInputElement | null>
+    ref?: RefObject<HTMLInputElement | null> | RefCallBack
 }) {
     return (
         <input

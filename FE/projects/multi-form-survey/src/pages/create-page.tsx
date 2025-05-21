@@ -1,5 +1,5 @@
 import { toJS } from 'mobx'
-import SectionEditorList from '../components/edit/section-editor-list'
+import SectionListEditor from '../components/edit/section-list-editor'
 import { useSurveyStore } from '../store'
 import callApi from '../utils/api'
 import Button from '../components/common/button'
@@ -25,7 +25,7 @@ export default function CreatePage() {
             >
                 보내기
             </Button>
-            <SectionEditorList />
+            <SectionListEditor />
         </>
     )
 }

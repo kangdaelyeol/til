@@ -5,6 +5,7 @@ import { SurveyStoreProvider } from './store'
 import AdminPage from './pages/admin-page'
 import CreatePage from './pages/create-page'
 import EditPage from './pages/edit-page'
+import FormPage from './pages/form-page'
 
 function App() {
     return (
@@ -12,10 +13,11 @@ function App() {
             <MainLayout>
                 <SurveyStoreProvider>
                     <Routes>
+                        <Route path="/survey/new" element={<CreatePage />} />
                         <Route
-                            path="/survey/new"
-                            element={<CreatePage />}
-                        ></Route>
+                            path="/survey/:surveyId"
+                            element={<FormPage />}
+                        />
                         <Route path="/survey/:surveyId" element={<AdminPage />}>
                             <Route path="edit" element={<EditPage />} />
                             <Route path="responses" element={<div>응답</div>} />

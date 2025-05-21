@@ -3,7 +3,7 @@ import { useSurveyStore } from '../../store'
 import EditorMenu from './editor-menu'
 import SectionEditor from './section-editor'
 
-const SectionEditorList = observer(function () {
+const SectionListEditor = observer(function () {
     const surveyStore = useSurveyStore()
 
     return (
@@ -25,4 +25,4 @@ const SectionEditorList = observer(function () {
     )
 })
 
-export default SectionEditorList
+export default SectionListEditor
