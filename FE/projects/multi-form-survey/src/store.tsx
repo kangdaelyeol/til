@@ -4,6 +4,7 @@ import Section, { type SectionData } from './models/section'
 import callApi from './utils/api'
 
 class SurveyStore {
+    emailCollected: boolean
     sections: Section[]
     focusedSectionId: number | null = null
 
@@ -12,6 +13,7 @@ class SurveyStore {
 
         this.sections = [new Section()]
         this.focusedSectionId = this.sections[0].id
+        this.emailCollected = false
     }
 
     addSection() {
@@ -35,11 +37,12 @@ class SurveyStore {
     }
 
     fetchSurvey(id: number) {
-        callApi<{ sections: SectionData[] }>(`/survey/${id}`).then(
-            ({ sections }) => {
-                this.sections = sections.map((section) => new Section(section))
-            },
-        )
+        callApi<{ sections: SectionData[]; emailCollected: boolean }>(
+            `/survey/${id}`,
+        ).then(({ sections, emailCollected }) => {
+            this.sections = sections.map((section) => new Section(section))
+            this.emailCollected = emailCollected ?? false
+        })
     }
 }
 

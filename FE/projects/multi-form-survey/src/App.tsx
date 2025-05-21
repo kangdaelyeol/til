@@ -13,7 +13,7 @@ function App() {
                 <SurveyStoreProvider>
                     <Routes>
                         <Route
-                            path="/surveys/new"
+                            path="/survey/new"
                             element={<CreatePage />}
                         ></Route>
                         <Route path="/survey/:surveyId" element={<AdminPage />}>

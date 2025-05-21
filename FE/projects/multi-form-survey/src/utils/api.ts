@@ -1,5 +1,5 @@
 type ApiParams = {
-    method?: 'GET' | 'POST' | 'PUT' | 'DELETE'
+    method?: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH'
     body?: object
     baseUrl?: string
 }
@@ -8,7 +8,6 @@ export default function callApi<Response>(
     path: string,
     { method = 'GET', baseUrl = '/api', body }: ApiParams = {},
 ): Promise<Response> {
-
     return fetch(`${baseUrl}${path}`, {
         method,
         headers: {
