@@ -11,6 +11,22 @@ import {
 import ArrowIcon from '../../assets/icons/arrow_drop_down.svg?react'
 import useOutsideClick from '../../hooks/common/use-outside-click'
 
+interface DropdownContextType<T = unknown> {
+    opened: boolean
+    open: () => void
+    close: () => void
+    options: DropdownOption<T>[]
+    selected: number
+    onChange: (index: number) => void
+}
+
+const DropdownContext = createContext<DropdownContextType | null>(null)
+
+type DropdownOption<T> = {
+    label: ReactNode
+    value: T
+}
+
 interface DropdownProps<T> {
     defaultValue?: T
     placeholder?: string
@@ -61,22 +77,6 @@ export default function Dropdown<T>({
         </DropdownContext.Provider>
     )
 }
-
-type DropdownOption<T> = {
-    label: ReactNode
-    value: T
-}
-
-interface DropdownContextType<T = unknown> {
-    opened: boolean
-    open: () => void
-    close: () => void
-    options: DropdownOption<T>[]
-    selected: number
-    onChange: (index: number) => void
-}
-
-const DropdownContext = createContext<DropdownContextType | null>(null)
 
 export function DropdownButton({ placeholder }: { placeholder?: string }) {
     const { open, options, selected } = useContext(DropdownContext)!
