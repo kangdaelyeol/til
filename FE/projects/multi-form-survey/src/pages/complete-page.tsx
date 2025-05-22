@@ -1,4 +1,5 @@
-import { Link, useParams, useSearchParams } from 'react-router'
+import { useParams } from 'react-router'
+import { Link, useSearchParams } from 'react-router-dom'
 import Panel, {
     PanelBody,
     PanelCap,

@@ -83,6 +83,7 @@ export function DropdownButton({ placeholder }: { placeholder?: string }) {
 
     return (
         <button
+            type="button"
             className="border border-gray300 rounded-[10px] min-w-[197px] p-[14px] pr-[36px] relative text-left"
             onClick={open}
         >

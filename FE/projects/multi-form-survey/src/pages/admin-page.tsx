@@ -1,4 +1,5 @@
-import { NavLink, Outlet, useParams } from 'react-router'
+import { Outlet, useParams } from 'react-router'
+import { NavLink } from 'react-router-dom'
 import classNames from 'classnames'
 import type { PropsWithChildren } from 'react'
 

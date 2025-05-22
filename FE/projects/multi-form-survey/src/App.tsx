@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { Route, Routes } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
 import MainLayout from './components/common/main-layout'
 import { SurveyStoreProvider } from './store'
@@ -7,10 +8,16 @@ import CreatePage from './pages/create-page'
 import EditPage from './pages/edit-page'
 import FormPage from './pages/form-page'
 import CompletePage from './pages/complete-page'
+import StatisticsPage from './pages/statistics-page'
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter
+            future={{
+                v7_relativeSplatPath: true,
+                v7_startTransition: true,
+            }}
+        >
             <MainLayout>
                 <SurveyStoreProvider>
                     <Routes>
@@ -21,7 +28,10 @@ function App() {
                         />
                         <Route path="/survey/:surveyId" element={<AdminPage />}>
                             <Route path="edit" element={<EditPage />} />
-                            <Route path="responses" element={<div>응답</div>} />
+                            <Route
+                                path="responses"
+                                element={<StatisticsPage />}
+                            />
                         </Route>
                         <Route
                             path="/survey/:surveyId/complete"

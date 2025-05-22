@@ -63,7 +63,12 @@ export default function QuestionForm({ question }: Props) {
                             }))}
                         />
                     )}
-                    rules={{ required: question.required }}
+                    rules={{
+                        required: {
+                            value: question.required,
+                            message: '필수 항목 입니다',
+                        },
+                    }}
                 />
             )
         case 'longText':
