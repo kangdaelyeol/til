@@ -327,7 +327,7 @@ export default class JsonStorage<Data> {
 
 ---
 
-## 컴포넌트 디자인
+## Component design
 
 ### Panel
 
@@ -498,7 +498,252 @@ Dropdown 컴포넌트의 UI요소는 각 책임에 따라 하위 컴포넌트로
 
 ---
 
-## New Skills
+## Skills
+
+### React Hook Form
+
+브라우저의 퍼포먼스 개선을 위해 react-hook-form 라이브러리를 사용한다.
+
+**기존 form의 문제점**
+
+리엑트에서 form 구현시 각 input의 상태값 변경시 불필요한 리렌더링이 발생한다.
+
+또한 이벤트로 인한 브라우저의 기본동작을 막기 위해 작성되는 보일러플레이트 코드로 인해 코드의 복잡성이 증가한다.
+
+**useForm**
+
+react-hook-form 라이브러리는 기본적으로 useForm 훅을 제공한다.
+
+useForm 훅은 form과 관련된 태그들을 위한 여러 API를 제공한다.
+
+useForm을 직접적으로 사용할 때는 구조분해 할당을 통해 필요한 API만 선언하여 사용하지만 `FormProvider` 컨텍스트 API를 사용할 때는 methods로 선언하여 사용한다.
+
+form 태그 안에서 submit 이벤트 발생시 브라우저는 기본동작으로 페이지를 이동한다.
+
+- 구체적으로, submit 이벤트 발생시 form안에 input 태그에 입력된 정보를 기반으로 querystring을 생성하고 이를 통해 새로운 URL을 생성하고 접근한다.
+
+하지만 useForm 훅에 구현된 methods.handleSubmit API 내부적으로 preventDefault API가 구현되어 있으므로 개발자는 이에 관여하지 않고 데이터 처리 로직에 집중할 수 있다.
+
+개발자가 구현한 onSubmit 핸들러에 입력되는 파라미터는 이벤트 객체가 아닌, 각 input 태그의 데이터들을 종합한 객체다.
+
+```tsx
+import { FormProvider, useForm } from "react-hook-form";
+
+export default function SectionView(/* Props */) {
+  const methods = useForm();
+
+  const handleSubmit = (data) => {
+    // implement ...
+  };
+
+  return (
+    <FormProvider {...methods}>
+      <form onSubmit={methods.handleSubmit(handleSubmitData)}>
+        /* JSX ... */
+        <button type="submit">submit</button>
+      </form>
+    </FormProvider>
+  );
+}
+```
+
+**register**
+
+useForm 훅에서 사용할 수 있는 register 메서드는 input에 사용되는 핵심적인 메서드다.
+
+register 메서드를 input 태그에 사용하여 submit 이벤트시 form에 등록된 이벤트 핸들러로 데이터를 받을 수 있다.
+
+[공식문서](https://react-hook-form.com/docs/useform/register)에 따르면, register 메서드는 name, option 인수를 받고 네 가지의 JSX를 위한 데이터를 반환한다.
+
+- **ref**
+
+  - register는 ref를 반환하므로 input태그를 커스터마이징하여 컴포넌트화 할 경우 해당 컴포넌트는 반드시 ref를 받아야 한다.
+
+  - 여기서 ref는 useRef를 통해 반환받는 ref가 아니다. useRef 훅이 반환하는 ref는 `RefObject` 타입이지만, register 메서드가 반환하는 ref는 react-hook-form에서 제공하는 `RefCallBack` 타입이다.
+
+- **onChange, onBlur**
+
+  - input 태그에서 사용되는 이벤트 핸들러다.
+
+  - onChange를 통해 input 태그의 상태를 내부적으로 관리한다.
+
+  - onBlur 핸들러는 input 태그가 unFocusing 될 때 만약 input태그에 입력되어야할 데이터 형식 조건이 충족되지 않을 경우 설정한 에러 메시지를 전달한다.
+
+- **name**
+
+  - input 태그의 필드 이름이다. submit시 해당 데이터의 키값이 된다.
+
+```tsx
+import type { RefCallBack } from "react-hook-form"
+
+export default function QuestionForm(/* props */) {
+  const { register } = useFormContext()
+
+  return (
+    // JSX ..,
+    <Input {...register('name', {
+      required: {value: true, message: "message"},
+      pattern: /* Regex ... */
+    })}/>
+  )
+}
+```
+
+**FormProvider / useFormContext**
+
+복잡한 컴포넌트 구조 안에서 하나의 form에 관한 useForm 훅의 API를 Context기반으로 공유하기 위해 FormProvider와 useFormContext API를 사용할 수 있다.
+
+form을 포함하는 최상위 컴포넌트에 FormProvider 태그를 사용하고 useForm 훅의 메서드를 공유한다.
+
+하위 컴포넌트는 useFormContext를 사용하여 간단하게 Hook API를 제공받아 사용할 수 있다.
+
+```tsx
+import { useFormContext } from "react-hook-form";
+
+export default function QuestionForm({ question }: Props) {
+  // const methods = useForm()
+  // const { register, control } = methods 와 같다
+
+  const { register, control } = useFormContext();
+
+  switch (question.type) {
+    case "shortText":
+      return (
+        <Input
+          {...register(`${question.id}`, {
+            required: {
+              value: question.required,
+              message: "필수 항목 입니다.",
+            },
+          })}
+        />
+      );
+
+    // JSX ...
+  }
+}
+```
+
+**Controller / control**
+
+register API가 등록될 수 없는 요소를 위해 Controller 컴포넌트와 control 인터페이스를 제공한다.
+
+Controller 컴포넌트는 control 속성을 받는데, 같은 useForm 훅에서 반환하는 control 값을 입력해야 한다.
+
+드롭다운 매뉴를 커스터마이징하여 구현하기 위해 Controller / control API를 사용한다.
+
+Controller는 RHF(React Hook Form)에서 관찰 또는 관리되기 위해 속성값을 요구한다.
+
+- name: RHF에서 관리하는 필드의 키값
+
+- control: 해당 필드를 RHF에서 관리되기 위해 입력되는 핵심 매커니즘 정보
+
+- render: 반환하는 UI 컴포넌트값. render는 JSX를 반환해야 하며 일반적으로 field 속성을 입력받는다. field는 register처럼 RHF 상태 업데이트에 관한 핵심 메서드가 있다.
+
+  - 보통 {...field} 형식으로 field에 포함된 모든 속성을 넘길 수 있지만, 이번 케이스는 onChange만을 넘겼다.
+
+```tsx
+import { Controller, useFormContext } from "react-hook-form";
+export default function QuestionForm({ question }: Props) {
+  const { register, control } = useFormContext();
+  switch(question.type) {
+    // Implements ...
+    case: 'dropdown'
+      return (
+        <Controller
+          name={`${question.id}`}
+          control={control}
+          render={({ field }) => (
+            <Dropdown
+              onChange={field.onChange}
+              // Props ...
+            />
+          )}
+          rules={{
+            required: {
+              value: question.required,
+              message: 'required field!'
+            }
+          }}
+        />
+      )
+
+    default:
+    return null
+  }
+}
+```
+
+field.onChange 메서드에 넘긴 값은 RHF에 의해 관리된다. 이제 DropDown 내부에서 field.onChange를 활용하여 RHF에 의해 관리될 수 있는 UI를 커스터마이징 할 수 있다.
+
+```tsx
+type DropdownOption<T> = {
+  label: ReactNode;
+  value: T;
+};
+
+interface DropdownProps<T> {
+  defaultValue?: T;
+  placeholder?: string;
+  options: DropdownOption<T>[];
+  onChange?: (value: T) => void;
+}
+export default function Dropdown<T>({
+  defaultValue,
+  options,
+  onChange,
+  placeholder,
+}: PropsWithChildren<DropdownProps<T>>) {
+  const [opened, setOpened] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(
+    defaultValue !== undefined
+      ? options.findIndex((option) => option.value === defaultValue)
+      : -1
+  )
+
+      // implements ...
+
+      // dropdown 옵션이 클릭 되었을 때 해당 옵션의 인덱스를 입력받는다 가정
+      const handleChange = (index: number) => {
+        setSelectedIndex(index);
+        // Dropdown 컴포넌트는 범용적으로 사용될 수 있기 때문에 반드시 RHF 등 onChange를 통해 상태관리가 되어야 할 필요는 없음. 따라서 onChange속성은 optional로 설정.
+        onChange?.(options[index].value);
+        setOpened(false);
+      };
+
+      return (
+        <DropdownContext.Provider>
+          /* JSX */
+        <DropdownContext.Provider/>
+      )
+
+  }
+```
+
+**Error**
+
+폼의 input에 설정한 pattern 조건에 맞지 않는 경우 설정해둔 메시지를 출력하기 위해 formState.errors 객체를 참조할 수 있다.
+
+pattern 조건에 맞지 않을 경우 해당 form 필드 키값과 설정한 에러 메시지 값이 errors 객체에 똑같이 할당된다.
+
+즉, errors 객체는 JSX에서 조건문을 통해 메시지를 표현하는데 사용될 수 있다.
+
+```tsx
+import { useFormContext } from "react-hook-form";
+
+export default function QuestionView({ question }: Props) {
+  const {
+    formState: { errors },
+  } = useFormContext();
+
+  return (
+    <div>
+      // JSX ...
+      {errors[question.id]?.message?.toString() || "defaultMessage"}
+    </div>
+  );
+}
+```
 
 ### Mobx
 
@@ -588,6 +833,10 @@ class SurveyStore {
 ```
 
 - 클래스로 선언하여 mobx의 makeAutoObservable API는 클래스 필드와 메서드를 보며 상태관리에 관한 역할을 안정적으로 파악한다.
+
+### React hook form
+
+## Notions
 
 ---
 
