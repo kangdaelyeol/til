@@ -1,43 +1,38 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect } from 'react';
 import Checkbox from './checkbox';
 import TodoInput from './todo-input';
+import { useDispatch, useSelector } from '../hooks/useRedux';
+import { addTodo, fetchTodoRequest, toggleTodo } from '../slices/todo-slice';
 
-interface Todo {
+export interface Todo {
 	id: number;
 	text: string;
 	done: boolean;
 }
 
 export default function TodoContainer() {
-	const [todos, setTodos] = useState<Todo[]>([]);
+	const todos = useSelector((state) => state.todo.todos);
 
-	const addTodo = useCallback((text: string) => {
-		setTodos((prev) => {
-			return [
-				...prev,
-				{
-					id: prev.length + 1,
-					text,
-					done: false,
-				},
-			];
-		});
-	}, []);
+	const dispatch = useDispatch();
 
-	const toggleTodo = (id: number) => {
-		setTodos((prev) => {
-			const newTodo = prev.map((todo) => {
-				if (todo.id === id) return { ...todo, done: !todo.done };
+	useEffect(() => {
+		dispatch(fetchTodoRequest());
+	}, [dispatch]);
 
-				return todo;
-			});
-			return newTodo;
-		});
+	const handleAddTodo = useCallback(
+		(newTodo: string) => {
+			dispatch(addTodo({ todo: newTodo }));
+		},
+		[dispatch]
+	);
+
+	const handleToggleTodo = (id: number) => {
+		dispatch(toggleTodo({ id }));
 	};
 
 	return (
 		<div className=''>
-			<TodoInput onAddTodo={addTodo} />
+			<TodoInput onAddTodo={handleAddTodo} />
 			<ul>
 				{todos.map((todo) => {
 					return (
@@ -46,7 +41,7 @@ export default function TodoContainer() {
 								id={`todo-${todo.id}`}
 								checked={todo.done}
 								label={todo.text}
-								onChange={() => toggleTodo(todo.id)}
+								onChange={() => handleToggleTodo(todo.id)}
 							/>
 						</li>
 					);
