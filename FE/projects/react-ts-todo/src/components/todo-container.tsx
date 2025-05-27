@@ -1,5 +1,4 @@
-import { PropsWithChildren, useCallback, useState } from 'react';
-import './App.css';
+import { useCallback, useState } from 'react';
 import Checkbox from './checkbox';
 import TodoInput from './todo-input';
 
@@ -9,43 +8,8 @@ interface Todo {
 	done: boolean;
 }
 
-function App() {
-	return (
-		<Layout>
-			<TodoContainer />
-		</Layout>
-	);
-}
-
-function Layout({ children }: PropsWithChildren) {
-	const [direction, setDirection] = useState<'column' | 'row'>('column');
-
-	console.log('layout rendered');
-
-	return (
-		<div
-			style={{
-				display: 'flex',
-				flexDirection: direction,
-			}}
-		>
-			<h1>Todo app</h1>
-			<button
-				onClick={() =>
-					setDirection((prev) => (prev === 'column' ? 'row' : 'column'))
-				}
-			>
-				Change Layout
-			</button>
-			{children}
-		</div>
-	);
-}
-
-function TodoContainer() {
+export default function TodoContainer() {
 	const [todos, setTodos] = useState<Todo[]>([]);
-
-	console.log('TodoContainer rendered');
 
 	const addTodo = useCallback((text: string) => {
 		setTodos((prev) => {
@@ -91,5 +55,3 @@ function TodoContainer() {
 		</div>
 	);
 }
-
-export default App;

@@ -1,14 +1,12 @@
 import './App.css';
-import CompanySales from './compaly-sales';
-import JoinForm from './join-form';
+import TodoApp from './components/todo-app';
 
 // 179b
 
 function App() {
 	return (
 		<>
-			<JoinForm />
-			<CompanySales />
+			<TodoApp />
 		</>
 	);
 }
