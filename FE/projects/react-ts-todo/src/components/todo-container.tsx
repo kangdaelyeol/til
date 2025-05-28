@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
 import Checkbox from './checkbox';
 import TodoInput from './todo-input';
-import { useStore } from '../contexts/store-context';
 import { observer } from 'mobx-react-lite';
-import TodoItem from '../models/todo-item';
+import useStore from '../use-store';
 
 export interface Todo {
 	id: number;
@@ -27,7 +26,7 @@ const TodoContainer = observer(function () {
 });
 
 interface TodoListProps {
-	todos: TodoItem[];
+	todos: Todo[];
 	onToggleTodo: (_: number) => void;
 }
 
