@@ -1,8 +1,9 @@
-import { useCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 import Checkbox from './checkbox';
 import TodoInput from './todo-input';
-import { useDispatch, useSelector } from '../hooks/useRedux';
-import { addTodo, fetchTodoRequest, toggleTodo } from '../slices/todo-slice';
+import { useStore } from '../contexts/store-context';
+import { observer } from 'mobx-react-lite';
+import TodoItem from '../models/todo-item';
 
 export interface Todo {
 	id: number;
@@ -10,43 +11,43 @@ export interface Todo {
 	done: boolean;
 }
 
-export default function TodoContainer() {
-	const todos = useSelector((state) => state.todo.todos);
-
-	const dispatch = useDispatch();
+const TodoContainer = observer(function () {
+	const { todos, addTodo, toggleTodo, fetchTodo } = useStore();
 
 	useEffect(() => {
-		dispatch(fetchTodoRequest());
-	}, [dispatch]);
-
-	const handleAddTodo = useCallback(
-		(newTodo: string) => {
-			dispatch(addTodo({ todo: newTodo }));
-		},
-		[dispatch]
-	);
-
-	const handleToggleTodo = (id: number) => {
-		dispatch(toggleTodo({ id }));
-	};
+		fetchTodo();
+	}, [fetchTodo]);
 
 	return (
 		<div className=''>
-			<TodoInput onAddTodo={handleAddTodo} />
-			<ul>
-				{todos.map((todo) => {
-					return (
-						<li key={todo.id}>
-							<Checkbox
-								id={`todo-${todo.id}`}
-								checked={todo.done}
-								label={todo.text}
-								onChange={() => handleToggleTodo(todo.id)}
-							/>
-						</li>
-					);
-				})}
-			</ul>
+			<TodoInput onAddTodo={addTodo} />
+			<TodoList todos={todos} onToggleTodo={toggleTodo} />
 		</div>
 	);
+});
+
+interface TodoListProps {
+	todos: TodoItem[];
+	onToggleTodo: (_: number) => void;
 }
+
+const TodoList = observer(function ({ todos, onToggleTodo }: TodoListProps) {
+	return (
+		<ul>
+			{todos.map((todo) => {
+				return (
+					<li key={todo.id}>
+						<Checkbox
+							id={`todo-${todo.id}`}
+							checked={todo.done}
+							label={todo.text}
+							onChange={() => onToggleTodo(todo.id)}
+						/>
+					</li>
+				);
+			})}
+		</ul>
+	);
+});
+
+export default TodoContainer;

@@ -1,16 +1,15 @@
 import './App.css';
 import TodoApp from './components/todo-app';
-import { Provider } from 'react-redux';
-import store from './store';
+import StoreContextProvider from './contexts/store-context';
 
 // 179b
 
 function App() {
 	return (
 		<>
-			<Provider store={store}>
+			<StoreContextProvider>
 				<TodoApp />
-			</Provider>
+			</StoreContextProvider>
 		</>
 	);
 }

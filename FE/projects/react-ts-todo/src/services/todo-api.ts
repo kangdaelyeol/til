@@ -1,16 +1,18 @@
-export const getTodos = () => {
+import { Todo } from '../components/todo-container';
+
+export const getTodos = (): Promise<Todo[]> => {
 	return new Promise((resolve) => {
 		setTimeout(() => {
 			return resolve([
 				{
 					id: 1,
 					text: 'Learn React',
-					dont: true,
+					done: true,
 				},
 				{
 					id: 2,
 					text: 'Learn Redux',
-					dont: false,
+					done: false,
 				},
 			]);
 		}, 1000);
