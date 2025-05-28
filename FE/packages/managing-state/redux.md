@@ -1,6 +1,4 @@
-# React Managing state
-
-## Redux
+# Redux
 
 redux의 단점은 초기 셋팅을 위해 익혀야할 boilerplate들이다.
 
@@ -20,7 +18,7 @@ Duck pattern은 Action 타입, Action 생성자(creator), Reducer, Init state를
 
 이전 리덕스에서는 타입, 생성자, 리듀서, 초기상태 등 관련된 파트가 분해되어 있어 기능 수정시 context-switching 비용이 들었다. 따라서 유지보수에 용이하지 않았다.
 
-### Redux structure
+## Redux structure
 
 Redux는 기본적으로 slice, store 구조를 가진다.
 
@@ -52,7 +50,7 @@ export default todoSlice.reducer;
 
 이전에 store를 생성하기 위해 redux 라이브러리 기반의 `createStore` 메서드를 사용했지만, 현재는 redux/toolkit 기반의 `configureStore` 메서드를 사용한다. redux 공식페이지에서도 toolkit 사용을 권장하므로 사실상 표준이라 할 수 있다.
 
-### Redux with TS
+## Redux with TS
 
 **RootState / AppDispatch**
 
@@ -112,7 +110,7 @@ export const useSelector: TypedUseSelectorHook<RootState> = useOriginalDispatch;
 export const useDispatch: () => AppDispatch = useOriginalDispatch;
 ```
 
-### Redux middleware
+## Redux middleware
 
 Flux Pattern flow에서 Action 발생시 Reducer 로직 실행 이전 사이의 middleware 지점을 두어(확장해) 추가 기능을 수행할 수 있음.
 
@@ -124,7 +122,7 @@ redux-thunk, redux-saga 라이브러리를 통해 redux-middleware를 구현할 
 
 - **redux-saga** 는 generator 기반으로 구현되어 있으며, 비동기 로직이 복잡할 때 사용하면 유용하다. 각 로직을 선언적으로 표현하여 가독성이 좋은 코드를 작성할 수 있다. 추가적으로 비동기로직을 쉽게 취소할 수 있다. 하지만 보일러플레이트가 redux-thunk보다 복잡하다.
 
-`Redux-saga`
+### Redux-saga
 
 **saga pattern**
 
@@ -164,7 +162,7 @@ export function* todoSaga() {
 }
 ```
 
-**boilerplate - createSagaMiddleware / run / all**
+### boilerplate - createSagaMiddleware / run / all
 
 store 부분에도 saga를 적용하기 위한 보일러플레이트를 작성해야 한다.
 
@@ -197,145 +195,5 @@ function createStore() {
 	sagaMiddleware.run(rootSaga);
 
 	return store;
-}
-```
-
-## Zustand
-
-독일어로 ‘상태’라는 의미다.
-
-**특징**
-
-redux와 mobx와 비교하여 상대적으로 학습하기 쉽다, 즉 학습 곡선이 낮다.
-
-보일러플레이트가 redux, mobx에 비해 적다.
-
-패키지 크기 자체도 상대적으로 작아서, 가벼운 프로젝트의 상태관리에 적합한 패키지다.
-
-**Hook 기반**
-
-zustand는 hook을 기반으로 설계되어 있어 store선언시 ‘use’ 접두사(prefix)를 붙여주는 컨벤션이 있다.
-
-**Generic Typing**
-
-zustand의 create 메서드를 통해 store를 생성할 수 있다.
-
-store에는 상태(state)와 메서드(setter)를 포함하는데, TS로 선언시, 상태와 메서드 타입을 모두 포함하는 타입을 지정해 캡슐화하는 과정이 필요하다. 따라서 메서드 이중호출이 발생하게 된다.
-
-```tsx
-// useStore.ts
-
-import { create } from 'zustand';
-
-interface TodoState {
-	todos: Todo[]; // state
-	setTodo: (_: string) => void; // setter
-	fetchTodo: () => Promise<void>;
-}
-
-// 타입 지정
-const useStore = create<TodoState>()((set) => ({
-	// State ...
-}));
-```
-
-**set / shallow merge**
-
-create 메서드에 store 객체를 리턴하는 콜백함수를 입력할 수 있다.
-
-입력하는 콜백 메서드의 첫 번째 파라미터로 set 메서드를 입력받는다.
-
-- set 메서드를 통해 상태를 변경할 수 있다.
-
-set 메서드는 setState와 같이 콜백 함수를 입력할 수 있는데, 파라미터 값으로 prev(state)를 받는다.
-
-state파라미터를 받아 객체를 반환하여 상태를 갱신하는데, 원하는 상태값만을 갱신할 수 있다. 이는 zustand 내부적으로 shallow merge `(정확히 shallow merge after shallow copy)` 가 구현되어 있기 때문이다.
-
-shallow merge는 root level 객체(state 객체)에 대한 불변성을 유지한다. 따라서 중첩 객체에 대해서는 개발자가 직접 불변성을 유지해야 한다.
-
-```tsx
-const useStore = create<TodoState>()(set => ({
-	todos: [],
-	user: {name: "", age: 123}
-	addTodo: () => {
-		// implements ...
-
-		set((state) => ( {
-		todos: [...state.todos]
-		// 객체 안에 나머지 상태(user) 또는 setter값을 입력하지 않아도 상태 유지(shallow copy + shallow merge)
-		} ))
-	},
-	toggleTodo: () => {
-		// implements ...
-	}
-	// State ...
-}))
-```
-
-## Jotai
-
-zustand 라이브러리와 비슷한 시기에 등장했으며, 상태관리 철학에 관하여 같은 지향점을 가지고 있음.
-
-**Atom**
-
-jotai는 atom이라는 단위를 사용한다.
-
-atom은 상태 데이터의 최소단위다.
-
-atom은 크게 Read-only Atom과 Write-only Atom으로 구분할 수 있다.
-
-- 즉, Atom은 상태(Read-only)의 기능과 리듀서(Write-only)의 기능을 구현한다고 볼 수 있다.
-
-**Store**
-
-atom을 store에 모아서 선언한다.
-
-경우에 따라 atom을 컴포넌트 단에 선언할 수 있다. (취향차이)
-
-atom은 두 인수를 받을 수 있으며, 첫 인수는 getter(read)와 관련되고, 두 번째 인수는 setter(write)에 관한 것이다.
-
-- getter는 단일값을 넘기면 상태값으로 사용되며, 콜백함수를 주는 경우 getter로 사용된다.
-
-setter는 보통 콜백함수를 넘기며 atom을 컨트롤 할 수 있는 get, set, 그리고 UI 단에서 호출되어 넘겨받는 파라미터를 입력받는다.
-
-```tsx
-import { atom } from 'jotai'
-
-const todoId = atom(0)
-
-export const todosAtom = atom<Todos[]>([])
-
-export const addTodoAtom(null, (get, set, newTodo: string) => {
-	const id = get(todoId) // get을 통해 atom의 상태를 받는다.
-
-	// set을 통해 atom 상태값을 수정한다. 두 번째 파라미터는 setState 처럼 이전 상태(prev)를 받아 제어할 수 있다.
-	set(todosAtom, (prev) => ([...prev, {
-			id,
-			text: newTodo,
-		}])
-	)
-
-	set(todoId, id + 1)
-})
-```
-
-**useAtom**
-
-store에서 정의한 atom을 UI단에서 useAtom hook을 통해 가져올 수 있다.
-
-useAtom 훅은 useState처럼 [value, setValue] 형식의 배열을 반환한다.
-
-- value만 정의된 read-only atom은 두 번째 배열 맴버인 setValue 선언을 생략할 수 있다.
-
-setter만 정의된 write-only atom은 간단히 useSetAtom 훅으로 setter만을 가져올 수 있다.
-
-```tsx
-import { useAtom } from 'jotai';
-import { todosAtom, addTodoAtom } from './store';
-
-export default function TodoApp() {
-	const [todos] = useAtom(todosAtom);
-	const addTodo = useSetAtom(addTodoAtom); // useSetAtom -> setter부분만 가져옴
-	// JSX ...
 }
 ```
