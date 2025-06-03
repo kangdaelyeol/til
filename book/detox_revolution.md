@@ -1115,31 +1115,37 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ## Gluten
 
-- 밀가루에는 gluten 성분이 많이 포함되어 있다.
+- 밀가루에는 gluten이 많이 포함되어 있다.
 
-- Gluten은 [gliadin](https://en.wikipedia.org/wiki/Gliadin)과 [glutenin](https://en.wikipedia.org/wiki/Glutenin) 단백질의 결합으로 이루어져 있는데, gliadin 단백질은 장누수(leaky gut)를 일으킬 수 있다.
+- Gluten은 [gliadin](https://en.wikipedia.org/wiki/Gliadin)과 [glutenin](https://en.wikipedia.org/wiki/Glutenin) 단백질이 결합된 구조 단백질(structural protein)이다.
 
-<hr />
+#### <span class="title">gliadin이 장누수를 일으키는 과정</span>
 
-<span class="title">gliadin이 장누수를 일으키는 과정</span>
-
-- <span class="substance">gliadin</span> &rarr; <span class="organ">jejunum(epithelium cell)-CXCR3</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">zonulin</span> &rarr; <span class="interaction">tight junction</span> &rarr; <span class="disease">leaky gut</span>
+- #### <span class="substance">gliadin</span> &rarr; <span class="organ">jejunum(epithelium cell)-CXCR3</span> &rarr; <span class="interaction">combination</span> &rarr; <span class="substance">zonulin</span> &rarr; <span class="interaction">tight junction</span> &rarr; <span class="disease">leaky gut</span>
 
 **CXCR3 - CXC [Chemokine](https://en.wikipedia.org/wiki/Chemokine#CXC_chemokines) Receptor - 3**
 
-<hr />
+---
 
-- gliadin은 소화 효소에 부분적으로 저항성이 있다.
+### Gliadin - Zonulin
+
+- gluten에 포함된 gliadin 단백질은 장누수(leaky gut)를 일으킬 수 있다.
+
+- gliadin은 소화 효소에 부분적으로 저항성이 있어 장에서 분해되는 것이 상대적으로 어렵다.
 
 - gliadin의 일부는 분해되지 않고 공장(jejunum)의 상피세포(epithelium)에 있는 CXCR3 수용체와 결합해 zonulin 단백질을 분비하도록 촉진한다.
 
 - [zonulin](https://en.wikipedia.org/wiki/Zonulin) 단백질은 세포의 [밀착연접(tight junction)](https://en.wikipedia.org/wiki/Tight_junction)을 느슨하게 만들어 장 투과성을 증가시킨다.
 
-- 이를 통해 분해되지 않은 큰 분자 물질이 혈액으로 들어갈 가능성이 있으며 이는 면역 반응, 감염등을 일으킬 수 있다.
+- 이를 통해 분해되지 않은 큰 분자 물질이 혈액으로 들어갈 가능성이 있으며 이는 면역 반응 또는 감염 등을 일으킬 수 있다.
 
-- gliadin은 불용성 성질을 띤다. 또한 소장 상피세포를 투과할 수 있으며, 산모가 섭취할 경우 모유에서 높은 수치로 발견된다.
+- gliadin은 autoimmune disease인 셀리악([Celiac disease](https://en.wikipedia.org/wiki/Celiac_disease))의 발병 원인이 된다.
 
-- 또한 gliadin은 autoimmune disease인 [Celiac disease](https://en.wikipedia.org/wiki/Celiac_disease) 발병 원인이 된다.
+- gliadin은 불용성 성질을 띤다. 또한 직접 소장상피세포를 투과할 수 있으며 산모가 섭취할 경우 모유에서 높은 수치로 발견된다.
+
+---
+
+---
 
 ## Casein protein
 
