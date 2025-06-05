@@ -1187,43 +1187,47 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ---
 
-## fiber - 식이섬유
+## Fiber - 식이섬유
 
-- 우리가 섭취하는 식이섬유는 수용성, 불용성 식이섬유 두 가지가 있다.
+- 우리가 섭취하는 식이섬유는 수용성과 불용성 식이섬유로 구분할 수 있다.
 
-- **Soluble fiber - 수용성 식이섬유**
+### Soluble fiber - 수용성 식이섬유
 
-  - 우리 몸에서 흡수되는 경로가 존재하는 식이섬유이다.
+- 수용성 식이섬유는 몸에서 흡수되는 경로가 존재하는 식이섬유이다.
 
-  - 수용성 식이섬유는 일반적으로 gut microbiota에 의해 발효(fermentation)되어 `단쇄 지방산(SCFA - Short-chain Fatty Acid)` 으로 변환된다.
+- 수용성 식이섬유는 일반적으로 gut microbiota에 의해 발효(fermentation)되어 `단쇄 지방산(SCFA - Short-chain Fatty Acid)` 으로 변환된다.
 
-  - SCFA와 같은 byproducts들은 장내 pH농도를 낮추어 gram-negative bacteria의 활동을 저하시키는데 기여한다.
+- SCFA와 같은 부산물은 장내 pH농도를 낮추어 그람 음성균(gram-negative bacteria)의 활동을 저하시키는데 기여한다.
 
-- **Insoluble fiber - 불용성 식이섬유**
+### Insoluble fiber - 불용성 식이섬유
 
-  - 우리 몸에 흡수될 수 없는 식이섬유다.
+- 불용성 식이섬유는 우리 몸에 흡수될 수 없는 식이섬유다.
 
-  - 불용성 식이섬유는 흡수될 수 없는 대신, 대장에서 장의 운동을 촉진한다.
+- 불용성 식이섬유는 흡수될 수 없는 대신, 대장(large intestine)의 운동을 촉진한다.
 
-  - 장의 운동을 촉진함으로써 변비에 걸리지 않게 되고, 장내 독소를 재흡수하는 가능성도 줄일 수 있다.
+- 장의 운동을 촉진하여 변비를 방지하고 장내 독소를 재흡수하는 가능성도 줄일 수 있다.
 
-  - 결과적으로 `대변(feces)` 의 크기, 배출 속도가 빨라지는 효과를 볼 수 있다.
+- 결과적으로 `대변(feces)` 의 크기가 커지고 대변의 배출 속도가 빨라지는 효과를 일으킬 수 있다.
 
-  - 대변의 성분중 수분이 대부분이지만 그 외에 음식물 보다 장내 세균이 더 많이 포함되어있다고 한다. 불용성 식이섬유는 흡수되지 않고 배출되기 때문에 변의 크기가 먹은 것에 비해 증가된 효과를 볼 수 있다.
+- 대변은 수분이 대부분의 성분을 차지하지만 그 외 성분중에서는 음식물 보다 장내 세균이 더 많이 포함되어있다. 따라서 일반적으로 먹은 음식량에 비해 대변에 포함된 성분중 음식은 극히 일부분이다.
 
-  - coarsely ground insoluble fiber triggers the secretion of mucus in the large intestine providing bulking.
+  - 불용성 식이섬유는 흡수되지 않고 대변에 섞여 배출되기 때문에 변의 크기가 먹은 음식량에 비해 증가된 효과를 볼 수 있다.
 
-  - finely ground insoluble fiber does not have this effect and instead can cause a constipation.
+**적당히 갈아서 흡수해야 한다**
 
-- 하지만 그렇다고 평소에 식이섬유를 자주 섭취하지 않는 사람이 갑작스럽게 식습관을 바꾸면 문제가 될 수 있다. 평소에 채식을 하지 않은 사람들의 장내 유익균 비율이 현저히 낮기 때문이다.
+- coarsely ground insoluble fiber triggers the secretion of mucus in the large intestine providing bulking.
+
+- finely ground insoluble fiber does not have this effect and instead can cause a constipation.
+
+**섭취량을 조절해야 한다**
+
+- 평소에 식이섬유를 자주 섭취하지 않는 사람이 갑작스럽게 식습관을 바꾸면 문제가 될 수 있다. 평소에 채식을 하지 않은 사람들의 장내 유익균 비율이 현저히 낮기 때문이다.
 
 - 그래서 장내 유익균이 최대한 증식할 수 있도록 충분한 간격을 두어 천천히 식이섬유 섭취를 늘려야 한다.
 
-- 그렇지 않으면 유익균이 감당할 수 있는 식이섬유를 초과하기 때문에, 그 초과된 식이섬유에 대해서는 유해균이 **발효(부패 - putrefaction)** 를 하기 때문이다.
+- 유익균이 감당할 수 있는 식이섬유는 한계가 있다. 식이섬유 흡수 한계를 초과하여 섭취하게 되면, 유해균이 식이섬유를 **발효(부패 - putrefaction)** 한다. 이는 결국 식이섬유를 섭취해도 몸에 독소를 생성하게 만드는 꼴이 되어버린다.
 
-- 이는 결국 식이섬유를 섭취해도 몸에 독소를 생성하게 만드는 꼴이 되어버린다.
-
-- 또한 급격한 식이섬유 섭취를 통한 장내 미생물의 균형이 일시적으로 깨져 소화 불량등이 발생할 수 있다.
+- 또한 급격한 식이섬유 섭취를 통한 장내 미생물의 균형이 일시적으로 깨져 소화 불량 등을 일으킬 수 있다.
 
 ## Glutathione Composition
 
