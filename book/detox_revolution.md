@@ -1229,57 +1229,67 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 - 또한 급격한 식이섬유 섭취를 통한 장내 미생물의 균형이 일시적으로 깨져 소화 불량 등을 일으킬 수 있다.
 
+---
+
+---
+
 ## Glutathione Composition
 
-<span class="title">Glutathione이 합성되는 과정</span>
+### <span class="title">Glutathione이 합성되는 과정</span>
 
-<span class="substance">Glutathione</span> = <span class="substance">Glutamate</span> + <span class="substance">Cysteine</span> + <span class="substance">Glycine</span>
+- #### <span class="substance">Glutathione</span> = <span class="substance">Glutamate</span> + <span class="substance">Cysteine</span> + <span class="substance">Glycine</span>
 
-<span class="substance">Glutmate / Cysteine</span> &rarr; <span class="organ">GCL</span> &rarr; <span class="substance">r-Glutamylcysteine</span>
+- #### <span class="substance">Glutmate / Cysteine</span> &rarr; <span class="organ">GCL</span> &rarr; <span class="substance">r-Glutamylcysteine</span>
 
-<span class="substance">r-Glutamylcysteine / Glycine</span> &rarr; <span class="organ">GSS</span> &rarr; <span class="substance">Glutathione</span>
+- #### <span class="substance">r-Glutamylcysteine / Glycine</span> &rarr; <span class="organ">GSS</span> &rarr; <span class="substance">Glutathione</span>
 
 [GCL - Glutamate-Cysteine ligase(연결효소)](https://en.wikipedia.org/wiki/Glutamate%E2%80%93cysteine_ligase)
 
 [GSS - Glutathione synthetase(합성효소)](https://en.wikipedia.org/wiki/Glutathione_synthetase)
 
-- 항산화작용에서 중요한 역할을 하는 Glutathione은 세 가지 아미노산이 결합된 **tripeptide** 형태다.
+### Glutathione
 
-- Glutamate와 Cysteine이 **GCL** 효소에 의해 연결되어 dipeptide 형태인 [r-Glutamylcysteine(GGC)](https://en.wikipedia.org/wiki/%CE%93-L-Glutamyl-L-cysteine)이 된다.
+- 항산화작용에서 중요한 역할을 하는 Glutathione은 세 가지 아미노산이 결합된 **tripeptide** 다.
 
-- r-Glutamylcysteine은 **GSS** 효소에 의해 glycine과 합성되어 tripeptide 형태인 Glutathione이 된다.
+- Glutamate와 Cysteine이 **GCL** 효소에 의해 연결되어 dipeptide인 [𝛄-Glutamylcysteine(GGC)](https://en.wikipedia.org/wiki/%CE%93-L-Glutamyl-L-cysteine)이 된다.
 
-- 따라서 glutathione 합성을 유도하기 위해 구성 아미노산을 많이 섭취한다고 해서 glutathione이 합성되지는 않는다.
+- 𝛄-Glutamylcysteine은 **GSS** 효소에 의해 glycine과 합성되어 tripeptide 형태인 glutathione이 된다.
 
-- glutathione합성을 위해 GCL, GSS 효소의 도움이 반드시 필요하다. 여기서 중요한점은 GCL의 생성인데, GCL이 생성되기 위해 Sulforaphane 물질의 도움이 필요하다.
+- 즉, glutathione 합성은 효소의 작용에 의존하기 때문에 합성을 유도하기 위한 구성 아미노산의 섭취는 glutathione 합성에 많은 영향을 주지 않는다.
 
-<span class="title">Glutamate-cysteine ligase가 생성되는 과정</span>
+- glutathione 합성을 위해 GCL, GSS 효소의 도움이 반드시 필요하다. 여기서 중요한점은 GCL 생성인데, GCL이 생성되기 위해 Sulforaphane의 도움이 필요하다.
 
-<span class="substance">GCL</span> = <span class="substance">GCLC</span> + <span class="substance">GCLM</span>
+### <span class="title">Glutamate-cysteine ligase가 생성되는 과정</span>
+
+- #### <span class="substance">GCL</span> = <span class="substance">GCLC</span> + <span class="substance">GCLM</span>
 
 [GCLC - GCL Catalytic subunit](https://en.wikipedia.org/wiki/GCLC)
 
 [GCLM - GCL Modifier subunit](https://en.wikipedia.org/wiki/GCLM)
 
-<span class="substance">Sulforaphane</span> &rarr; <span class="substance">KEAP1</span> &rarr; <span class="interaction">inactive</span> &rarr; <span class="substance">NRF2</span> &rarr; <span class="organ">ARE</span> &rarr; <span class="interaction">composition</span> &rarr; <span class="interaction">transcription</span> &rarr; <span class="substance">mRNA</span> &rarr; <span class="organ">Ribosome</span> &rarr; <span class="substance">GCLC/GCLM</span>
+- #### <span class="substance">Sulforaphane</span> &rarr; <span class="substance">KEAP1</span> &rarr; <span class="interaction">inactive</span> &rarr; <span class="substance">NRF2</span> &rarr; <span class="organ">ARE</span> &rarr; <span class="interaction">composition</span> &rarr; <span class="interaction">transcription</span> &rarr; <span class="substance">mRNA</span> &rarr; <span class="organ">Ribosome</span> &rarr; <span class="substance">GCLC/GCLM</span>
 
-- ### NRF2-KEAP1 pathway
+### NRF2-KEAP1 pathway
 
-  - [세포질(Cytoplasm)](https://en.wikipedia.org/wiki/Cytoplasm)에는 KEAP1 단백질과 [NRF2](https://en.wikipedia.org/wiki/NFE2L2) 전사인자가 있는데, 평소에는 KEAP1단백질은 NRF2와 ubiquitination 작용을 통해 [ubiquitin](https://en.wikipedia.org/wiki/Ubiquitin) 단백질을 결합함으로써 NRF2 효소의 [proteasome](https://en.wikipedia.org/wiki/Proteasome) 분해를 촉진시킨다.
+- [세포질(Cytoplasm)](https://en.wikipedia.org/wiki/Cytoplasm)에는 KEAP1 단백질과 [NRF2](https://en.wikipedia.org/wiki/NFE2L2) 전사인자가 있는데, 평소에는 KEAP1단백질은 NRF2와 ubiquitination 작용을 통해 [ubiquitin](https://en.wikipedia.org/wiki/Ubiquitin) 단백질을 결합함으로써 NRF2 효소의 [proteasome](https://en.wikipedia.org/wiki/Proteasome) 분해를 촉진시킨다.
 
-  - 정확히 [Cullin3](https://en.wikipedia.org/wiki/CUL3) 단백질과 NRF2의 직접적인 ubiquitination 작용이 이루어지고 Ubiquitine ligase 복합체의 일부인 KEAP1 단백질은 이를 촉진한다.
+- 정확히 KEAP1 단백질은 KEAP1-Cul3-Rbx1 복합체(Ubiquitine ligase) 형태에 포함되어 존재하는데, 복합체의 [Cullin3](https://en.wikipedia.org/wiki/CUL3) 단백질에 의해 NRF2에 직접적인 ubiquitination 작용이 이루어지고, 복합체의 일부인 KEAP1 단백질은 NRF2를 인식하고 붙잡아둔다.
 
-- ### NRF2-ARE pathway
+### NRF2-ARE pathway
 
-  - 산화 스트레스(Oxidative stress)또는 Sulforaphane 물질등 외부 요인으로 인해 NRF2와 ubiquitination 작용을 하던 KEAP1 단백질 변형되어 활동이 억제된다.
+- 산화 스트레스(Oxidative stress)또는 Sulforaphane 작용 등 외부 요인으로 인해 NRF2와 ubiquitination 작용을 하던 KEAP1 단백질이 변형되어 활동이 억제된다.
 
-  - **세포핵(Cell Nucleus)** 안에 있는 DNA에 GCLC, GCLM 유전자 발현을 하는 부분을 **Promoter** 라고 한다.
+- **세포핵(Cell Nucleus)** 안에 있는 DNA에 GCLC, GCLM 유전자를 발현하는 부분을 **Promoter** 라고 한다.
 
-  - GCLC, GCLM Promotor에는 [ARE(Antioxidant Response Element)](https://en.wikipedia.org/wiki/NFE2L2#Localization_and_function) 라는 부분이 있는데, KEAP1로부터 해방된 NRF2 전사인자는 ARE와 결합한다.
+- GCLC, GCLM Promotor에는 [ARE(Antioxidant Response Element)](https://en.wikipedia.org/wiki/NFE2L2#Localization_and_function) 라는 부분이 있는데, KEAP1 단백질로부터 해방된 NRF2 전사인자는 ARE와 결합한다.
 
-  - 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)** 를 촉진한다.
+- NRF2 전사인자와 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)** 를 촉진한다.
 
-  - 결과적으로 해당 단백질 발현과 관련된 mRNA이 생성되고, Ribosome에 전달되고, 번역(translation)을 통해 GCLC, GCLM이 합성된다.
+- 결과적으로 해당 단백질 발현과 관련된 mRNA이 생성되고, Ribosome에 전달되고, 번역(translation)을 통해 GCLC, GCLM이 합성된다.
+
+---
+
+---
 
 ## liposomal glutathione
 
