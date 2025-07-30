@@ -156,15 +156,15 @@ PPA를 과다 섭취하면 [신경줄기세포](https://en.wikipedia.org/wiki/Ne
 
 ## Prostaglandin(PG)
 
-[Prostaglandin(PG)](https://en.wikipedia.org/wiki/Prostaglandin)은 염증 조절, 다양한 생리적 기능과 관련된 물질이다.
+[Prostaglandin(PG)](https://en.wikipedia.org/wiki/Prostaglandin)은 염증 조절, 다양한 생리적 기능과 관련된 신호분자(signaling molecule)인 [eicosanoid](https://en.wikipedia.org/wiki/Eicosanoid)다.
 
 ### PG가 생성되는 경로
 
 ![prostaglandin_path](./images/prostaglandin_path.png)
 
-오메가-6의 한 종류인 [arachidonic acid](https://en.wikipedia.org/wiki/Arachidonic_acid) 지방산이 효소적 또는 비효소적 반응에 의해 신호분자(signaling molecule)인 [eicosanoid](https://en.wikipedia.org/wiki/Eicosanoid) 물질이 된다.
+Prostaglandin 경로에 의하면, 오메가-6의 한 종류인 [arachidonic acid](https://en.wikipedia.org/wiki/Arachidonic_acid) 지방산이 효소적 또는 비효소적 반응에 의해 PG로 변환된다.
 
-arachidonic acid은 여러 경로를 통해 여러 종류의 물질로 변할 수 있다. 여러 경로중 [COX(cyclooxygenase)](https://en.wikipedia.org/wiki/Cyclooxygenase) 효소에 의한 대사(산화) 경로를 거치면 eicosanoid 물질이 생성된다. prostaglandin(PG)는 eicosanoid의 하위 그룹이다.
+아라키돈산(arachidonic acid)은 여러 경로를 통해 여러 종류의 물질로 변할 수 있다. 여러 경로중 [COX(cyclooxygenase)](https://en.wikipedia.org/wiki/Cyclooxygenase) 효소에 의해 PG로 변환될 수 있다.
 
 - 즉, 아라키돈산(Arachidonic acid)은 PG의 전구체(precursor)라고 할 수 있다.
 
