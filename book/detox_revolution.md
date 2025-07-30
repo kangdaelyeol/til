@@ -90,7 +90,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Glutathione Composition](#glutathione-composition)
 
-- [liposomal glutathione](#liposomal-glutathione)
+- [Liposomal Glutathione](#liposomal-glutathione)
 
 - [Secretin](#secretin)
 
@@ -1277,39 +1277,49 @@ _Enterocytes는 소장, 대장을 포함한 장의 상피세포를 뜻한다. �
 
 ### NRF2-ARE pathway
 
-- 산화 스트레스(Oxidative stress)또는 Sulforaphane 작용 등 외부 요인으로 인해 NRF2와 ubiquitination 작용을 하던 KEAP1 단백질이 변형되어 활동이 억제된다.
+산화 스트레스(Oxidative stress)또는 Sulforaphane 작용 등 외부 요인으로 인해 NRF2와 ubiquitination 작용을 하던 KEAP1 단백질이 변형되어 활동이 억제된다.
 
-- **세포핵(Cell Nucleus)** 안에 있는 DNA에 GCLC, GCLM 유전자를 발현하는 부분을 **Promoter** 라고 한다.
+**세포핵(Cell Nucleus)** 안에 있는 DNA에 GCLC, GCLM 유전자를 발현하는 부분을 **Promoter** 라고 한다.
 
-- GCLC, GCLM Promotor에는 [ARE(Antioxidant Response Element)](https://en.wikipedia.org/wiki/NFE2L2#Localization_and_function) 라는 부분이 있는데, KEAP1 단백질로부터 해방된 NRF2 전사인자는 ARE와 결합한다.
+GCLC, GCLM Promotor에는 [ARE(Antioxidant Response Element)](https://en.wikipedia.org/wiki/NFE2L2#Localization_and_function) 라는 부분이 있는데, KEAP1 단백질로부터 해방된 NRF2 전사인자는 ARE와 결합한다.
 
-- NRF2 전사인자와 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)** 를 촉진한다.
+NRF2 전사인자와 결합된 ARE는 GCLC, GCLM 유전자의 **전사(transcription)** 를 촉진한다.
 
-- 결과적으로 해당 단백질 발현과 관련된 mRNA이 생성되고, Ribosome에 전달되고, 번역(translation)을 통해 GCLC, GCLM이 합성된다.
+결과적으로 해당 단백질 발현과 관련된 mRNA이 생성되고, Ribosome에 전달되고, 번역(translation)을 통해 GCLC, GCLM이 합성된다.
+
+---
+
+---
+
+## Liposomal Glutathione
+
+### 글루타치온 경구 섭취(ingestion)의 한계
+
+Glutathione의 항산화 효과를 얻기 위해 그 자체를 먹는 경우가 있다. 하지만 이는 효과가 거의 없을 것이다.
+
+Glutathione은 glutamic acid, cysteine, glycine 세 아미노산의 결합체인 tripeptide 구조다. 따라서 이를 섭취하면 glutathione은 위에서 세 아미노산으로 분해된다. 결과적으로 글루타치온을 섭취한 것은 세 아미노산을 섭취하는 것과 동일 하게 된다.
+
+### 시스테인(Cysteine)은 비교적 섭취할만한 가치가 있다
+
+몸에서 Glutathione 합성을 촉진하기 위해 [NRF2-ARE pathway](#nrf2-are-pathway)를 유도해야 하는데, 여기서 합성에 필요한 cysteine은 조건부 필수 아미노산으로, 체내에서 합성되지만 필요량을 충족시키기에 부족할 수 있어 필요에 따라 섭취가 권장되는 아미노산이다. 이 경우 glutathione을 섭취하는것 보다 합리적이다.
+
+그러나 Cysteine이 충분해도 GCL 효소가 없다면 무의미하다. 즉 GCLC, GCLM 합성을 위해 `NRF2-ARE pathway` 활성화 조건이 충족되지 않는다.
+
+### liposomal glutathione
+
+glutathione을 온전히 흡수하기 위해서는 소화 효소 등에 의해 분해 되지 않고 형태를 보존한 상태로 흡수되어야 한다. 이 때 글루타치온을 지방막에 감싼 liposomal glutathione을 섭취하는 것은 도움이 될 수 있다. 즉, glutathione을 [liposome](https://en.wikipedia.org/wiki/Liposome)에 감싼 형태를 섭취하는 것이다.
+
+liposome은 최소 하나의 [지질 이중층(lipid bilayer)](https://en.wikipedia.org/wiki/Lipid_bilayer)은 포함하는 작은 인공적인 [소포체(vesicle)](<https://en.wikipedia.org/wiki/Vesicle_(biology_and_chemistry)>) 구조다.
+
+liposome은 위의 소화효소에 저항성을 가진다. 그래서 glutathione을 liposome으로 감싸면 안전하게 소장까지 운반할 수 있다.
+
+이렇게 운반된 liposomal glutathione은 소장의 상피세포(epithelial cell)에 의해 흡수되는데, 일반적으로 endocytosis 과정을 통해 흡수된다.
+
+- **endocytosis(세포 내 섭취)** : liposomal glutathione이 세포 내로 그대로 들어와 흡수된다.
 
 ---
 
 ---
-
-## liposomal glutathione
-
-- 항산화 작용을 촉진하기 위해 Glutathione자체를 먹는 경우가 있다. 하지만 이는 효과가 거의 없을 것이다.
-
-- Glutathione은 glutamic acid, cysteine, glycine 세 아미노산의 결합체인 tripeptide 형태인데, 이를 섭취하면 glutathione은 보통 위에서 세 아미노산으로 분해되어 결과적으로 아미노산을 섭취하는 것과 동일 하게 된다.
-
-- 몸에서 Glutathione 합성을 촉진하기 위해 [NRF2-ARE pathway](#nrf2-are-pathway)를 유도해야 하는데, 여기서 합성에 필요한 cysteine은 조건부 필수 아미노산으로, 체내에서 합성되지만, 필요량을 충족시키기에 부족할 수 있어 필요에 따라 섭취가 권장되는 아미노산이다. 이 경우 glutathione을 섭취하는것 보다 합리적이다.
-
-- cystein 아미노산이 충분해도 GCL 효소가 없다면 무의미하다. 즉 GCLC, GCLM 합성을 위해 `NRF2-ARE pathway` 활성화 조건이 충족되지 않는다.
-
-- glutathione을 섭취할 경우 분해 없이 형태를 보존하면서 흡수되어야 한다. 이 때 liposomal glutathione을 섭취하는 것은 도움이 될 수 있다고 한다. 즉 glutathione을 [liposome](https://en.wikipedia.org/wiki/Liposome)에 감싼 형태를 섭취하는 것이다.
-
-- liposome은 최소 하나의 [lipid bilayer](https://en.wikipedia.org/wiki/Lipid_bilayer)를 포함하는 작은 인공적인 [vesicle](<https://en.wikipedia.org/wiki/Vesicle_(biology_and_chemistry)>) 구조이다.
-
-- liposome은 위의 소화효소에 저항성을 가진다. 그래서 glutathione을 liposome으로 감싸면 안전하게 소장까지 운반할 수 있다.
-
-- 이렇게 운반된 liposomal glutathione은 소장의 **epithelial cell**에 의해 흡수되는데, 일반적으로 endocytosis를 통해 흡수된다.
-
-  - **endocytosis(세포 내 이입)** : liposomal glutathione이 세포 내로 그대로 들어와 흡수된다.
 
 ## Secretin
 
