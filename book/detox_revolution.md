@@ -228,11 +228,11 @@ _enoic acid: 이중결합 포함한 지방산_
 
 - 직접적인 항염 효과를 위해선 EPA/DHA를 직접 섭취(경구 섭취)해주는 것이 더욱 도움이 된다.
 
-EPA는 AA와 마찬가지로 COX-1, COX-2 효소 경로를 거쳐 항염 물질(PGE<sup>3</sup> 등)을 생성한다.
+EPA는 AA와 마찬가지로 COX-1, COX-2 효소 경로를 거쳐 항염 물질(PGE<sub>3</sub> 등)을 생성한다.
 
 DHA는 COX-1, COX-2 효소 경로를 거치진 않지만 lipooxyganase(LOX) 경로를 거쳐 항염 물질을 생산하여 생리통 완화에 도움을 준다.
 
-- EPA = elongase => docosapentaenoic acid(DPA) = elongase + Δ6-desaturase + β-oxidation => docosahexaenoic acid(DHA) = 5-LOX => resolvins/protectins
+- EPA = `elongase` => docosapentaenoic acid(DPA) = `elongase + Δ6-desaturase + β-oxidation` => docosahexaenoic acid(DHA) = `5-LOX` => resolvins/protectins
 
 _docosa: 탄소가 22개_
 
