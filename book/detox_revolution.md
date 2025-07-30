@@ -44,7 +44,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ### Table of contents
 
-- [Propionic Acid(PPA)](#propionic-acidppa---프로피온산)
+- [Propionic Acid(PPA)](#프로피온산propionic-acidppa)
 
 - [Prostaglandin(PG)](#prostaglandinpg)
 
@@ -136,19 +136,19 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ---
 
-## Propionic Acid(PPA) - 프로피온산
+## 프로피온산(Propionic Acid(PPA))
 
-- [프로피온산 - propionic acid(PPA)](https://en.wikipedia.org/wiki/Propionic_acid) 은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 의 한 종류다.
+[프로피온산(propionic acid(PPA))](https://en.wikipedia.org/wiki/Propionic_acid)은 우리 몸에서 **장내 새균(gut microbiota)** 에 의해 식이섬유(dietary fiber)가 대사될 때 최종적으로 생성되는 대사산물이자 흔히 발견되는 **단쇄지방산(SCFA - short-chain fatty acid)** 의 한 종류다.
 
-- PPA는 일반적으로 식품의 유통기한을 늘리기 위해 `방부제` 같은 느낌으로 넣는 `식품첨가제` 로도 사용되는 물질이다.
+PPA는 일반적으로 식품의 유통기한을 늘리기 위해 `방부제` 같은 느낌으로 넣는 `식품첨가제` 로도 사용되는 물질이다.
 
-  - 프로피온산은 곰팡이의 증식을 자신의 무게의 0.1 ~ 1 퍼센트의 성장까지만 제한 한다고 한다.
+- 프로피온산은 곰팡이의 증식을 자신의 무게의 0.1 ~ 1 퍼센트의 성장까지만 제한 한다고 한다.
 
-- 하지만 PPA를 과다 섭취하면 [신경줄기세포](https://en.wikipedia.org/wiki/Neural_stem_cell) 에 안좋은 영향을 미친다. `신경회로` 를 변경해서 일부 신경세포를 과다 증식하게 만든다.
+### 프로피온산 과다섭취에 따른 신경회로 변화
 
-  - 신경회로가 변경되는 형태가 자폐아동의 뇌 양상과 동일했다.
+PPA를 과다 섭취하면 [신경줄기세포](https://en.wikipedia.org/wiki/Neural_stem_cell)에 안좋은 영향을 미친다. `신경회로` 를 변경해서 일부 신경세포를 과다 증식하게 만든다.
 
-  - 그래서 `임신중` 에 PPA를 과도하게 섭취하게 되면 태아의 자폐 발생 확률이 높아진다고 한다.
+- PPA로 인한 신경회로가 변경되는 형태가 자폐아동의 뇌 양상과 동일했다. 그래서 `임신중` 에 PPA를 과도하게 섭취하게 되면 태아의 자폐 발생 확률이 높아진다고 한다.
 
 ---
 
@@ -156,43 +156,49 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ## Prostaglandin(PG)
 
-- [Prostaglandin(PG)](https://en.wikipedia.org/wiki/Prostaglandin) 은 염증 조절, 다양한 생리적 기능과 관련된 물질이다.
+[Prostaglandin(PG)](https://en.wikipedia.org/wiki/Prostaglandin)은 염증 조절, 다양한 생리적 기능과 관련된 물질이다.
+
+### PG가 생성되는 경로
 
 ![prostaglandin_path](./images/prostaglandin_path.png)
 
-- 불포화 지방산인 오메가-6라고 불리는 [arachidonic acid](https://en.wikipedia.org/wiki/Arachidonic_acid) 지방산이 효소적 또는 비효소적 반응에 의해 **신호분자(signaling molecule)** 인 [eicosanoid](https://en.wikipedia.org/wiki/Eicosanoid) 물질이 된다.
+오메가-6의 한 종류인 [arachidonic acid](https://en.wikipedia.org/wiki/Arachidonic_acid) 지방산이 효소적 또는 비효소적 반응에 의해 신호분자(signaling molecule)인 [eicosanoid](https://en.wikipedia.org/wiki/Eicosanoid) 물질이 된다.
 
-- **arachidonic acid** 물질은 여러 경로를 통해 여러 종류의 물질로 변할 수 있다. 여러 경로중 [COX(cyclooxygenase)](https://en.wikipedia.org/wiki/Cyclooxygenase) 효소에 의한 대사(산화) 경로를 거치면 eicosanoid 물질이 생성된다. prostaglandin(PG)는 eicosanoid 물질의 하위 그룹이다.
+arachidonic acid은 여러 경로를 통해 여러 종류의 물질로 변할 수 있다. 여러 경로중 [COX(cyclooxygenase)](https://en.wikipedia.org/wiki/Cyclooxygenase) 효소에 의한 대사(산화) 경로를 거치면 eicosanoid 물질이 생성된다. prostaglandin(PG)는 eicosanoid의 하위 그룹이다.
 
-  - 즉, 오메가-6 지방산은 Prostaglandin 물질의 전구체(precursor)라고 할 수 있겠다.
+- 즉, 아라키돈산(Arachidonic acid)은 PG의 전구체(precursor)라고 할 수 있다.
 
-- PG 물질도 COX-1, COX-2 효소 경로에 따라 생성되는 종류가 다르다.
+### COX(Cyclooxygenase) 효소
 
-  - **COX-1** 을 통해 생성된 PG 물질은 몸의 항상성 유지와 관련된 기능을 한다.
+COX(Cyclooxygenase) 효소는 아라키돈산에 산소분자(O<sup>2</sup>) 2개를 결합시켜 고리형태로 만들어 중간체인 PGH<sup>2</sup>로 전환시키는 효소다.
 
-  - **COX-2** 을 통해 생성된 PG 물질은 몸의 염증 반응에 대한 조절 기능을 한다. 즉 **고통을 준다.**
+PGH<sup>2</sup>는 일반적으로 COX-1, COX-2 효소를 통해 생성된다.
 
-  - 평소에 염증 상황이 없는 경우 COX-2 효소의 발현도는 낮지만, **염증 상황이 있는 경우** COX-2에 의한 대사가 우선되므로, COX-2를 통한 PG가 많이 생성되어 많은 고통으로 이어지게 된다.
+PGH<sup>2</sup>는 최종적으로 여러 종류의 PG 합성 효소에 의해 다양한 형태의 PG로 변환된다.
 
-- PG 물질은 hormone-like effect 효과가 있는데, `생리통` 과 관련된 PG 물질(PGF2α)이 있다. `PGF2⍺` 물질은 `COX-2 경로` 를 거쳐 생성되며, 생리기간에 `자궁벽과 자궁혈관을 수축` 하는데 영향을 준다고 한다.
+**COX-1** 효소는 일반적으로 체내에 존재하여 항상성 유지와 관련된 목적의 PG를 생성한다.
 
-  - 이는 `자궁산소부족` 으로 이끌게 되며 이는 생리통의 주원인이 된다고 한다.
+**COX-2** 효소는 주로 염증 부위로부터 유도된다. 특히 월경시 자궁 내막에서 발현이 급격히 증가한다.
 
-- `진통소염제(NSAID: Non-steroidal Anti-inflammatory Drug)`의 역할이 PG농도룰 줄이는 역할이라고 한다. 하지만 NSAID를 장기적으로 복용하게 되면 항상성 유지에 관여하는 COX-1 효소의 역할도 억제되어, 결국 장 건강에 좋지 않다고 한다.
+평소에 염증 상황이 없는 경우 COX-2 효소의 발현도는 낮지만, **염증이 있는 경우** COX-2에 의한 대사가 우선된다.
+
+### 생리통에 관여하는 PGF2⍺
+
+PG의 한 형태인 PGF2⍺가 생리통에 직접적인 연관이 있다. PGH<sup>2</sup>에서 PGF2⍺로 전환하는 PGF synthase 또한 월경시 COX-2 효소와 함께 증가한다. PGF2⍺는 자궁벽과 자궁혈관을 수축한다.
+
+- 자궁벽과 자궁혈관 수축은 자궁산소부족 으로 이어지며 생리통의 주원인이 된다.
+
+### 진통소염제의 역할
+
+`진통소염제(NSAID: Non-steroidal Anti-inflammatory Drug)` 는 PG합성을 억제하여 생리통을 줄인다. 하지만 NSAID를 장기적으로 복용하게 되면 항상성 유지에 관여하는 COX-1 효소의 역할이 억제되고 장 건강에도 좋지 않다고 한다.
 
 ### Estrogen과의 관계
 
-- PG는 [Estrogen](#estrogen-metabolism)과 간접적으로 관계가 있다.
+PG는 [Estrogen](#estrogen-metabolism)과 간접적으로 관계가 있다.
 
-- Estrogen은 `생리통과 관련된 PG를 합성하는 효소(COX-2)의 발현` 을 촉진시킨다.
+Estrogen은 **생리통과 관련된 PG를 합성하는 효소(COX-2)의 발현을 촉진** 시킨다. 그래서 Estrogen 수치를 조절하는 것이 중요하다.
 
-- 그래서 Estrogen 수치를 조절하는 것이 중요하다.
-
-- Estrogen은 대사, 간해독 과정을 통해서 결과적으로 장으로 배출되어야 한다.
-
-- 하지만 변비 또는 장내 세균총 문제 등으로 인해 배출이 안되면 `장내 혈관을 통해 재흡수` 될 수 있다.
-
-- 따라서 장건강을 유지해서 장배출이 잘 되도록 해야한다.
+Estrogen은 대사와 간해독 과정을 통해서 장으로 배출되어야 한다. 하지만 변비 또는 장내 세균총 문제 등으로 인해 배출에 문제가 있으면 `장내 혈관을 통해 재흡수` 될 수 있다. 따라서 장건강을 유지해서 장배출이 잘 되도록 해야한다.
 
 ---
 
