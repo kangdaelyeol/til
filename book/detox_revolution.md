@@ -196,9 +196,45 @@ PG의 한 형태인 PGF2⍺가 생리통에 직접적인 연관이 있다. PGH<s
 
 PG는 [Estrogen](#estrogen-metabolism)과 간접적으로 관계가 있다.
 
-Estrogen은 **생리통과 관련된 PG를 합성하는 효소(COX-2)의 발현을 촉진** 시킨다. 그래서 Estrogen 수치를 조절하는 것이 중요하다.
+Estrogen 또한 COX-2 효소의 발현을 촉진 시킨다. 그래서 Estrogen 수치를 조절하는 것도 중요하다.
 
 Estrogen은 대사와 간해독 과정을 통해서 장으로 배출되어야 한다. 하지만 변비 또는 장내 세균총 문제 등으로 인해 배출에 문제가 있으면 `장내 혈관을 통해 재흡수` 될 수 있다. 따라서 장건강을 유지해서 장배출이 잘 되도록 해야한다.
+
+### 오메가-3와 관계
+
+오메가-6인 arachidonic acid는 우리가 주로 섭취하는 오메가-6인 linolenic acid가 효소에 의해 대사되어 변형된 것이다.
+
+- Linolenic acid(LA) = `Δ6-desaturase` => γ-Linolenic acid(GLA) = `elongase` => dihomo γ-Linolenic acid(DGLA) = `Δ5-desaturase` => Arachidonic acid(AA)
+
+_desaturase: 탈포화효소, 탄소 결합에서 수소를 제거하여 탄소에 이중 결합을 생성하여 불포화 상태로 만듦_
+
+_elongase: 지방산 사슬의 길이를 늘려주는 효소_
+
+오메가-3인 ALA(⍺-linolenic acid) 또한 같은 효소에 의해 EPA/DHA로 대사되여 변형된다.
+
+- ⍺-linolenic acid(ALA) = `Δ6-desaturase` => steridonic acid(SDA) = `elongase` => eicosatetraenoic acid(ETA) = `Δ5-desaturase` => eicosapentaenoic acid(EPA)
+
+_eicosa: 탄소가 20개_
+
+_tetra: 4개의 이중 결합_
+
+_enoic acid: 이중결합 포함한 지방산_
+
+따라서 ALA 섭취는 LA가 AA로 변환하는 과정을 억제하여 생리통 완화에 도움을 줄 수 있다.
+
+- 하지만 ALA는 LA보다 Δ6-desaturase 효소 친화력이 낮아서 경쟁에서 밀리게 된다.
+
+- 또한 ALA에서 직접적인 항염 효과를 내는 EPA/DHA로 전환되는 비율이 매우 낮다(약 5-10%)
+
+- 직접적인 항염 효과를 위해선 EPA/DHA를 직접 섭취(경구 섭취)해주는 것이 더욱 도움이 된다.
+
+EPA는 AA와 마찬가지로 COX-1, COX-2 효소 경로를 거쳐 항염 물질(PGE<sup>3</sup> 등)을 생성한다.
+
+DHA는 COX-1, COX-2 효소 경로를 거치진 않지만 lipooxyganase(LOX) 경로를 거쳐 항염 물질을 생산하여 생리통 완화에 도움을 준다.
+
+- EPA = elongase => docosapentaenoic acid(DPA) = elongase + Δ6-desaturase + β-oxidation => docosahexaenoic acid(DHA) = 5-LOX => resolvins/protectins
+
+_docosa: 탄소가 22개_
 
 ---
 
