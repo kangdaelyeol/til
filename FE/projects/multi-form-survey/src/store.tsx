@@ -13,7 +13,7 @@ class SurveyStore {
         this.focusedSectionId = this.sections[0].id
         this.emailCollected = false
 
-        makeAutoObservable(this)
+        makeAutoObservable(this, {}, { autoBind: true })
     }
 
     addSection() {
