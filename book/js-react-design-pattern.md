@@ -2804,18 +2804,68 @@ export default function Main() {
 
 ### 리엑트 서버 컴포넌트
 
-- 리엑트 서버 컴포넌트(RSC)는 서버에서 렌더링되며, 클라이언트의 상태나 이벤트를 처리하지 않는 컴포넌트다.
+리엑트 서버 컴포넌트(RSC)는 서버에서 렌더링되며, 클라이언트의 상태나 이벤트를 처리하지 않는 컴포넌트다.
 
-- 서버측에서 컴포넌트 로직(fetch 등)을 처리하고, 렌더링 결과만 클라이언트로 직렬화해 전송함으로써 불필요한 JS를 내보내지 않도록 설계된 기법이다.
+서버측에서 컴포넌트 로직(fetch 등)을 처리하고 분석된 정적 HTML 구조를 JSON 형태로 변경(직렬화)하여 렌더링 결과만 클라이언트로 전송함으로써 불필요한 JS를 내보내지 않도록 설계된 기법이다.
 
-  - RSC에서 사용되는 패키지(DB 또는 FS관련 라이브러리 등)들은 서버측에서 import되고 서버측에서만 사용되기 때문에 JS 번들로써 클라이언트에 전달되지 않는다.
+- SSR의 서버 관점에서 `렌더링`이란, JSX를 서버에서 평가하여 HTML 또는 JSON 등의 문자열로 직렬화(변환)하는 과정을 말한다.
 
-- 서버측에서 컴포넌트 렌더링이 완료되면 렌더링 결과를 직렬화(React 전용 직렬화 JSON format)하여 클라이언트로 전달한다. 클라이언트는 직렬화된 데이터를 역직렬화하여 해당 정보를 토대로 렌더링을 진행한다.
+RSC에서 사용되는 패키지(DB 또는 FS관련 라이브러리 등)들은 서버측에서 import되고 서버측에서만 사용되기 때문에 JS 번들로써 클라이언트에 전달되지 않는다.
 
-  - 하이드레이션이 필요한 컴포넌트의 경우 RCC(React Client Components)형태로 전송되어야 하므로 서버에서 실행되지 않고 JS 번들로 따로 전송된다.
+서버측에서 컴포넌트 렌더링이 완료되면 직렬화된(React 전용 직렬화 JSON format) 렌더링 결과를 클라이언트로 전달한다. 클라이언트는 직렬화된 데이터를 역직렬화하여 해당 정보를 토대로 렌더링을 진행한다.
 
-  - 이러한 이유로 서버측에서 생성하는 RSC에서는 useState, useEffect와 같은 훅을 사용할 수 없으며, onClick, onFocus 와 같은 이벤트 헨들러를 사용할 수 없다.
+서버측에서 생성하는 RSC에서는 useState, useEffect와 같은 훅을 사용할 수 없으며, onClick, onFocus 와 같은 이벤트 헨들러를 사용할 수 없다.
 
-- 서버에서 데이터 변경이 감지되면 RSC에서 변경된 부분만 다시 JSX로 렌더링 후 직렬화한 데이터를 전송한다.
+따라서 하이드레이션이 필요한 컴포넌트의 경우 RCC(React Client Components)형태로 전송되어야 하므로 서버에서 실행되지 않고 JS 번들로 따로 전송된다.
 
-  - 클라이언트는 변경된 부분에 관한 데이터를 수신하여 부분 업데이트를 진행한다. 따라서 UI가 자연스럽게 업데이트 되며 전체 하이드레이션을 수행하지 않는다. 즉, 불필요한 렌더링이 발생하지 않는다.
+- RCC를 서버측에서 직렬화시 JSON 형식 데이터에 module reference를 두어 클라이언트측에서 참조하여 데이터를 요청하도록 한다.
+
+```js
+export default function App() {
+	return (
+		<div>
+			<h1>hello from server</h1>
+			<ClientButton />
+		</div>
+	);
+}
+
+// ClientButton.tsx
+
+export default function ClientButton() {
+	return <button>Click Me!</button>
+}
+```
+
+```json
+[
+	{
+		"type": "div",
+		"props": {
+			"children": [
+				{
+					"type": "h1",
+					"props": {
+						"children": "hello from server"
+					}
+				},
+				// Client Component(module reference)
+				{
+					"$$typeof": "react.module.reference",
+					"filepath": "./ClientButton.js",
+					"name": "default",
+					"async": "false",
+					"props": {}
+				}
+			]
+		}
+
+	},
+];
+```
+
+- 클라이언트측에서 렌더링된 데이터를 받으면 클라이언트 측에서 필요한 컴포넌트(RCC)를 요청한다. 이 경우 번들 크기에 영향을 미친다.
+
+서버에서 데이터 변경이 감지되면 RSC에서 변경된 부분만 다시 JSON으로 렌더링 후 데이터를 전송한다.
+
+- 클라이언트는 변경된 부분에 관한 데이터를 수신하여 부분 업데이트를 진행한다. 따라서 UI가 자연스럽게 업데이트 되며 전체 하이드레이션을 수행하지 않는다. 즉, 불필요한 렌더링이 발생하지 않는다.
