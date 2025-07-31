@@ -2,39 +2,37 @@
 
 # 해독 혁명 - Detox Revolution
 
-### Overview
+## Overview
 
-- **빈부 격차는 기회를 빼앗지만, 건강 격차는 삶을 빼앗는다.**
+빈부 격차는 기회를 빼앗지만, 건강 격차는 삶을 빼앗는다.
 
-- 몸을 단순히 개별 장기의 집합으로 보는 것이 아닌, 하나의 시스템으로 이해하는 것.
+몸을 단순히 개별 장기의 집합으로 보는 것보다 하나의 시스템으로 이해하는 것. 우리의 건강을 결정하는 결정적인 요인은 `삶을 대하는 태도`, 즉 생활습관과 식습관이다.
 
-- 즉, 몸은 하나의 시스템으로 연결 되어 있다는 것이다. 그래서 `삶을 대하는 태도`, 즉 생활습관과 식습관이 우리의 건강을 결정한다.
+노화의 속도를 늦춘다 &rarr; 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리겠다.
 
-- 노화의 속도를 늦춘다 &rarr; 몸의 기능을 온전히 유지하며, 사는 기간을 최대한 늘리곘다.
+### 건강 지식
 
-- **건강 지식**
+`적확` 하고 우리의 삶에 적용 시킬 수 있고 내면화할 수 있는 지식을 잘 쌓아야 한다.
 
-  - `적확` 하고 우리의 삶에 적용 시킬 수 있고 내면화할 수 있는 지식을 잘 쌓아야 한다.
-
-  - 활용 가능한 지식이 우리의 삶을 바꾸는 지식이 된다.
-
-- **몸의 연결**
-
-  - 우리 몸의 시스템을 망라하는 원리를 파악하는것부터 시작.
-
-  - 그 안에서 우리의 생활습관 및 식습관과 관련된 원인을 찾는 것.
-
-- **건강한 몸**
-
-  - 건강한 몸을 위해선 해독(detox)은 필수 선결 조건이다.
-
-  - 이 책은 해독을 위해 `십자화과 채소(cruciferous vegetable)` 섭취를 강조한다.
-
-  - 십자화과 채소에 포함된 `phytochemical` 의 종류인 `sulforaphane` 이라는 물질은 `glutathione` 항산화 물질 생성을 촉진한다.
+활용 가능한 지식이 우리의 삶을 바꾸는 지식이 된다.
 
 _적확하다 - 조금도 틀리거나 어긋남 없이 정확하고 확실하다_
 
+### 몸의 연결
+
+우리 몸의 시스템을 망라하는 원리를 파악하는것부터 시작.
+
+그 안에서 우리의 생활습관 및 식습관과 관련된 원인을 찾는 것.
+
 _망라하다 - 널리 받아들여 모두 포함하다_
+
+### 건강한 몸
+
+건강한 몸을 위해서 해독(detox)은 필수 선결 조건이다.
+
+이 책은 해독을 위해 `십자화과 채소(cruciferous vegetable)` 섭취를 강조한다.
+
+십자화과 채소에 포함된 `phytochemical` 의 종류인 `sulforaphane` 이라는 물질은 `glutathione` 항산화 물질 생성을 촉진한다.
 
 _phytochemical - 모든 식물에 포함된 유기적 물질_
 
@@ -48,7 +46,7 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 - [Prostaglandin(PG)](#prostaglandinpg)
 
-- [간기능 - liver funciton test](#간기능---liver-function-test)
+- [간기능(liver funciton test)](#간기능liver-function-test)
 
 - [Dopamine](#dopamine)
 
@@ -240,29 +238,29 @@ _docosa: 탄소가 22개_
 
 ---
 
-## 간기능 - liver function test
+## 간기능(liver function test)
 
-- ALT, AST, GGT 효소는 간세포에 많이 분포한다.
+ALT, AST, GGT 효소는 간세포에 많이 분포한다.
 
-### ALT - Alanine Aminotransferase
+### ALT(Alanine Aminotransferase)
 
-- [ALT](https://en.wikipedia.org/wiki/Alanine_transaminase) 효소는 [alanine](https://en.wikipedia.org/wiki/Alanine) 아미노산 과 관련한 에너지, 아미노산 대사에 관여하는 효소로, 주로 간세포에 분포해서 간이 손상되면 해당 수치가 높게 나온다.
+[ALT](https://en.wikipedia.org/wiki/Alanine_transaminase) 효소는 [alanine](https://en.wikipedia.org/wiki/Alanine) 아미노산과 관련한 에너지, 아미노산 대사에 관여하는 효소로, 주로 간세포에 분포해서 간이 손상되면 해당 수치가 높게 나온다.
 
-### AST - Aspartate Aminotransferase
+### AST(Aspartate Aminotransferase)
 
-- [AST](https://en.wikipedia.org/wiki/Aspartate_transaminase) 효소는 [aspartic acid](https://en.wikipedia.org/wiki/Aspartic_acid) 아미노산과 관련된 아미노산, 에너지 대사에 관여하는 효소로, 간 뿐만이 아닌 다른 기관에도 분포하기 때문에 `간 특이성` 이 ALT에 비해 상대적으로 낮다.
+[AST](https://en.wikipedia.org/wiki/Aspartate_transaminase) 효소는 [aspartic acid](https://en.wikipedia.org/wiki/Aspartic_acid) 아미노산과 관련된 아미노산, 에너지 대사에 관여하는 효소로, 간 뿐만이 아닌 다른 기관에도 분포하기 때문에 `간 특이성` 이 ALT에 비해 상대적으로 낮다.
 
 ### GGT - Gamma-glutamyltransferase
 
-- [GGT](https://en.wikipedia.org/wiki/Gamma-glutamyltransferase) 효소는 [Glutathione](#glutathione-composition) 과 관련된 대사에 관여하는 효소다. 간에 주로 분포를 하지만 간 손상뿐만이 아닌 산화적 스트레스등 이유로 수치가 높게 나오기도 한다.
+[GGT](https://en.wikipedia.org/wiki/Gamma-glutamyltransferase) 효소는 [Glutathione](#glutathione-composition) 과 관련된 대사에 관여하는 효소다. 간에 주로 분포를 하지만 간 손상뿐만이 아닌 산화적 스트레스등 이유로 수치가 높게 나오기도 한다.
 
 ### 간 수치
 
-- 피검사를 할 때 세 가지 요소(AST, ALT, GGT)의 수치가 높게 나오면 간의 상태가 좋지 않다고 판단할 수 있다.
+피검사를 할 때 세 가지 요소(AST, ALT, GGT)의 수치가 높게 나오면 간의 상태가 좋지 않다고 판단할 수 있다.
 
-- 일반적으로 간 수치를 볼 때 ALT/AST 수치를 보고 평가하며, [AST/ALT Ratio](https://en.wikipedia.org/wiki/AST/ALT_ratio)에 따라 간 질환 유형을 감별한다.
+일반적으로 간 수치를 볼 때 ALT/AST 수치를 보고 평가하며, [AST/ALT Ratio](https://en.wikipedia.org/wiki/AST/ALT_ratio)에 따라 간 질환 유형을 감별한다.
 
-- 결론적으로 간이 손상된 경우 간세포의 투과성이 증가되거나 파괴 되어 해당 효소가 혈액으로 방출된다. 이로 인해 효소들이 혈액에서 검출되는 것이다.
+결론적으로 간이 손상된 경우 간세포의 투과성이 증가되거나 파괴 되어 해당 효소가 혈액으로 방출된다. 이로 인해 효소들이 혈액에서 검출되는 것이다.
 
 ---
 
@@ -270,11 +268,11 @@ _docosa: 탄소가 22개_
 
 ## Dopamine
 
-- [도파민(Dopamine - Dihydroxyphenethylamine)](https://en.wikipedia.org/wiki/Dopamine)은 자극에 대한 **보상을 예측** 하는 신경조절물질이자 호르몬이다.
+[도파민(Dopamine(Dihydroxyphenethylamine))](https://en.wikipedia.org/wiki/Dopamine)은 자극에 대한 **보상을 예측** 하는 신경조절물질이자 호르몬이다.
 
-- 우리의 뇌는 본능적으로 도파민을 쫒는다.
+우리의 뇌는 본능적으로 도파민을 쫓는다.
 
-- 뇌는 여러 상황을 통해서 보상과 관련된 행동 패턴을 학습하며, 이를 기반으로 도파민 분비가 조절된다.
+뇌는 여러 상황을 통해서 보상과 관련된 행동 패턴을 학습하며, 이를 기반으로 도파민 분비가 조절된다.
 
 ### 뇌의 학습과 기대
 
@@ -286,7 +284,7 @@ _docosa: 탄소가 22개_
 
 4. **동기부여** - 예상되는 보상을 기반으로 동기를 부여하고, 목표를 달성하도록 노력을 촉진시킨다.
 
-- 도파민은 신경 자극을 받을 때 분비되는데, 도파민 합성을 위한 [tyrosine](https://en.wikipedia.org/wiki/Tyrosine) 아미노산을 섭취하는 것도 중요하다.
+도파민 합성에 주로 [티로신(tyrosine)](https://en.wikipedia.org/wiki/Tyrosine) 아미노산이 필요하다. 따라서 적절한 때에 도파민이 원활하게 분비되기 위해서 tyrosine을 섭취하는 것도 중요하다.
 
 ---
 
