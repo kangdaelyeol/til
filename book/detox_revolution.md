@@ -1363,25 +1363,41 @@ liposome은 위의 소화효소에 저항성을 가진다. 그래서 glutathione
 
 ## Secretin
 
-- 해독을 위해 담즙 분비가 중요하다.
+해독을 위해서는 담즙 분비가 원활히 되어야 한다.
 
-- 담즙 분비를 위해선 담즙을 생성하고, 담낭(gallbladder)에 저장되어야 한다
+### 산성은 십이지장을 자극하여 담즙 생성에 도움을 준다
 
-- [식초(Apple cider vinegar)](https://en.wikipedia.org/wiki/Apple_cider_vinegar)를 섭취하면 담즙 생성에 도움을 줄 수 있다.
+[식초(Apple cider vinegar, 애사비)](https://en.wikipedia.org/wiki/Apple_cider_vinegar)를 섭취하면 담즙 생성에 도움을 줄 수 있다.
 
-- 식초에 있는 [Acetic acid](https://en.wikipedia.org/wiki/Acetic_acid)(초산)은 duodenum(십이지장)에서 [secretin](https://en.wikipedia.org/wiki/Secretin) 분비에 도움을 줄 수 있다.
+식초에 있는 [Acetic acid](https://en.wikipedia.org/wiki/Acetic_acid)(초산)의 산성이 duodenum(십이지장)을 자극해서 [secretin](https://en.wikipedia.org/wiki/Secretin) 분비를 촉진한다.
 
-- 분비된 secretin은 **pancreatic juice(췌장액)** 분비를 촉진시키고, pancreatic juice에 포함된 bicabonate(중탄산염)는 duodenum 내부의 산성환경을 중화시켜준다.
+- 물론 식초가 아니라도 장내 산성도를 높이는 음식을 섭취해도 이러한 과정이 유도된다.
 
-  - 췌장(pancreas)의 **duct cell(도관 세포)** 에서 중탄산염(bicarbonate)을 생성하고 분비한다고 한다.
+### secretin의 작용
 
-  - 또한 secretin은 위장의 parietal cell에서 위산(HCl) 분비를 억제시켜 산성도를 조절한다.
+분비된 secretin은 pancreatic juice(췌장액) 분비를 촉진시키고, 간세포를 자극하여 담즙(bile) 생성을 촉진하며, 위장에서 HCI 분비를 억제하여 산성도를 조절한다.
 
-- 또한 secretin은 간에서 bile 생성을 촉진해 **gallbladder(담낭)** 으로 축적한다. 이후 [Cholecystokinin(CCK)](https://en.wikipedia.org/wiki/Cholecystokinin) 호르몬에 의해 담낭이 수축되어 담즙이 분비된다.
+- pancreatic juice에 포함된 bicabonate(중탄산염)는 duodenum 내부의 산성환경을 중화시켜준다.
 
-  - Cholecystokinin 호르몬은 췌장액 분비를 촉진시켜서 **pancreozymin** 이라고 불렸다.
+- 중탄산염(bicarbonate)은 췌장(pancreas)의 **duct cell(도관 세포)** 에서 생성하고 분비한다고 한다.
 
-  - Cholecystokinin 호르몬은 십이지장(duodenum)의 **장내분비세포(enteroendocrine)** 에서 합성되고 분비된다.
+- secretin은 간에서 bile 생성을 촉진해 **gallbladder(담낭)** 으로 축적한다.
+
+### Cholecystokinin
+
+십이지장은 [Cholecystokinin(CCK)](https://en.wikipedia.org/wiki/Cholecystokinin) 호르몬도 분비한다.
+
+- Cholecystokinin 호르몬은 십이지장(duodenum)의 **장내분비세포(enteroendocrine)** 에서 합성되고 분비된다.
+
+지방과 단백질을 섭취하면 이를 소화 시키기 위해 십이지장은 CCK를 분비하며, CCK에 의해 담낭이 수축되어 담즙이 분비된다.
+
+Cholecystokinin 호르몬은 췌장액 분비를 촉진시켜서 **pancreozymin** 이라고 불렸다.
+
+- CCK는 췌장으로부터 소화 효소 분비를 촉진시킨다(소화 효소가 췌장액의 주 성분이 된다).
+
+---
+
+---
 
 ## Urine output
 
