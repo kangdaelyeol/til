@@ -1,12 +1,16 @@
+import { Provider } from 'react-redux';
 import './App.css';
 import TodoApp from './components/todo-app';
+import { store } from './store';
 
 // 179b
 
 function App() {
 	return (
 		<>
-			<TodoApp />
+			<Provider store={store}>
+				<TodoApp />
+			</Provider>
 		</>
 	);
 }

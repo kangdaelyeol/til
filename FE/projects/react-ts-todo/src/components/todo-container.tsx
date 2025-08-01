@@ -1,12 +1,8 @@
 import Checkbox from './checkbox';
 import TodoInput from './todo-input';
-import {
-	addTodoAtom,
-	fetchTodoAtom,
-	todosAtom,
-	toggleTodoAtom,
-} from '../store';
-import { useAtom, useSetAtom } from 'jotai';
+import { RootState } from '../store';
+import { useDispatch, useSelector } from 'react-redux';
+import { addTodo, fetchTodoRequest, toggleTodo } from '../slices/todo-slice';
 import { useEffect } from 'react';
 export interface Todo {
 	id: number;
@@ -15,19 +11,25 @@ export interface Todo {
 }
 
 export default function TodoContainer() {
-	const [todos] = useAtom(todosAtom);
-	const addTodo = useSetAtom(addTodoAtom);
-	const toggleTodo = useSetAtom(toggleTodoAtom);
-	const fetchTodo = useSetAtom(fetchTodoAtom);
+	const todo = useSelector((state: RootState) => state.todo);
+	const dispatch = useDispatch();
+
+	const onAddTodo = (todo: string) => {
+		dispatch(addTodo({ todo }));
+	};
+
+	const onToggleTodo = (id: number) => {
+		dispatch(toggleTodo({ id }));
+	};
 
 	useEffect(() => {
-		fetchTodo();
-	}, [fetchTodo]);
+		dispatch(fetchTodoRequest());
+	}, [dispatch]);
 
 	return (
 		<div className=''>
-			<TodoInput onAddTodo={addTodo} />
-			<TodoList todos={todos} onToggleTodo={toggleTodo} />
+			<TodoInput onAddTodo={onAddTodo} />
+			<TodoList todos={todo.todos} onToggleTodo={onToggleTodo} />
 		</div>
 	);
 }
