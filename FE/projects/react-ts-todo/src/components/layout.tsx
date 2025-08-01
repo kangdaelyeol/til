@@ -1,6 +1,7 @@
-import { PropsWithChildren, useState } from 'react';
+import { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
-export default function Layout({ children }: PropsWithChildren) {
+export default function Layout() {
 	const [direction, setDirection] = useState<'column' | 'row'>('column');
 
 	console.log('layout rendered');
@@ -13,6 +14,8 @@ export default function Layout({ children }: PropsWithChildren) {
 			}}
 		>
 			<h1>Todo app</h1>
+			<Link to='/'>home</Link>
+			<Link to='/about'>about</Link>
 			<button
 				onClick={() =>
 					setDirection((prev) => (prev === 'column' ? 'row' : 'column'))
@@ -20,7 +23,7 @@ export default function Layout({ children }: PropsWithChildren) {
 			>
 				Change Layout
 			</button>
-			{children}
+			<Outlet />
 		</div>
 	);
 }

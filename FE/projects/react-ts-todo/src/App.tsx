@@ -1,15 +1,14 @@
-import { Provider } from 'react-redux';
 import './App.css';
-import TodoApp from './components/todo-app';
+import { RouterProvider } from 'react-router-dom';
+import router from './routes';
+import { Provider } from 'react-redux';
 import { store } from './store';
-
-// 179b
 
 function App() {
 	return (
 		<>
 			<Provider store={store}>
-				<TodoApp />
+				<RouterProvider router={router} />
 			</Provider>
 		</>
 	);
