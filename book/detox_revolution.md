@@ -42,93 +42,93 @@ _phytochemical - 모든 식물에 포함된 유기적 물질_
 
 ### Table of contents
 
-- [Propionic Acid(PPA)](#프로피온산propionic-acidppa)
+[Propionic Acid(PPA)](#프로피온산propionic-acidppa)
 
-- [Prostaglandin(PG)](#prostaglandinpg)
+[Prostaglandin(PG)](#prostaglandinpg)
 
-- [간기능(liver funciton test)](#간기능liver-function-test)
+[간기능(liver funciton test)](#간기능liver-function-test)
 
-- [Dopamine](#dopamine)
+[Dopamine](#dopamine)
 
-- [Prefrontal Cortex - 전전두엽](#prefrontal-cortex---전전두엽)
+[전전두엽(Prefrontal Cortex)](#전전두엽prefrontal-cortex)
 
-- [Urea(요소) - Uric Acid(요산)](#urea요소---uric-acid요산)
+[Urea(요소) - Uric Acid(요산)](#urea요소---uric-acid요산)
 
-- [Estrogen metabolism](#estrogen-metabolism)
+[Estrogen metabolism](#estrogen-metabolism)
 
-- [Mercury Poisoning - 수은 중독](#mercury-poisoning---수은-중독)
+[Mercury Poisoning - 수은 중독](#mercury-poisoning---수은-중독)
 
-- [Mercury - Thyroid gland](#mercury---thyroid-gland)
+[Mercury - Thyroid gland](#mercury---thyroid-gland)
 
-- [Inorganic Arsenic (무기 비소)](#inorganic-arsenic-무기-비소)
+[Inorganic Arsenic (무기 비소)](#inorganic-arsenic-무기-비소)
 
-- [Environmental Hormone - 환경 호르몬](#environmental-hormone---환경-호르몬)
+[Environmental Hormone - 환경 호르몬](#environmental-hormone---환경-호르몬)
 
-- [herbicide - 농약](#herbicide---농약)
+[herbicide - 농약](#herbicide---농약)
 
-- [Advanced Glycation end-products - 최종 당화 산물](#advanced-glycation-end-products---최종-당화-산물)
+[Advanced Glycation end-products - 최종 당화 산물](#advanced-glycation-end-products---최종-당화-산물)
 
-- [liver](#liver)
+[liver](#liver)
 
-- [bile - 담즙의 중요성](#bile---담즙의-중요성)
+[bile - 담즙의 중요성](#bile---담즙의-중요성)
 
-- [Enterohepatic Circulation - 장간순환](#enterohepatic-circulation---장간순환)
+[Enterohepatic Circulation - 장간순환](#enterohepatic-circulation---장간순환)
 
-- [stomach - 위](#stomach---위)
+[stomach - 위](#stomach---위)
 
-- [gut microbiota - 장내 세균총](#gut-microbiota---장내-세균총)
+[gut microbiota - 장내 세균총](#gut-microbiota---장내-세균총)
 
-- [Stomach - Gastric Ulcer, GERD](#stomach---gastric-ulcer-gerd)
+[Stomach - Gastric Ulcer, GERD](#stomach---gastric-ulcer-gerd)
 
-- [Gluten](#gluten)
+[Gluten](#gluten)
 
-- [Casein protein](#casein-protein)
+[Casein protein](#casein-protein)
 
-- [fiber - 식이섬유](#fiber---식이섬유)
+[fiber - 식이섬유](#fiber---식이섬유)
 
-- [Glutathione Composition](#glutathione-composition)
+[Glutathione Composition](#glutathione-composition)
 
-- [Liposomal Glutathione](#liposomal-glutathione)
+[Liposomal Glutathione](#liposomal-glutathione)
 
-- [Secretin](#secretin)
+[Secretin](#secretin)
 
-- [Urine output](#urine-output)
+[Urine output](#urine-output)
 
-- [Mitochondrion](#mitochondrion)
+[Mitochondrion](#mitochondrion)
 
-- [Cortisol - stress hormone](#cortisol---stress-hormone)
+[Cortisol - stress hormone](#cortisol---stress-hormone)
 
-- [Vitamin E](#vitamin-e)
+[Vitamin E](#vitamin-e)
 
-- [ROS - mitochondrion](#ros---mitochondrion)
+[ROS - mitochondrion](#ros---mitochondrion)
 
-- [Autophagy - 자가 포식](#autophagy---자가-포식)
+[Autophagy - 자가 포식](#autophagy---자가-포식)
 
-- [Betaine](#betaine)
+[Betaine](#betaine)
 
-- [Taste buds](#taste-buds)
+[Taste buds](#taste-buds)
 
-- [RBC - bilirubin](#rbc---bilirubin)
+[RBC - bilirubin](#rbc---bilirubin)
 
-- [Cruciferous Vegetables](#cruciferous-vegetables)
+[Cruciferous Vegetables](#cruciferous-vegetables)
 
-- [food additive - sugar substitute](#food-additive---sugar-substitute)
+[food additive - sugar substitute](#food-additive---sugar-substitute)
 
-- [애호박 - pectin](#애호박---pectin)
+[애호박 - pectin](#애호박---pectin)
 
-- [cholesterol](#cholesterol)
+[cholesterol](#cholesterol)
 
-- [Tomato - lycopene](#tomato---lycopene)
+[Tomato - lycopene](#tomato---lycopene)
 
-- [Oxalate](#oxalate)
+[Oxalate](#oxalate)
 
-- [HbA1c](#hba1c)
+[HbA1c](#hba1c)
 
-- [Alkaloid](#alkaloid)
+[Alkaloid](#alkaloid)
 
-- [goitrogen](#goitrogen)
+[goitrogen](#goitrogen)
 
-- [Potassium](#potassium)
+[Potassium](#potassium)
 
 ---
 
@@ -290,31 +290,31 @@ ALT, AST, GGT 효소는 간세포에 많이 분포한다.
 
 ---
 
-## Prefrontal Cortex - 전전두엽
+## 전전두엽(Prefrontal Cortex)
 
-- 우리의 본능을 따르지 않으려면 [prefrontal cortex](https://en.wikipedia.org/wiki/Prefrontal_cortex)의 기능을 유지하는 것이 가장 중요하다.
+본능을 따르지 않고 이성적 판단을 유지하기 위해 [전전두엽(prefrontal cortex)](https://en.wikipedia.org/wiki/Prefrontal_cortex)의 기능을 유지하는 것이 가장 중요하다.
 
-- 뇌에서 Prefrontal Cortex는 고차원적 인지와 사고를 하는 역할을 담당한다.
+prefrontal cortex는 고차원적 인지와 사고를 하는 역할을 담당한다.
 
-- **전전두엽의 역할**
+### 전전두엽의 역할
 
-  - 추론, 문제 해결
+추론 및 문제 해결
 
-  - 의사결정, 계획
+의사결정 및 목표 계획
 
-  - 추상적 사고(철학적 사고, 상징적 의미의 이해)
+추상적 사고(철학적 사고, 상징적 의미의 이해)
 
-  - 자기 성찰 - 자신의 과거에 대한 지적, 개선 방안 모색
+자기 성찰(자신의 과거에 대한 지적과 개선 방안 모색)
 
-  - 창의적 사고
+창의적 사고 및 유연성
 
-  - 감정 조절
+감정 조절 및 충동 억제
 
-- 우리가 바쁘거나 스트레스를 받게 되면 prefrontal cortex의 기능이 저하된다.
+### 전전두엽 기능 저하
 
-- prefrontal cortex 기능 저하는 본능적인 사고나 충동을 일으키며, 곧 도파민을 요구 하게 된다.
+바쁘거나 스트레스를 받게 되면 prefrontal cortex 기능이 저하된다.
 
-- 따라서 `생각이 오염` 되지 않도록 내면의 상태를 평온하게 유지하려는 노력을 해야 한다.
+prefrontal cortex 기능 저하는 본능적인 사고나 충동을 일으키며, 결과적으로 도파민을 요구 하게 된다. 따라서 생각이 오염되지 않도록 내면의 상태를 평온하게 유지하려는 노력을 해야 한다.
 
 ---
 
