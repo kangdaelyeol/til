@@ -1,0 +1,18 @@
+.layout__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.layout__gnb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.layout__title {
+	font-size: 24px;
+}
+
+.layout__link {
+	margin-left: 10px;
+}

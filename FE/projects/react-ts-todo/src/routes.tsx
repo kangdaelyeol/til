@@ -1,8 +1,10 @@
 // plain object 방식의 router
 
 import { createBrowserRouter } from 'react-router-dom';
-import Layout from './components/layout';
-import TodoContainer from './components/todo-container';
+import Layout from './components/layout/layout';
+import TodoContainer, {
+	TodoList,
+} from './components/todo-container/todo-container';
 
 const router = createBrowserRouter([
 	{
@@ -11,6 +13,20 @@ const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <TodoContainer />,
+				children: [
+					{
+						index: true,
+						element: <TodoList />,
+					},
+					{
+						path: 'active',
+						element: <TodoList filter='active' />,
+					},
+					{
+						path: 'completed',
+						element: <TodoList filter='completed' />,
+					},
+				],
 			},
 			{
 				path: '/about',
