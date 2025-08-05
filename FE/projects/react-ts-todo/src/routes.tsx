@@ -2,9 +2,6 @@
 
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from './components/layout/layout';
-import TodoContainer, {
-	TodoList,
-} from './components/todo-container/todo-container';
 
 const router = createBrowserRouter([
 	{
@@ -12,11 +9,34 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: '/',
-				element: <TodoContainer />,
+				lazy: async () => {
+					const { default: TodoContainer } = await import(
+						'./components/todo-container/todo-container'
+					);
+
+					return { Component: TodoContainer };
+				},
+
 				children: [
 					{
+						index: true,
+						lazy: async () => {
+							const { TodoList } = await import(
+								'./components/todo-container/todo-container'
+							);
+
+							return { Component: TodoList };
+						},
+					},
+					{
 						path: '/:filter',
-						element: <TodoList />,
+						lazy: async () => {
+							const { TodoList } = await import(
+								'./components/todo-container/todo-container'
+							);
+
+							return { Component: TodoList };
+						},
 					},
 				],
 			},
