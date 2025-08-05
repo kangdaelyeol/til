@@ -40,6 +40,8 @@ export const fetchTodoAtom = atom(null, async (_, set) => {
 	}
 });
 
+export const userAtom = atom<{ username: string } | null>(null);
+
 // react-redux
 
 const sagaMiddleware = createSagaMiddleware();
