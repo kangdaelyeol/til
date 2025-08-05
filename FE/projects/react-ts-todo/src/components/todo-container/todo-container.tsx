@@ -4,8 +4,8 @@ import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo, fetchTodoRequest, toggleTodo } from '../../slices/todo-slice';
 import { useEffect } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-
+import { NavLink, Outlet, useParams } from 'react-router-dom';
+import './todo-container.css';
 export interface Todo {
 	id: number;
 	text: string;
@@ -27,9 +27,30 @@ export default function TodoContainer() {
 		<div className=''>
 			<TodoInput onAddTodo={onAddTodo} />
 			<div className=''>
-				<NavLink to='/'>all</NavLink>
-				<NavLink to='/active'>active</NavLink>
-				<NavLink to='/completed'>completed</NavLink>
+				<NavLink
+					className={({ isActive }) =>
+						`todo-container__link ${isActive && 'todo-container__link--active'}`
+					}
+					to='/'
+				>
+					all
+				</NavLink>
+				<NavLink
+					className={({ isActive }) =>
+						`todo-container__link ${isActive && 'todo-container__link--active'}`
+					}
+					to='/active'
+				>
+					active
+				</NavLink>
+				<NavLink
+					className={({ isActive }) =>
+						`todo-container__link ${isActive && 'todo-container__link--active'}`
+					}
+					to='/completed'
+				>
+					completed
+				</NavLink>
 			</div>
 			<Outlet />
 		</div>
@@ -40,7 +61,11 @@ interface TodoListProps {
 	filter?: 'all' | 'active' | 'completed';
 }
 
-export const TodoList = ({ filter }: TodoListProps) => {
+export const TodoList = () => {
+	const { filter = 'all' } = useParams<{
+		filter?: 'all' | 'active' | 'completed';
+	}>();
+	
 	const { todos } = useSelector((state: RootState) => state.todo);
 
 	const dispatch = useDispatch();

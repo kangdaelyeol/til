@@ -5,7 +5,7 @@ import {
 	fetchTodoSuccess,
 } from '../slices/todo-slice';
 import { getTodos } from '../services/todo-api';
-import { Todo } from '../components/todo-container';
+import { Todo } from '../components/todo-container/todo-container';
 
 export function* fetchTodoSaga() {
 	try {

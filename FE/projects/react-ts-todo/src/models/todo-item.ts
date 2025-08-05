@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { Todo } from '../components/todo-container';
+import { Todo } from '../components/todo-container/todo-container';
 
 export default class TodoItem implements Todo {
 	id: number;

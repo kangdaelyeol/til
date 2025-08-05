@@ -1,0 +1,7 @@
+.todo-container__link {
+	margin-left: 10px;
+}
+
+.todo-container__link--active {
+	font-weight: bold;
+}

@@ -1,5 +1,5 @@
 import { atom } from 'jotai';
-import { Todo } from './components/todo-container';
+import { Todo } from './components/todo-container/todo-container';
 import { getTodos } from './services/todo-api';
 import { configureStore } from '@reduxjs/toolkit';
 import todoReducer from './slices/todo-slice';

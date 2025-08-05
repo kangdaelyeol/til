@@ -1,4 +1,4 @@
-import { Todo } from '../components/todo-container';
+import { Todo } from '../components/todo-container/todo-container';
 
 export const getTodos = (): Promise<Todo[]> => {
 	return new Promise((resolve) => {
