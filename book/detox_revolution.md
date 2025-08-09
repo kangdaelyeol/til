@@ -332,19 +332,17 @@ prefrontal cortex 기능 저하는 본능적인 사고나 충동을 일으키며
 
 ### 암모니아(Ammonia)
 
-- 단백질은 몸에서 [이화 작용(catabolism)](https://en.wikipedia.org/wiki/Catabolism)을 거쳐 **암모니아(Ammonia)** 를 부산물(byproduct)로써 생성한다.
+단백질은 몸에서 [이화 작용(catabolism)](https://en.wikipedia.org/wiki/Catabolism)을 거쳐 **암모니아(Ammonia)** 를 부산물(byproduct)로써 생성한다.
 
-- 우리가 섭취한 물질은 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 **대사산물(metabolite)** 라고 한다.
+- 우리가 섭취한 물질은 대사되면서 우리몸에 필요한 물질을 만들어내는데, 이를 **대사산물(metabolite)** 라고 한다. 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물이라기 보단 **부산물** 이 맞다.
 
-- 하지만 암모니아는 우리가 원하지 않는 물질이므로 대사산물보단 **부산물** 이 맞다.
-
-- 암모니아는 독성이 강하기 때문에 우리 몸에서 배출되어야 하지만, 우리 몸에서 암모니아를 안전하게 배출할 수 없다. 그래서 암모니아에 **이산화탄소** 를 추가함으로써 독성이 약한 **요소(Urea)** 를 생성할 수 있고 안전하게 배출할 수 있다.
+암모니아는 독성이 강하기 때문에 우리 몸에서 배출되어야 하지만, 안전하게 배출할 수 없다. 그래서 암모니아에 **이산화탄소** 를 추가함으로써 독성이 약한 **요소(Urea)** 를 생성하여 안전하게 배출할 수 있다.
 
 ### 요소(Urea)
 
-- 암모니아는 간에서 [Urea Cycle](https://en.wikipedia.org/wiki/Urea_cycle) 과정을 통해 한 번 더 대사되어 요소(Urea)로 변환된다.
+암모니아는 간에서 [Urea Cycle](https://en.wikipedia.org/wiki/Urea_cycle) 과정을 통해 한 번 더 대사되어 요소(Urea)로 변환된다.
 
-- Urea Cycle은 총 다섯 가지의 효소적 반응(enzymatic reaction)으로 이루어져 있으며 총 다섯 종류의 효소가 관여한다.
+Urea Cycle은 총 다섯 가지의 효소적 반응(enzymatic reaction)으로 이루어져 있으며 총 다섯 종류의 효소가 관여한다.
 
 - 첫 두 단계의 반응은 **미토콘드리아(mitochondrial) 반응**, 그리고 나머지 세 반응은 **세포질(cytosolic) 반응** 이다
 
@@ -354,31 +352,27 @@ prefrontal cortex 기능 저하는 본능적인 사고나 충동을 일으키며
 
 ### 간성혼수(Hepatic encephalopathy)
 
-- ammonia가 선천적인 요인 또는 간 기능 저하로 인해 배출되지 못하고 혈액에 축적되어 [고암모니아혈증(Hyperammonemia)](https://en.wikipedia.org/wiki/Hyperammonemia) 상태가 될 수 있으며, 이는 곧 [간성혼수(hepatic encephalopathy)](https://en.wikipedia.org/wiki/Hepatic_encephalopathy)를 일으킬 확률이 높아진다.
+암모니아가 선천적인 요인 또는 간 기능 저하로 인해 배출되지 못하여 혈액에 축적되면 [고암모니아혈증(Hyperammonemia)](https://en.wikipedia.org/wiki/Hyperammonemia) 상태가 될 수 있다. 고암모니아혈증은 곧 [간성혼수(hepatic encephalopathy)](https://en.wikipedia.org/wiki/Hepatic_encephalopathy)를 일으킬 확률이 높아진다.
 
 ---
 
 ### <span class="title">1. 퓨린(purine)의 정상적인 해독 과정</span>
 
-- #### <span class="substance">purine</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">uric acid</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
+#### <span class="substance">purine</span> &rarr; <span class="organ">liver</span> &rarr; <span class="substance">uric acid</span> &rarr; <span class="organ">kidney</span> &rarr; <span class="interaction">배출</span>
 
 ### <span class="title">2. 요산(uric acid) 축적에 따른 위험</span>
 
-- #### <span class="substance">uric acid</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperuricemia </span> &rarr; <span class="substance"> uric crystal </span> &rarr; <span class="disease">gout(통풍)</span>
+#### <span class="substance">uric acid</span> &rarr; <span class="interaction">accumulation</span> &rarr; <span class="disease"> hyperuricemia </span> &rarr; <span class="substance"> uric crystal </span> &rarr; <span class="disease">gout(통풍)</span>
 
-### 요산(Uric Acid)
+### 요산(Uric Acid) - 통풍(Gout)
 
-- [퓨린(Purine)](https://en.wikipedia.org/wiki/Purine)을 섭취하면 간에서 대사를 통해 [요산(Uric Acid)](https://en.wikipedia.org/wiki/Uric_acid)을 생성한다.
+[퓨린(Purine)](https://en.wikipedia.org/wiki/Purine)을 섭취하면 간에서 대사를 통해 [요산(Uric Acid)](https://en.wikipedia.org/wiki/Uric_acid)을 생성한다.
 
-### 통풍(Gout)
+요산은 신장을 통해 소변으로 배출되어야 한다. 요산이 배출되지 못하여 축적되면 [고요산혈증(hyperuricemia)](https://en.wikipedia.org/wiki/Hyperuricemia) 상태가 되며, 이는 통풍이 아니지만 통풍 가능성이 있는 상태를 말한다. `따라서 고요산혈증(hyperuricemia) 상태라고 해서 통풍(gout)이라고 판단할 수 없다.`
 
-- 요산은 신장을 통해 소변으로 배출되어야 한다. 요산이 배출되지 못하고 축적되면 [고요산혈증(hyperuricemia)](https://en.wikipedia.org/wiki/Hyperuricemia) 상태가 되며, 이는 통풍이 오지는 않았지만 통풍 가능성이 있는 상태를 말한다.
+혈중 uric acid 물질이 **uric crystal(요산 결정)** 형태로 축적되어 관절등 부위에 쌓여 통증을 일으킬 때, 이를 통풍이라고 한다. 통풍은 평생 관리해야 하는 만성 질환이다.
 
-- `따라서 hyperuricemia 상태라고 해서 gout 라고 판단할 수 없다.`
-
-- 만약 요산으로 인한 통풍이 올 때, 즉 혈중 uric acid 물질이 **uric crystal(요산 결정)** 형태로 축적되어 관절등 부위에 쌓여 통증을 일으키는 것이 확인되면, 이를 통풍이라고 한다. 통풍은 평생 관리해야 하는 만성 질환이다.
-
-- 혈중 uric acid 수치는 신장 기능이 저하되거나 단백질 또는 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아질 수 있다. 요산 수치는 꾸준한 관리가 필요하다.
+혈중 uric acid 수치는 신장 기능이 저하되거나 단백질 또는 퓨린이 많이 있는 음식을 먹는 식습관을 가질 경우 높아진다. 요산 수치는 꾸준한 관리가 필요하다.
 
 ---
 
