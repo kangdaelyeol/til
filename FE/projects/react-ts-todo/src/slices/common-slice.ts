@@ -13,7 +13,6 @@ const commonSlice = createSlice({
 		modals: [],
 	} as CommonState,
 	reducers: {
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		login(_, __: PayloadAction<{ username: string; password: string }>) {
 			// saga will handle the login logic
 		},
@@ -38,4 +37,6 @@ const commonSlice = createSlice({
 export const { login, setUser, openModal, closeModal, closeAllModals } =
 	commonSlice.actions;
 
-export default commonSlice.reducer;
+const commonReducer = commonSlice.reducer;
+
+export default commonReducer;

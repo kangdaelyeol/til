@@ -4,11 +4,11 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Layout from './components/layout/layout';
 import Login from './components/login';
 import { PropsWithChildren } from 'react';
-import { userAtom } from './store';
-import { useAtomValue } from 'jotai';
+import { useSelector } from 'react-redux';
+import { RootState } from './store';
 
 const ProtectedRoute = ({ children }: PropsWithChildren) => {
-	const user = useAtomValue(userAtom);
+	const user = useSelector((state: RootState) => state.common.user);
 
 	if (!user) {
 		return <Navigate to='/login' replace />;

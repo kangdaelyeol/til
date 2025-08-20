@@ -3,7 +3,7 @@ import { Todo } from '../components/todo-container/todo-container';
 
 interface TodoState {
 	todos: Todo[];
-	status: 'idle' | 'loading' | 'succeeded' | 'failed';
+	status: 'idle' | 'succeeded' | 'failed';
 	error: string | null;
 }
 
@@ -31,8 +31,8 @@ const todoSlice = createSlice({
 				todo.done = !todo.done;
 			}
 		},
-		fetchTodoRequest: (state) => {
-			state.status = 'loading';
+		fetchTodoRequest: () => {
+			// saga will handle the fetch logic
 		},
 		fetchTodoSuccess: (state, action: PayloadAction<{ todos: Todo[] }>) => {
 			state.status = 'succeeded';

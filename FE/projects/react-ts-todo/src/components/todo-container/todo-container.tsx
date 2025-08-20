@@ -4,7 +4,7 @@ import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo, fetchTodoRequest, toggleTodo } from '../../slices/todo-slice';
 import { useEffect } from 'react';
-import { NavLink, Outlet, useParams } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
 import './todo-container.css';
 export interface Todo {
 	id: number;
@@ -32,6 +32,9 @@ export default function TodoContainer() {
 						`todo-container__link ${isActive && 'todo-container__link--active'}`
 					}
 					to='/'
+					state={{
+						filter: 'all',
+					}}
 				>
 					all
 				</NavLink>
@@ -39,7 +42,11 @@ export default function TodoContainer() {
 					className={({ isActive }) =>
 						`todo-container__link ${isActive && 'todo-container__link--active'}`
 					}
-					to='/active'
+					to='/'
+					replace
+					state={{
+						filter: 'active',
+					}}
 				>
 					active
 				</NavLink>
@@ -47,7 +54,10 @@ export default function TodoContainer() {
 					className={({ isActive }) =>
 						`todo-container__link ${isActive && 'todo-container__link--active'}`
 					}
-					to='/completed'
+					to='/'
+					state={{
+						filter: 'completed',
+					}}
 				>
 					completed
 				</NavLink>
@@ -57,24 +67,20 @@ export default function TodoContainer() {
 	);
 }
 
-interface TodoListProps {
-	filter?: 'all' | 'active' | 'completed';
-}
-
 export const TodoList = () => {
-	const { filter = 'all' } = useParams<{
-		filter?: 'all' | 'active' | 'completed';
-	}>();
-	
-	const { todos } = useSelector((state: RootState) => state.todo);
+	const location = useLocation();
+
+	const filter = location.state?.filter ?? 'all';
+
+	const filteredTodos = useSelector((state: RootState) => {
+		return filterTodos(state.todo.todos, filter);
+	});
 
 	const dispatch = useDispatch();
 
 	const onToggleTodo = (id: number) => {
 		dispatch(toggleTodo({ id }));
 	};
-
-	const filteredTodos = filterTodos(todos, filter);
 
 	return (
 		<ul>
@@ -94,7 +100,10 @@ export const TodoList = () => {
 	);
 };
 
-function filterTodos(todos: Todo[], filter: TodoListProps['filter']) {
+function filterTodos(todos: Todo[], filter: 'all' | 'active' | 'completed') {
+	console.log(todos);
+	if (todos.length === 0) return todos;
+
 	if (filter === 'active') {
 		return todos.filter((todo) => !todo.done);
 	} else if (filter == 'completed') {

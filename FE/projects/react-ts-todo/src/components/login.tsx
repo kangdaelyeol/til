@@ -1,11 +1,11 @@
 import { FormEvent } from 'react';
-import { login } from '../services/user-api';
-import { useSetAtom } from 'jotai';
-import { userAtom } from '../store';
+import { login } from '../slices/common-slice';
+
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 export default function Login() {
-	const setUser = useSetAtom(userAtom);
+	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -15,8 +15,7 @@ export default function Login() {
 		const password = e.currentTarget.password.value;
 
 		try {
-			const user = await login(username, password);
-			setUser(user);
+			dispatch(login({ username, password }));
 			navigate('/');
 		} catch {
 			alert('invalid username or password');

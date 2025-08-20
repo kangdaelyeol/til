@@ -1,10 +1,10 @@
 import { Link, Outlet } from 'react-router-dom';
 import './layout.css';
-import { useAtomValue } from 'jotai';
-import { userAtom } from '../../store';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store';
 
 export default function Layout() {
-	const user = useAtomValue(userAtom);
+	const user = useSelector((state: RootState) => state.common.user);
 
 	return (
 		<div className='layout__container'>
