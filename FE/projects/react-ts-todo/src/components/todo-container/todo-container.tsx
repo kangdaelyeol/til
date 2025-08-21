@@ -4,7 +4,7 @@ import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo, fetchTodoRequest, toggleTodo } from '../../slices/todo-slice';
 import { useEffect } from 'react';
-import { NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import './todo-container.css';
 export interface Todo {
 	id: number;
