@@ -6,6 +6,7 @@ import Login from './components/login';
 import { PropsWithChildren } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from './store';
+import { TodoListWithQuery } from './components/todo-container/todo-container-with-query';
 
 const ProtectedRoute = ({ children }: PropsWithChildren) => {
 	const user = useSelector((state: RootState) => state.common.user);
@@ -51,6 +52,22 @@ const router = createBrowserRouter([
 
 							return { Component: TodoList };
 						},
+					},
+				],
+			},
+			{
+				path: '/with-query',
+				lazy: async () => {
+					const { default: TodoContainer } = await import(
+						'./components/todo-container/todo-container-with-query'
+					);
+
+					return { Component: TodoContainer };
+				},
+				children: [
+					{
+						index: true,
+						element: <TodoListWithQuery />,
 					},
 				],
 			},

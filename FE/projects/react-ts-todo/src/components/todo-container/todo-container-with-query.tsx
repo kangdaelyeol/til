@@ -1,23 +1,20 @@
 import Checkbox from '../checkbox';
 import TodoInput from '../todo-input';
-import { RootState } from '../../store';
-import { useDispatch, useSelector } from 'react-redux';
-import { addTodo, fetchTodoRequest, toggleTodo } from '../../slices/todo-slice';
+import { useDispatch } from 'react-redux';
+import { fetchTodoRequest } from '../../slices/todo-slice';
 import { useEffect } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import './todo-container.css';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { getTodos } from '../../services/todo-api';
 export interface Todo {
 	id: number;
 	text: string;
 	done: boolean;
 }
 
-export default function TodoContainer() {
+export default function TodoContainerWithQuery() {
 	const dispatch = useDispatch();
-
-	const onAddTodo = (todo: string) => {
-		dispatch(addTodo({ todo }));
-	};
 
 	useEffect(() => {
 		dispatch(fetchTodoRequest());
@@ -25,13 +22,13 @@ export default function TodoContainer() {
 
 	return (
 		<div className=''>
-			<TodoInput onAddTodo={onAddTodo} />
+			<TodoInput />
 			<div className=''>
 				<NavLink
 					className={({ isActive }) =>
 						`todo-container__link ${isActive && 'todo-container__link--active'}`
 					}
-					to='/'
+					to=''
 					state={{
 						filter: 'all',
 					}}
@@ -42,7 +39,7 @@ export default function TodoContainer() {
 					className={({ isActive }) =>
 						`todo-container__link ${isActive && 'todo-container__link--active'}`
 					}
-					to='/'
+					to=''
 					replace
 					state={{
 						filter: 'active',
@@ -54,7 +51,7 @@ export default function TodoContainer() {
 					className={({ isActive }) =>
 						`todo-container__link ${isActive && 'todo-container__link--active'}`
 					}
-					to='/'
+					to=''
 					state={{
 						filter: 'completed',
 					}}
@@ -67,31 +64,47 @@ export default function TodoContainer() {
 	);
 }
 
-export const TodoList = () => {
+export const TodoListWithQuery = () => {
 	const location = useLocation();
 
 	const filter = location.state?.filter ?? 'all';
 
-	const filteredTodos = useSelector((state: RootState) => {
-		return filterTodos(state.todo.todos, filter);
+	const { isLoading, data: todos = [] } = useQuery({
+		queryKey: ['todos', filter],
+		queryFn: async () => {
+			const todos = await getTodos();
+			return filterTodos(todos, filter);
+		},
+		staleTime: 1000 * 60, // 데이터 유효기간 시간 지나면 데이터 새로 요청
+		gcTime: 1000 * 60 * 5, // 캐싱된 데이터가 버려지는 시간
 	});
 
-	const dispatch = useDispatch();
+	// const filteredTodos = useSelector((state: RootState) => {
+	// 	return filterTodos(state.todo.todos, filter);
+	// });
 
-	const onToggleTodo = (id: number) => {
-		dispatch(toggleTodo({ id }));
+	const queryClient = useQueryClient();
+
+	const handleToggleTodo = (id: number) => {
+		queryClient.setQueryData(['todos', filter], (todos: Todo[]) =>
+			todos.map((todo) =>
+				todo.id === id ? { ...todo, done: !todo.done } : todo
+			)
+		);
 	};
 
-	return (
+	return isLoading ? (
+		<div>Loading...</div>
+	) : (
 		<ul>
-			{filteredTodos.map((todo) => {
+			{todos.map((todo) => {
 				return (
 					<li key={todo.id}>
 						<Checkbox
 							id={`todo-${todo.id}`}
 							checked={todo.done}
 							label={todo.text}
-							onChange={() => onToggleTodo(todo.id)}
+							onChange={() => handleToggleTodo(todo.id)}
 						/>
 					</li>
 				);

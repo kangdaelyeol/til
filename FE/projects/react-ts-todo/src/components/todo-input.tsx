@@ -1,8 +1,6 @@
-import { ChangeEvent, useEffect, useState } from 'react';
-
-interface TodoInputProps {
-	onAddTodo: (text: string) => void;
-}
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { ChangeEvent, useState } from 'react';
+import { Todo } from './todo-container/todo-container';
 
 // const generateLargeDataset = (size: number) => {
 // 	return Array.from({ length: size }, (_, index) => ({
@@ -12,19 +10,35 @@ interface TodoInputProps {
 // 	}));
 // };
 
-export default function TodoInput({ onAddTodo }: TodoInputProps) {
-	console.log('TodoInput rendered');
-
+export default function TodoInput() {
 	const [newTodo, setNewTodo] = useState<string>('');
 
-	const addTodo = () => {
-		onAddTodo(newTodo);
-		setNewTodo('');
-	};
+	const queryClient = useQueryClient();
 
-	useEffect(() => {
-		console.log('onAddTodo changed!');
-	}, [onAddTodo]);
+	const mutation = useMutation({
+		mutationFn: (text: string) => {
+			return new Promise<string>((resolve) => {
+				setTimeout(() => {
+					resolve(text);
+				}, 1000);
+			});
+		},
+		onSuccess: (text: string) => {
+			queryClient.setQueryData(['todos', 'all'], (todos: Todo[]) => {
+				console.log(todos);
+				return [...todos, { id: Date.now(), text, done: false }];
+			});
+
+			queryClient.invalidateQueries({
+				queryKey: ['todos'],
+			});
+			setNewTodo('');
+		},
+		onError: (e) => {
+			console.log(e);
+			setNewTodo('');
+		},
+	});
 
 	const onInputTodo = (e: ChangeEvent<HTMLInputElement>) => {
 		setNewTodo(e.currentTarget.value);
@@ -33,7 +47,7 @@ export default function TodoInput({ onAddTodo }: TodoInputProps) {
 	return (
 		<div>
 			<input type='text' value={newTodo} onChange={onInputTodo} />
-			<button onClick={addTodo}>추가</button>
+			<button onClick={() => mutation.mutate(newTodo)}>추가</button>
 		</div>
 	);
 }
