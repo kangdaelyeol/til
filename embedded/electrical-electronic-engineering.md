@@ -74,13 +74,13 @@
 
 ## 전자 계산기 구조
 
-### 주소 명령어(Address instruction)
+### 주소 명령어(Address Instruction)
 
 주소 명령어는 주소를 몇 개 포함하느냐에 따라 구분됨.
 
 주소 명령어는 컴퓨터 구조에서 **레지스터** 연산을 위해 사용됨.
 
-#### 0-주소 명령어(Zero-address instruction)
+#### 0-주소 명령어(Zero-address Instruction)
 
 주소가 포함되지 않은 명렁어.
 
@@ -92,6 +92,8 @@ Postfixed : X = AB+CD+*
 TOP means top of stack
 M[X] is any memory location
 
+---------------------------
+
 PUSH A   ->   TOP = A
 PUSH B   ->   TOP = B
 ADD      ->   TOP = A+B
@@ -102,3 +104,58 @@ MUL      ->   TOP = (C+D)*(A+B)
 POP X    ->   M[X] = TOP
 ```
 
+#### 1-주소 명령어(One-address Instruction)
+
+**누산기(Accumulator)** 를 묵시적 피연산자로 사용하고, 나머지 하나의 피연산자 주소만 명령어에 명시하는 방식.
+
+명시된 피연산자의 주소를 참조하여 누산기의 데이터와 함께 연산을 수행.
+
+구조
+
+| 조작부호 (Opcode) |  모드 (Mode)   | 오퍼랜드 / 오퍼랜드 주소 (Operand / Address of Operand) |
+| :---------------: | :------------: | :-----------------------------------------------------: |
+|    연산 명령어    | 주소 지정 모드 |             피연산자 값 또는 피연산자 주소              |
+
+```text
+Expression: X = (A+B)*(C+D)
+AC is accumulator
+M[] is any memory location
+M[T] is temporary location
+
+---------------------------
+
+LOAD A    ->    AC = M[A]
+ADD B     ->    AC = AC + M[B]
+STORE T   ->    M[T] = AC
+LOAD C    ->    AC = M[C]
+ADD D     ->    AC = AC + M[D]
+MUL T     ->    AC = AC * M[T]
+STORE X   ->    M[X] = AC
+```
+
+#### 2-주소 명령어(Two-address Instruction)
+
+상업 컴퓨터에서 주로 사용되는 명령어.
+
+목적지 주소(Destination)와 소스 주소(Source) 총 2개를 포함하여 연산을 수행. 연산 결과는 목적지 주소에 저장됨.
+
+구조
+
+| 조작부호 (Opcode) |  모드 (Mode)   |                목적 주소 (Destination address)                 |   자원 주소 (Source address)   |
+| :---------------: | :------------: | :------------------------------------------------------------: | :----------------------------: |
+|    연산 명령어    | 주소 지정 모드 | 피연산자 주소면서 연산 결과가 저장될 레지스터 또는 메모리 주소 | 피연산자 값 또는 피연산자 주소 |
+
+```text
+Expression: X = (A+B)*(C+D)
+R1, R2 are registers
+M[] is any memory location
+
+---------------------------
+
+MOV R1, A    ->    R1 = M[A]
+ADD R1, B    ->    R1 = R1 + M[B]
+MOV R2, C    ->    R2 = M[C]
+ADD R2, D    ->    R2 = R2 + M[D]
+MUL R1, R2   ->    R1 = R1 * R2
+MOV X, R1    ->    M[X] = R1
+```
