@@ -1,5 +1,43 @@
 # 임베디드 기능사 필기
 
+## Table of contents
+
+**`전기전자공학`**
+
+- [펄스파형(Pulse waveform)](#펄스파형pulse-waveform)
+
+**`전자 계산기 구조`**
+
+- [주소 명령어(Address Instruction)](#주소-명령어address-instruction)
+
+- [플립플롭(Flip-flop)](#플립플롭flip-flop)
+
+- [다이오드(Diode)](#다이오드diode)
+
+- [메이저 상태(Major state)](#메이저-상태major-state)
+
+- [채널 제어기(Channel controller)](#채널-제어기channel-controller)
+
+- [레지스터(Register)](#레지스터register)
+
+- [명령어(Instruction)](#명령어instruction)
+
+**`프로그래밍 일반`**
+
+- [운영체제 성능 평가 기준](#운영체제-성능-평가-기준)
+
+- [프로그램 실행 장치](#프로그램-실행-장치)
+
+**`디지털 공학`**
+
+- [카운터(Counter)](#카운터counter)
+
+- [멀티바이브레이터(Multivibrator)](#멀티바이브레이터multivibrator)
+
+- [디지털 논리회로(Digital Logic Circuit)](#디지털-논리회로digital-logic-circuit)
+
+- [전자 회로(Electronic Circuit)](#전자-회로electronic-circuit)
+
 ## 전기전자공학
 
 ### 펄스파형(Pulse waveform)
