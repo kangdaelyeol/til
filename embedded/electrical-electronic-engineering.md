@@ -512,7 +512,7 @@ _`메이저 스테이트 레지스터(Major State Register)는 특정 상용 CPU
 
 - 인터럽트 사이클을 마친 후에는 항상 fetch 단계로 변천한다.
 
-### 채널 제어기
+### 채널 제어기(Channel controller)
 
 #### 채널(Channel)
 
@@ -592,3 +592,69 @@ CSW(Channel Status Word - 채널 상태 단어)
 블록 멀티플렉서 채널(Block multiplexer channel)
 
 - 하나의 데이터 경로를 공유한다는 점과 고속 I/O 장치를 취급한다는 점에서 셀렉터 채널과 바이트 멀티플렉서 채널 방식을 결합한 형태.
+
+### 레지스터(Register)
+
+#### 범용 레지스터(General purpose register)
+
+데이터 레지스터(Data Register)
+
+- 연산에 사용할 데이터를 임시로 저장.
+
+- 누산기(AC)가 대표적으로 DR로 사용됨.
+
+인덱스 레지스터(Index Register)
+
+- 배열이나 반복문에서 인덱스 값을 저장.
+
+- 기준 주솟값에 인덱스 레지스터에 저장된 값을 더해서 배열 요소의 유효 주소를 계산.
+
+베이스 레지스터(Base Register)
+
+- 프로그램이 메모리에 적재된 시작 주소(기준 주소)를 저장.
+
+- 논리 주소에 베이스 레지스터에 저장된 값을 더해서 물리 주소로 **변환** 하는데 사용됨.
+
+#### 특수 목적 레지스터(Special purpose register)
+
+프로그램 카운터(PC, Program Counter)
+
+- 다음에 실행할 명령어의 메모리 주소를 저장.
+
+- 명령어를 인출할 때마다 자동으로 증가하고, 분기(branch) 명령시 해당 주소로 변경.
+
+명령어 레지스터(IR, Instruction Register)
+
+- 현재 실행중인 명령어를 저장.
+
+- 메모리에서 인출(Fetch)한 명령어가 IR로 들어오고 제어장치가 해독(decode)함.
+
+메모리 주소 레지스터(MAR, Memory Address Register)
+
+- CPU가 접근하려는 메모리 주소를 저장함.
+
+- 메모리에 I/O 요청을 보낼 때 MAR 값이 주소 버스로 나감.
+
+메모리 버퍼 레지스터(MBR, Memory Buffer Register)
+
+- 메모리에서 읽어온 데이터 또는 메모리에 쓸 데이터를 임시 저장.
+
+- MDR(Memory Data Register)라고도 불림.
+
+스택 포인터(SP, Stack Pointer)
+
+- 현재 스택의 최상위(top) 주소를 가리킴.
+
+- 함수 호출, 복귀, interrupt 처리시 데이터를 push/pop할 때 사용됨.
+
+상태 레지스터(PSR/Flag Register)
+
+- ALU(Arithmetic Logic Unit) 연산 결과의 상태를 비트별로 저장함.
+
+- 대표적인 플래그로는 Zero(결과가 0), Carry(자리 올림 발생), Overflow, Sign(부호) 등이 있다.
+
+시퀀스 카운터(SC, Sequence Counter)
+
+- 제어장치에서 마이크로 연산의 순서를 제어하는데 사용됨.
+
+- 각 명령어의 실행 단계를 순차적으로 진행할 때 사용됨.
