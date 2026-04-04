@@ -1097,7 +1097,7 @@ MOD-N 카운터(Modulo-N counter)
 
 - 수정 발진기는 매우 정확한 주파수를 만들어서 CPU 클럭 등에 사용됩니다.
 
-구형파 발진 회로
+구형파(Square wave) 발진 회로
 
 - 구형파(사각파)를 생성.
 
@@ -1129,11 +1129,15 @@ MOD-N 카운터(Modulo-N counter)
 
 - 과전압 보호 등에 사용됩니다.
 
+- 리미터(Limiter)라고도 불림
+
 클램퍼(Clamper)
 
-- 신호의 DC 레벨을 이동시키는 회로.
+- 신호의 DC(Direct current) 레벨을 이동시키는 회로.
 
 - 파형의 모양은 유지하면서 기준점만 바꿉니다.
+
+- DC 복원기(DC Restorer)라고도 불림
 
 #### 기억 회로
 
@@ -1205,7 +1209,7 @@ DAC(Digital to Analog Converter)
 
 정류 회로
 
-- AC(교류)를 DC(직류)로 변환.
+- 교류(AC, Alternating current)를 직류(DC, Direct current)로 변환.
 
 - 반파 정류, 전파 정류가 있다.
 
