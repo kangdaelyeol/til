@@ -1,4 +1,5 @@
 prac
+.markdownlint.json
 vite-project
 # Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudio,vercel,react,dotenv,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudio,vercel,react,dotenv,node
