@@ -1441,9 +1441,21 @@ MOD-N 카운터(Modulo-N counter)
 
 - 여러 비트의 데이터를 저장하는 플립플롭의 묶음.
 
+시프트 레지스터(Shift Register)
+
+![shift register](./docs/shift-register.png)
+
 카운터(Counter)
 
 - 클럭 펄스를 세는 회로. 비동기(리플) 카운터와 동기 카운터로 나뉨.
+
+비동기식 카운터(리플 카운터, Ripple counter)
+
+![ripple counter](./docs/ripple-counter.png)
+
+10진 카운터(Decimal counter)
+
+![10digit counter](./docs/10-d-counter.png)
 
 순서 기계(State Machine)
 
