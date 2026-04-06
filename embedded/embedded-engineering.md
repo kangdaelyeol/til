@@ -12,6 +12,8 @@
 
 - [평균값(Average Value)](#평균값average-value)
 
+- [진폭 변조(Amplitude Modulation, AM)](#진폭-변조amplitude-modulation-am)
+
 ### **전자 계산기 구조**
 
 - [주소 명령어(Address Instruction)](#주소-명령어address-instruction)
@@ -197,6 +199,44 @@ $$
 $$
 \text{파고율} = \frac{V_m}{V_{rms}} = \frac{1}{0.707} = \sqrt{2} \approx 1.414
 $$
+
+---
+
+### 진폭 변조(Amplitude Modulation, AM)
+
+반송파(Carrier)의 **진폭**을 신호파(Message)에 따라 변화시켜 정보를 전달하는 변조 방식이다.
+
+- 반송파: 정보를 실어 나르는 고주파 신호
+
+- 신호파: 전달하려는 원본 정보(음성, 데이터 등)
+
+#### 변조도(Modulation Index, m)
+
+반송파 진폭에 대한 신호파 진폭의 비율이다.
+
+$$
+m = \frac{V_s}{V_c} \\[10pt]
+V_s : \text{신호파 최댓값} \quad V_c : \text{반송파 최댓값}
+$$
+
+- $m = 0$: 변조 없음 (반송파만 전송)
+
+- $0 < m < 1$: 정상 변조
+
+- $m = 1$ (100%): 완전 변조 — 신호 왜곡 없이 최대 효율
+
+- $m > 1$: 과변조 — 신호 왜곡 발생
+
+#### AM 전력 공식
+
+$$
+P_T = P_c \left(1 + \frac{m^2}{2}\right) \\[10pt]
+P_T : \text{AM 변조파 전체 출력(전력)} \quad P_c : \text{무변조 반송파 출력(전력)} \quad m : \text{변조도}
+$$
+
+- $m = 1$ (완전 변조)일 때: $P_T = P_c \times 1.5$, 즉 반송파 전력의 1.5배가 전체 출력이 된다.
+
+- 신호 정보는 **측파대(Sideband)** 전력 $\frac{m^2}{2} P_c$ 에만 실리며, 반송파 전력 $P_c$ 는 정보를 담지 않는다.
 
 ---
 
