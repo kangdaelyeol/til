@@ -128,3 +128,4 @@ web_modules/
 dist
 
 .history
+.vscode
