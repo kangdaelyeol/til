@@ -1,4 +1,4 @@
-# 사무자동화 시스템
+# 사무자동화
 
 ## Table of Contents
 
