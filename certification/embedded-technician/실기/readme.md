@@ -8,11 +8,13 @@
 
 - [타입 최적화](#타입-최적화)
 
-## [로직 최적화](#로직-최적화)
+### [로직 최적화](#로직-최적화)
 
 - [RGB 변수](#rgb-변수)
 
 - [로직 추상화](#로직-추상화)
+
+- [논블로킹 최적화](#논블로킹-최적화)
 
 ---
 
@@ -304,6 +306,63 @@ void action1() {
   if(digitalRead(sw1) == HIGH){
     resetFlag(); // ~-6byte
     onLed(RED);
+  }
+}
+```
+
+### 논블로킹 최적화
+
+**`문제점`**
+
+동작 도중 스위치를 눌렀다 떼면 동작이 변경되어야 함.
+
+Arduino는 싱글 스레드로 동작하므로, `delay` 실행 중에는 `loop()` 자체가 멈춰 스위치 입력을 받을 수 없는 상태가 된다.
+
+따라서 `delay` 사용 시 스위치 입력을 감지할 수 없어 동작 전환이 되지 않는 문제가 발생한다.
+
+**`millis()`**
+
+시스템 시작 후 경과된 시간(ms)을 반환하는 함수.
+
+블로킹 없이 현재 시각을 조회할 수 있어 논블로킹 타이머 구현에 활용된다.
+
+**`논블로킹 타이머 패턴`**
+
+`millis() - lastTime >= interval` 패턴으로 블로킹 없이 주기적 동작을 구현한다.
+
+- `lastTime`: 마지막 동작이 실행된 시점의 타임스탬프
+- 조건이 참이면 동작을 실행하고 `lastTime = millis()` 로 기준점을 갱신
+- 조건이 거짓이면 루프를 계속 진행하여 스위치 입력 등 다른 처리를 수행할 수 있다.
+
+**`구현`**
+
+초기 동작(LED 점멸, FND 표시 등 시작 시퀀스)은 완료되기 전에 스위치 입력을 받으면 의도치 않은 동작 전환이 발생하므로 블로킹 방식으로 진행한다.
+
+이후 `actionMillis` 에 현재 시각을 기록하고, `millis() - actionMillis >= 동작주기` 조건으로 주기를 판단한다.
+
+동작 주기를 넘기면 다음 동작 로직을 실행하고 `actionMillis` 를 갱신하여 다음 주기의 기준점으로 삼는다.
+
+동작 주기를 넘기지 않으면 해당 동작을 유지하며 루프를 진행하여 스위치 입력을 받을 수 있도록 한다.
+
+```c
+void action1Active() {
+  fndNumber = 8;
+  offLed();
+  showFnd(); delay(500);
+  onLed(ledG); delay(200);
+  onLed(ledR); delay(200);
+  fndNumber = 0;
+  showFnd();
+  action = 1;
+  actionMillis = millis();
+}
+
+void action1() {
+  if(millis() - actionMillis >= 300) { // 동작 주기 = 300ms
+    IS_LED_ON ? offLed() : onLed(ledG);
+    fndNumber = (fndNumber+1) % 10;
+    showFnd();
+    actionMillis = millis();
   }
 }
 ```
