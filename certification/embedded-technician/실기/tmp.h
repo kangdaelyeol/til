@@ -12,3 +12,5 @@ extern int LOW;
 extern int HIGH;
 extern int INPUT_PULLUP;
 extern int OUTPUT;
+
+#define uint8_t int
