@@ -99,19 +99,31 @@ new Date().getTimezoneOffset(); // -540 (KST, UTC+9 기준)
 tz = 540; // 부호 반전해서 전송
 ```
 
+**`plt(Page Load Time)`**
+
+페이지 접속 후 픽셀코드가 초기화될 때 까지의 시간을 ms로 표현.
+
+브라우저의 Performance API를 사용하여 픽셀이 호출 및 저장.
+
+```js
+plt =
+	window.performance.timing.domContentLoadedEventEnd -
+	window.performance.timing.navigationStart;
+```
+
 ### 브라우저 / 화면 환경
 
-**`sw(Screen Width)`**
+| 값                | 설명                                                                  |
+| ----------------- | --------------------------------------------------------------------- |
+| sw(Screen Width)  | 모니터(디스플레이) 화면 너비, window.screen.width 값을 자동으로 수집  |
+| sh(Screen Height) | 모니터(디스플레이) 화면 높이, window.screen.height 값을 자동으로 수집 |
 
-모니터(디스플레이) 화면 너비.
+### 사용자 식별 쿠키
 
-window.screen.width 값을 자동으로 수집.
-
-**`sh(Screen Height)`**
-
-모니터(디스플레이) 화면 높이.
-
-window.screen.height 값을 자동으로 수집.
+| 값                               | 설명                                                                                                                                    |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| \_fbp(Facebook Pixel Browser ID) | 브라우저(기기)를 식별하기 위해 픽셀이 생성하는 고유ID<br/>첫 페이지 방문시 초기화되며, 이후 멀티터치 행동 패턴 및 기여 분석을 위해 사용 |
+| \_fbc(Facebook Click ID Cookie)  | meta광고 클릭 이벤트를 추적하기 위한 식별자<br/>\_fbc는 광고를 클릭해서 들어왔다는 증거이므로, 기여 판단에 핵심 역할을 담당             |
 
 ---
 
