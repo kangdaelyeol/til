@@ -1,5 +1,7 @@
 # Meta ads
 
+## Table of Contents
+
 ---
 
 ## 자동 수집 파라미터
@@ -221,6 +223,8 @@ Meta 알고리즘에 작용하는 방식은 다음과 같다.
 
 - currency값이 있어야 정확한 금액 기준으로 필터링할 수 있다.
 
+---
+
 ## Specifications
 
 ### Attribution(기여)
@@ -273,3 +277,11 @@ Meta 광고 경매에서 예산과 전환 목표를 어떻게 운용할지 결�
 
 - 전환 횟수보다 전환 가치(value) 합계 극대화
   - ex) AddToCart 10건(각 10,000원)보다 AddToCart 3건(각 100,000원)을 선호
+
+---
+
+## CAPI(Conversions API)
+
+[Conversions API Docs](https://developers.facebook.com/documentation/ads-commerce/conversions-api)
+
+### CAPI 개요
