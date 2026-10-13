@@ -2,6 +2,14 @@
 
 ## Table of Contents
 
+[자동 수집 파라미터](#자동-수집-파라미터)
+
+[수동 수집 파라미터](#수동-수집-파라미터)
+
+[Specifications](#specifications)
+
+[CAPI](#capi)
+
 ---
 
 ## 자동 수집 파라미터
@@ -280,7 +288,7 @@ Meta 광고 경매에서 예산과 전환 목표를 어떻게 운용할지 결�
 
 ---
 
-## CAPI(Conversions API)
+## CAPI
 
 [Conversions API Docs](https://developers.facebook.com/documentation/ads-commerce/conversions-api)
 
